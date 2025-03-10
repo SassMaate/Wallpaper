@@ -76,7 +76,7 @@
         <PackageReference Include="RawInput.Sharp" Version="0.1.3" />
         <PackageReference Include="Skylark.Wing" Version="3.1.8.3" />
         <PackageReference Include="Skylark.Standard" Version="3.1.6.8" />
-        <PackageReference Include="CefSharp.Wpf.HwndHost" Version="132.3.11" />
+        <PackageReference Include="CefSharp.Wpf.HwndHost" Version="133.4.21" />
     </ItemGroup>
 
     <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
