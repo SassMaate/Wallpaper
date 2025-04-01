@@ -78,8 +78,8 @@
 
     <ItemGroup>
         <PackageReference Include="SharpCompress" Version="0.39.0" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.3" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.6.8" />
+        <PackageReference Include="Skylark.Wing" Version="3.1.8.4" />
+        <PackageReference Include="Skylark.Standard" Version="3.1.6.9" />
         <PackageReference Include="Costura.Fody" Version="6.0.0" Condition="$(TargetFramework.StartsWith('net48'))">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>compile; runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

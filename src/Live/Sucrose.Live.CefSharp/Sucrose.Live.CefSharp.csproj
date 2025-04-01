@@ -74,8 +74,8 @@
 
     <ItemGroup>
         <PackageReference Include="RawInput.Sharp" Version="0.1.3" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.3" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.6.8" />
+        <PackageReference Include="Skylark.Wing" Version="3.1.8.4" />
+        <PackageReference Include="Skylark.Standard" Version="3.1.6.9" />
         <PackageReference Include="CefSharp.Wpf.HwndHost" Version="134.3.90" />
     </ItemGroup>
 

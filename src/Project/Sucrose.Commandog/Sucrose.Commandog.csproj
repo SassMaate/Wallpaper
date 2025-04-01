@@ -74,8 +74,8 @@
 
     <ItemGroup>
         <PackageReference Include="TaskScheduler" Version="2.12.1" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.3" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.6.8" />
+        <PackageReference Include="Skylark.Wing" Version="3.1.8.4" />
+        <PackageReference Include="Skylark.Standard" Version="3.1.6.9" />
     </ItemGroup>
 
     <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
