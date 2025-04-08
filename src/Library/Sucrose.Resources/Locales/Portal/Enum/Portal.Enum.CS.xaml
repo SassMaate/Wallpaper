@@ -33,6 +33,7 @@
 
     <system:String x:Key="Portal.Enum.CommunicationType.Pipe">Pipe</system:String>
     <system:String x:Key="Portal.Enum.CommunicationType.Signal">Signal</system:String>
+    <system:String x:Key="Portal.Enum.CommunicationType.Transmission">Transmission</system:String>
 
     <system:String x:Key="Portal.Enum.PerformanceType.Close">Zavřít</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Pozastavit</system:String>

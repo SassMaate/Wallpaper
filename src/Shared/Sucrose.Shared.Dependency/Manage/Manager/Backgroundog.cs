@@ -16,6 +16,8 @@ namespace Sucrose.Shared.Dependency.Manage.Manager
 
         public static SSDEPPT PausePerformanceType => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.PausePerformanceType, SSDEPPT.Light);
 
+        public static SSDECT CommunicationType => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.CommunicationType, SSDECT.Transmission);
+
         public static SSDEPT VirtualPerformance => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.VirtualPerformance, SSDEPT.Resume);
 
         public static SSDEPT NetworkPerformance => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.NetworkPerformance, SSDEPT.Resume);
@@ -29,8 +31,6 @@ namespace Sucrose.Shared.Dependency.Manage.Manager
         public static SSDEPT RemotePerformance => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.RemotePerformance, SSDEPT.Resume);
 
         public static SSDEPT MemoryPerformance => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.MemoryPerformance, SSDEPT.Resume);
-
-        public static SSDECT CommunicationType => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.CommunicationType, SSDECT.Signal);
 
         public static SSDEPT FocusPerformance => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.FocusPerformance, SSDEPT.Resume);
 

@@ -147,7 +147,8 @@ namespace Sucrose.Live.Aurora
                                 new(SMMCB.PipeRequired, false),
                                 new(SMMCB.AudioRequired, false),
                                 new(SMMCB.SignalRequired, false),
-                                new(SMMCB.PausePerformance, false)
+                                new(SMMCB.PausePerformance, false),
+                                new(SMMCB.TransmissionRequired, false)
                             });
 
                             if (File.Exists(Source))

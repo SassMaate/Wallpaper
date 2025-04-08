@@ -118,6 +118,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static SSDEPT Performance = SSDEPT.Resume;
 
+        public static bool TransmissionManagement = true;
+
         public static NowPlayingSession PlayingSession = null;
 
         public static PerformanceCounter UploadCounter = null;

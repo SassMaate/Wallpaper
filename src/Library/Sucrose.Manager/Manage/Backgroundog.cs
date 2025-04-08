@@ -7,6 +7,8 @@ namespace Sucrose.Manager.Manage
 {
     public static class Backgroundog
     {
+        public static int TransmissionPort => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.TransmissionPort, 0), 0, 65535);
+
         public static int DownloadValue => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.DownloadValue, 10), 0, 99999999);
 
         public static int UploadValue => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.UploadValue, 800), 0, 99999999);
@@ -16,6 +18,8 @@ namespace Sucrose.Manager.Manage
         public static int MemoryUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.MemoryUsage, 80), 0, 100);
 
         public static int PingValue => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.PingValue, 100), 0, 1000);
+
+        public static bool TransmissionRequired => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.TransmissionRequired, false);
 
         public static string NetworkAdapter => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.NetworkAdapter, string.Empty);
 

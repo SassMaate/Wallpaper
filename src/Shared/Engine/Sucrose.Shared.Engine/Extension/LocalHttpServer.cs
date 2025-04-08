@@ -5,15 +5,14 @@ using SHE = Skylark.Helper.Encode;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
-using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSSHP = Sucrose.Shared.Space.Helper.Port;
 
 namespace Sucrose.Shared.Engine.Extension
 {
     internal class LocalHttpServer(string themeFolder, string customFolder = null)
     {
-        private readonly int Port = SSSHP.Available(SSEMI.Loopback);
-        private readonly string Host = $"{SSEMI.Loopback}";
+        private readonly int Port = SSSHP.Available(SMMRG.Loopback);
+        private readonly string Host = $"{SMMRG.Loopback}";
         private readonly HttpListener Listener = new();
 
         public string GetUrl()
@@ -24,7 +23,7 @@ namespace Sucrose.Shared.Engine.Extension
         public async void StartAsync()
         {
             Listener.Prefixes.Add($"http://localhost:{Port}/");
-            Listener.Prefixes.Add($"http://{SSEMI.Loopback}:{Port}/");
+            Listener.Prefixes.Add($"http://{SMMRG.Loopback}:{Port}/");
 
             if (string.IsNullOrEmpty(customFolder))
             {

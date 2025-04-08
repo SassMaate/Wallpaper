@@ -1,5 +1,4 @@
-﻿using System.Net;
-using System.Windows.Threading;
+﻿using System.Windows.Threading;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
 using SSESB = Sucrose.Shared.Engine.Setting.Browser;
@@ -76,8 +75,6 @@ namespace Sucrose.Shared.Engine.Manage
         public static string MotherboardData = string.Empty;
 
         public static string PropertiesCache = string.Empty;
-
-        public static IPAddress Loopback = IPAddress.Loopback;
 
         public delegate Task<string> ExecuteTask(string script);
 

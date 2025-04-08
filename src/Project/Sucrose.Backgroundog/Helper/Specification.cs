@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Management;
 using System.Net;
+using System.Net.Sockets;
 using SBEAS = Sucrose.Backgroundog.Extension.AudioSession;
 using SBED = Sucrose.Backgroundog.Extension.Data;
 using SBEG = Sucrose.Backgroundog.Extension.Graphic;
@@ -19,6 +20,7 @@ using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMMCB = Sucrose.Memory.Manage.Constant.Backgroundog;
 using SMMCS = Sucrose.Memory.Manage.Constant.System;
 using SMMI = Sucrose.Manager.Manage.Internal;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SPIB = Sucrose.Pipe.Interface.Backgroundog;
 using SPMI = Sucrose.Pipe.Manage.Internal;
 using SSDECPT = Sucrose.Shared.Dependency.Enum.CategoryPerformanceType;
@@ -34,6 +36,7 @@ using SSSHM = Sucrose.Shared.Space.Helper.Management;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using STMI = Sucrose.Transmission.Manage.Internal;
 using SWHFS = Skylark.Wing.Helper.FullScreen;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWUD = Skylark.Wing.Utility.Desktop;
@@ -890,6 +893,54 @@ namespace Sucrose.Backgroundog.Helper
                     catch (Exception Exception)
                     {
                         SBMI.SignalManagement = true;
+                        await SSWEW.Watch_CatchException(Exception);
+                    }
+                });
+
+                _ = Task.Run(async () =>
+                {
+                    try
+                    {
+                        if (!SBMI.Condition && SBMI.TransmissionManagement && SMMB.TransmissionRequired)
+                        {
+                            SBMI.TransmissionManagement = false;
+
+                            if (STMI.BackgroundogManager == null)
+                            {
+                                STMI.BackgroundogManager = new(SMMRG.Loopback, SMMB.TransmissionPort);
+                            }
+
+                            JsonSerializerSettings SerializerSettings = new()
+                            {
+                                Formatting = Formatting.None,
+                                TypeNameHandling = TypeNameHandling.None
+                            };
+
+                            await STMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
+                            {
+                                Cpu = SBED.GetCpuInfo(),
+                                Bios = SBED.GetBiosInfo(),
+                                Date = SBED.GetDateInfo(),
+                                Audio = SBED.GetAudioInfo(),
+                                Memory = SBED.GetMemoryInfo(),
+                                Battery = SBED.GetBatteryInfo(),
+                                Graphic = SBED.GetGraphicInfo(),
+                                Network = SBED.GetNetworkInfo(),
+                                Motherboard = SBED.GetMotherboardInfo()
+                            }, SerializerSettings));
+
+                            SBMI.TransmissionManagement = true;
+                        }
+                    }
+                    catch (SocketException Exception)
+                    {
+                        SBMI.TransmissionManagement = true;
+                        await SSWEW.Watch_CatchException(Exception);
+                        STMI.BackgroundogManager = new(SMMRG.Loopback, SMMB.TransmissionPort);
+                    }
+                    catch (Exception Exception)
+                    {
+                        SBMI.TransmissionManagement = true;
                         await SSWEW.Watch_CatchException(Exception);
                     }
                 });

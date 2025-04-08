@@ -339,7 +339,8 @@ namespace Sucrose.Live.WebView
                             new(SMMCB.PipeRequired, false),
                             new(SMMCB.AudioRequired, false),
                             new(SMMCB.SignalRequired, false),
-                            new(SMMCB.PausePerformance, false)
+                            new(SMMCB.PausePerformance, false),
+                            new(SMMCB.TransmissionRequired, false)
                         });
 
                         if (SSTHV.IsUrl(Source) || File.Exists(Source))

@@ -3,6 +3,7 @@
     internal enum CommunicationType
     {
         Pipe,
-        Signal
+        Signal,
+        Transmission
     }
 }

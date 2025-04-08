@@ -38,13 +38,15 @@
 
         public const string LockPerformance = "LockPerformance";
 
-        public const string SleepPerformance = "SleepPerformance";
-
         public const string ClosePerformance = "ClosePerformance";
 
         public const string FocusPerformance = "FocusPerformance";
 
         public const string PausePerformance = "PausePerformance";
+
+        public const string SleepPerformance = "SleepPerformance";
+
+        public const string TransmissionPort = "TransmissionPort";
 
         public const string CommunicationType = "CommunicationType";
 
@@ -65,6 +67,8 @@
         public const string VirtualPerformance = "VirtualPerformance";
 
         public const string PausePerformanceType = "PausePerformanceType";
+
+        public const string TransmissionRequired = "TransmissionRequired";
 
         public const string FullScreenPerformance = "FullScreenPerformance";
 

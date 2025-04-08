@@ -25,7 +25,7 @@ namespace Sucrose.Pipe
             }
         }
 
-        public async Task StartClient(string message)
+        public async Task StartClient(string Message)
         {
             if (!PC.IsConnected)
             {
@@ -38,7 +38,7 @@ namespace Sucrose.Pipe
                 await PC.Start(PipeName);
             }
 
-            await PC.SendMessage(message);
+            await PC.SendMessage(Message);
         }
 
         public async Task StartServer()

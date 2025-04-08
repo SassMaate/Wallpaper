@@ -1,4 +1,6 @@
-﻿namespace Sucrose.Memory.Manage.Readonly
+﻿using System.Net;
+
+namespace Sucrose.Memory.Manage.Readonly
 {
     public static class General
     {
@@ -21,6 +23,8 @@
         public static readonly string ExceptionSplit = " -> ";
 
         public static readonly char ValueSeparatorChar = '✖';
+
+        public static readonly IPAddress Loopback = IPAddress.Loopback;
 
         public static readonly string StartCommand = $"{StartCommandChar}";
 

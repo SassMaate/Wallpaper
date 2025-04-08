@@ -1,0 +1,11 @@
+namespace Sucrose.Transmission.Interface
+{
+    public class Launcher
+    {
+        public bool Hide { get; set; } = false;
+
+        public bool Show { get; set; } = false;
+
+        public bool Release { get; set; } = false;
+    }
+}

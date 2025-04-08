@@ -1,6 +1,7 @@
 ﻿using Application = System.Windows.Application;
 using SMMCB = Sucrose.Memory.Manage.Constant.Backgroundog;
 using SMMI = Sucrose.Manager.Manage.Internal;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SPMI = Sucrose.Pipe.Manage.Internal;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommunicationType;
 using SSDMMB = Sucrose.Shared.Dependency.Manage.Manager.Backgroundog;
@@ -10,8 +11,11 @@ using SSEWVHM = Sucrose.Shared.Engine.WebView.Helper.Management;
 using SSEWVMI = Sucrose.Shared.Engine.WebView.Manage.Internal;
 using SSMI = Sucrose.Signal.Manage.Internal;
 using SSPSBSS = Sucrose.Shared.Pipe.Services.BackgroundogPipeService;
+using SSSHP = Sucrose.Shared.Space.Helper.Port;
 using SSSSBSS = Sucrose.Shared.Signal.Services.BackgroundogSignalService;
+using SSTSBTS = Sucrose.Shared.Transmission.Services.BackgroundogTransmissionService;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using STMI = Sucrose.Transmission.Manage.Internal;
 using SWEACAM = Skylark.Wing.Extension.AudioController.AudioManager;
 using SWEVPCAM = Skylark.Wing.Extension.VideoPlayerController.AudioManager;
 using SWNM = Skylark.Wing.Native.Methods;
@@ -133,6 +137,40 @@ namespace Sucrose.Shared.Engine.WebView.Helper
                                         }
                                     });
                                 }
+                            });
+                            break;
+                        case SSDECT.Transmission:
+                            STMI.BackgroundogManager = new(SMMRG.Loopback, SSSHP.Available(SMMRG.Loopback));
+
+                            SMMI.BackgroundogSettingManager.SetSetting(SMMCB.TransmissionRequired, true);
+                            SMMI.BackgroundogSettingManager.SetSetting(SMMCB.TransmissionPort, STMI.BackgroundogManager.GetPort());
+
+                            _ = Task.Run(async () =>
+                            {
+                                STMI.BackgroundogManager.MessageReceived += async (s, e) =>
+                                {
+                                    if (SSEWVMI.State)
+                                    {
+                                        SSTSBTS.Handler(e);
+
+                                        await Application.Current.Dispatcher.InvokeAsync(async () =>
+                                        {
+                                            try
+                                            {
+                                                if (SSEWVMI.WebEngine.IsInitialized)
+                                                {
+                                                    SSEHC.ExecuteTask(SSEWVMI.WebEngine.CoreWebView2.ExecuteScriptAsync);
+                                                }
+                                            }
+                                            catch (Exception Exception)
+                                            {
+                                                await SSWEW.Watch_CatchException(Exception);
+                                            }
+                                        });
+                                    }
+                                };
+
+                                await STMI.BackgroundogManager.StartServer();
                             });
                             break;
                         default:
