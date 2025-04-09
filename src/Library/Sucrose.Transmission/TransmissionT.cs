@@ -10,6 +10,8 @@ namespace Sucrose.Transmission
         private readonly STHTC TC = new();
         private readonly STHTS TS = new();
 
+        public int Port { get; private set; } = Port;
+
         public event EventHandler<STEMREA> MessageReceived;
 
         public async Task StartClient()
@@ -64,11 +66,6 @@ namespace Sucrose.Transmission
         public async Task StopServer()
         {
             await TS.Stop();
-        }
-
-        public int GetPort()
-        {
-            return Port;
         }
 
         public async Task DisposeClient()

@@ -143,7 +143,7 @@ namespace Sucrose.Shared.Engine.WebView.Helper
                             STMI.BackgroundogManager = new(SMMRG.Loopback, SSSHP.Available(SMMRG.Loopback));
 
                             SMMI.BackgroundogSettingManager.SetSetting(SMMCB.TransmissionRequired, true);
-                            SMMI.BackgroundogSettingManager.SetSetting(SMMCB.TransmissionPort, STMI.BackgroundogManager.GetPort());
+                            SMMI.BackgroundogSettingManager.SetSetting(SMMCB.TransmissionPort, STMI.BackgroundogManager.Port);
 
                             _ = Task.Run(async () =>
                             {

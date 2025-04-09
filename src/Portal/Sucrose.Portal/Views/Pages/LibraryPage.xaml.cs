@@ -249,7 +249,7 @@ namespace Sucrose.Portal.Views.Pages
 
                 string[] Files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-                if (Files.Any())
+                if (Files != null && Files.Any())
                 {
                     foreach (string Record in Files)
                     {
