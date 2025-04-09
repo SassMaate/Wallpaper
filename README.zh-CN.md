@@ -64,7 +64,7 @@
   [![Issues Count](https://img.shields.io/github/issues/Taiizor/Sucrose.svg?style=for-the-badge&label=问题)](https://github.com/Taiizor/Sucrose/issues)
   [![Pull Request Count](https://img.shields.io/github/issues-pr/Taiizor/Sucrose.svg?style=for-the-badge&label=拉取请求)](https://github.com/Taiizor/Sucrose/pulls)
   [![Follow](https://img.shields.io/github/followers/Taiizor.svg?style=for-the-badge&label=关注)](https://github.com/Taiizor)
-  [![Discord Server](https://img.shields.io/discord/932386235538878534?label=Discord&style=for-the-badge)](https://discord.gg/nxG977byXb)
+  [![Discord Server](https://img.shields.io/discord/932386235538878534?label=DISCORD&style=for-the-badge)](https://discord.gg/nxG977byXb)
 
   [![Pre-Release](https://img.shields.io/github/v/release/Taiizor/Sucrose?include_prereleases&label=预发行版&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
   [![Pre-Release Date](https://img.shields.io/github/release-date-pre/Taiizor/Sucrose?label=预发行日期&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
@@ -74,16 +74,6 @@
 
   [![Code Size](https://img.shields.io/github/languages/code-size/Taiizor/Sucrose?style=for-the-badge&label=代码大小)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
   [![Repo Size](https://img.shields.io/github/repo-size/Taiizor/Sucrose?style=for-the-badge&label=仓库大小)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
-
-  <!--[![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/store/apps/XP8JGPBHTJGLC)
-  [![Xbox Support](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white)](https://www.microsoft.com/store/apps/XP8JGPBHTJGLC)
-  [![MacOS Support](https://img.shields.io/badge/MACOS-adb8c5?style=for-the-badge&logo=macos&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)-->
-
-  <!--[![Ubuntu Support](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![Arch Linux Support](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  
-  [![Android Support](https://img.shields.io/badge/Android-32DE84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![iOS Support](https://img.shields.io/badge/iOS-A3AAAE?style=for-the-badge&logo=ios&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)-->
 
 </div>
 

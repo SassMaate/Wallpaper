@@ -11,38 +11,38 @@
 
 <div align="center">
   <span>
-    <b>Sucrose</b> is a versatile wallpaper engine that brings a wide range of interactive wallpapers to life on your desktop. With light and dark theme options, you can choose the appearance that suits your personal preferences. You can create your own wallpapers simply or in detail, and it supports multiple screens and all screen resolutions for a seamless experience across various display configurations.
+    <b>Sucrose</b>, masaüstünüzde çeşitli interaktif duvar kağıtlarını hayata geçiren çok yönlü bir duvar kağıdı motorudur. Açık ve koyu tema seçenekleriyle kişisel tercihlerinize uygun görünümü seçebilirsiniz. Kendi duvar kağıtlarınızı basit veya detaylı bir şekilde oluşturabilir, birden fazla ekran ve tüm ekran çözünürlüklerini destekleyerek çeşitli ekran konfigürasyonlarında sorunsuz bir deneyim elde edebilirsiniz.
   </span>
   <br>
   <br>
   <span>
-    Completely open-source and free, <b>Sucrose</b> doesn't require any payments for any features, granting users full access. You can create media-responsive wallpapers using the <b>Sucrose Audio API</b> and design wallpapers with system status indicators using the <b>Sucrose System API</b>. Additionally, you can use any website as a wallpaper using <b>CefSharp</b> and <b>WebView</b>.
+    Tamamen açık kaynaklı ve ücretsiz olan <b>Sucrose</b>, hiçbir özellik için ödeme gerektirmez ve kullanıcılara tam erişim sağlar. <b>Sucrose Audio API</b> kullanarak medyaya duyarlı duvar kağıtları oluşturabilir ve <b>Sucrose System API</b> kullanarak sistem durum göstergelerine sahip duvar kağıtları tasarlayabilirsiniz. Ayrıca, <b>CefSharp</b> ve <b>WebView</b> kullanarak herhangi bir web sitesini duvar kağıdı olarak kullanabilirsiniz.
   </span>
   <br>
   <br>
   <span>
-    <b>Sucrose</b> allows you to create your own custom wallpapers and share them with friends or the <b>Sucrose Community</b>. You can explore and download wallpapers offered by users directly from the <b>Sucrose Store</b>.
+    <b>Sucrose</b>, kendi özel duvar kağıtlarınızı oluşturmanıza ve bunları arkadaşlarınızla veya <b>Sucrose Topluluğu</b> ile paylaşmanıza olanak tanır. Kullanıcılar tarafından sunulan duvar kağıtlarını doğrudan <b>Sucrose Mağazası</b>'ndan keşfedebilir ve indirebilirsiniz.
   </span>
   <br>
   <br>
   <span>
-    In terms of performance, it ensures smooth performance by optimizing CPU and GPU usage. It automatically pauses wallpapers when fullscreen applications/games are running to conserve resources, and it has a power-saving mode that pauses wallpapers when running on battery power, such as on laptops.
+    Performans açısından, CPU ve GPU kullanımını optimize ederek sorunsuz performans sağlar. Tam ekran uygulamalar/oyunlar çalışırken kaynakları korumak için duvar kağıtlarını otomatik olarak duraklatır ve dizüstü bilgisayarlar gibi batarya gücüyle çalışırken duvar kağıtlarını duraklatmak için güç tasarrufu moduna sahiptir.
   </span>
   <br>
   <br>
   <span>
-    <b>Sucrose</b> is a powerful tool for personalizing and animating your desktop. It enables users to express their creativity and fully customize their desktop experiences.
+    <b>Sucrose</b>, masaüstünüzü kişiselleştirmek ve canlandırmak için güçlü bir araçtır. Kullanıcıların yaratıcılıklarını ifade etmelerini ve masaüstü deneyimlerini tamamen özelleştirmelerini sağlar.
   </span>
 </div>
 
 <h4 align="center">
-  <a href="https://github.com/Taiizor/Sucrose/issues">Issues</a> ●
-  <a href="https://github.com/Taiizor/Sucrose/discussions">Discussions</a> ●
-  <a href="https://github.com/Taiizor/Sucrose/wiki">Documentation</a> ●
-  <a href="https://github.com/Taiizor/Store">Store</a> ●
-  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi6VbMMaTOTXuU6EVGiy_Kqx">Feature</a> ●
-  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi7WSUHItUfxbr71ORthre19">Preview</a> ●
-  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi5eNcBrRkEg9uoGX0R1Z5SY">Tutorial</a> ●
+  <a href="https://github.com/Taiizor/Sucrose/issues">Sorunlar</a> ●
+  <a href="https://github.com/Taiizor/Sucrose/discussions">Tartışmalar</a> ●
+  <a href="https://github.com/Taiizor/Sucrose/wiki">Dokümantasyon</a> ●
+  <a href="https://github.com/Taiizor/Store">Mağaza</a> ●
+  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi6VbMMaTOTXuU6EVGiy_Kqx">Özellikler</a> ●
+  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi7WSUHItUfxbr71ORthre19">Önizleme</a> ●
+  <a href="https://www.youtube.com/playlist?list=PLPU_0X-WyJi5eNcBrRkEg9uoGX0R1Z5SY">Eğitim</a> ●
   <a href="https://discord.gg/nxG977byXb">Discord</a>
 </h4>
 
@@ -54,150 +54,140 @@
 
 <div align="center">
 
-  [![License](https://img.shields.io/github/license/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/blob/develop/LICENSE)
-  [![Download Counts](https://img.shields.io/github/downloads/Taiizor/Sucrose/total.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases)
-  [![Contributors](https://img.shields.io/github/contributors/Taiizor/Sucrose?style=for-the-badge)](https://github.com/Taiizor/Sucrose/graphs/contributors)
-  [![Stars Count](https://img.shields.io/github/stars/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/stargazers)
-  [![Forks Count](https://img.shields.io/github/forks/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/network/members)
-  [![Watchers Count](https://img.shields.io/github/watchers/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/watchers)
+  [![License](https://img.shields.io/github/license/Taiizor/Sucrose.svg?style=for-the-badge&label=LİSANS)](https://github.com/Taiizor/Sucrose/blob/develop/LICENSE)
+  [![Download Counts](https://img.shields.io/github/downloads/Taiizor/Sucrose/total.svg?style=for-the-badge&label=İNDİRME)](https://github.com/Taiizor/Sucrose/releases)
+  [![Contributors](https://img.shields.io/github/contributors/Taiizor/Sucrose?style=for-the-badge&label=KATILIMCI)](https://github.com/Taiizor/Sucrose/graphs/contributors)
+  [![Stars Count](https://img.shields.io/github/stars/Taiizor/Sucrose.svg?style=for-the-badge&label=YILDIZ)](https://github.com/Taiizor/Sucrose/stargazers)
+  [![Forks Count](https://img.shields.io/github/forks/Taiizor/Sucrose.svg?style=for-the-badge&label=ÇATAL)](https://github.com/Taiizor/Sucrose/network/members)
+  [![Watchers Count](https://img.shields.io/github/watchers/Taiizor/Sucrose.svg?style=for-the-badge&label=GÖZLEMCİ)](https://github.com/Taiizor/Sucrose/watchers)
 
-  [![Issues Count](https://img.shields.io/github/issues/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/issues)
-  [![Pull Request Count](https://img.shields.io/github/issues-pr/Taiizor/Sucrose.svg?style=for-the-badge)](https://github.com/Taiizor/Sucrose/pulls)
-  [![Follow](https://img.shields.io/github/followers/Taiizor.svg?style=for-the-badge&label=Follow)](https://github.com/Taiizor)
-  [![Discord Server](https://img.shields.io/discord/932386235538878534?label=Discord&style=for-the-badge)](https://discord.gg/nxG977byXb)
+  [![Issues Count](https://img.shields.io/github/issues/Taiizor/Sucrose.svg?style=for-the-badge&label=SORUN)](https://github.com/Taiizor/Sucrose/issues)
+  [![Pull Request Count](https://img.shields.io/github/issues-pr/Taiizor/Sucrose.svg?style=for-the-badge&label=ÇEKME%20İSTEĞİ)](https://github.com/Taiizor/Sucrose/pulls)
+  [![Follow](https://img.shields.io/github/followers/Taiizor.svg?style=for-the-badge&label=TAKİPÇİ)](https://github.com/Taiizor)
+  [![Discord Server](https://img.shields.io/discord/932386235538878534?label=DISCORD&style=for-the-badge)](https://discord.gg/nxG977byXb)
 
-  [![Pre-Release](https://img.shields.io/github/v/release/Taiizor/Sucrose?include_prereleases&label=Pre-Release&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![Pre-Release Date](https://img.shields.io/github/release-date-pre/Taiizor/Sucrose?label=Pre-Release%20Date&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
+  [![Pre-Release](https://img.shields.io/github/v/release/Taiizor/Sucrose?include_prereleases&label=ÖN%20YAYIN&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
+  [![Pre-Release Date](https://img.shields.io/github/release-date-pre/Taiizor/Sucrose?label=ÖN%20YAYIN%20TARİHİ&style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
 
-  [![Release](https://img.shields.io/github/v/release/Taiizor/Sucrose?style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![Release Date](https://img.shields.io/github/release-date/Taiizor/Sucrose?style=for-the-badge)](https://github.com/Taiizor/Sucrose/releases/latest)
+  [![Release](https://img.shields.io/github/v/release/Taiizor/Sucrose?style=for-the-badge&label=YAYIN)](https://github.com/Taiizor/Sucrose/releases/latest)
+  [![Release Date](https://img.shields.io/github/release-date/Taiizor/Sucrose?style=for-the-badge&label=YAYIN%20TARİHİ)](https://github.com/Taiizor/Sucrose/releases/latest)
 
-  [![Code Size](https://img.shields.io/github/languages/code-size/Taiizor/Sucrose?style=for-the-badge)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
-  [![Repo Size](https://img.shields.io/github/repo-size/Taiizor/Sucrose?style=for-the-badge)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
-
-  <!--[![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/store/apps/XP8JGPBHTJGLC)
-  [![Xbox Support](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white)](https://www.microsoft.com/store/apps/XP8JGPBHTJGLC)
-  [![MacOS Support](https://img.shields.io/badge/MACOS-adb8c5?style=for-the-badge&logo=macos&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)-->
-
-  <!--[![Ubuntu Support](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![Arch Linux Support](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  
-  [![Android Support](https://img.shields.io/badge/Android-32DE84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)
-  [![iOS Support](https://img.shields.io/badge/iOS-A3AAAE?style=for-the-badge&logo=ios&logoColor=white)](https://github.com/Taiizor/Sucrose/releases/latest)-->
+  [![Code Size](https://img.shields.io/github/languages/code-size/Taiizor/Sucrose?style=for-the-badge&label=KOD%20BOYUTU)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
+  [![Repo Size](https://img.shields.io/github/repo-size/Taiizor/Sucrose?style=for-the-badge&label=DEPO%20BOYUTU)](https://github.com/Taiizor/Sucrose/archive/refs/heads/develop.zip)
 
 </div>
 
 <div align="center">
-  <h2>Features</h2>
+  <h2>Özellikler</h2>
   <p>
-    <em>Take a moment, preview GIF clips may take some time to load.</em>
+    <em>Bir dakika bekleyin, önizleme GIF'lerinin yüklenmesi biraz zaman alabilir.</em>
   </p>
 </div>
 
 <div align="center">
-  <h4>Wallpaper Varieties</h4>
+  <h4>Duvar Kağıdı Çeşitleri</h4>
   <table align="center" style="margin:auto">
     <tr>
-      <th>Wallpaper Type</th>
-      <th>Example</th>
-      <th>Interactive</th>
-      <th>Resolution</th>
-      <th>Performance</th>
+      <th>Duvar Kağıdı Türü</th>
+      <th>Örnek</th>
+      <th>Etkileşimli</th>
+      <th>Çözünürlük</th>
+      <th>Performans</th>
     </tr>
     <tr align="center">
       <td>Gif</td>
       <td>
         <img src=".screenshots/Gif.gif" width="256" height="144" />
-        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Colorful/Asus ROG-1">Asus ROG</a> Wallpaper
+        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Colorful/Asus ROG-1">Asus ROG</a> Duvar Kağıdı
       </td>
-      <td>No</td>
-      <td>Variable</td>
-      <td>Fixed</td>
+      <td>Hayır</td>
+      <td>Değişken</td>
+      <td>Sabit</td>
     </tr>
     <tr align="center">
       <td>Url</td>
       <td>
         <img src=".screenshots/Url.gif" width="256" height="144" />
-        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Dynamic/The 25th Hour-1">The 25th Hour</a> Wallpaper
+        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Dynamic/The 25th Hour-1">The 25th Hour</a> Duvar Kağıdı
       </td>
-      <td>Yes</td>
-      <td>Fixed</td>
-      <td>Variable</td>
+      <td>Evet</td>
+      <td>Sabit</td>
+      <td>Değişken</td>
     </tr>
     <tr align="center">
       <td>Web</td>
       <td>
         <img src=".screenshots/Web.gif" width="256" height="144" />
-        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Animals/Cat vs Ball of Wool-1">Cat vs Ball of Wool</a> Wallpaper
+        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Animals/Cat vs Ball of Wool-1">Cat vs Ball of Wool</a> Duvar Kağıdı
       </td>
-      <td>Yes</td>
-      <td>Fixed</td>
-      <td>Variable</td>
+      <td>Evet</td>
+      <td>Sabit</td>
+      <td>Değişken</td>
     </tr>
     <tr align="center">
       <td>Video</td>
       <td>
         <img src=".screenshots/Video.gif" width="256" height="144" />
-        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Vehicles/Batmobile Pursuit-1">Batmobile Pursuit</a> Wallpaper
+        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Vehicles/Batmobile Pursuit-1">Batmobile Pursuit</a> Duvar Kağıdı
       </td>
-      <td>No</td>
-      <td>Variable</td>
-      <td>Fixed</td>
+      <td>Hayır</td>
+      <td>Değişken</td>
+      <td>Sabit</td>
     </tr>
     <tr align="center">
       <td>YouTube</td>
       <td>
       <img src=".screenshots/YouTube.gif" width="256" height="144" />
-        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Space/Floating in Space-1">Floating in Space</a> Wallpaper
+        <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Space/Floating in Space-1">Floating in Space</a> Duvar Kağıdı
       </td>
-      <td>No</td>
-      <td>Fixed</td>
-      <td>Variable</td>
+      <td>Hayır</td>
+      <td>Sabit</td>
+      <td>Değişken</td>
     </tr>
     <tr align="center">
       <td>Application</td>
       <td>
         <img src=".screenshots/Application.gif" width="256" height="144" />
-        <br><a href="https://github.com/BayatGames/RedRunner">Red Runner</a> Wallpaper
+        <br><a href="https://github.com/BayatGames/RedRunner">Red Runner</a> Duvar Kağıdı
       </td>
-      <td>Yes</td>
-      <td>Fixed</td>
-      <td>Variable</td>
+      <td>Evet</td>
+      <td>Sabit</td>
+      <td>Değişken</td>
     </tr>
   </table>
 </div>
 
 <div align="center">
   <div>
-    <h4>More Features</h4>
-    <p>● Light and Dark theme feature.</p>
-    <p>● Create your own wallpapers simply or in detail.</p>
-    <p>● Supports multiple screens and all screen resolutions.</p>
-    <p>● Customize various wallpaper engines and plugins freely.</p>
-    <p>● Completely open-source and free, no feature requires payment.</p>
-    <p>● Create media-responsive wallpapers using the Sucrose Audio API.</p>
-    <p>● Determine the fate of the wallpaper based on system performance.</p>
-    <p>● Create wallpapers that display system status using the Sucrose System API.</p>
-    <p>● You can use any website you want as a wallpaper with CefSharp and WebView.</p>
-    <p>● Automatically switch between different wallpapers at specified time intervals or randomly.</p>
+    <h4>Daha Fazla Özellik</h4>
+    <p>● Açık ve Koyu tema özelliği.</p>
+    <p>● Birden fazla ekranı ve tüm ekran çözünürlüklerini destekler.</p>
+    <p>● Kendi duvar kağıtlarınızı basit veya detaylı bir şekilde oluşturun.</p>
+    <p>● Çeşitli duvar kağıdı motorlarını ve eklentilerini özgürce özelleştirin.</p>
+    <p>● Sistem performansına bağlı olarak duvar kağıdının davranışını belirleyin.</p>
+    <p>● Sucrose Audio API kullanarak medyaya duyarlı duvar kağıtları oluşturun.</p>
+    <p>● Tamamen açık kaynaklı ve ücretsiz, hiçbir özellik için ödeme gerektirmez.</p>
+    <p>● Sucrose System API kullanarak sistem durumunu gösteren duvar kağıtları oluşturun.</p>
+    <p>● CefSharp ve WebView ile istediğiniz herhangi bir web sitesini duvar kağıdı olarak kullanabilirsiniz.</p>
+    <p>● Belirli zaman aralıklarında veya rastgele olarak farklı duvar kağıtları arasında otomatik geçiş yapın.</p>
   </div>
 
   <div>
-    <h4>Create and Share Wallpapers</h4>
-    <p>● Create your own custom wallpapers and share them with friends or the Sucrose community.</p>
-    <p>● Explore a store of user-submitted wallpapers and download them directly from the Sucrose store.</p>
+    <h4>Duvar Kağıtları Oluşturun ve Paylaşın</h4>
+    <p>● Kendi özel duvar kağıtlarınızı oluşturun ve arkadaşlarınızla veya Sucrose topluluğuyla paylaşın.</p>
+    <p>● Kullanıcılar tarafından sunulan duvar kağıtlarını keşfedin ve doğrudan Sucrose mağazasından indirin.</p>
   </div>
 
   <div>
-    <h4>Performance</h4>
-    <p>● Optimize CPU and GPU usage for smooth performance.</p>
-    <p>● Power-saving mode to pause wallpapers when running on battery (laptops).</p>
-    <p>● Auto-pause wallpapers when fullscreen applications/games run to conserve resources.</p>
+    <h4>Performans</h4>
+    <p>● Sorunsuz performans için CPU ve GPU kullanımını optimize edin.</p>
+    <p>● Pil gücüyle çalışırken (dizüstü bilgisayarlar) duvar kağıtlarını duraklatmak için güç tasarrufu modu.</p>
+    <p>● Kaynakları korumak için tam ekran uygulamalar/oyunlar çalışırken duvar kağıtlarını otomatik duraklatma.</p>
   </div>
 </div>
 
 <div align="center">
-  <h2>Download</h2>
+  <h2>İndirme</h2>
 
   <strong>Microsoft Store</strong>
 
@@ -315,48 +305,48 @@
 
   <!--<p></p>
 
-  <strong>About</strong>
+  <strong>Hakkında</strong>
 
   <table align="center" style="margin:auto">
     <tr align="center">
       <td>
-        <p><strong>.NET Framework</strong>: .NET Framework is a Windows-only version of .NET for building client and server applications.</p>
+        <p><strong>.NET Framework</strong>: .NET Framework, istemci ve sunucu uygulamaları oluşturmak için Windows'a özel bir .NET sürümüdür.</p>
       </td>
     </tr>
     <tr align="center">
       <td>
-        <p><strong>.NET</strong>: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.</p>
+        <p><strong>.NET</strong>: .NET, birçok farklı uygulama türü oluşturmak için ücretsiz, platformlar arası, açık kaynaklı bir geliştirici platformudur.</p>
       </td>
     </tr>
   </table>-->
 </div>
 
 <div align="center">
-  <h2>Support</h2>
-  <p>We appreciate any contribution to Sucrose. Here are some ways to support the project:</p>
+  <h2>Destek</h2>
+  <p>Sucrose'a yapılan her türlü katkıyı takdir ediyoruz. İşte projeyi desteklemenin bazı yolları:</p>
 
   <div>
-    <h4>Developer</h4>
-    <p>● Contribute to the codebase and help improve Sucrose.</p>
+    <h4>Geliştirici</h4>
+    <p>● Kod tabanına katkıda bulunun ve Sucrose'u geliştirmeye yardımcı olun.</p>
   </div>
 
   <div>
-    <h4>Designer</h4>
-    <p>● Improve the UI/UX of Sucrose for a better user experience.</p>
+    <h4>Tasarımcı</h4>
+    <p>● Daha iyi bir kullanıcı deneyimi için Sucrose'un kullanıcı arayüzünü/deneyimini geliştirin.</p>
   </div>
 
   <div>
-    <h4>Localization</h4>
-    <p>● Help translate Sucrose into more languages to reach a broader audience.</p>
+    <h4>Yerelleştirme</h4>
+    <p>● Sucrose'u daha geniş bir kitleye ulaşmak için daha fazla dile çevirmeye yardımcı olun.</p>
   </div>
 
   <div>
-    <h4>Feedback &amp; Bug Reports</h4>
-    <p>● Suggest new features or report bugs to help us improve Sucrose.</p>
+    <h4>Geri Bildirim ve Hata Raporları</h4>
+    <p>● Sucrose'u geliştirmemize yardımcı olmak için yeni özellikler önerin veya hataları bildirin.</p>
   </div>
 
   <div>
-    <h4>Spread the Word</h4>
-    <p>● Star this repository and share your experiences with Sucrose on social media.</p>
+    <h4>Paylaşın</h4>
+    <p>● Bu depoyu yıldızlayın ve Sucrose ile ilgili deneyimlerinizi sosyal medyada paylaşın.</p>
   </div>
 </div>
