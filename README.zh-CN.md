@@ -1,5 +1,5 @@
 <div align="left">
-  <h4><a href="README.md">英语 (English)</a> | 中文</a></h4>
+  <h4><a href="README.md">英语 (English)</a> | <a href="README.tr-TR.md">土耳其语 (Türkçe)</a> | 中文</a></h4>
   <br>
   <br>
 </div>
@@ -313,7 +313,7 @@
     </tr>
   </table>
 
-  <p></p>
+  <!--<p></p>
 
   <strong>关于</strong>
 
@@ -328,7 +328,7 @@
         <p><strong>.NET</strong>: .NET 是一个免费的、跨平台的、开源开发人员平台，用于构建许多不同类型的应用程序。</p>
       </td>
     </tr>
-  </table>
+  </table>-->
 </div>
 
 <div align="center">

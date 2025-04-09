@@ -1,5 +1,5 @@
 <div align="left">
-  <h4>English | <a href="README.tr-TR.md">Turkish (Türkçe)</a> | <a href="README.zh-CN.md">Chinese (中文)</a></h4>
+  <h4><a href="README.md">İngilizce (English)</a> | Türkçe | <a href="README.zh-CN.md">Çince (中文)</a></h4>
   <br>
   <br>
 </div>
@@ -147,7 +147,7 @@
     <tr align="center">
       <td>YouTube</td>
       <td>
-	    <img src=".screenshots/YouTube.gif" width="256" height="144" />
+      <img src=".screenshots/YouTube.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Space/Floating in Space-1">Floating in Space</a> Wallpaper
       </td>
       <td>No</td>
