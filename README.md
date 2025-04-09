@@ -312,6 +312,23 @@
       </td>
     </tr>
   </table>
+
+  <p></p>
+
+  <strong>About</strong>
+
+  <table align="center" style="margin:auto">
+    <tr align="center">
+      <td>
+        <p><strong>.NET Framework</strong>: .NET Framework is a Windows-only version of .NET for building client and server applications.</p>
+      </td>
+    </tr>
+    <tr align="center">
+      <td>
+        <p><strong>.NET</strong>: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div align="center">

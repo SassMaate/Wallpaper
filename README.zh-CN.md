@@ -312,6 +312,23 @@
       </td>
     </tr>
   </table>
+
+  <p></p>
+
+  <strong>关于</strong>
+
+  <table align="center" style="margin:auto">
+    <tr align="center">
+      <td>
+        <p><strong>.NET Framework</strong>: .NET Framework 是仅适用于 Windows 版本的 .NET，用于生成客户端和服务器应用程序。</p>
+      </td>
+    </tr>
+    <tr align="center">
+      <td>
+        <p><strong>.NET</strong>: .NET 是一个免费的、跨平台的、开源开发人员平台，用于构建许多不同类型的应用程序。</p>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div align="center">
