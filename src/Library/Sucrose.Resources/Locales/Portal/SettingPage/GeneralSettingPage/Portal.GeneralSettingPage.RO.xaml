@@ -33,6 +33,7 @@
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Selectați Imagine de Fundal</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Alegeți o imagine de fundal</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Fișiere imagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Din păcate, fișierul imagine selectat este utilizat de un alt proces</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Din păcate, nu aveți permisiunea de a accesa fișierul imagine selectat</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Redimensionare Fundal:</system:String>

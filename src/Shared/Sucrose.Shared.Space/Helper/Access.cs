@@ -20,9 +20,9 @@ namespace Sucrose.Shared.Space.Helper
 
                 FileSecurity fileSecurity = fileInfo.GetAccessControl();
 
-                AuthorizationRuleCollection rules = fileSecurity.GetAccessRules(true, true, typeof(NTAccount));
-
                 WindowsPrincipal principal = SSSHU.GetPrincipal(SSSHU.GetIdentity());
+
+                AuthorizationRuleCollection rules = fileSecurity.GetAccessRules(true, true, typeof(NTAccount));
 
                 return Permissions(principal, rules, FileSystemRights.Read) && Permissions(principal, rules, FileSystemRights.Write) && Permissions(principal, rules, FileSystemRights.Delete);
             }
@@ -43,11 +43,11 @@ namespace Sucrose.Shared.Space.Helper
                     return false;
                 }
 
+                WindowsPrincipal principal = SSSHU.GetPrincipal(SSSHU.GetIdentity());
+
                 DirectorySecurity directorySecurity = directoryInfo.GetAccessControl();
 
                 AuthorizationRuleCollection rules = directorySecurity.GetAccessRules(true, true, typeof(NTAccount));
-
-                WindowsPrincipal principal = SSSHU.GetPrincipal(SSSHU.GetIdentity());
 
                 return Permissions(principal, rules, FileSystemRights.Delete) && Permissions(principal, rules, FileSystemRights.ListDirectory) && Permissions(principal, rules, FileSystemRights.CreateDirectories);
             }

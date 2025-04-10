@@ -33,6 +33,7 @@
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Vybrat Obrázek Pozadí</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Vyberte obrázek pozadí</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Obrázky (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Bohužel, vybraný obrazový soubor je používán jiným procesem</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Bohužel nemáte oprávnění k přístupu k vybranému souboru obrázku</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Roztáhnout Pozadí:</system:String>

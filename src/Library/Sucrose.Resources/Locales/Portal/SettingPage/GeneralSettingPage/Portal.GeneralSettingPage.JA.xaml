@@ -33,6 +33,7 @@
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">背景画像を選択</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">背景画像を選択</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">画像ファイル (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">申し訳ありませんが、選択した画像ファイルは別のプロセスによって使用されています</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">残念ながら、選択した画像ファイルにアクセスする権限がありません</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">背景の拡大縮小:</system:String>

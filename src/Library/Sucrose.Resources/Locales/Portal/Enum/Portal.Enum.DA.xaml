@@ -93,6 +93,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Access">Du har ikke adgang til den pågældende fil</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Author">'Author' er enten tomt eller for langt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Folder">Temafiler er ikke i rodmappe af arkivet</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">Den pågældende fil bruges af en anden proces</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Source">Kunne ikke finde 'Source'-filen</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Contact">'Contact' er enten tomt eller for langt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Preview">Kunne ikke finde 'Preview'-filen</system:String>

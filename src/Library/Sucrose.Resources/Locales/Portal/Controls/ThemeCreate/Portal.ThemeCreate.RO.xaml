@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Notificare Importantă</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Fișierul selectat va fi inclus în tema împreună cu toate celelalte fișiere și foldere din director.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Am Înțeles</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Fișier în Uz</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Fișierul selectat este utilizat de un alt proces.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Am Înțeles</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Avertisment de Acces</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Nu aveți permisiunea de a accesa fișierul selectat.</system:String>

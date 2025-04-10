@@ -26,6 +26,7 @@ using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSSHA = Sucrose.Shared.Space.Helper.Access;
 using SSSHC = Sucrose.Shared.Space.Helper.Copy;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
+using SSSHL = Sucrose.Shared.Space.Helper.Lock;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -999,27 +1000,41 @@ namespace Sucrose.Portal.Views.Controls
                     {
                         if (SSSHA.File(Record))
                         {
-                            string Extension = Path.GetExtension(Record).ToLowerInvariant();
-
-                            if (Extension is ".gif")
+                            if (SSSHL.File(Record))
                             {
-                                GifDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(Record), SSDEWT.Gif);
-                                GifTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(Record));
+                                string Extension = Path.GetExtension(Record).ToLowerInvariant();
 
-                                try
+                                if (Extension is ".gif")
                                 {
-                                    GifImagine.Source = await Loader.LoadAsync(Record);
-                                }
-                                catch (Exception Exception)
-                                {
-                                    await SSWEW.Watch_CatchException(Exception);
-                                }
+                                    GifDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(Record), SSDEWT.Gif);
+                                    GifTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(Record));
 
-                                GifDelete.Visibility = Visibility.Visible;
-                                GifIcon.Visibility = Visibility.Collapsed;
-                                GifText.Visibility = Visibility.Collapsed;
-                                GifRectangle.Stroke = Brushes.SeaGreen;
-                                break;
+                                    try
+                                    {
+                                        GifImagine.Source = await Loader.LoadAsync(Record);
+                                    }
+                                    catch (Exception Exception)
+                                    {
+                                        await SSWEW.Watch_CatchException(Exception);
+                                    }
+
+                                    GifDelete.Visibility = Visibility.Visible;
+                                    GifIcon.Visibility = Visibility.Collapsed;
+                                    GifText.Visibility = Visibility.Collapsed;
+                                    GifRectangle.Stroke = Brushes.SeaGreen;
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                MessageBox Warning = new()
+                                {
+                                    Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                                    Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                                    CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                                };
+
+                                await Warning.ShowDialogAsync();
                             }
                         }
                         else
@@ -1086,27 +1101,41 @@ namespace Sucrose.Portal.Views.Controls
                     {
                         if (SSSHA.File(Record))
                         {
-                            string Extension = Path.GetExtension(Record).ToLowerInvariant();
-
-                            if (Extension is ".mp4" or ".avi" or ".mov" or ".mkv" or ".ogv" or ".flv" or ".wmv" or ".hevc" or ".webm" or ".mpeg" or ".mpeg1" or ".mpeg2" or ".mpeg4")
+                            if (SSSHL.File(Record))
                             {
-                                VideoDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(Record), SSDEWT.Video);
-                                VideoTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(Record));
+                                string Extension = Path.GetExtension(Record).ToLowerInvariant();
 
-                                try
+                                if (Extension is ".mp4" or ".avi" or ".mov" or ".mkv" or ".ogv" or ".flv" or ".wmv" or ".hevc" or ".webm" or ".mpeg" or ".mpeg1" or ".mpeg2" or ".mpeg4")
                                 {
-                                    VideoImagine.Source = await Loader.LoadAsync(Record);
-                                }
-                                catch (Exception Exception)
-                                {
-                                    await SSWEW.Watch_CatchException(Exception);
-                                }
+                                    VideoDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(Record), SSDEWT.Video);
+                                    VideoTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(Record));
 
-                                VideoDelete.Visibility = Visibility.Visible;
-                                VideoIcon.Visibility = Visibility.Collapsed;
-                                VideoText.Visibility = Visibility.Collapsed;
-                                VideoRectangle.Stroke = Brushes.SeaGreen;
-                                break;
+                                    try
+                                    {
+                                        VideoImagine.Source = await Loader.LoadAsync(Record);
+                                    }
+                                    catch (Exception Exception)
+                                    {
+                                        await SSWEW.Watch_CatchException(Exception);
+                                    }
+
+                                    VideoDelete.Visibility = Visibility.Visible;
+                                    VideoIcon.Visibility = Visibility.Collapsed;
+                                    VideoText.Visibility = Visibility.Collapsed;
+                                    VideoRectangle.Stroke = Brushes.SeaGreen;
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                MessageBox Warning = new()
+                                {
+                                    Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                                    Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                                    CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                                };
+
+                                await Warning.ShowDialogAsync();
                             }
                         }
                         else
@@ -1181,19 +1210,33 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    Button.Content = FileDialog.FileName;
-                    Button.BorderBrush = WebThumbnail.BorderBrush;
-                    WebTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
-                    WebDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Web);
-
-                    MessageBox Warning = new()
+                    if (SSSHL.File(FileDialog.FileName))
                     {
-                        Title = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Title"),
-                        Content = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Message"),
-                        CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Close")
-                    };
+                        Button.Content = FileDialog.FileName;
+                        Button.BorderBrush = WebThumbnail.BorderBrush;
+                        WebTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
+                        WebDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Web);
 
-                    await Warning.ShowDialogAsync();
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {
@@ -1239,7 +1282,21 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    Button.Content = FileDialog.FileName;
+                    if (SSSHL.File(FileDialog.FileName))
+                    {
+                        Button.Content = FileDialog.FileName;
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {
@@ -1283,7 +1340,21 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    Button.Content = FileDialog.FileName;
+                    if (SSSHL.File(FileDialog.FileName))
+                    {
+                        Button.Content = FileDialog.FileName;
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {
@@ -1348,19 +1419,33 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    Button.Content = FileDialog.FileName;
-                    Button.BorderBrush = ApplicationThumbnail.BorderBrush;
-                    ApplicationTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
-                    ApplicationDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Application);
-
-                    MessageBox Warning = new()
+                    if (SSSHL.File(FileDialog.FileName))
                     {
-                        Title = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Title"),
-                        Content = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Message"),
-                        CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Close")
-                    };
+                        Button.Content = FileDialog.FileName;
+                        Button.BorderBrush = ApplicationThumbnail.BorderBrush;
+                        ApplicationTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
+                        ApplicationDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Application);
 
-                    await Warning.ShowDialogAsync();
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Copy", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {
@@ -1394,22 +1479,36 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    GifDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Gif);
-                    GifTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
-
-                    try
+                    if (SSSHL.File(FileDialog.FileName))
                     {
-                        GifImagine.Source = await Loader.LoadAsync(FileDialog.FileName);
-                    }
-                    catch (Exception Exception)
-                    {
-                        await SSWEW.Watch_CatchException(Exception);
-                    }
+                        GifDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Gif);
+                        GifTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
 
-                    GifDelete.Visibility = Visibility.Visible;
-                    GifIcon.Visibility = Visibility.Collapsed;
-                    GifText.Visibility = Visibility.Collapsed;
-                    GifRectangle.Stroke = Brushes.SeaGreen;
+                        try
+                        {
+                            GifImagine.Source = await Loader.LoadAsync(FileDialog.FileName);
+                        }
+                        catch (Exception Exception)
+                        {
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+
+                        GifDelete.Visibility = Visibility.Visible;
+                        GifIcon.Visibility = Visibility.Collapsed;
+                        GifText.Visibility = Visibility.Collapsed;
+                        GifRectangle.Stroke = Brushes.SeaGreen;
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {
@@ -1443,22 +1542,36 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SSSHA.File(FileDialog.FileName))
                 {
-                    VideoDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Video);
-                    VideoTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
-
-                    try
+                    if (SSSHL.File(FileDialog.FileName))
                     {
-                        VideoImagine.Source = await Loader.LoadAsync(FileDialog.FileName);
-                    }
-                    catch (Exception Exception)
-                    {
-                        await SSWEW.Watch_CatchException(Exception);
-                    }
+                        VideoDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(FileDialog.FileName), SSDEWT.Video);
+                        VideoTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(FileDialog.FileName));
 
-                    VideoDelete.Visibility = Visibility.Visible;
-                    VideoIcon.Visibility = Visibility.Collapsed;
-                    VideoText.Visibility = Visibility.Collapsed;
-                    VideoRectangle.Stroke = Brushes.SeaGreen;
+                        try
+                        {
+                            VideoImagine.Source = await Loader.LoadAsync(FileDialog.FileName);
+                        }
+                        catch (Exception Exception)
+                        {
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+
+                        VideoDelete.Visibility = Visibility.Visible;
+                        VideoIcon.Visibility = Visibility.Collapsed;
+                        VideoText.Visibility = Visibility.Collapsed;
+                        VideoRectangle.Stroke = Brushes.SeaGreen;
+                    }
+                    else
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                 }
                 else
                 {

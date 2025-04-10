@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Selecteer een bestand</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Alle bestanden (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Begrepen</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Bestand in gebruik</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Het geselecteerde bestand wordt gebruikt door een ander proces.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Begrepen</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Toegangswaarschuwing</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">U heeft geen toestemming om toegang te krijgen tot het geselecteerde bestand.</system:String>

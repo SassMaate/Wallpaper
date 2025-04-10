@@ -93,6 +93,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Access">関連するファイルにアクセスする権限がありません</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Author">'Author'の値は空または非常に長いです</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Folder">テーマファイルはアーカイブのルートディレクトリにありません</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">該当するファイルは別のプロセスによって使用されています</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Source">'Source'ファイルが見つかりませんでした</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Contact">'Contact'の値は空または非常に長いです</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Preview">'Preview'ファイルが見つかりませんでした</system:String>

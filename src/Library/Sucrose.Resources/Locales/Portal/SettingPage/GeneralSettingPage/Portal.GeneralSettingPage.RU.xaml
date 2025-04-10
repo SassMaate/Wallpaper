@@ -33,6 +33,7 @@
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Выбрать фоновое изображение</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Выберите фоновое изображение</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Изображения (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">К сожалению, выбранный файл изображения используется другим процессом</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">К сожалению, у вас нет прав доступа к выбранному файлу изображения</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Размер фона:</system:String>

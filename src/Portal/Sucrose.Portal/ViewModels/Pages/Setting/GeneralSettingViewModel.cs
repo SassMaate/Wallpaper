@@ -42,7 +42,8 @@ using SSLHR = Sucrose.Shared.Live.Helper.Run;
 using SSMI = Sucrose.Signal.Manage.Internal;
 using SSSHA = Sucrose.Shared.Space.Helper.Access;
 using SSSHC = Sucrose.Shared.Space.Helper.Copy;
-using SSSHL = Sucrose.Shared.Space.Helper.Live;
+using SSSHLE = Sucrose.Shared.Space.Helper.Live;
+using SSSHLK = Sucrose.Shared.Space.Helper.Lock;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -659,11 +660,22 @@ namespace Sucrose.Portal.ViewModels.Pages
                 {
                     if (SSSHA.File(Destination))
                     {
-                        BackgroundImage.Content = Destination;
+                        if (SSSHLK.File(Destination))
+                        {
+                            BackgroundImage.Content = Destination;
 
-                        SMMI.PortalSettingManager.SetSetting(SMMCP.BackgroundImage, Destination);
+                            SMMI.PortalSettingManager.SetSetting(SMMCP.BackgroundImage, Destination);
 
-                        SPMI.BackdropService.BackdropImage = Destination;
+                            SPMI.BackdropService.BackdropImage = Destination;
+                        }
+                        else
+                        {
+                            BackgroundImage.Content = SRER.GetValue("Portal", "GeneralSettingPage", "WindowBackdrop", "BackgroundImage", "Lock");
+
+                            await Task.Delay(3000);
+
+                            BackgroundImage.Content = string.IsNullOrEmpty(SMMP.BackgroundImage) ? SRER.GetValue("Portal", "GeneralSettingPage", "WindowBackdrop", "BackgroundImage", "Select") : SMMP.BackgroundImage;
+                        }
                     }
                     else
                     {
@@ -704,7 +716,7 @@ namespace Sucrose.Portal.ViewModels.Pages
 
                             if (SMML.Move)
                             {
-                                if (SSSHL.Run())
+                                if (SSSHLE.Run())
                                 {
                                     SSLHK.Stop();
 
@@ -729,7 +741,7 @@ namespace Sucrose.Portal.ViewModels.Pages
                             }
                             else
                             {
-                                if (SSSHL.Run())
+                                if (SSSHLE.Run())
                                 {
                                     SSLHK.Stop();
                                 }

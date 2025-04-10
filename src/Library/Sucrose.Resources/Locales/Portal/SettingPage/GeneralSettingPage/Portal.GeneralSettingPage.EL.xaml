@@ -33,6 +33,7 @@
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Επιλέξτε εικόνα φόντου</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Επιλέξτε μια εικόνα φόντου</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Αρχεία εικόνας (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Δυστυχώς, το επιλεγμένο αρχείο εικόνας χρησιμοποιείται από άλλη διεργασία</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Δυστυχώς δεν έχετε δικαίωμα πρόσβασης στο επιλεγμένο αρχείο εικόνας</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Επέκταση του φόντου:</system:String>

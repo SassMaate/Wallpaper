@@ -93,6 +93,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Access">Du har inte behörighet att komma åt den aktuella filen</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Author">'Author' är tomt eller för långt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Folder">Temafilerna finns inte i rotkatalogen för arkivet</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">Den aktuella filen används av en annan process</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Source">Filen 'Source' kunde inte hittas</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Contact">'Contact' är tomt eller för långt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Preview">Filen 'Preview' kunde inte hittas</system:String>

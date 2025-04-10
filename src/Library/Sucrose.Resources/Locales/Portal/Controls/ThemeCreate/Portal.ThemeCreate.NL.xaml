@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Belangrijke Mededeling</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Het geselecteerde bestand wordt samen met alle andere bestanden en mappen in de directory opgenomen in het thema.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Begrepen</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Bestand in Gebruik</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Het geselecteerde bestand wordt gebruikt door een ander proces.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Begrepen</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Toegangswaarschuwing</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">U heeft geen toestemming om toegang te krijgen tot het geselecteerde bestand.</system:String>

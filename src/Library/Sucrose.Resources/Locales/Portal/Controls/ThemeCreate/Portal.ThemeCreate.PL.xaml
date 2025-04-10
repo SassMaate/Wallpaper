@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Ważne Powiadomienie</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Wybrany plik zostanie dołączony do motywu wraz ze wszystkimi innymi plikami i folderami w katalogu.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Zrozumiano</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Plik jest Używany</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Wybrany plik jest używany przez inny proces.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Zrozumiałem</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Ostrzeżenie o Dostępie</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Nie masz uprawnień do dostępu do wybranego pliku.</system:String>

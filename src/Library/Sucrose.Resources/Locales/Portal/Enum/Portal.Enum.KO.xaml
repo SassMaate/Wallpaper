@@ -93,6 +93,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Access">관련 파일에 접근할 권한이 없습니다</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Author">'Author' 값이 비어 있거나 너무 김</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Folder">테마 파일이 보관함의 루트 디렉터리에 없습니다</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">해당 파일이 다른 프로세스에 의해 사용되고 있습니다</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Source">'Source' 파일을 찾을 수 없음</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Contact">'Contact' 값이 비어 있거나 너무 김</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Preview">'Preview' 파일을 찾을 수 없음</system:String>

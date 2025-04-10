@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Välj en fil</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Alla filer (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Jag Förstår</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Filen används</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Den valda filen används av en annan process.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Förstått</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Åtkomstvarning</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Du har inte behörighet att få åtkomst till den valda filen.</system:String>

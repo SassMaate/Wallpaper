@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Pilih sebuah file</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Semua File (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Mengerti</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">File Sedang Digunakan</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">File yang dipilih sedang digunakan oleh proses lain.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Mengerti</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Peringatan Akses</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Anda tidak memiliki izin untuk mengakses file yang dipilih.</system:String>

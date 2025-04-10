@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Datei auswählen</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Alle Dateien (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Verstanden</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Datei wird verwendet</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Die ausgewählte Datei wird von einem anderen Prozess verwendet.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Verstanden</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Zugriffswarnung</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Sie haben keine Berechtigung, auf die ausgewählte Datei zuzugreifen.</system:String>

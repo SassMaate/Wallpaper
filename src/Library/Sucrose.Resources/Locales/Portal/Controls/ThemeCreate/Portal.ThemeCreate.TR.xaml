@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Önemli Uyarı</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Seçtiğiniz dosya, bulunduğu dizindeki diğer tüm dosya ve klasörlerle birlikte temaya dahil edilecektir.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Anladım</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Dosya Kullanılıyor</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Seçtiğiniz dosya başka bir işlem tarafından kullanılıyor.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Anladım</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Erişim Uyarısı</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Seçtiğiniz dosyaya erişim yetkiniz bulunmamakta.</system:String>

@@ -12,6 +12,7 @@
         Access,
         Author,
         Folder,
+        Locked,
         Source,
         Contact,
         Encrypt,

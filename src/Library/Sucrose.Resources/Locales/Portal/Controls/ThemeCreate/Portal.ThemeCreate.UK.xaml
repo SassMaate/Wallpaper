@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Важливе Попередження</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Вибраний файл буде включений у тему разом з усіма іншими файлами та папками в каталозі.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Зрозуміло</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Файл Використовується</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Вибраний файл використовується іншим процесом.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Зрозуміло</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Попередження про Доступ</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">У вас немає дозволу на доступ до вибраного файлу.</system:String>

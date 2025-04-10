@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Aviso Importante</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">O arquivo selecionado será incluído no tema junto com todos os outros arquivos e pastas no diretório.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Entendido</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Arquivo em Uso</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">O arquivo selecionado está sendo usado por outro processo.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Entendi</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Aviso de Acesso</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Você não tem permissão para acessar o arquivo selecionado.</system:String>

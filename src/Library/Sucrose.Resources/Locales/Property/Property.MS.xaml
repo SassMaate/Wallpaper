@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Pilih sebuah fail</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Semua Fail (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Faham</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Fail Sedang Digunakan</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Fail yang dipilih sedang digunakan oleh proses lain.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Faham</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Amaran Akses</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Anda tidak mempunyai kebenaran untuk mengakses fail yang dipilih.</system:String>

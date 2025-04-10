@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Viktig Advarsel</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">Den valgte filen vil bli inkludert i temaet sammen med alle andre filer og mapper i katalogen.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Forstått</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">Filen er i Bruk</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">Den valgte filen brukes av en annen prosess.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Forstått</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Tilgangsvarsel</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Du har ikke tillatelse til å få tilgang til den valgte filen.</system:String>

@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Bir dosya seç</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Tüm Dosyalar (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Anladım</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Kullanım Uyarısı</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Seçtiğiniz dosya başka bir işlem tarafından kullanılıyor.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Anladım</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Erişim Uyarısı</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Seçtiğiniz dosyaya erişim yetkiniz bulunmamakta.</system:String>

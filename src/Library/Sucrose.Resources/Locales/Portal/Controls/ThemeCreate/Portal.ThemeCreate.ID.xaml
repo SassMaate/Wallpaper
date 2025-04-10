@@ -77,6 +77,10 @@
     <system:String x:Key="Portal.ThemeCreate.Copy.Title">Pemberitahuan Penting</system:String>
     <system:String x:Key="Portal.ThemeCreate.Copy.Message">File yang dipilih akan dimasukkan ke dalam tema bersama dengan semua file dan folder lain di direktori.</system:String>
 
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">Mengerti</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">File Sedang Digunakan</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">File yang dipilih sedang digunakan oleh proses lain.</system:String>
+
     <system:String x:Key="Portal.ThemeCreate.Access.Close">Mengerti</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Title">Peringatan Akses</system:String>
     <system:String x:Key="Portal.ThemeCreate.Access.Message">Anda tidak memiliki izin untuk mengakses file yang dipilih.</system:String>

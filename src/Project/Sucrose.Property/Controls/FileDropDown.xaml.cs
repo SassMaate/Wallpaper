@@ -8,6 +8,7 @@ using SPMI = Sucrose.Property.Manage.Internal;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SSSHA = Sucrose.Shared.Space.Helper.Access;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
+using SSSHL = Sucrose.Shared.Space.Helper.Lock;
 using SSTMFDDM = Sucrose.Shared.Theme.Model.FileDropDownModel;
 using ToolTip = System.Windows.Controls.ToolTip;
 using UserControl = System.Windows.Controls.UserControl;
@@ -101,30 +102,44 @@ namespace Sucrose.Property.Controls
                 {
                     if (SSSHA.File(FileDialog.FileName))
                     {
-                        string FileName = Path.GetFileName(FileDialog.FileName);
-
-                        using (FileStream Source = new(FileDialog.FileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                        if (SSSHL.File(FileDialog.FileName))
                         {
-                            string Target = Path.Combine(SPMI.Path, Data.Folder, FileName);
+                            string FileName = Path.GetFileName(FileDialog.FileName);
 
-                            if (File.Exists(Target))
+                            using (FileStream Source = new(FileDialog.FileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                             {
-                                SSSHF.Delete(Target);
+                                string Target = Path.Combine(SPMI.Path, Data.Folder, FileName);
+
+                                if (File.Exists(Target))
+                                {
+                                    SSSHF.Delete(Target);
+                                }
+
+                                using FileStream Destination = new(Target, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+
+                                Source.CopyTo(Destination);
                             }
 
-                            using FileStream Destination = new(Target, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
+                            await Task.Delay(500);
 
-                            Source.CopyTo(Destination);
+                            if (!Component.Items.OfType<string>().Any(Item => Item == FileName))
+                            {
+                                Component.Items.Add(FileName);
+                            }
+
+                            Component.SelectedValue = FileName;
                         }
-
-                        await Task.Delay(500);
-
-                        if (!Component.Items.OfType<string>().Any(Item => Item == FileName))
+                        else
                         {
-                            Component.Items.Add(FileName);
-                        }
+                            MessageBox Warning = new()
+                            {
+                                Title = SRER.GetValue("Property", "FileDropDown", "Lock", "Title"),
+                                Content = SRER.GetValue("Property", "FileDropDown", "Lock", "Message"),
+                                CloseButtonText = SRER.GetValue("Property", "FileDropDown", "Lock", "Close")
+                            };
 
-                        Component.SelectedValue = FileName;
+                            await Warning.ShowDialogAsync();
+                        }
                     }
                     else
                     {

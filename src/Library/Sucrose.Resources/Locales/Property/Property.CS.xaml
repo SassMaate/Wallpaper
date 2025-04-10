@@ -19,6 +19,10 @@
     <system:String x:Key="Property.FileDropDown.Tip">Vyberte soubor</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Všechny soubory (*.*)|*.*</system:String>
 
+    <system:String x:Key="Property.FileDropDown.Lock.Close">Rozumím</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">Soubor je používán</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">Vybraný soubor je používán jiným procesem.</system:String>
+
     <system:String x:Key="Property.FileDropDown.Access.Close">Rozumím</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Title">Upozornění na přístup</system:String>
     <system:String x:Key="Property.FileDropDown.Access.Message">Nemáte oprávnění k přístupu k vybranému souboru.</system:String>
