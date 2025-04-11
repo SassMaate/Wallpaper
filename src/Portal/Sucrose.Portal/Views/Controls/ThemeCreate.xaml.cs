@@ -48,6 +48,7 @@ namespace Sucrose.Portal.Views.Controls
         private async Task CreateTheme()
         {
             Root.IsEnabled = false;
+            Control FocusingControl = null;
             IsPrimaryButtonEnabled = false;
             IsSecondaryButtonEnabled = true;
             CloseButtonAppearance = ControlAppearance.Dark;
@@ -70,22 +71,22 @@ namespace Sucrose.Portal.Views.Controls
                     }
                     else if (string.IsNullOrEmpty(GifTitle.Text))
                     {
-                        GifTitle.Focus();
+                        FocusingControl = GifTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(GifDescription.Text))
                     {
-                        GifDescription.Focus();
+                        FocusingControl = GifDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(GifAuthor.Text))
                     {
-                        GifAuthor.Focus();
+                        FocusingControl = GifAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(GifContact.Text) && !SSTHV.IsMail(GifContact.Text))
                     {
-                        GifContact.Focus();
+                        FocusingControl = GifContact;
                         return;
                     }
                     else
@@ -108,12 +109,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    GifTags.Focus();
+                                    FocusingControl = GifTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    GifTags.Focus();
+                                    FocusingControl = GifTags;
                                     return;
                                 }
                             }
@@ -121,7 +122,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (GifTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(GifTags.Text))
                                 {
-                                    GifTags.Focus();
+                                    FocusingControl = GifTags;
                                     return;
                                 }
                                 else
@@ -214,27 +215,27 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     if (!SSTHV.IsUrl(UrlUrl.Text))
                     {
-                        UrlUrl.Focus();
+                        FocusingControl = UrlUrl;
                         return;
                     }
                     else if (string.IsNullOrEmpty(UrlTitle.Text))
                     {
-                        UrlTitle.Focus();
+                        FocusingControl = UrlTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(UrlDescription.Text))
                     {
-                        UrlDescription.Focus();
+                        FocusingControl = UrlDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(UrlAuthor.Text))
                     {
-                        UrlAuthor.Focus();
+                        FocusingControl = UrlAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(UrlContact.Text) && !SSTHV.IsMail(UrlContact.Text))
                     {
-                        UrlContact.Focus();
+                        FocusingControl = UrlContact;
                         return;
                     }
                     else
@@ -256,12 +257,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    UrlTags.Focus();
+                                    FocusingControl = UrlTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    UrlTags.Focus();
+                                    FocusingControl = UrlTags;
                                     return;
                                 }
                             }
@@ -269,7 +270,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (UrlTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(UrlTags.Text))
                                 {
-                                    UrlTags.Focus();
+                                    FocusingControl = UrlTags;
                                     return;
                                 }
                                 else
@@ -339,27 +340,27 @@ namespace Sucrose.Portal.Views.Controls
                     if (Path.GetExtension($"{WebSource.Content}") != ".html")
                     {
                         WebSource.BorderBrush = Brushes.Crimson;
-                        WebSource.Focus();
+                        FocusingControl = WebSource;
                         return;
                     }
                     else if (string.IsNullOrEmpty(WebTitle.Text))
                     {
-                        WebTitle.Focus();
+                        FocusingControl = WebTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(WebDescription.Text))
                     {
-                        WebDescription.Focus();
+                        FocusingControl = WebDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(WebAuthor.Text))
                     {
-                        WebAuthor.Focus();
+                        FocusingControl = WebAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(WebContact.Text) && !SSTHV.IsMail(WebContact.Text))
                     {
-                        WebContact.Focus();
+                        FocusingControl = WebContact;
                         return;
                     }
                     else
@@ -381,12 +382,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    WebTags.Focus();
+                                    FocusingControl = WebTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    WebTags.Focus();
+                                    FocusingControl = WebTags;
                                     return;
                                 }
                             }
@@ -394,7 +395,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (WebTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(WebTags.Text))
                                 {
-                                    WebTags.Focus();
+                                    FocusingControl = WebTags;
                                     return;
                                 }
                                 else
@@ -472,22 +473,22 @@ namespace Sucrose.Portal.Views.Controls
                     }
                     else if (string.IsNullOrEmpty(VideoTitle.Text))
                     {
-                        VideoTitle.Focus();
+                        FocusingControl = VideoTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(VideoDescription.Text))
                     {
-                        VideoDescription.Focus();
+                        FocusingControl = VideoDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(VideoAuthor.Text))
                     {
-                        VideoAuthor.Focus();
+                        FocusingControl = VideoAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(VideoContact.Text) && !SSTHV.IsMail(VideoContact.Text))
                     {
-                        VideoContact.Focus();
+                        FocusingControl = VideoContact;
                         return;
                     }
                     else
@@ -510,12 +511,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    VideoTags.Focus();
+                                    FocusingControl = VideoTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    VideoTags.Focus();
+                                    FocusingControl = VideoTags;
                                     return;
                                 }
                             }
@@ -523,7 +524,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (VideoTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(VideoTags.Text))
                                 {
-                                    VideoTags.Focus();
+                                    FocusingControl = VideoTags;
                                     return;
                                 }
                                 else
@@ -616,27 +617,27 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     if (!SSTHV.IsYouTubeAll(YouTubeUrl.Text))
                     {
-                        YouTubeUrl.Focus();
+                        FocusingControl = YouTubeUrl;
                         return;
                     }
                     else if (string.IsNullOrEmpty(YouTubeTitle.Text))
                     {
-                        YouTubeTitle.Focus();
+                        FocusingControl = YouTubeTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(YouTubeDescription.Text))
                     {
-                        YouTubeDescription.Focus();
+                        FocusingControl = YouTubeDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(YouTubeAuthor.Text))
                     {
-                        YouTubeAuthor.Focus();
+                        FocusingControl = YouTubeAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(YouTubeContact.Text) && !SSTHV.IsMail(YouTubeContact.Text))
                     {
-                        YouTubeContact.Focus();
+                        FocusingControl = YouTubeContact;
                         return;
                     }
                     else
@@ -658,12 +659,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    YouTubeTags.Focus();
+                                    FocusingControl = YouTubeTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    YouTubeTags.Focus();
+                                    FocusingControl = YouTubeTags;
                                     return;
                                 }
                             }
@@ -671,7 +672,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (YouTubeTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(YouTubeTags.Text))
                                 {
-                                    YouTubeTags.Focus();
+                                    FocusingControl = YouTubeTags;
                                     return;
                                 }
                                 else
@@ -741,27 +742,27 @@ namespace Sucrose.Portal.Views.Controls
                     if (Path.GetExtension($"{ApplicationSource.Content}") != ".exe")
                     {
                         ApplicationSource.BorderBrush = Brushes.Crimson;
-                        ApplicationSource.Focus();
+                        FocusingControl = ApplicationSource;
                         return;
                     }
                     else if (string.IsNullOrEmpty(ApplicationTitle.Text))
                     {
-                        ApplicationTitle.Focus();
+                        FocusingControl = ApplicationTitle;
                         return;
                     }
                     else if (string.IsNullOrEmpty(ApplicationDescription.Text))
                     {
-                        ApplicationDescription.Focus();
+                        FocusingControl = ApplicationDescription;
                         return;
                     }
                     else if (string.IsNullOrEmpty(ApplicationAuthor.Text))
                     {
-                        ApplicationAuthor.Focus();
+                        FocusingControl = ApplicationAuthor;
                         return;
                     }
                     else if (!SSTHV.IsUrl(ApplicationContact.Text) && !SSTHV.IsMail(ApplicationContact.Text))
                     {
-                        ApplicationContact.Focus();
+                        FocusingControl = ApplicationContact;
                         return;
                     }
                     else
@@ -784,12 +785,12 @@ namespace Sucrose.Portal.Views.Controls
 
                                 if (Tags.Count() is < 1 or > 5)
                                 {
-                                    ApplicationTags.Focus();
+                                    FocusingControl = ApplicationTags;
                                     return;
                                 }
                                 else if (Tags.Any(Tag => Tag.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(Tag)))
                                 {
-                                    ApplicationTags.Focus();
+                                    FocusingControl = ApplicationTags;
                                     return;
                                 }
                             }
@@ -797,7 +798,7 @@ namespace Sucrose.Portal.Views.Controls
                             {
                                 if (ApplicationTags.Text.Length is < 1 or > 20 || string.IsNullOrWhiteSpace(ApplicationTags.Text))
                                 {
-                                    ApplicationTags.Focus();
+                                    FocusingControl = ApplicationTags;
                                     return;
                                 }
                                 else
@@ -818,7 +819,7 @@ namespace Sucrose.Portal.Views.Controls
                         {
                             if (ApplicationArguments.Text.Length is > 250 || string.IsNullOrWhiteSpace(ApplicationArguments.Text))
                             {
-                                ApplicationArguments.Focus();
+                                FocusingControl = ApplicationArguments;
                                 return;
                             }
                             else
@@ -884,6 +885,7 @@ namespace Sucrose.Portal.Views.Controls
             });
 
             Root.IsEnabled = true;
+            FocusingControl?.Focus();
             IsPrimaryButtonEnabled = true;
             IsSecondaryButtonEnabled = false;
             CloseButtonAppearance = ControlAppearance.Secondary;
@@ -902,6 +904,8 @@ namespace Sucrose.Portal.Views.Controls
 
             GifDelete_Click(null, null);
             VideoDelete_Click(null, null);
+            WebSourceClear_Click(null, null);
+            ApplicationSourceClear_Click(null, null);
 
             Dispose();
         }
@@ -1187,6 +1191,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void WebSourceClear_Click(object sender, RoutedEventArgs e)
         {
+            WebSource.BorderBrush = WebThumbnail.BorderBrush;
             WebSource.Content = SRER.GetValue("Portal", "ThemeCreate", "ThemeWeb", "Hint");
         }
 
@@ -1372,6 +1377,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ApplicationSourceClear_Click(object sender, RoutedEventArgs e)
         {
+            ApplicationSource.BorderBrush = ApplicationThumbnail.BorderBrush;
             ApplicationSource.Content = SRER.GetValue("Portal", "ThemeCreate", "ThemeApplication", "Hint");
         }
 
