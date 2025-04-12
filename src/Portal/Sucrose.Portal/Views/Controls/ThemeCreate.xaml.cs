@@ -363,6 +363,17 @@ namespace Sucrose.Portal.Views.Controls
                         FocusingControl = WebContact;
                         return;
                     }
+                    else if (!SSSHL.Directory(Path.GetDirectoryName($"{WebSource.Content}")))
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
+                    }
                     else
                     {
                         string Theme;
@@ -764,6 +775,17 @@ namespace Sucrose.Portal.Views.Controls
                     {
                         FocusingControl = ApplicationContact;
                         return;
+                    }
+                    else if (!SSSHL.Directory(Path.GetDirectoryName($"{ApplicationSource.Content}")))
+                    {
+                        MessageBox Warning = new()
+                        {
+                            Title = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Title"),
+                            Content = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Message"),
+                            CloseButtonText = SRER.GetValue("Portal", "ThemeCreate", "Lock", "Close")
+                        };
+
+                        await Warning.ShowDialogAsync();
                     }
                     else
                     {

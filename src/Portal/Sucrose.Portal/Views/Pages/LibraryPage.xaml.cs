@@ -21,6 +21,7 @@ using SSDECT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
 using SSSHA = Sucrose.Shared.Space.Helper.Access;
 using SSSHC = Sucrose.Shared.Space.Helper.Copy;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
+using SSSHL = Sucrose.Shared.Space.Helper.Lock;
 using SSSHS = Sucrose.Shared.Space.Helper.Sort;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
@@ -167,7 +168,7 @@ namespace Sucrose.Portal.Views.Pages
                             }
                         }
 
-                        if (SMML.DeleteCorrupt && SSSHA.Directory(Folder))
+                        if (SMML.DeleteCorrupt && SSSHA.Directory(Folder) && SSSHL.Directory(Folder))
                         {
                             Directory.Delete(Folder, true);
 
