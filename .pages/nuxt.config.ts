@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@pinia/nuxt'
   ],
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NUXT_PUBLIC_BASE_URL || '/Sucrose'
+    }
+  },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
     configPath: '~/tailwind.config.js',
@@ -78,7 +83,7 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     },
     baseURL: '/Sucrose/',

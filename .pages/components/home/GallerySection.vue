@@ -210,11 +210,13 @@
 <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useNuxtApp } from '#app';
 
 const { t } = useI18n();
+const { $buildImageUrl } = useNuxtApp();
 
 // Image gallery settings
-const images = [
+const imageNames = [
   'images/Preview.png',
   'images/Store.png',
   'images/Alves-Town.png',
@@ -226,6 +228,10 @@ const images = [
   'images/Inquisition.png',
   'images/Simple-System.png'
 ];
+
+const images = computed(() => {
+  return imageNames.map(name => $buildImageUrl(name));
+});
 
 // Image titles (should be i18n in real project)
 const imageTitles = {
@@ -248,7 +254,7 @@ const getImageTitle = (index) => {
 
 const currentImageIndex = ref(0);
 const imageLoading = ref(false);
-const currentImage = computed(() => images[currentImageIndex.value]);
+const currentImage = computed(() => images.value[currentImageIndex.value]);
 
 // Lightbox settings
 const showLightbox = ref(false);
@@ -287,11 +293,11 @@ const closeLightbox = () => {
 };
 
 const nextImage = () => {
-  lightboxIndex.value = (lightboxIndex.value + 1) % images.length;
+  lightboxIndex.value = (lightboxIndex.value + 1) % images.value.length;
 };
 
 const prevImage = () => {
-  lightboxIndex.value = (lightboxIndex.value - 1 + images.length) % images.length;
+  lightboxIndex.value = (lightboxIndex.value - 1 + images.value.length) % images.value.length;
 };
 
 // Gallery scroll function

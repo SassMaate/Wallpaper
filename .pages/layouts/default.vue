@@ -5,7 +5,7 @@
       <nav class="container mx-auto px-6 py-4 relative">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-2">
-            <img src="/images/Logo.svg" alt="Sucrose Logo" class="w-8 h-8 rounded-lg">
+            <img :src="logoSrc" alt="Sucrose Logo" class="w-8 h-8 rounded-lg">
             <span class="text-2xl font-bold bg-gradient-text dark:bg-gradient-text cursor-default hidden xs:inline-block">Sucrose Wallpaper Engine</span>
           </div>
           
@@ -242,6 +242,8 @@
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useThemeStore } from '~/stores/theme';
+import { useRuntimeConfig } from 'nuxt/app';
+import { useNuxtApp } from '#app';
 
 // Theme
 const themeStore = useThemeStore();
@@ -313,6 +315,11 @@ const isMobileMenuOpen = ref(false);
 // Scroll
 const isScrolled = ref(false);
 const showScrollTopButton = ref(false);
+
+const config = useRuntimeConfig();
+const baseURL = config.public.baseURL;
+const { $buildImageUrl } = useNuxtApp();
+const logoSrc = $buildImageUrl('images/Logo.svg');
 
 const toggleThemeDropdown = () => {
   isThemeDropdownOpen.value = !isThemeDropdownOpen.value;
