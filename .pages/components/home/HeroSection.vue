@@ -13,7 +13,7 @@
     
     <!-- Background Image with Modern Overlay -->
     <div class="absolute inset-0 z-5 opacity-10 dark:opacity-20">
-      <img :src="'/images/Promo.png'" alt="Background" class="w-full h-full object-cover">
+      <img :src="'./images/Promo.png'" alt="Background" class="w-full h-full object-cover">
     </div>
     
     <!-- Content -->

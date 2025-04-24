@@ -215,16 +215,16 @@ const { t } = useI18n();
 
 // Image gallery settings
 const images = [
-  '/images/Preview.png',
-  '/images/Store.png',
-  '/images/Alves-Town.png',
-  '/images/Fluid-Simulation.png',
-  '/images/Neo-Matrix-1.png',
-  '/images/Media-Parallax.png',
-  '/images/Living-Room.png',
-  '/images/Periodic-Table.png',
-  '/images/Inquisition.png',
-  '/images/Simple-System.png'
+  './images/Preview.png',
+  './images/Store.png',
+  './images/Alves-Town.png',
+  './images/Fluid-Simulation.png',
+  './images/Neo-Matrix-1.png',
+  './images/Media-Parallax.png',
+  './images/Living-Room.png',
+  './images/Periodic-Table.png',
+  './images/Inquisition.png',
+  './images/Simple-System.png'
 ];
 
 // Image titles (should be i18n in real project)
