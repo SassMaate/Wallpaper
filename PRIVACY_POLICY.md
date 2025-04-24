@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 12th October 2024
+Last updated: 24th April 2025
 
 Welcome! Thank you for choosing to use Sucrose application (hereinafter referred to as the "App"). We prioritize the privacy of our users, and this Privacy Policy is created to provide you with information about the personal information collected, used, and protected by the App. Please read this policy carefully, and by continuing to use the App, you agree to comply with the terms and practices described here.
 
@@ -19,7 +19,7 @@ The App may collect certain personal information to provide various wallpapers a
 
 ## 2. Purposes of Use
 
-Toplanan bilgiler, aşağıdaki amaçlar için kullanılabilir:
+The collected information may be used for the following purposes:
 
 - Providing and improving the App's functionality
 - Customizing and sharing of wallpapers
