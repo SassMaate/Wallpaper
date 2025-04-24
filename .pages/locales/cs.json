@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funkce",
+    "gallery": "Galerie",
+    "download": "Stáhnout"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose je všestranný engine pro tapety, který oživí vaši plochu širokou škálou interaktivních tapet.",
+    "download_ms": "Stáhnout z Microsoft Store",
+    "download_github": "Stáhnout z GitHub",
+    "tagline": "Moderní zážitek s tapetami"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose je všestranný engine pro tapety, který oživí vaši plochu širokou škálou interaktivních tapet. Zdarma a s otevřeným zdrojovým kódem.",
+      "keywords": "tapetový engine, přizpůsobení plochy, interaktivní tapety, bezplatný tapetový engine, personalizace plochy, sucrose, lively, živé tapety",
+      "og_title": "Sucrose Wallpaper Engine - Proměňte svou plochu",
+      "og_description": "Oživte svou plochu krásnými, interaktivními tapetami. Zdarma, s otevřeným zdrojovým kódem a optimalizováno pro výkon.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Interaktivní tapety na plochu",
+        "description": "Přizpůsobte si svou plochu pomocí Sucrose - bezplatného, open-source tapetového enginu s interaktivními tapetami, systémovou integrací a optimalizací výkonu."
+      },
+      "features": {
+        "title": "Funkce - Sucrose Wallpaper Engine",
+        "description": "Objevte výkonné funkce Sucrose: přizpůsobitelná témata, optimalizace výkonu, podpora více obrazovek, citlivost na zvuk a další."
+      },
+      "gallery": {
+        "title": "Galerie tapet - Sucrose Wallpaper Engine",
+        "description": "Prohlédněte si naši sbírku krásných interaktivních tapet pro Sucrose Wallpaper Engine. Zdarma ke stažení a použití."
+      },
+      "download": {
+        "title": "Stáhněte si Sucrose Wallpaper Engine - Zdarma a open source",
+        "description": "Stáhněte si Sucrose Wallpaper Engine zdarma. K dispozici na Microsoft Store a GitHub. Proměňte svůj zážitek s plochou ještě dnes."
+      }
+    }
+  },
+  "features": {
+    "title": "Funkce Sucrose",
+    "badge": "Funkce",
+    "subtitle": "Oživte svou plochu funkcemi, které nabízí tapetový engine Sucrose.",
+    "cta": "Stáhnout nyní",
+    "customizable": {
+      "title": "Přizpůsobitelná témata",
+      "description": "Přepínejte mezi světlými a tmavými tématy a vytvářejte vlastní tapety pomocí jednoduchých nebo podrobných možností přizpůsobení."
+    },
+    "performance": {
+      "title": "Optimalizováno pro výkon",
+      "description": "Chytrá správa zdrojů s automatickým pozastavením pro aplikace na celou obrazovku a režimem úspory energie pro notebooky."
+    },
+    "multiscreen": {
+      "title": "Podpora více obrazovek",
+      "description": "Podporuje více obrazovek a všechna rozlišení obrazovky pro plynulý zážitek."
+    },
+    "audio": {
+      "title": "Citlivost na zvuk",
+      "description": "Vytvářejte dynamické tapety, které reagují na vaši hudbu pomocí Sucrose Audio API."
+    },
+    "web": {
+      "title": "Webová integrace",
+      "description": "Použijte libovolnou webovou stránku jako tapetu s integrací CefSharp a WebView."
+    },
+    "switching": {
+      "title": "Automatické přepínání",
+      "description": "Automaticky přepínejte mezi tapetami v určených intervalech nebo náhodně."
+    },
+    "system": {
+      "title": "Systémová integrace",
+      "description": "Zobrazte stav systému a vytvářejte reaktivní tapety pomocí Sucrose System API."
+    },
+    "community": {
+      "title": "Sdílení v komunitě",
+      "description": "Vytvářejte a sdílejte své tapety s komunitou Sucrose prostřednictvím našeho vyhrazeného obchodu."
+    },
+    "free": {
+      "title": "Zcela zdarma",
+      "description": "S otevřeným zdrojovým kódem a zdarma k použití, všechny funkce jsou dostupné bez nutnosti platby."
+    }
+  },
+  "gallery": {
+    "title": "Snímky obrazovky Sucrose",
+    "badge": "Galerie",
+    "subtitle": "Příklady vizuálních zážitků, které nabízí tapetový engine Sucrose.",
+    "collection": "Sbírka tapet",
+    "images": {
+      "preview": "Preview - Hlavní obrazovka",
+      "store": "Store - Pohled na obchod",
+      "alves_town": "Alve's Town - Městská krajina",
+      "fluid_simulation": "Fluid Simulation - Simulace tekutin",
+      "neo_matrix": "Neo Matrix - Efekt digitálního deště",
+      "media_parallax": "Media Parallax - Mediální efekt",
+      "living_room": "Living Room - Interiérový design",
+      "periodic_table": "Periodic Table - Vědecký pohled",
+      "inquisition": "Inquisition - Historické téma",
+      "simple_system": "Simple System - Systémový monitor"
+    }
+  },
+  "download": {
+    "title": "Připraveni proměnit svou plochu?",
+    "subtitle": "Stáhněte si Sucrose Wallpaper Engine ještě dnes a zažijte svou plochu zcela novým způsobem.",
+    "ms_store": "Stáhnout z Microsoft Store",
+    "github": "Stáhnout z GitHub",
+    "source": "Zobrazit zdrojový kód"
+  },
+  "theme": {
+    "title": "Motiv",
+    "light": "Světlý",
+    "dark": "Tmavý",
+    "system": "Systémový"
+  },
+  "language": "Jazyk",
+  "search": "Hledat...",
+  "currentLanguage": "Aktuální jazyk",
+  "commonLanguages": "Běžné jazyky",
+  "allLanguages": "Všechny jazyky",
+  "footer": {
+    "copyright": "Autorská práva ©{year} Sucrose Wallpaper Engine. Všechna práva vyhrazena."
+  }
+} 

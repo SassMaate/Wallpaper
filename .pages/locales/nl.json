@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Functies",
+    "gallery": "Galerij",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose is een veelzijdige achtergrondmotor die uw desktop tot leven brengt met interactieve achtergronden.",
+    "download_ms": "Download via Microsoft Store",
+    "download_github": "Download via GitHub",
+    "tagline": "Moderne achtergrondervaring"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose is een veelzijdige achtergrondmotor die uw desktop tot leven brengt met interactieve achtergronden. Gratis en open-source.",
+      "keywords": "achtergrondmotor, desktop aanpassing, interactieve achtergronden, gratis achtergrondmotor, desktop personalisatie, sucrose, lively, dynamische achtergronden",
+      "og_title": "Sucrose Wallpaper Engine - Transformeer uw desktop",
+      "og_description": "Breng uw desktop tot leven met prachtige interactieve achtergronden. Gratis, open-source en prestatiegericht.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Interactieve Achtergronden",
+        "description": "Personaliseer uw desktop met Sucrose - een gratis open-source achtergrondmotor met interactieve achtergronden, systeemintegratie en geoptimaliseerde prestaties."
+      },
+      "features": {
+        "title": "Functies - Sucrose Wallpaper Engine",
+        "description": "Ontdek de geavanceerde functies van Sucrose: aanpasbare thema's, prestatie-optimalisatie, ondersteuning voor meerdere schermen, audio-responsiviteit en meer."
+      },
+      "gallery": {
+        "title": "Achtergrond Galerij - Sucrose Wallpaper Engine",
+        "description": "Bekijk een collectie van prachtige interactieve achtergronden voor Sucrose Wallpaper Engine. Gratis te downloaden."
+      },
+      "download": {
+        "title": "Download Sucrose Wallpaper Engine - Gratis en Open-Source",
+        "description": "Download Sucrose Wallpaper Engine gratis. Beschikbaar op Microsoft Store en GitHub. Begin vandaag nog met het transformeren van uw desktop."
+      }
+    }
+  },
+  "features": {
+    "title": "Functies van Sucrose",
+    "badge": "Functies",
+    "subtitle": "Breng uw desktop tot leven met de functies die Sucrose Wallpaper Engine biedt.",
+    "cta": "Nu downloaden",
+    "customizable": {
+      "title": "Aanpasbare thema's",
+      "description": "Schakel tussen lichte en donkere thema's, maak uw eigen achtergronden met basis- of geavanceerde instellingen."
+    },
+    "performance": {
+      "title": "Prestatie-optimalisatie",
+      "description": "Intelligent resourcebeheer met automatische pauzering bij fullscreen applicaties en energiebesparingsmodus voor laptops."
+    },
+    "multiscreen": {
+      "title": "Ondersteuning voor meerdere schermen",
+      "description": "Ondersteuning voor meerdere schermen en alle resoluties voor een naadloze ervaring."
+    },
+    "audio": {
+      "title": "Audio-responsiviteit",
+      "description": "Creëer dynamische achtergronden die reageren op muziek met de Sucrose Audio API."
+    },
+    "web": {
+      "title": "Webintegratie",
+      "description": "Gebruik websites als achtergronden met CefSharp en WebView integratie."
+    },
+    "switching": {
+      "title": "Automatisch wisselen",
+      "description": "Wissel automatisch tussen achtergronden op bepaalde intervallen of willekeurig."
+    },
+    "system": {
+      "title": "Systeemintegratie",
+      "description": "Maak achtergronden die systeemstatus weergeven en erop reageren met de Sucrose System API."
+    },
+    "community": {
+      "title": "Community delen",
+      "description": "Maak en deel achtergronden met de Sucrose-community via een speciale winkel."
+    },
+    "free": {
+      "title": "Volledig gratis",
+      "description": "Open-source en geen kosten, alle functies zijn gratis te gebruiken."
+    }
+  },
+  "gallery": {
+    "title": "Sucrose Screenshots",
+    "badge": "Galerij",
+    "subtitle": "Voorbeelden van de visuele ervaring die Sucrose Wallpaper Engine biedt.",
+    "collection": "Achtergrondcollectie",
+    "images": {
+      "preview": "Preview - Hoofdinterface",
+      "store": "Store - Winkelweergave",
+      "alves_town": "Alve's Town - Stadslandschap",
+      "fluid_simulation": "Fluid Simulation - Vloeistofsimulatie",
+      "neo_matrix": "Neo Matrix - Code regen effect",
+      "media_parallax": "Media Parallax - Media-effecten",
+      "living_room": "Living Room - Interieurontwerp",
+      "periodic_table": "Periodic Table - Wetenschappelijke visualisatie",
+      "inquisition": "Inquisition - Historisch thema",
+      "simple_system": "Simple System - Systeemmonitor"
+    }
+  },
+  "download": {
+    "title": "Klaar om uw desktop te transformeren?",
+    "subtitle": "Download Sucrose Wallpaper Engine nu en ervaar uw desktop op een volledig nieuwe manier.",
+    "ms_store": "Download via Microsoft Store",
+    "github": "Download via GitHub",
+    "source": "Bekijk broncode"
+  },
+  "theme": {
+    "title": "Thema",
+    "light": "Licht",
+    "dark": "Donker",
+    "system": "Systeem"
+  },
+  "language": "Taal",
+  "search": "Zoeken...",
+  "currentLanguage": "Huidige taal",
+  "commonLanguages": "Veelgebruikte talen",
+  "allLanguages": "Alle talen",
+  "footer": {
+    "copyright": "Copyright ©{year} Sucrose Wallpaper Engine. Alle rechten voorbehouden."
+  }
+} 

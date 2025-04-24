@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "gallery": "Galeri",
+    "download": "Unduh"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose adalah mesin wallpaper yang serbaguna yang menghidupkan desktop Anda dengan berbagai wallpaper interaktif.",
+    "download_ms": "Unduh dari Microsoft Store",
+    "download_github": "Unduh dari GitHub",
+    "tagline": "Pengalaman wallpaper modern"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose adalah mesin wallpaper yang serbaguna yang menghidupkan desktop Anda dengan berbagai wallpaper interaktif. Gratis dan open source.",
+      "keywords": "mesin wallpaper, kustomisasi desktop, wallpaper interaktif, mesin wallpaper gratis, personalisasi desktop, sucrose, lively, live wallpaper",
+      "og_title": "Sucrose Wallpaper Engine - Ubah Desktop Anda",
+      "og_description": "Hidupkan desktop Anda dengan wallpaper yang indah dan interaktif. Gratis, open source, dan dioptimalkan untuk performa.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Wallpaper Desktop Interaktif",
+        "description": "Kustomisasi desktop Anda dengan Sucrose - mesin wallpaper gratis dan open source yang menawarkan wallpaper interaktif, integrasi sistem, dan optimalisasi performa."
+      },
+      "features": {
+        "title": "Fitur - Sucrose Wallpaper Engine",
+        "description": "Temukan fitur-fitur canggih Sucrose: tema yang dapat disesuaikan, optimalisasi performa, dukungan multi-layar, reaktivitas audio, dan banyak lagi."
+      },
+      "gallery": {
+        "title": "Galeri Wallpaper - Sucrose Wallpaper Engine",
+        "description": "Jelajahi koleksi wallpaper interaktif yang indah untuk Sucrose Wallpaper Engine. Tersedia untuk diunduh dan digunakan secara gratis."
+      },
+      "download": {
+        "title": "Unduh Sucrose Wallpaper Engine - Gratis dan Open Source",
+        "description": "Unduh Sucrose Wallpaper Engine secara gratis. Tersedia di Microsoft Store dan GitHub. Ubah pengalaman desktop Anda hari ini."
+      }
+    }
+  },
+  "features": {
+    "title": "Fitur Sucrose",
+    "badge": "Fitur",
+    "subtitle": "Hidupkan desktop Anda dengan fitur-fitur yang ditawarkan oleh mesin wallpaper Sucrose.",
+    "cta": "Unduh Sekarang",
+    "customizable": {
+      "title": "Tema yang Dapat Disesuaikan",
+      "description": "Beralih antara tema Terang dan Gelap, dan buat wallpaper Anda sendiri dengan opsi kustomisasi dasar atau terperinci."
+    },
+    "performance": {
+      "title": "Dioptimalkan untuk Performa",
+      "description": "Pengelolaan sumber daya yang cerdas dengan penghentian otomatis untuk aplikasi layar penuh dan mode hemat daya untuk laptop."
+    },
+    "multiscreen": {
+      "title": "Dukungan Multi-Layar",
+      "description": "Mendukung beberapa layar dan semua resolusi layar untuk pengalaman yang mulus."
+    },
+    "audio": {
+      "title": "Responsif Audio",
+      "description": "Buat wallpaper dinamis yang bereaksi terhadap musik menggunakan Sucrose Audio API."
+    },
+    "web": {
+      "title": "Integrasi Web",
+      "description": "Gunakan situs web sebagai wallpaper dengan integrasi CefSharp dan WebView."
+    },
+    "switching": {
+      "title": "Pengalihan Otomatis",
+      "description": "Beralih secara otomatis antar wallpaper pada interval yang ditetapkan atau secara acak."
+    },
+    "system": {
+      "title": "Integrasi Sistem",
+      "description": "Tampilkan status sistem dan buat wallpaper responsif dengan Sucrose System API."
+    },
+    "community": {
+      "title": "Berbagi Komunitas",
+      "description": "Buat dan bagikan wallpaper Anda dengan komunitas Sucrose melalui toko khusus kami."
+    },
+    "free": {
+      "title": "Sepenuhnya Gratis",
+      "description": "Open source dan gratis untuk digunakan, dengan semua fitur tanpa biaya apa pun."
+    }
+  },
+  "gallery": {
+    "title": "Tangkapan Layar Sucrose",
+    "badge": "Galeri",
+    "subtitle": "Contoh pengalaman visual yang ditawarkan oleh mesin wallpaper Sucrose.",
+    "collection": "Koleksi Wallpaper",
+    "images": {
+      "preview": "Preview - Layar Utama",
+      "store": "Store - Tampilan Toko",
+      "alves_town": "Alve's Town - Pemandangan Kota",
+      "fluid_simulation": "Fluid Simulation - Simulasi Cairan",
+      "neo_matrix": "Neo Matrix - Efek Hujan Digital",
+      "media_parallax": "Media Parallax - Efek Media",
+      "living_room": "Living Room - Desain Interior",
+      "periodic_table": "Periodic Table - Tampilan Ilmiah",
+      "inquisition": "Inquisition - Tema Sejarah",
+      "simple_system": "Simple System - Monitor Sistem"
+    }
+  },
+  "download": {
+    "title": "Siap untuk mengubah desktop Anda?",
+    "subtitle": "Unduh Sucrose Wallpaper Engine hari ini dan alami desktop Anda dengan cara yang sama sekali baru.",
+    "ms_store": "Unduh dari Microsoft Store",
+    "github": "Unduh dari GitHub",
+    "source": "Lihat Kode Sumber"
+  },
+  "theme": {
+    "title": "Tema",
+    "light": "Terang",
+    "dark": "Gelap",
+    "system": "Sistem"
+  },
+  "language": "Bahasa",
+  "search": "Cari...",
+  "currentLanguage": "Bahasa saat ini",
+  "commonLanguages": "Bahasa umum",
+  "allLanguages": "Semua bahasa",
+  "footer": {
+    "copyright": "Hak Cipta ©{year} Sucrose Wallpaper Engine. Semua hak dilindungi undang-undang."
+  }
+} 

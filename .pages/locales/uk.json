@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Функції",
+    "gallery": "Галерея",
+    "download": "Завантажити"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose - це універсальний двигун шпалер, який оживляє ваш робочий стіл інтерактивними шпалерами.",
+    "download_ms": "Завантажити з Microsoft Store",
+    "download_github": "Завантажити з GitHub",
+    "tagline": "Сучасний досвід шпалер"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose - це універсальний двигун шпалер, який оживляє ваш робочий стіл інтерактивними шпалерами. Безкоштовний та з відкритим кодом.",
+      "keywords": "двигун шпалер, налаштування робочого столу, інтерактивні шпалери, безкоштовний двигун шпалер, персоналізація робочого столу, sucrose, lively, динамічні шпалери",
+      "og_title": "Sucrose Wallpaper Engine - Перетворіть свій робочий стіл",
+      "og_description": "Оживіть свій робочий стіл красивими інтерактивними шпалерами. Безкоштовно, з відкритим кодом та оптимізовано для продуктивності.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Інтерактивні Шпалери",
+        "description": "Персоналізуйте свій робочий стіл з Sucrose - безкоштовним двигуном шпалер з відкритим кодом, що пропонує інтерактивні шпалери, інтеграцію з системою та оптимізовану продуктивність."
+      },
+      "features": {
+        "title": "Функції - Sucrose Wallpaper Engine",
+        "description": "Відкрийте для себе розширені функції Sucrose: теми, що налаштовуються, оптимізація продуктивності, підтримка кількох екранів, аудіо-реактивність та багато іншого."
+      },
+      "gallery": {
+        "title": "Галерея Шпалер - Sucrose Wallpaper Engine",
+        "description": "Перегляньте колекцію красивих інтерактивних шпалер для Sucrose Wallpaper Engine. Доступно для безкоштовного завантаження."
+      },
+      "download": {
+        "title": "Завантажити Sucrose Wallpaper Engine - Безкоштовно та з Відкритим Кодом",
+        "description": "Завантажте Sucrose Wallpaper Engine безкоштовно. Доступно в Microsoft Store та на GitHub. Почніть перетворювати свій робочий стіл сьогодні."
+      }
+    }
+  },
+  "features": {
+    "title": "Функції Sucrose",
+    "badge": "Функції",
+    "subtitle": "Оживіть свій робочий стіл функціями, які пропонує Sucrose Wallpaper Engine.",
+    "cta": "Завантажити зараз",
+    "customizable": {
+      "title": "Теми, що налаштовуються",
+      "description": "Перемикайтеся між світлими та темними темами, створюйте власні шпалери з базовими або розширеними налаштуваннями."
+    },
+    "performance": {
+      "title": "Оптимізація продуктивності",
+      "description": "Розумне управління ресурсами з автоматичною паузою при запуску повноекранних програм та режимом економії енергії для ноутбуків."
+    },
+    "multiscreen": {
+      "title": "Підтримка кількох екранів",
+      "description": "Підтримка кількох екранів та всіх роздільних здатностей для безперебійного досвіду."
+    },
+    "audio": {
+      "title": "Аудіо-реактивність",
+      "description": "Створюйте динамічні шпалери, які реагують на музику за допомогою Sucrose Audio API."
+    },
+    "web": {
+      "title": "Веб-інтеграція",
+      "description": "Використовуйте веб-сайти як шпалери з інтеграцією CefSharp та WebView."
+    },
+    "switching": {
+      "title": "Автоматичне перемикання",
+      "description": "Автоматично перемикайтеся між шпалерами у визначені інтервали або випадковим чином."
+    },
+    "system": {
+      "title": "Системна інтеграція",
+      "description": "Створюйте шпалери, які відображають та реагують на стан системи за допомогою Sucrose System API."
+    },
+    "community": {
+      "title": "Спільне використання",
+      "description": "Створюйте та діліться шпалерами зі спільнотою Sucrose через спеціальний магазин."
+    },
+    "free": {
+      "title": "Повністю безкоштовно",
+      "description": "Відкритий код та без витрат, всі функції доступні безкоштовно."
+    }
+  },
+  "gallery": {
+    "title": "Знімки екрану Sucrose",
+    "badge": "Галерея",
+    "subtitle": "Приклади візуального досвіду, який пропонує Sucrose Wallpaper Engine.",
+    "collection": "Колекція шпалер",
+    "images": {
+      "preview": "Preview - Основний інтерфейс",
+      "store": "Store - Перегляд магазину",
+      "alves_town": "Alve's Town - Міський пейзаж",
+      "fluid_simulation": "Fluid Simulation - Симуляція рідини",
+      "neo_matrix": "Neo Matrix - Ефект дощу з коду",
+      "media_parallax": "Media Parallax - Медіа-ефекти",
+      "living_room": "Living Room - Дизайн інтер'єру",
+      "periodic_table": "Periodic Table - Наукова візуалізація",
+      "inquisition": "Inquisition - Історична тема",
+      "simple_system": "Simple System - Системний монітор"
+    }
+  },
+  "download": {
+    "title": "Готові перетворити свій робочий стіл?",
+    "subtitle": "Завантажте Sucrose Wallpaper Engine зараз і відчуйте свій робочий стіл по-новому.",
+    "ms_store": "Завантажити з Microsoft Store",
+    "github": "Завантажити з GitHub",
+    "source": "Переглянути вихідний код"
+  },
+  "theme": {
+    "title": "Тема",
+    "light": "Світла",
+    "dark": "Темна",
+    "system": "Системна"
+  },
+  "language": "Мова",
+  "search": "Пошук...",
+  "currentLanguage": "Поточна мова",
+  "commonLanguages": "Поширені мови",
+  "allLanguages": "Усі мови",
+  "footer": {
+    "copyright": "Авторське право ©{year} Sucrose Wallpaper Engine. Усі права захищені."
+  }
+} 

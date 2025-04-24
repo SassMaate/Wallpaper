@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Özellikler",
+    "gallery": "Galeri",
+    "download": "İndir"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose, masaüstünüze çeşitli interaktif duvar kağıtları ile hayat veren çok yönlü bir duvar kağıdı motorudur.",
+    "download_ms": "Microsoft Store'dan İndir",
+    "download_github": "GitHub'dan İndir",
+    "tagline": "Modern Duvar Kağıdı Deneyimi"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose, masaüstünüze çeşitli interaktif duvar kağıtları ile hayat veren çok yönlü bir duvar kağıdı motorudur. Ücretsiz ve açık kaynaklı.",
+      "keywords": "duvar kağıdı motoru, masaüstü özelleştirme, interaktif duvar kağıtları, ücretsiz duvar kağıdı motoru, masaüstü kişiselleştirme, sucrose, lively, canlı duvar kağıtları",
+      "og_title": "Sucrose Wallpaper Engine - Masaüstünüzü Dönüştürün",
+      "og_description": "Güzel, interaktif duvar kağıtları ile masaüstünüze hayat verin. Ücretsiz, açık kaynaklı ve performans odaklı.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - İnteraktif Masaüstü Duvar Kağıtları",
+        "description": "Masaüstünüzü Sucrose ile özelleştirin - interaktif duvar kağıtları, sistem entegrasyonu ve performans optimizasyonu özelliklerine sahip ücretsiz, açık kaynaklı bir duvar kağıdı motoru."
+      },
+      "features": {
+        "title": "Özellikler - Sucrose Wallpaper Engine",
+        "description": "Sucrose'un güçlü özelliklerini keşfedin: özelleştirilebilir temalar, performans optimizasyonu, çoklu ekran desteği, ses duyarlılığı ve daha fazlası."
+      },
+      "gallery": {
+        "title": "Duvar Kağıdı Galerisi - Sucrose Wallpaper Engine",
+        "description": "Sucrose Wallpaper Engine için güzel interaktif duvar kağıtları koleksiyonumuza göz atın. İndirmesi ve kullanımı ücretsiz."
+      },
+      "download": {
+        "title": "Sucrose Wallpaper Engine'yi İndirin - Ücretsiz ve Açık Kaynaklı",
+        "description": "Sucrose Wallpaper Engine'yi ücretsiz indirin. Microsoft Store ve GitHub'da mevcut. Bugün masaüstü deneyiminizi dönüştürün."
+      }
+    }
+  },
+  "features": {
+    "title": "Sucrose Özellikleri",
+    "badge": "Özellikler",
+    "subtitle": "Sucrose Wallpaper Engine'nin sunduğu özellikler ile masaüstünüzü canlandırın.",
+    "cta": "Hemen Şimdi İndirin",
+    "customizable": {
+      "title": "Özelleştirilebilir Temalar",
+      "description": "Açık ve Koyu temalar arasında geçiş yapın ve kendi duvar kağıtlarınızı basit veya detaylı özelleştirme seçenekleriyle oluşturun."
+    },
+    "performance": {
+      "title": "Performans Odaklı",
+      "description": "Tam ekran uygulamalar için otomatik duraklama ve dizüstü bilgisayarlar için güç tasarrufu modu ile akıllı kaynak yönetimi."
+    },
+    "multiscreen": {
+      "title": "Çoklu Ekran Desteği",
+      "description": "Kesintisiz bir deneyim için birden fazla ekranı ve tüm ekran çözünürlüklerini destekler."
+    },
+    "audio": {
+      "title": "Ses Duyarlı",
+      "description": "Sucrose Ses API'sini kullanarak müziğinize tepki veren dinamik duvar kağıtları oluşturun."
+    },
+    "web": {
+      "title": "Web Entegrasyonu",
+      "description": "CefSharp ve WebView entegrasyonu ile herhangi bir web sitesini duvar kağıdı olarak kullanın."
+    },
+    "switching": {
+      "title": "Otomatik Geçiş",
+      "description": "Belirli aralıklarla veya rastgele olarak duvar kağıtları arasında otomatik geçiş yapın."
+    },
+    "system": {
+      "title": "Sistem Entegrasyonu",
+      "description": "Sucrose Sistem API'sini kullanarak sistem durumunu görüntüleyin ve duyarlı duvar kağıtları oluşturun."
+    },
+    "community": {
+      "title": "Topluluk Paylaşımı",
+      "description": "Duvar kağıtlarınızı özel mağazamız aracılığıyla Sucrose topluluğuyla oluşturun ve paylaşın."
+    },
+    "free": {
+      "title": "Tamamen Ücretsiz",
+      "description": "Açık kaynaklı ve ücretsiz kullanım, herhangi bir ödeme gerektirmeden tüm özellikler kullanılabilir."
+    }
+  },
+  "gallery": {
+    "title": "Sucrose Ekran Görüntüleri",
+    "badge": "Galeri",
+    "subtitle": "Sucrose Wallpaper Engine'nin sunduğu görsel deneyimlerden örnekler.",
+    "collection": "Duvar Kağıdı Koleksiyonu",
+    "images": {
+      "preview": "Preview - Ana Ekran",
+      "store": "Store - Mağaza Görünümü",
+      "alves_town": "Alve's Town - Kent Manzarası",
+      "fluid_simulation": "Fluid Simulation - Sıvı Simülasyonu",
+      "neo_matrix": "Neo Matrix - Dijital Yağmur Efekti",
+      "media_parallax": "Media Parallax - Medya Efekti",
+      "living_room": "Living Room - Oturma Odası",
+      "periodic_table": "Periodic Table - Periyodik Tablo",
+      "inquisition": "Inquisition - Tarihi Tema",
+      "simple_system": "Simple System - Basit Sistem Monitörü"
+    }
+  },
+  "download": {
+    "title": "Masaüstünüzü Dönüştürmeye Hazır mısınız?",
+    "subtitle": "Sucrose Wallpaper Engineu'yi bugün indirin ve masaüstünüzü tamamen yeni bir şekilde deneyimleyin.",
+    "ms_store": "Microsoft Store'dan İndir",
+    "github": "GitHub'dan İndir",
+    "source": "Kaynak Kodunu Görüntüle"
+  },
+  "theme": {
+    "title": "Tema",
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem"
+  },
+  "language": "Dil",
+  "search": "Ara...",
+  "currentLanguage": "Mevcut Dil",
+  "commonLanguages": "Yaygın Diller",
+  "allLanguages": "Tüm Diller",
+  "footer": {
+    "copyright": "Telif Hakkı ©{year} Sucrose Wallpaper Engine. Tüm hakları saklıdır."
+  }
+} 

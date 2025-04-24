@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "gallery": "Galerie",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose est un moteur de fond d'écran polyvalent qui donne vie à votre bureau avec des fonds d'écran interactifs.",
+    "download_ms": "Télécharger depuis Microsoft Store",
+    "download_github": "Télécharger depuis GitHub",
+    "tagline": "L'expérience moderne de fond d'écran"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose est un moteur de fond d'écran polyvalent qui donne vie à votre bureau avec des fonds d'écran interactifs. Gratuit et open source.",
+      "keywords": "moteur de fond d'écran, personnalisation de bureau, fonds d'écran interactifs, moteur de fond d'écran gratuit, personnalisation de bureau, sucrose, lively, fonds d'écran dynamiques",
+      "og_title": "Sucrose Wallpaper Engine - Transformez votre bureau",
+      "og_description": "Donnez vie à votre bureau avec de magnifiques fonds d'écran interactifs. Gratuit, open source et optimisé pour les performances.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Fonds d'écran interactifs",
+        "description": "Personnalisez votre bureau avec Sucrose - un moteur de fond d'écran gratuit et open source offrant des fonds d'écran interactifs, une intégration système et des performances optimisées."
+      },
+      "features": {
+        "title": "Fonctionnalités - Sucrose Wallpaper Engine",
+        "description": "Découvrez les fonctionnalités avancées de Sucrose : thèmes personnalisables, optimisation des performances, prise en charge multi-écrans, réactivité audio, et plus encore."
+      },
+      "gallery": {
+        "title": "Galerie de fonds d'écran - Sucrose Wallpaper Engine",
+        "description": "Parcourez la collection de magnifiques fonds d'écran interactifs pour Sucrose Wallpaper Engine. Disponibles en téléchargement gratuit."
+      },
+      "download": {
+        "title": "Télécharger Sucrose Wallpaper Engine - Gratuit et open source",
+        "description": "Téléchargez gratuitement Sucrose Wallpaper Engine. Disponible sur Microsoft Store et GitHub. Transformez votre bureau dès maintenant."
+      }
+    }
+  },
+  "features": {
+    "title": "Fonctionnalités de Sucrose",
+    "badge": "Fonctionnalités",
+    "subtitle": "Donnez vie à votre bureau avec les fonctionnalités offertes par Sucrose Wallpaper Engine.",
+    "cta": "Télécharger maintenant",
+    "customizable": {
+      "title": "Thèmes personnalisables",
+      "description": "Basculez entre les thèmes clair et sombre, et créez vos propres fonds d'écran avec des paramètres basiques ou avancés."
+    },
+    "performance": {
+      "title": "Optimisation des performances",
+      "description": "Gestion intelligente des ressources avec mise en pause automatique pour les applications en plein écran et mode économie d'énergie pour les ordinateurs portables."
+    },
+    "multiscreen": {
+      "title": "Support multi-écrans",
+      "description": "Prise en charge de plusieurs écrans et de toutes les résolutions pour une expérience fluide."
+    },
+    "audio": {
+      "title": "Réactivité audio",
+      "description": "Créez des fonds d'écran dynamiques qui réagissent à la musique avec l'API Audio de Sucrose."
+    },
+    "web": {
+      "title": "Intégration web",
+      "description": "Utilisez des sites web comme fonds d'écran grâce à l'intégration de CefSharp et WebView."
+    },
+    "switching": {
+      "title": "Changement automatique",
+      "description": "Changez automatiquement de fond d'écran à intervalles définis ou de manière aléatoire."
+    },
+    "system": {
+      "title": "Intégration système",
+      "description": "Affichez l'état du système et créez des fonds d'écran réactifs avec l'API Système de Sucrose."
+    },
+    "community": {
+      "title": "Partage communautaire",
+      "description": "Créez et partagez des fonds d'écran avec la communauté Sucrose via une boutique dédiée."
+    },
+    "free": {
+      "title": "Entièrement gratuit",
+      "description": "Open source et sans frais, toutes les fonctionnalités sont disponibles gratuitement."
+    }
+  },
+  "gallery": {
+    "title": "Captures d'écran Sucrose",
+    "badge": "Galerie",
+    "subtitle": "Exemples d'expériences visuelles proposées par Sucrose Wallpaper Engine.",
+    "collection": "Collection de fonds d'écran",
+    "images": {
+      "preview": "Preview - Interface principale",
+      "store": "Store - Vue de la boutique",
+      "alves_town": "Alve's Town - Paysage urbain",
+      "fluid_simulation": "Fluid Simulation - Simulation de fluide",
+      "neo_matrix": "Neo Matrix - Effet pluie de code",
+      "media_parallax": "Media Parallax - Effet média",
+      "living_room": "Living Room - Design d'intérieur",
+      "periodic_table": "Periodic Table - Visualisation scientifique",
+      "inquisition": "Inquisition - Thème historique",
+      "simple_system": "Simple System - Moniteur système"
+    }
+  },
+  "download": {
+    "title": "Prêt à transformer votre bureau ?",
+    "subtitle": "Téléchargez Sucrose Wallpaper Engine maintenant et vivez votre bureau d'une toute nouvelle façon.",
+    "ms_store": "Télécharger depuis Microsoft Store",
+    "github": "Télécharger depuis GitHub",
+    "source": "Voir le code source"
+  },
+  "theme": {
+    "title": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "language": "Langue",
+  "search": "Rechercher...",
+  "currentLanguage": "Langue actuelle",
+  "commonLanguages": "Langues courantes",
+  "allLanguages": "Toutes les langues",
+  "footer": {
+    "copyright": "Copyright ©{year} Sucrose Wallpaper Engine. Tous droits réservés."
+  }
+} 

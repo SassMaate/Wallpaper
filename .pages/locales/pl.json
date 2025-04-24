@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funkcje",
+    "gallery": "Galeria",
+    "download": "Pobierz"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose to wszechstronny silnik tapet, który ożywia pulpit za pomocą interaktywnych tapet.",
+    "download_ms": "Pobierz z Microsoft Store",
+    "download_github": "Pobierz z GitHub",
+    "tagline": "Nowoczesne doświadczenie tapety"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose to wszechstronny silnik tapet, który ożywia pulpit za pomocą interaktywnych tapet. Darmowy i open-source.",
+      "keywords": "silnik tapet, dostosowywanie pulpitu, interaktywne tapety, darmowy silnik tapet, personalizacja pulpitu, sucrose, lively, dynamiczne tapety",
+      "og_title": "Sucrose Wallpaper Engine - Transformuj swój pulpit",
+      "og_description": "Ożyw swój pulpit pięknymi interaktywnymi tapetami. Darmowy, open-source i zoptymalizowany pod kątem wydajności.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Interaktywne Tapety",
+        "description": "Spersonalizuj swój pulpit z Sucrose - darmowym silnikiem tapet o otwartym kodzie źródłowym, oferującym interaktywne tapety, integrację systemową i zoptymalizowaną wydajność."
+      },
+      "features": {
+        "title": "Funkcje - Sucrose Wallpaper Engine",
+        "description": "Odkryj zaawansowane funkcje Sucrose: konfigurowalne motywy, optymalizacja wydajności, obsługa wielu ekranów, responsywność audio i więcej."
+      },
+      "gallery": {
+        "title": "Galeria Tapet - Sucrose Wallpaper Engine",
+        "description": "Przeglądaj kolekcję pięknych interaktywnych tapet dla Sucrose Wallpaper Engine. Dostępne do pobrania za darmo."
+      },
+      "download": {
+        "title": "Pobierz Sucrose Wallpaper Engine - Darmowy i Open-Source",
+        "description": "Pobierz Sucrose Wallpaper Engine za darmo. Dostępny w Microsoft Store i na GitHub. Zacznij transformować swój pulpit już dziś."
+      }
+    }
+  },
+  "features": {
+    "title": "Funkcje Sucrose",
+    "badge": "Funkcje",
+    "subtitle": "Ożyw swój pulpit z funkcjami, które oferuje Sucrose Wallpaper Engine.",
+    "cta": "Pobierz teraz",
+    "customizable": {
+      "title": "Konfigurowalne motywy",
+      "description": "Przełączaj między jasnymi i ciemnymi motywami, twórz własne tapety z podstawowymi lub zaawansowanymi ustawieniami."
+    },
+    "performance": {
+      "title": "Optymalizacja wydajności",
+      "description": "Inteligentne zarządzanie zasobami z automatycznym wstrzymywaniem przy aplikacjach pełnoekranowych i trybem oszczędzania energii dla laptopów."
+    },
+    "multiscreen": {
+      "title": "Obsługa wielu ekranów",
+      "description": "Obsługa wielu ekranów i wszystkich rozdzielczości dla płynnego doświadczenia."
+    },
+    "audio": {
+      "title": "Responsywność audio",
+      "description": "Twórz dynamiczne tapety reagujące na muzykę za pomocą Sucrose Audio API."
+    },
+    "web": {
+      "title": "Integracja z siecią",
+      "description": "Używaj stron internetowych jako tapet dzięki integracji CefSharp i WebView."
+    },
+    "switching": {
+      "title": "Automatyczne przełączanie",
+      "description": "Automatycznie przełączaj tapety w określonych interwałach lub losowo."
+    },
+    "system": {
+      "title": "Integracja systemowa",
+      "description": "Twórz tapety wyświetlające i reagujące na stan systemu za pomocą Sucrose System API."
+    },
+    "community": {
+      "title": "Udostępnianie społeczności",
+      "description": "Twórz i udostępniaj tapety społeczności Sucrose przez dedykowany sklep."
+    },
+    "free": {
+      "title": "Całkowicie darmowy",
+      "description": "Open-source i bez kosztów, wszystkie funkcje są dostępne za darmo."
+    }
+  },
+  "gallery": {
+    "title": "Zrzuty ekranu Sucrose",
+    "badge": "Galeria",
+    "subtitle": "Przykłady wizualnego doświadczenia, które oferuje Sucrose Wallpaper Engine.",
+    "collection": "Kolekcja tapet",
+    "images": {
+      "preview": "Podgląd - Główny interfejs",
+      "store": "Sklep - Widok sklepu",
+      "alves_town": "Alve's Town - Pejzaż miejski",
+      "fluid_simulation": "Fluid Simulation - Symulacja płynów",
+      "neo_matrix": "Neo Matrix - Efekt deszczu kodu",
+      "media_parallax": "Media Parallax - Efekty medialne",
+      "living_room": "Living Room - Projekt wnętrza",
+      "periodic_table": "Periodic Table - Wizualizacja naukowa",
+      "inquisition": "Inquisition - Motyw historyczny",
+      "simple_system": "Simple System - Monitor systemu"
+    }
+  },
+  "download": {
+    "title": "Gotowy, aby transformować swój pulpit?",
+    "subtitle": "Pobierz Sucrose Wallpaper Engine teraz i doświadcz swojego pulpitu w zupełnie nowy sposób.",
+    "ms_store": "Pobierz z Microsoft Store",
+    "github": "Pobierz z GitHub",
+    "source": "Zobacz kod źródłowy"
+  },
+  "theme": {
+    "title": "Motyw",
+    "light": "Jasny",
+    "dark": "Ciemny",
+    "system": "Systemowy"
+  },
+  "language": "Język",
+  "search": "Szukaj...",
+  "currentLanguage": "Obecny język",
+  "commonLanguages": "Popularne języki",
+  "allLanguages": "Wszystkie języki",
+  "footer": {
+    "copyright": "Copyright ©{year} Sucrose Wallpaper Engine. Wszelkie prawa zastrzeżone."
+  }
+} 

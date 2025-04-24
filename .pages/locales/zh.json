@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "功能",
+    "gallery": "画廊",
+    "download": "下载"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose是一款多功能壁纸引擎，通过交互式壁纸为您的桌面注入生命力。",
+    "download_ms": "从Microsoft Store下载",
+    "download_github": "从GitHub下载",
+    "tagline": "现代壁纸体验"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose是一款多功能壁纸引擎，通过交互式壁纸为您的桌面注入生命力。免费且开源。",
+      "keywords": "壁纸引擎, 桌面定制, 交互式壁纸, 免费壁纸引擎, 桌面个性化, sucrose, lively, 动态壁纸",
+      "og_title": "Sucrose Wallpaper Engine - 改变你的桌面",
+      "og_description": "通过美丽的交互式壁纸为您的桌面注入生命。免费、开源、性能优化。",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - 交互式壁纸",
+        "description": "使用Sucrose个性化您的桌面 - 一款提供交互式壁纸、系统集成和性能优化的免费开源壁纸引擎。"
+      },
+      "features": {
+        "title": "功能 - Sucrose Wallpaper Engine",
+        "description": "探索Sucrose的高级功能：可定制主题、性能优化、多屏幕支持、音频响应等。"
+      },
+      "gallery": {
+        "title": "壁纸画廊 - Sucrose Wallpaper Engine",
+        "description": "浏览Sucrose Wallpaper Engine的精美交互式壁纸集合。可免费下载。"
+      },
+      "download": {
+        "title": "下载Sucrose Wallpaper Engine - 免费开源",
+        "description": "免费下载Sucrose Wallpaper Engine。可在Microsoft Store和GitHub上获取。立即改变您的桌面。"
+      }
+    }
+  },
+  "features": {
+    "title": "Sucrose的功能",
+    "badge": "功能",
+    "subtitle": "使用Sucrose壁纸引擎提供的功能为您的桌面注入生命。",
+    "cta": "立即下载",
+    "customizable": {
+      "title": "可定制主题",
+      "description": "在亮色和暗色主题之间切换，使用基本或高级设置创建您自己的壁纸。"
+    },
+    "performance": {
+      "title": "性能优化",
+      "description": "通过自动暂停全屏应用程序和笔记本电脑节电模式实现智能资源管理。"
+    },
+    "multiscreen": {
+      "title": "多屏幕支持",
+      "description": "支持多个屏幕和所有分辨率，提供无缝体验。"
+    },
+    "audio": {
+      "title": "音频响应",
+      "description": "使用Sucrose Audio API创建对音乐做出反应的动态壁纸。"
+    },
+    "web": {
+      "title": "网页集成",
+      "description": "通过CefSharp和WebView集成，可以将网站用作壁纸。"
+    },
+    "switching": {
+      "title": "自动切换",
+      "description": "可以按指定间隔或随机自动切换壁纸。"
+    },
+    "system": {
+      "title": "系统集成",
+      "description": "使用Sucrose System API显示系统状态并创建响应式壁纸。"
+    },
+    "community": {
+      "title": "社区分享",
+      "description": "通过专用商店与Sucrose社区创建和分享壁纸。"
+    },
+    "free": {
+      "title": "完全免费",
+      "description": "开源且无费用，所有功能均可免费使用。"
+    }
+  },
+  "gallery": {
+    "title": "Sucrose截图",
+    "badge": "画廊",
+    "subtitle": "Sucrose壁纸引擎提供的视觉体验示例。",
+    "collection": "壁纸集合",
+    "images": {
+      "preview": "Preview - 主界面",
+      "store": "Store - 商店视图",
+      "alves_town": "Alve's Town - 小镇景观",
+      "fluid_simulation": "Fluid Simulation - 流体模拟",
+      "neo_matrix": "Neo Matrix - 数字雨效果",
+      "media_parallax": "Media Parallax - 媒体效果",
+      "living_room": "Living Room - 室内设计",
+      "periodic_table": "Periodic Table - 科学可视化",
+      "inquisition": "Inquisition - 历史主题",
+      "simple_system": "Simple System - 系统监控"
+    }
+  },
+  "download": {
+    "title": "准备好改变您的桌面了吗？",
+    "subtitle": "立即下载Sucrose Wallpaper Engine，以全新方式体验您的桌面。",
+    "ms_store": "从Microsoft Store下载",
+    "github": "从GitHub下载",
+    "source": "查看源代码"
+  },
+  "theme": {
+    "title": "主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  },
+  "language": "语言",
+  "search": "搜索...",
+  "currentLanguage": "当前语言",
+  "commonLanguages": "常用语言",
+  "allLanguages": "所有语言",
+  "footer": {
+    "copyright": "版权所有 ©{year} Sucrose Wallpaper Engine. 保留所有权利。"
+  }
+} 

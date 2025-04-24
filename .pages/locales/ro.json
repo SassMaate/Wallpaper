@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funcții",
+    "gallery": "Galerie",
+    "download": "Descarcă"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose este un motor de imagini de fundal versatil care dă viață desktop-ului tău cu imagini de fundal interactive.",
+    "download_ms": "Descarcă din Microsoft Store",
+    "download_github": "Descarcă de pe GitHub",
+    "tagline": "Experiență modernă de imagini de fundal"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose este un motor de imagini de fundal versatil care dă viață desktop-ului tău cu imagini de fundal interactive. Gratuit și open-source.",
+      "keywords": "motor de imagini de fundal, personalizare desktop, imagini de fundal interactive, motor de imagini de fundal gratuit, personalizare desktop, sucrose, lively, imagini de fundal dinamice",
+      "og_title": "Sucrose Wallpaper Engine - Transformă-ți desktop-ul",
+      "og_description": "Dă viață desktop-ului tău cu imagini de fundal interactive frumoase. Gratuit, open-source și optimizat pentru performanță.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Imagini de Fundal Interactive",
+        "description": "Personalizează-ți desktop-ul cu Sucrose - un motor de imagini de fundal gratuit și open-source care oferă imagini de fundal interactive, integrare cu sistemul și performanță optimizată."
+      },
+      "features": {
+        "title": "Funcții - Sucrose Wallpaper Engine",
+        "description": "Descoperă funcțiile avansate ale Sucrose: teme personalizabile, optimizare a performanței, suport pentru mai multe ecrane, reactivitate audio și multe altele."
+      },
+      "gallery": {
+        "title": "Galerie de Imagini de Fundal - Sucrose Wallpaper Engine",
+        "description": "Explorează o colecție de imagini de fundal interactive frumoase pentru Sucrose Wallpaper Engine. Disponibile pentru descărcare gratuită."
+      },
+      "download": {
+        "title": "Descarcă Sucrose Wallpaper Engine - Gratuit și Open-Source",
+        "description": "Descarcă Sucrose Wallpaper Engine gratuit. Disponibil în Microsoft Store și pe GitHub. Începe să-ți transformi desktop-ul astăzi."
+      }
+    }
+  },
+  "features": {
+    "title": "Funcțiile Sucrose",
+    "badge": "Funcții",
+    "subtitle": "Dă viață desktop-ului tău cu funcțiile oferite de Sucrose Wallpaper Engine.",
+    "cta": "Descarcă acum",
+    "customizable": {
+      "title": "Teme personalizabile",
+      "description": "Comută între teme luminoase și întunecate, creează-ți propriile imagini de fundal cu setări de bază sau avansate."
+    },
+    "performance": {
+      "title": "Optimizare a performanței",
+      "description": "Gestionare inteligentă a resurselor cu pauză automată când rulează aplicații pe tot ecranul și mod de economisire a energiei pentru laptopuri."
+    },
+    "multiscreen": {
+      "title": "Suport pentru mai multe ecrane",
+      "description": "Suport pentru mai multe ecrane și toate rezoluțiile pentru o experiență fluidă."
+    },
+    "audio": {
+      "title": "Reactivitate audio",
+      "description": "Creează imagini de fundal dinamice care reacționează la muzică cu API-ul Audio Sucrose."
+    },
+    "web": {
+      "title": "Integrare web",
+      "description": "Folosește site-uri web ca imagini de fundal cu integrarea CefSharp și WebView."
+    },
+    "switching": {
+      "title": "Comutare automată",
+      "description": "Comută automat între imagini de fundal la intervale definite sau aleatoriu."
+    },
+    "system": {
+      "title": "Integrare cu sistemul",
+      "description": "Creează imagini de fundal care afișează și reacționează la starea sistemului cu API-ul System Sucrose."
+    },
+    "community": {
+      "title": "Partajare comunitară",
+      "description": "Creează și partajează imagini de fundal cu comunitatea Sucrose printr-un magazin dedicat."
+    },
+    "free": {
+      "title": "Complet gratuit",
+      "description": "Open-source și fără costuri, toate funcțiile sunt disponibile gratuit."
+    }
+  },
+  "gallery": {
+    "title": "Capturi de ecran Sucrose",
+    "badge": "Galerie",
+    "subtitle": "Exemple ale experienței vizuale oferite de Sucrose Wallpaper Engine.",
+    "collection": "Colecție de imagini de fundal",
+    "images": {
+      "preview": "Preview - Interfața principală",
+      "store": "Store - Vedere magazin",
+      "alves_town": "Alve's Town - Peisaj urban",
+      "fluid_simulation": "Fluid Simulation - Simulare de fluide",
+      "neo_matrix": "Neo Matrix - Efect ploaie de cod",
+      "media_parallax": "Media Parallax - Efecte media",
+      "living_room": "Living Room - Design interior",
+      "periodic_table": "Periodic Table - Vizualizare științifică",
+      "inquisition": "Inquisition - Temă istorică",
+      "simple_system": "Simple System - Monitor de sistem"
+    }
+  },
+  "download": {
+    "title": "Ești gata să-ți transformi desktop-ul?",
+    "subtitle": "Descarcă Sucrose Wallpaper Engine acum și experimentează-ți desktop-ul într-un mod complet nou.",
+    "ms_store": "Descarcă din Microsoft Store",
+    "github": "Descarcă de pe GitHub",
+    "source": "Vezi codul sursă"
+  },
+  "theme": {
+    "title": "Temă",
+    "light": "Luminoasă",
+    "dark": "Întunecată",
+    "system": "Sistem"
+  },
+  "language": "Limbă",
+  "search": "Căutare...",
+  "currentLanguage": "Limba curentă",
+  "commonLanguages": "Limbi comune",
+  "allLanguages": "Toate limbile",
+  "footer": {
+    "copyright": "Drepturi de autor ©{year} Sucrose Wallpaper Engine. Toate drepturile rezervate."
+  }
+} 

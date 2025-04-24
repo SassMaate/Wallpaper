@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Recursos",
+    "gallery": "Galeria",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose é um motor de papel de parede versátil que dá vida ao seu desktop com papéis de parede interativos.",
+    "download_ms": "Download na Microsoft Store",
+    "download_github": "Download no GitHub",
+    "tagline": "Experiência moderna de papel de parede"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose é um motor de papel de parede versátil que dá vida ao seu desktop com papéis de parede interativos. Gratuito e de código aberto.",
+      "keywords": "motor de papel de parede, personalização de desktop, papéis de parede interativos, motor de papel de parede gratuito, personalização de desktop, sucrose, lively, papéis de parede dinâmicos",
+      "og_title": "Sucrose Wallpaper Engine - Transforme seu desktop",
+      "og_description": "Dê vida ao seu desktop com belos papéis de parede interativos. Gratuito, código aberto e otimizado para desempenho.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Papéis de Parede Interativos",
+        "description": "Personalize seu desktop com o Sucrose - um motor de papel de parede gratuito e de código aberto que oferece papéis de parede interativos, integração com o sistema e desempenho otimizado."
+      },
+      "features": {
+        "title": "Recursos - Sucrose Wallpaper Engine",
+        "description": "Descubra os recursos avançados do Sucrose: temas personalizáveis, otimização de desempenho, suporte a múltiplos monitores, responsividade de áudio e mais."
+      },
+      "gallery": {
+        "title": "Galeria de Papéis de Parede - Sucrose Wallpaper Engine",
+        "description": "Explore uma coleção de belos papéis de parede interativos para o Sucrose Wallpaper Engine. Disponíveis para download gratuito."
+      },
+      "download": {
+        "title": "Download do Sucrose Wallpaper Engine - Gratuito e de Código Aberto",
+        "description": "Faça o download do Sucrose Wallpaper Engine gratuitamente. Disponível na Microsoft Store e no GitHub. Comece a transformar seu desktop hoje."
+      }
+    }
+  },
+  "features": {
+    "title": "Recursos do Sucrose",
+    "badge": "Recursos",
+    "subtitle": "Dê vida ao seu desktop com os recursos que o Sucrose Wallpaper Engine oferece.",
+    "cta": "Download agora",
+    "customizable": {
+      "title": "Temas personalizáveis",
+      "description": "Alterne entre temas claro e escuro, crie seus próprios papéis de parede com configurações básicas ou avançadas."
+    },
+    "performance": {
+      "title": "Otimização de desempenho",
+      "description": "Gerenciamento inteligente de recursos com pausa automática quando aplicativos em tela cheia estão rodando e modo de economia de energia para laptops."
+    },
+    "multiscreen": {
+      "title": "Suporte a múltiplos monitores",
+      "description": "Suporte a múltiplos monitores e todas as resoluções para uma experiência perfeita."
+    },
+    "audio": {
+      "title": "Responsividade de áudio",
+      "description": "Crie papéis de parede dinâmicos que reagem à música com a API de Áudio do Sucrose."
+    },
+    "web": {
+      "title": "Integração web",
+      "description": "Use sites como papéis de parede com integração CefSharp e WebView."
+    },
+    "switching": {
+      "title": "Troca automática",
+      "description": "Troque automaticamente entre papéis de parede em intervalos definidos ou aleatoriamente."
+    },
+    "system": {
+      "title": "Integração com o sistema",
+      "description": "Crie papéis de parede que exibem e reagem ao status do sistema com a API de Sistema do Sucrose."
+    },
+    "community": {
+      "title": "Compartilhamento comunitário",
+      "description": "Crie e compartilhe papéis de parede com a comunidade Sucrose através de uma loja dedicada."
+    },
+    "free": {
+      "title": "Totalmente gratuito",
+      "description": "Código aberto e sem custos, todos os recursos estão disponíveis gratuitamente."
+    }
+  },
+  "gallery": {
+    "title": "Screenshots do Sucrose",
+    "badge": "Galeria",
+    "subtitle": "Exemplos da experiência visual que o Sucrose Wallpaper Engine oferece.",
+    "collection": "Coleção de papéis de parede",
+    "images": {
+      "preview": "Preview - Interface principal",
+      "store": "Store - Visualização da loja",
+      "alves_town": "Alve's Town - Paisagem urbana",
+      "fluid_simulation": "Fluid Simulation - Simulação de fluidos",
+      "neo_matrix": "Neo Matrix - Efeito chuva de código",
+      "media_parallax": "Media Parallax - Efeitos de mídia",
+      "living_room": "Living Room - Design de interior",
+      "periodic_table": "Periodic Table - Visualização científica",
+      "inquisition": "Inquisition - Tema histórico",
+      "simple_system": "Simple System - Monitor do sistema"
+    }
+  },
+  "download": {
+    "title": "Pronto para transformar seu desktop?",
+    "subtitle": "Faça o download do Sucrose Wallpaper Engine agora e experimente seu desktop de uma maneira totalmente nova.",
+    "ms_store": "Download na Microsoft Store",
+    "github": "Download no GitHub",
+    "source": "Ver código-fonte"
+  },
+  "theme": {
+    "title": "Tema",
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "language": "Idioma",
+  "search": "Pesquisar...",
+  "currentLanguage": "Idioma atual",
+  "commonLanguages": "Idiomas comuns",
+  "allLanguages": "Todos os idiomas",
+  "footer": {
+    "copyright": "Copyright ©{year} Sucrose Wallpaper Engine. Todos os direitos reservados."
+  }
+} 

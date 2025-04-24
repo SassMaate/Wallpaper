@@ -1,0 +1,30 @@
+{
+  "name": "sucrose",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/i18n": "^8.0.0-rc.11",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "@pinia/nuxt": "^0.11.0",
+    "@unhead/dom": "^1.8.10",
+    "@unhead/vue": "^1.8.10",
+    "aos": "^2.3.4",
+    "nuxt": "^3.8.2",
+    "pinia": "^3.0.2",
+    "unhead": "^1.8.10",
+    "vue": "^3.3.12",
+    "vue-i18n": "^9.8.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7"
+  }
+}

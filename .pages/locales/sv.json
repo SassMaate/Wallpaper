@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Funktioner",
+    "gallery": "Galleri",
+    "download": "Ladda ner"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose är en mångsidig bakgrundsmotor som ger liv åt ditt skrivbord med interaktiva bakgrundsbilder.",
+    "download_ms": "Ladda ner från Microsoft Store",
+    "download_github": "Ladda ner från GitHub",
+    "tagline": "Modern bakgrundsupplevelse"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose är en mångsidig bakgrundsmotor som ger liv åt ditt skrivbord med interaktiva bakgrundsbilder. Gratis och öppen källkod.",
+      "keywords": "bakgrundsmotor, skrivbordsanpassning, interaktiva bakgrundsbilder, gratis bakgrundsmotor, skrivbordspersonalisering, sucrose, lively, dynamiska bakgrundsbilder",
+      "og_title": "Sucrose Wallpaper Engine - Förvandla ditt skrivbord",
+      "og_description": "Ge liv åt ditt skrivbord med vackra interaktiva bakgrundsbilder. Gratis, öppen källkod och prestandaoptimerad.",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - Interaktiva Bakgrundsbilder",
+        "description": "Anpassa ditt skrivbord med Sucrose - en gratis bakgrundsmotor med öppen källkod som erbjuder interaktiva bakgrundsbilder, systemintegration och optimerad prestanda."
+      },
+      "features": {
+        "title": "Funktioner - Sucrose Wallpaper Engine",
+        "description": "Upptäck de avancerade funktionerna i Sucrose: anpassningsbara teman, prestandaoptimering, stöd för flera skärmar, ljudreaktivitet och mer."
+      },
+      "gallery": {
+        "title": "Bakgrundsgalleri - Sucrose Wallpaper Engine",
+        "description": "Utforska en samling vackra interaktiva bakgrundsbilder för Sucrose Wallpaper Engine. Tillgängliga för gratis nedladdning."
+      },
+      "download": {
+        "title": "Ladda ner Sucrose Wallpaper Engine - Gratis och Öppen Källkod",
+        "description": "Ladda ner Sucrose Wallpaper Engine gratis. Tillgänglig på Microsoft Store och GitHub. Börja förvandla ditt skrivbord idag."
+      }
+    }
+  },
+  "features": {
+    "title": "Funktioner i Sucrose",
+    "badge": "Funktioner",
+    "subtitle": "Ge liv åt ditt skrivbord med funktionerna som Sucrose Wallpaper Engine erbjuder.",
+    "cta": "Ladda ner nu",
+    "customizable": {
+      "title": "Anpassningsbara teman",
+      "description": "Växla mellan ljusa och mörka teman, skapa dina egna bakgrundsbilder med grundläggande eller avancerade inställningar."
+    },
+    "performance": {
+      "title": "Prestandaoptimering",
+      "description": "Intelligent resurshantering med automatisk pausning när fullskärmsapplikationer körs och energisparläge för bärbara datorer."
+    },
+    "multiscreen": {
+      "title": "Stöd för flera skärmar",
+      "description": "Stöd för flera skärmar och alla upplösningar för en sömlös upplevelse."
+    },
+    "audio": {
+      "title": "Ljudreaktivitet",
+      "description": "Skapa dynamiska bakgrundsbilder som reagerar på musik med Sucrose Audio API."
+    },
+    "web": {
+      "title": "Webbintegration",
+      "description": "Använd webbplatser som bakgrundsbilder med CefSharp och WebView integration."
+    },
+    "switching": {
+      "title": "Automatisk växling",
+      "description": "Växla automatiskt mellan bakgrundsbilder vid definierade intervall eller slumpmässigt."
+    },
+    "system": {
+      "title": "Systemintegration",
+      "description": "Skapa bakgrundsbilder som visar och reagerar på systemstatus med Sucrose System API."
+    },
+    "community": {
+      "title": "Gemenskapsdelning",
+      "description": "Skapa och dela bakgrundsbilder med Sucrose-gemenskapen genom en dedikerad butik."
+    },
+    "free": {
+      "title": "Helt gratis",
+      "description": "Öppen källkod och inga kostnader, alla funktioner är gratis att använda."
+    }
+  },
+  "gallery": {
+    "title": "Sucrose Skärmbilder",
+    "badge": "Galleri",
+    "subtitle": "Exempel på den visuella upplevelsen som Sucrose Wallpaper Engine erbjuder.",
+    "collection": "Bakgrundsbildsamling",
+    "images": {
+      "preview": "Förhandsvisning - Huvudgränssnitt",
+      "store": "Butik - Butiksvy",
+      "alves_town": "Alve's Town - Stadslandskap",
+      "fluid_simulation": "Fluid Simulation - Vätsksimulering",
+      "neo_matrix": "Neo Matrix - Kodregneffekt",
+      "media_parallax": "Media Parallax - Mediaeffekter",
+      "living_room": "Living Room - Inredningsdesign",
+      "periodic_table": "Periodic Table - Vetenskaplig visualisering",
+      "inquisition": "Inquisition - Historiskt tema",
+      "simple_system": "Simple System - Systemmonitor"
+    }
+  },
+  "download": {
+    "title": "Redo att förvandla ditt skrivbord?",
+    "subtitle": "Ladda ner Sucrose Wallpaper Engine nu och upplev ditt skrivbord på ett helt nytt sätt.",
+    "ms_store": "Ladda ner från Microsoft Store",
+    "github": "Ladda ner från GitHub",
+    "source": "Visa källkod"
+  },
+  "theme": {
+    "title": "Tema",
+    "light": "Ljus",
+    "dark": "Mörk",
+    "system": "System"
+  },
+  "language": "Språk",
+  "search": "Sök...",
+  "currentLanguage": "Nuvarande språk",
+  "commonLanguages": "Vanliga språk",
+  "allLanguages": "Alla språk",
+  "footer": {
+    "copyright": "Copyright ©{year} Sucrose Wallpaper Engine. Alla rättigheter förbehållna."
+  }
+} 

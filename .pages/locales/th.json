@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "คุณสมบัติ",
+    "gallery": "แกลเลอรี",
+    "download": "ดาวน์โหลด"
+  },
+  "hero": {
+    "title": "Sucrose Wallpaper Engine",
+    "subtitle": "Sucrose เป็นเอนจิ้นวอลเปเปอร์อเนกประสงค์ที่เติมชีวิตให้กับเดสก์ท็อปของคุณด้วยวอลเปเปอร์แบบโต้ตอบได้",
+    "download_ms": "ดาวน์โหลดจาก Microsoft Store",
+    "download_github": "ดาวน์โหลดจาก GitHub",
+    "tagline": "ประสบการณ์วอลเปเปอร์สมัยใหม่"
+  },
+  "seo": {
+    "global": {
+      "title": "Sucrose Wallpaper Engine",
+      "description": "Sucrose เป็นเอนจิ้นวอลเปเปอร์อเนกประสงค์ที่เติมชีวิตให้กับเดสก์ท็อปของคุณด้วยวอลเปเปอร์แบบโต้ตอบได้ ฟรีและโอเพนซอร์ส",
+      "keywords": "เอนจิ้นวอลเปเปอร์, การปรับแต่งเดสก์ท็อป, วอลเปเปอร์แบบโต้ตอบ, เอนจิ้นวอลเปเปอร์ฟรี, การปรับแต่งเดสก์ท็อป, sucrose, lively, วอลเปเปอร์แบบไดนามิก",
+      "og_title": "Sucrose Wallpaper Engine - เปลี่ยนเดสก์ท็อปของคุณ",
+      "og_description": "เติมชีวิตให้กับเดสก์ท็อปของคุณด้วยวอลเปเปอร์แบบโต้ตอบที่สวยงาม ฟรี, โอเพนซอร์ส และเพิ่มประสิทธิภาพการทำงาน",
+      "og_type": "website",
+      "og_site_name": "Sucrose Wallpaper Engine",
+      "twitter_card": "summary_large_image"
+    },
+    "pages": {
+      "home": {
+        "title": "Sucrose Wallpaper Engine - วอลเปเปอร์แบบโต้ตอบ",
+        "description": "ปรับแต่งเดสก์ท็อปของคุณด้วย Sucrose - เอนจิ้นวอลเปเปอร์ฟรีและโอเพนซอร์สที่มอบวอลเปเปอร์แบบโต้ตอบ, การรวมระบบ และประสิทธิภาพที่เหมาะสม"
+      },
+      "features": {
+        "title": "คุณสมบัติ - Sucrose Wallpaper Engine",
+        "description": "ค้นพบคุณสมบัติขั้นสูงของ Sucrose: ธีมที่ปรับแต่งได้, การเพิ่มประสิทธิภาพ, รองรับหลายหน้าจอ, การตอบสนองต่อเสียง และอื่น ๆ"
+      },
+      "gallery": {
+        "title": "แกลเลอรีวอลเปเปอร์ - Sucrose Wallpaper Engine",
+        "description": "สำรวจคอลเลกชันวอลเปเปอร์แบบโต้ตอบที่สวยงามสำหรับ Sucrose Wallpaper Engine สามารถดาวน์โหลดได้ฟรี"
+      },
+      "download": {
+        "title": "ดาวน์โหลด Sucrose Wallpaper Engine - ฟรีและโอเพนซอร์ส",
+        "description": "ดาวน์โหลด Sucrose Wallpaper Engine ฟรี มีให้บริการใน Microsoft Store และ GitHub เริ่มเปลี่ยนเดสก์ท็อปของคุณวันนี้"
+      }
+    }
+  },
+  "features": {
+    "title": "คุณสมบัติของ Sucrose",
+    "badge": "คุณสมบัติ",
+    "subtitle": "เติมชีวิตให้กับเดสก์ท็อปของคุณด้วยคุณสมบัติที่ Sucrose Wallpaper Engine มอบให้",
+    "cta": "ดาวน์โหลดเลย",
+    "customizable": {
+      "title": "ธีมที่ปรับแต่งได้",
+      "description": "สลับระหว่างธีมสว่างและมืด สร้างวอลเปเปอร์ของคุณเองด้วยการตั้งค่าพื้นฐานหรือขั้นสูง"
+    },
+    "performance": {
+      "title": "การเพิ่มประสิทธิภาพ",
+      "description": "การจัดการทรัพยากรอย่างชาญฉลาดด้วยการหยุดชั่วคราวอัตโนมัติเมื่อใช้แอปเต็มหน้าจอและโหมดประหยัดพลังงานสำหรับแล็ปท็อป"
+    },
+    "multiscreen": {
+      "title": "รองรับหลายหน้าจอ",
+      "description": "รองรับหลายหน้าจอและทุกความละเอียดสำหรับประสบการณ์ที่ราบรื่น"
+    },
+    "audio": {
+      "title": "การตอบสนองต่อเสียง",
+      "description": "สร้างวอลเปเปอร์แบบไดนามิกที่ตอบสนองต่อเพลงด้วย Sucrose Audio API"
+    },
+    "web": {
+      "title": "การรวมเว็บ",
+      "description": "ใช้เว็บไซต์เป็นวอลเปเปอร์ด้วยการรวม CefSharp และ WebView"
+    },
+    "switching": {
+      "title": "การสลับอัตโนมัติ",
+      "description": "สลับระหว่างวอลเปเปอร์โดยอัตโนมัติตามช่วงเวลาที่กำหนดหรือแบบสุ่ม"
+    },
+    "system": {
+      "title": "การรวมระบบ",
+      "description": "สร้างวอลเปเปอร์ที่แสดงและตอบสนองต่อสถานะระบบด้วย Sucrose System API"
+    },
+    "community": {
+      "title": "การแบ่งปันชุมชน",
+      "description": "สร้างและแบ่งปันวอลเปเปอร์กับชุมชน Sucrose ผ่านร้านค้าเฉพาะ"
+    },
+    "free": {
+      "title": "ฟรีทั้งหมด",
+      "description": "โอเพนซอร์สและไม่มีค่าใช้จ่าย ทุกคุณสมบัติสามารถใช้งานได้ฟรี"
+    }
+  },
+  "gallery": {
+    "title": "ภาพหน้าจอ Sucrose",
+    "badge": "แกลเลอรี",
+    "subtitle": "ตัวอย่างประสบการณ์ทางสายตาที่ Sucrose Wallpaper Engine มอบให้",
+    "collection": "คอลเลกชันวอลเปเปอร์",
+    "images": {
+      "preview": "Preview - อินเตอร์เฟซหลัก",
+      "store": "Store - มุมมองร้านค้า",
+      "alves_town": "Alve's Town - ทิวทัศน์เมือง",
+      "fluid_simulation": "Fluid Simulation - การจำลองของไหล",
+      "neo_matrix": "Neo Matrix - เอฟเฟกต์สายฝนโค้ด",
+      "media_parallax": "Media Parallax - เอฟเฟกต์สื่อ",
+      "living_room": "Living Room - การออกแบบภายใน",
+      "periodic_table": "Periodic Table - การแสดงผลทางวิทยาศาสตร์",
+      "inquisition": "Inquisition - ธีมประวัติศาสตร์",
+      "simple_system": "Simple System - มอนิเตอร์ระบบ"
+    }
+  },
+  "download": {
+    "title": "พร้อมที่จะเปลี่ยนเดสก์ท็อปของคุณหรือยัง?",
+    "subtitle": "ดาวน์โหลด Sucrose Wallpaper Engine ตอนนี้และสัมผัสเดสก์ท็อปของคุณในรูปแบบที่แปลกใหม่",
+    "ms_store": "ดาวน์โหลดจาก Microsoft Store",
+    "github": "ดาวน์โหลดจาก GitHub",
+    "source": "ดูซอร์สโค้ด"
+  },
+  "theme": {
+    "title": "ธีม",
+    "light": "สว่าง",
+    "dark": "มืด",
+    "system": "ระบบ"
+  },
+  "language": "ภาษา",
+  "search": "ค้นหา...",
+  "currentLanguage": "ภาษาปัจจุบัน",
+  "commonLanguages": "ภาษาที่ใช้บ่อย",
+  "allLanguages": "ภาษาทั้งหมด",
+  "footer": {
+    "copyright": "ลิขสิทธิ์ ©{year} Sucrose Wallpaper Engine สงวนลิขสิทธิ์ทั้งหมด"
+  }
+} 
