@@ -13,7 +13,7 @@
     
     <!-- Background Image with Modern Overlay -->
     <div class="absolute inset-0 z-5 opacity-10 dark:opacity-20">
-      <img :src="'images/Promo.png'" alt="Background" class="w-full h-full object-cover">
+      <img :src="promoImageSrc" alt="Background" class="w-full h-full object-cover">
     </div>
     
     <!-- Content -->
@@ -107,15 +107,20 @@
 
 <script setup>
 import { useI18n } from 'vue-i18n';
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+import { useNuxtApp } from '#app';
 
 const { t } = useI18n();
+const { $buildImageUrl } = useNuxtApp();
+
+// Generate image URL using our plugin
+const promoImageSrc = $buildImageUrl('images/Promo.png');
 
 // Make sure the image is loaded
 onMounted(() => {
   // Preload the image
   const img = new Image();
-  img.src = 'images/Promo.png';
+  img.src = promoImageSrc;
 });
 </script>
 
