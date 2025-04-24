@@ -115,7 +115,7 @@ const { t } = useI18n();
 onMounted(() => {
   // Preload the image
   const img = new Image();
-  img.src = '/images/Promo.png';
+  img.src = './images/Promo.png';
 });
 </script>
 

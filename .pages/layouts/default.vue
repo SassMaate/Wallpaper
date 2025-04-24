@@ -5,7 +5,7 @@
       <nav class="container mx-auto px-6 py-4 relative">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-2">
-            <img src="/images/Logo.svg" alt="Sucrose Logo" class="w-8 h-8 rounded-lg">
+            <img src="./images/Logo.svg" alt="Sucrose Logo" class="w-8 h-8 rounded-lg">
             <span class="text-2xl font-bold bg-gradient-text dark:bg-gradient-text cursor-default hidden xs:inline-block">Sucrose Wallpaper Engine</span>
           </div>
           
