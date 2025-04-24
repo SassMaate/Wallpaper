@@ -82,7 +82,7 @@ export default defineNuxtConfig({
       ]
     },
     baseURL: '/Sucrose/',
-    cdnURL: 'https://taiizor.github.io'
+    cdnURL: 'https://taiizor.github.io/Sucrose'
   },
   plugins: [],
   nitro: {
