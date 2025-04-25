@@ -74,13 +74,13 @@ _Take a moment, preview GIF clips may take some time to load._
 
 ## Enhancements:
  * Some bugs have been fixed.
- * Added “Transmission” as a Communication Type.
+ * Added "Transmission" as a Communication Type.
  * Now requires an up-to-date WebView2 Runtime for the WebView engine.
  * The default Communication Type has been changed from Pipe to Transmission.
  * Now requires an up-to-date Visual C++ Redistributable for the CefSharp engine.
- * Added warning messages when a file is in use during certain file/folder operations.
  * The default Url, Web and YouTube engine has been changed from CefSharp to WebView.
- * Fixed the issue where incomplete or incorrectly filled fields wouldn’t receive focus when creating wallpapers.
+ * Added warning messages when a file is in use during certain file/folder operations.
+ * Fixed the issue where incomplete or incorrectly filled fields wouldn't receive focus when creating wallpapers.
 
 ## Translations:
  * Translations and improvements have been made.
