@@ -8,6 +8,7 @@ using System.IO;
 using System.Net.Http;
 using System.Windows;
 using Application = System.Windows.Application;
+using SEVT = Skylark.Enum.VersionType;
 using SEWTT = Skylark.Enum.WindowsThemeType;
 using SHC = Skylark.Helper.Culture;
 using SHV = Skylark.Helper.Versionly;
@@ -175,7 +176,16 @@ namespace Sucrose.Live.CefSharp
 
                     if (Version != null && Installed != null && (int)Installed == 1)
                     {
-                        return true;
+                        SSWHD.Add("VC Redist Version", $"{Version}");
+
+                        if (SHV.Compare(SHV.Clear($"{Version}"), SHV.Clear("v14.42.34433.0")) != SEVT.Latest)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
                     }
                     else
                     {

@@ -30,6 +30,6 @@ namespace Sucrose.Memory.Manage.Readonly
 
         public static readonly string ValueSeparator = $"{ValueSeparatorChar}";
 
-        public static readonly string UserAgent = "Sucrose/2.0 (Wallpaper Engine) SucroseWebKit";
+        public static readonly string UserAgent = "Sucrose/2.1 (Wallpaper Engine) SucroseWebKit";
     }
 }

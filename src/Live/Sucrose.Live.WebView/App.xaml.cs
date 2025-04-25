@@ -6,6 +6,7 @@ using System.IO;
 using System.Net.Http;
 using System.Windows;
 using Application = System.Windows.Application;
+using SEVT = Skylark.Enum.VersionType;
 using SEWTT = Skylark.Enum.WindowsThemeType;
 using SHC = Skylark.Helper.Culture;
 using SHV = Skylark.Helper.Versionly;
@@ -151,13 +152,24 @@ namespace Sucrose.Live.WebView
         {
             try
             {
-                if (string.IsNullOrEmpty(CoreWebView2Environment.GetAvailableBrowserVersionString()))
+                string Version = CoreWebView2Environment.GetAvailableBrowserVersionString();
+
+                SSWHD.Add("WebView Version", Version);
+
+                if (string.IsNullOrEmpty(Version))
                 {
                     return false;
                 }
                 else
                 {
-                    return true;
+                    if (SHV.Compare(SHV.Clear(Version), SHV.Clear("135.0.3179.98")) != SEVT.Latest)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             catch
