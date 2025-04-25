@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Interaktiiviset työpöydän taustakuvat",
-        "description": "Mukauta työpöytääsi Sucrosella - ilmaisella, avoimen lähdekoodin taustakuvamoottorilla, jossa on interaktiivisia taustakuvia, järjestelmäintegraatio ja suorituskyvyn optimointi."
-      },
-      "features": {
-        "title": "Ominaisuudet - Sucrose Wallpaper Engine",
-        "description": "Tutustu Sucrosen tehokkaisiin ominaisuuksiin: mukautettavat teemat, suorituskyvyn optimointi, usean näytön tuki, ääniresponsiivisuus ja paljon muuta."
-      },
-      "gallery": {
-        "title": "Taustakuvagalleria - Sucrose Wallpaper Engine",
-        "description": "Selaa kokoelmaamme kauniita interaktiivisia taustakuvia Sucrose Wallpaper Enginelle. Ilmainen ladata ja käyttää."
-      },
-      "download": {
-        "title": "Lataa Sucrose Wallpaper Engine - Ilmainen ja avoimen lähdekoodin",
-        "description": "Lataa Sucrose Wallpaper Engine ilmaiseksi. Saatavilla Microsoft Storessa ja GitHubissa. Muuta työpöytäkokemuksesi tänään."
-      }
     }
   },
   "features": {

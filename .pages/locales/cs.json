@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Interaktivní tapety na plochu",
-        "description": "Přizpůsobte si svou plochu pomocí Sucrose - bezplatného, open-source tapetového enginu s interaktivními tapetami, systémovou integrací a optimalizací výkonu."
-      },
-      "features": {
-        "title": "Funkce - Sucrose Wallpaper Engine",
-        "description": "Objevte výkonné funkce Sucrose: přizpůsobitelná témata, optimalizace výkonu, podpora více obrazovek, citlivost na zvuk a další."
-      },
-      "gallery": {
-        "title": "Galerie tapet - Sucrose Wallpaper Engine",
-        "description": "Prohlédněte si naši sbírku krásných interaktivních tapet pro Sucrose Wallpaper Engine. Zdarma ke stažení a použití."
-      },
-      "download": {
-        "title": "Stáhněte si Sucrose Wallpaper Engine - Zdarma a open source",
-        "description": "Stáhněte si Sucrose Wallpaper Engine zdarma. K dispozici na Microsoft Store a GitHub. Proměňte svůj zážitek s plochou ještě dnes."
-      }
     }
   },
   "features": {

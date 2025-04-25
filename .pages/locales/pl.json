@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Interaktywne Tapety",
-        "description": "Spersonalizuj swój pulpit z Sucrose - darmowym silnikiem tapet o otwartym kodzie źródłowym, oferującym interaktywne tapety, integrację systemową i zoptymalizowaną wydajność."
-      },
-      "features": {
-        "title": "Funkcje - Sucrose Wallpaper Engine",
-        "description": "Odkryj zaawansowane funkcje Sucrose: konfigurowalne motywy, optymalizacja wydajności, obsługa wielu ekranów, responsywność audio i więcej."
-      },
-      "gallery": {
-        "title": "Galeria Tapet - Sucrose Wallpaper Engine",
-        "description": "Przeglądaj kolekcję pięknych interaktywnych tapet dla Sucrose Wallpaper Engine. Dostępne do pobrania za darmo."
-      },
-      "download": {
-        "title": "Pobierz Sucrose Wallpaper Engine - Darmowy i Open-Source",
-        "description": "Pobierz Sucrose Wallpaper Engine za darmo. Dostępny w Microsoft Store i na GitHub. Zacznij transformować swój pulpit już dziś."
-      }
     }
   },
   "features": {

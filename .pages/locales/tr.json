@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - İnteraktif Masaüstü Duvar Kağıtları",
-        "description": "Masaüstünüzü Sucrose ile özelleştirin - interaktif duvar kağıtları, sistem entegrasyonu ve performans optimizasyonu özelliklerine sahip ücretsiz, açık kaynaklı bir duvar kağıdı motoru."
-      },
-      "features": {
-        "title": "Özellikler - Sucrose Wallpaper Engine",
-        "description": "Sucrose'un güçlü özelliklerini keşfedin: özelleştirilebilir temalar, performans optimizasyonu, çoklu ekran desteği, ses duyarlılığı ve daha fazlası."
-      },
-      "gallery": {
-        "title": "Duvar Kağıdı Galerisi - Sucrose Wallpaper Engine",
-        "description": "Sucrose Wallpaper Engine için güzel interaktif duvar kağıtları koleksiyonumuza göz atın. İndirmesi ve kullanımı ücretsiz."
-      },
-      "download": {
-        "title": "Sucrose Wallpaper Engine'yi İndirin - Ücretsiz ve Açık Kaynaklı",
-        "description": "Sucrose Wallpaper Engine'yi ücretsiz indirin. Microsoft Store ve GitHub'da mevcut. Bugün masaüstü deneyiminizi dönüştürün."
-      }
     }
   },
   "features": {

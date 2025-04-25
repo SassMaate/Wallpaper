@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Fonds d'écran interactifs",
-        "description": "Personnalisez votre bureau avec Sucrose - un moteur de fond d'écran gratuit et open source offrant des fonds d'écran interactifs, une intégration système et des performances optimisées."
-      },
-      "features": {
-        "title": "Fonctionnalités - Sucrose Wallpaper Engine",
-        "description": "Découvrez les fonctionnalités avancées de Sucrose : thèmes personnalisables, optimisation des performances, prise en charge multi-écrans, réactivité audio, et plus encore."
-      },
-      "gallery": {
-        "title": "Galerie de fonds d'écran - Sucrose Wallpaper Engine",
-        "description": "Parcourez la collection de magnifiques fonds d'écran interactifs pour Sucrose Wallpaper Engine. Disponibles en téléchargement gratuit."
-      },
-      "download": {
-        "title": "Télécharger Sucrose Wallpaper Engine - Gratuit et open source",
-        "description": "Téléchargez gratuitement Sucrose Wallpaper Engine. Disponible sur Microsoft Store et GitHub. Transformez votre bureau dès maintenant."
-      }
     }
   },
   "features": {

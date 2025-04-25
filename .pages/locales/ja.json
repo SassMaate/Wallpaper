@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - インタラクティブ壁紙",
-        "description": "Sucroseでデスクトップをカスタマイズ - インタラクティブな壁紙、システム統合、最適化されたパフォーマンスを提供する無料のオープンソース壁紙エンジン。"
-      },
-      "features": {
-        "title": "機能 - Sucrose Wallpaper Engine",
-        "description": "Sucroseの高度な機能を発見：カスタマイズ可能なテーマ、パフォーマンス最適化、マルチスクリーンサポート、オーディオレスポンシブなど。"
-      },
-      "gallery": {
-        "title": "壁紙ギャラリー - Sucrose Wallpaper Engine",
-        "description": "Sucrose Wallpaper Engine用の美しいインタラクティブ壁紙コレクションを閲覧。無料ダウンロード可能。"
-      },
-      "download": {
-        "title": "Sucrose Wallpaper Engineをダウンロード - 無料でオープンソース",
-        "description": "Sucrose Wallpaper Engineを無料でダウンロード。Microsoft StoreとGitHubで入手可能。今日からデスクトップを変えましょう。"
-      }
     }
   },
   "features": {

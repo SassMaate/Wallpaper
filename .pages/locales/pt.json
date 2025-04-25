@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Papéis de Parede Interativos",
-        "description": "Personalize seu desktop com o Sucrose - um motor de papel de parede gratuito e de código aberto que oferece papéis de parede interativos, integração com o sistema e desempenho otimizado."
-      },
-      "features": {
-        "title": "Recursos - Sucrose Wallpaper Engine",
-        "description": "Descubra os recursos avançados do Sucrose: temas personalizáveis, otimização de desempenho, suporte a múltiplos monitores, responsividade de áudio e mais."
-      },
-      "gallery": {
-        "title": "Galeria de Papéis de Parede - Sucrose Wallpaper Engine",
-        "description": "Explore uma coleção de belos papéis de parede interativos para o Sucrose Wallpaper Engine. Disponíveis para download gratuito."
-      },
-      "download": {
-        "title": "Download do Sucrose Wallpaper Engine - Gratuito e de Código Aberto",
-        "description": "Faça o download do Sucrose Wallpaper Engine gratuitamente. Disponível na Microsoft Store e no GitHub. Comece a transformar seu desktop hoje."
-      }
     }
   },
   "features": {

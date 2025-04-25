@@ -15,7 +15,8 @@ export default defineEventHandler(async (event) => {
   const languages = [
     'bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'fi', 'fr', 
     'hi', 'hu', 'id', 'it', 'ja', 'ko', 'nl', 'no', 'pl', 
-    'pt', 'ro', 'ru', 'sk', 'sv', 'th', 'tr', 'uk', 'vi', 'zh'
+    'pt', 'ro', 'ru', 'sk', 'sv', 'th', 'tr', 'uk', 'vi', 
+    'zh'
   ]
 
   // Current date

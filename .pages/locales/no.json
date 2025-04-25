@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Interaktive Bakgrunnsbilder",
-        "description": "Tilpass skrivebordet ditt med Sucrose - en gratis bakgrunnsmotor med åpen kildekode som tilbyr interaktive bakgrunnsbilder, systemintegrasjon og optimalisert ytelse."
-      },
-      "features": {
-        "title": "Funksjoner - Sucrose Wallpaper Engine",
-        "description": "Oppdag de avanserte funksjonene i Sucrose: tilpassbare temaer, ytelsesoptimalisering, støtte for flere skjermer, lydresponsivitet og mer."
-      },
-      "gallery": {
-        "title": "Bakgrunnsgalleri - Sucrose Wallpaper Engine",
-        "description": "Utforsk en samling av vakre interaktive bakgrunnsbilder for Sucrose Wallpaper Engine. Gratis å laste ned."
-      },
-      "download": {
-        "title": "Last ned Sucrose Wallpaper Engine - Gratis og Åpen Kildekode",
-        "description": "Last ned Sucrose Wallpaper Engine gratis. Tilgjengelig på Microsoft Store og GitHub. Begynn å transformere skrivebordet ditt i dag."
-      }
     }
   },
   "features": {

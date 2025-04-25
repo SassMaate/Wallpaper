@@ -21,24 +21,6 @@
       "og_type": "website",
       "og_site_name": "Sucrose Wallpaper Engine",
       "twitter_card": "summary_large_image"
-    },
-    "pages": {
-      "home": {
-        "title": "Sucrose Wallpaper Engine - Interaktív asztali háttérképek",
-        "description": "Szabja testre asztalát a Sucrose-zal - egy ingyenes, nyílt forráskódú háttérkép motorral, amely interaktív háttérképeket, rendszerintegrációt és teljesítmény-optimalizálást kínál."
-      },
-      "features": {
-        "title": "Funkciók - Sucrose Wallpaper Engine",
-        "description": "Fedezze fel a Sucrose hatékony funkcióit: testreszabható témák, teljesítmény-optimalizálás, több képernyő támogatása, hangra reagálás és még sok más."
-      },
-      "gallery": {
-        "title": "Háttérkép galéria - Sucrose Wallpaper Engine",
-        "description": "Böngéssze gyönyörű interaktív háttérképeink gyűjteményét a Sucrose Wallpaper Engine-hez. Ingyenesen letölthető és használható."
-      },
-      "download": {
-        "title": "Töltse le a Sucrose Wallpaper Engine-t - Ingyenes és nyílt forráskódú",
-        "description": "Töltse le a Sucrose Wallpaper Engine-t ingyen. Elérhető a Microsoft Store-ban és a GitHub-on. Alakítsa át asztali élményét még ma."
-      }
     }
   },
   "features": {
