@@ -321,6 +321,10 @@ const baseURL = config.public.baseURL;
 const { $buildImageUrl } = useNuxtApp();
 const logoSrc = $buildImageUrl('images/Logo.svg');
 
+// Router ve i18n helpers
+const router = useRouter();
+const switchLocalePath = useSwitchLocalePath();
+
 const toggleThemeDropdown = () => {
   isThemeDropdownOpen.value = !isThemeDropdownOpen.value;
   isLanguageDropdownOpen.value = false;
@@ -345,17 +349,14 @@ const changeTheme = (theme) => {
 };
 
 const changeLocale = (code) => {
-  // Simply change the locale and save it, then refresh the page
-  locale.value = code;
-  
-  // Save language preference to localStorage
+  // Save language preference to localStorage (optional but can be useful)
   if (typeof window !== 'undefined') {
     localStorage.setItem('user-locale', code);
-    
-    // Refresh the page - simple and effective
-    window.location.reload();
   }
-  
+
+  // Navigate to the new locale path
+  router.push(switchLocalePath(code));
+
   // Close dropdowns
   isLanguageDropdownOpen.value = false;
   closeMobileMenu();

@@ -17,7 +17,6 @@
 <script setup>
 import { useHead } from '#app';
 import { useI18n } from 'vue-i18n';
-import { computed } from 'vue';
 
 import HeroSection from '~/components/home/HeroSection.vue';
 import GallerySection from '~/components/home/GallerySection.vue';

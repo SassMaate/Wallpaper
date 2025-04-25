@@ -31,7 +31,11 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: 'en',
     langDir: 'locales/',
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    },
     strategy: 'prefix_except_default',
     skipSettingLocaleOnNavigate: false,
     baseUrl: 'https://taiizor.github.io/Sucrose', // Add your site URL here for SEO
