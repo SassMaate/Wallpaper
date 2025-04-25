@@ -15,25 +15,26 @@ export default defineNuxtConfig({
     }
   },
   tailwindcss: {
-    cssPath: '~/assets/css/main.css',
-    configPath: '~/tailwind.config.js',
+    viewer: true,
     exposeConfig: true,
-    viewer: true
+    cssPath: '~/assets/css/main.css',
+    configPath: '~/tailwind.config.js'
   },
   colorMode: {
+    classPrefix: '',
     classSuffix: '',
     fallback: 'light',
     preference: 'system',
-    classPrefix: '',
     storageKey: 'color-mode'
   },
   i18n: {
     lazy: true,
-    strategy: 'prefix_except_default',
     defaultLocale: 'en',
-    detectBrowserLanguage: false,
-    skipSettingLocaleOnNavigate: false,
     langDir: 'locales/',
+    detectBrowserLanguage: false,
+    strategy: 'prefix_except_default',
+    skipSettingLocaleOnNavigate: false,
+    baseUrl: 'https://taiizor.github.io/Sucrose', // Add your site URL here for SEO
     locales: [
       { code: 'bg', name: 'Български', file: 'bg.json', iso: 'bg-BG' },
       { code: 'cs', name: 'Čeština', file: 'cs.json', iso: 'cs-CZ' },
@@ -63,12 +64,11 @@ export default defineNuxtConfig({
       { code: 'uk', name: 'Українська', file: 'uk.json', iso: 'uk-UA' },
       { code: 'vi', name: 'Tiếng Việt', file: 'vi.json', iso: 'vi-VN' },
       { code: 'zh', name: '中文', file: 'zh.json', iso: 'zh-CN' }
-    ],
-    baseUrl: 'https://taiizor.github.io/Sucrose' // Add your site URL here for SEO
+    ]
   },
   css: [
-    '~/assets/css/main.css',
-    'aos/dist/aos.css'
+    'aos/dist/aos.css',
+    '~/assets/css/main.css'
   ],
   app: {
     head: {
@@ -76,13 +76,25 @@ export default defineNuxtConfig({
         lang: 'en'
       },
       charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
       title: 'Sucrose Wallpaper Engine',
+      viewport: 'width=device-width, initial-scale=1.0',
       meta: [
-        { name: 'description', content: 'Sucrose is a versatile wallpaper engine that brings life to your desktop with a wide range of interactive wallpapers.' },
-        { name: 'format-detection', content: 'telephone=no' }
+        { name: 'author', content: 'Taiizor' },
+        { name: 'format-detection', content: 'telephone=no' },
+
+        { property: 'og:image:width', content: '512' },
+        { property: 'og:image:height', content: '512' },
+        { property: 'og:image:type', content: 'image/png' },
+        { property: 'og:image', content: '/Sucrose/images/Logo.png' },
+        { property: 'og:url', content: 'https://taiizor.github.io/Sucrose' },
+        { property: 'og:image:alt', content: 'Sucrose is a versatile wallpaper engine that brings life to your desktop with a wide range of interactive wallpapers.' },
+
+        { property: 'twitter:image', content: '/Sucrose/images/Logo.png' },
+        { property: 'twitter:url', content: 'https://taiizor.github.io/Sucrose' },
+        { property: 'twitter:image:alt', content: 'Sucrose is a versatile wallpaper engine that brings life to your desktop with a wide range of interactive wallpapers.' }
       ],
       link: [
+        { rel: 'canonical', href: 'https://taiizor.github.io/Sucrose' },
         { rel: 'icon', type: 'image/x-icon', href: '/Sucrose/favicon.ico' }
       ],
       script: [
@@ -161,7 +173,7 @@ export default defineNuxtConfig({
     }
   },
   experimental: {
-    payloadExtraction: false // To solve loading issues
+    payloadExtraction: true // To solve loading issues
   },
   vite: {
     optimizeDeps: {
