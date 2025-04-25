@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
     xml += `    <loc>${baseURL}${route.url}</loc>\n`
     xml += `    <lastmod>${currentDate}</lastmod>\n`
     xml += `    <changefreq>${route.changefreq}</changefreq>\n`
-    xml += `    <priority>${route.priority}</priority>\n`
+    xml += `    <priority>${route.priority.toFixed(1)}</priority>\n`
     
     // Add xhtml:link for each language alternative
     for (const lang of languages) {
@@ -52,7 +52,7 @@ export default defineEventHandler(async (event) => {
       xml += `    <loc>${baseURL}/${lang}</loc>\n`
       xml += `    <lastmod>${currentDate}</lastmod>\n`
       xml += `    <changefreq>${route.changefreq}</changefreq>\n`
-      xml += `    <priority>${route.priority}</priority>\n`
+      xml += `    <priority>${route.priority.toFixed(1)}</priority>\n`
       
       // Add xhtml:link for each language alternative
       for (const altLang of languages) {
