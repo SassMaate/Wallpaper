@@ -150,8 +150,6 @@ namespace Sucrose.Live.Xavier
 
                         if (SSTHV.IsUrl(Source) || File.Exists(Source))
                         {
-                            SSSHS.Apply();
-
                             SSEHA.Start();
 
                             SSEHC.Start();
@@ -209,6 +207,8 @@ namespace Sucrose.Live.Xavier
 
             if (SSSHI.Basic(SMMRM.Live, SMMRA.XavierLive) && SSEHR.Check())
             {
+                SSSHS.Apply();
+
                 if (SSSHC.Check())
                 {
                     SSSHC.Change();

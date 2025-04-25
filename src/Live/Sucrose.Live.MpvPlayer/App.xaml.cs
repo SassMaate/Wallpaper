@@ -201,8 +201,6 @@ namespace Sucrose.Live.MpvPlayer
 
                         if (SSTHV.IsUrl(Source) || File.Exists(Source))
                         {
-                            SSSHS.Apply();
-
                             SSEHA.Start();
 
                             SSEHC.Start();
@@ -268,6 +266,8 @@ namespace Sucrose.Live.MpvPlayer
 
             if (SSSHI.Basic(SMMRM.Live, SMMRA.MpvPlayerLive) && SSEHR.Check())
             {
+                SSSHS.Apply();
+
                 if (SSSHC.Check())
                 {
                     SSSHC.Change();

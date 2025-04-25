@@ -357,8 +357,6 @@ namespace Sucrose.Live.WebView
 
                         if (SSTHV.IsUrl(Source) || File.Exists(Source))
                         {
-                            SSSHS.Apply();
-
                             SSEHA.Start();
 
                             SSEHC.Start();
@@ -524,6 +522,8 @@ namespace Sucrose.Live.WebView
 
             if (SSSHI.Basic(SMMRM.Live, SMMRA.WebViewLive) && SSEHR.Check())
             {
+                SSSHS.Apply();
+
                 if (SSSHC.Check())
                 {
                     SSSHC.Change();

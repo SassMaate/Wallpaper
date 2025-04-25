@@ -153,8 +153,6 @@ namespace Sucrose.Live.Aurora
 
                             if (File.Exists(Source))
                             {
-                                SSSHS.Apply();
-
                                 SSEHA.Start();
 
                                 SSEHC.Start();
@@ -213,6 +211,8 @@ namespace Sucrose.Live.Aurora
 
             if (SSSHI.Basic(SMMRM.Live, SMMRA.AuroraLive) && SSEHR.Check())
             {
+                SSSHS.Apply();
+
                 if (SSSHC.Check())
                 {
                     SSSHC.Change();
