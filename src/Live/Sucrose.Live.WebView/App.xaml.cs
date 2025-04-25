@@ -23,6 +23,7 @@ using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SMMW = Sucrose.Manager.Manage.Warehouse;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
@@ -162,7 +163,7 @@ namespace Sucrose.Live.WebView
                 }
                 else
                 {
-                    if (SHV.Compare(SHV.Clear(Version), SHV.Clear("135.0.3179.98")) != SEVT.Latest)
+                    if (SHV.Compare(SHV.Clear(Version), SHV.Clear("131.0.2903.146")) != SEVT.Latest)
                     {
                         return true;
                     }
@@ -466,15 +467,13 @@ namespace Sucrose.Live.WebView
 
         protected async void Downloader()
         {
-            string Url = "https://go.microsoft.com/fwlink/p/?LinkId=2124703";
-
             string File = Path.Combine(Path.GetTempPath(), $"MicrosoftEdgeWebView2Setup.{Guid.NewGuid()}.exe");
 
             HttpClient Client = new();
 
             Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
 
-            HttpResponseMessage Response = await Client.GetAsync(Url);
+            HttpResponseMessage Response = await Client.GetAsync(SMMRU.WebView2);
 
             Response.EnsureSuccessStatusCode();
 

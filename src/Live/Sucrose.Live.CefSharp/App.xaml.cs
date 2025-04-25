@@ -25,6 +25,7 @@ using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SMMW = Sucrose.Manager.Manage.Warehouse;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
@@ -178,7 +179,7 @@ namespace Sucrose.Live.CefSharp
                     {
                         SSWHD.Add("VC Redist Version", $"{Version}");
 
-                        if (SHV.Compare(SHV.Clear($"{Version}"), SHV.Clear("v14.42.34433.0")) != SEVT.Latest)
+                        if (SHV.Compare(SHV.Clear($"{Version}"), SHV.Clear("v14.40.33816.0")) != SEVT.Latest)
                         {
                             return true;
                         }
@@ -539,13 +540,13 @@ namespace Sucrose.Live.CefSharp
         protected async void Downloader()
         {
 #if X64
-            string Url = "https://aka.ms/vs/17/release/vc_redist.x64.exe";
+            string Url = string.Format(SMMRU.VCRedist, "x64");
             string File = Path.Combine(Path.GetTempPath(), $"VC_redist.x64.{Guid.NewGuid()}.exe");
 #elif X86
-            string Url = "https://aka.ms/vs/17/release/vc_redist.x86.exe";
+            string Url = string.Format(SMMRU.VCRedist, "x86");
             string File = Path.Combine(Path.GetTempPath(), $"VC_redist.x86.{Guid.NewGuid()}.exe");
 #else
-            string Url = "https://aka.ms/vs/17/release/vc_redist.arm64.exe";
+            string Url = string.Format(SMMRU.VCRedist, "arm64");
             string File = Path.Combine(Path.GetTempPath(), $"VC_redist.arm64.{Guid.NewGuid()}.exe");
 #endif
 
