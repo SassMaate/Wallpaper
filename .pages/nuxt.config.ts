@@ -173,7 +173,12 @@ export default defineNuxtConfig({
   plugins: [],
   nitro: {
     prerender: {
-      routes: ['/sitemap.xml']
+      routes: [
+        '/sitemap.xml'
+      ]
+    },
+    routeRules: {
+      '/sitemap.xml': { headers: { 'Content-Type': 'application/xml' } }
     }
   },
   experimental: {

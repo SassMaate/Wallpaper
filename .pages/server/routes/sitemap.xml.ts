@@ -24,7 +24,8 @@ export default defineEventHandler(async (event) => {
 
   // XML header
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
-  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+  xml += 'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 
   // Create sitemap entry for home page and language versions
   for (const route of routes) {
