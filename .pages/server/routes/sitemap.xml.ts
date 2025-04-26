@@ -74,4 +74,5 @@ export default defineEventHandler(async (event) => {
   event.node.res.setHeader('Content-Type', 'application/xml')
   
   return xml
+  //return send(event, xml, 'application/xml')
 }) 
