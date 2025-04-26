@@ -25,6 +25,9 @@ export default defineEventHandler(async (event) => {
   // XML header
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+  xml += 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
+  xml += 'xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 '
+  xml += 'http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" '
   xml += 'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
 
   // Create sitemap entry for home page and language versions
@@ -71,8 +74,8 @@ export default defineEventHandler(async (event) => {
   xml += '</urlset>'
 
   // Set HTTP headers
-  event.node.res.setHeader('Content-Type', 'application/xml')
+  event.node.res.setHeader('Content-Type', 'application/xhtml+xml')
   
   return xml
-  //return send(event, xml, 'application/xml')
+  //return send(event, xml, 'application/xhtml+xml')
 }) 

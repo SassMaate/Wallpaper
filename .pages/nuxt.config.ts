@@ -178,7 +178,7 @@ export default defineNuxtConfig({
       ]
     },
     routeRules: {
-      '/sitemap.xml': { headers: { 'Content-Type': 'application/xml' } }
+      '/sitemap.xml': { headers: { 'Content-Type': 'application/xhtml+xml' } }
     }
   },
   experimental: {
