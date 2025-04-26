@@ -74,8 +74,8 @@ export default defineEventHandler(async (event) => {
   xml += '</urlset>'
 
   // Set HTTP headers
-  event.node.res.setHeader('Content-Type', 'application/xhtml+xml')
+  event.node.res.setHeader('Content-Type', 'application/xml')
   
   return xml
-  //return send(event, xml, 'application/xhtml+xml')
+  //return send(event, xml, 'application/xml')
 }) 
