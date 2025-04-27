@@ -97,8 +97,9 @@
     </div>
     
     <!-- Scroll Indicator -->
-    <div class="absolute inset-x-0 bottom-8 flex justify-center items-center z-50 animate-bounce pointer-events-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-neutral-500 dark:text-neutral-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div 
+      class="absolute inset-x-0 bottom-8 flex justify-center items-center z-20 animate-bounce transition-all duration-300 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-neutral-500 dark:text-neutral-400 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" @click="scrollDown">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
       </svg>
     </div>
@@ -115,6 +116,15 @@ const { $buildImageUrl } = useNuxtApp();
 
 // Generate image URL using our plugin
 const promoImageSrc = $buildImageUrl('images/Promo.png');
+
+// Page scroll down function
+const scrollDown = () => {
+  const scrollAmount = window.innerHeight * 0.5; // Scroll by 50% of the screen height
+  window.scrollTo({
+    top: window.scrollY + scrollAmount,
+    behavior: 'smooth'
+  });
+};
 
 // Make sure the image is loaded
 onMounted(() => {
