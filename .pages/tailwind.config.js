@@ -112,7 +112,7 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif'],
-        'display': ['Poppins', 'sans-serif'],
+        'display': ['SF Pro Display', 'Poppins', 'sans-serif'],
         'mono': ['Fira Code', 'monospace'],
       },
       backdropFilter: {
