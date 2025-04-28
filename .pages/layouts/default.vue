@@ -278,13 +278,13 @@ const filteredLocales = computed(() => {
   }
   
   const search = languageSearch.value.toLowerCase();
-  return allLocales.filter(locale => 
-    locale.name.toLowerCase().includes(search) || 
-    locale.code.toLowerCase().includes(search)
+  return allLocales.filter(l => 
+    l.name.toLowerCase().includes(search) || 
+    l.code.toLowerCase().includes(search)
   ).sort((a, b) => {
     // Prioritize exact matches
-    const aExactMatch = locale.name.toLowerCase() === search || locale.code.toLowerCase() === search;
-    const bExactMatch = locale.name.toLowerCase() === search || locale.code.toLowerCase() === search;
+    const aExactMatch = a.name.toLowerCase() === search || a.code.toLowerCase() === search;
+    const bExactMatch = b.name.toLowerCase() === search || b.code.toLowerCase() === search;
     
     if (aExactMatch && !bExactMatch) return -1;
     if (!aExactMatch && bExactMatch) return 1;
@@ -303,9 +303,9 @@ const filteredMobileLocales = computed(() => {
   }
   
   const search = mobileLanguageSearch.value.toLowerCase();
-  return allLocales.filter(locale => 
-    locale.name.toLowerCase().includes(search) || 
-    locale.code.toLowerCase().includes(search)
+  return allLocales.filter(l => 
+    l.name.toLowerCase().includes(search) || 
+    l.code.toLowerCase().includes(search)
   ).sort((a, b) => a.name.localeCompare(b.name));
 });
 
