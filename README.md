@@ -1,5 +1,5 @@
 <div align="left">
-  <h4>English | <a href="README.tr-TR.md">Turkish (Türkçe)</a> | <a href="README.zh-CN.md">Chinese (中文)</a></h4>
+  <h4>English | <a href="README.tr-TR.md">Turkish (Türkçe)</a> | <a href="README.zh-CN.md">Chinese (中文)</a> | <a href="README.ja-JP.md">Japanese (日本語)</a></h4>
   <br>
   <br>
 </div>

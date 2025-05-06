@@ -1,5 +1,5 @@
 <div align="left">
-  <h4><a href="README.md">İngilizce (English)</a> | Türkçe | <a href="README.zh-CN.md">Çince (中文)</a></h4>
+  <h4><a href="README.md">İngilizce (English)</a> | Türkçe | <a href="README.zh-CN.md">Çince (中文)</a> | <a href="README.ja-JP.md">Japonca (日本語)</a></h4>
   <br>
   <br>
 </div>
@@ -202,17 +202,17 @@
       <td><a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48">.NET Framework 4.8</a></td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
+          <img src='.images/Badges/Microsoft/Turkish-Get-It-From-864x312.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
         </a>
       </td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
+          <img src='.images/Badges/Microsoft/Turkish-Get-It-From-864x312.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
         </a>
       </td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
+          <img src='.images/Badges/Microsoft/Turkish-Get-It-From-864x312.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
         </a>
       </td>
     </tr>
