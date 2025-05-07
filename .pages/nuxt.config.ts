@@ -174,13 +174,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        '/sitemap.xml',
-        '/sitemap2.xml'
+        '/sitemap.xml'
       ]
     },
     routeRules: {
-      '/sitemap.xml': { headers: { 'Content-Type': 'application/xml' } },
-      '/sitemap2.xml': { headers: { 'Content-Type': 'application/xml' } }
+      '/sitemap.xml': { headers: { 'Content-Type': 'application/xml' } }
     }
   },
   experimental: {

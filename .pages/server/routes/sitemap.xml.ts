@@ -38,6 +38,15 @@ export default defineEventHandler(async (event) => {
     xml += `    <lastmod>${currentDate}</lastmod>\n`
     xml += `    <changefreq>${route.changefreq}</changefreq>\n`
     xml += `    <priority>${route.priority.toFixed(1)}</priority>\n`
+    
+    // Add xhtml:link for each language alternative
+    for (const lang of languages) {
+      const langPath = lang === 'en' ? route.url : `/${lang}${route.url}`
+      xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${baseURL}${langPath}" />\n`
+    }
+    
+    // Add x-default for default
+    xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseURL}${route.url}" />\n`
     xml += '  </url>\n'
     
     // Create URLs for other languages
@@ -49,6 +58,15 @@ export default defineEventHandler(async (event) => {
       xml += `    <lastmod>${currentDate}</lastmod>\n`
       xml += `    <changefreq>${route.changefreq}</changefreq>\n`
       xml += `    <priority>${route.priority.toFixed(1)}</priority>\n`
+      
+      // Add xhtml:link for each language alternative
+      for (const altLang of languages) {
+        const altLangPath = altLang === 'en' ? '/' : `/${altLang}`
+        xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${baseURL}${altLangPath}" />\n`
+      }
+      
+      // Add x-default for default
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseURL}/" />\n`
       xml += '  </url>\n'
     }
   }
