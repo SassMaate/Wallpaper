@@ -151,11 +151,11 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     break;
                                 case RawMouseButtonFlags.RightButtonDown:
                                     //issue: click being skipped; desktop already has its own rightclick contextmenu.
-                                    //ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONDOWN, (IntPtr)0x0002);
+                                    ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONDOWN, (IntPtr)0x0002);
                                     break;
                                 case RawMouseButtonFlags.RightButtonUp:
                                     //issue: click being skipped; desktop already has its own rightclick contextmenu.
-                                    //ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONUP, (IntPtr)0x0002);
+                                    ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONUP, (IntPtr)0x0002);
                                     break;
                                 case RawMouseButtonFlags.None:
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);

@@ -87,6 +87,14 @@ namespace Sucrose.Shared.Engine.WebView.Event
             if (SMME.DeveloperMode)
             {
                 SSEWVMI.WebEngine.CoreWebView2.OpenDevToolsWindow();
+
+                SSEWVMI.WebEngine.CoreWebView2.Settings.AreDefaultContextMenusEnabled = true;
+                SSEWVMI.WebEngine.CoreWebView2.Settings.AreBrowserAcceleratorKeysEnabled = true;
+            }
+            else
+            {
+                SSEWVMI.WebEngine.CoreWebView2.Settings.AreDefaultContextMenusEnabled = false;
+                SSEWVMI.WebEngine.CoreWebView2.Settings.AreBrowserAcceleratorKeysEnabled = false;
             }
         }
 
