@@ -22,7 +22,7 @@ using SWHWI = Skylark.Wing.Helper.WindowInterop;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWUD = Skylark.Wing.Utility.Desktop;
 
-#if NET8_0_OR_GREATER
+#if NET9_0
 using SWHSR = Skylark.Wing.Helper.ShortcutRuntime;
 #endif
 
@@ -151,7 +151,7 @@ namespace Sucrose.Bundle
 
         private static async Task SetUninstall()
         {
-#if NET48_OR_GREATER
+#if NET48
             FileInfo File = new(Process.GetCurrentProcess().MainModule.FileName);
 #else
             FileInfo File = new(Environment.ProcessPath);
@@ -237,7 +237,7 @@ namespace Sucrose.Bundle
                 {
                     bool CreateDesktopShortcut = true;
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                     try
                     {
                         SWHSR.Create(Path.GetDirectoryName(DesktopShortcut), Shortcut, Text, null, Launcher, null, Path.GetDirectoryName(Launcher), null, SWNM.WindowStyle.Normal);
@@ -268,7 +268,7 @@ namespace Sucrose.Bundle
                 {
                     bool CreateStartMenuShortcut = true;
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                     try
                     {
                         SWHSR.Create(Path.GetDirectoryName(StartMenuProgramsShortcut), Shortcut, Text, null, Launcher, null, Path.GetDirectoryName(Launcher), null, SWNM.WindowStyle.Normal);
@@ -328,7 +328,7 @@ namespace Sucrose.Bundle
 
         private static async Task TerminateProcess(string Name)
         {
-#if NET48_OR_GREATER
+#if NET48
             IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Process.GetCurrentProcess().Id);
 #else
             IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Environment.ProcessId);
@@ -460,7 +460,7 @@ namespace Sucrose.Bundle
             {
                 if (Resource.StartsWith($"{SourcePath}\\"))
                 {
-#if NET48_OR_GREATER
+#if NET48
                     string Resourcer = Resource.Substring($"{SourcePath}\\".Length);
 #else
                     string Resourcer = Resource[$"{SourcePath}\\".Length..];

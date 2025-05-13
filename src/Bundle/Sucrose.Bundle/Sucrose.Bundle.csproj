@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Bundle.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -49,7 +49,7 @@
 
     <PropertyGroup>
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <PublishSingleFile Condition="!$(TargetFramework.StartsWith('net48'))">true</PublishSingleFile>
+        <PublishSingleFile Condition="'$(TargetFramework)' != 'net48'">true</PublishSingleFile>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
@@ -80,7 +80,7 @@
         <PackageReference Include="SharpCompress" Version="0.39.0" />
         <PackageReference Include="Skylark.Wing" Version="3.1.8.5" />
         <PackageReference Include="Skylark.Standard" Version="3.1.7.1" />
-        <PackageReference Include="Costura.Fody" Version="6.0.0" Condition="$(TargetFramework.StartsWith('net48'))">
+        <PackageReference Include="Costura.Fody" Version="6.0.0" Condition="'$(TargetFramework)' == 'net48'">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>compile; runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
@@ -93,9 +93,6 @@
     <ItemGroup>
         <EmbeddedResource Include="SevenZip\7z-$(Platform)\**">
             <LogicalName>SevenZip\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Showcase\**">
-            <LogicalName>Showcase\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
         <EmbeddedResource Include="..\..\Sucrose\Package\Cache\$(TargetFramework)\$(Platform)\**">
             <LogicalName>Caches\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
