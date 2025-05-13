@@ -91,9 +91,16 @@ namespace Sucrose.Shared.Engine.WebView.Event
             }
         }
 
+        private static void WebEngineDownloadStarting(object sender, CoreWebView2DownloadStartingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+
         public static void WebEngineInitializationCompleted(object sender, CoreWebView2InitializationCompletedEventArgs e)
         {
             SSEWVMI.WebEngine.CoreWebView2.ServerCertificateErrorDetected += WebEngineServerCertificateErrorDetected;
+
+            SSEWVMI.WebEngine.CoreWebView2.DownloadStarting += WebEngineDownloadStarting;
 
             SSEWVMI.WebEngine.CoreWebView2.ProcessFailed += WebEngineProcessFailed;
 
