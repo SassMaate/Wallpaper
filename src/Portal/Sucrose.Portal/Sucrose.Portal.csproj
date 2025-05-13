@@ -85,7 +85,7 @@
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
         <PackageReference Include="WindowsAPICodePackShell" Version="8.0.8" />
         <PackageReference Include="WPF-UI.DependencyInjection" Version="4.0.2" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.5" />
     </ItemGroup>
 
     <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
