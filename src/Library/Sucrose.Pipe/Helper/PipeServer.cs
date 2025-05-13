@@ -70,7 +70,7 @@ namespace Sucrose.Pipe.Helper
                     _pipeServer.Disconnect();
                 }
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                 await _pipeServer.DisposeAsync();
 #else
                 _pipeServer.Dispose();

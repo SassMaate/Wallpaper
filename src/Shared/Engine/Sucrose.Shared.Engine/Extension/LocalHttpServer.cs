@@ -114,7 +114,7 @@ namespace Sucrose.Shared.Engine.Extension
 
                 while ((read = await fs.ReadAsync(buffer, 0, buffer.Length)) > 0)
                 {
-#if NET48_OR_GREATER
+#if NET48
                     await outputStream.WriteAsync(buffer, 0, read);
 #else
                     await outputStream.WriteAsync(buffer.AsMemory(0, read));
@@ -159,7 +159,7 @@ namespace Sucrose.Shared.Engine.Extension
                 //                response.StatusCode = (int)HttpStatusCode.NotModified;
                 //                response.ContentType = GetContentType(path);
 
-                //#if NET48_OR_GREATER
+                //#if NET48
                 //                await response.OutputStream.WriteAsync(content, 0, content.Length);
                 //#else
                 //                await response.OutputStream.WriteAsync(content.AsMemory(0, content.Length));
@@ -171,7 +171,7 @@ namespace Sucrose.Shared.Engine.Extension
 
                 response.StatusCode = (int)HttpStatusCode.NotFound;
 
-#if NET48_OR_GREATER
+#if NET48
                 await response.OutputStream.WriteAsync(message, 0, message.Length);
 #else
                 await response.OutputStream.WriteAsync(message.AsMemory(0, message.Length));

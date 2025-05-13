@@ -8,8 +8,8 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\Mpv.NET\x86</OutputPath>
         <DefineConstants Condition="'$(PlatformTarget)' == 'x64'">$(DefineConstants);X64</DefineConstants>
         <DefineConstants Condition="'$(PlatformTarget)' == 'x86'">$(DefineConstants);X86</DefineConstants>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
         <RuntimeIdentifiers>win-arm64;win-x64;win-x86</RuntimeIdentifiers>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <AssemblyVersion>$(Version)</AssemblyVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>

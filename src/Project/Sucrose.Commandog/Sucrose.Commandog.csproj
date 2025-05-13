@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Commandog.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -78,7 +78,7 @@
         <PackageReference Include="Skylark.Standard" Version="3.1.7.1" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <Reference Include="System.Web" />
     </ItemGroup>
 

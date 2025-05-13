@@ -12,7 +12,7 @@ namespace Sucrose.Shared.Zip.Extension
         {
             try
             {
-#if NET48_OR_GREATER
+#if NET48
                 ZipFile.ExtractToDirectory(Archive, Destination);
 #else
                 ZipFile.ExtractToDirectory(Archive, Destination, true);
@@ -35,7 +35,7 @@ namespace Sucrose.Shared.Zip.Extension
                     SSSHF.Delete(Destination);
                 }
 
-#if NET48_OR_GREATER
+#if NET48
                 ZipFile.CreateFromDirectory(Source, Destination, CompressionLevel.Fastest, false);
 #else
                 ZipFile.CreateFromDirectory(Source, Destination, CompressionLevel.SmallestSize, false);
@@ -64,7 +64,7 @@ namespace Sucrose.Shared.Zip.Extension
                     {
                         string EntryName = SSZHZ.EntryName(Record, Source);
 
-#if NET48_OR_GREATER
+#if NET48
                         ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.Fastest);
 #else
                         ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.SmallestSize);
@@ -107,7 +107,7 @@ namespace Sucrose.Shared.Zip.Extension
                         {
                             string EntryName = SSZHZ.EntryName(Record, Source);
 
-#if NET48_OR_GREATER
+#if NET48
                             ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.Fastest);
 #else
                             ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.SmallestSize);

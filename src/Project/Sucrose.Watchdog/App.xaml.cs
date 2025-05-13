@@ -107,7 +107,7 @@ namespace Sucrose.Watchdog
             }
             else if (Value.StartsWith("\"") && Value.EndsWith("\""))
             {
-#if NET48_OR_GREATER
+#if NET48
                 return Value.Substring(1, Value.Length - 2);
 #else
                 return Value[1..^1];
@@ -115,7 +115,7 @@ namespace Sucrose.Watchdog
             }
             else if (Value.StartsWith("\""))
             {
-#if NET48_OR_GREATER
+#if NET48
                 return Value.Substring(1, Value.Length - 1);
 #else
                 return Value[1..];
@@ -123,7 +123,7 @@ namespace Sucrose.Watchdog
             }
             else if (Value.EndsWith("\""))
             {
-#if NET48_OR_GREATER
+#if NET48
                 return Value.Substring(0, Value.Length - 1);
 #else
                 return Value[..^1];

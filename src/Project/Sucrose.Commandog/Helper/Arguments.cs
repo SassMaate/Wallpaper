@@ -31,7 +31,7 @@ namespace Sucrose.Commandog.Helper
                 if (Combined.StartsWith(SMMRG.StartCommand) && Combined.Contains(SMMRG.ValueSeparatorChar))
                 {
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                     string[] ArgumentParts = Combined[1..].Split(SMMRG.ValueSeparatorChar);
 #else
                     string[] ArgumentParts = Combined.Substring(1).Split(SMMRG.ValueSeparatorChar);
@@ -41,7 +41,7 @@ namespace Sucrose.Commandog.Helper
                     {
                         string Name = ArgumentParts[0];
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                         List<string> Values = new(ArgumentParts[1..]);
 #else
                         List<string> Values = new();

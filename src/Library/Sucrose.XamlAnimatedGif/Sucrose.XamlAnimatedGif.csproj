@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <Version>$([System.DateTime]::Today.ToString(yy)).$([System.DateTime]::Today.ToString(MM)).$([System.DateTime]::Today.ToString(dd))</Version>
-        <DefineConstants Condition="$(TargetFramework.StartsWith('net48'))">$(DefineConstants);LACKS_STREAM_MEMORY_OVERLOADS</DefineConstants>
+        <DefineConstants Condition="'$(TargetFramework)' == 'net48'">$(DefineConstants);LACKS_STREAM_MEMORY_OVERLOADS</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\XamlAnimatedGif\ARM64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\XamlAnimatedGif\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\XamlAnimatedGif\x86</OutputPath>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
         <RuntimeIdentifiers>win-arm64;win-x64;win-x86</RuntimeIdentifiers>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <AssemblyVersion>$(Version)</AssemblyVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>
@@ -17,7 +17,7 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <Reference Include="System.Net.Http" />
     </ItemGroup>
 

@@ -8,7 +8,7 @@
             {
                 if (Content.StartsWith("{{"))
                 {
-#if NET48_OR_GREATER
+#if NET48
                     Content = Content.Substring(1);
 #else
                     Content = Content[1..];
@@ -17,7 +17,7 @@
 
                 if (Content.EndsWith("}}"))
                 {
-#if NET48_OR_GREATER
+#if NET48
                     Content = Content.Substring(0, Content.Length - 1);
 #else
                     Content = Content[..^1];

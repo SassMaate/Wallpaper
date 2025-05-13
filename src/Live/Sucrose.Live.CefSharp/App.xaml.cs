@@ -297,7 +297,7 @@ namespace Sucrose.Live.CefSharp
                     {
                         SSLHK.StopSubprocess();
 
-#if NET48_OR_GREATER && DEBUG
+#if NET48 && DEBUG
                         CefRuntime.SubscribeAnyCpuAssemblyResolver();
 #endif
 

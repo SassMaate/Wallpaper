@@ -73,7 +73,7 @@ namespace Sucrose.Shared.Zip.Helper
         {
             try
             {
-#if NET48_OR_GREATER
+#if NET48
                 string Relative = File.Substring(Source.Length);
 #else
 

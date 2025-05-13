@@ -30,7 +30,7 @@ namespace Sucrose.Pipe.Helper
 
             if (_writer != null)
             {
-#if NET8_0_OR_GREATER
+#if NET9_0
                 await _writer.DisposeAsync();
 #else
                 _writer.Dispose();
@@ -46,7 +46,7 @@ namespace Sucrose.Pipe.Helper
                     _pipeClient.Close();
                 }
 
-#if NET8_0_OR_GREATER
+#if NET9_0
                 await _pipeClient.DisposeAsync();
 #else
                 _pipeClient.Dispose();

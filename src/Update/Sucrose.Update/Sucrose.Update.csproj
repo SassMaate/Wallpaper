@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Update.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -80,16 +80,16 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Condition="$(TargetFramework.StartsWith('net48'))" Include="Downloader" Version="3.1.2" />
-        <PackageReference Condition="!$(TargetFramework.StartsWith('net48'))" Include="Downloader" Version="3.3.4" />
+        <PackageReference Condition="'$(TargetFramework)' == 'net48'" Include="Downloader" Version="3.1.2" />
+        <PackageReference Condition="'$(TargetFramework)' == 'net9.0-windows'" Include="Downloader" Version="3.3.4" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <Reference Include="System.Web" />
         <Reference Include="System.Net.Http" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
     </ItemGroup>
 

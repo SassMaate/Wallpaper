@@ -13,7 +13,7 @@ namespace Sucrose.Reportdog.Helper
 
             for (int Attempt = 0; Attempt < MaxAttempt; Attempt++)
             {
-#if NET48_OR_GREATER
+#if NET48
                 IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(SMMRG.AppName) && Proc.Id != Process.GetCurrentProcess().Id);
 #else
                 IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(SMMRG.AppName) && Proc.Id != Environment.ProcessId);

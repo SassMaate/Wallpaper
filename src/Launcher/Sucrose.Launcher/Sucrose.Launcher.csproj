@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Launcher.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -78,11 +78,11 @@
         <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <Reference Include="System.Web" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <PackageReference Include="System.IO.Compression" Version="4.3.0" />
         <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
     </ItemGroup>

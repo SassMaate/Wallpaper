@@ -340,7 +340,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             {
                 string Replace = $"{SMMRS.StoreDirectory}/";
 
-#if NET48_OR_GREATER
+#if NET48
                 Path = Path.StartsWith(Replace) ? Path.Substring(Replace.Length) : Path;
 #else
                 Path = Path.StartsWith(Replace) ? Path[Replace.Length..] : Path;

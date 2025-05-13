@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net481;net8.0-windows;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Live.CefSharp.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -79,12 +79,12 @@
         <PackageReference Include="CefSharp.Wpf.HwndHost" Version="136.1.40" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <Reference Include="System.Web" />
         <Reference Include="System.Net.Http" />
     </ItemGroup>
 
-    <ItemGroup Condition="$(TargetFramework.StartsWith('net48'))">
+    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
         <PackageReference Include="System.IO.Compression" Version="4.3.0" />
     </ItemGroup>
 
