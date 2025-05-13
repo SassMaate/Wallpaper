@@ -3,6 +3,8 @@ using System.IO;
 using System.Windows;
 using Application = System.Windows.Application;
 using SMME = Sucrose.Manager.Manage.Engine;
+using SSECSHCCM = Sucrose.Shared.Engine.CefSharp.Handler.CustomContextMenu;
+using SSECSHCK = Sucrose.Shared.Engine.CefSharp.Handler.CustomKeyboard;
 using SSECSHV = Sucrose.Shared.Engine.CefSharp.Helper.Video;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
 using SSEHP = Sucrose.Shared.Engine.Helper.Properties;
@@ -31,6 +33,11 @@ namespace Sucrose.Shared.Engine.CefSharp.Event
             if (SMME.DeveloperMode)
             {
                 SSECSMI.CefEngine.ShowDevTools();
+            }
+            else
+            {
+                SSECSMI.CefEngine.MenuHandler = new SSECSHCCM();
+                SSECSMI.CefEngine.KeyboardHandler = new SSECSHCK();
             }
 
             SSEMI.Initialized = SSECSMI.CefEngine.IsBrowserInitialized;

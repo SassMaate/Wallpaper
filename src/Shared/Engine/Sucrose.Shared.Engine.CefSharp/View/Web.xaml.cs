@@ -2,7 +2,6 @@
 using System.Windows;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SSECSEW = Sucrose.Shared.Engine.CefSharp.Event.Web;
-using SSECSHCCM = Sucrose.Shared.Engine.CefSharp.Handler.CustomContextMenu;
 using SSECSHW = Sucrose.Shared.Engine.CefSharp.Helper.Web;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
 using SSEEH = Sucrose.Shared.Engine.Event.Handler;
@@ -25,8 +24,6 @@ namespace Sucrose.Shared.Engine.CefSharp.View
             SystemEvents.DisplaySettingsChanged += (s, e) => SSEEH.DisplaySettingsChanged(this);
 
             ContentRendered += (s, e) => SSEEH.ContentRendered(this);
-
-            SSECSMI.CefEngine.MenuHandler = new SSECSHCCM();
 
             Content = SSECSMI.CefEngine;
 

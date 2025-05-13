@@ -17,6 +17,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extension\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Interaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Screenshot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handler\CustomKeyboard.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Handler\CustomContextMenu.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Execute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Handle.cs" />
