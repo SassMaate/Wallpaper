@@ -16,13 +16,13 @@ namespace Sucrose.Shared.Space.Manage
 {
     internal static class Internal
     {
-        public static SSDEUET UrlEngine = SSDEUET.WebView;
+        public static SSDEUET UrlEngine = SSDEUET.CefSharp;
 
-        public static SSDEWET WebEngine = SSDEWET.WebView;
-
-        public static SSDEYTET YouTubeEngine = SSDEYTET.WebView;
+        public static SSDEWET WebEngine = SSDEWET.CefSharp;
 
         public static SSDEAET ApplicationEngine = SSDEAET.Aurora;
+
+        public static SSDEYTET YouTubeEngine = SSDEYTET.CefSharp;
 
         public static SSDEGET GifEngine = SSSHW.IsGermanium() ? SSDEGET.MpvPlayer : SSDEGET.Xavier;
 

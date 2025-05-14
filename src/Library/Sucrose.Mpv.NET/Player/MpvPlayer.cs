@@ -323,7 +323,21 @@ namespace Sucrose.Mpv.NET.Player
 
                 lock (mpvLock)
                 {
-                    remaining = API.GetPropertyDouble("time-remaining");
+                    try
+                    {
+                        remaining = API.GetPropertyDouble("time-remaining");
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            remaining = API.GetPropertyDouble("playtime-remaining");
+                        }
+                        catch
+                        {
+                            remaining = 0;
+                        }
+                    }
                 }
 
                 return TimeSpan.FromSeconds(remaining);

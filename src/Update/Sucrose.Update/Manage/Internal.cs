@@ -52,7 +52,12 @@ namespace Sucrose.Update.Manage
             BufferBlockSize = 4096,
             ParallelDownload = false,
             MaximumBytesPerSecond = 0,
+#if NET48
             MaxTryAgainOnFailover = 5,
+#else
+            MaxTryAgainOnFailure = 5,
+            EnableLiveStreaming = false,
+#endif
             MinimumSizeOfChunking = 1024,
             CheckDiskSizeBeforeDownload = true,
             ClearPackageOnCompletionWithFailure = true,

@@ -81,7 +81,7 @@
 
     <ItemGroup>
         <PackageReference Condition="'$(TargetFramework)' == 'net48'" Include="Downloader" Version="3.1.2" />
-        <PackageReference Condition="'$(TargetFramework)' == 'net9.0-windows'" Include="Downloader" Version="3.3.4" />
+        <PackageReference Condition="'$(TargetFramework)' == 'net9.0-windows'" Include="Downloader" Version="4.0.1-beta" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
