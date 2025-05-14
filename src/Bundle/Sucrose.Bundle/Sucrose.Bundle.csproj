@@ -49,7 +49,7 @@
 
     <PropertyGroup>
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <PublishSingleFile Condition="'$(TargetFramework)' != 'net48'">true</PublishSingleFile>
+        <PublishSingleFile Condition="'$(TargetFramework)' == 'net9.0-windows'">true</PublishSingleFile>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">

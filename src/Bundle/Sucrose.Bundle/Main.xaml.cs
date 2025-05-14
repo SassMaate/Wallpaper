@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using Path = System.IO.Path;
 using SEAT = Skylark.Enum.AssemblyType;
 using SECNT = Skylark.Enum.ClearNumericType;
@@ -97,6 +98,8 @@ namespace Sucrose.Bundle
 
         private static string Packages => "Packages";
 
+        private static Random Randomise => new();
+
         private static string Caches => "Caches";
 
         private static int MaxDelay => 3000;
@@ -123,6 +126,28 @@ namespace Sucrose.Bundle
                     SWNM.DWM_WINDOW_CORNER_PREFERENCE Preference = SWNM.DWM_WINDOW_CORNER_PREFERENCE.DWMWCP_ROUND;
 
                     SWNM.DwmSetWindowAttribute(SWHWI.Handle(this), Attribute, ref Preference, (uint)Marshal.SizeOf<uint>());
+                }
+
+                await Task.CompletedTask;
+            }
+            catch { }
+        }
+
+        private async Task LoadBackground()
+        {
+            try
+            {
+                if (!Silent)
+                {
+                    BitmapImage Back = new();
+
+                    Back.BeginInit();
+
+                    Back.UriSource = new($"pack://application:,,,/Assets/Background{Randomise.Next(1, 37)}.jpg", UriKind.RelativeOrAbsolute);
+
+                    Back.EndInit();
+
+                    Background.Source = Back;
                 }
 
                 await Task.CompletedTask;
@@ -496,6 +521,8 @@ namespace Sucrose.Bundle
         private async void Window_ContentRendered(object sender, EventArgs e)
         {
             await WindowCorner();
+
+            await LoadBackground();
 
             await Task.Delay(MinDelay);
 
