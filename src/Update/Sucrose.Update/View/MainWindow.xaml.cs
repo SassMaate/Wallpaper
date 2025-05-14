@@ -102,14 +102,7 @@ namespace Sucrose.Update.View
 
             Back.BeginInit();
 
-            Back.UriSource = SMMRG.Randomise.Next(5) switch
-            {
-                0 => new Uri("pack://application:,,,/Assets/Back1.jpg", UriKind.RelativeOrAbsolute),
-                1 => new Uri("pack://application:,,,/Assets/Back2.jpg", UriKind.RelativeOrAbsolute),
-                2 => new Uri("pack://application:,,,/Assets/Back3.jpg", UriKind.RelativeOrAbsolute),
-                3 => new Uri("pack://application:,,,/Assets/Back4.jpg", UriKind.RelativeOrAbsolute),
-                _ => new Uri("pack://application:,,,/Assets/Back5.jpg", UriKind.RelativeOrAbsolute),
-            };
+            Back.UriSource = new($"pack://application:,,,/Assets/Back{SMMRG.Randomise.Next(1, 6)}.jpg", UriKind.RelativeOrAbsolute);
 
             Back.EndInit();
 
