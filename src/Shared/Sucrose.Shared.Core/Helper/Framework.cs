@@ -11,6 +11,10 @@ namespace Sucrose.Shared.Core.Helper
             return SSCEFT.NET_Framework_4_8_1;
 #elif NET48
             return SSCEFT.NET_Framework_4_8;
+#elif NET12_0
+            return SSCEFT.NET_12_0;
+#elif NET11_0
+            return SSCEFT.NET_11_0;
 #elif NET10_0
             return SSCEFT.NET_10_0;
 #elif NET9_0
