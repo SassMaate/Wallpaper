@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Title">Pacchetto di Sucrose</system:String>
-    <system:String x:Key="Subtitle">Pacchetto di Sucrose</system:String>
+    <system:String x:Key="Title">Sucrose Bundle</system:String>
+    <system:String x:Key="Subtitle">Sucrose Bundle</system:String>
     <system:String x:Key="Done">Verrà avviato una volta completata l'installazione.</system:String>
     <system:String x:Key="Install">Sucrose Wallpaper Engine sta venendo installato.</system:String>
 </ResourceDictionary>
