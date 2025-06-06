@@ -77,9 +77,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="SharpCompress" Version="0.39.0" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.5" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.7.1" />
+        <PackageReference Include="SharpCompress" Version="0.40.0" />
+        <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
+        <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
         <PackageReference Include="Costura.Fody" Version="6.0.0" Condition="'$(TargetFramework)' == 'net48'">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>compile; runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
