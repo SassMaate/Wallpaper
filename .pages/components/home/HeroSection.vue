@@ -76,7 +76,7 @@
           <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20 dark:border-white/5 glass">
             <div class="aspect-video w-full">
               <iframe 
-                src="https://www.youtube.com/embed/pORXOfKNAnc" 
+                src="https://www.youtube.com/embed/eVIlyv-9wBY" 
                 title="Sucrose Video"
                 class="w-full h-full rounded-2xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
