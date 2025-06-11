@@ -12,7 +12,8 @@ using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
 using SSEAEA = Sucrose.Shared.Engine.Aurora.Event.Application;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SWHC = Skylark.Wing.Helper.Calculate;
-using SWHDM = Skylark.Wing.Helper.DisplayManager;
+using SWHDMA = Skylark.Wing.Helper.DisplayManager;
+using SWHDMO = Skylark.Wing.Helper.DisplayMonitor;
 using SWIIDM = Skylark.Wing.Interface.IDisplayManager;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWUD = Skylark.Wing.Utility.Desktop;
@@ -81,8 +82,8 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
         {
             try
             {
-                SWIIDM DisplayManager = new SWHDM();
-                Skylark.Wing.Helper.DisplayMonitor display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
+                SWIIDM DisplayManager = new SWHDMA();
+                SWHDMO display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
 
                 foreach (SSDSHS Application in SSEMI.Applications)
                 {
@@ -113,8 +114,8 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
         {
             try
             {
-                SWIIDM DisplayManager = new SWHDM();
-                Skylark.Wing.Helper.DisplayMonitor display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
+                SWIIDM DisplayManager = new SWHDMA();
+                SWHDMO display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
 
                 foreach (SSDSHS Application in SSEMI.Applications)
                 {
