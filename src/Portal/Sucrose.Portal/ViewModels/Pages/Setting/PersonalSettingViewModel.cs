@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -10,12 +11,17 @@ using SMME = Sucrose.Manager.Manage.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMP = Sucrose.Manager.Manage.Portal;
+using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
+using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SPVCEC = Sucrose.Portal.Views.Controls.ExpanderCard;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SSDESKT = Sucrose.Shared.Dependency.Enum.SortKindType;
 using SSDESMT = Sucrose.Shared.Dependency.Enum.SortModeType;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
 using SSDMMP = Sucrose.Shared.Dependency.Manage.Manager.Portal;
+using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSMI = Sucrose.Shared.Store.Manage.Internal;
 using TextBlock = System.Windows.Controls.TextBlock;
 
@@ -597,6 +603,19 @@ namespace Sucrose.Portal.ViewModels.Pages
                 SSSMI.State = true;
 
                 SMMI.PortalSettingManager.SetSetting(SMMCP.StoreServerType, NewStore);
+
+                string StoreFile = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, SMMRC.StoreFile);
+                string PatternFile = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, SMMRC.PatternFile);
+
+                if (File.Exists(StoreFile))
+                {
+                    SSSHF.Delete(StoreFile);
+                }
+
+                if (File.Exists(PatternFile))
+                {
+                    SSSHF.Delete(PatternFile);
+                }
             }
         }
 
