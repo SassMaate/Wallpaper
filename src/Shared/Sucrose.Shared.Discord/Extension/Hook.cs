@@ -72,6 +72,7 @@ namespace Sucrose.Shared.Discord.Extension
                         End = SSDMI.End,
                         Start = SSDMI.Start
                     },
+                    StatusDisplay = StatusDisplayType.Details,
                     State = SRER.GetValue("Discord", $"StatementText{SMMRG.Randomise.Next(49)}"),
                     Buttons = new Button[]
                     {
