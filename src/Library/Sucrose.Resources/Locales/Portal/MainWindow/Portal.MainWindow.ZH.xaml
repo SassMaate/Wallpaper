@@ -45,6 +45,7 @@
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">创建壁纸</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">壁纸循环</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDisplayPreferencesTip">显示首选项</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuRefreshWallpaperTip">刷新当前壁纸</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">捐赠选项</system:String>
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">其他选项</system:String>
 </ResourceDictionary>

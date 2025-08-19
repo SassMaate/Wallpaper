@@ -219,6 +219,15 @@
                         Icon="{ui:SymbolIcon ShareScreenPerson16}"
                         ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuDisplayPreferencesTip}" />
                     <ui:Button
+                        x:Name="RefreshWallpaper"
+                        Margin="0,0,5,0"
+                        Appearance="Transparent"
+                        BorderBrush="Transparent"
+                        Command="{Binding ViewModel.RefreshWallpaperCommand, Mode=OneWay}"
+                        Cursor="Hand"
+                        Icon="{ui:SymbolIcon ArrowClockwise16}"
+                        ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuRefreshWallpaperTip}" />
+                    <ui:Button
                         Margin="0,0,5,0"
                         Appearance="Transparent"
                         BorderBrush="Transparent"

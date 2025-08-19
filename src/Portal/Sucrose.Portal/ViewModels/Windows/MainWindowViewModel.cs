@@ -309,6 +309,20 @@ namespace Sucrose.Portal.ViewModels.Windows
             DisplayPreferences.Dispose();
         }
 
+        [RelayCommand]
+        private void OnRefreshWallpaper()
+        {
+            if ((!SMMB.ClosePerformance && !SMMB.PausePerformance) || !SSSHP.Work(SSSMI.Backgroundog))
+            {
+                if (SSSHL.Run())
+                {
+                    SSLHK.Stop();
+                }
+
+                SSLHR.Start();
+            }
+        }
+
         private void Memory_Tick(object sender, EventArgs e)
         {
             Memory = SSCHM.GetCurrentProcess();
