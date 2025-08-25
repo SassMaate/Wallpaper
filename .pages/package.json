@@ -11,18 +11,18 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxtjs/i18n": "^8.0.0-rc.11",
-    "@nuxtjs/tailwindcss": "^6.13.2",
-    "@pinia/nuxt": "^0.11.0",
-    "@unhead/dom": "^1.8.10",
-    "@unhead/vue": "^1.8.10",
+    "@nuxtjs/i18n": "^10.0.6",
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@pinia/nuxt": "^0.11.2",
+    "@unhead/dom": "^2.0.14",
+    "@unhead/vue": "^2.0.14",
     "aos": "^2.3.4",
-    "nuxt": "^3.17.1",
-    "pinia": "^3.0.2",
-    "unhead": "^1.8.10",
-    "vue": "^3.3.12",
-    "vue-i18n": "^9.8.0",
-    "vue-router": "^4.2.5"
+    "nuxt": "^4.0.3",
+    "pinia": "^3.0.3",
+    "unhead": "^2.0.14",
+    "vue": "^3.5.20",
+    "vue-i18n": "^11.1.11",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7"
