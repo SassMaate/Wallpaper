@@ -321,7 +321,14 @@ namespace Sucrose.Live.CefSharp
 
                         foreach (KeyValuePair<string, string> Argument in SSEMI.BrowserSettings.CefSharp)
                         {
-                            Settings.CefCommandLineArgs.Add(Argument.Key, Argument.Value);
+                            if (Settings.CefCommandLineArgs.ContainsKey(Argument.Key))
+                            {
+                                Settings.CefCommandLineArgs[Argument.Key] = Argument.Value;
+                            }
+                            else
+                            {
+                                Settings.CefCommandLineArgs.Add(Argument.Key, Argument.Value);
+                            }
                         }
 
                         if (SSSHWS.IsGermanium())
