@@ -26,6 +26,7 @@ using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
+using SMMVL = Sucrose.Memory.Manage.Valuable.Log;
 using SMMW = Sucrose.Manager.Manage.Warehouse;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
@@ -307,7 +308,9 @@ namespace Sucrose.Live.CefSharp
                             CachePath = SSECSMI.CefPath,
                             PersistSessionCookies = true,
                             IgnoreCertificateErrors = true,
-                            WindowlessRenderingEnabled = true
+                            LogSeverity = LogSeverity.Default,
+                            WindowlessRenderingEnabled = true,
+                            LogFile = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Log, string.Format("CefSharpNative-{0}-{1}.log", SMMVL.FileNameDate, Guid.NewGuid()))
                         };
 
                         SSEMI.BrowserSettings.CefSharp = SMME.CefArguments;

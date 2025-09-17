@@ -232,7 +232,6 @@ namespace Sucrose.Backgroundog.Manage
             IsCpuEnabled = true,
             IsGpuEnabled = true,
             IsPsuEnabled = false,
-            IsRing0Enabled = true,
             IsMemoryEnabled = true,
             IsBatteryEnabled = true,
             IsNetworkEnabled = false,
