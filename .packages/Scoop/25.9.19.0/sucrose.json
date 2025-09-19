@@ -1,0 +1,48 @@
+{
+    "version": "25.9.19.0",
+    "description": "Sucrose is a versatile wallpaper engine that brings life to your desktop with a wide range of interactive wallpapers.",
+    "homepage": "https://github.com/Taiizor/Sucrose",
+    "license": "GPL-3.0",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_Framework_4.8_x86_25.9.19.0.exe",
+            "hash": "42054C0C725E6A994CAD4014CBEF8D7B7E530946E9FF9BA24138608C282E83E3",
+            "installer": {
+                "script": "Start-Process \"$dir\\Sucrose_Bundle_.NET_Framework_4.8_x86_$version.exe\" -ArgumentList '/s' -Wait"
+            }
+        },
+        "64bit": {
+            "url": "https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_Framework_4.8_x64_25.9.19.0.exe",
+            "hash": "CA98154B604659D6813B38BA58A577F5E7BD4F62C292BFF18DEF4C9864247E52",
+            "installer": {
+                "script": "Start-Process \"$dir\\Sucrose_Bundle_.NET_Framework_4.8_x64_$version.exe\" -ArgumentList '/s' -Wait"
+            }
+        },
+        "arm64": {
+            "url": "https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_Framework_4.8_ARM64_25.9.19.0.exe",
+            "hash": "61E73788EAE06DBE18AF5C620FE945EDD3A39D633E8AC0DAEDCB9ED0DFD90140",
+            "installer": {
+                "script": "Start-Process \"$dir\\Sucrose_Bundle_.NET_Framework_4.8_ARM64_$version.exe\" -ArgumentList '/s' -Wait"
+            }
+        }
+    },
+    "uninstaller": {
+        "script": "Start-Process (Get-ItemProperty HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Sucrose).UninstallString -Wait"
+    },
+    "checkver": {
+        "github": "https://github.com/Taiizor/Sucrose"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v$version/Sucrose_Bundle_.NET_Framework_4.8_x86_$version.exe"
+            },
+            "64bit": {
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v$version/Sucrose_Bundle_.NET_Framework_4.8_x64_$version.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/Taiizor/Sucrose/releases/download/v$version/Sucrose_Bundle_.NET_Framework_4.8_ARM64_$version.exe"
+            }
+        }
+    }
+}
