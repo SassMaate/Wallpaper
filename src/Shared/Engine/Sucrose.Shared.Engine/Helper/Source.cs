@@ -7,6 +7,7 @@ using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SSECCE = Skylark.Standard.Extension.Cryptology.CryptologyExtension;
 using SSEHD = Sucrose.Shared.Engine.Helper.Data;
 using SSMMS = Skylark.Struct.Monitor.MonitorStruct;
@@ -85,7 +86,7 @@ namespace Sucrose.Shared.Engine.Helper
 
         public static string GetYouTubeContent(string Video, string Playlist)
         {
-            string Content = @"<html><head><meta charset=""UTF-8""><meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1""><meta name=""viewport"" content=""width=device-width,initial-scale=1""><meta http-equiv=""Permissions-Policy"" content=""interest-cohort=()""><style>body{margin:0;padding:0;overflow:hidden;background:#000}iframe{margin:0;position:absolute;left:0;top:0;overflow:hidden}#player{width:100%;height:100vh}</style></head><body><div id=""player""></div><script>var tag=document.createElement(""script"");tag.src=""https://www.youtube.com/iframe_api"";var firstScriptTag=document.getElementsByTagName(""script"")[0];firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);var player,customBody,customPlayer,videoId=""{Video}"",playlistId=""{Playlist}"";function onYouTubeIframeAPIReady(){var e={height:""{Height}"",width:""{Width}"",playerVars:{autoplay:1,loop:1,controls:0,disablekb:1,modestbranding:1,fs:0,rel:0,iv_load_policy:3,playsinline:0,cc_load_policy:0,version:3,showinfo:0,suggestedQuality:""highres""},events:{onStateChange:onPlayerStateChange,onReady:onPlayerReady,onError:onPlayerError}};videoId&&(e.videoId=videoId,e.playerVars.playlist=videoId),player=new YT.Player(""player"",e)}function onPlayerReady(e){playlistId&&player.loadPlaylist({list:playlistId,listType:""playlist"",index:0,startSeconds:0,suggestedQuality:""highres""}),videoId&&!playlistId&&player.setLoop(!1),e.target.setPlaybackQuality(""highres""),e.target.setVolume(0),hideIframeElement(),toggleFullScreen()}var shuffleMode=!0,prevIndex=-1,first=!0;function onPlayerStateChange(e){if(playlistId){if(e.data===YT.PlayerState.ENDED)if(shuffleMode){var t=player.getPlaylist();player.playVideoAt(Math.floor(Math.random()*t.length))}else{var a=player.getPlaylistIndex();a===prevIndex?(prevIndex=-1,player.playVideoAt(0)):prevIndex=a}else if(first&&-1===e.data&&(first=!1,shuffleMode)){t=player.getPlaylist();player.playVideoAt(Math.floor(Math.random()*t.length))}}else e.data===YT.PlayerState.ENDED&&(player.seekTo(0),player.playVideo())}function onPlayerError(e){if(playlistId&&e.data){var t=player.getPlaylist(),a=player.getPlaylistIndex();a+1<t.length?player.playVideoAt(a+1):t.length>0&&player.playVideoAt(0)}else if(videoId&&!playlistId&&e.data)switch(e.data){case 2:console.log(""Invalid parameter."");break;case 5:console.log(""Video cannot be played.""),forceReload();break;case 100:console.log(""Video not found."");break;case 101:case 150:console.log(""Video is restricted."");break;default:console.log(""Unknown error: ""+e.data)}}async function SucrosePropertyListener(e,t){switch(null==customPlayer&&await waitForCondition((()=>null!=customPlayer)),e){case""scale"":customBody.style.transform=`scale(${1+t.value/10})`;break;case""saturate"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`saturate(${1+t.value/100})`);break;case""hue-rotate"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`hue-rotate(${t.value}deg)`);break;case""brightness"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`brightness(${1+t.value/100})`);break;case""contrast"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`contrast(${1+t.value/100})`);break;case""blur"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`blur(${t.value}px)`);break;case""grayscale"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`grayscale(${t.value/100})`);break;case""sepia"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`sepia(${t.value/100})`);break;case""invert"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`invert(${t.value/100})`);break;case""mirror"":switch([""Flat"",""Vertical"",""Horizontal"",""VerticalHorizontal""][t.value]){case""Vertical"":customPlayer.style.transform=""scaleY(-1)"";break;case""Horizontal"":customPlayer.style.transform=""scaleX(-1)"";break;case""VerticalHorizontal"":customPlayer.style.transform=""scale(-1, -1)"";break;default:customPlayer.style.transform=""scale(1, 1)""}break;case""animation"":customPlayer.style.animation=applyAnimation([""Flat"",""Flip"",""Pulse"",""Shake"",""Bounce"",""Wiggle""][t.value]);break;case""playbackRate"":player.setPlaybackRate(parseFloat(t.value));break;case""muted"":1==Boolean(t.value)?player.mute():player.unMute()}}function applyAnimation(e){let t="""";switch(e){case""Flip"":t=""flip 2s infinite"";break;case""Pulse"":t=""pulse 1.5s infinite"";break;case""Shake"":t=""shake 0.5s ease infinite"";break;case""Bounce"":t=""bounce 1s ease infinite"";break;case""Wiggle"":t=""wiggle 0.5s ease infinite"";break;default:t=e}return t}function waitForCondition(e){return new Promise((t=>{const a=()=>{e()?t():requestAnimationFrame(a)};a()}))}function applyFilter(e,t){const a=e.split("" "").filter((e=>!e.startsWith(t.split(""("")[0])));return a.push(t),a.join("" "")}function playFirst(){!player||-1!=player.getPlayerState()&&3!=player.getPlayerState()||playVideo()}function playVideo(){player.playVideo()}function pauseVideo(){player.pauseVideo()}function setVolume(e){player.setVolume(e)}function setShuffle(e){shuffleMode=e}function forceReload(){location.reload(!0)}function setLoop(e){e&&videoId&&!playlistId&&(e=!1),player.setLoop(e),e&&checkVideoEnded()&&playVideo()}function checkVideoEnded(){return player.getPlayerState()===YT.PlayerState.ENDED}function checkPlayingStatus(){return player.getPlayerState()===YT.PlayerState.PLAYING}function hideIframeElement(){const e=document.querySelector(""iframe""),t=e.contentDocument||e.contentWindow.document;new MutationObserver((e=>{e.forEach((e=>{if(""childList""===e.type||""subtree""===e.type){customBody=t.body,customPlayer=t.getElementById(""player"");t.querySelector(""#movie_player"").querySelectorAll("":scope *:not(.html5-video-container):not(.video-stream.html5-main-video)"").forEach((e=>{e.style.setProperty(""display"",""none"",""important"")}));if(!t.getElementById(""Sucrose"")){const e=t.createElement(""style"");e.id=""Sucrose"",e.textContent=""@keyframes flip{0%{transform: rotateY(0)}100%{transform: rotateY(360deg)}}@keyframes pulse{0%{transform: scale(1);opacity: 1}50%{transform: scale(1.1);opacity: 0.7}100%{transform: scale(1);opacity: 1}}@keyframes shake{0%{transform: translateX(0)}25%{transform: translateX(-5px)}50%{transform: translateX(5px)}75%{transform: translateX(-5px)}100%{transform: translateX(0)}}@keyframes bounce{0%, 100%{transform: translateY(0)}50%{transform: translateY(-20px)}}@keyframes rotate{0%{transform: rotate(0deg)}100%{transform: rotate(360deg)}}@keyframes wiggle{0%{transform: translateX(0)}25%{transform: translateX(-10px)}50%{transform: translateX(10px)}75%{transform: translateX(-10px)}100%{transform: translateX(0)}}"",t.head.appendChild(e)}}}))})).observe(t,{childList:!0,subtree:!0})}function toggleFullScreen(){var e=document.getElementById(""player"");e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}</script></body></html>";
+            string Content = @"<html><head><meta charset=""UTF-8""><meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1""><meta name=""referrer"" content=""strict-origin-when-cross-origin""><meta http-equiv=""Permissions-Policy"" content=""interest-cohort=()""><meta name=""viewport"" content=""width=device-width,initial-scale=1""><style>body{margin:0;padding:0;overflow:hidden;background:#000}iframe{margin:0;position:absolute;left:0;top:0;overflow:hidden}#player{width:100%;height:100vh}</style></head><body><div id=""player""></div><script>var tag=document.createElement(""script"");tag.src=""https://www.youtube.com/iframe_api"";var firstScriptTag=document.getElementsByTagName(""script"")[0];firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);var player,customBody,customPlayer,videoId=""{Video}"",playlistId=""{Playlist}"";function onYouTubeIframeAPIReady(){var e={height:""{Height}"",width:""{Width}"",playerVars:{autoplay:1,loop:1,controls:0,disablekb:1,modestbranding:1,fs:0,rel:0,iv_load_policy:3,playsinline:0,cc_load_policy:0,version:3,showinfo:0,suggestedQuality:""highres"",origin:""{Origin}"",widget_referrer:""strict-origin-when-cross-origin""},events:{onStateChange:onPlayerStateChange,onReady:onPlayerReady,onError:onPlayerError}};videoId&&(e.videoId=videoId,e.playerVars.playlist=videoId),player=new YT.Player(""player"",e)}function onPlayerReady(e){playlistId&&player.loadPlaylist({list:playlistId,listType:""playlist"",index:0,startSeconds:0,suggestedQuality:""highres""}),videoId&&!playlistId&&player.setLoop(!1),e.target.setPlaybackQuality(""highres""),e.target.setVolume(0),hideIframeElement(),toggleFullScreen()}var shuffleMode=!0,prevIndex=-1,first=!0;function onPlayerStateChange(e){if(playlistId){if(e.data===YT.PlayerState.ENDED)if(shuffleMode){var t=player.getPlaylist();player.playVideoAt(Math.floor(Math.random()*t.length))}else{var a=player.getPlaylistIndex();a===prevIndex?(prevIndex=-1,player.playVideoAt(0)):prevIndex=a}else if(first&&-1===e.data&&(first=!1,shuffleMode)){t=player.getPlaylist();player.playVideoAt(Math.floor(Math.random()*t.length))}}else e.data===YT.PlayerState.ENDED&&(player.seekTo(0),player.playVideo())}function onPlayerError(e){if(playlistId&&e.data){var t=player.getPlaylist(),a=player.getPlaylistIndex();a+1<t.length?player.playVideoAt(a+1):t.length>0&&player.playVideoAt(0)}else if(videoId&&!playlistId&&e.data)switch(e.data){case 2:console.log(""Invalid parameter."");break;case 5:console.log(""Video cannot be played.""),forceReload();break;case 100:console.log(""Video not found."");break;case 101:case 150:console.log(""Video is restricted."");break;default:console.log(""Unknown error: ""+e.data)}}async function SucrosePropertyListener(e,t){switch(null==customPlayer&&await waitForCondition(()=>null!=customPlayer),e){case""scale"":customBody.style.transform=`scale(${1+t.value/10})`;break;case""saturate"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`saturate(${1+t.value/100})`);break;case""hue-rotate"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`hue-rotate(${t.value}deg)`);break;case""brightness"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`brightness(${1+t.value/100})`);break;case""contrast"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`contrast(${1+t.value/100})`);break;case""blur"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`blur(${t.value}px)`);break;case""grayscale"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`grayscale(${t.value/100})`);break;case""sepia"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`sepia(${t.value/100})`);break;case""invert"":customPlayer.style.filter=applyFilter(customPlayer.style.filter,`invert(${t.value/100})`);break;case""mirror"":switch([""Flat"",""Vertical"",""Horizontal"",""VerticalHorizontal""][t.value]){case""Vertical"":customPlayer.style.transform=""scaleY(-1)"";break;case""Horizontal"":customPlayer.style.transform=""scaleX(-1)"";break;case""VerticalHorizontal"":customPlayer.style.transform=""scale(-1, -1)"";break;default:customPlayer.style.transform=""scale(1, 1)""}break;case""animation"":customPlayer.style.animation=applyAnimation([""Flat"",""Flip"",""Pulse"",""Shake"",""Bounce"",""Wiggle""][t.value]);break;case""playbackRate"":player.setPlaybackRate(parseFloat(t.value));break;case""muted"":1==Boolean(t.value)?player.mute():player.unMute()}}function applyAnimation(e){let t="""";switch(e){case""Flip"":t=""flip 2s infinite"";break;case""Pulse"":t=""pulse 1.5s infinite"";break;case""Shake"":t=""shake 0.5s ease infinite"";break;case""Bounce"":t=""bounce 1s ease infinite"";break;case""Wiggle"":t=""wiggle 0.5s ease infinite"";break;default:t=e}return t}function waitForCondition(e){return new Promise(t=>{const a=()=>{e()?t():requestAnimationFrame(a)};a()})}function applyFilter(e,t){const a=e.split("" "").filter(e=>!e.startsWith(t.split(""("")[0]));return a.push(t),a.join("" "")}function playFirst(){!player||-1!=player.getPlayerState()&&3!=player.getPlayerState()||playVideo()}function playVideo(){player.playVideo()}function pauseVideo(){player.pauseVideo()}function setVolume(e){player.setVolume(e)}function setShuffle(e){shuffleMode=e}function forceReload(){location.reload(!0)}function setLoop(e){e&&videoId&&!playlistId&&(e=!1),player.setLoop(e),e&&checkVideoEnded()&&playVideo()}function checkVideoEnded(){return player.getPlayerState()===YT.PlayerState.ENDED}function checkPlayingStatus(){return player.getPlayerState()===YT.PlayerState.PLAYING}function hideIframeElement(){const e=document.querySelector(""iframe""),t=e.contentDocument||e.contentWindow.document;new MutationObserver(e=>{e.forEach(e=>{if(""childList""===e.type||""subtree""===e.type){customBody=t.body,customPlayer=t.getElementById(""player"");t.querySelector(""#movie_player"").querySelectorAll("":scope *:not(.html5-video-container):not(.video-stream.html5-main-video)"").forEach(e=>{e.style.setProperty(""display"",""none"",""important"")});if(!t.getElementById(""Sucrose"")){const e=t.createElement(""style"");e.id=""Sucrose"",e.textContent=""@keyframes flip{0%{transform: rotateY(0)}100%{transform: rotateY(360deg)}}@keyframes pulse{0%{transform: scale(1);opacity: 1}50%{transform: scale(1.1);opacity: 0.7}100%{transform: scale(1);opacity: 1}}@keyframes shake{0%{transform: translateX(0)}25%{transform: translateX(-5px)}50%{transform: translateX(5px)}75%{transform: translateX(-5px)}100%{transform: translateX(0)}}@keyframes bounce{0%, 100%{transform: translateY(0)}50%{transform: translateY(-20px)}}@keyframes rotate{0%{transform: rotate(0deg)}100%{transform: rotate(360deg)}}@keyframes wiggle{0%{transform: translateX(0)}25%{transform: translateX(-10px)}50%{transform: translateX(10px)}75%{transform: translateX(-10px)}100%{transform: translateX(0)}}"",t.head.appendChild(e)}}})}).observe(t,{childList:!0,subtree:!0})}function toggleFullScreen(){var e=document.getElementById(""player"");e.requestFullscreen?e.requestFullscreen():e.mozRequestFullScreen?e.mozRequestFullScreen():e.webkitRequestFullscreen?e.webkitRequestFullscreen():e.msRequestFullscreen&&e.msRequestFullscreen()}</script></body></html>";
 
             SEST Screen = SSEHD.GetScreenType();
             SEDST Display = SSEHD.GetDisplayScreenType();
@@ -117,7 +118,7 @@ namespace Sucrose.Shared.Engine.Helper
                     break;
             }
 
-            return Content.Replace("{Video}", Video).Replace("{Playlist}", Playlist);
+            return Content.Replace("{Origin}", SMMRU.Local).Replace("{Video}", Video).Replace("{Playlist}", Playlist);
         }
 
         public static void WriteGifContent(string GifContentPath, Uri Content)
@@ -170,52 +171,36 @@ namespace Sucrose.Shared.Engine.Helper
             SSSHF.WriteStream(VideoContentPath, GetVideoContent(Content));
         }
 
-        public static string GetGifContentPath()
+        public static string GetContentPath()
         {
-            string GifPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content, SMMRC.Gif);
+            string ContentPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content);
 
-            if (!Directory.Exists(Path.GetDirectoryName(GifPath)))
+            if (!Directory.Exists(ContentPath))
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(GifPath));
+                Directory.CreateDirectory(ContentPath);
             }
 
-            return GifPath;
+            return ContentPath;
+        }
+
+        public static string GetGifContentPath()
+        {
+            return Path.Combine(GetContentPath(), SMMRC.Gif);
         }
 
         public static string GetImageContentPath()
         {
-            string ImagePath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content, SMMRC.Image);
-
-            if (!Directory.Exists(Path.GetDirectoryName(ImagePath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(ImagePath));
-            }
-
-            return ImagePath;
+            return Path.Combine(GetContentPath(), SMMRC.Image);
         }
 
         public static string GetVideoContentPath()
         {
-            string VideoPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content, SMMRC.Video);
-
-            if (!Directory.Exists(Path.GetDirectoryName(VideoPath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(VideoPath));
-            }
-
-            return VideoPath;
+            return Path.Combine(GetContentPath(), SMMRC.Video);
         }
 
         public static string GetYouTubeContentPath()
         {
-            string YouTubePath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content, SMMRC.YouTube);
-
-            if (!Directory.Exists(Path.GetDirectoryName(YouTubePath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(YouTubePath));
-            }
-
-            return YouTubePath;
+            return Path.Combine(GetContentPath(), SMMRC.YouTube);
         }
 
         public static Uri GetSource(Uri Source)
@@ -227,7 +212,7 @@ namespace Sucrose.Shared.Engine.Helper
         {
             if (SSTHV.IsUrl(Source))
             {
-                string CachePath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content);
+                string CachePath = GetContentPath();
 
                 if (!Directory.Exists(CachePath))
                 {

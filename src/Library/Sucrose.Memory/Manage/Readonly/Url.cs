@@ -1,4 +1,5 @@
-﻿using SMMRGH = Sucrose.Memory.Manage.Readonly.GitHub;
+﻿using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRGH = Sucrose.Memory.Manage.Readonly.GitHub;
 using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 
 namespace Sucrose.Memory.Manage.Readonly
@@ -6,6 +7,8 @@ namespace Sucrose.Memory.Manage.Readonly
     public static class Url
     {
         public static readonly string GitHub = "https://github.com";
+
+        public static readonly string Local = $"https://{SMMRG.Local}/";
 
         public static readonly string Soferity = "https://sucrose.soferity.com";
 

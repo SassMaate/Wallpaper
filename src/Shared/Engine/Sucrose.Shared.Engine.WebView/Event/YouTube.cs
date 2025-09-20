@@ -6,6 +6,9 @@ using SELLT = Skylark.Enum.LevelLogType;
 using SMME = Sucrose.Manager.Manage.Engine;
 using SMMG = Sucrose.Manager.Manage.General;
 using SMMI = Sucrose.Manager.Manage.Internal;
+using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SSEHP = Sucrose.Shared.Engine.Helper.Properties;
 using SSEHS = Sucrose.Shared.Engine.Helper.Source;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
@@ -97,9 +100,29 @@ namespace Sucrose.Shared.Engine.WebView.Event
             e.Cancel = true;
         }
 
+        private static void WebEngineWebResourceRequested(object sender, CoreWebView2WebResourceRequestedEventArgs e)
+        {
+            try
+            {
+                CoreWebView2WebResourceRequest Request = e.Request;
+
+                if (!Request.Headers.Contains("Referer"))
+                {
+                    Request.Headers.SetHeader("Referer", SMMRU.Local);
+                }
+            }
+            catch { }
+        }
+
         public static void WebEngineInitializationCompleted(object sender, CoreWebView2InitializationCompletedEventArgs e)
         {
+            SSEWVMI.WebEngine.CoreWebView2.SetVirtualHostNameToFolderMapping(SMMRG.Local, SSEHS.GetContentPath(), CoreWebView2HostResourceAccessKind.Allow);
+
+            SSEWVMI.WebEngine.CoreWebView2.AddWebResourceRequestedFilter("*youtube.com/*", CoreWebView2WebResourceContext.All);
+
             SSEWVMI.WebEngine.CoreWebView2.ServerCertificateErrorDetected += WebEngineServerCertificateErrorDetected;
+
+            SSEWVMI.WebEngine.CoreWebView2.WebResourceRequested += WebEngineWebResourceRequested;
 
             SSEWVMI.WebEngine.CoreWebView2.DownloadStarting += WebEngineDownloadStarting;
 
@@ -114,7 +137,7 @@ namespace Sucrose.Shared.Engine.WebView.Event
 
             SSEHS.WriteYouTubeContent(Path, Video, Playlist);
 
-            SSEWVMI.WebEngine.Source = SSEHS.GetSource(Path);
+            SSEWVMI.WebEngine.Source = SSEHS.GetSource(SMMRC.YouTube, SMMRU.Local);
 
             SSEWVMI.WebEngine.CoreWebView2.DOMContentLoaded += WebEngineDOMContentLoaded;
 

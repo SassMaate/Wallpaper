@@ -1,4 +1,5 @@
 $ErrorActionPreference = 'Stop'
+
 $packageArgs = @{
 	packageName   = 'Sucrose Wallpaper Engine'
 	fileType      = 'exe'

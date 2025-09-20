@@ -26,10 +26,12 @@ namespace Sucrose.Memory.Manage.Readonly
 
         public static readonly IPAddress Loopback = IPAddress.Loopback;
 
+        public static readonly string Local = "sucrose.wallpaper.engine";
+
         public static readonly string StartCommand = $"{StartCommandChar}";
 
         public static readonly string ValueSeparator = $"{ValueSeparatorChar}";
 
-        public static readonly string UserAgent = "Sucrose/2.1 (Wallpaper Engine) SucroseWebKit";
+        public static readonly string UserAgent = "Sucrose/2.2 (Wallpaper Engine) SucroseWebKit";
     }
 }
