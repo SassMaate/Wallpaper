@@ -106,10 +106,10 @@
     <None Include="$(MSBuildThisFileDirectory)Assets\LightOff.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Assets\LightCouple.ico">
+    <None Include="$(MSBuildThisFileDirectory)Assets\Fire.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Assets\LightCouple.png">
+    <None Include="$(MSBuildThisFileDirectory)Assets\Fire.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Assets\Sent.ico">
