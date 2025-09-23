@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Obnovit Tapetu</system:String>
     <system:String x:Key="Launcher.WallChangeText">Změnit Tapetu</system:String>
     <system:String x:Key="Launcher.WallCloseText">Zavřít Tapetu</system:String>
     <system:String x:Key="Launcher.WallOpenText">Otevřít Tapetu</system:String>

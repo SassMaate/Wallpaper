@@ -12,5 +12,6 @@
     <system:String x:Key="Launcher.WallCloseIcon">Assets/LightOff.ico</system:String>
     <system:String x:Key="Launcher.SettingIcon">Assets/Engineering.ico</system:String>
     <system:String x:Key="Launcher.OpenIcon">Assets/DashboardLayout.ico</system:String>
+    <system:String x:Key="Launcher.WallReloadIcon">Assets/LightCouple.ico</system:String>
     <system:String x:Key="Launcher.WallCustomizeIcon">Assets/ColorPalette.ico</system:String>
 </ResourceDictionary>

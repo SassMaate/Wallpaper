@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Reîncărcați Tapetul</system:String>
     <system:String x:Key="Launcher.WallChangeText">Schimbați Tapetul</system:String>
     <system:String x:Key="Launcher.WallCloseText">Închideți Tapetul</system:String>
     <system:String x:Key="Launcher.WallOpenText">Deschideți Tapetul</system:String>

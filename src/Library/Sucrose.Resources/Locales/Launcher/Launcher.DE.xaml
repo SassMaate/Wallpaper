@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Hintergrund Neu Laden</system:String>
     <system:String x:Key="Launcher.WallChangeText">Hintergrund Ändern</system:String>
     <system:String x:Key="Launcher.WallCloseText">Hintergrund Schließen</system:String>
     <system:String x:Key="Launcher.WallOpenText">Hintergrund Öffnen</system:String>

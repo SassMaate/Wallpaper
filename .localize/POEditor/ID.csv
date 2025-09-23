@@ -129,6 +129,7 @@ Launcher.SettingText,Pengaturan,,Launcher\Launcher.ID.xaml,
 PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.ID.xaml,Please don't touch the translation in this line.
 Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.ID.xaml,
 PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.ID.xaml,Please don't touch the translation in this line.
+Launcher.WallReloadText,Muat Ulang Wallpaper,,Launcher\Launcher.ID.xaml,
 Launcher.WallChangeText,Ubah Wallpaper,,Launcher\Launcher.ID.xaml,
 Launcher.WallCloseText,Tutup Wallpaper,,Launcher\Launcher.ID.xaml,
 Launcher.WallOpenText,Buka Wallpaper,,Launcher\Launcher.ID.xaml,

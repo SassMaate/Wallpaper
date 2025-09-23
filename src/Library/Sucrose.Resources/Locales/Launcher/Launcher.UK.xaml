@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Перезавантажити Шпалери</system:String>
     <system:String x:Key="Launcher.WallChangeText">Змінити Шпалери</system:String>
     <system:String x:Key="Launcher.WallCloseText">Закрити Шпалери</system:String>
     <system:String x:Key="Launcher.WallOpenText">Відкрити Шпалери</system:String>

@@ -20,6 +20,7 @@ using SSLCC = Sucrose.Shared.Launcher.Command.Close;
 using SSLCE = Sucrose.Shared.Launcher.Command.Engine;
 using SSLCF = Sucrose.Shared.Launcher.Command.Feedback;
 using SSLCI = Sucrose.Shared.Launcher.Command.Interface;
+using SSLCR = Sucrose.Shared.Launcher.Command.Reload;
 using SSLCRG = Sucrose.Shared.Launcher.Command.Reportdog;
 using SSLCRT = Sucrose.Shared.Launcher.Command.Report;
 using SSLCS = Sucrose.Shared.Launcher.Command.Setting;
@@ -98,6 +99,7 @@ namespace Sucrose.Shared.Launcher.Manager
             if (SSSHL.Run())
             {
                 ToolStripItem Change = new ToolStripMenuItem();
+                ToolStripItem Reload = new ToolStripMenuItem();
                 ToolStripItem Customize = new ToolStripMenuItem();
                 ToolStripItem Wallpaper = new ToolStripMenuItem();
 
@@ -116,6 +118,20 @@ namespace Sucrose.Shared.Launcher.Manager
                 ContextMenu.Items.Add(Separator1.Strip);
 
                 ContextMenu.Items.Add(Wallpaper);
+
+                if (SMMB.PausePerformance && SSSHP.Work(SSSMI.Backgroundog))
+                {
+                    Reload = new ToolStripMenuItem($"{SRER.GetValue("Launcher", "WallReloadText")} ({SRER.GetValue("Launcher", "PausedText")})", Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "WallReloadIcon"))))
+                    {
+                        Enabled = false
+                    };
+                }
+                else
+                {
+                    Reload = new ToolStripMenuItem(SRER.GetValue("Launcher", "WallReloadText"), Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "WallReloadIcon"))), CommandReload);
+                }
+
+                ContextMenu.Items.Add(Reload);
 
                 if (SSSHC.Check(false))
                 {
@@ -373,6 +389,11 @@ namespace Sucrose.Shared.Launcher.Manager
         private void CommandReport(object sender, EventArgs e)
         {
             SSLCRT.Command();
+        }
+
+        private void CommandReload(object sender, EventArgs e)
+        {
+            SSLCR.Command();
         }
 
         private void CommandUpdate(object sender, EventArgs e)

@@ -129,6 +129,7 @@ Launcher.SettingText,Ustawienia,,Launcher\Launcher.PL.xaml,
 PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.PL.xaml,Please don't touch the translation in this line.
 Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.PL.xaml,
 PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.PL.xaml,Please don't touch the translation in this line.
+Launcher.WallReloadText,Przeładuj Tapetę,,Launcher\Launcher.PL.xaml,
 Launcher.WallChangeText,Zmień Tapetę,,Launcher\Launcher.PL.xaml,
 Launcher.WallCloseText,Zamknij Tapetę,,Launcher\Launcher.PL.xaml,
 Launcher.WallOpenText,Otwórz Tapetę,,Launcher\Launcher.PL.xaml,

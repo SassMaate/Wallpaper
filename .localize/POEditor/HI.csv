@@ -129,6 +129,7 @@ Launcher.SettingText,सेटिंग्स,,Launcher\Launcher.HI.xaml,
 PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.HI.xaml,Please don't touch the translation in this line.
 Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.HI.xaml,
 PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.HI.xaml,Please don't touch the translation in this line.
+Launcher.WallReloadText,वॉलपेपर पुनः लोड करें,,Launcher\Launcher.HI.xaml,
 Launcher.WallChangeText,वॉलपेपर बदलें,,Launcher\Launcher.HI.xaml,
 Launcher.WallCloseText,वॉलपेपर बंद करें,,Launcher\Launcher.HI.xaml,
 Launcher.WallOpenText,वॉलपेपर खोलें,,Launcher\Launcher.HI.xaml,

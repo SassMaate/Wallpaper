@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">배경화면 다시 불러오기</system:String>
     <system:String x:Key="Launcher.WallChangeText">배경화면 변경</system:String>
     <system:String x:Key="Launcher.WallCloseText">배경화면 닫기</system:String>
     <system:String x:Key="Launcher.WallOpenText">배경화면 열기</system:String>

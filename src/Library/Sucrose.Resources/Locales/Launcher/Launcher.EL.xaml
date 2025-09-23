@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Επαναφόρτωση Ταπετσαρίας</system:String>
     <system:String x:Key="Launcher.WallChangeText">Αλλαγή Ταπετσαρίας</system:String>
     <system:String x:Key="Launcher.WallCloseText">Κλείσιμο Ταπετσαρίας</system:String>
     <system:String x:Key="Launcher.WallOpenText">Άνοιγμα Ταπετσαρίας</system:String>

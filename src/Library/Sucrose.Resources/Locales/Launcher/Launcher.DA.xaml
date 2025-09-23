@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Genindlæs Tapet</system:String>
     <system:String x:Key="Launcher.WallChangeText">Skift Tapet</system:String>
     <system:String x:Key="Launcher.WallCloseText">Luk Tapet</system:String>
     <system:String x:Key="Launcher.WallOpenText">Åbn Tapet</system:String>

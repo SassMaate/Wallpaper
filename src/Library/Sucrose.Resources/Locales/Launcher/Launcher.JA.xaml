@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">壁紙を再読み込み</system:String>
     <system:String x:Key="Launcher.WallChangeText">壁紙を変更</system:String>
     <system:String x:Key="Launcher.WallCloseText">壁紙を閉じる</system:String>
     <system:String x:Key="Launcher.WallOpenText">壁紙を開く</system:String>

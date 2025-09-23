@@ -28,6 +28,7 @@
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
+    <system:String x:Key="Launcher.WallReloadText">Duvar Kağıdını Yenile</system:String>
     <system:String x:Key="Launcher.WallChangeText">Duvar Kağıdını Değiştir</system:String>
     <system:String x:Key="Launcher.WallCloseText">Duvar Kağıdını Kapat</system:String>
     <system:String x:Key="Launcher.WallOpenText">Duvar Kağıdını Aç</system:String>

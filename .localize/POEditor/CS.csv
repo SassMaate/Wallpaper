@@ -129,6 +129,7 @@ Launcher.SettingText,Nastavení,,Launcher\Launcher.CS.xaml,
 PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.CS.xaml,Please don't touch the translation in this line.
 Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.CS.xaml,
 PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.CS.xaml,Please don't touch the translation in this line.
+Launcher.WallReloadText,Obnovit Tapetu,,Launcher\Launcher.CS.xaml,
 Launcher.WallChangeText,Změnit Tapetu,,Launcher\Launcher.CS.xaml,
 Launcher.WallCloseText,Zavřít Tapetu,,Launcher\Launcher.CS.xaml,
 Launcher.WallOpenText,Otevřít Tapetu,,Launcher\Launcher.CS.xaml,

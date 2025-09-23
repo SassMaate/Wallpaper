@@ -129,6 +129,7 @@ Launcher.SettingText,Ayarlar,,Launcher\Launcher.TR.xaml,
 PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.TR.xaml,Please don't touch the translation in this line.
 Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.TR.xaml,
 PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.TR.xaml,Please don't touch the translation in this line.
+Launcher.WallReloadText,Duvar Kağıdını Yenile,,Launcher\Launcher.TR.xaml,
 Launcher.WallChangeText,Duvar Kağıdını Değiştir,,Launcher\Launcher.TR.xaml,
 Launcher.WallCloseText,Duvar Kağıdını Kapat,,Launcher\Launcher.TR.xaml,
 Launcher.WallOpenText,Duvar Kağıdını Aç,,Launcher\Launcher.TR.xaml,
