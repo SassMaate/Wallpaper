@@ -96,6 +96,17 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static List<string> MpvConfig = new()
         {
+            "# Audio Settings #",
+            "volume-min=0",
+            "volume-max=100",
+            "audio-buffer=0.1",
+            "audio-channels=stereo",
+            "audio-pass-through=yes",
+            "audio-samplerate=48000",
+            "# Audio Settings #",
+
+            "",
+
             "# Video Settings #",
             "vo=gpu",
             "hwdec=no",
@@ -115,14 +126,10 @@ namespace Sucrose.Shared.Engine.Manage
 
             "",
 
-            "# Audio Settings #",
-            "volume-min=0",
-            "volume-max=100",
-            "audio-buffer=0.1",
-            "audio-channels=stereo",
-            "audio-pass-through=yes",
-            "audio-samplerate=48000",
-            "# Audio Settings #",
+            "# Windows Settings #",
+            "unregister=yes",
+            "media-controls=no",
+            "# Windows Settings #",
 
             "",
 
