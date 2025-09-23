@@ -14,7 +14,8 @@ using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
-using SSEHC = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
+using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSENVV = Sucrose.Shared.Engine.Nebula.View.Video;
@@ -152,7 +153,9 @@ namespace Sucrose.Live.Nebula
                         {
                             SSEHA.Start();
 
-                            SSEHC.Start();
+                            SSEHCR.Start();
+
+                            SSEHCY.Start();
 
                             SSEMI.Host = $"{Path.Combine(SSEMI.LibraryLocation, SSEMI.LibrarySelected)}/";
 

@@ -45,6 +45,8 @@ namespace Sucrose.Manager.Manage
 
         public static bool DeveloperMode => SMMI.EngineSettingManager.GetSetting(SMMCE.DeveloperMode, false);
 
+        public static bool CrashExplorer => SMMI.EngineSettingManager.GetSetting(SMMCE.CrashExplorer, false);
+
         public static bool WallpaperLoop => SMMI.EngineSettingManager.GetSetting(SMMCE.WallpaperLoop, true);
 
         public static bool VolumeSilent => SMMI.EngineSettingManager.GetSetting(SMMCE.VolumeSilent, false);

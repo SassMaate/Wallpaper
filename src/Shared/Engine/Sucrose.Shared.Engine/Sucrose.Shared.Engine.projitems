@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Event\Handler.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\LocalHttpServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Crashing.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Awakening.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Properties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Data.cs" />

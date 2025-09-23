@@ -36,6 +36,8 @@
 
         public const string WebArguments = "WebArguments";
 
+        public const string CrashExplorer = "CrashExplorer";
+
         public const string DeveloperMode = "DeveloperMode";
 
         public const string DeveloperPort = "DeveloperPort";

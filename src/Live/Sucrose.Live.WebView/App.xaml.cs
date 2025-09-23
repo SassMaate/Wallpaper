@@ -32,7 +32,8 @@ using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
-using SSEHC = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
+using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHP = Sucrose.Shared.Engine.Helper.Properties;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
@@ -360,7 +361,9 @@ namespace Sucrose.Live.WebView
                         {
                             SSEHA.Start();
 
-                            SSEHC.Start();
+                            SSEHCR.Start();
+
+                            SSEHCY.Start();
 
                             if (SSEMI.Info.Type is SSDEWT.Gif or SSDEWT.Video or SSDEWT.YouTube)
                             {

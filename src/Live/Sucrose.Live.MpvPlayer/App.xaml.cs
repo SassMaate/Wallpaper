@@ -20,7 +20,8 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
-using SSEHC = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
+using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEMPHC = Sucrose.Shared.Engine.MpvPlayer.Helper.Config;
@@ -203,7 +204,9 @@ namespace Sucrose.Live.MpvPlayer
                         {
                             SSEHA.Start();
 
-                            SSEHC.Start();
+                            SSEHCR.Start();
+
+                            SSEHCY.Start();
 
                             SSEMPHC.Start();
 

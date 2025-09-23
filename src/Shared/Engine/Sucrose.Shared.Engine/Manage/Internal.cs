@@ -30,6 +30,8 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static List<int> Processes = new();
 
+        public static IntPtr Progman = IntPtr.Zero;
+
         public static int IntermediateD3DWindow = 0;
 
         public static bool PausePerformance = false;

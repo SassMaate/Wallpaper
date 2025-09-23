@@ -43,7 +43,8 @@ using SSECSVW = Sucrose.Shared.Engine.CefSharp.View.Web;
 using SSECSVYT = Sucrose.Shared.Engine.CefSharp.View.YouTube;
 using SSEELHS = Sucrose.Shared.Engine.Extension.LocalHttpServer;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
-using SSEHC = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
+using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHP = Sucrose.Shared.Engine.Helper.Properties;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
@@ -436,7 +437,9 @@ namespace Sucrose.Live.CefSharp
                         {
                             SSEHA.Start();
 
-                            SSEHC.Start();
+                            SSEHCR.Start();
+
+                            SSEHCY.Start();
 
                             if (SSEMI.Info.Type is SSDEWT.Gif or SSDEWT.Video or SSDEWT.YouTube)
                             {

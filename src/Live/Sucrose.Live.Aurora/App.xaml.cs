@@ -15,7 +15,8 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSEAVA = Sucrose.Shared.Engine.Aurora.View.Application;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
-using SSEHC = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
+using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSSHC = Sucrose.Shared.Space.Helper.Cycyling;
@@ -155,7 +156,9 @@ namespace Sucrose.Live.Aurora
                             {
                                 SSEHA.Start();
 
-                                SSEHC.Start();
+                                SSEHCR.Start();
+
+                                SSEHCY.Start();
 
                                 SSEMI.Host = $"{Path.Combine(SSEMI.LibraryLocation, SSEMI.LibrarySelected)}/";
 
