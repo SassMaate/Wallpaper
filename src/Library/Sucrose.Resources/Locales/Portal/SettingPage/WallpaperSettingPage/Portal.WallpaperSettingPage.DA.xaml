@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Forbliv Vågen</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Ændrer tilstanden for at forblive vågen for understøttede tapeter.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Nedbruds Tilstand</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Ændrer adfærden for genindlæsning af tapet, når skrivebordet går ned eller lukkes.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Loop Tilstand</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Ændrer loop tilstanden af understøttede tapeter.</system:String>
 

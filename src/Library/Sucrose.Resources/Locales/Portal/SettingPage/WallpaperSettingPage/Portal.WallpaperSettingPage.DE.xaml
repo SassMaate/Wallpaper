@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Wach Bleiben</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Ändert den Wachbleibestatus für unterstützte Hintergrundbilder.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Absturzmodus</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Ändert das Verhalten des Hintergrund-Neuladens, wenn der Desktop abstürzt oder geschlossen wird.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Wiederholungsmodus</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Ändern Sie das Wiederholungsverhalten für unterstützte Hintergrundbilder.</system:String>
 

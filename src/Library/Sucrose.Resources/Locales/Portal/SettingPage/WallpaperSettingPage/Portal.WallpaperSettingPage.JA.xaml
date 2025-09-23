@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">目を覚ます</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">対応している壁紙のスリープ解除状態を変更します。</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">クラッシュモード</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">デスクトップがクラッシュまたは終了したときの壁紙の再読み込み動作を変更します。</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">ループモード</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">サポートされる壁紙のループモードを変更します。</system:String>
 

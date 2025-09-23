@@ -229,6 +229,28 @@ namespace Sucrose.Portal.ViewModels.Pages
 
             Contents.Add(StayAwake);
 
+            SPVCEC CrashMode = new()
+            {
+                Margin = new Thickness(0, 10, 0, 0),
+                Expandable = false
+            };
+
+            CrashMode.LeftIcon.Symbol = SymbolRegular.ImageOff24;
+            CrashMode.Title.Text = SRER.GetValue("Portal", "WallpaperSettingPage", "CrashMode");
+            CrashMode.Description.Text = SRER.GetValue("Portal", "WallpaperSettingPage", "CrashMode", "Description");
+
+            ToggleSwitch CrashState = new()
+            {
+                IsChecked = SMME.CrashExplorer
+            };
+
+            CrashState.Checked += (s, e) => CrashStateChecked(true);
+            CrashState.Unchecked += (s, e) => CrashStateChecked(false);
+
+            CrashMode.HeaderFrame = CrashState;
+
+            Contents.Add(CrashMode);
+
             SPVCEC LoopMode = new()
             {
                 Margin = new Thickness(0, 10, 0, 0),
@@ -505,6 +527,11 @@ namespace Sucrose.Portal.ViewModels.Pages
         private void LoopStateChecked(bool State)
         {
             SMMI.EngineSettingManager.SetSetting(SMMCE.WallpaperLoop, State);
+        }
+
+        private void CrashStateChecked(bool State)
+        {
+            SMMI.EngineSettingManager.SetSetting(SMMCE.CrashExplorer, State);
         }
 
         private void ScreenTypeSelected(int Index)

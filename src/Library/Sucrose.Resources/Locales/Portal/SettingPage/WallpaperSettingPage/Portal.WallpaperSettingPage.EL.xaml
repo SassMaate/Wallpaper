@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Παραμείνετε ξύπνιοι</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Αλλάζει την κατάσταση παραμονής σε εγρήγορση για τις υποστηριζόμενες ταπετσαρίες.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Λειτουργία Κατάρρευσης</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Αλλάζει τη συμπεριφορά επαναφόρτωσης ταπετσαρίας όταν το περιβάλλον εργασίας καταρρέει ή κλείνει.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Λειτουργία Επανάληψης</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Αλλάζει τη λειτουργία επανάληψης για τις υποστηριζόμενες ταπετσαρίες.</system:String>
 

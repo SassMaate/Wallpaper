@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Kekal Jaga</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Mengubah status kekal jaga untuk wallpaper yang disokong.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Mod Ranap</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Menukar kelakuan memuat semula kertas dinding apabila desktop ranap atau ditutup.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Mod Pengulangan</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Mod pengulangan yang akan diubah untuk wallpaper yang disokong.</system:String>
 

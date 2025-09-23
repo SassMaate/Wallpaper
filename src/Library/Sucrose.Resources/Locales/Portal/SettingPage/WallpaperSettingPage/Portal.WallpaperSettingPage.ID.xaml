@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Tetap Terjaga</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Mengubah status tetap terjaga untuk wallpaper yang didukung.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Mode Crash</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Mengubah perilaku pemuatan ulang wallpaper ketika desktop crash atau ditutup.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Mode Pengulangan</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Mengubah mode pengulangan pada dinding yang didukung.</system:String>
 

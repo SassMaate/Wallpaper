@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Залишатися Бадьорим</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Змінює стан "залишатися бадьорим" для підтримуваних шпалер.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Режим Збою</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Змінює поведінку перезавантаження шпалер, коли робочий стіл аварійно завершується або закривається.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Режим Повторення</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Змінює режим повторення для підтримуваних шпалерів.</system:String>
 

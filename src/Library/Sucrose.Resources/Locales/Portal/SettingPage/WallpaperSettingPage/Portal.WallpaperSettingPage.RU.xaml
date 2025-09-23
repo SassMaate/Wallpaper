@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Оставаться Бодрым</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Изменяет состояние бодрствования для поддерживаемых обоев.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Режим Сбоя</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Изменяет поведение перезагрузки обоев, когда рабочий стол дает сбой или закрывается.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Режим Повтора</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Измените режим повтора для поддерживаемых обоев.</system:String>
 

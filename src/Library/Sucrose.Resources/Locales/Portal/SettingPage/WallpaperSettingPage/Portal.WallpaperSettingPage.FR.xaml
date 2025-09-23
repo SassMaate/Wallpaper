@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Rester Éveillé</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Modifie l'état de veille pour les fonds d'écran pris en charge.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Mode Crash</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Modifie le comportement de rechargement du fond d’écran lorsque le bureau plante ou se ferme.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Mode de Boucle</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Modifiez le comportement de bouclage pour les fonds d'écran pris en charge.</system:String>
 

@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Hold deg Våken</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Endrer våkentilstanden for støttede bakgrunner.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Krasjmodus</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Endrer oppførselen for å laste inn bakgrunn på nytt når skrivebordet krasjer eller lukkes.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Løkke-Modus</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Endrer løkke-modus for støttede bakgrunnsbilder.</system:String>
 

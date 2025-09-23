@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Pozostań Obudzony</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Zmienia stan pozostań obudzony dla obsługiwanych tapet.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Tryb Awarii</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Zmienia sposób przeładowania tapety, gdy pulpit ulegnie awarii lub zostanie zamknięty.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Tryb Pętli</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Zmień zachowanie pętli dla obsługiwanych tapet.</system:String>
 

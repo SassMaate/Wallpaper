@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Rimani Sveglio</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Modifica lo stato di restare sveglio per gli sfondi supportati.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Modalità Crash</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Modifica il comportamento di ricaricamento dello sfondo quando il desktop si blocca o si chiude.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Modalità di Riproduzione in Loop</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Modifica la modalità di riproduzione in loop degli sfondi supportati.</system:String>
 

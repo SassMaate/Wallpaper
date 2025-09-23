@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Blijf Wakker</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Wijzigt de wakker-status voor ondersteunde achtergronden.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Crashmodus</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Wijzigt het gedrag van het opnieuw laden van de achtergrond wanneer het bureaublad crasht of sluit.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Herhalingsmodus</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Verandert de herhalingsinstelling voor ondersteunde achtergronden.</system:String>
 

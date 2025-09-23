@@ -1225,45 +1225,48 @@ PASS⦙282,PASS⦙282,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal
 Portal.WallpaperSettingPage.StayAwake,깨우기 유지,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.StayAwake.Description,지원되는 배경화면의 깨우기 상태를 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 PASS⦙283,PASS⦙283,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.CrashMode,크래시 모드,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
+Portal.WallpaperSettingPage.CrashMode.Description,데스크톱이 충돌하거나 종료될 때 배경화면 다시 불러오기 동작을 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
+PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.LoopMode,반복 모드,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.LoopMode.Description,지원되는 바탕 화면에서 반복 모드를 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ShuffleMode,섞기 모드,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.ShuffleMode.Description,지원되는 바탕 화면에서 섞기 모드를 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.BackgroundImage,배경 이미지,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.BackgroundImage.Description,움직이는 배경 화면을 데스크톱 배경 이미지로 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.HardwareAcceleration,하드웨어 가속,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.HardwareAcceleration.Description,지원되는 배경화면의 하드웨어 가속 상태를 변경합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.GifPlayer,Gif 플레이어,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.GifPlayer.Description,라이브러리에서 사용할 Gif 테마 플레이어를 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.VideoPlayer,Video 플레이어,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.VideoPlayer.Description,라이브러리에서 사용할 Video 테마 플레이어를 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.UrlPlayer,Url 엔진,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.UrlPlayer.Description,라이브러리에서 사용할 Url 테마 엔진을 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.WebPlayer,Web 엔진,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.WebPlayer.Description,라이브러리에서 사용할 Web 테마 엔진을 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.YouTubePlayer,YouTube 엔진,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.YouTubePlayer.Description,라이브러리에서 사용할 YouTube 테마 엔진을 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
-PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ApplicationPlayer,Application 엔진,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.WallpaperSettingPage.ApplicationPlayer.Description,라이브러리에서 사용할 Application 테마 엔진을 선택합니다.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.KO.xaml,
 Portal.BrokenStorePage.Title,BrokenStorePage,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.KO.xaml,
-PASS⦙293,PASS⦙293,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.KO.xaml,Please don't touch the translation in this line.
 Portal.BrokenStorePage.TitleText,인터넷 불빛이 꺼진 한 순간,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.KO.xaml,
 Portal.BrokenStorePage.DescriptionText,별이 없는 하늘처럼 여기에도 인터넷의 빛이 없습니다,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.KO.xaml,
 Portal.FullStorePage.Title,FullStorePage,,Portal\StorePage\FullStorePage\Portal.FullStorePage.KO.xaml,
 Portal.SearchStorePage.Title,SearchStorePage,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.KO.xaml,
-PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.KO.xaml,Please don't touch the translation in this line.
 Portal.SearchStorePage.TitleText,찾는 것의 답은 하늘에 있을지도 모릅니다,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.KO.xaml,
 Portal.SearchStorePage.DescriptionText,결과가 기대와 다르다면 하늘은 새로운 경험을 제공할 수 있습니다,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.KO.xaml,
 Portal.UnknownStorePage.Title,UnknownStorePage,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.KO.xaml,
-PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.KO.xaml,Please don't touch the translation in this line.
+PASS⦙296,PASS⦙296,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.KO.xaml,Please don't touch the translation in this line.
 Portal.UnknownStorePage.TitleText,스토어에서 발생한 미지의 사태를 발견하세요,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.KO.xaml,
 Portal.UnknownStorePage.DescriptionText,알려지지 않은 것을 추적하고 스토어에서 발생한 미지의 사태를 밝히는 여정에 나서세요,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.KO.xaml,

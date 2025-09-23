@@ -1225,45 +1225,48 @@ PASS⦙282,PASS⦙282,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal
 Portal.WallpaperSettingPage.StayAwake,Stay Awake,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.StayAwake.Description,Changes the stay awake status for supported wallpapers.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 PASS⦙283,PASS⦙283,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.CrashMode,Crash Mode,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
+Portal.WallpaperSettingPage.CrashMode.Description,Changes the wallpaper reload behavior when the desktop crashes or closes.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
+PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.LoopMode,Loop Mode,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.LoopMode.Description,Changes the looping behavior for supported wallpapers.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ShuffleMode,Shuffle Mode,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.ShuffleMode.Description,Change the shuffle behavior for supported wallpapers.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.BackgroundImage,Background Image,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.BackgroundImage.Description,Changes the live wallpaper to a desktop background image.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.HardwareAcceleration,Hardware Acceleration,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.HardwareAcceleration.Description,Changes the hardware acceleration behavior for supported wallpapers.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.GifPlayer,Gif Player,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.GifPlayer.Description,Select the plugin that will play Gif-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.VideoPlayer,Video Player,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.VideoPlayer.Description,Select the plugin that will play Video-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.UrlPlayer,Url Engine,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.UrlPlayer.Description,Select the engine that will run Url-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.WebPlayer,Web Engine,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.WebPlayer.Description,Select the engine that will run Web-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.YouTubePlayer,YouTube Engine,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.YouTubePlayer.Description,Select the engine that will run YouTube-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
-PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ApplicationPlayer,Application Engine,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.WallpaperSettingPage.ApplicationPlayer.Description,Select the engine that will run Application-themed wallpapers in your library.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.EN.xaml,
 Portal.BrokenStorePage.Title,BrokenStorePage,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.EN.xaml,
-PASS⦙293,PASS⦙293,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.EN.xaml,Please don't touch the translation in this line.
 Portal.BrokenStorePage.TitleText,A Moment When Internet Lights Dimmed,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.EN.xaml,
 Portal.BrokenStorePage.DescriptionText,"Like a starless sky, there's no sparkle of the internet here",,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.EN.xaml,
 Portal.FullStorePage.Title,FullStorePage,,Portal\StorePage\FullStorePage\Portal.FullStorePage.EN.xaml,
 Portal.SearchStorePage.Title,SearchStorePage,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.EN.xaml,
-PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.EN.xaml,Please don't touch the translation in this line.
 Portal.SearchStorePage.TitleText,The Answer to What You're Looking For May Be Hidden in the Sky,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.EN.xaml,
 Portal.SearchStorePage.DescriptionText,"If the results aren't coming as expected, the sky can offer you a new experience",,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.EN.xaml,
 Portal.UnknownStorePage.Title,UnknownStorePage,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.EN.xaml,
-PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.EN.xaml,Please don't touch the translation in this line.
+PASS⦙296,PASS⦙296,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.EN.xaml,Please don't touch the translation in this line.
 Portal.UnknownStorePage.TitleText,Uncover the Mysterious State Unveiled in the Store,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.EN.xaml,
 Portal.UnknownStorePage.DescriptionText,Embark on a journey to uncover the unknown and shed light on the mysterious state that has emerged in the store,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.EN.xaml,

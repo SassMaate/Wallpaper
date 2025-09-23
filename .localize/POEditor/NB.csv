@@ -1225,45 +1225,48 @@ PASS⦙282,PASS⦙282,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal
 Portal.WallpaperSettingPage.StayAwake,Hold deg Våken,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.StayAwake.Description,Endrer våkentilstanden for støttede bakgrunner.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 PASS⦙283,PASS⦙283,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.CrashMode,Krasjmodus,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
+Portal.WallpaperSettingPage.CrashMode.Description,Endrer oppførselen for å laste inn bakgrunn på nytt når skrivebordet krasjer eller lukkes.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
+PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.LoopMode,Løkke-Modus,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.LoopMode.Description,Endrer løkke-modus for støttede bakgrunnsbilder.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ShuffleMode,Blandingsmodus,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.ShuffleMode.Description,Endrer blandingsmodus for støttede bakgrunnsbilder.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.BackgroundImage,Bakgrunnsbilde,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.BackgroundImage.Description,Endrer levende bakgrunnsbilde til et skrivebordsbakgrunnsbilde.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.HardwareAcceleration,Maskinvareakselerasjon,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.HardwareAcceleration.Description,Endrer maskinvareakselerasjonsstatus for støttede bakgrunnsbilder.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.GifPlayer,Gif-Spiller,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.GifPlayer.Description,Velg en plugin som vil spille av temaer av typen Gif i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.VideoPlayer,Video-Spiller,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.VideoPlayer.Description,Velg en plugin som vil spille av temaer av typen Video i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.UrlPlayer,Url-Motor,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.UrlPlayer.Description,Velg en motor som vil kjøre temaer av typen Url i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.WebPlayer,Web-Motor,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.WebPlayer.Description,Velg en motor som vil kjøre temaer av typen Web i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.YouTubePlayer,YouTube-Motor,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.YouTubePlayer.Description,Velg en motor som vil kjøre temaer av typen YouTube i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
-PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ApplicationPlayer,Application-Motor,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.WallpaperSettingPage.ApplicationPlayer.Description,Velg en motor som vil kjøre temaer av typen Application i biblioteket ditt.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.NB.xaml,
 Portal.BrokenStorePage.Title,BrokenStorePage,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.NB.xaml,
-PASS⦙293,PASS⦙293,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.NB.xaml,Please don't touch the translation in this line.
 Portal.BrokenStorePage.TitleText,Et øyeblikk uten internettlys,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.NB.xaml,
 Portal.BrokenStorePage.DescriptionText,"Som en stjernefri himmel, er det ingen glans av internett her",,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.NB.xaml,
 Portal.FullStorePage.Title,FullStorePage,,Portal\StorePage\FullStorePage\Portal.FullStorePage.NB.xaml,
 Portal.SearchStorePage.Title,SearchStorePage,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.NB.xaml,
-PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.NB.xaml,Please don't touch the translation in this line.
 Portal.SearchStorePage.TitleText,Svaret på det du leter etter kan være skjult i himmelen,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.NB.xaml,
 Portal.SearchStorePage.DescriptionText,"Hvis resultatene ikke kommer som forventet, kan himmelen gi deg en ny opplevelse",,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.NB.xaml,
 Portal.UnknownStorePage.Title,UnknownStorePage,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.NB.xaml,
-PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.NB.xaml,Please don't touch the translation in this line.
+PASS⦙296,PASS⦙296,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.NB.xaml,Please don't touch the translation in this line.
 Portal.UnknownStorePage.TitleText,Utforsk det uforklarlige som skjer i butikken,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.NB.xaml,
 Portal.UnknownStorePage.DescriptionText,Gå på jakt etter det ukjente og begi deg ut på reisen for å avdekke det mystiske som skjer i butikken,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.NB.xaml,

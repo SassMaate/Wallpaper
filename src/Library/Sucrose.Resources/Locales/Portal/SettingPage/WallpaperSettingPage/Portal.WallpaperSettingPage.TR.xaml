@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Uyanık Kalma</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Desteklenen duvar kağıtlarında uyanık kalma durumunu değiştirir.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Çökme Durumu</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Masaüstü çöktüğünde veya kapandığında duvar kağıdının yenilenme durumunu değiştirir.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Yineleme Durumu</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Desteklenen duvar kağıtlarında yineleme durumunu değiştirir.</system:String>
 

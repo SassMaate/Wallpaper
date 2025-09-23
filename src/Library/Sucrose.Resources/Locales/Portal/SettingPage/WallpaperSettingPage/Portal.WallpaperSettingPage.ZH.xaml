@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">保持清醒</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">更改支持壁纸的保持清醒状态。</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">崩溃模式</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">当桌面崩溃或关闭时，更改壁纸重新加载的行为。</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">循环模式</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">更改支持的壁纸的循环方式。</system:String>
 

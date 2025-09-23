@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Stay Awake</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Changes the stay awake status for supported wallpapers.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Crash Mode</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Changes the wallpaper reload behavior when the desktop crashes or closes.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Loop Mode</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Changes the looping behavior for supported wallpapers.</system:String>
 

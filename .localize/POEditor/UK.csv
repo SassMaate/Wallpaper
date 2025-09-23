@@ -1225,45 +1225,48 @@ PASS⦙282,PASS⦙282,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal
 Portal.WallpaperSettingPage.StayAwake,Залишатися Бадьорим,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.StayAwake.Description,"Змінює стан ""залишатися бадьорим"" для підтримуваних шпалер.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 PASS⦙283,PASS⦙283,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.CrashMode,Режим Збою,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
+Portal.WallpaperSettingPage.CrashMode.Description,"Змінює поведінку перезавантаження шпалер, коли робочий стіл аварійно завершується або закривається.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
+PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.LoopMode,Режим Повторення,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.LoopMode.Description,Змінює режим повторення для підтримуваних шпалерів.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ShuffleMode,Режим Перемішування,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.ShuffleMode.Description,Змінює режим перемішування для підтримуваних шпалерів.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.BackgroundImage,Фонове Зображення,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.BackgroundImage.Description,Змінює живі шпалери на фонове зображення робочого столу.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.HardwareAcceleration,Апаратне Прискорення,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.HardwareAcceleration.Description,Змінює статус апаратного прискорення для підтримуваних шпалер.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.GifPlayer,Модуль Gif,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.GifPlayer.Description,"Виберіть модуль для відтворення шпалерів у форматі Gif, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.VideoPlayer,Модуль Video,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.VideoPlayer.Description,"Виберіть модуль для відтворення шпалерів у форматі Video, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.UrlPlayer,Двигун Url,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.UrlPlayer.Description,"Виберіть двигун для відтворення Url-шпалерів, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.WebPlayer,Двигун Web,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.WebPlayer.Description,"Виберіть двигун для відтворення Web-шпалерів, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.YouTubePlayer,Двигун YouTube,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.YouTubePlayer.Description,"Виберіть двигун для відтворення YouTube-шпалерів, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
-PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.ApplicationPlayer,Двигун Application,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.WallpaperSettingPage.ApplicationPlayer.Description,"Виберіть двигун для відтворення Application-шпалерів, які знаходяться в вашій бібліотеці.",,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,
 Portal.BrokenStorePage.Title,BrokenStorePage,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,
-PASS⦙293,PASS⦙293,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,Please don't touch the translation in this line.
 Portal.BrokenStorePage.TitleText,"Мить, коли світло інтернету вигасає",,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,
 Portal.BrokenStorePage.DescriptionText,Схоже на зірковий небесний світ без інтернету,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,
 Portal.FullStorePage.Title,FullStorePage,,Portal\StorePage\FullStorePage\Portal.FullStorePage.UK.xaml,
 Portal.SearchStorePage.Title,SearchStorePage,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,
-PASS⦙294,PASS⦙294,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,Please don't touch the translation in this line.
 Portal.SearchStorePage.TitleText,Відповідь на ваші запити може бути прихована на небі,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,
 Portal.SearchStorePage.DescriptionText,"Якщо результати не задовольняють ваші очікування, небо може запропонувати вам новий досвід",,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,
 Portal.UnknownStorePage.Title,UnknownStorePage,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,
-PASS⦙295,PASS⦙295,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,Please don't touch the translation in this line.
+PASS⦙296,PASS⦙296,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,Please don't touch the translation in this line.
 Portal.UnknownStorePage.TitleText,Дізнайтеся Таємничий Стан в Магазині,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,
 Portal.UnknownStorePage.DescriptionText,"Переслідуйте невідоме і вирушайте в подорож по розкриттю таємничого стану, який стався в магазині",,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,

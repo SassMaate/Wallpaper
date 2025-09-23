@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">जागे रहें</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">समर्थित वॉलपेपर के लिए जागे रहने की स्थिति बदलता है।</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">क्रैश मोड</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">जब डेस्कटॉप क्रैश हो जाता है या बंद हो जाता है, तो वॉलपेपर को पुनः लोड करने के व्यवहार को बदलता है।</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">लूप मोड</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">समर्थित वॉलपेपरों की लूप मोड को बदलता है।</system:String>
 

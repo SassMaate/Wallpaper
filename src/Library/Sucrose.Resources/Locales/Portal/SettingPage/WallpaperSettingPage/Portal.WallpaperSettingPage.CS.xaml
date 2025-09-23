@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Zůstat Vzhůru</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Mění stav zůstat vzhůru u podporovaných tapetách.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Režim Pádu</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Mění chování obnovení tapety, když se pracovní plocha zhroutí nebo zavře.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Režim Smyčky</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Změní režim smyčky na podporovaných tapetách.</system:String>
 

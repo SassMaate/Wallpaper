@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Mantenerse Despierto</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Cambia el estado de mantenerse despierto en los fondos de pantalla compatibles.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Modo de Fallo</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Cambia el comportamiento de recarga del fondo de pantalla cuando el escritorio falla o se cierra.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Modo de Repetición</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Cambie el comportamiento de repetición para fondos de pantalla compatibles.</system:String>
 

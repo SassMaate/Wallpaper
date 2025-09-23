@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Rămâi Treaz</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Modifică starea de a rămâne treaz pentru fundalurile acceptate.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Mod de Avarie</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Schimbă comportamentul de reîncărcare a fundalului atunci când desktopul se blochează sau se închide.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Mod Repetare</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Schimbă modul de repetare pentru imagini de fundal acceptate.</system:String>
 

@@ -1225,45 +1225,48 @@ a9aa12b4aac6f7149fb86c8815c8ce68,Portal\SettingPage\WallpaperSettingPage\Portal.
 758e68f387df77a6b9a3ecbb5b1d69ba,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.StayAwake,Залишатися Бадьорим
 227c694ba41c89a6928cf93ea7370f35,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.StayAwake.Description,"Змінює стан ""залишатися бадьорим"" для підтримуваних шпалер."
 f4b26f535ca5de11d4c277033f9d8e79,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+ef20fc2ff46b9d8dc0c96285af46e75e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.CrashMode,Режим Збою
+e749fdceb4f3f5035c58db61a8b6b2d0,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.CrashMode.Description,"Змінює поведінку перезавантаження шпалер, коли робочий стіл аварійно завершується або закривається."
+54908064462078f5caef367a9ca168b1,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 dbcdefd6080885f5b1be13ba9e8e3a3d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.LoopMode,Режим Повторення
 e7fe69b62211c0e9972371729052f0dc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.LoopMode.Description,Змінює режим повторення для підтримуваних шпалерів.
-54908064462078f5caef367a9ca168b1,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+b9fd4143c1774de7c5f8ce57e79a9e49,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 0b9fdbf6d35569e3581c5f7713348f3e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.ShuffleMode,Режим Перемішування
 f14fb2b4c9236a9fc1c252e4f606d69c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.ShuffleMode.Description,Змінює режим перемішування для підтримуваних шпалерів.
-b9fd4143c1774de7c5f8ce57e79a9e49,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+8f9707307c2249ffa252e9d87f9774f4,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 6626eccaaacb031e3b21bafeadd1850e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.BackgroundImage,Фонове Зображення
 fd0318ecf09d25b6c38b5c54e470608c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.BackgroundImage.Description,Змінює живі шпалери на фонове зображення робочого столу.
-8f9707307c2249ffa252e9d87f9774f4,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+e911c5b75f5b182e65f75f8fe3e1e357,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 c4b0d590ee09696f619aaddebdb2d026,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.HardwareAcceleration,Апаратне Прискорення
 1a7ad47fcedfc22b6a74acb5985abc27,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.HardwareAcceleration.Description,Змінює статус апаратного прискорення для підтримуваних шпалер.
-e911c5b75f5b182e65f75f8fe3e1e357,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+db644b60d6b654d9d4b707f43f9cdaa2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 cf8ce451aeb0269663b03bf3d96655d3,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.GifPlayer,Модуль Gif
 35e0a08acf791d3e33a0f0ceaf1cfd9d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.GifPlayer.Description,"Виберіть модуль для відтворення шпалерів у форматі Gif, які знаходяться в вашій бібліотеці."
-db644b60d6b654d9d4b707f43f9cdaa2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+dcb636507e1f0d5d0e36df11195553f9,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 2d4e8acf226ca14ade58a8b3bab1a8a5,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.VideoPlayer,Модуль Video
 4e4cd080f44e90c23692664bb2e653cb,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.VideoPlayer.Description,"Виберіть модуль для відтворення шпалерів у форматі Video, які знаходяться в вашій бібліотеці."
-dcb636507e1f0d5d0e36df11195553f9,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+e810ccc06d6ef522a3bddfef573ac21d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 818cdab367890bd80726243caf969c8e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.UrlPlayer,Двигун Url
 9f1a6adf4f79d549bcc16573e907c57b,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.UrlPlayer.Description,"Виберіть двигун для відтворення Url-шпалерів, які знаходяться в вашій бібліотеці."
-e810ccc06d6ef522a3bddfef573ac21d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+5959ed47d067e72fbc189a46aa9b1ffc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 41e200895f21857b780eaf1223cd31fd,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.WebPlayer,Двигун Web
 23f8bd1520c0afe1153f5df77dbabf56,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.WebPlayer.Description,"Виберіть двигун для відтворення Web-шпалерів, які знаходяться в вашій бібліотеці."
-5959ed47d067e72fbc189a46aa9b1ffc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+52bb6151ec2f3fcbf0e1aa54b6263d5f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 f12e3fe3a9bacd07cd6be01eee112b2c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.YouTubePlayer,Двигун YouTube
 d6dc1b7ec620f2cfdb4bab4536d4c00a,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.YouTubePlayer.Description,"Виберіть двигун для відтворення YouTube-шпалерів, які знаходяться в вашій бібліотеці."
-52bb6151ec2f3fcbf0e1aa54b6263d5f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
+6834d6a5c012ddaa3a58b35d1e0c8761,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,,
 245b88769df0b69ee541df12c9b22405,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.ApplicationPlayer,Двигун Application
 3be813ea9b2f1ed850921312b3f48eff,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.UK.xaml,Portal.WallpaperSettingPage.ApplicationPlayer.Description,"Виберіть двигун для відтворення Application-шпалерів, які знаходяться в вашій бібліотеці."
 fd4d960ef807170aa76d2c74f5d7b35c,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,Portal.BrokenStorePage.Title,BrokenStorePage
-4f3028c37781ac03ba184966ebf72f29,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,,
+7a507d021008c23a51487d649eca94a5,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,,
 98e1b02ea8b86a8920eecf76dfbe8ab9,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,Portal.BrokenStorePage.TitleText,"Мить, коли світло інтернету вигасає"
 b1eaba83850086174dd8458bb388b08f,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.UK.xaml,Portal.BrokenStorePage.DescriptionText,Схоже на зірковий небесний світ без інтернету
 31ceaaa9754386801919d24467122368,Portal\StorePage\FullStorePage\Portal.FullStorePage.UK.xaml,Portal.FullStorePage.Title,FullStorePage
 a2f8d2ba803cd7477b7f79259c7677f3,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,Portal.SearchStorePage.Title,SearchStorePage
-27ee8c433f47922077e502dc16b1a4ff,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,,
+9729dc94425687d70be727db640b5b03,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,,
 bc28a242b68bdd435d54e88f9a63b675,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,Portal.SearchStorePage.TitleText,Відповідь на ваші запити може бути прихована на небі
 4a0189ab60dc14f9956b5358ed1ed45c,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.UK.xaml,Portal.SearchStorePage.DescriptionText,"Якщо результати не задовольняють ваші очікування, небо може запропонувати вам новий досвід"
 ed736c8480adbb8d0a6503bb4802d707,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,Portal.UnknownStorePage.Title,UnknownStorePage
-221d773928a87690904163b8cd84021e,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,,
+e9097c789282009deb5ade27bf42c0a6,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,,
 fe49f2bf1b0fcc5b9296405eb280dcb3,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,Portal.UnknownStorePage.TitleText,Дізнайтеся Таємничий Стан в Магазині
 805add8d9aa9921cab29243e32be16ec,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.UK.xaml,Portal.UnknownStorePage.DescriptionText,"Переслідуйте невідоме і вирушайте в подорож по розкриттю таємничого стану, який стався в магазині"

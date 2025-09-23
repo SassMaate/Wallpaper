@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Håll dig Vaken</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Ändrar vakenstatus för stödda tapeter.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Kraschläge</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Ändrar beteendet för att ladda om bakgrundsbilden när skrivbordet kraschar eller stängs.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Loopläge</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Ändrar upprepningssättet för stödda tapeter.</system:String>
 

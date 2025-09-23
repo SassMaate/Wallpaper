@@ -22,6 +22,9 @@
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">Fique Acordado</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">Altera o estado de ficar acordado para os papéis de parede suportados.</system:String>
 
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">Modo de Falha</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">Altera o comportamento de recarregamento do papel de parede quando a área de trabalho falha ou é fechada.</system:String>
+
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">Modo de Repetição</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">Altera o modo de repetição em papéis de parede suportados.</system:String>
 
