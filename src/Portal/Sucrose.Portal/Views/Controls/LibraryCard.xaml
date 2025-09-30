@@ -190,8 +190,9 @@
                         Appearance="Transparent"
                         BorderBrush="Transparent"
                         Click="ThemeMore_Click"
-                        Content="•••"
+                        Content="{ui:SymbolIcon MoreHorizontal24}"
                         Cursor="Hand"
+                        FontSize="25"
                         ToolTipService.ToolTip="{DynamicResource Portal.LibraryCard.MoreTip}" />
                     <ui:Button
                         x:Name="IncompatibleVersion"
