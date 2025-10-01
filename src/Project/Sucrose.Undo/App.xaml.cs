@@ -147,6 +147,8 @@ namespace Sucrose.Undo
 
             if (!e.Args.Any())
             {
+                SystemSounds.Asterisk.Play();
+
                 Result = MessageBox.Show(Message, Title, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
             }
 
@@ -204,6 +206,8 @@ namespace Sucrose.Undo
 
             if (Exception != null)
             {
+                SystemSounds.Exclamation.Play();
+
                 MessageBox.Show(Exception.Message + Environment.NewLine + Environment.NewLine + Exception.StackTrace, "Error Information", MessageBoxButton.OK, MessageBoxImage.Error);
 
                 Close();
@@ -216,6 +220,8 @@ namespace Sucrose.Undo
 
             if (Exception != null)
             {
+                SystemSounds.Exclamation.Play();
+
                 MessageBox.Show(Exception.Message + Environment.NewLine + Environment.NewLine + Exception.StackTrace, "Error Information", MessageBoxButton.OK, MessageBoxImage.Error);
 
                 e.Handled = true;
