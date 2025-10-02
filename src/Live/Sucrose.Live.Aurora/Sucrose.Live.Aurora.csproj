@@ -117,7 +117,7 @@
     </Target>
 
     <Target Name="PublishBuild" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
-        <Exec Command="dotnet publish $(MSBuildProjectFullPath) -c $(Configuration) -r $(RuntimeIdentifier) -f $(PublishTargetFramework) --self-contained $(SelfContained) -o $(DestinationDirectory)" />
+        <Exec Command="dotnet publish $(MSBuildProjectFullPath) -c $(Configuration) /p:PlatformTarget=$(PlatformTarget) -r $(RuntimeIdentifier) -f $(PublishTargetFramework) --self-contained $(SelfContained) -o $(DestinationDirectory)" />
         <!--<Exec Command="msbuild $(ProjectPath) /p:Configuration=$(Configuration) /p:Platform=$(PlatformTarget) /p:RuntimeIdentifier=$(RuntimeIdentifier) /p:TargetFramework=$(TargetFramework) /p:SelfContained=$(SelfContained) /p:OutputPath=$(DestinationDirectory)" />-->
     </Target>
 
