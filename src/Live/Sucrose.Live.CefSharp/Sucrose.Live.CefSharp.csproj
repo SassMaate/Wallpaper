@@ -121,7 +121,7 @@
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>
-        <Copy SourceFiles="@(FilesToCopy)" destinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
     </Target>
 
 </Project>
