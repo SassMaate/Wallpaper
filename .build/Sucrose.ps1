@@ -329,6 +329,11 @@ function Publish-SucroseProject {
             if ($LASTEXITCODE -eq 0) {
                 $success = $true
                 Write-StatusMessage "Successfully published $ProjectName" -Type "Success"
+
+                # Special processing for CefSharp project
+                if ($ProjectName -eq "Sucrose.Live.CefSharp") {
+                    Configure-CefSharpSubprocess -OutputPath $destination
+                }
             } else {
                 Write-StatusMessage "Publish failed for $ProjectName (exit code: $LASTEXITCODE)" -Type "Error"
                 
@@ -393,6 +398,52 @@ function Install-DotNetRuntime {
 
     } catch {
         throw "Failed to install .NET runtime: $($_.Exception.Message)"
+    }
+}
+
+function Configure-CefSharpSubprocess {
+    <#
+    .SYNOPSIS
+        Configures CefSharp.BrowserSubprocess.exe to use custom .NET runtime
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$OutputPath
+    )
+
+    Write-StatusMessage "Configuring CefSharp.BrowserSubprocess for custom runtime..." -Type "Info"
+
+    $cefSharpExe = Join-Path $OutputPath "CefSharp.BrowserSubprocess.exe"
+    $runtimeConfigPath = Join-Path $OutputPath "CefSharp.BrowserSubprocess.runtimeconfig.json"
+
+    if (Test-Path $cefSharpExe) {
+        # Create custom runtime configuration
+        $runtimeConfig = @{
+            runtimeOptions = @{
+                tfm = "net9.0"
+                rollForward = "LatestMajor"
+                framework = @{
+                    name = "Microsoft.NETCore.App"
+                    version = "9.0.0"
+                }
+                additionalProbingPaths = @(
+                    "../Sucrose.Runtime/shared/Microsoft.NETCore.App/9.0.0"
+                )
+                configProperties = @{
+                    "DOTNET_ROOT" = "../Sucrose.Runtime"
+                    "DOTNET_MULTILEVEL_LOOKUP" = "0"
+                }
+            }
+        }
+
+        # Convert to JSON and write
+        $jsonContent = $runtimeConfig | ConvertTo-Json -Depth 10
+        Set-Content -Path $runtimeConfigPath -Value $jsonContent -Encoding UTF8
+
+        Write-StatusMessage "CefSharp.BrowserSubprocess runtime configuration applied" -Type "Success"
+    } else {
+        Write-StatusMessage "CefSharp.BrowserSubprocess.exe not found in output" -Type "Warning"
     }
 }
 

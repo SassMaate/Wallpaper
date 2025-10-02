@@ -31,20 +31,13 @@
         <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
         <GenerateDocumentationFile>false</GenerateDocumentationFile>
         <ApplicationManifest>App.manifest</ApplicationManifest>
-        <RollForward>LatestMajor</RollForward>
-        <CefSharpBuildAction>Content</CefSharpBuildAction>
-        <CefSharpPropertiesLoaded>true</CefSharpPropertiesLoaded>
-        <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
-        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\CefSharp\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\CefSharp\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Live\CefSharp\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-        <CefSharpBuildAction>Content</CefSharpBuildAction>
         <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
-        <AppHostDotnetRoot>..\Sucrose.Runtime</AppHostDotnetRoot>
         <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
         <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
     </PropertyGroup>
@@ -83,12 +76,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Update="CefSharp.BrowserSubprocess.exe.config">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
-        <None Update="CefSharp.BrowserSubprocess.runtimeconfig.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </None>
         <AppConfigWithTargetPath Include="App.$(TargetFramework).config">
             <TargetPath>$(AssemblyName).exe.config</TargetPath>
         </AppConfigWithTargetPath>
@@ -108,10 +95,6 @@
         <ProjectReference Include="..\..\Library\Sucrose.Resources\Sucrose.Resources.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Transmission\Sucrose.Transmission.csproj" />
     </ItemGroup>
-
-    <Target Name="CefSharpAfterBuildDebug" AfterTargets="AfterBuild">
-        <CallTarget Targets="CefSharpAfterBuildDiagnostic" />
-    </Target>
     
     <Import Project="..\..\Shared\Sucrose.Shared.Zip\Sucrose.Shared.Zip.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Live\Sucrose.Shared.Live.projitems" Label="Shared" />
