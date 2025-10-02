@@ -64,12 +64,12 @@
 [CmdletBinding()]
 param (
     [Parameter(HelpMessage = "Build configuration (Release/Debug)")]
-    [ValidateSet("Release", "Debug", "")]
+    [ValidateSet("Release", "Debug", "", IgnoreCase = $false)]
     [AllowEmptyString()]
     [string]$Configuration = "",
 
     [Parameter(HelpMessage = "Target platform (x64, x86, ARM64)")]
-    [ValidateSet("x64", "x86", "ARM64", "")]
+    [ValidateSet("x64", "x86", "ARM64", "", IgnoreCase = $false)]
     [AllowEmptyString()]
     [string]$PlatformTarget = "",
 
@@ -78,6 +78,8 @@ param (
     [string]$SelfContained = "false",
 
     [Parameter(HelpMessage = "Runtime identifier")]
+    [ValidateSet("win-x64", "win-x86", "win-arm64", "", IgnoreCase = $false)]
+    [AllowEmptyString()]
     [string]$RuntimeIdentifier = "",
 
     [Parameter(HelpMessage = "Target framework")]
@@ -156,10 +158,10 @@ Write-Host "$(Get-Date -Format 'HH:mm:ss') [CONFIG] PlatformTarget: $PlatformTar
 
 # Auto-detect RuntimeIdentifier from PlatformTarget
 if (-not $RuntimeIdentifier) {
-    $RuntimeIdentifier = switch ($PlatformTarget.ToLower()) {
+    $RuntimeIdentifier = switch ($PlatformTarget) {
         "x86"   { "win-x86" }
         "x64"   { "win-x64" }
-        "arm64" { "win-arm64" }
+        "ARM64" { "win-arm64" }
         default { throw "Unsupported PlatformTarget: $PlatformTarget" }
     }
 }
