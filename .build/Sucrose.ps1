@@ -205,6 +205,14 @@ if ($InstallRuntimeAfterPublish) {
     # Fixed target directory: inside publish folder net9.0-windows/x64
     $runtimeInstallDir = Join-Path $PublishBaseDir $PublishDir
     $runtimeInstallDir = Join-Path $runtimeInstallDir "$TargetFramework\$PlatformTarget\Sucrose.Runtime"
+	
+    if (Test-Path $runtimeInstallDir) {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Cleaning $runtimeInstallDir ..." -ForegroundColor Yellow
+        Remove-Item $runtimeInstallDir -Recurse -Force
+    }
+    New-Item -ItemType Directory -Path $runtimeInstallDir -Force | Out-Null
+
+    $logFile = Join-Path $runtimeInstallDir "Publish.log"
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
 
