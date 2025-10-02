@@ -61,6 +61,20 @@ param (
     [string]$DotNetVersion = "9.0.305"
 )
 
+# ----- Set PowerShell execution policy for current process -----
+try {
+    $currentPolicy = Get-ExecutionPolicy -Scope Process
+    if ($currentPolicy -eq "Restricted" -or $currentPolicy -eq "AllSigned") {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Current execution policy: $currentPolicy. Setting to Bypass for this process..." -ForegroundColor Yellow
+        Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Execution policy set to Bypass for current process" -ForegroundColor Green
+    } else {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Current execution policy: $currentPolicy (OK)" -ForegroundColor Green
+    }
+} catch {
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Warning: Could not check/set execution policy: $($_.Exception.Message)" -ForegroundColor Yellow
+}
+
 # ----- Set console input/output encoding -----
 [Console]::InputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
