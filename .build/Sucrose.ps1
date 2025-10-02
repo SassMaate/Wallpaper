@@ -52,7 +52,7 @@ param (
     [string]$PublishBaseDir = (Split-Path -Parent $MyInvocation.MyCommand.Definition),
     [int]$MaxAttempts = 3,
     [int]$RetryDelay = 2,
-    [switch]$InstallRuntimeAfterPublish = $true,
+    [string]$InstallRuntimeAfterPublish = "true",
     [string]$DotNetVersion = "9.0.305"
 )
 
@@ -223,4 +223,37 @@ if ($InstallRuntimeAfterPublish) {
     }
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Runtime installation completed" -ForegroundColor Green
+
+	# ----- Clean unnecessary runtime files -----
+	$filesToRemove = @(
+		"dotnet.exe",
+		"LICENSE.txt",
+		"ThirdPartyNotices.txt"
+	)
+
+	$dirsToRemove = @(
+		"templates",
+		"sdk-manifests",
+		"sdk",
+		"packs",
+		"shared\Microsoft.AspNetCore.App"
+	)
+
+	foreach ($file in $filesToRemove) {
+		$path = Join-Path $runtimeInstallDir $file
+		if (Test-Path $path) {
+			Write-Host "$(Get-Date -Format 'HH:mm:ss') - Removing file $path ..." -ForegroundColor Yellow
+			Remove-Item $path -Force
+		}
+	}
+
+	foreach ($dir in $dirsToRemove) {
+		$path = Join-Path $runtimeInstallDir $dir
+		if (Test-Path $path) {
+			Write-Host "$(Get-Date -Format 'HH:mm:ss') - Removing directory $path ..." -ForegroundColor Yellow
+			Remove-Item $path -Recurse -Force
+		}
+	}
+
+	Write-Host "$(Get-Date -Format 'HH:mm:ss') - Unnecessary files and folders removed" -ForegroundColor Green
 }
