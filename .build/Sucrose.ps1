@@ -299,17 +299,14 @@ function Compress-SucrosePackage {
     if (-not (Test-Path $sevenZipExe)) {
         throw "7z executable not found: $sevenZipExe"
     }
-    Write-Host "$(Get-Date -Format 'HH:mm:ss') - 7zip executable found successfully" -ForegroundColor Green
 
     # ----- Prepare output directory -----
     $zipDir = Join-Path $OutputPath $TargetFramework
-    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Preparing output directory: $zipDir" -ForegroundColor Gray
-    if (-not (Test-Path $zipDir)) { 
-        New-Item -ItemType Directory -Path $zipDir -Force | Out-Null 
-        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Output directory created" -ForegroundColor Green
-    } else {
-        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Output directory already exists" -ForegroundColor Yellow
+    if (Test-Path $zipDir) {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Cleaning existing output directory: $zipDir" -ForegroundColor Yellow
+        Remove-Item $zipDir -Recurse -Force
     }
+    New-Item -ItemType Directory -Path $zipDir -Force | Out-Null
 
     $zipFile = Join-Path $zipDir "Sucrose-$arch.7z"
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Target archive file: $zipFile" -ForegroundColor Gray
@@ -323,7 +320,6 @@ function Compress-SucrosePackage {
     $excludeArgs = $excludeFolders | ForEach-Object { "-x!$BasePath\$_" }
 
     $arguments = @("a", "-t7z", "-m0=lzma2", "-mx=9", "-mfb=64", "-ms=64m", "`"$zipFile`"", "`"$BasePath\*`"") + $excludeArgs
-    Write-Host "$(Get-Date -Format 'HH:mm:ss') - 7zip arguments prepared" -ForegroundColor Gray
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Starting compression: $BasePath -> $zipFile" -ForegroundColor Cyan
 
