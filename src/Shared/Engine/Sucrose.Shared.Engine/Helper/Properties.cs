@@ -87,11 +87,7 @@ namespace Sucrose.Shared.Engine.Helper
 
                 foreach (string Record in Files)
                 {
-#if NET48
-                    if (Record.Contains(Path.GetFileName(Source).Substring(1)))
-#else
                     if (Record.Contains(Path.GetFileName(Source)[1..]))
-#endif
                     {
                         SSSHF.Delete(Record);
                     }

@@ -279,7 +279,7 @@ namespace Sucrose.Live.CefSharp
             Configure();
         }
 
-        protected void Configure()
+        protected async void Configure()
         {
             SSEMI.LibraryLocation = SMML.Location;
             SSEMI.LibrarySelected = SMML.Selected;
@@ -299,9 +299,7 @@ namespace Sucrose.Live.CefSharp
                     {
                         SSLHK.StopSubprocess();
 
-#if NET48 && DEBUG
-                        CefRuntime.SubscribeAnyCpuAssemblyResolver();
-#endif
+                        ConfigureCefSharpRuntime();
 
                         CefSettings Settings = new()
                         {
@@ -414,7 +412,7 @@ namespace Sucrose.Live.CefSharp
                         if (Cef.IsInitialized is null or false)
                         {
                             //Perform dependency check to make sure all relevant resources are in our output directory.
-                            Cef.Initialize(Settings, performDependencyCheck: true, browserProcessHandler: null);
+                            await Cef.InitializeAsync(Settings, performDependencyCheck: true, browserProcessHandler: null);
                         }
 
                         string Source = SSEMI.Info.Source;
@@ -496,7 +494,7 @@ namespace Sucrose.Live.CefSharp
 
                             LocalServer = new(Path.Combine(SSEMI.LibraryLocation, SSEMI.LibrarySelected));
 
-                            Task.Run(() => LocalServer.StartAsync());
+                            await Task.Run(() => LocalServer.StartAsync());
 
                             SSEMI.Host = LocalServer.GetUrl();
 
@@ -594,6 +592,15 @@ namespace Sucrose.Live.CefSharp
             await Task.Delay(1500);
 
             Checker();
+        }
+
+        protected void ConfigureCefSharpRuntime()
+        {
+            Environment.SetEnvironmentVariable("DOTNET_ROOT", SSSMI.Runtime, EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("DOTNET_MULTILEVEL_LOOKUP", "0", EnvironmentVariableTarget.Process);
+            Environment.SetEnvironmentVariable("DOTNET_ROLL_FORWARD", "LatestMajor", EnvironmentVariableTarget.Process);
+
+            Environment.SetEnvironmentVariable("PATH", $"{SSSMI.Runtime};{SSSMI.This}", EnvironmentVariableTarget.Process);
         }
 
         protected override void OnExit(ExitEventArgs e)

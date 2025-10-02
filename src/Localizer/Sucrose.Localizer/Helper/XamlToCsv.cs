@@ -25,11 +25,7 @@ namespace Sucrose.Localizer.Helper
 
                 if (languageCode != null)
                 {
-#if NET48
-                    string relativeFilePath = file.Substring(xamlDirectory.Length + 1);
-#else
                     string relativeFilePath = file[(xamlDirectory.Length + 1)..];
-#endif
 
                     XmlDocument xmlDoc = new();
                     xmlDoc.Load(file);

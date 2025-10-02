@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Property.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -36,6 +36,12 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Property\ARM64</OutputPath>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
+    </PropertyGroup>
+
     <PropertyGroup>
         <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
         <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -49,18 +55,21 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X86</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X64</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
@@ -77,10 +86,6 @@
         <PackageReference Include="HandyControls" Version="3.6.0" />
         <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
         <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Web" />
     </ItemGroup>
 
     <ItemGroup>
@@ -107,7 +112,7 @@
         <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
-    <Target Name="CopyFiles" BeforeTargets="Build">
+    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>

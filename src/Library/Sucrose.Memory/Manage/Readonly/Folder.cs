@@ -18,6 +18,8 @@
 
         public static readonly string Library = "Library";
 
+        public static readonly string Runtime = "Runtime";
+
         public static readonly string Setting = "Setting";
 
         public static readonly string SignalT = "SignalT";

@@ -77,11 +77,7 @@ namespace Sucrose.Transmission.Helper
 
             if (_cancellationTokenSource != null && !_cancellationTokenSource.IsCancellationRequested)
             {
-#if NET9_0
                 await _cancellationTokenSource.CancelAsync();
-#else
-                _cancellationTokenSource.Cancel();
-#endif
                 _cancellationTokenSource.Dispose();
                 _cancellationTokenSource = null;
             }

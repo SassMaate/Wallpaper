@@ -82,11 +82,7 @@ namespace Sucrose.Resources.Helper
                     int StartIndex = Resource.LastIndexOf("Locale.") + "Locale.".Length;
                     int EndIndex = Resource.LastIndexOf(".xaml");
 
-#if NET48
-                    return StartIndex < EndIndex ? Resource.Substring(StartIndex, EndIndex - StartIndex) : null;
-#else
                     return StartIndex < EndIndex ? Resource[StartIndex..EndIndex] : null;
-#endif
                 })
                 .Where(LangCode => LangCode != null)
                 .ToList();

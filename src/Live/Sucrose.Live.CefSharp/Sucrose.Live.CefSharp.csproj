@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Live.CefSharp.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -36,6 +36,12 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Live\CefSharp\ARM64</OutputPath>
     </PropertyGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
+    </PropertyGroup>
+
     <PropertyGroup>
         <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
         <ServerGarbageCollection>true</ServerGarbageCollection>
@@ -49,18 +55,21 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X86</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X64</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
@@ -79,15 +88,6 @@
         <PackageReference Include="CefSharp.Wpf.HwndHost" Version="140.1.140" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Web" />
-        <Reference Include="System.Net.Http" />
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <PackageReference Include="System.IO.Compression" Version="4.3.0" />
-    </ItemGroup>
-
     <ItemGroup>
         <ProjectReference Include="..\..\Library\Sucrose.Pipe\Sucrose.Pipe.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Signal\Sucrose.Signal.csproj" />
@@ -95,7 +95,7 @@
         <ProjectReference Include="..\..\Library\Sucrose.Resources\Sucrose.Resources.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Transmission\Sucrose.Transmission.csproj" />
     </ItemGroup>
-
+    
     <Import Project="..\..\Shared\Sucrose.Shared.Zip\Sucrose.Shared.Zip.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Live\Sucrose.Shared.Live.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Pipe\Sucrose.Shared.Pipe.projitems" Label="Shared" />
@@ -117,7 +117,7 @@
         <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
-    <Target Name="CopyFiles" BeforeTargets="Build">
+    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>

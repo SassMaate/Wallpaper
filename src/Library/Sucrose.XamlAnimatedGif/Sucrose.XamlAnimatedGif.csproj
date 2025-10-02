@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <Version>$([System.DateTime]::Today.ToString(yy)).$([System.DateTime]::Today.ToString(MM)).$([System.DateTime]::Today.ToString(dd))</Version>
-        <DefineConstants Condition="'$(TargetFramework)' == 'net48'">$(DefineConstants);LACKS_STREAM_MEMORY_OVERLOADS</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\XamlAnimatedGif\ARM64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\XamlAnimatedGif\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\XamlAnimatedGif\x86</OutputPath>
         <RuntimeIdentifiers>win-arm64;win-x64;win-x86</RuntimeIdentifiers>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <AssemblyVersion>$(Version)</AssemblyVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>
@@ -17,8 +16,25 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Net.Http" />
-    </ItemGroup>
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X86</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X64</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
+        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
+    </PropertyGroup>
 
 </Project>

@@ -195,23 +195,14 @@ namespace Sucrose.Localizer.Helper
 
             if (index > 0)
             {
-#if NET48
-                string extension = filename.Substring(index);
-                string nameWithoutExtension = filename.Substring(0, index);
-#else
                 string extension = filename[index..];
                 string nameWithoutExtension = filename[..index];
-#endif
 
                 int lastIndex = nameWithoutExtension.LastIndexOf('.');
 
                 if (lastIndex > 0)
                 {
-#if NET48
-                    return nameWithoutExtension.Substring(0, lastIndex) + extension;
-#else
                     return nameWithoutExtension[..lastIndex] + extension;
-#endif
                 }
             }
 

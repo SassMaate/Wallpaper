@@ -113,11 +113,7 @@ namespace Sucrose.Undo
 
         private static void TerminateProcess(string Name)
         {
-#if NET48
-            IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Process.GetCurrentProcess().Id);
-#else
             IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Environment.ProcessId);
-#endif
 
             foreach (Process Process in Processes)
             {

@@ -2,6 +2,8 @@
 using SEAT = Skylark.Enum.AssemblyType;
 using SHA = Skylark.Helper.Assemblies;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
+using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SSDEAET = Sucrose.Shared.Dependency.Enum.ApplicationEngineType;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEGET = Sucrose.Shared.Dependency.Enum.GifEngineType;
@@ -34,6 +36,8 @@ namespace Sucrose.Shared.Space.Manage
         public static string Folder => Directory.GetParent(This).FullName;
 
         public static string App => SSSHE.Change(SHA.Assemble(SEAT.Entry).Location, ".exe");
+
+        public static string Runtime => Path.Combine(Folder, $"{SMMRG.AppName}.{SMMRF.Runtime}");
 
         public static string Portal => Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.Portal), SMMRA.Portal);
 
