@@ -23,10 +23,6 @@ using SWHWI = Skylark.Wing.Helper.WindowInterop;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWUD = Skylark.Wing.Utility.Desktop;
 
-#if NET9_0
-using SWHSR = Skylark.Wing.Helper.ShortcutRuntime;
-#endif
-
 namespace Sucrose.Bundle
 {
     /// <summary>
@@ -176,11 +172,7 @@ namespace Sucrose.Bundle
 
         private static async Task SetUninstall()
         {
-#if NET48
             FileInfo File = new(Process.GetCurrentProcess().MainModule.FileName);
-#else
-            FileInfo File = new(Environment.ProcessPath);
-#endif
 
             string Size = SHN.Numeral(SSESSE.Convert(File.Length, SEST.Byte, SEST.Kilobyte, SEMST.Palila), false, false, 0, '0', SECNT.None);
 
@@ -260,63 +252,33 @@ namespace Sucrose.Bundle
             {
                 if (Directory.Exists(Path.GetDirectoryName(DesktopShortcut)))
                 {
-                    bool CreateDesktopShortcut = true;
-
-#if NET9_0
                     try
                     {
-                        SWHSR.Create(Path.GetDirectoryName(DesktopShortcut), Shortcut, Text, null, Launcher, null, Path.GetDirectoryName(Launcher), null, SWNM.WindowStyle.Normal);
-
-                        CreateDesktopShortcut = false;
+                        SWHSB.Create(DesktopShortcut, Launcher, Path.GetDirectoryName(Launcher), null, null, SWNM.ShortcutWindowStyles.WshNormalFocus, Text, 0);
                     }
-                    catch { }
-#endif
-
-                    if (CreateDesktopShortcut)
+                    catch
                     {
                         try
                         {
-                            SWHSB.Create(DesktopShortcut, Launcher, Path.GetDirectoryName(Launcher), null, null, SWNM.ShortcutWindowStyles.WshNormalFocus, Text, 0);
+                            SWHSD.Create(DesktopShortcut, Launcher, null, Path.GetDirectoryName(Launcher), null, Text);
                         }
-                        catch
-                        {
-                            try
-                            {
-                                SWHSD.Create(DesktopShortcut, Launcher, null, Path.GetDirectoryName(Launcher), null, Text);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
 
                 if (Directory.Exists(Path.GetDirectoryName(StartMenuProgramsShortcut)))
                 {
-                    bool CreateStartMenuShortcut = true;
-
-#if NET9_0
                     try
                     {
-                        SWHSR.Create(Path.GetDirectoryName(StartMenuProgramsShortcut), Shortcut, Text, null, Launcher, null, Path.GetDirectoryName(Launcher), null, SWNM.WindowStyle.Normal);
-
-                        CreateStartMenuShortcut = false;
+                        SWHSB.Create(StartMenuProgramsShortcut, Launcher, Path.GetDirectoryName(Launcher), null, null, SWNM.ShortcutWindowStyles.WshNormalFocus, Text, 0);
                     }
-                    catch { }
-#endif
-
-                    if (CreateStartMenuShortcut)
+                    catch
                     {
                         try
                         {
-                            SWHSB.Create(StartMenuProgramsShortcut, Launcher, Path.GetDirectoryName(Launcher), null, null, SWNM.ShortcutWindowStyles.WshNormalFocus, Text, 0);
+                            SWHSD.Create(StartMenuProgramsShortcut, Launcher, null, Path.GetDirectoryName(Launcher), null, Text);
                         }
-                        catch
-                        {
-                            try
-                            {
-                                SWHSD.Create(StartMenuProgramsShortcut, Launcher, null, Path.GetDirectoryName(Launcher), null, Text);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
             }
@@ -353,11 +315,7 @@ namespace Sucrose.Bundle
 
         private static async Task TerminateProcess(string Name)
         {
-#if NET48
             IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Process.GetCurrentProcess().Id);
-#else
-            IEnumerable<Process> Processes = Process.GetProcesses().Where(Proc => Proc.ProcessName.Contains(Name) && Proc.Id != Environment.ProcessId);
-#endif
 
             foreach (Process Process in Processes)
             {
@@ -485,11 +443,7 @@ namespace Sucrose.Bundle
             {
                 if (Resource.StartsWith($"{SourcePath}\\"))
                 {
-#if NET48
                     string Resourcer = Resource.Substring($"{SourcePath}\\".Length);
-#else
-                    string Resourcer = Resource[$"{SourcePath}\\".Length..];
-#endif
 
                     string ExtractFilePath = Path.Combine(ExtractPath, Resourcer);
 

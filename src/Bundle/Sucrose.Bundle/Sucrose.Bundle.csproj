@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net48</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Bundle.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -49,7 +49,6 @@
 
     <PropertyGroup>
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <PublishSingleFile Condition="'$(TargetFramework)' == 'net9.0-windows'">true</PublishSingleFile>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
@@ -80,7 +79,7 @@
         <PackageReference Include="SharpCompress" Version="0.40.0" />
         <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
         <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
-        <PackageReference Include="Costura.Fody" Version="6.0.0" Condition="'$(TargetFramework)' == 'net48'">
+        <PackageReference Include="Costura.Fody" Version="6.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>compile; runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
@@ -97,10 +96,10 @@
         <EmbeddedResource Include="Showcase\**">
             <LogicalName>Showcase\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
-        <EmbeddedResource Include="..\..\Sucrose\Package\Cache\$(TargetFramework)\$(Platform)\**">
+        <EmbeddedResource Include="..\..\Sucrose\Package\Cache\net9.0-windows\$(Platform)\**">
             <LogicalName>Caches\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
-        <EmbeddedResource Include="..\..\Sucrose\Package\Compressed\$(TargetFramework)\Sucrose-$(Platform).7z">
+        <EmbeddedResource Include="..\..\Sucrose\Package\Compressed\net9.0-windows\Sucrose-$(Platform).7z">
             <LogicalName>Packages\%(RecursiveDir)Sucrose%(Extension)</LogicalName>
         </EmbeddedResource>
     </ItemGroup>

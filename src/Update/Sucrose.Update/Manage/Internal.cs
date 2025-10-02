@@ -23,7 +23,7 @@ namespace Sucrose.Update.Manage
 
         public static bool Chance = SMMRG.Randomise.Next(2) == 0;
 
-        public static SSCEFT DefaultFrameworkType = SSCEFT.NET_9_0;
+        public static SSCEFT DefaultFrameworkType = SSCEFT.NET_Framework_4_8;
 
         public static string CachePath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Bundle);
 
