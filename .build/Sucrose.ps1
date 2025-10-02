@@ -308,10 +308,10 @@ function Compress-SucrosePackage {
     }
     New-Item -ItemType Directory -Path $zipDir -Force | Out-Null
 
-    $zipFile = Join-Path $zipDir "Sucrose-$arch.7z"
+    $zipFile = Join-Path $zipDir "Sucrose-$PlatformTarget.7z"
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Target archive file: $zipFile" -ForegroundColor Gray
 
-    $BasePath = Join-Path $BasePath "$TargetFramework\$arch"
+    $BasePath = Join-Path $BasePath "$TargetFramework\$PlatformTarget"
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Source path for compression: $BasePath" -ForegroundColor Gray
 
     # ----- Build command -----
