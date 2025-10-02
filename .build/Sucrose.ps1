@@ -257,3 +257,54 @@ if ($InstallRuntimeAfterPublish) {
 
 	Write-Host "$(Get-Date -Format 'HH:mm:ss') - Unnecessary files and folders removed" -ForegroundColor Green
 }
+
+# ----- Optional: Compress published package -----
+function Compress-SucrosePackage {
+    param (
+        [string]$BasePath = "$PublishBaseDir\$PublishDir",
+        [string]$OutputPath = "$PublishBaseDir\$PublishDir\Compressed",
+        [string]$TargetFramework = $TargetFramework
+    )
+
+    # ----- Detect OS architecture -----
+    $arch = switch ($PlatformTarget.ToLower()) {
+        "x64"   { "x64" }
+        "x86"   { "x86" }
+        "arm64" { "ARM64" }
+        default { throw "Unsupported PlatformTarget: $PlatformTarget" }
+    }
+
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Detected architecture for compression: $arch" -ForegroundColor Cyan
+
+    # ----- Determine 7zip executable -----
+    $sevenZipExe = Join-Path $PublishBaseDir "src\Bundle\Sucrose.Bundle\SevenZip\7z-$arch\7z.exe"
+    if (-not (Test-Path $sevenZipExe)) {
+        throw "7z executable not found: $sevenZipExe"
+    }
+
+    # ----- Prepare output directory -----
+    $zipDir = Join-Path $OutputPath $TargetFramework
+    if (-not (Test-Path $zipDir)) { New-Item -ItemType Directory -Path $zipDir -Force | Out-Null }
+
+    $zipFile = Join-Path $zipDir "Sucrose-$arch.7z"
+
+    # ----- Build command -----
+    $excludeFolders = @("Sucrose.Bundle","Sucrose.Localizer")
+    $excludeArgs = $excludeFolders | ForEach-Object { "-x!$BasePath\$_" }
+
+    $arguments = @("a", "-t7z", "-m0=lzma2", "-mx=9", "-mfb=64", "-ms=64m", "`"$zipFile`"", "`"$BasePath\*`"") + $excludeArgs
+
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Compressing $BasePath to $zipFile ..." -ForegroundColor Cyan
+
+    # ----- Execute 7zip -----
+    & $sevenZipExe @arguments
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Compression failed with exit code $LASTEXITCODE" -ForegroundColor Red
+        throw "Compression failed"
+    } else {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Compression succeeded: $zipFile" -ForegroundColor Green
+    }
+}
+
+# ----- Run compression after runtime installation -----
+Compress-SucrosePackage
