@@ -36,8 +36,7 @@
     Delay between retries in seconds. Default: 2
 
 .PARAMETER InstallRuntimeAfterPublish
-    If specified, installs .NET runtimes after publish (x86, x64, ARM64)
-    
+    If specified, installs .NET runtimes after publish (x86, x64, ARM64). Default: true
 
 .PARAMETER DotNetVersion
     Version of .NET to install. Default: 9.0.305
