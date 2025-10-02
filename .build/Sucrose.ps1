@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Production-ready build and publish script for Sucrose solution.
 
@@ -418,17 +418,48 @@ function Configure-CefSharpSubprocess {
     $runtimeConfigPath = Join-Path $OutputPath "CefSharp.BrowserSubprocess.runtimeconfig.json"
 
     if (Test-Path $cefSharpExe) {
+        # Extract framework version from TargetFramework (e.g., net9.0 or net9.0-windows)
+        $tfmValue = $TargetFramework -replace '-windows$', ''
+        
+        # Extract version number (e.g., 9.0 from net9.0)
+        if ($tfmValue -match '^net(\d+)\.(\d+)$') {
+            $majorVersion = [int]$matches[1]
+            $minorVersion = [int]$matches[2]
+        } elseif ($tfmValue -match '^net(\d+)$') {
+            $majorVersion = [int]$matches[1]
+            $minorVersion = 0
+        } else {
+            Write-StatusMessage "Could not parse TargetFramework '$TargetFramework', defaulting to net9.0" -Type "Warning"
+            $majorVersion = 9
+            $minorVersion = 0
+        }
+        
+        # Clamp to valid range: minimum net6.0, maximum net10.0
+        if ($majorVersion -lt 6) {
+            Write-StatusMessage "Framework version too low ($majorVersion.$minorVersion), clamping to net6.0" -Type "Warning"
+            $majorVersion = 6
+            $minorVersion = 0
+        } elseif ($majorVersion -gt 10) {
+            Write-StatusMessage "Framework version too high ($majorVersion.$minorVersion), clamping to net10.0" -Type "Warning"
+            $majorVersion = 10
+            $minorVersion = 0
+        }
+        
+        # Build tfm and version strings
+        $runtimeTfm = "net$majorVersion.$minorVersion"
+        $runtimeVersion = "$majorVersion.$minorVersion.0"
+        
         # Create custom runtime configuration
         $runtimeConfig = @{
             runtimeOptions = @{
-                tfm = "net9.0"
+                tfm = $runtimeTfm
                 rollForward = "LatestMajor"
                 framework = @{
                     name = "Microsoft.NETCore.App"
-                    version = "9.0.0"
+                    version = $runtimeVersion
                 }
                 additionalProbingPaths = @(
-                    "../Sucrose.Runtime/shared/Microsoft.NETCore.App/9.0.0"
+                    "../Sucrose.Runtime/shared/Microsoft.NETCore.App/$runtimeVersion"
                 )
                 configProperties = @{
                     "DOTNET_ROOT" = "../Sucrose.Runtime"
