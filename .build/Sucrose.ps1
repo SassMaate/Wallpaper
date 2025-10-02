@@ -112,7 +112,7 @@ if (-not $RuntimeIdentifier) {
 # ----- Projects to publish -----
 $projects = @(
     "..\src\Launcher\Sucrose.Launcher\Sucrose.Launcher.csproj",
-    "..\src\..\src\Live\Sucrose.Live.Aurora\Sucrose.Live.Aurora.csproj",
+    "..\src\Live\Sucrose.Live.Aurora\Sucrose.Live.Aurora.csproj",
     "..\src\Live\Sucrose.Live.CefSharp\Sucrose.Live.CefSharp.csproj",
     "..\src\Live\Sucrose.Live.MpvPlayer\Sucrose.Live.MpvPlayer.csproj",
     "..\src\Live\Sucrose.Live.Nebula\Sucrose.Live.Nebula.csproj",
@@ -296,7 +296,7 @@ function Compress-SucrosePackage {
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Starting package compression process ..." -ForegroundColor Cyan
 
-    # ----- Detect OS architecture -----
+    # ----- Detect OS architecture for 7zip -----
     #$arch = switch ($PlatformTarget.ToLower()) {
     #    "x86"   { "x86" }
     #    "x64"   { "x64" }
@@ -308,7 +308,7 @@ function Compress-SucrosePackage {
             "x86"   { "x86" }
             "amd64" { "x64" }
             "arm64" { "ARM64" }
-            default { throw "Unsupported architecture" }
+            default { throw "Unsupported architecture: $([Environment]::GetEnvironmentVariable("PROCESSOR_ARCHITECTURE"))" }
         }
     } else {
         "x86"
@@ -329,7 +329,8 @@ function Compress-SucrosePackage {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Cleaning existing output directory: $zipDir" -ForegroundColor Yellow
         Remove-Item $zipDir -Recurse -Force
     }
-    New-Item -ItemType Directory -Path $zipDir -Force | Out-Null
+    New-Item -ItemType Directory -Path $zipDir -force | Out-Null
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Output directory created" -ForegroundColor Green
 
     $zipFile = Join-Path $zipDir "Sucrose-$PlatformTarget.7z"
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Target archive file: $zipFile" -ForegroundColor Gray
