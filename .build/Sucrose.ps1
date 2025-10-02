@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Production-ready solution-level publish script for Sucrose projects with optional runtime installation and compression.
 
@@ -39,6 +39,9 @@
 .PARAMETER InstallRuntimeAfterPublish
     If specified, installs .NET runtimes after publish (x86, x64, ARM64). Default: true
 
+.PARAMETER CompressSucrosePackage
+    If specified, compresses the published package using 7zip. Default: true
+
 .PARAMETER DotNetVersion
     Version of .NET to install. Default: 9.0.305
 #>
@@ -54,6 +57,7 @@ param (
     [int]$MaxAttempts = 3,
     [int]$RetryDelay = 2,
     [string]$InstallRuntimeAfterPublish = "true",
+    [string]$CompressSucrosePackage = "true",
     [string]$DotNetVersion = "9.0.305"
 )
 
@@ -195,7 +199,7 @@ foreach ($proj in $projects) {
 }
 
 # ----- Optional: Install .NET runtime -----
-if ($InstallRuntimeAfterPublish) {
+if ($InstallRuntimeAfterPublish -eq "true")
     $dotnetInstallScript = Join-Path $PublishBaseDir "dotnet-install.ps1"
     if (-not (Test-Path $dotnetInstallScript)) {
         throw "dotnet-install.ps1 not found in $PublishBaseDir"
@@ -259,7 +263,7 @@ if ($InstallRuntimeAfterPublish) {
 	Write-Host "$(Get-Date -Format 'HH:mm:ss') - Unnecessary files and folders removed" -ForegroundColor Green
 }
 
-# ----- Optional: Compress published package -----
+# ----- Helper: compress published package -----
 function Compress-SucrosePackage {
     param (
         [string]$BasePath = "$PublishBaseDir\$PublishDir",
@@ -307,5 +311,7 @@ function Compress-SucrosePackage {
     }
 }
 
-# ----- Run compression after runtime installation -----
-Compress-SucrosePackage
+# ----- Optional: Compress published package -----
+if ($CompressSucrosePackage -eq "true") {
+    Compress-SucrosePackage
+}
