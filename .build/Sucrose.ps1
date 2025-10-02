@@ -39,25 +39,25 @@
 .PARAMETER RetryDelay
     Delay between retries in seconds. Default: 2
 
-.PARAMETER InstallRuntimeAfterPublish
-    If true, installs .NET runtimes after publish. Default: true
+.PARAMETER InstallRuntime
+    If true, installs .NET runtimes. Default: true
 
-.PARAMETER CompressSucrosePackage
+.PARAMETER CompressPackage
     If true, compresses the published package using 7zip. Default: true
 
 .PARAMETER DotNetVersion
     Version of .NET to install. Default: 9.0.305
 
 .EXAMPLE
-    .\Sucrose.Production.ps1
+    .\Sucrose.ps1
     Builds with default settings (Release, x64, no self-contained)
 
 .EXAMPLE
-    .\Sucrose.Production.ps1 -Configuration Debug -PlatformTarget x86
+    .\Sucrose.ps1 -Configuration Debug -PlatformTarget x86
     Builds with specific configuration and platform
 
 .EXAMPLE
-    .\Sucrose.Production.ps1 -SelfContained "true" -CompressSucrosePackage "false"
+    .\Sucrose.ps1 -SelfContained "true" -CompressPackage "false"
     Builds self-contained without compression
 #>
 
@@ -101,11 +101,11 @@ param (
 
     [Parameter(HelpMessage = "Install .NET runtime after publish")]
     [ValidateSet("true", "false")]
-    [string]$InstallRuntimeAfterPublish = "true",
+    [string]$InstallRuntime = "true",
 
     [Parameter(HelpMessage = "Compress package after publish")]
     [ValidateSet("true", "false")]
-    [string]$CompressSucrosePackage = "true",
+    [string]$CompressPackage = "true",
 
     [Parameter(HelpMessage = ".NET version to install")]
     [string]$DotNetVersion = "9.0.305"
@@ -643,13 +643,13 @@ try {
     Write-StatusMessage "All projects published successfully" -Type "Success"
 
     # Install .NET runtime if requested
-    if ($InstallRuntimeAfterPublish -eq "true") {
+    if ($InstallRuntime -eq "true") {
         Write-Host "`n========================================" -ForegroundColor Cyan
         Install-DotNetRuntime
     }
 
     # Compress package if requested
-    if ($CompressSucrosePackage -eq "true") {
+    if ($CompressPackage -eq "true") {
         Write-Host "`n========================================" -ForegroundColor Cyan
         Compress-SucrosePackage
     }

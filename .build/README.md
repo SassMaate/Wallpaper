@@ -5,7 +5,7 @@
 
 ## Prerequisites
 - Windows with PowerShell 7.0 or newer.
-- .NET SDK installed and available on `PATH` (the script can bootstrap the runtime when `InstallRuntimeAfterPublish` is enabled).
+- .NET SDK installed and available on `PATH` (the script can bootstrap the runtime when `InstallRuntime` is enabled).
 - SevenZip binaries that ship with the repository under `src/Bundle/Sucrose.Bundle/SevenZip/`.
 - Sufficient permissions to adjust the process execution policy and create/remove directories in the solution tree.
 
@@ -35,8 +35,8 @@
 | `PublishBaseDir` | string | Script directory | Root directory for path resolution. |
 | `MaxAttempts` | integer `1-10` | `3` | Retry attempts per project publish. |
 | `RetryDelay` | integer `1-60` | `2` | Seconds between retries. |
-| `InstallRuntimeAfterPublish` | `true`, `false` | `true` | Installs the .NET runtime bundle when `true`. |
-| `CompressSucrosePackage` | `true`, `false` | `true` | Compresses the published output via SevenZip. |
+| `InstallRuntime` | `true`, `false` | `true` | Installs the .NET runtime bundle when `true`. |
+| `CompressPackage` | `true`, `false` | `true` | Compresses the published output via SevenZip. |
 | `DotNetVersion` | string | `9.0.305` | .NET runtime version passed to `dotnet-install.ps1`. |
 
 ## Usage
@@ -54,7 +54,7 @@
   ```
 - Publish Debug build without runtime compression:
   ```powershell
-  .\.build\Sucrose.ps1 -Configuration Debug -CompressSucrosePackage false
+  .\.build\Sucrose.ps1 -Configuration Debug -CompressPackage false
   ```
 - Produce a self-contained ARM64 build:
   ```powershell
@@ -62,10 +62,10 @@
   ```
 
 ## Runtime Installation
-When `InstallRuntimeAfterPublish` is `true`, the script executes `dotnet-install.ps1` to create a trimmed runtime bundle. After installation it removes unused SDK, templates, and ancillary files to reduce size.
+When `InstallRuntime` is `true`, the script executes `dotnet-install.ps1` to create a trimmed runtime bundle. After installation it removes unused SDK, templates, and ancillary files to reduce size.
 
 ## Compression Workflow
-When `CompressSucrosePackage` is `true`, the script selects the appropriate `7z.exe` binary for the host architecture, recreates the `Compressed/<TargetFramework>` directory, and generates a solid LZMA2 archive of the published payload while excluding non-distribution folders.
+When `CompressPackage` is `true`, the script selects the appropriate `7z.exe` binary for the host architecture, recreates the `Compressed/<TargetFramework>` directory, and generates a solid LZMA2 archive of the published payload while excluding non-distribution folders.
 
 ## Error Handling
 - Each publish attempt logs to both the console and `Publish.log`.
