@@ -279,7 +279,7 @@ namespace Sucrose.Live.CefSharp
             Configure();
         }
 
-        protected void Configure()
+        protected async void Configure()
         {
             SSEMI.LibraryLocation = SMML.Location;
             SSEMI.LibrarySelected = SMML.Selected;
@@ -412,7 +412,7 @@ namespace Sucrose.Live.CefSharp
                         if (Cef.IsInitialized is null or false)
                         {
                             //Perform dependency check to make sure all relevant resources are in our output directory.
-                            Cef.InitializeAsync(Settings, performDependencyCheck: true, browserProcessHandler: null);
+                            await Cef.InitializeAsync(Settings, performDependencyCheck: true, browserProcessHandler: null);
                         }
 
                         string Source = SSEMI.Info.Source;
@@ -494,7 +494,7 @@ namespace Sucrose.Live.CefSharp
 
                             LocalServer = new(Path.Combine(SSEMI.LibraryLocation, SSEMI.LibrarySelected));
 
-                            Task.Run(() => LocalServer.StartAsync());
+                            await Task.Run(() => LocalServer.StartAsync());
 
                             SSEMI.Host = LocalServer.GetUrl();
 
