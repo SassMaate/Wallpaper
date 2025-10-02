@@ -203,12 +203,23 @@ if (-not $TargetFramework) {
         
         $detectedFramework = $null
         foreach ($pg in $projXml.Project.PropertyGroup) {
-            if ($pg.TargetFramework) {
-                $detectedFramework = $pg.TargetFramework
+            # Check for TargetFrameworks (plural) - safely
+            $targetFrameworksNode = $pg.SelectSingleNode("TargetFrameworks")
+            if ($null -ne $targetFrameworksNode -and -not [string]::IsNullOrWhiteSpace($targetFrameworksNode.InnerText)) {
+                $tfValue = $targetFrameworksNode.InnerText.Trim()
+                if ($tfValue -like "*;*") {
+                    $frameworks = $tfValue -split ';' | ForEach-Object { $_.Trim() } | Where-Object { $_ }
+                    $detectedFramework = $frameworks[0]
+                } else {
+                    $detectedFramework = $tfValue
+                }
                 break
-            } elseif ($pg.TargetFrameworks) {
-                $frameworks = $pg.TargetFrameworks -replace '\s+', '' -split ';' | Where-Object { $_ }
-                $detectedFramework = $frameworks[0]
+            }
+
+            # Check for TargetFramework (singular) - safely
+            $targetFrameworkNode = $pg.SelectSingleNode("TargetFramework")
+            if ($null -ne $targetFrameworkNode -and -not [string]::IsNullOrWhiteSpace($targetFrameworkNode.InnerText)) {
+                $detectedFramework = $targetFrameworkNode.InnerText.Trim()
                 break
             }
         }
