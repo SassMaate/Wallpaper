@@ -142,8 +142,6 @@ function Publish-Project {
     if ($ProjectName -eq "Sucrose.Undo") { $destination = Join-Path $destination "Cache" }
     $destination = Join-Path $destination "$TargetFramework\$PlatformTarget\$ProjectName"
 
-	Write-Host "destination: [$destination]" -ForegroundColor Cyan
-
     if (Test-Path $destination) {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Cleaning $destination ..." -ForegroundColor Yellow
         Remove-Item $destination -Recurse -Force
