@@ -195,8 +195,6 @@ foreach ($proj in $projects) {
 
 # ----- Optional: Install .NET runtime -----
 if ($InstallRuntimeAfterPublish) {
-    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing Sucrose Runtime..." -ForegroundColor Cyan
-
     $dotnetInstallScript = Join-Path $PublishBaseDir "dotnet-install.ps1"
     if (-not (Test-Path $dotnetInstallScript)) {
         throw "dotnet-install.ps1 not found in $PublishBaseDir"
@@ -205,26 +203,30 @@ if ($InstallRuntimeAfterPublish) {
     # Fixed target directory: inside publish folder net9.0-windows/x64
     $runtimeInstallDir = Join-Path $PublishBaseDir $PublishDir
     $runtimeInstallDir = Join-Path $runtimeInstallDir "$TargetFramework\$PlatformTarget\Sucrose.Runtime"
-	
+
     if (Test-Path $runtimeInstallDir) {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Cleaning $runtimeInstallDir ..." -ForegroundColor Yellow
         Remove-Item $runtimeInstallDir -Recurse -Force
     }
     New-Item -ItemType Directory -Path $runtimeInstallDir -Force | Out-Null
 
-    $logFile = Join-Path $runtimeInstallDir "Publish.log"
+    $logFile = Join-Path $runtimeInstallDir "RuntimeInstall.log"
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
+    "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Starting .NET $DotNetVersion installation into $runtimeInstallDir" | Tee-Object -FilePath $logFile
 
     # Install .NET (x64, x86, arm64)
-    & $dotnetInstallScript -Version $DotNetVersion -Architecture $PlatformTarget -InstallDir $runtimeInstallDir
+    & $dotnetInstallScript -Version $DotNetVersion -NoPath -Architecture $PlatformTarget -InstallDir $runtimeInstallDir *>&1 | Tee-Object -FilePath $logFile
 
     if ($LASTEXITCODE -ne 0) {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation failed" -ForegroundColor Red
+        "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Installation failed with exit code $LASTEXITCODE" | Tee-Object -FilePath $logFile
         throw "Installation failed"
     } else {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation succeeded" -ForegroundColor Green
+        "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Installation succeeded" | Tee-Object -FilePath $logFile
     }
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Runtime installation completed" -ForegroundColor Green
+    "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Runtime installation completed" | Tee-Object -FilePath $logFile
 }
