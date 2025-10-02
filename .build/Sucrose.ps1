@@ -44,7 +44,8 @@ param (
     [string]$TargetFramework,
     [string]$PublishBaseDir = (Split-Path -Parent $MyInvocation.MyCommand.Definition),
     [int]$MaxAttempts = 3,
-    [int]$RetryDelay = 2
+    [int]$RetryDelay = 2,
+    [switch]$InstallRuntimeAfterPublish
 )
 
 # ----- Set console input/output encoding to UTF-8 to properly handle non-ASCII characters -----
@@ -186,4 +187,11 @@ foreach ($proj in $projects) {
     $projName = [System.IO.Path]::GetFileNameWithoutExtension($proj)
     $fullPath = Join-Path $PublishBaseDir $proj
     Publish-Project -ProjectPath $fullPath -ProjectName $projName
+}
+
+# ----- Optional: Install .NET runtimes -----
+if ($InstallRuntimeAfterPublish) {
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing Sucrose Runtime..." -ForegroundColor Cyan
+    $runtimeScript = Join-Path $PublishBaseDir "Install-SucroseRuntime.ps1"
+    & $runtimeScript -RunFromPublish
 }
