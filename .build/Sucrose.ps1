@@ -1,12 +1,13 @@
 ﻿<#
 .SYNOPSIS
-    Production-ready solution-level publish script for Sucrose projects with optional runtime installation.
+    Production-ready solution-level publish script for Sucrose projects with optional runtime installation and compression.
 
 .DESCRIPTION
     Publishes multiple .NET projects sequentially.
     Automatically detects Configuration, PlatformTarget, RuntimeIdentifier, TargetFramework if not provided.
     Cleans destination folders, logs output, retries failed publishes.
     Optionally installs .NET runtimes (x86, x64, ARM64) after publish.
+    Optionally compresses published package using platform-specific 7zip.
 
 .PARAMETER PlatformTarget
     Target platform (x64, x86, ARM64). Default: auto-detected or x64
@@ -277,7 +278,7 @@ function Compress-SucrosePackage {
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Detected architecture for compression: $arch" -ForegroundColor Cyan
 
     # ----- Determine 7zip executable -----
-    $sevenZipExe = Join-Path $PublishBaseDir "src\Bundle\Sucrose.Bundle\SevenZip\7z-$arch\7z.exe"
+    $sevenZipExe = Join-Path $PublishBaseDir "..\src\Bundle\Sucrose.Bundle\SevenZip\7z-$arch\7z.exe"
     if (-not (Test-Path $sevenZipExe)) {
         throw "7z executable not found: $sevenZipExe"
     }
