@@ -79,8 +79,8 @@ if (-not $PlatformTarget) {
 
 if (-not $RuntimeIdentifier) {
     switch ($PlatformTarget.ToLower()) {
-        "x64" { $RuntimeIdentifier = "win-x64" }
         "x86" { $RuntimeIdentifier = "win-x86" }
+        "x64" { $RuntimeIdentifier = "win-x64" }
         "arm64" { $RuntimeIdentifier = "win-arm64" }
         default { throw "Unsupported PlatformTarget: $PlatformTarget. Cannot determine RuntimeIdentifier." }
     }
@@ -271,37 +271,61 @@ function Compress-SucrosePackage {
         [string]$TargetFramework = $TargetFramework
     )
 
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Starting package compression process ..." -ForegroundColor Cyan
+
     # ----- Detect OS architecture -----
-    $arch = switch ($PlatformTarget.ToLower()) {
-        "x64"   { "x64" }
-        "x86"   { "x86" }
-        "arm64" { "ARM64" }
-        default { throw "Unsupported PlatformTarget: $PlatformTarget" }
+    #$arch = switch ($PlatformTarget.ToLower()) {
+    #    "x86"   { "x86" }
+    #    "x64"   { "x64" }
+    #    "arm64" { "ARM64" }
+    #    default { throw "Unsupported PlatformTarget: $PlatformTarget" }
+    #}
+    $arch = if ([Environment]::Is64BitOperatingSystem) {
+        switch ([Environment]::GetEnvironmentVariable("PROCESSOR_ARCHITECTURE").ToLower()) {
+            "x86"   { "x86" }
+            "amd64" { "x64" }
+            "arm64" { "ARM64" }
+            default { throw "Unsupported architecture" }
+        }
+    } else {
+        "x86"
     }
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Detected architecture for compression: $arch" -ForegroundColor Cyan
 
     # ----- Determine 7zip executable -----
     $sevenZipExe = Join-Path $PublishBaseDir "..\src\Bundle\Sucrose.Bundle\SevenZip\7z-$arch\7z.exe"
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Looking for 7zip executable: $sevenZipExe" -ForegroundColor Gray
     if (-not (Test-Path $sevenZipExe)) {
         throw "7z executable not found: $sevenZipExe"
     }
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - 7zip executable found successfully" -ForegroundColor Green
 
     # ----- Prepare output directory -----
     $zipDir = Join-Path $OutputPath $TargetFramework
-    if (-not (Test-Path $zipDir)) { New-Item -ItemType Directory -Path $zipDir -Force | Out-Null }
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Preparing output directory: $zipDir" -ForegroundColor Gray
+    if (-not (Test-Path $zipDir)) { 
+        New-Item -ItemType Directory -Path $zipDir -Force | Out-Null 
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Output directory created" -ForegroundColor Green
+    } else {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Output directory already exists" -ForegroundColor Yellow
+    }
 
     $zipFile = Join-Path $zipDir "Sucrose-$arch.7z"
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Target archive file: $zipFile" -ForegroundColor Gray
 
     $BasePath = Join-Path $BasePath "$TargetFramework\$PlatformTarget"
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Source path for compression: $BasePath" -ForegroundColor Gray
 
     # ----- Build command -----
     $excludeFolders = @("Sucrose.Bundle","Sucrose.Localizer")
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Excluding folders: $($excludeFolders -join ', ')" -ForegroundColor Gray
     $excludeArgs = $excludeFolders | ForEach-Object { "-x!$BasePath\$_" }
 
     $arguments = @("a", "-t7z", "-m0=lzma2", "-mx=9", "-mfb=64", "-ms=64m", "`"$zipFile`"", "`"$BasePath\*`"") + $excludeArgs
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - 7zip arguments prepared" -ForegroundColor Gray
 
-    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Compressing $BasePath to $zipFile ..." -ForegroundColor Cyan
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Starting compression: $BasePath -> $zipFile" -ForegroundColor Cyan
 
     # ----- Execute 7zip -----
     & $sevenZipExe @arguments
