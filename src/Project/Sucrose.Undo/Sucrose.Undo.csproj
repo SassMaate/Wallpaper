@@ -92,7 +92,6 @@
     <PropertyGroup>
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
         <DestinationDirectory>..\..\Sucrose\Package\Cache\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-        <DestinationDirectory Condition="'$(Configuration)' == 'Release'">..\..\Sucrose\Package\Cache\$(PublishTargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
     <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">

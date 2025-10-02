@@ -112,7 +112,6 @@
     <PropertyGroup>
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
         <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-        <DestinationDirectory Condition="'$(Configuration)' == 'Release'">..\..\Sucrose\Package\$(PublishTargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
     <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
