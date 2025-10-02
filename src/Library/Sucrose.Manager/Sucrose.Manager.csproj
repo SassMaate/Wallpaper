@@ -6,7 +6,7 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\Manager\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\Manager\x86</OutputPath>
         <RuntimeIdentifiers>win-arm64;win-x64;win-x86</RuntimeIdentifiers>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <AssemblyVersion>$(Version)</AssemblyVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>
@@ -14,6 +14,24 @@
         <Platforms>ARM64;x64;x86</Platforms>
         <LangVersion>preview</LangVersion>
         <Optimize>false</Optimize>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X86</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X64</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
     </PropertyGroup>
 
     <ItemGroup>

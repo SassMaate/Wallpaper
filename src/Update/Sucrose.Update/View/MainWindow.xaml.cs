@@ -603,17 +603,9 @@ namespace Sucrose.Update.View
                             DateTime StartTime = DateTime.Now;
                             int BytesRead;
 
-#if NET48
-                            while ((BytesRead = await SUMI.ProgressStream.ReadAsync(Buffer, 0, Buffer.Length)) > 0)
-#else
                             while ((BytesRead = await SUMI.ProgressStream.ReadAsync(Buffer)) > 0)
-#endif
                             {
-#if NET48
-                                await FileStream.WriteAsync(Buffer, 0, BytesRead);
-#else
                                 await FileStream.WriteAsync(Buffer.AsMemory(0, BytesRead));
-#endif
 
                                 long Limit = GetLimit();
 

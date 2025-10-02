@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Launcher.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -34,6 +34,13 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Launcher\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Launcher\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Launcher\ARM64</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <PublishTargetFramework>net9.0-windows</PublishTargetFramework>
+        <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -78,21 +85,12 @@
         <PackageReference Include="DiscordRichPresence" Version="1.6.1.70" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Web" />
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <PackageReference Include="System.IO.Compression" Version="4.3.0" />
-        <PackageReference Include="System.ComponentModel.Annotations" Version="6.0.0-preview.4.21253.7" />
-    </ItemGroup>
-
     <ItemGroup>
         <ProjectReference Include="..\..\Library\Sucrose.Signal\Sucrose.Signal.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Manager\Sucrose.Manager.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Resources\Sucrose.Resources.csproj" />
     </ItemGroup>
-    
+
     <Import Project="..\..\Shared\Sucrose.Shared.Zip\Sucrose.Shared.Zip.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Live\Sucrose.Shared.Live.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Space\Sucrose.Shared.Space.projitems" Label="Shared" />
@@ -110,13 +108,19 @@
     <PropertyGroup>
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
         <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
+        <DestinationDirectory Condition="'$(Configuration)' == 'Release'">..\..\Sucrose\Package\$(PublishTargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
-    <Target Name="CopyFiles" BeforeTargets="Build">
+    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>
         <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    </Target>
+
+    <Target Name="PublishBuild" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
+        <Exec Command="dotnet publish $(MSBuildProjectFullPath) -c $(Configuration) -r $(RuntimeIdentifier) -f $(PublishTargetFramework) --self-contained $(SelfContained) -o $(DestinationDirectory)" />
+        <!--<Exec Command="msbuild $(ProjectPath) /p:Configuration=$(Configuration) /p:Platform=$(PlatformTarget) /p:RuntimeIdentifier=$(RuntimeIdentifier) /p:TargetFramework=$(TargetFramework) /p:SelfContained=$(SelfContained) /p:OutputPath=$(DestinationDirectory)" />-->
     </Target>
 
 </Project>

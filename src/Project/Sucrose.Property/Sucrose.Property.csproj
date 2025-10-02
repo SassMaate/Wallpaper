@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net48;net9.0-windows</TargetFrameworks>
+        <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
         <StartupObject>Sucrose.Property.App</StartupObject>
         <ImplicitUsings>enable</ImplicitUsings>
@@ -34,6 +34,13 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Property\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Property\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Property\ARM64</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <PublishTargetFramework>net9.0-windows</PublishTargetFramework>
+        <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -79,10 +86,6 @@
         <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
     </ItemGroup>
 
-    <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-        <Reference Include="System.Web" />
-    </ItemGroup>
-
     <ItemGroup>
         <ProjectReference Include="..\..\Library\Sucrose.Manager\Sucrose.Manager.csproj" />
         <ProjectReference Include="..\..\Library\Sucrose.Resources\Sucrose.Resources.csproj" />
@@ -105,13 +108,19 @@
     <PropertyGroup>
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
         <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
+        <DestinationDirectory Condition="'$(Configuration)' == 'Release'">..\..\Sucrose\Package\$(PublishTargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
-    <Target Name="CopyFiles" BeforeTargets="Build">
+    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(Configuration)' == 'Debug'">
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>
         <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    </Target>
+
+    <Target Name="PublishBuild" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
+        <Exec Command="dotnet publish $(MSBuildProjectFullPath) -c $(Configuration) -r $(RuntimeIdentifier) -f $(PublishTargetFramework) --self-contained $(SelfContained) -o $(DestinationDirectory)" />
+        <!--<Exec Command="msbuild $(ProjectPath) /p:Configuration=$(Configuration) /p:Platform=$(PlatformTarget) /p:RuntimeIdentifier=$(RuntimeIdentifier) /p:TargetFramework=$(TargetFramework) /p:SelfContained=$(SelfContained) /p:OutputPath=$(DestinationDirectory)" />-->
     </Target>
 
 </Project>

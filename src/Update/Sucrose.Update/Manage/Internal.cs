@@ -23,7 +23,7 @@ namespace Sucrose.Update.Manage
 
         public static bool Chance = SMMRG.Randomise.Next(2) == 0;
 
-        public static SSCEFT DefaultFrameworkType = SSCEFT.NET_Framework_4_8;
+        public static SSCEFT DefaultFrameworkType = SSCEFT.NET_9_0;
 
         public static string CachePath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Bundle);
 
@@ -50,14 +50,10 @@ namespace Sucrose.Update.Manage
             ParallelCount = 4,
             RangeDownload = false,
             BufferBlockSize = 4096,
+            MaxTryAgainOnFailure = 5,
             ParallelDownload = false,
             MaximumBytesPerSecond = 0,
-#if NET48
-            MaxTryAgainOnFailover = 5,
-#else
-            MaxTryAgainOnFailure = 5,
             EnableLiveStreaming = false,
-#endif
             MinimumSizeOfChunking = 1024,
             CheckDiskSizeBeforeDownload = true,
             ClearPackageOnCompletionWithFailure = true,

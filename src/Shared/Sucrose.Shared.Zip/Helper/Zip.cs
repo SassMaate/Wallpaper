@@ -73,12 +73,7 @@ namespace Sucrose.Shared.Zip.Helper
         {
             try
             {
-#if NET48
-                string Relative = File.Substring(Source.Length);
-#else
-
                 string Relative = File[Source.Length..];
-#endif
 
                 Relative = Relative.TrimStart(Path.DirectorySeparatorChar);
 

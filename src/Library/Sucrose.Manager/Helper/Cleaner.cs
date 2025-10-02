@@ -8,20 +8,12 @@
             {
                 if (Content.StartsWith("{{"))
                 {
-#if NET48
-                    Content = Content.Substring(1);
-#else
                     Content = Content[1..];
-#endif
                 }
 
                 if (Content.EndsWith("}}"))
                 {
-#if NET48
-                    Content = Content.Substring(0, Content.Length - 1);
-#else
                     Content = Content[..^1];
-#endif
                 }
 
                 if (Content.StartsWith("{{") || Content.EndsWith("}}"))

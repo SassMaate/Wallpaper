@@ -13,7 +13,7 @@ namespace Sucrose.Shared.Core.Helper
 #elif ARM64
             return SSDEAT.ARM64;
 #else
-            return return SSDEAT.Unknown";
+            return SSDEAT.Unknown;
 #endif
         }
 

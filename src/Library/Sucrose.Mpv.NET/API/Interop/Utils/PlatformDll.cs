@@ -8,7 +8,6 @@ namespace Sucrose.Mpv.NET.API.Interop
 
         private static IDllLoadUtils SelectDllLoadUtils()
         {
-#if NET9_0
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
                 return new WindowsDllLoadUtils();
@@ -21,10 +20,6 @@ namespace Sucrose.Mpv.NET.API.Interop
             {
                 throw new PlatformNotSupportedException();
             }
-
-#elif NET48
-            return new WindowsDllLoadUtils();
-#endif
         }
     }
 }
