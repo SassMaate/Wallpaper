@@ -199,7 +199,7 @@ foreach ($proj in $projects) {
 }
 
 # ----- Optional: Install .NET runtime -----
-if ($InstallRuntimeAfterPublish -eq "true")
+if ($InstallRuntimeAfterPublish -eq "true") {
     $dotnetInstallScript = Join-Path $PublishBaseDir "dotnet-install.ps1"
     if (-not (Test-Path $dotnetInstallScript)) {
         throw "dotnet-install.ps1 not found in $PublishBaseDir"
@@ -292,6 +292,8 @@ function Compress-SucrosePackage {
     if (-not (Test-Path $zipDir)) { New-Item -ItemType Directory -Path $zipDir -Force | Out-Null }
 
     $zipFile = Join-Path $zipDir "Sucrose-$arch.7z"
+
+    $BasePath = Join-Path $BasePath "$TargetFramework\$PlatformTarget"
 
     # ----- Build command -----
     $excludeFolders = @("Sucrose.Bundle","Sucrose.Localizer")
