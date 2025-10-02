@@ -93,9 +93,18 @@ if (-not $PlatformTarget) {
 
 if (-not $RuntimeIdentifier) {
     switch ($PlatformTarget.ToLower()) {
-        "x86" { $RuntimeIdentifier = "win-x86" }
-        "x64" { $RuntimeIdentifier = "win-x64" }
-        "arm64" { $RuntimeIdentifier = "win-arm64" }
+        "x86" { 
+            $PlatformTarget = "x86"
+            $RuntimeIdentifier = "win-x86" 
+        }
+        "x64" { 
+            $PlatformTarget = "x64"
+            $RuntimeIdentifier = "win-x64" 
+        }
+        "arm64" { 
+            $PlatformTarget = "ARM64"
+            $RuntimeIdentifier = "win-arm64" 
+        }
         default { throw "Unsupported PlatformTarget: $PlatformTarget. Cannot determine RuntimeIdentifier." }
     }
 }
