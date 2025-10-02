@@ -38,7 +38,6 @@
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
         <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
-        <PublishTargetFramework>net9.0-windows</PublishTargetFramework>
         <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
         <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
     </PropertyGroup>
@@ -114,11 +113,6 @@
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
         </ItemGroup>
         <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-    </Target>
-
-    <Target Name="PublishBuild" BeforeTargets="Build" Condition="'$(Configuration)' == 'Release'">
-        <Exec Command="dotnet publish $(MSBuildProjectFullPath) -c $(Configuration) /p:PlatformTarget=$(PlatformTarget) -r $(RuntimeIdentifier) -f $(PublishTargetFramework) --self-contained $(SelfContained) -o $(DestinationDirectory)" />
-        <!--<Exec Command="msbuild $(ProjectPath) /p:Configuration=$(Configuration) /p:Platform=$(PlatformTarget) /p:RuntimeIdentifier=$(RuntimeIdentifier) /p:TargetFramework=$(TargetFramework) /p:SelfContained=$(SelfContained) /p:OutputPath=$(DestinationDirectory)" />-->
     </Target>
 
 </Project>
