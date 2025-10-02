@@ -210,23 +210,17 @@ if ($InstallRuntimeAfterPublish) {
     }
     New-Item -ItemType Directory -Path $runtimeInstallDir -Force | Out-Null
 
-    $logFile = Join-Path $runtimeInstallDir "RuntimeInstall.log"
-
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
-    "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Starting .NET $DotNetVersion installation into $runtimeInstallDir" | Tee-Object -FilePath $logFile
 
     # Install .NET (x64, x86, arm64)
-    & $dotnetInstallScript -Version $DotNetVersion -NoPath -Architecture $PlatformTarget -InstallDir $runtimeInstallDir *>&1 | Tee-Object -FilePath $logFile
+    & $dotnetInstallScript -Version $DotNetVersion -NoPath -Architecture $PlatformTarget -InstallDir $runtimeInstallDir
 
     if ($LASTEXITCODE -ne 0) {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation failed" -ForegroundColor Red
-        "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Installation failed with exit code $LASTEXITCODE" | Tee-Object -FilePath $logFile
         throw "Installation failed"
     } else {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation succeeded" -ForegroundColor Green
-        "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Installation succeeded" | Tee-Object -FilePath $logFile
     }
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Runtime installation completed" -ForegroundColor Green
-    "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] Runtime installation completed" | Tee-Object -FilePath $logFile
 }
