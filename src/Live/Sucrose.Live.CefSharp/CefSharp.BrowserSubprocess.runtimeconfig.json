@@ -1,0 +1,15 @@
+{
+    "runtimeOptions": {
+        "tfm": "net6.0",
+        "rollForward": "Major",
+        "framework": {
+            "name": "Microsoft.NETCore.App",
+            "version": "6.0.0"
+        },
+        "configProperties": {
+            "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
+            "DOTNET_ROOT": "..\\Sucrose.Runtime",
+            "DOTNET_MULTILEVEL_LOOKUP": 0
+        }
+    }
+}

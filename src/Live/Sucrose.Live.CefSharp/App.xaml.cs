@@ -299,10 +299,6 @@ namespace Sucrose.Live.CefSharp
                     {
                         SSLHK.StopSubprocess();
 
-#if DEBUG
-                        CefRuntime.SubscribeAnyCpuAssemblyResolver();
-#endif
-
                         CefSettings Settings = new()
                         {
                             UserAgent = SMMG.UserAgent,
@@ -414,7 +410,7 @@ namespace Sucrose.Live.CefSharp
                         if (Cef.IsInitialized is null or false)
                         {
                             //Perform dependency check to make sure all relevant resources are in our output directory.
-                            Cef.Initialize(Settings, performDependencyCheck: true, browserProcessHandler: null);
+                            Cef.InitializeAsync(Settings, performDependencyCheck: true, browserProcessHandler: null);
                         }
 
                         string Source = SSEMI.Info.Source;

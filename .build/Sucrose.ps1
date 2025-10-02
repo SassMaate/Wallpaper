@@ -320,6 +320,7 @@ function Publish-SucroseProject {
                 "--self-contained", $SelfContained,
                 "-o", $destination,
                 "--nologo",
+                "--use-current-runtime",
                 "--verbosity", "minimal"
             )
 
