@@ -38,6 +38,7 @@
 .PARAMETER InstallRuntimeAfterPublish
     If specified, installs .NET runtimes after publish (x86, x64, ARM64)
     
+
 .PARAMETER DotNetVersion
     Version of .NET to install. Default: 9.0.305
 #>
@@ -193,7 +194,7 @@ foreach ($proj in $projects) {
     Publish-Project -ProjectPath $fullPath -ProjectName $projName
 }
 
-# ----- Optional: Install .NET runtimes -----
+# ----- Optional: Install .NET runtime -----
 if ($InstallRuntimeAfterPublish) {
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing Sucrose Runtime..." -ForegroundColor Cyan
 
@@ -202,13 +203,13 @@ if ($InstallRuntimeAfterPublish) {
         throw "dotnet-install.ps1 not found in $PublishBaseDir"
     }
 
-    # Sabit hedef dizin: publish edilen net9.0-windows/x64 altına
+    # Fixed target directory: inside publish folder net9.0-windows/x64
     $runtimeInstallDir = Join-Path $PublishBaseDir $PublishDir
     $runtimeInstallDir = Join-Path $runtimeInstallDir "$TargetFramework\$PlatformTarget\Sucrose.Runtime"
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
 
-    # .NET yükleme (x64) sadece
+    # Install .NET (x64) only
     & $dotnetInstallScript -Version $DotNetVersion -Architecture x64 -InstallDir $runtimeInstallDir
 
     if ($LASTEXITCODE -ne 0) {
