@@ -64,19 +64,21 @@
 [CmdletBinding()]
 param (
     [Parameter(HelpMessage = "Build configuration (Release/Debug)")]
-    [ValidateSet("Release", "Debug")]
-    [string]$Configuration,
+    [ValidateSet("Release", "Debug", "")]
+    [AllowEmptyString()]
+    [string]$Configuration = "",
 
     [Parameter(HelpMessage = "Target platform (x64, x86, ARM64)")]
-    [ValidateSet("x64", "x86", "ARM64")]
-    [string]$PlatformTarget,
+    [ValidateSet("x64", "x86", "ARM64", "")]
+    [AllowEmptyString()]
+    [string]$PlatformTarget = "",
 
     [Parameter(HelpMessage = "Self-contained publish")]
     [ValidateSet("true", "false")]
     [string]$SelfContained = "false",
 
     [Parameter(HelpMessage = "Runtime identifier")]
-    [string]$RuntimeIdentifier,
+    [string]$RuntimeIdentifier = "",
 
     [Parameter(HelpMessage = "Target framework")]
     [string]$TargetFramework,
