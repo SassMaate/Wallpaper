@@ -208,8 +208,8 @@ if ($InstallRuntimeAfterPublish) {
 
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
 
-    # Install .NET (x64) only
-    & $dotnetInstallScript -Version $DotNetVersion -Architecture x64 -InstallDir $runtimeInstallDir
+    # Install .NET (x64, x86, arm64)
+    & $dotnetInstallScript -Version $DotNetVersion -Architecture $PlatformTarget -InstallDir $runtimeInstallDir
 
     if ($LASTEXITCODE -ne 0) {
         Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation failed" -ForegroundColor Red
