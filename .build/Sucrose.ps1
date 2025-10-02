@@ -1,11 +1,12 @@
 ﻿<#
 .SYNOPSIS
-    Production-ready solution-level publish script for Sucrose projects.
+    Production-ready solution-level publish script for Sucrose projects with optional runtime installation.
 
 .DESCRIPTION
     Publishes multiple .NET projects sequentially.
     Automatically detects Configuration, PlatformTarget, RuntimeIdentifier, TargetFramework if not provided.
     Cleans destination folders, logs output, retries failed publishes.
+    Optionally installs .NET runtimes (x86, x64, ARM64) after publish.
 
 .PARAMETER PlatformTarget
     Target platform (x64, x86, ARM64). Default: auto-detected or x64
@@ -33,6 +34,12 @@
 
 .PARAMETER RetryDelay
     Delay between retries in seconds. Default: 2
+
+.PARAMETER InstallRuntimeAfterPublish
+    If specified, installs .NET runtimes after publish (x86, x64, ARM64)
+    
+.PARAMETER DotNetVersion
+    Version of .NET to install. Default: 9.0.305
 #>
 
 param (
@@ -45,10 +52,11 @@ param (
     [string]$PublishBaseDir = (Split-Path -Parent $MyInvocation.MyCommand.Definition),
     [int]$MaxAttempts = 3,
     [int]$RetryDelay = 2,
-    [switch]$InstallRuntimeAfterPublish
+    [switch]$InstallRuntimeAfterPublish = $true,
+    [string]$DotNetVersion = "9.0.305"
 )
 
-# ----- Set console input/output encoding to UTF-8 to properly handle non-ASCII characters -----
+# ----- Set console input/output encoding -----
 [Console]::InputEncoding = [System.Text.Encoding]::UTF8
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
@@ -97,36 +105,32 @@ $projects = @(
 # ----- Detect TargetFramework from first project if not set -----
 if (-not $TargetFramework) {
     function Get-TargetFramework($csproj) {
-		[xml]$projXml = Get-Content $csproj
+        [xml]$projXml = Get-Content $csproj
+        $tf = $null
 
-		$tf = $null
+        foreach ($pg in $projXml.Project.PropertyGroup) {
+            if ($pg.TargetFramework) {
+                $tf = $pg.TargetFramework
+                break
+            } elseif ($pg.TargetFrameworks) {
+                $tf = $pg.TargetFrameworks
+                break
+            }
+        }
 
-        # Try TargetFramework first
-		foreach ($pg in $projXml.Project.PropertyGroup) {
-			if ($pg.TargetFramework) {
-				$tf = $pg.TargetFramework
-				break
-			} elseif ($pg.TargetFrameworks) {
-				$tf = $pg.TargetFrameworks
-				break
-			}
-		}
-
-		# Normalize: remove all extra whitespace
-		$tf = -join ($tf.ToCharArray() | Where-Object { $_ -ne " " })
-		$tf = $tf -replace '\s+', ''
+        $tf = -join ($tf.ToCharArray() | Where-Object { $_ -ne " " })
+        $tf = $tf -replace '\s+', ''
 
         if ([string]::IsNullOrWhiteSpace($tf)) {
             throw "No TargetFramework or TargetFrameworks found in $csproj"
         }
-		
-		if ($tf -like "*;*") {
-			# Split by ; if exists, trim entries, take first non-empty
-			$tfArray = $tf -split ";" | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
-			return $tfArray[0]
-		} else {
-			return $tf
-		}
+
+        if ($tf -like "*;*") {
+            $tfArray = $tf -split ";" | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
+            return $tfArray[0]
+        } else {
+            return $tf
+        }
     }
 
     $TargetFramework = Get-TargetFramework (Join-Path $PublishBaseDir $projects[0])
@@ -192,6 +196,27 @@ foreach ($proj in $projects) {
 # ----- Optional: Install .NET runtimes -----
 if ($InstallRuntimeAfterPublish) {
     Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing Sucrose Runtime..." -ForegroundColor Cyan
-    $runtimeScript = Join-Path $PublishBaseDir "Install-SucroseRuntime.ps1"
-    & $runtimeScript -RunFromPublish
+
+    $dotnetInstallScript = Join-Path $PublishBaseDir "dotnet-install.ps1"
+    if (-not (Test-Path $dotnetInstallScript)) {
+        throw "dotnet-install.ps1 not found in $PublishBaseDir"
+    }
+
+    # Sabit hedef dizin: publish edilen net9.0-windows/x64 altına
+    $runtimeInstallDir = Join-Path $PublishBaseDir $PublishDir
+    $runtimeInstallDir = Join-Path $runtimeInstallDir "$TargetFramework\$PlatformTarget\Sucrose.Runtime"
+
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installing .NET $DotNetVersion into $runtimeInstallDir ..." -ForegroundColor Cyan
+
+    # .NET yükleme (x64) sadece
+    & $dotnetInstallScript -Version $DotNetVersion -Architecture x64 -InstallDir $runtimeInstallDir
+
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation failed" -ForegroundColor Red
+        throw "Installation failed"
+    } else {
+        Write-Host "$(Get-Date -Format 'HH:mm:ss') - Installation succeeded" -ForegroundColor Green
+    }
+
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') - Runtime installation completed" -ForegroundColor Green
 }
