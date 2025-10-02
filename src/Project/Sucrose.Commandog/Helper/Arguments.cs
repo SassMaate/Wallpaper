@@ -30,27 +30,13 @@ namespace Sucrose.Commandog.Helper
 
                 if (Combined.StartsWith(SMMRG.StartCommand) && Combined.Contains(SMMRG.ValueSeparatorChar))
                 {
-
-#if NET9_0
                     string[] ArgumentParts = Combined[1..].Split(SMMRG.ValueSeparatorChar);
-#else
-                    string[] ArgumentParts = Combined.Substring(1).Split(SMMRG.ValueSeparatorChar);
-#endif
 
                     if (ArgumentParts.Length >= 2)
                     {
                         string Name = ArgumentParts[0];
 
-#if NET9_0
                         List<string> Values = new(ArgumentParts[1..]);
-#else
-                        List<string> Values = new();
-
-                        for (int Index = 1; Index < ArgumentParts.Length; Index++)
-                        {
-                            Values.Add(ArgumentParts[Index]);
-                        }
-#endif
 
                         if (Enum.TryParse(Name, true, out SSDECT Command))
                         {

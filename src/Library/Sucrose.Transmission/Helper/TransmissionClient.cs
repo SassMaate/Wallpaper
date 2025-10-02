@@ -33,11 +33,7 @@ namespace Sucrose.Transmission.Helper
 
             if (_writer != null)
             {
-#if NET9_0
                 await _writer.DisposeAsync();
-#else
-                _writer.Dispose();
-#endif
 
                 _writer = null;
             }
@@ -49,11 +45,7 @@ namespace Sucrose.Transmission.Helper
                     _tcpClient.Close();
                 }
 
-#if NET9_0
                 await Task.Run(() => _tcpClient.Dispose());
-#else
-                _tcpClient.Dispose();
-#endif
 
                 _tcpClient = null;
             }

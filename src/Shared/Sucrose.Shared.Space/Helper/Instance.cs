@@ -41,34 +41,7 @@ namespace Sucrose.Shared.Space.Helper
 
         public static bool Single(string Name, string Application)
         {
-#if NET9_0
             return SWUSI.IsAppMutexRunning(Name) && SSSHP.WorkCount(Application) <= 1;
-#else
-            _Mutex = new(true, Name);
-
-            try
-            {
-                return _Mutex.WaitOne(TimeSpan.Zero, true) && SSSHP.WorkCount(Application) <= 1;
-            }
-            catch
-            {
-                try
-                {
-                    return _Mutex.WaitOne(TimeSpan.Zero, true) && SSSHP.WorkCount(Application) <= 1;
-                }
-                catch
-                {
-                    try
-                    {
-                        return _Mutex.WaitOne(TimeSpan.Zero, true) && SSSHP.WorkCount(Application) <= 1;
-                    }
-                    catch
-                    {
-                        return false;
-                    }
-                }
-            }
-#endif
         }
     }
 }
