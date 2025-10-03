@@ -4,7 +4,6 @@ using System.Collections.Concurrent;
 using System.IO;
 using System.Windows;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 using Wpf.Ui;
 using Wpf.Ui.Controls;
@@ -19,7 +18,6 @@ using SMME = Sucrose.Manager.Manage.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMMP = Sucrose.Manager.Manage.Portal;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
-using SPEIL = Sucrose.Portal.Extension.ImageLoader;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPMMP = Sucrose.Portal.Manage.Manager.Portal;
 using SPVCDP = Sucrose.Portal.Views.Controls.DisplayPreferences;
@@ -66,9 +64,6 @@ namespace Sucrose.Portal.ViewModels.Windows
         private string _Architecture = string.Empty;
 
         [ObservableProperty]
-        private BitmapImage _Backgrounder2 = null;
-
-        [ObservableProperty]
         private string _Framework = string.Empty;
 
         [ObservableProperty]
@@ -82,8 +77,6 @@ namespace Sucrose.Portal.ViewModels.Windows
 
         [ObservableProperty]
         private IconElement _ThemeIcon = null;
-
-        private readonly SPEIL Loader = new();
 
         [ObservableProperty]
         private string _Backgrounder = null;
@@ -201,18 +194,6 @@ namespace Sucrose.Portal.ViewModels.Windows
             }
         }
 
-        private BitmapImage GetBackgrounder2()
-        {
-            if (File.Exists(SMMP.BackgroundImage))
-            {
-                return Loader.LoadOptimal(SMMP.BackgroundImage, false);
-            }
-            else
-            {
-                return null;
-            }
-        }
-
         private static WindowBackdropType GetWindowBackdropType()
         {
             if (WindowBackdrop.IsSupported(SPMMP.BackdropType))
@@ -318,8 +299,6 @@ namespace Sucrose.Portal.ViewModels.Windows
 
         public void Dispose()
         {
-            Loader.Dispose();
-
             GC.Collect();
             GC.SuppressFinalize(this);
         }
