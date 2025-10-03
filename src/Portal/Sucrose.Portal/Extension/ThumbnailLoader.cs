@@ -24,10 +24,12 @@ namespace Sucrose.Portal.Extension
 
                 try
                 {
-                    ShellFile Shell = ShellFile.FromFilePath(SourcePath);
-                    Bitmap Thumbnail = Shell.Thumbnail.ExtraLargeBitmap;
+                    ShellObject Shell = ShellObject.FromParsingName(SourcePath);
 
-                    Image = Convert(Thumbnail);
+                    ShellThumbnail Thumbnail = Shell.Thumbnail;
+                    Thumbnail.FormatOption = ShellThumbnailFormatOption.ThumbnailOnly;
+
+                    Image = Convert(Thumbnail.ExtraLargeBitmap);
 
                     Dispose();
                 }
@@ -67,6 +69,11 @@ namespace Sucrose.Portal.Extension
             SourcePath = null;
 
             Image.EndInit();
+
+            if (Image.CanFreeze && !Image.IsFrozen)
+            {
+                Image.Freeze();
+            }
 
             return Image;
         }
