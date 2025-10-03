@@ -90,7 +90,10 @@ namespace Sucrose.Portal.Extension
 
             Image.EndInit();
 
-            Image.Freeze();
+            if (Image.CanFreeze && !Image.IsFrozen)
+            {
+                Image.Freeze();
+            }
 
             Image.StreamSource.Flush();
 
@@ -105,11 +108,6 @@ namespace Sucrose.Portal.Extension
         {
             GC.Collect();
             GC.SuppressFinalize(this);
-        }
-
-        public async Task DisposeAsync()
-        {
-            await Task.Run(Dispose);
         }
     }
 }
