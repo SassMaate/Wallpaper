@@ -247,24 +247,6 @@
         </a>
       </td>
     </tr>
-    <tr align="center">
-      <td><a href="https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0">.NET 9.0</a></td>
-      <td>
-        <a href='https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_9.0_x64_25.9.19.0.exe'>
-          <img src='.images/Badges/GitHub/Chinese_get_it_from_GH_228X86.png' alt='Sucrose .NET 9.0 x64' width='160' />
-        </a>
-      </td>
-      <td>
-        <a href='https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_9.0_x86_25.9.19.0.exe'>
-          <img src='.images/Badges/GitHub/Chinese_get_it_from_GH_228X86.png' alt='Sucrose .NET 9.0 x86' width='160' />
-        </a>
-      </td>
-      <td>
-        <a href='https://github.com/Taiizor/Sucrose/releases/download/v25.9.19.0/Sucrose_Bundle_.NET_9.0_ARM64_25.9.19.0.exe'>
-          <img src='.images/Badges/GitHub/Chinese_get_it_from_GH_228X86.png' alt='Sucrose .NET 9.0 ARM64' width='160' />
-        </a>
-      </td>
-    </tr>
   </table>
 
   <!--<p></p>
