@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.Concurrent;
 using System.IO;
@@ -294,7 +294,6 @@ namespace Sucrose.Portal.ViewModels.Windows
         private void Memory_Tick(object sender, EventArgs e)
         {
             Memory = SSCHM.GetCurrentProcess();
-            Dispose();
         }
 
         public void Dispose()
