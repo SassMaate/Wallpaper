@@ -15,7 +15,7 @@ namespace Sucrose.Shared.Theme.Helper
         public string PropertyListener { get; set; } = string.Empty;
 
         [JsonProperty("PropertyList", Required = Required.Always)]
-        public ConcurrentDictionary<string, SSTMCM> PropertyList { get; set; } = new();
+        public Dictionary<string, SSTMCM> PropertyList { get; set; } = new();
 
         [JsonProperty("PropertyLocalization", Required = Required.Default)]
         public ConcurrentDictionary<string, ConcurrentDictionary<string, string>> PropertyLocalization { get; set; } = null;

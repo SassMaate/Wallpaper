@@ -6,6 +6,6 @@ namespace Sucrose.Shared.Store.Interface
     internal class Store
     {
         [JsonProperty("Categories", Required = Required.Always)]
-        public ConcurrentDictionary<string, Category> Categories { get; set; } = new();
+        public Dictionary<string, Category> Categories { get; set; } = new();
     }
 }

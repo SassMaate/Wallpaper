@@ -6,6 +6,6 @@ namespace Sucrose.Shared.Store.Interface
     internal class Category
     {
         [JsonProperty("Wallpapers", Required = Required.Default)]
-        public ConcurrentDictionary<string, Wallpaper> Wallpapers { get; set; } = new();
+        public Dictionary<string, Wallpaper> Wallpapers { get; set; } = new();
     }
 }
