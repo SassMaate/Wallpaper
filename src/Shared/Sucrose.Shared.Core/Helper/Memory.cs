@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Management;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
@@ -49,7 +49,7 @@ namespace Sucrose.Shared.Core.Helper
         {
             Process CurrentProcess = Process.GetCurrentProcess();
 
-            long UsedMemory = CurrentProcess.WorkingSet64;
+            long UsedMemory = CurrentProcess.PrivateMemorySize64;
 
             SSSSS Data = SSESSE.AutoConvert(UsedMemory, SEST.Byte, SEMST.Palila);
 
