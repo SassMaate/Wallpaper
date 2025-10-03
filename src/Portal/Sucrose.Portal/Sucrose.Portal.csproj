@@ -38,6 +38,7 @@
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
         <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <AppHostDotnetRoot>..\Sucrose.Runtime</AppHostDotnetRoot>
         <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
         <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
     </PropertyGroup>
@@ -55,21 +56,18 @@
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
-        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X86</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
-        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);X64</DefineConstants>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
-        <UseCurrentRuntimeIdentifier Condition="'$(UseCurrentRuntimeIdentifier)' == ''">true</UseCurrentRuntimeIdentifier>
         <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
         <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
         <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
