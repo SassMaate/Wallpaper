@@ -30,7 +30,11 @@ namespace Sucrose.Portal.Controls
                 bitmap.DecodePixelWidth = 360;
 
                 bitmap.EndInit();
-                bitmap.Freeze();
+
+                if (bitmap.CanFreeze && !bitmap.IsFrozen)
+                {
+                    bitmap.Freeze();
+                }
 
                 return bitmap;
             });

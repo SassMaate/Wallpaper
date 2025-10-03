@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Windows.Media.Imaging;
-using Wpf.Ui;
+﻿using Wpf.Ui;
 using Wpf.Ui.Controls;
 using SPSBS = Sucrose.Portal.Services.BackdropService;
 using SPSCES = Sucrose.Portal.Services.CultureService;
@@ -38,10 +36,6 @@ namespace Sucrose.Portal.Manage
         public static Dictionary<string, bool> StoreDownloading = new();
 
         public static readonly SymbolRegular AllIcon = SymbolRegular.Home24;
-
-        public static readonly Dictionary<string, BitmapImage> Images = new();
-
-        public static readonly Dictionary<string, FileStream> ImageStream = new();
 
         public static readonly SymbolRegular DefaultIcon = SymbolRegular.Wallpaper24;
 
