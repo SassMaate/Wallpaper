@@ -1,6 +1,7 @@
 ﻿using Sucrose.XamlAnimatedGif.Decoding;
 using Sucrose.XamlAnimatedGif.Decompression;
 using Sucrose.XamlAnimatedGif.Extensions;
+using System.Collections.Concurrent;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows;
@@ -16,7 +17,7 @@ namespace Sucrose.XamlAnimatedGif
         private readonly Uri _sourceUri;
         private readonly bool _isSourceStreamOwner;
         private readonly GifDataStream _metadata;
-        private readonly Dictionary<int, GifPalette> _palettes;
+        private readonly ConcurrentDictionary<int, GifPalette> _palettes;
         private readonly WriteableBitmap _bitmap;
         private readonly int _stride;
         private readonly byte[] _previousBackBuffer;
@@ -309,9 +310,9 @@ namespace Sucrose.XamlAnimatedGif
             return bitmap;
         }
 
-        private static Dictionary<int, GifPalette> CreatePalettes(GifDataStream metadata)
+        private static ConcurrentDictionary<int, GifPalette> CreatePalettes(GifDataStream metadata)
         {
-            Dictionary<int, GifPalette> palettes = new();
+            ConcurrentDictionary<int, GifPalette> palettes = new();
             Color[] globalColorTable = null;
             if (metadata.Header.LogicalScreenDescriptor.HasGlobalColorTable)
             {

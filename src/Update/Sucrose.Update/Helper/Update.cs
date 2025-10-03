@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Collections.Concurrent;
 using System.Net.Http;
 using SSIIR = Skylark.Standard.Interface.IReleases;
 
@@ -9,7 +10,7 @@ namespace Sucrose.Update.Helper
     {
         private static readonly TimeSpan Time = TimeSpan.FromMinutes(5);
 
-        private static readonly Dictionary<string, CachedData> Cache = new();
+        private static readonly ConcurrentDictionary<string, CachedData> Cache = new();
 
         public static string Releases(string Uri, string UserAgent)
         {

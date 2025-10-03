@@ -1,4 +1,5 @@
-﻿using SEDEST = Skylark.Enum.DuplicateScreenType;
+﻿using System.Collections.Concurrent;
+using SEDEST = Skylark.Enum.DuplicateScreenType;
 using SEDYST = Skylark.Enum.DisplayScreenType;
 using SEEST = Skylark.Enum.ExpandScreenType;
 using SEIT = Skylark.Enum.InputType;
@@ -11,7 +12,7 @@ namespace Sucrose.Manager.Manage
 {
     public static class Engine
     {
-        public static Dictionary<string, string> CefArguments => SMMI.EngineSettingManager.GetSetting(SMMCE.CefArguments, new Dictionary<string, string>());
+        public static ConcurrentDictionary<string, string> CefArguments => SMMI.EngineSettingManager.GetSetting(SMMCE.CefArguments, new ConcurrentDictionary<string, string>());
 
         public static int VolumeSilentSensitivity => SHS.Clamp(SMMI.EngineSettingManager.GetSettingStable(SMMCE.VolumeSilentSensitivity, 5), 1, 10);
 

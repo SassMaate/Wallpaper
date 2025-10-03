@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Collections.Concurrent;
 using System.IO;
 using System.Windows;
 using System.Windows.Media;
@@ -127,7 +128,7 @@ namespace Sucrose.Portal.ViewModels.Windows
 
         private void Information()
         {
-            Dictionary<string, string> Information = new()
+            ConcurrentDictionary<string, string> Information = new()
             {
                 ["Version"] = Version,
                 ["Framework"] = Framework,

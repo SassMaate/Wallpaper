@@ -1,4 +1,5 @@
-﻿using SMMG = Sucrose.Manager.Manage.General;
+﻿using System.Collections.Concurrent;
+using SMMG = Sucrose.Manager.Manage.General;
 using SPMI = Sucrose.Property.Manage.Internal;
 using SRER = Sucrose.Resources.Extension.Resources;
 
@@ -10,7 +11,7 @@ namespace Sucrose.Property.Helper
         {
             if (SPMI.Properties.PropertyLocalization != null && SPMI.Properties.PropertyLocalization.Any())
             {
-                if (SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture, out Dictionary<string, string> Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpper(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpperInvariant(), out Pairs))
+                if (SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture, out ConcurrentDictionary<string, string> Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpper(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpperInvariant(), out Pairs))
                 {
                     if (Pairs != null && Pairs.TryGetValue(Key, out string Value))
                     {

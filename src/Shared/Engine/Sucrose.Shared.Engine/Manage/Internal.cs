@@ -1,4 +1,5 @@
-﻿using System.Windows.Threading;
+﻿using System.Collections.Concurrent;
+using System.Windows.Threading;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
 using SSESB = Sucrose.Shared.Engine.Setting.Browser;
@@ -198,60 +199,60 @@ namespace Sucrose.Shared.Engine.Manage
             "--disable-features=MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
         };
 
-        public static Dictionary<string, string> CefArguments = new()
+        public static ConcurrentDictionary<string, string> CefArguments = new()
         {
-            //{ "enable-gpu", "1" },
-            //{ "enable-gpu-vsync", "1" },
-            { "disable-gpu-compositing", "1" },
+            //["enable-gpu"] = "1",
+            //["enable-gpu-vsync"] = "1",
+            ["disable-gpu-compositing"] = "1",
 
-            { "disable-direct-write", "1" },
-            //{ "disable-frame-rate-limit", "1" },
-            { "enable-begin-frame-scheduling", "1" },
-            { "disable-breakpad", "1" },
-            { "disable-extensions", "1" },
-            { "disable-third-party-extensions", "1" },
+            ["disable-direct-write"] = "1",
+            //["disable-frame-rate-limit"] = "1",
+            ["enable-begin-frame-scheduling"] = "1",
+            ["disable-breakpad"] = "1",
+            ["disable-extensions"] = "1",
+            ["disable-third-party-extensions"] = "1",
 
-            { "multi-threaded-message-loop", "1" },
-            { "no-sandbox", "1" },
-            { "off-screen-rendering-enabled", "1" },
+            ["multi-threaded-message-loop"] = "1",
+            ["no-sandbox"] = "1",
+            ["off-screen-rendering-enabled"] = "1",
 
-            { "disable-back-forward-cache", "1" },
+            ["disable-back-forward-cache"] = "1",
 
-            { "disable-web-security", "1" },
-            { "disable-geolocation", "1" },
-            { "disable-oor-cors", "1" },
+            ["disable-web-security"] = "1",
+            ["disable-geolocation"] = "1",
+            ["disable-oor-cors"] = "1",
 
-            { "disable-surfaces", "1" },
+            ["disable-surfaces"] = "1",
 
-            { "autoplay-policy", "no-user-gesture-required" },
+            ["autoplay-policy"] = "no-user-gesture-required",
 
-            { "enable-media-stream", "1" },
-            { "enable-accelerated-video-decode", "1" },
+            ["enable-media-stream"] = "1",
+            ["enable-accelerated-video-decode"] = "1",
 
-            { "allow-running-insecure-content", "1" },
-            { "use-fake-ui-for-media-stream", "1" },
-            { "enable-usermedia-screen-capture", "1" },
-            { "enable-usermedia-screen-capturing", "1" },
-            { "debug-plugin-loading", "1" },
-            { "allow-outdated-plugins", "1" },
-            { "always-authorize-plugins", "1" },
-            { "enable-npapi", "1" },
+            ["allow-running-insecure-content"] = "1",
+            ["use-fake-ui-for-media-stream"] = "1",
+            ["enable-usermedia-screen-capture"] = "1",
+            ["enable-usermedia-screen-capturing"] = "1",
+            ["debug-plugin-loading"] = "1",
+            ["allow-outdated-plugins"] = "1",
+            ["always-authorize-plugins"] = "1",
+            ["enable-npapi"] = "1",
 
-            { "disable-speech-input", "1" },
+            ["disable-speech-input"] = "1",
 
-            { "allow-file-access", "1" },
-            { "allow-file-access-from-files", "1" },
-            { "allow-file-access-from-file-urls", "1" },
-            { "allow-universal-access-from-files", "1" },
+            ["allow-file-access"] = "1",
+            ["allow-file-access-from-files"] = "1",
+            ["allow-file-access-from-file-urls"] = "1",
+            ["allow-universal-access-from-files"] = "1",
 
-            { "unsafely-disable-devtools-self-xss-warnings", "1" },
+            ["unsafely-disable-devtools-self-xss-warnings"] = "1",
 
-            { "disable-site-isolation-trials", "1" },
-            { "disable-blink-features", "BlockCredentialedSubresources" },
+            ["disable-site-isolation-trials"] = "1",
+            ["disable-blink-features"] = "BlockCredentialedSubresources",
 
-            { "enable-features", "ThirdPartyStoragePartitioning,PartitionedCookies" },
+            ["enable-features"] = "ThirdPartyStoragePartitioning,PartitionedCookies",
 
-            { "disable-features", "MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins" }
+            ["disable-features"] = "MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
         };
     }
 }

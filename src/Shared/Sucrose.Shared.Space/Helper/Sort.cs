@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Concurrent;
+using System.IO;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SSDESKT = Sucrose.Shared.Dependency.Enum.SortKindType;
@@ -13,7 +14,7 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static List<string> Theme(List<string> Themes)
         {
-            Dictionary<string, object> SortThemes = new();
+            ConcurrentDictionary<string, object> SortThemes = new();
 
             foreach (string Theme in Themes.ToList())
             {
@@ -26,15 +27,15 @@ namespace Sucrose.Shared.Space.Helper
 
                     if (SSDMMP.LibrarySortMode == SSDESMT.Name)
                     {
-                        SortThemes.Add(Theme, Info.Title);
+                        SortThemes.TryAdd(Theme, Info.Title);
                     }
                     else if (SSDMMP.LibrarySortMode == SSDESMT.Creation)
                     {
-                        SortThemes.Add(Theme, Directory.GetCreationTime(Path.Combine(SMML.Location, Theme)));
+                        SortThemes.TryAdd(Theme, Directory.GetCreationTime(Path.Combine(SMML.Location, Theme)));
                     }
                     else if (SSDMMP.LibrarySortMode == SSDESMT.Modification)
                     {
-                        SortThemes.Add(Theme, File.GetLastWriteTime(InfoPath));
+                        SortThemes.TryAdd(Theme, File.GetLastWriteTime(InfoPath));
                     }
                 }
             }
@@ -57,9 +58,9 @@ namespace Sucrose.Shared.Space.Helper
             return Themes;
         }
 
-        public static (List<string>, Dictionary<string, string>) Theme(List<string> Themes, Dictionary<string, string> Searches)
+        public static (List<string>, ConcurrentDictionary<string, string>) Theme(List<string> Themes, ConcurrentDictionary<string, string> Searches)
         {
-            Dictionary<string, object> SortThemes = new();
+            ConcurrentDictionary<string, object> SortThemes = new();
 
             foreach (string Theme in Themes.ToList())
             {
@@ -74,19 +75,19 @@ namespace Sucrose.Shared.Space.Helper
                         .Concat(Info.Description.Split(' '))
                         .Concat(Info.Tags?.SelectMany(Tag => Tag.Split(' ')) ?? Array.Empty<string>());
 
-                    Searches.Add(Theme, SSSHR.RemoveExtraSpaces(string.Join(" ", SearchText.Select(Word => SSSHR.RemovePunctuation(Word).ToLowerInvariant()).Distinct())));
+                    Searches.TryAdd(Theme, SSSHR.RemoveExtraSpaces(string.Join(" ", SearchText.Select(Word => SSSHR.RemovePunctuation(Word).ToLowerInvariant()).Distinct())));
 
                     if (SSDMMP.LibrarySortMode == SSDESMT.Name)
                     {
-                        SortThemes.Add(Theme, Info.Title);
+                        SortThemes.TryAdd(Theme, Info.Title);
                     }
                     else if (SSDMMP.LibrarySortMode == SSDESMT.Creation)
                     {
-                        SortThemes.Add(Theme, Directory.GetCreationTime(Path.Combine(SMML.Location, Theme)));
+                        SortThemes.TryAdd(Theme, Directory.GetCreationTime(Path.Combine(SMML.Location, Theme)));
                     }
                     else if (SSDMMP.LibrarySortMode == SSDESMT.Modification)
                     {
-                        SortThemes.Add(Theme, File.GetLastWriteTime(InfoPath));
+                        SortThemes.TryAdd(Theme, File.GetLastWriteTime(InfoPath));
                     }
                 }
             }

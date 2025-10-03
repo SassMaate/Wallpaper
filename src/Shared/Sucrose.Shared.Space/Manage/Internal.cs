@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Concurrent;
+using System.IO;
 using SEAT = Skylark.Enum.AssemblyType;
 using SHA = Skylark.Helper.Assemblies;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
@@ -55,26 +56,26 @@ namespace Sucrose.Shared.Space.Manage
 
         public static string Backgroundog => Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.Backgroundog), SMMRA.Backgroundog);
 
-        public static Dictionary<SSDEET, string> EngineLive => new()
+        public static ConcurrentDictionary<SSDEET, string> EngineLive => new()
         {
-            { SSDEET.AuroraLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.AuroraLive), SMMRA.AuroraLive) },
-            { SSDEET.NebulaLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.NebulaLive), SMMRA.NebulaLive) },
-            { SSDEET.VexanaLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.VexanaLive), SMMRA.VexanaLive) },
-            { SSDEET.XavierLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.XavierLive), SMMRA.XavierLive) },
-            { SSDEET.WebViewLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.WebViewLive), SMMRA.WebViewLive) },
-            { SSDEET.CefSharpLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.CefSharpLive), SMMRA.CefSharpLive) },
-            { SSDEET.MpvPlayerLive, Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.MpvPlayerLive), SMMRA.MpvPlayerLive) }
+            [SSDEET.AuroraLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.AuroraLive), SMMRA.AuroraLive),
+            [SSDEET.NebulaLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.NebulaLive), SMMRA.NebulaLive),
+            [SSDEET.VexanaLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.VexanaLive), SMMRA.VexanaLive),
+            [SSDEET.XavierLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.XavierLive), SMMRA.XavierLive),
+            [SSDEET.WebViewLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.WebViewLive), SMMRA.WebViewLive),
+            [SSDEET.CefSharpLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.CefSharpLive), SMMRA.CefSharpLive),
+            [SSDEET.MpvPlayerLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.MpvPlayerLive), SMMRA.MpvPlayerLive)
         };
 
-        public static Dictionary<string, string> TextEngineLive => new()
+        public static ConcurrentDictionary<string, string> TextEngineLive => new()
         {
-            { SMMRA.AuroraLive, EngineLive[SSDEET.AuroraLive] },
-            { SMMRA.NebulaLive, EngineLive[SSDEET.NebulaLive] },
-            { SMMRA.VexanaLive, EngineLive[SSDEET.VexanaLive] },
-            { SMMRA.XavierLive, EngineLive[SSDEET.XavierLive] },
-            { SMMRA.WebViewLive, EngineLive[SSDEET.WebViewLive] },
-            { SMMRA.CefSharpLive, EngineLive[SSDEET.CefSharpLive] },
-            { SMMRA.MpvPlayerLive, EngineLive[SSDEET.MpvPlayerLive] }
+            [SMMRA.AuroraLive] = EngineLive[SSDEET.AuroraLive],
+            [SMMRA.NebulaLive] = EngineLive[SSDEET.NebulaLive],
+            [SMMRA.VexanaLive] = EngineLive[SSDEET.VexanaLive],
+            [SMMRA.XavierLive] = EngineLive[SSDEET.XavierLive],
+            [SMMRA.WebViewLive] = EngineLive[SSDEET.WebViewLive],
+            [SMMRA.CefSharpLive] = EngineLive[SSDEET.CefSharpLive],
+            [SMMRA.MpvPlayerLive] = EngineLive[SSDEET.MpvPlayerLive]
         };
     }
 }

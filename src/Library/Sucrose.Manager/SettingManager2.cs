@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Collections.Concurrent;
 using System.Net;
 using SMCEC = Sucrose.Manager.Converter.EnumConverter;
 using SMCIPAC = Sucrose.Manager.Converter.IPAddressConverter;
@@ -123,7 +124,7 @@ namespace Sucrose.Manager
                     }
                     else
                     {
-                        _settings.Properties.Add(pair.Key, ConvertToType<T>(pair.Value));
+                        _settings.Properties.TryAdd(pair.Key, ConvertToType<T>(pair.Value));
                     }
                 }
 
@@ -276,6 +277,17 @@ namespace Sucrose.Manager
                     return JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(value));
                 }
             }
+            else if (type == typeof(ConcurrentDictionary<string, string>))
+            {
+                try
+                {
+                    return JsonConvert.DeserializeObject<T>(value.ToString());
+                }
+                catch
+                {
+                    return JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(value));
+                }
+            }
 
             return (T)value;
         }
@@ -292,7 +304,7 @@ namespace Sucrose.Manager
 
         private class Settings
         {
-            public Dictionary<string, object> Properties { get; set; } = new();
+            public ConcurrentDictionary<string, object> Properties { get; set; } = new();
         }
     }
 }

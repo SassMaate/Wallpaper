@@ -1,4 +1,5 @@
-﻿using Wpf.Ui;
+﻿using System.Collections.Concurrent;
+using Wpf.Ui;
 using Wpf.Ui.Controls;
 using SPSBS = Sucrose.Portal.Services.BackdropService;
 using SPSCES = Sucrose.Portal.Services.CultureService;
@@ -31,68 +32,69 @@ namespace Sucrose.Portal.Manage
 
         public static IContentDialogService ContentDialogService;
 
-        public static Dictionary<string, bool> StoreDownloader = new();
-
-        public static Dictionary<string, bool> StoreDownloading = new();
-
         public static readonly SymbolRegular AllIcon = SymbolRegular.Home24;
+
+        public static ConcurrentDictionary<string, bool> StoreDownloader = new();
+
+        public static ConcurrentDictionary<string, bool> StoreDownloading = new();
 
         public static readonly SymbolRegular DefaultIcon = SymbolRegular.Wallpaper24;
 
         public static WindowBackdropType DefaultBackdropType = WindowBackdropType.None;
 
-        public static readonly Dictionary<string, SymbolRegular> CategoryIcons = new()
+        public static readonly ConcurrentDictionary<string, SymbolRegular> CategoryIcons = new()
         {
-            { "Brands", SymbolRegular.Tag24 },
-            { "Game", SymbolRegular.Games24 },
-            { "Love", SymbolRegular.Heart24 },
-            { "Time", SymbolRegular.Clock24 },
-            { "Retro", SymbolRegular.Color24 },
-            { "Sports", SymbolRegular.Sport24 },
-            { "Software", SymbolRegular.Code24 },
-            { "Fantasy", SymbolRegular.Crown20 },
-            { "Line Art", SymbolRegular.Line24 },
-            { "Galaxy", SymbolRegular.Rocket24 },
-            { "Persons", SymbolRegular.Person24 },
-            { "Anime", SymbolRegular.Filmstrip24 },
-            { "Halloween", SymbolRegular.Broom24 }, //SymbolRegular.Wand24
-            { "Science", SymbolRegular.Syringe24 },
-            { "Nature", SymbolRegular.EarthLeaf24 },
-            { "Music", SymbolRegular.MusicNote224 },
-            { "Abstract", SymbolRegular.HandDraw24 },
-            { "Animals", SymbolRegular.AnimalCat24 },
-            { "Cute", SymbolRegular.AnimalRabbit24 },
-            { "Seasons", SymbolRegular.LeafThree24 },
-            { "Colorful", SymbolRegular.Lightbulb24 },
-            { "Digital Art", SymbolRegular.Tablet24 },
-            { "Medieval", SymbolRegular.Hourglass24 },
-            { "Vehicles", SymbolRegular.VehicleCar24 },
-            { "Comic Books", SymbolRegular.BookOpen24 },
-            { "Food and Drinks", SymbolRegular.Food24 },
-            { "Dynamic", SymbolRegular.ClockToolbox24 },
-            { "Horror", SymbolRegular.EmojiSurprise24 },
-            { "Lifestyle", SymbolRegular.StyleGuide24 },
-            { "System", SymbolRegular.ChartMultiple24 },
-            { "Fashion", SymbolRegular.Accessibility24 },
-            { "Holidays", SymbolRegular.SwimmingPool24 },
-            { "Animation", SymbolRegular.StarEmphasis24 },
-            { "Cities and Places", SymbolRegular.City24 },
-            { "Education", SymbolRegular.HatGraduation24 },
-            { "Film and TV", SymbolRegular.MoviesAndTv24 },
-            { "Technology", SymbolRegular.PhoneDesktop24 },
-            { "Pixel Art", SymbolRegular.CalligraphyPen24 },
-            { "Science Fiction", SymbolRegular.Thinking24 },
-            { "Black and White", SymbolRegular.DarkTheme24 },
-            { "Sky", SymbolRegular.WeatherPartlyCloudyDay24 },
-            { "Geometric Patterns", SymbolRegular.Triangle20 },
-            { "Underwater and Marine", SymbolRegular.Water24 },
-            { "Ambience", SymbolRegular.HeadphonesSoundWave24 },
-            { "Colorful Gradients", SymbolRegular.ColorFill24 },
-            { "Landscape", SymbolRegular.RectangleLandscape24 },
-            { "Clouds and Skies", SymbolRegular.WeatherCloudy24 },
-            { "Enchanted Forests", SymbolRegular.TreeEvergreen20 },
-            { "Minimalist", SymbolRegular.ArrowMinimizeVertical24 },
-            { "Kids and Cartoon", SymbolRegular.VideoPersonSparkle48 }
+            ["Brands"] = SymbolRegular.Tag24,
+            ["Brands"] = SymbolRegular.Tag24,
+            ["Game"] = SymbolRegular.Games24,
+            ["Love"] = SymbolRegular.Heart24,
+            ["Time"] = SymbolRegular.Clock24,
+            ["Retro"] = SymbolRegular.Color24,
+            ["Sports"] = SymbolRegular.Sport24,
+            ["Software"] = SymbolRegular.Code24,
+            ["Fantasy"] = SymbolRegular.Crown20,
+            ["Line Art"] = SymbolRegular.Line24,
+            ["Galaxy"] = SymbolRegular.Rocket24,
+            ["Persons"] = SymbolRegular.Person24,
+            ["Anime"] = SymbolRegular.Filmstrip24,
+            ["Halloween"] = SymbolRegular.Broom24, //SymbolRegular.Wand24
+            ["Science"] = SymbolRegular.Syringe24,
+            ["Nature"] = SymbolRegular.EarthLeaf24,
+            ["Music"] = SymbolRegular.MusicNote224,
+            ["Abstract"] = SymbolRegular.HandDraw24,
+            ["Animals"] = SymbolRegular.AnimalCat24,
+            ["Cute"] = SymbolRegular.AnimalRabbit24,
+            ["Seasons"] = SymbolRegular.LeafThree24,
+            ["Colorful"] = SymbolRegular.Lightbulb24,
+            ["Digital Art"] = SymbolRegular.Tablet24,
+            ["Medieval"] = SymbolRegular.Hourglass24,
+            ["Vehicles"] = SymbolRegular.VehicleCar24,
+            ["Comic Books"] = SymbolRegular.BookOpen24,
+            ["Food and Drinks"] = SymbolRegular.Food24,
+            ["Dynamic"] = SymbolRegular.ClockToolbox24,
+            ["Horror"] = SymbolRegular.EmojiSurprise24,
+            ["Lifestyle"] = SymbolRegular.StyleGuide24,
+            ["System"] = SymbolRegular.ChartMultiple24,
+            ["Fashion"] = SymbolRegular.Accessibility24,
+            ["Holidays"] = SymbolRegular.SwimmingPool24,
+            ["Animation"] = SymbolRegular.StarEmphasis24,
+            ["Cities and Places"] = SymbolRegular.City24,
+            ["Education"] = SymbolRegular.HatGraduation24,
+            ["Film and TV"] = SymbolRegular.MoviesAndTv24,
+            ["Technology"] = SymbolRegular.PhoneDesktop24,
+            ["Pixel Art"] = SymbolRegular.CalligraphyPen24,
+            ["Science Fiction"] = SymbolRegular.Thinking24,
+            ["Black and White"] = SymbolRegular.DarkTheme24,
+            ["Sky"] = SymbolRegular.WeatherPartlyCloudyDay24,
+            ["Geometric Patterns"] = SymbolRegular.Triangle20,
+            ["Underwater and Marine"] = SymbolRegular.Water24,
+            ["Ambience"] = SymbolRegular.HeadphonesSoundWave24,
+            ["Colorful Gradients"] = SymbolRegular.ColorFill24,
+            ["Landscape"] = SymbolRegular.RectangleLandscape24,
+            ["Clouds and Skies"] = SymbolRegular.WeatherCloudy24,
+            ["Enchanted Forests"] = SymbolRegular.TreeEvergreen20,
+            ["Minimalist"] = SymbolRegular.ArrowMinimizeVertical24,
+            ["Kids and Cartoon"] = SymbolRegular.VideoPersonSparkle48
         };
     }
 }
