@@ -230,17 +230,17 @@ namespace Sucrose.Property
                             {
                                 SPMI.Properties = SSTHP.ReadJson(SPMI.PropertiesFile);
                             }
-                            catch (NotSupportedException Ex)
+                            catch (NotSupportedException Exception)
                             {
                                 SSSHF.Delete(SPMI.PropertiesFile);
 
-                                throw new NotSupportedException(Ex.Message);
+                                throw new NotSupportedException(Exception.Message);
                             }
-                            catch (Exception Ex)
+                            catch (Exception Exception)
                             {
                                 SSSHF.Delete(SPMI.PropertiesFile);
 
-                                throw new Exception(Ex.Message, Ex.InnerException);
+                                throw new Exception(Exception.Message, Exception.InnerException);
                             }
 
                             SPVMW MainWindow = new();

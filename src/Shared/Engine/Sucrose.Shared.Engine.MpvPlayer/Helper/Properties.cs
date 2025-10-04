@@ -51,17 +51,17 @@ namespace Sucrose.Shared.Engine.MpvPlayer.Helper
             {
                 SSEMI.Properties = SSTHP.ReadJson(SSEMI.PropertiesFile);
             }
-            catch (NotSupportedException Ex)
+            catch (NotSupportedException Exception)
             {
                 SSSHF.Delete(SSEMI.PropertiesFile);
 
-                throw new NotSupportedException(Ex.Message);
+                throw new NotSupportedException(Exception.Message);
             }
-            catch (Exception Ex)
+            catch (Exception Exception)
             {
                 SSSHF.Delete(SSEMI.PropertiesFile);
 
-                throw new Exception(Ex.Message, Ex.InnerException);
+                throw new Exception(Exception.Message, Exception.InnerException);
             }
 
             SSEMI.Properties.State = true;
