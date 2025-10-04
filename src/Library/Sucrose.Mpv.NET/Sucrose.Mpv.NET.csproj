@@ -11,6 +11,7 @@
         <RuntimeIdentifiers>win-arm64;win-x64;win-x86</RuntimeIdentifiers>
         <TargetFrameworks>net9.0-windows</TargetFrameworks>
         <AssemblyVersion>$(Version)</AssemblyVersion>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <ImplicitUsings>enable</ImplicitUsings>
         <AnalysisLevel>preview</AnalysisLevel>
         <FileVersion>$(Version)</FileVersion>

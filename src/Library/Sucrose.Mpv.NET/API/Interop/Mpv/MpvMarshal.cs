@@ -107,7 +107,11 @@ namespace Sucrose.Mpv.NET.API.Interop
             IntPtr functionPtr = PlatformDll.Utils.GetProcAddress(dllHandle, functionName);
             if (functionPtr == IntPtr.Zero)
             {
-                return null;
+                functionPtr = NativeLibrary.GetExport(dllHandle, functionName);
+                if (functionPtr == IntPtr.Zero)
+                {
+                    return null;
+                }
             }
 
             return (TDelegate)(object)Marshal.GetDelegateForFunctionPointer(functionPtr, typeof(TDelegate));

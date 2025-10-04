@@ -1,6 +1,7 @@
 ﻿using Sucrose.Mpv.NET.API;
 using System.Diagnostics;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace Sucrose.Mpv.NET.Player
 {
@@ -255,11 +256,15 @@ namespace Sucrose.Mpv.NET.Player
                     return TimeSpan.Zero;
                 }
 
-                double duration;
+                double duration = 0;
 
                 lock (mpvLock)
                 {
-                    duration = API.GetPropertyDouble("duration");
+                    try
+                    {
+                        duration = API.GetPropertyDouble("duration");
+                    }
+                    catch { }
                 }
 
                 return TimeSpan.FromSeconds(duration);
@@ -525,8 +530,8 @@ namespace Sucrose.Mpv.NET.Player
 
         private readonly string[] possibleLibMpvPaths = new string[]
         {
-            "mpv-2.dll",
-            @"lib\mpv-2.dll"
+            "libmpv-2.dll",
+            @"lib\libmpv-2.dll"
         };
 
         private readonly string[] possibleYtdlHookPaths = new string[]
@@ -588,7 +593,21 @@ namespace Sucrose.Mpv.NET.Player
             }
             else
             {
-                string foundPath = possibleLibMpvPaths.FirstOrDefault(File.Exists);
+                string suffix;
+                if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                {
+                    suffix = ".dll";
+                }
+                else
+                {
+                    suffix = ".so";
+                }
+
+                string foundPath = possibleLibMpvPaths
+                    .Select(p => Path.Combine(AppContext.BaseDirectory, p))
+                    .Where(p => p.EndsWith(suffix))
+                    .FirstOrDefault(File.Exists);
+
                 if (foundPath != null)
                 {
                     InitialiseMpv(foundPath);
@@ -629,10 +648,20 @@ namespace Sucrose.Mpv.NET.Player
             API.ObserveProperty("paused-for-cache", MpvFormat.String, pausedForCacheUserData);
         }
 
-        private void SetMpvHost(IntPtr hwnd)
+        public void SetMpvHost(IntPtr hwnd)
         {
             long playerHostPtrLong = hwnd.ToInt64();
             API.SetPropertyLong("wid", playerHostPtrLong);
+        }
+
+        public void SetPanelSize(int width, int height)
+        {
+            API.SetPanelSize(width, height);
+        }
+
+        public void SetPanelScale(float scaleX, float scaleY)
+        {
+            API.SetPanelScale(scaleX, scaleY);
         }
 
         /// <summary>
@@ -665,6 +694,29 @@ namespace Sucrose.Mpv.NET.Player
             }
         }
 
+        public void LoadAsync(string path, bool force = false)
+        {
+            Guard.AgainstNullOrEmptyOrWhiteSpaceString(path, nameof(path));
+
+            lock (mpvLock)
+            {
+                API.SetPropertyString("pause", AutoPlay ? "no" : "yes");
+
+                LoadMethod loadMethod = LoadMethod.Replace;
+
+                // If there is media already playing, we append
+                // the desired video onto the playlist.
+                // (Unless force is true.)
+                if (IsPlaying && !force)
+                {
+                    loadMethod = LoadMethod.Append;
+                }
+
+                string loadMethodString = LoadMethodHelper.ToString(loadMethod);
+                API.CommandAsync(0, "loadfile", path, loadMethodString);
+            }
+        }
+
         /// <summary>
         /// Loads a collection of file paths as a playlist into mpv. If called while media is playing,
         /// the specified media collection will be appended to the playlist. If yt-dlp is enabled,
@@ -686,7 +738,7 @@ namespace Sucrose.Mpv.NET.Player
                 {
                     LoadMethod loadMethod = LoadMethod.Append;
 
-                    if (first && (!force || !IsPlaying))
+                    if (first && (force || !IsPlaying))
                     {
                         loadMethod = LoadMethod.Replace;
                     }
@@ -774,6 +826,17 @@ namespace Sucrose.Mpv.NET.Player
             IsPlaying = false;
         }
 
+        public void StopAsync()
+        {
+            lock (mpvLock)
+            {
+                API.CommandAsync(0, "stop");
+            }
+
+            IsMediaLoaded = false;
+            IsPlaying = false;
+        }
+
         /// <summary>
         /// Goes to the start of the media file and resumes playback.
         /// </summary>
@@ -807,6 +870,23 @@ namespace Sucrose.Mpv.NET.Player
                 lock (mpvLock)
                 {
                     API.Command("playlist-next");
+                }
+
+                return true;
+            }
+            catch (MpvAPIException exception)
+            {
+                return HandleCommandMpvAPIException(exception);
+            }
+        }
+
+        public bool PlaylistPlayIndex(int index)
+        {
+            try
+            {
+                lock (mpvLock)
+                {
+                    API.Command("playlist-play-index", $"{index}");
                 }
 
                 return true;

@@ -1,9 +1,12 @@
-﻿using Sucrose.Mpv.NET.API.Interop;
+﻿using Sucrose.Mpv.NET.API.Enums;
+using Sucrose.Mpv.NET.API.Interop;
+using Sucrose.Mpv.NET.API.Structs;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 namespace Sucrose.Mpv.NET.API
 {
-    public partial class Mpv : IDisposable
+    public unsafe partial class Mpv : IDisposable
     {
         public IMpvFunctions Functions
         {
@@ -46,8 +49,43 @@ namespace Sucrose.Mpv.NET.API
             }
         }
 
+        public IntPtr RaCtx
+        {
+            get => raCtx;
+            private set
+            {
+                if (value == IntPtr.Zero)
+                {
+                    throw new ArgumentException("Invalid handle pointer.", nameof(raCtx));
+                }
+
+                raCtx = value;
+            }
+        }
+
+        public MpvRenderContext* RenderCtx
+        {
+            get => renderCtx;
+            private set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentException("Invalid handle pointer.", nameof(renderCtx));
+                }
+
+                renderCtx = value;
+            }
+        }
+
+        public MpvRenderUpdateFn UpdateCallback { get; set; }
+        public MpvOpenglInitParams_get_proc_addressCallback GetProcAddress { get; set; }
+
         private IMpvEventLoop eventLoop;
         private IntPtr handle;
+        private IntPtr raCtx;
+        private MpvRenderContext* renderCtx;
+        private MpvOpenglInitParams_get_proc_addressCallback _glGetProcAddress;
+        private MpvRenderUpdateFn _mpvRenderUpdate;
 
         private bool disposed = false;
 
@@ -79,6 +117,9 @@ namespace Sucrose.Mpv.NET.API
             EventLoop = eventLoop;
 
             InitialiseMpv();
+
+            eventLoop = new MpvEventLoop(EventCallback, Handle, Functions);
+            eventLoop.Start();
         }
 
         internal Mpv(IntPtr handle, IMpvFunctions functions)
@@ -106,6 +147,140 @@ namespace Sucrose.Mpv.NET.API
             {
                 throw MpvAPIException.FromError(error, Functions);
             }
+        }
+
+        public void SetPanelSize(int width, int height)
+        {
+            if (RaCtx != IntPtr.Zero)
+            {
+                Functions.SetPanelSize(RaCtx, width, height);
+            }
+        }
+
+        public void SetPanelScale(float scaleX, float scaleY)
+        {
+            if (RaCtx != IntPtr.Zero)
+            {
+                Functions.SetPanelScale(RaCtx, scaleX, scaleY);
+            }
+        }
+
+
+        public void EnsureRenderContextCreated()
+        {
+            if (renderCtx == null)
+            {
+                _glGetProcAddress = GLGetProcAddress;
+                _mpvRenderUpdate = MPVRenderUpdate;
+
+                nint MPV_RENDER_PARAM_API_TYPE_Data = Marshal.StringToHGlobalAnsi("opengl");
+
+                MpvOpenglInitParams openglInitParams = new()
+                {
+                    get_proc_address = _glGetProcAddress,
+                    get_proc_address_ctx = null
+                };
+
+                nint MPV_RENDER_PARAM_OPENGL_INIT_PARAMS_Data = Marshal.AllocHGlobal(Marshal.SizeOf<MpvOpenglInitParams>());
+                Marshal.StructureToPtr(openglInitParams, MPV_RENDER_PARAM_OPENGL_INIT_PARAMS_Data, false);
+
+                MpvRenderParam[] parameters = new MpvRenderParam[]
+                {
+                    new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_API_TYPE, data = (void*)MPV_RENDER_PARAM_API_TYPE_Data},
+                    new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_OPENGL_INIT_PARAMS, data = (void*)MPV_RENDER_PARAM_OPENGL_INIT_PARAMS_Data},
+                    new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_INVALID, data = null}
+                };
+
+
+                try
+                {
+                    MpvRenderContext* content = null;
+                    fixed (MpvRenderParam* ptr = parameters)
+                    {
+                        int result = Functions.MpvRenderContextCreate(&content, handle, ptr);
+                        if (result < 0)
+                        {
+                            throw new MpvAPIException("Failed to create new client.");
+                        }
+                    }
+                    RenderCtx = content;
+
+                    Functions.MpvRenderContextSetUpdateCallback(RenderCtx, _mpvRenderUpdate, IntPtr.Zero);
+                }
+                finally
+                {
+                    Marshal.FreeHGlobal(MPV_RENDER_PARAM_API_TYPE_Data);
+                    Marshal.FreeHGlobal(MPV_RENDER_PARAM_OPENGL_INIT_PARAMS_Data);
+                }
+            }
+        }
+
+        public void ReleaseRenderContext()
+        {
+            if (renderCtx == null)
+            {
+                return;
+            }
+
+            Functions.MpvRenderContextFree(renderCtx);
+            renderCtx = null;
+        }
+
+        public void OpenGLRender(int width, int height, int fbo, int format = 0, int flipY = 0)
+        {
+            if (renderCtx == null || disposed)
+            {
+                return;
+            }
+
+            MpvOpenglFbo[] fboArray = new MpvOpenglFbo[]
+            {
+                new(){ w = width, h = height, fbo = fbo, internal_format = format },
+            };
+
+            int[] flipYArray = new int[] { flipY };
+
+            fixed (MpvOpenglFbo* fboPtr = fboArray)
+            {
+                fixed (int* flipYPtr = flipYArray)
+                {
+                    MpvRenderParam[] parameters = new MpvRenderParam[]
+                    {
+                        new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_OPENGL_FBO, data = fboPtr },
+                        new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_FLIP_Y, data = flipYPtr},
+                        new(){ type = MpvRenderParamType.MPV_RENDER_PARAM_INVALID, data = null }
+                    };
+
+                    fixed (MpvRenderParam* renderParamPtr = parameters)
+                    {
+                        int result = Functions.MpvRenderContextRender(renderCtx, renderParamPtr);
+                        if (result < 0)
+                        {
+                            throw new MpvAPIException("Failed to render.");
+                        }
+                    }
+                }
+            }
+        }
+
+        private IntPtr GLGetProcAddress(IntPtr ctx, string name)
+        {
+            if (GetProcAddress == null)
+            {
+                return IntPtr.Zero;
+            }
+
+            return GetProcAddress(ctx, name);
+        }
+
+        private void MPVRenderUpdate(IntPtr ctx)
+        {
+            if (UpdateCallback == null)
+            {
+                return;
+            }
+
+            UpdateCallback(ctx);
         }
 
         public long ClientAPIVersion()
@@ -208,6 +383,7 @@ namespace Sucrose.Mpv.NET.API
                 Marshal.Copy(data, 0, dataPtr, dataLength);
 
                 MpvError error = Functions.SetOption(Handle, name, format, dataPtr);
+                //var error = MpvFuntionsStatic.MpvSetProperty(Handle, name, format, dataPtr);
 
                 if (error != MpvError.Success)
                 {
@@ -228,6 +404,7 @@ namespace Sucrose.Mpv.NET.API
             Guard.AgainstNull(data, nameof(data));
 
             MpvError error = Functions.SetOptionString(Handle, name, data);
+            //var error = MpvFuntionsStatic.MpvSetPropertyString(Handle, name, value);
 
             if (error != MpvError.Success)
             {
@@ -255,6 +432,7 @@ namespace Sucrose.Mpv.NET.API
             try
             {
                 MpvError error = Functions.Command(Handle, argsPtr);
+                //var error = MpvFuntionsStatic.MpvCommand(Handle, argsPtr);
 
                 if (error != MpvError.Success)
                 {
@@ -459,7 +637,10 @@ namespace Sucrose.Mpv.NET.API
 
             if (stringPtr == IntPtr.Zero)
             {
-                throw new MpvAPIException("Failed to get property string, invalid pointer.");
+                //throw new MpvAPIException($"Failed to get property {name}, invalid pointer.");
+                Debug.WriteLine($"Failed to get property {name}, invalid pointer.");
+
+                return string.Empty;
             }
 
             try

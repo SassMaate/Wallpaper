@@ -39,6 +39,7 @@ namespace Sucrose.Mpv.NET.API
         public MpvWaitEvent WaitEvent { get; private set; }
         public MpvWakeup Wakeup { get; private set; }
         public MpvSetWakeupCallback SetWakeupCallback { get; private set; }
+        public MpvGetWakeupPipe GetWakeupPipe { get; private set; }
         public MpvWaitAsyncRequests WaitAsyncRequests { get; private set; }
         public MpvHookAdd HookAdd { get; private set; }
         public MpvHookContinue HookContinue { get; private set; }
@@ -46,6 +47,20 @@ namespace Sucrose.Mpv.NET.API
         // Not strictly part of the C API but are used to invoke mpv_get_property with value data type.
         public MpvGetPropertyDouble GetPropertyDouble { get; private set; }
         public MpvGetPropertyLong GetPropertyLong { get; private set; }
+
+        // For composition swapchain
+        public MpvSetPanelSize SetPanelSize { get; private set; }
+        public MpvSetPanelScale SetPanelScale { get; private set; }
+
+        // Render API
+        public MpvRenderContextCreate MpvRenderContextCreate { get; private set; }
+        public MpvRenderContextSetParameter MpvRenderContextSetParameter { get; private set; }
+        public MpvRenderContextGetInfo MpvRenderContextGetInfo { get; private set; }
+        public MpvRenderContextSetUpdateCallback MpvRenderContextSetUpdateCallback { get; private set; }
+        public MpvRenderContextUpdate MpvRenderContextUpdate { get; private set; }
+        public MpvRenderContextRender MpvRenderContextRender { get; private set; }
+        public MpvRenderContextReportSwap MpvRenderContextReportSwap { get; private set; }
+        public MpvRenderContextFree MpvRenderContextFree { get; private set; }
 
         private IntPtr dllHandle;
 
@@ -71,33 +86,40 @@ namespace Sucrose.Mpv.NET.API
 
             if (dllHandle == IntPtr.Zero)
             {
-                int errorCode = Marshal.GetLastWin32Error();
+                int errorCode1 = Marshal.GetLastWin32Error();
 
-                string appArchitecture = "Unknown Architecture";
+                dllHandle = NativeLibrary.Load(dllPath);
+
+                if (dllHandle == IntPtr.Zero)
+                {
+                    int errorCode2 = Marshal.GetLastWin32Error();
+
+                    string appArchitecture = "Unknown Architecture";
 
 #if X86
-                appArchitecture = "x86 (32-bit)";
+                    appArchitecture = "x86 (32-bit)";
 #elif X64
-                appArchitecture = "x64 (64-bit)";
+                    appArchitecture = "x64 (64-bit)";
 #elif ARM64
-                appArchitecture = "ARM64 (64-bit)";
+                    appArchitecture = "ARM64 (64-bit)";
 #endif
 
-                throw new MpvAPIException(
-                    $"Failed to load Mpv DLL. Error Code: {errorCode}.\n" +
-                    $"Detected application architecture: {appArchitecture}.\n" +
-                    "Please ensure you are running the correct version of the application for your system architecture.\n" +
-                    "Ensure you're using the correct libmpv version compatible with this architecture.\n" +
-                    "For x64, use a 64-bit (x86_64) libmpv; for x86, use a 32-bit (i686) libmpv; for ARM64, ensure compatibility with 64-bit (aarch64) libmpv.\n" +
-                    "Check that the required DLLs are present in the application directory, and that your system meets the required dependencies.\n\n" +
-                    "If you believe you have the correct architecture, you can visit https://support.microsoft.com/kb/2977003#latest-microsoft-visual-c-redistributable-version " +
-                    "to check for any issues related to the necessary dependencies and download the required ones to resolve them.\n\n" +
-                    "If you believe you have done everything correctly, please reach out to the appropriate support channels for assistance."
-                );
+                    throw new MpvAPIException(
+                        $"Failed to load Mpv DLL. Error Code: {errorCode1}, {errorCode2}.\n" +
+                        $"Detected application architecture: {appArchitecture}.\n" +
+                        "Please ensure you are running the correct version of the application for your system architecture.\n" +
+                        "Ensure you're using the correct libmpv version compatible with this architecture.\n" +
+                        "For x64, use a 64-bit (x86_64) libmpv; for x86, use a 32-bit (i686) libmpv; for ARM64, ensure compatibility with 64-bit (aarch64) libmpv.\n" +
+                        "Check that the required DLLs are present in the application directory, and that your system meets the required dependencies.\n\n" +
+                        "If you believe you have the correct architecture, you can visit https://support.microsoft.com/kb/2977003#latest-microsoft-visual-c-redistributable-version " +
+                        "to check for any issues related to the necessary dependencies and download the required ones to resolve them.\n\n" +
+                        "If you believe you have done everything correctly, please reach out to the appropriate support channels for assistance."
+                    );
 
-                //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode}. Make sure you're loading the correct architecture DLL.");
-                //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode}. .NET apps by default are 32-bit so make sure you're loading the 32-bit DLL.");
-                //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode}. .NET apps by default are 32-bit so make sure you're loading the correct architecture DLL.");
+                    //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode1}, {errorCode2}. Make sure you're loading the correct architecture DLL.");
+                    //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode1}, {errorCode2}. .NET apps by default are 32-bit so make sure you're loading the 32-bit DLL.");
+                    //throw new MpvAPIException($"Failed to load Mpv DLL. Error Code: {errorCode1}, {errorCode2}. .NET apps by default are 32-bit so make sure you're loading the correct architecture DLL.");
+                }
             }
         }
 
@@ -137,12 +159,28 @@ namespace Sucrose.Mpv.NET.API
             WaitEvent = LoadFunction<MpvWaitEvent>("mpv_wait_event");
             Wakeup = LoadFunction<MpvWakeup>("mpv_wakeup");
             SetWakeupCallback = LoadFunction<MpvSetWakeupCallback>("mpv_set_wakeup_callback");
+            GetWakeupPipe = LoadFunction<MpvGetWakeupPipe>("mpv_get_wakeup_pipe");
             WaitAsyncRequests = LoadFunction<MpvWaitAsyncRequests>("mpv_wait_async_requests");
             HookAdd = LoadFunction<MpvHookAdd>("mpv_hook_add");
             HookContinue = LoadFunction<MpvHookContinue>("mpv_hook_continue");
 
             GetPropertyDouble = LoadFunction<MpvGetPropertyDouble>("mpv_get_property");
             GetPropertyLong = LoadFunction<MpvGetPropertyLong>("mpv_get_property");
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                SetPanelSize = LoadFunction<MpvSetPanelSize>("mpv_set_panel_size");
+                SetPanelScale = LoadFunction<MpvSetPanelScale>("mpv_set_panel_scale");
+            }
+
+            MpvRenderContextCreate = LoadFunction<MpvRenderContextCreate>("mpv_render_context_create");
+            MpvRenderContextSetParameter = LoadFunction<MpvRenderContextSetParameter>("mpv_render_context_set_parameter");
+            MpvRenderContextGetInfo = LoadFunction<MpvRenderContextGetInfo>("mpv_render_context_get_info");
+            MpvRenderContextSetUpdateCallback = LoadFunction<MpvRenderContextSetUpdateCallback>("mpv_render_context_set_update_callback");
+            MpvRenderContextUpdate = LoadFunction<MpvRenderContextUpdate>("mpv_render_context_update");
+            MpvRenderContextRender = LoadFunction<MpvRenderContextRender>("mpv_render_context_render");
+            MpvRenderContextReportSwap = LoadFunction<MpvRenderContextReportSwap>("mpv_render_context_report_swap");
+            MpvRenderContextFree = LoadFunction<MpvRenderContextFree>("mpv_render_context_free");
         }
 
         private TDelegate LoadFunction<TDelegate>(string name) where TDelegate : class
@@ -168,6 +206,7 @@ namespace Sucrose.Mpv.NET.API
                 if (!disposed)
                 {
                     PlatformDll.Utils.FreeLibrary(dllHandle);
+                    NativeLibrary.Free(dllHandle);
                 }
 
                 disposed = true;

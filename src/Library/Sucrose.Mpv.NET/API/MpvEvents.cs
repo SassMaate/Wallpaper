@@ -47,6 +47,8 @@
 
         public event EventHandler QueueOverflow;
 
+        public event EventHandler<long> SwapChainInited;
+
         private void EventCallback(MpvEvent @event)
         {
             MpvEventID eventId = @event.Id;
@@ -111,7 +113,8 @@
                     InvokeSimple(ScriptInputDispatch);
                     break;
                 case MpvEventID.VideoReconfig:
-                    InvokeSimple(VideoReconfig);
+                    //InvokeSimple(VideoReconfig);
+                    HandleVideoChange();
                     break;
                 case MpvEventID.AudioReconfig:
                     InvokeSimple(AudioReconfig);
@@ -132,6 +135,37 @@
                     InvokeSimple(QueueOverflow);
                     break;
             }
+        }
+
+        private void HandleVideoChange()
+        {
+            long swapchainId = 0;
+            long ractxId = 0;
+            try
+            {
+                swapchainId = GetPropertyLong("swapchain-id");
+            }
+            catch (Exception)
+            {
+
+            }
+            try
+            {
+                ractxId = GetPropertyLong("ractx-id");
+            }
+            catch (Exception)
+            {
+
+            }
+            if (swapchainId != 0)
+            {
+                SwapChainInited?.Invoke(this, swapchainId);
+            }
+            if (ractxId != 0 && raCtx == 0)
+            {
+                RaCtx = (nint)ractxId;
+            }
+            VideoReconfig?.Invoke(this, EventArgs.Empty);
         }
 
         private void HandleShutdown()

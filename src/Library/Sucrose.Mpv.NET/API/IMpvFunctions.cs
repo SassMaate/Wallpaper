@@ -36,11 +36,24 @@
         MpvWaitEvent WaitEvent { get; }
         MpvWakeup Wakeup { get; }
         MpvSetWakeupCallback SetWakeupCallback { get; }
+        MpvGetWakeupPipe GetWakeupPipe { get; }
         MpvWaitAsyncRequests WaitAsyncRequests { get; }
         MpvHookAdd HookAdd { get; }
         MpvHookContinue HookContinue { get; }
 
         MpvGetPropertyDouble GetPropertyDouble { get; }
         MpvGetPropertyLong GetPropertyLong { get; }
+
+        MpvSetPanelSize SetPanelSize { get; }
+        MpvSetPanelScale SetPanelScale { get; }
+
+        MpvRenderContextCreate MpvRenderContextCreate { get; }
+        MpvRenderContextSetParameter MpvRenderContextSetParameter { get; }
+        MpvRenderContextGetInfo MpvRenderContextGetInfo { get; }
+        MpvRenderContextSetUpdateCallback MpvRenderContextSetUpdateCallback { get; }
+        MpvRenderContextUpdate MpvRenderContextUpdate { get; }
+        MpvRenderContextRender MpvRenderContextRender { get; }
+        MpvRenderContextReportSwap MpvRenderContextReportSwap { get; }
+        MpvRenderContextFree MpvRenderContextFree { get; }
     }
 }

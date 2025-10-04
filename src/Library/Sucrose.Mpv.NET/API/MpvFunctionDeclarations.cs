@@ -1,4 +1,5 @@
 ﻿using Sucrose.Mpv.NET.API.Interop;
+using Sucrose.Mpv.NET.API.Structs;
 using System.Runtime.InteropServices;
 
 namespace Sucrose.Mpv.NET.API
@@ -199,6 +200,9 @@ namespace Sucrose.Mpv.NET.API
      );
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int MpvGetWakeupPipe(IntPtr mpvHandle);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     public delegate void MpvWaitAsyncRequests(IntPtr mpvHandle);
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
@@ -236,4 +240,50 @@ namespace Sucrose.Mpv.NET.API
     // Other
 
     public delegate void MpvWakeupCallback(IntPtr d);
+
+    public delegate void MpvD3dInitFn(IntPtr d3d11Device, IntPtr swapChain);
+    public delegate void MpvRaCtxFn(IntPtr raCtx, IntPtr width, IntPtr height, IntPtr scalex, IntPtr scaley, IntPtr bounds_left, IntPtr bounds_top, IntPtr bounds_right, IntPtr bounds_bottom);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int MpvSetD3DInitCallback(MpvD3dInitFn callback);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int MpvSetRaCtxCallback(MpvRaCtxFn callback);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int MpvSetPanelSize(IntPtr raCtx, int width, int height);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int MpvSetPanelScale(IntPtr raCtx, float scaleX, float scaleY);
+
+    // Render API
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate int MpvRenderContextCreate(MpvRenderContext** res, IntPtr mpv, MpvRenderParam* @params);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate int MpvRenderContextSetParameter(MpvRenderContext* ctx, MpvRenderParam @params);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate int MpvRenderContextGetInfo(MpvRenderContext* ctx, MpvRenderParam @params);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate void MpvRenderContextSetUpdateCallback(MpvRenderContext* ctx, MpvRenderUpdateFn callback, IntPtr callback_ctx);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate ulong MpvRenderContextUpdate(MpvRenderContext* ctx);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate int MpvRenderContextRender(MpvRenderContext* ctx, MpvRenderParam* @params);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate void MpvRenderContextReportSwap(MpvRenderContext* ctx);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate void MpvRenderContextFree(MpvRenderContext* ctx);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate void MpvRenderUpdateFn(IntPtr cb_ctx);
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public unsafe delegate IntPtr MpvOpenglInitParams_get_proc_addressCallback(IntPtr ctx, [MarshalAs(UnmanagedType.LPUTF8Str)] string name);
 }
