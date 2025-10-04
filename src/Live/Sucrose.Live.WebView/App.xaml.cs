@@ -253,7 +253,7 @@ namespace Sucrose.Live.WebView
             Configure();
         }
 
-        protected async void Configure()
+        protected void Configure()
         {
             SSEMI.LibraryLocation = SMML.Location;
             SSEMI.LibrarySelected = SMML.Selected;
@@ -339,7 +339,7 @@ namespace Sucrose.Live.WebView
                             DefaultBackgroundColor = Color.Black
                         };
 
-                        await SSEWVMI.WebEngine.EnsureCoreWebView2Async(Environment.Result);
+                        SSEWVMI.WebEngine.EnsureCoreWebView2Async(Environment.Result);
 
                         string Source = SSEMI.Info.Source;
 
