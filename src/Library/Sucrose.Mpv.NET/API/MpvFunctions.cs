@@ -169,8 +169,18 @@ namespace Sucrose.Mpv.NET.API
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                SetPanelSize = LoadFunction<MpvSetPanelSize>("mpv_set_panel_size");
-                SetPanelScale = LoadFunction<MpvSetPanelScale>("mpv_set_panel_scale");
+                // Try to load panel functions, but don't fail if they're unavailable
+                try
+                {
+                    SetPanelSize = LoadFunction<MpvSetPanelSize>("mpv_set_panel_size");
+                    SetPanelScale = LoadFunction<MpvSetPanelScale>("mpv_set_panel_scale");
+                }
+                catch
+                {
+                    // These functions are not available in standard libmpv
+                    SetPanelSize = null;
+                    SetPanelScale = null;
+                }
             }
 
             MpvRenderContextCreate = LoadFunction<MpvRenderContextCreate>("mpv_render_context_create");
