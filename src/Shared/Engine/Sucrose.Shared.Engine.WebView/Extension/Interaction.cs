@@ -161,23 +161,31 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);
                                     break;
                                 case RawMouseButtonFlags.MouseWheel:
-                                    // Use Windows message to forward mouse wheel events to WebView.
-                                    // This respects CSS overflow properties (unlike scrollBy()).
-                                    // wParam: high-order word = wheel delta, low-order word = key state
-                                    // lParam: low-order word = x-coordinate, high-order word = y-coordinate
+                                    // Check if document is scrollable before scrolling.
+                                    // This prevents unwanted scrolling when CSS has overflow: hidden,
+                                    // while still allowing scrolling on pages that support it.
                                     // See: https://github.com/Taiizor/Sucrose/issues/125
                                     
                                     int MouseData = Mouse.Mouse.ButtonData;
+                                    int NewMouseData = -MouseData;
                                     
-                                    // Format wParam: wheel delta in high-order word
-                                    uint wParam = (uint)(MouseData << 16);
-                                    
-                                    // Format lParam: x in low-order word, y in high-order word
-                                    uint lParam = Convert.ToUInt32(Position.Y);
-                                    lParam <<= 16;
-                                    lParam |= Convert.ToUInt32(Position.X);
-                                    
-                                    SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, (UIntPtr)wParam, (UIntPtr)lParam);
+                                    // Only scroll if the document is actually scrollable
+                                    // Check: document.body.scrollHeight > document.body.clientHeight (vertical scroll exists)
+                                    // AND overflow is not 'hidden' on body
+                                    SSEWVMI.WebEngine.ExecuteScriptAsync(
+                                        $@"(function() {{
+                                            const body = document.body;
+                                            const html = document.documentElement;
+                                            const isScrollable = (body.scrollHeight > body.clientHeight || html.scrollHeight > html.clientHeight);
+                                            const bodyOverflow = window.getComputedStyle(body).overflow;
+                                            const htmlOverflow = window.getComputedStyle(html).overflow;
+                                            const overflowHidden = bodyOverflow === 'hidden' && htmlOverflow === 'hidden';
+                                            
+                                            if (isScrollable && !overflowHidden) {{
+                                                window.scrollBy(0, {NewMouseData});
+                                            }}
+                                        }})();"
+                                    );
                                     break;
                             }
                             break;
