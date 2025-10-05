@@ -150,17 +150,25 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.LBUTTONUP, (IntPtr)0x0001);
                                     break;
                                 case RawMouseButtonFlags.RightButtonDown:
-                                    //issue: click being skipped; desktop already has its own rightclick contextmenu.
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONDOWN, (IntPtr)0x0002);
                                     break;
                                 case RawMouseButtonFlags.RightButtonUp:
-                                    //issue: click being skipped; desktop already has its own rightclick contextmenu.
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONUP, (IntPtr)0x0002);
                                     break;
                                 case RawMouseButtonFlags.None:
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);
                                     break;
                                 case RawMouseButtonFlags.MouseWheel:
+                                    //int MouseData = 7864320; //-7864320
+                                    //int Delta = (MouseData >> 16) & 0xFFFF;
+
+                                    //int Amount = Delta >> 15 == 1 ? Delta - 0xFFFF - 1 : Delta;
+
+                                    //int DeltaX = MouseData & 0xFFFF;
+                                    //int DeltaY = Amount;
+
+                                    //SWNM.SendMessage(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, DeltaX, DeltaY);
+
                                     int MouseData = Mouse.Mouse.ButtonData;
                                     int NewMouseData = MouseData = -MouseData; //MouseData ^ -0
 

@@ -150,41 +150,27 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                                     break;
                                 case RawMouseButtonFlags.LeftButtonDown:
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.LBUTTONDOWN, (IntPtr)0x0001);
-                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Left, false, 1, CefEventFlags.None);
+                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Left, false, 1, CefEventFlags.LeftMouseButton);
                                     break;
                                 case RawMouseButtonFlags.LeftButtonUp:
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.LBUTTONUP, (IntPtr)0x0001);
-                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Left, true, 1, CefEventFlags.None);
+                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Left, true, 1, CefEventFlags.LeftMouseButton);
                                     break;
                                 case RawMouseButtonFlags.RightButtonDown:
-                                    //issue: click being skipped; desktop already has its own rightclick contextmenu.
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONDOWN, (IntPtr)0x0002);
-                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Right, false, 1, CefEventFlags.None);
+                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Right, false, 1, CefEventFlags.RightMouseButton);
                                     break;
                                 case RawMouseButtonFlags.RightButtonUp:
-                                    //issue: click being skipped; desktop already has its own rightclick contextmenu.
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.RBUTTONUP, (IntPtr)0x0002);
-                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Right, true, 1, CefEventFlags.None);
+                                    //SSECSMI.CefHost?.SendMouseClickEvent(Position.X, Position.Y, MouseButtonType.Right, true, 1, CefEventFlags.RightMouseButton);
                                     break;
                                 case RawMouseButtonFlags.None:
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);
                                     //SSECSMI.CefHost?.SendMouseMoveEvent(Position.X, Position.Y, false, CefEventFlags.None);
                                     break;
                                 case RawMouseButtonFlags.MouseWheel:
-                                    //int MouseData = 7864320; //-7864320
-                                    //int Delta = (MouseData >> 16) & 0xFFFF;
-
-                                    //int Amount = Delta >> 15 == 1 ? Delta - 0xFFFF - 1 : Delta;
-
-                                    //int DeltaX = MouseData & 0xFFFF;
-                                    //int DeltaY = Amount;
-
-                                    //SWNM.SendMessage(SSECSMI.CefHandle, (int)SWNM.WM.MOUSEWHEEL, DeltaX, DeltaY);
-
-                                    int MouseData = Mouse.Mouse.ButtonData;
-
                                     MouseEvent MouseEvent = new(Position.X, Position.Y, CefEventFlags.None);
-                                    SSECSMI.CefHost?.SendMouseWheelEvent(MouseEvent, 0, MouseData);
+                                    SSECSMI.CefHost?.SendMouseWheelEvent(MouseEvent, 0, Mouse.Mouse.ButtonData);
                                     break;
                             }
                             break;
@@ -193,10 +179,10 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                             {
                                 FirstKey = false;
 
-                                //SSECSMI.CefHost?.SendMouseClickEvent(0, 0, MouseButtonType.Left, false, 1, CefEventFlags.None);
-                                //SSECSMI.CefHost?.SendMouseClickEvent(0, 0, MouseButtonType.Left, true, 1, CefEventFlags.None);
-                                ForwardMessageMouse(0, 0, (int)SWNM.WM.LBUTTONDOWN, (IntPtr)0x0001);
-                                ForwardMessageMouse(0, 0, (int)SWNM.WM.LBUTTONUP, (IntPtr)0x0001);
+                                //SSECSMI.CefHost?.SendMouseClickEvent(99999, 99999, MouseButtonType.Left, false, 1, CefEventFlags.LeftMouseButton);
+                                //SSECSMI.CefHost?.SendMouseClickEvent(99999, 99999, MouseButtonType.Left, true, 1, CefEventFlags.LeftMouseButton);
+                                ForwardMessageMouse(99999, 99999, (int)SWNM.WM.LBUTTONDOWN, (IntPtr)0x0001);
+                                ForwardMessageMouse(99999, 99999, (int)SWNM.WM.LBUTTONUP, (IntPtr)0x0001);
                             }
 
                             ForwardMessageKeyboard((int)Keyboard.Keyboard.WindowMessage, (IntPtr)Keyboard.Keyboard.VirutalKey, Keyboard.Keyboard.ScanCode, Keyboard.Keyboard.Flags != RawKeyboardFlags.Up);
