@@ -30,17 +30,15 @@ namespace Sucrose.Undo
 
         private static string RegistryName => @"Software\Microsoft\Windows\CurrentVersion\Uninstall";
 
+        private static string BatchFile = Path.Combine(SMMRP.Temp, $"del_{Guid.NewGuid():N}.bat");
+
         private static string StartMenu => Path.Combine(SMMRP.StartMenu, "Programs", Shortcut);
 
         private static string Undo => Path.Combine(UninstallPath, $"{SMMRG.AppName}.Undo");
 
         private static string Desktop => Path.Combine(SMMRP.Desktop, Shortcut);
 
-        private static string BatchFile => Path.Combine(SMMRP.Temp, BatchName);
-
         private static string Title => SRER.GetValue("Undo", "QuestionTitle");
-
-        private static string BatchName => $"del_{Guid.NewGuid():N}.bat";
 
         private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
 
@@ -92,7 +90,7 @@ namespace Sucrose.Undo
 
                 try
                 {
-                    Directory.Delete(Location, true);
+                    Directory.Delete(Location);
                 }
                 catch { }
             }
@@ -119,24 +117,13 @@ namespace Sucrose.Undo
                 StringBuilder BatchContent = new();
 
                 BatchContent.AppendLine("@echo off");
-                BatchContent.AppendLine("setlocal");
+                BatchContent.AppendLine("setlocal enabledelayedexpansion");
                 BatchContent.AppendLine($"taskkill /PID {Environment.ProcessId} /T /F > nul 2>&1");
-                BatchContent.AppendLine("timeout /t 2 /nobreak > nul");
+                BatchContent.AppendLine("timeout /t 3 /nobreak > nul");
 
-                if (Directory.Exists(Undo))
-                {
-                    BatchContent.AppendLine($@"rd /s /q ""{Undo}"" > nul 2>&1");
-                }
-
-                if (Directory.Exists(Runtime))
-                {
-                    BatchContent.AppendLine($@"rd /s /q ""{Runtime}"" > nul 2>&1");
-                }
-
-                if (Directory.Exists(UninstallPath))
-                {
-                    BatchContent.AppendLine($@"rd /s /q ""{UninstallPath}"" > nul 2>&1");
-                }
+                BatchContent.AppendLine($@"rd /s /q ""{Undo}"" > nul 2>&1");
+                BatchContent.AppendLine($@"rd /s /q ""{Runtime}"" > nul 2>&1");
+                BatchContent.AppendLine($@"rd /s /q ""{UninstallPath}"" > nul 2>&1");
 
                 BatchContent.AppendLine(@"del ""%~f0"" > nul 2>&1");
                 BatchContent.AppendLine("endlocal");
@@ -146,10 +133,12 @@ namespace Sucrose.Undo
 
                 Process.Start(new ProcessStartInfo
                 {
-                    FileName = BatchFile,
+                    FileName = "cmd.exe",
                     CreateNoWindow = true,
-                    UseShellExecute = false,
-                    WindowStyle = ProcessWindowStyle.Hidden
+                    UseShellExecute = true,
+                    WorkingDirectory = SMMRP.Temp,
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    Arguments = $"/c start /B \"\" \"{BatchFile}\""
                 });
             }
             catch { }
