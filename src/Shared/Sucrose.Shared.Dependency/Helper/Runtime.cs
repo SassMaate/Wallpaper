@@ -1,4 +1,6 @@
-﻿using SSSMI = Sucrose.Shared.Space.Manage.Internal;
+﻿#if RELEASE
+using SSSMI = Sucrose.Shared.Space.Manage.Internal;
+#endif
 
 namespace Sucrose.Shared.Dependency.Helper
 {
