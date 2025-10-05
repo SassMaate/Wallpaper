@@ -12,6 +12,7 @@
         <FileVersion>$(Version)</FileVersion>
         <Platforms>ARM64;x64;x86</Platforms>
         <LangVersion>preview</LangVersion>
+        <OutputType>Library</OutputType>
         <Optimize>false</Optimize>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
