@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Threading;
 using SHC = Skylark.Helper.Culture;
+using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SRER = Sucrose.Resources.Extension.Resources;
@@ -21,6 +22,8 @@ namespace Sucrose.Undo
     {
         private static string Message => SRER.GetValue("Undo", "QuestionMessage") + Environment.NewLine + Environment.NewLine + SRER.GetValue("Undo", "QuestionDescription");
 
+        private static string Runtime => Path.Combine(UninstallPath, $"{SMMRG.AppName}.{SMMRF.Runtime}");
+
         private static string UninstallPath => Path.Combine(SMMRP.LocalApplicationData, SMMRG.AppName);
 
         private static string UninstallDataPath => Path.Combine(SMMRP.ApplicationData, SMMRG.AppName);
@@ -29,15 +32,15 @@ namespace Sucrose.Undo
 
         private static string StartMenu => Path.Combine(SMMRP.StartMenu, "Programs", Shortcut);
 
+        private static string Undo => Path.Combine(UninstallPath, $"{SMMRG.AppName}.Undo");
+
         private static string Desktop => Path.Combine(SMMRP.Desktop, Shortcut);
+
+        private static string BatchFile => Path.Combine(SMMRP.Temp, BatchName);
 
         private static string Title => SRER.GetValue("Undo", "QuestionTitle");
 
-        private static string BatchFile = Path.Combine(SMMRP.Temp, BatchName);
-
         private static string BatchName => $"del_{Guid.NewGuid():N}.bat";
-
-        private static string Undo => Path.Combine(UninstallPath, Undo);
 
         private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
 
@@ -59,7 +62,7 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Files)
                     {
-                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase))
+                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(Runtime, StringComparison.OrdinalIgnoreCase))
                         {
                             try
                             {
@@ -76,7 +79,7 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Folders)
                     {
-                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase))
+                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(Runtime, StringComparison.OrdinalIgnoreCase))
                         {
                             try
                             {
@@ -87,20 +90,11 @@ namespace Sucrose.Undo
                     }
                 }
 
-                string[] RemainingItems = Directory.GetFileSystemEntries(Location);
-
-                if (RemainingItems.Length == 1 && Directory.Exists(Undo))
+                try
                 {
-                    //Only the undo folder remains, leave it
+                    Directory.Delete(Location, true);
                 }
-                else if (!RemainingItems.Any())
-                {
-                    try
-                    {
-                        Directory.Delete(Location, true);
-                    }
-                    catch { }
-                }
+                catch { }
             }
         }
 
@@ -120,39 +114,45 @@ namespace Sucrose.Undo
 
         private static void DeleteSelf()
         {
-            string CurrentExecutable = Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty;
-
-            if (!string.IsNullOrEmpty(CurrentExecutable))
+            try
             {
-                string CurrentDirectory = Path.GetDirectoryName(CurrentExecutable);
-
                 StringBuilder BatchContent = new();
 
                 BatchContent.AppendLine("@echo off");
-                BatchContent.AppendLine("setlocal enabledelayedexpansion");
-                BatchContent.AppendLine(":Repeat");
-                BatchContent.AppendLine(@"timeout /t 2 /nobreak > nul");
-                BatchContent.AppendLine($@"tasklist /fi ""IMAGENAME eq {Path.GetFileName(CurrentExecutable)}"" | find /i ""{Path.GetFileName(CurrentExecutable)}"" > nul");
-                BatchContent.AppendLine(@"if !errorlevel! == 0 goto Repeat");
-                BatchContent.AppendLine($@"rd /s /q ""{CurrentDirectory}""");
+                BatchContent.AppendLine("setlocal");
+                BatchContent.AppendLine($"taskkill /PID {Environment.ProcessId} /T /F > nul 2>&1");
+                BatchContent.AppendLine("timeout /t 2 /nobreak > nul");
+
+                if (Directory.Exists(Undo))
+                {
+                    BatchContent.AppendLine($@"rd /s /q ""{Undo}"" > nul 2>&1");
+                }
+
+                if (Directory.Exists(Runtime))
+                {
+                    BatchContent.AppendLine($@"rd /s /q ""{Runtime}"" > nul 2>&1");
+                }
+
+                if (Directory.Exists(UninstallPath))
+                {
+                    BatchContent.AppendLine($@"rd /s /q ""{UninstallPath}"" > nul 2>&1");
+                }
+
                 BatchContent.AppendLine(@"del ""%~f0"" > nul 2>&1");
                 BatchContent.AppendLine("endlocal");
                 BatchContent.AppendLine("exit");
 
-                try
-                {
-                    File.WriteAllText(BatchFile, BatchContent.ToString(), Encoding.ASCII);
+                File.WriteAllText(BatchFile, BatchContent.ToString(), Encoding.ASCII);
 
-                    Process.Start(new ProcessStartInfo
-                    {
-                        FileName = BatchFile,
-                        CreateNoWindow = true,
-                        UseShellExecute = false,
-                        WindowStyle = ProcessWindowStyle.Hidden
-                    });
-                }
-                catch { }
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = BatchFile,
+                    CreateNoWindow = true,
+                    UseShellExecute = false,
+                    WindowStyle = ProcessWindowStyle.Hidden
+                });
             }
+            catch { }
         }
 
         protected void Close()
