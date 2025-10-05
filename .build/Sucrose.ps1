@@ -284,11 +284,8 @@ function Publish-SucroseProject {
         [string]$ProjectName
     )
 
-    # Determine output directory (special case for Sucrose.Undo)
+    # Determine output directory
     $destination = Join-Path $PublishBaseDir $PublishDir
-    if ($ProjectName -eq "Sucrose.Undo") {
-        $destination = Join-Path $destination "Cache"
-    }
     $destination = Join-Path $destination "$TargetFramework\$PlatformTarget\$ProjectName"
 
     # Clean and create destination directory
