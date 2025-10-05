@@ -32,12 +32,12 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                     case SSDEIMT.RawInput:
                         if (SMME.InputType is SEIT.OnlyMouse or SEIT.MouseKeyboard)
                         {
-                            RawInputDevice.RegisterDevice(HidUsageAndPage.Mouse, RawInputDeviceFlags.ExInputSink, HWND);
+                            RawInputDevice.RegisterDevice(HidUsageAndPage.Mouse, RawInputDeviceFlags.ExInputSink | RawInputDeviceFlags.NoLegacy, HWND);
                         }
 
                         if (SMME.InputType is SEIT.OnlyKeyboard or SEIT.MouseKeyboard)
                         {
-                            RawInputDevice.RegisterDevice(HidUsageAndPage.Keyboard, RawInputDeviceFlags.ExInputSink, HWND);
+                            RawInputDevice.RegisterDevice(HidUsageAndPage.Keyboard, RawInputDeviceFlags.ExInputSink | RawInputDeviceFlags.NoLegacy, HWND);
                         }
 
                         HwndSource Source = HwndSource.FromHwnd(HWND);
@@ -172,7 +172,27 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     int MouseData = Mouse.Mouse.ButtonData;
                                     int NewMouseData = MouseData = -MouseData; //MouseData ^ -0
 
-                                    SSEWVMI.WebEngine.ExecuteScriptAsync($"scrollBy(0, {NewMouseData}, 'smooth');");
+                                    //SSEWVMI.WebEngine.ExecuteScriptAsync($"scrollBy(0, {NewMouseData}, 'smooth');");
+
+                                    SSEWVMI.WebEngine.ExecuteScriptAsync
+                                    ($@"
+                                        (function() {{
+                                            const el = document.elementFromPoint({Position.X}, {Position.Y});
+                                            if (!el) return;
+                                            let target = el;
+                                            while (target && target !== document.body) {{
+                                                const style = window.getComputedStyle(target);
+                                                const overflowY = style.getPropertyValue('overflow-y');
+                                                const canScroll = (overflowY === 'auto' || overflowY === 'scroll');
+                                                if (canScroll && target.scrollHeight > target.clientHeight) break;
+                                                target = target.parentElement;
+                                            }}
+                                            if (target && target !== document.body)
+                                                target.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
+                                            else
+                                                window.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
+                                        }})();"
+                                    );
 
                                     //SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
                                     break;
@@ -191,6 +211,8 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                             break;
                     }
                 }
+
+                Handled = true;
             }
             catch { }
 

@@ -36,12 +36,12 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                     case SSDEIMT.RawInput:
                         if (SMME.InputType is SEIT.OnlyMouse or SEIT.MouseKeyboard)
                         {
-                            RawInputDevice.RegisterDevice(HidUsageAndPage.Mouse, RawInputDeviceFlags.ExInputSink, HWND);
+                            RawInputDevice.RegisterDevice(HidUsageAndPage.Mouse, RawInputDeviceFlags.ExInputSink | RawInputDeviceFlags.NoLegacy, HWND);
                         }
 
                         if (SMME.InputType is SEIT.OnlyKeyboard or SEIT.MouseKeyboard)
                         {
-                            RawInputDevice.RegisterDevice(HidUsageAndPage.Keyboard, RawInputDeviceFlags.ExInputSink, HWND);
+                            RawInputDevice.RegisterDevice(HidUsageAndPage.Keyboard, RawInputDeviceFlags.ExInputSink | RawInputDeviceFlags.NoLegacy, HWND);
                         }
 
                         HwndSource Source = HwndSource.FromHwnd(HWND);
@@ -202,6 +202,8 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                             break;
                     }
                 }
+
+                Handled = true;
             }
             catch { }
 
