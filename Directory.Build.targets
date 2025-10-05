@@ -1,0 +1,49 @@
+<Project>
+    <PropertyGroup Condition="'$(OutputType)' != 'Library'">
+        <ApplicationIcon>Assets\ICO.ico</ApplicationIcon>
+        <ApplicationManifest>App.manifest</ApplicationManifest>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(OutputType)' != 'Library'">
+        <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <RetainVMGarbageCollection>false</RetainVMGarbageCollection>
+        <ThreadPoolMinThreads>10</ThreadPoolMinThreads>
+        <ThreadPoolMaxThreads>250</ThreadPoolMaxThreads>
+        <UseWindowsThreadPool>true</UseWindowsThreadPool>
+        <!-- Supported as of .NET Core SDK 3.0 Preview 1 -->
+        <TieredCompilation>true</TieredCompilation>
+        <InvariantGlobalization>false</InvariantGlobalization>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x86'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x86</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X86</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'x64'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-x64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);X64</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(PlatformTarget)' == 'arm64'">
+        <RuntimeIdentifier Condition="'$(RuntimeIdentifier)' == ''">win-arm64</RuntimeIdentifier>
+        <SelfContained Condition="'$(SelfContained)' == ''">false</SelfContained>
+        <DefineConstants>$(DefineConstants);ARM64</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(OutputType)' != 'Library'">
+        <AppConfigWithTargetPath Include="App.$(TargetFramework).config">
+            <TargetPath>$(AssemblyName).exe.config</TargetPath>
+        </AppConfigWithTargetPath>
+    </ItemGroup>
+
+    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(OutputType)' != 'Library' AND '$(Configuration)' == 'Debug'">
+        <ItemGroup>
+            <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    </Target>
+</Project>
