@@ -1,12 +1,13 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System.Diagnostics;
 using System.IO;
 using System.Media;
+using System.Text;
 using System.Windows;
 using System.Windows.Threading;
 using SHC = Skylark.Helper.Culture;
-using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SWUD = Skylark.Wing.Utility.Desktop;
@@ -32,9 +33,13 @@ namespace Sucrose.Undo
 
         private static string Title => SRER.GetValue("Undo", "QuestionTitle");
 
-        private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
+        private static string BatchFile = Path.Combine(SMMRP.Temp, BatchName);
 
-        private static string Undo => "Sucrose.Undo";
+        private static string BatchName => $"del_{Guid.NewGuid():N}.bat";
+
+        private static string Undo => Path.Combine(UninstallPath, Undo);
+
+        private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
 
         private static int Delay => 1000;
 
@@ -54,33 +59,48 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Files)
                     {
-                        try
+                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase))
                         {
-                            File.Delete(Record);
+                            try
+                            {
+                                File.Delete(Record);
+                            }
+                            catch { }
                         }
-                        catch { }
                     }
                 }
 
-                string[] Folders = Directory.GetDirectories(Location, "*", SearchOption.AllDirectories);
+                string[] Folders = Directory.GetDirectories(Location, "*", SearchOption.AllDirectories).OrderByDescending(Folder => Folder.Length).ToArray();
 
                 if (Folders.Any())
                 {
                     foreach (string Record in Folders)
                     {
-                        try
+                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase))
                         {
-                            Directory.Delete(Record);
+                            try
+                            {
+                                Directory.Delete(Record);
+                            }
+                            catch { }
                         }
-                        catch { }
                     }
                 }
 
-                try
+                string[] RemainingItems = Directory.GetFileSystemEntries(Location);
+
+                if (RemainingItems.Length == 1 && Directory.Exists(Undo))
                 {
-                    Directory.Delete(Location, true);
+                    //Only the undo folder remains, leave it
                 }
-                catch { }
+                else if (!RemainingItems.Any())
+                {
+                    try
+                    {
+                        Directory.Delete(Location, true);
+                    }
+                    catch { }
+                }
             }
         }
 
@@ -93,6 +113,43 @@ namespace Sucrose.Undo
                 try
                 {
                     Process.Kill();
+                }
+                catch { }
+            }
+        }
+
+        private static void DeleteSelf()
+        {
+            string CurrentExecutable = Process.GetCurrentProcess().MainModule?.FileName ?? string.Empty;
+
+            if (!string.IsNullOrEmpty(CurrentExecutable))
+            {
+                string CurrentDirectory = Path.GetDirectoryName(CurrentExecutable);
+
+                StringBuilder BatchContent = new();
+
+                BatchContent.AppendLine("@echo off");
+                BatchContent.AppendLine("setlocal enabledelayedexpansion");
+                BatchContent.AppendLine(":Repeat");
+                BatchContent.AppendLine(@"timeout /t 2 /nobreak > nul");
+                BatchContent.AppendLine($@"tasklist /fi ""IMAGENAME eq {Path.GetFileName(CurrentExecutable)}"" | find /i ""{Path.GetFileName(CurrentExecutable)}"" > nul");
+                BatchContent.AppendLine(@"if !errorlevel! == 0 goto Repeat");
+                BatchContent.AppendLine($@"rd /s /q ""{CurrentDirectory}""");
+                BatchContent.AppendLine(@"del ""%~f0"" > nul 2>&1");
+                BatchContent.AppendLine("endlocal");
+                BatchContent.AppendLine("exit");
+
+                try
+                {
+                    File.WriteAllText(BatchFile, BatchContent.ToString(), Encoding.ASCII);
+
+                    Process.Start(new ProcessStartInfo
+                    {
+                        FileName = BatchFile,
+                        CreateNoWindow = true,
+                        UseShellExecute = false,
+                        WindowStyle = ProcessWindowStyle.Hidden
+                    });
                 }
                 catch { }
             }
@@ -165,6 +222,8 @@ namespace Sucrose.Undo
                 HomeKey?.DeleteSubKey(SMMRG.AppName, false);
 
                 await Task.Delay(Delay);
+
+                DeleteSelf();
             }
 
             Close();
