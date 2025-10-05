@@ -161,12 +161,11 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);
                                     break;
                                 case RawMouseButtonFlags.MouseWheel:
-                                    int MouseData = Mouse.Mouse.ButtonData;
-                                    int NewMouseData = MouseData = -MouseData; //MouseData ^ -0
-
-                                    SSEWVMI.WebEngine.ExecuteScriptAsync($"scrollBy(0, {NewMouseData}, 'smooth');");
-
-                                    //SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
+                                    // Mouse wheel events should not trigger scrolling on wallpapers
+                                    // as they typically have overflow: hidden set in CSS.
+                                    // Unlike CefSharp which uses SendMouseWheelEvent (respects CSS),
+                                    // calling scrollBy() bypasses overflow settings causing unwanted scrolling.
+                                    // See: https://github.com/Taiizor/Sucrose/issues/125
                                     break;
                             }
                             break;
