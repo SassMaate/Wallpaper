@@ -315,6 +315,7 @@ namespace Sucrose.Live.CefSharp
                             CachePath = SSECSMI.CefPath,
                             PersistSessionCookies = true,
                             IgnoreCertificateErrors = true,
+                            LocalesDirPath = SSSMI.Locales,
                             LogSeverity = LogSeverity.Default,
                             WindowlessRenderingEnabled = true,
                             LogFile = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Log, string.Format("CefSharpNative-{0}-{1}.log", SMMVL.FileNameDate, Guid.NewGuid()))
@@ -387,7 +388,7 @@ namespace Sucrose.Live.CefSharp
                         if (Directory.Exists(SSSMI.Locales))
                         {
                             string Locales = Directory.GetFiles(SSSMI.Locales, "*.pak")
-                                .FirstOrDefault(locale => Path.GetFileNameWithoutExtension(locale)
+                                .FirstOrDefault(Locale => Path.GetFileNameWithoutExtension(Locale)
                                 .StartsWith(SMMG.Culture, StringComparison.OrdinalIgnoreCase));
 
                             if (!string.IsNullOrEmpty(Locales))
