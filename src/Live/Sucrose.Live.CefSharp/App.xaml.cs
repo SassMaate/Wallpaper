@@ -559,13 +559,13 @@ namespace Sucrose.Live.CefSharp
         {
 #if X64
             string Url = string.Format(SMMRU.VCRedist, "x64");
-            string File = Path.Combine(Path.GetTempPath(), $"VC_redist.x64.{Guid.NewGuid()}.exe");
+            string File = Path.Combine(SMMRP.Temp, $"VC_redist.x64.{Guid.NewGuid()}.exe");
 #elif X86
             string Url = string.Format(SMMRU.VCRedist, "x86");
-            string File = Path.Combine(Path.GetTempPath(), $"VC_redist.x86.{Guid.NewGuid()}.exe");
+            string File = Path.Combine(SMMRP.Temp, $"VC_redist.x86.{Guid.NewGuid()}.exe");
 #else
             string Url = string.Format(SMMRU.VCRedist, "arm64");
-            string File = Path.Combine(Path.GetTempPath(), $"VC_redist.arm64.{Guid.NewGuid()}.exe");
+            string File = Path.Combine(SMMRP.Temp, $"VC_redist.arm64.{Guid.NewGuid()}.exe");
 #endif
 
             HttpClient Client = new();

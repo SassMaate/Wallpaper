@@ -479,7 +479,7 @@ namespace Sucrose.Live.WebView
 
         protected async void Downloader()
         {
-            string File = Path.Combine(Path.GetTempPath(), $"MicrosoftEdgeWebView2Setup.{Guid.NewGuid()}.exe");
+            string File = Path.Combine(SMMRP.Temp, $"MicrosoftEdgeWebView2Setup.{Guid.NewGuid()}.exe");
 
             HttpClient Client = new();
 

@@ -2,6 +2,8 @@
 {
     public static class Path
     {
+        public static readonly string Temp = System.IO.Path.GetTempPath();
+
         public static readonly string Desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
         public static readonly string StartMenu = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);

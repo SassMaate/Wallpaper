@@ -233,7 +233,7 @@ namespace Sucrose.Portal.Views.Controls
 
                     if (Response.IsSuccessStatusCode)
                     {
-                        TempFile = Path.Combine(Path.GetTempPath(), $"{SSSHC.FileName(Info.Title)}.zip");
+                        TempFile = Path.Combine(SMMRP.Temp, $"{SSSHC.FileName(Info.Title)}.zip");
 
                         State.Text = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Compress");
 
