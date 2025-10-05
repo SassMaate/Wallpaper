@@ -179,7 +179,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                                     //int DeltaX = MouseData & 0xFFFF;
                                     //int DeltaY = Amount;
 
-                                    //SWNM.SendMessage(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, DeltaX, DeltaY);
+                                    //SWNM.SendMessage(SSECSMI.CefHandle, (int)SWNM.WM.MOUSEWHEEL, DeltaX, DeltaY);
 
                                     int MouseData = Mouse.Mouse.ButtonData;
 
