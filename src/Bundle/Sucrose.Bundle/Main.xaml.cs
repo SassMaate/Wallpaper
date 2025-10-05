@@ -38,8 +38,6 @@ namespace Sucrose.Bundle
 
         private static string StartMenu => Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);
 
-        private static string Uninstall => Path.Combine(InstallPath, "Sucrose.Undo", "Sucrose.Undo.exe");
-
         private static string Desktop => Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
         private static string StartMenuProgramsShortcut => Path.Combine(StartMenuPrograms, Shortcut);
@@ -53,6 +51,8 @@ namespace Sucrose.Bundle
         private static string InstallPath => Path.Combine(LocalApplicationData, Application);
 
         private static string Launcher => Path.Combine(InstallPath, Department, Executable);
+
+        private static string Uninstall => Path.Combine(InstallPath, Undo, $"{Undo}.exe");
 
         private static string SevenZipPath => Path.Combine(Path.GetTempPath(), SevenZip);
 
@@ -79,6 +79,8 @@ namespace Sucrose.Bundle
         private static string Shortcut => $"{Text}.lnk";
 
         private static string Application => "Sucrose";
+
+        private static string Undo => "Sucrose.Undo";
 
         private static string Showcase => "Showcase";
 
