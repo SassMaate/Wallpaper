@@ -161,11 +161,23 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                     ForwardMessageMouse(Position.X, Position.Y, (int)SWNM.WM.MOUSEMOVE, (IntPtr)0x0020);
                                     break;
                                 case RawMouseButtonFlags.MouseWheel:
-                                    // Mouse wheel events should not trigger scrolling on wallpapers
-                                    // as they typically have overflow: hidden set in CSS.
-                                    // Unlike CefSharp which uses SendMouseWheelEvent (respects CSS),
-                                    // calling scrollBy() bypasses overflow settings causing unwanted scrolling.
+                                    // Use Windows message to forward mouse wheel events to WebView.
+                                    // This respects CSS overflow properties (unlike scrollBy()).
+                                    // wParam: high-order word = wheel delta, low-order word = key state
+                                    // lParam: low-order word = x-coordinate, high-order word = y-coordinate
                                     // See: https://github.com/Taiizor/Sucrose/issues/125
+                                    
+                                    int MouseData = Mouse.Mouse.ButtonData;
+                                    
+                                    // Format wParam: wheel delta in high-order word
+                                    uint wParam = (uint)(MouseData << 16);
+                                    
+                                    // Format lParam: x in low-order word, y in high-order word
+                                    uint lParam = Convert.ToUInt32(Position.Y);
+                                    lParam <<= 16;
+                                    lParam |= Convert.ToUInt32(Position.X);
+                                    
+                                    SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, (UIntPtr)wParam, (UIntPtr)lParam);
                                     break;
                             }
                             break;
