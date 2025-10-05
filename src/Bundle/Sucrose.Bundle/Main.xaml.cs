@@ -36,11 +36,9 @@ namespace Sucrose.Bundle
 
         private static string ApplicationData => Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
-        private static string PackagePath => Path.Combine(LocalApplicationData, "Package Cache", Application);
-
         private static string StartMenu => Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);
 
-        private static string Uninstall => Path.Combine(PackagePath, "Sucrose.Undo", "Sucrose.Undo.exe");
+        private static string Uninstall => Path.Combine(InstallPath, "Sucrose.Undo", "Sucrose.Undo.exe");
 
         private static string Desktop => Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
@@ -65,10 +63,6 @@ namespace Sucrose.Bundle
         private static string DesktopShortcut => Path.Combine(Desktop, Shortcut);
 
         private static string Url => "https://github.com/Taiizor/Sucrose";
-
-        private static string TemporaryFile => "Sucrose.Backgroundog.sys";
-
-        private static string TemporaryFolder => "Sucrose.Backgroundog";
 
         private static string QuietUninstall => $"\"{Uninstall}\" -s";
 
@@ -95,8 +89,6 @@ namespace Sucrose.Bundle
         private static string Packages => "Packages";
 
         private static Random Randomise => new();
-
-        private static string Caches => "Caches";
 
         private static int MaxDelay => 3000;
 
@@ -351,22 +343,11 @@ namespace Sucrose.Bundle
                 {
                     foreach (string Record in Files)
                     {
-                        if (Path.GetFileName(Record) == TemporaryFile)
+                        try
                         {
-                            try
-                            {
-                                File.Delete(Record);
-                            }
-                            catch { }
+                            File.Delete(Record);
                         }
-                        else
-                        {
-                            try
-                            {
-                                File.Delete(Record);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
 
@@ -376,22 +357,11 @@ namespace Sucrose.Bundle
                 {
                     foreach (string Record in Folders)
                     {
-                        if (Path.GetFileName(Record) == TemporaryFolder)
+                        try
                         {
-                            try
-                            {
-                                Directory.Delete(Record);
-                            }
-                            catch { }
+                            Directory.Delete(Record);
                         }
-                        else
-                        {
-                            try
-                            {
-                                Directory.Delete(Record);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
             }
@@ -492,17 +462,12 @@ namespace Sucrose.Bundle
 
             await Task.Delay(MaxDelay);
 
-            await ControlDirectory(PackagePath);
             await ControlDirectory(PackagesPath);
             await ControlDirectory(SevenZipPath);
             await ControlDirectory(ShowcasePath);
             await ControlDirectoryStable(InstallPath);
 
             await Task.Delay(MaxDelay);
-
-            await ExtractResources(Caches, PackagePath);
-
-            await Task.Delay(MinDelay);
 
             await ExtractResources(Packages, PackagesPath);
 

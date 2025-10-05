@@ -30,7 +30,7 @@
 
     <PropertyGroup>
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\Cache\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
+        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
 </Project>

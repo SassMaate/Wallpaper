@@ -31,15 +31,13 @@ namespace Sucrose.Undo
 
         private static string Title => SRER.GetValue("Undo", "QuestionTitle");
 
-        private static string TemporaryFile => "Sucrose.Backgroundog.sys";
-
-        private static string TemporaryFolder => "Sucrose.Backgroundog";
-
         private static string Text => "Sucrose Wallpaper Engine";
 
         private static string Shortcut => $"{Text}.lnk";
 
         private static string Application => "Sucrose";
+
+        private static string Undo => "Sucrose.Undo";
 
         private static int Delay => 1000;
 
@@ -59,22 +57,11 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Files)
                     {
-                        if (Path.GetFileName(Record) == TemporaryFile)
+                        try
                         {
-                            try
-                            {
-                                File.Delete(Record);
-                            }
-                            catch { }
+                            File.Delete(Record);
                         }
-                        else
-                        {
-                            try
-                            {
-                                File.Delete(Record);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
 
@@ -84,22 +71,11 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Folders)
                     {
-                        if (Path.GetFileName(Record) == TemporaryFolder)
+                        try
                         {
-                            try
-                            {
-                                Directory.Delete(Record);
-                            }
-                            catch { }
+                            Directory.Delete(Record);
                         }
-                        else
-                        {
-                            try
-                            {
-                                Directory.Delete(Record);
-                            }
-                            catch { }
-                        }
+                        catch { }
                     }
                 }
 

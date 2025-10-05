@@ -237,7 +237,7 @@ namespace Sucrose.Portal.ViewModels.Pages
                 MaxWidth = 250
             };
 
-            UserAgent.TextChanged += (s, e) => UserAgentChanged(UserAgent);
+            UserAgent.TextChanged += (s, e) => UserAgentChanged(UserAgent.Text);
 
             Agent.HeaderFrame = UserAgent;
 
@@ -669,6 +669,11 @@ namespace Sucrose.Portal.ViewModels.Pages
             }
         }
 
+        private void UserAgentChanged(string Text)
+        {
+            SMMI.GeneralSettingManager.SetSetting(SMMCG.UserAgent, Text);
+        }
+
         private void ReportStateChecked(bool State)
         {
             SMMI.GeneralSettingManager.SetSetting(SMMCG.ExceptionData, State);
@@ -709,16 +714,6 @@ namespace Sucrose.Portal.ViewModels.Pages
         private void DiscordRefreshChecked(bool State)
         {
             SMMI.HookSettingManager.SetSetting(SMMCH.DiscordRefreshConnect, State);
-        }
-
-        private void UserAgentChanged(TextBox TextBox)
-        {
-            if (string.IsNullOrEmpty(TextBox.Text))
-            {
-                TextBox.Text = SMMRG.UserAgent;
-            }
-
-            SMMI.GeneralSettingManager.SetSetting(SMMCG.UserAgent, TextBox.Text);
         }
 
         private void AutoUpdateTypeSelected(int Index)

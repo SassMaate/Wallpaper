@@ -30,16 +30,13 @@
     <ItemGroup>
         <Resource Include="Assets\**" />
     </ItemGroup>
-    
+
     <ItemGroup>
         <EmbeddedResource Include="SevenZip\7z-$(Platform)\**">
             <LogicalName>SevenZip\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
         <EmbeddedResource Include="Showcase\**">
             <LogicalName>Showcase\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
-        </EmbeddedResource>
-        <EmbeddedResource Include="..\..\Sucrose\Package\Cache\net9.0-windows\$(Platform)\**">
-            <LogicalName>Caches\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
         <EmbeddedResource Include="..\..\Sucrose\Package\Compressed\net9.0-windows\Sucrose-$(Platform).7z">
             <LogicalName>Packages\%(RecursiveDir)Sucrose%(Extension)</LogicalName>
