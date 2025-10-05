@@ -6,6 +6,7 @@ using SMMRA = Sucrose.Memory.Manage.Readonly.App;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SRHA = Sucrose.Reportdog.Helper.Attempt;
 using SRMI = Sucrose.Reportdog.Manage.Internal;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -18,6 +19,8 @@ namespace Sucrose.Reportdog
         {
             try
             {
+                SSDHR.Configure();
+
                 Console.InputEncoding = Encoding.UTF8;
                 Console.OutputEncoding = Encoding.UTF8;
 

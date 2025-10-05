@@ -530,16 +530,20 @@ namespace Sucrose.Mpv.NET.Player
 
         private readonly string[] possibleLibMpvPaths = new string[]
         {
-            "libmpv-2.dll",
-            @"lib\libmpv-2.dll"
+            "libmpv-x86.dll",
+            "libmpv-x64.dll",
+            "libmpv-ARM64.dll",
+            @"Requirements\libmpv-x86.dll",
+            @"Requirements\libmpv-x64.dll",
+            @"Requirements\libmpv-ARM64.dll",
         };
 
         private readonly string[] possibleYtdlHookPaths = new string[]
         {
             "ytdl_hook.lua",
             "ytdl.lua",
-            @"lib\ytdl_hook.lua",
-            @"lib\ytdl.lua"
+            @"Requirements\ytdl_hook.lua",
+            @"Requirements\ytdl.lua"
         };
 
         private readonly object mpvLock = new();

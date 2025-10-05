@@ -34,7 +34,13 @@ namespace Sucrose.Shared.Space.Manage
 
         public static string This => Path.GetDirectoryName(App);
 
+        public static string Assets => Path.Combine(This, SMMRF.Assets);
+
         public static string Folder => Directory.GetParent(This).FullName;
+
+        public static string Locales => Path.Combine(This, SMMRF.Locales);
+
+        public static string Requirements => Path.Combine(This, SMMRF.Requirements);
 
         public static string App => SSSHE.Change(SHA.Assemble(SEAT.Entry).Location, ".exe");
 

@@ -13,6 +13,7 @@ using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
 using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
@@ -95,6 +96,8 @@ namespace Sucrose.Live.Vexana
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()

@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Enum\ArchitectureType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enum\PropertiesType.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Enum\WallpaperType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Runtime.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Manage\Internal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Manage\Manager\General.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Manage\Manager\Update.cs" />

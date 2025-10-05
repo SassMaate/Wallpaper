@@ -7,7 +7,7 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static string Get(string Assets)
         {
-            return Path.Combine(SSSMI.This, Assets);
+            return Path.Combine(SSSMI.Assets, Assets);
         }
     }
 }

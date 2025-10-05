@@ -3,6 +3,7 @@ using System.Text;
 using SCHA = Sucrose.Commandog.Helper.Arguments;
 using SHC = Skylark.Helper.Culture;
 using SMMG = Sucrose.Manager.Manage.General;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 
 namespace Sucrose.Commandog
@@ -13,6 +14,8 @@ namespace Sucrose.Commandog
         {
             try
             {
+                SSDHR.Configure();
+
                 Console.InputEncoding = Encoding.UTF8;
                 Console.OutputEncoding = Encoding.UTF8;
 

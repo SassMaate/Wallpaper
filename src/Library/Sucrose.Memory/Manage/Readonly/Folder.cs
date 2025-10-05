@@ -10,6 +10,8 @@
 
         public static readonly string Store = "Store";
 
+        public static readonly string Assets = "Assets";
+
         public static readonly string Bundle = "Bundle";
 
         public static readonly string Report = "Report";
@@ -17,6 +19,8 @@
         public static readonly string Content = "Content";
 
         public static readonly string Library = "Library";
+
+        public static readonly string Locales = "locales";
 
         public static readonly string Runtime = "Runtime";
 
@@ -35,5 +39,7 @@
         public static readonly string Temporary = "Temporary";
 
         public static readonly string Properties = "Properties";
+
+        public static readonly string Requirements = "Requirements";
     }
 }

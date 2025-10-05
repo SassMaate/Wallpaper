@@ -5,6 +5,7 @@ using SHC = Skylark.Helper.Culture;
 using SMMG = Sucrose.Manager.Manage.General;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -17,6 +18,8 @@ namespace Sucrose.Backgroundog
         {
             try
             {
+                SSDHR.Configure();
+
                 Console.InputEncoding = Encoding.UTF8;
                 Console.OutputEncoding = Encoding.UTF8;
 

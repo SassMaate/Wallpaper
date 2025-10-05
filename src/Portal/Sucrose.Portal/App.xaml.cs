@@ -38,6 +38,7 @@ using SPVPSSSP = Sucrose.Portal.Views.Pages.Setting.SystemSettingPage;
 using SPVPSWSP = Sucrose.Portal.Views.Pages.Setting.WallpaperSettingPage;
 using SPVWMW = Sucrose.Portal.Views.Windows.MainWindow;
 using SRHR = Sucrose.Resources.Helper.Resources;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
@@ -165,6 +166,8 @@ namespace Sucrose.Portal
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         /// <summary>

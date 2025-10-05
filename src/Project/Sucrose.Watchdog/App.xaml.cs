@@ -19,6 +19,7 @@ using SSCHA = Sucrose.Shared.Core.Helper.Architecture;
 using SSCHF = Sucrose.Shared.Core.Helper.Framework;
 using SSCHOS = Sucrose.Shared.Core.Helper.OperatingSystem;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSECCE = Skylark.Standard.Extension.Cryptology.CryptologyExtension;
 using SSSEWE = Sucrose.Shared.Space.Extension.WatchException;
@@ -90,6 +91,8 @@ namespace Sucrose.Watchdog
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()

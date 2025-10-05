@@ -30,6 +30,7 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEDT = Sucrose.Shared.Dependency.Enum.DialogType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
@@ -127,6 +128,8 @@ namespace Sucrose.Live.WebView
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()

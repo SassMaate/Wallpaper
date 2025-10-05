@@ -12,6 +12,7 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSCEUET = Sucrose.Shared.Core.Enum.UpdateExtensionType;
 using SSCHU = Sucrose.Shared.Core.Helper.Update;
 using SSDEUAT = Sucrose.Shared.Dependency.Enum.UpdateAutoType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMU = Sucrose.Shared.Dependency.Manage.Manager.Update;
 using SSSHE = Sucrose.Shared.Space.Helper.Extension;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
@@ -77,6 +78,8 @@ namespace Sucrose.Update
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()

@@ -33,6 +33,7 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEDT = Sucrose.Shared.Dependency.Enum.DialogType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSECSHP = Sucrose.Shared.Engine.CefSharp.Helper.Properties;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
@@ -134,6 +135,8 @@ namespace Sucrose.Live.CefSharp
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()
@@ -306,8 +309,6 @@ namespace Sucrose.Live.CefSharp
                     {
                         SSLHK.StopSubprocess();
 
-                        ConfigureCefSharpRuntime();
-
                         CefSettings Settings = new()
                         {
                             UserAgent = SMMG.UserAgent,
@@ -383,11 +384,9 @@ namespace Sucrose.Live.CefSharp
                             }
                         }
 
-                        string LocalesPath = Path.Combine(SSSMI.This, "locales");
-
-                        if (Directory.Exists(LocalesPath))
+                        if (Directory.Exists(SSSMI.Locales))
                         {
-                            string Locales = Directory.GetFiles(LocalesPath, "*.pak")
+                            string Locales = Directory.GetFiles(SSSMI.Locales, "*.pak")
                                 .FirstOrDefault(locale => Path.GetFileNameWithoutExtension(locale)
                                 .StartsWith(SMMG.Culture, StringComparison.OrdinalIgnoreCase));
 
@@ -599,15 +598,6 @@ namespace Sucrose.Live.CefSharp
             await Task.Delay(1500);
 
             Checker();
-        }
-
-        protected void ConfigureCefSharpRuntime()
-        {
-            Environment.SetEnvironmentVariable("DOTNET_ROOT", SSSMI.Runtime, EnvironmentVariableTarget.Process);
-            Environment.SetEnvironmentVariable("DOTNET_MULTILEVEL_LOOKUP", "0", EnvironmentVariableTarget.Process);
-            Environment.SetEnvironmentVariable("DOTNET_ROLL_FORWARD", "LatestMajor", EnvironmentVariableTarget.Process);
-
-            Environment.SetEnvironmentVariable("PATH", $"{SSSMI.Runtime};{SSSMI.This}", EnvironmentVariableTarget.Process);
         }
 
         protected override void OnExit(ExitEventArgs e)

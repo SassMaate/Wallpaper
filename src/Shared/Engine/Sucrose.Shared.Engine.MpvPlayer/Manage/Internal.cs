@@ -14,14 +14,12 @@ namespace Sucrose.Shared.Engine.MpvPlayer.Manage
 
         public static MediaEngine MediaEngine;
 
-        public static readonly string LibPath = Path.Combine(SSSMI.This, "lib");
-
 #if X86
-        public static readonly string MediaPath = Path.Combine(LibPath, "libmpv-x86.dll");
+        public static readonly string MediaPath = Path.Combine(SSSMI.Requirements, "libmpv-x86.dll");
 #elif X64
-        public static readonly string MediaPath = Path.Combine(LibPath, "libmpv-x64.dll");
+        public static readonly string MediaPath = Path.Combine(SSSMI.Requirements, "libmpv-x64.dll");
 #else
-        public static readonly string MediaPath = Path.Combine(LibPath, "libmpv-ARM64.dll");
+        public static readonly string MediaPath = Path.Combine(SSSMI.Requirements, "libmpv-ARM64.dll");
 #endif
 
     }

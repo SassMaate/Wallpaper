@@ -19,6 +19,7 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
@@ -82,8 +83,10 @@ namespace Sucrose.Property
                 Message(Exception);
             };
 
-            ConfigHelper.Instance.SetLang(SMMG.Culture);
             SHC.All = new CultureInfo(SMMG.Culture, true);
+            ConfigHelper.Instance.SetLang(SMMG.Culture);
+
+            SSDHR.Configure();
         }
 
         protected void Close()

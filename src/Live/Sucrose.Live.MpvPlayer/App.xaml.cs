@@ -18,6 +18,7 @@ using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
@@ -108,6 +109,8 @@ namespace Sucrose.Live.MpvPlayer
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
         }
 
         protected void Close()
