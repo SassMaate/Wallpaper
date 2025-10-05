@@ -1,9 +1,11 @@
-﻿namespace Sucrose.Memory.Manage.Readonly
+﻿using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+
+namespace Sucrose.Memory.Manage.Readonly
 {
     public static class Scheduler
     {
         public static readonly string TaskName = "Autorun for Sucrose";
 
-        public static readonly string TaskDescription = "Sucrose Wallpaper Engine";
+        public static readonly string TaskDescription = SMMRG.AppLongName;
     }
 }

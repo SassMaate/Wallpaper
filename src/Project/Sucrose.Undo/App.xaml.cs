@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Threading;
 using SHC = Skylark.Helper.Culture;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SWUD = Skylark.Wing.Utility.Desktop;
@@ -19,11 +20,11 @@ namespace Sucrose.Undo
     {
         private static string Message => SRER.GetValue("Undo", "QuestionMessage") + Environment.NewLine + Environment.NewLine + SRER.GetValue("Undo", "QuestionDescription");
 
-        private static string UninstallPath => Path.Combine(SMMRP.LocalApplicationData, Application);
+        private static string UninstallPath => Path.Combine(SMMRP.LocalApplicationData, SMMRG.AppName);
+
+        private static string UninstallDataPath => Path.Combine(SMMRP.ApplicationData, SMMRG.AppName);
 
         private static string RegistryName => @"Software\Microsoft\Windows\CurrentVersion\Uninstall";
-
-        private static string UninstallDataPath => Path.Combine(SMMRP.ApplicationData, Application);
 
         private static string StartMenu => Path.Combine(SMMRP.StartMenu, "Programs", Shortcut);
 
@@ -31,11 +32,7 @@ namespace Sucrose.Undo
 
         private static string Title => SRER.GetValue("Undo", "QuestionTitle");
 
-        private static string Text => "Sucrose Wallpaper Engine";
-
-        private static string Shortcut => $"{Text}.lnk";
-
-        private static string Application => "Sucrose";
+        private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
 
         private static string Undo => "Sucrose.Undo";
 
@@ -129,11 +126,11 @@ namespace Sucrose.Undo
             {
                 await Task.Delay(Delay);
 
-                TerminateProcess(Application);
+                TerminateProcess(SMMRG.AppName);
 
                 await Task.Delay(Delay);
 
-                TerminateProcess(Application);
+                TerminateProcess(SMMRG.AppName);
 
                 await Task.Delay(Delay);
 
@@ -165,7 +162,7 @@ namespace Sucrose.Undo
                 await Task.Delay(Delay);
 
                 RegistryKey HomeKey = Registry.CurrentUser.OpenSubKey(RegistryName, true);
-                HomeKey?.DeleteSubKey(Application, false);
+                HomeKey?.DeleteSubKey(SMMRG.AppName, false);
 
                 await Task.Delay(Delay);
             }

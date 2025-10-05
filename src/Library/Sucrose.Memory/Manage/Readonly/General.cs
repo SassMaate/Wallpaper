@@ -30,6 +30,8 @@ namespace Sucrose.Memory.Manage.Readonly
 
         public static readonly string StartCommand = $"{StartCommandChar}";
 
+        public static readonly string AppLongName = "Sucrose Wallpaper Engine";
+
         public static readonly string ValueSeparator = $"{ValueSeparatorChar}";
 
         public static readonly string UserAgent = "Sucrose/2.3 (Windows NT 10.0; Wallpaper Engine) SucroseWebKit";
