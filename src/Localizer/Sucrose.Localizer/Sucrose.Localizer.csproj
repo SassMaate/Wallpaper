@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>false</UseWPF>
         <OutputType>Exe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
+        <UseWindowsForms>false</UseWindowsForms>
         <AssemblyName>Sucrose.Localizer</AssemblyName>
         <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>false</UseWindowsForms>
-        <UseWPF>false</UseWPF>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);LOCALIZER</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Localizer\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Localizer\x64</OutputPath>
@@ -24,10 +24,5 @@
         <PackageReference Include="CsvHelper" />
         <PackageReference Include="Skylark.Standard" />
     </ItemGroup>
-
-    <PropertyGroup>
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
 
 </Project>

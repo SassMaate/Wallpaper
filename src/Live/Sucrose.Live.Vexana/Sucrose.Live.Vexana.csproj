@@ -39,9 +39,4 @@
     <Import Project="..\..\Shared\Sucrose.Shared.Dependency\Sucrose.Shared.Dependency.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine.Vexana\Sucrose.Shared.Engine.Vexana.projitems" Label="Shared" />
 
-    <PropertyGroup>
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
-
 </Project>

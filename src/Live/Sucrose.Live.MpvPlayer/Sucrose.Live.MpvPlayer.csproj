@@ -52,9 +52,4 @@
         </None>
     </ItemGroup>
 
-    <PropertyGroup>
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
-
 </Project>

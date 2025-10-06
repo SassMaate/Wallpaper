@@ -40,6 +40,11 @@
         </AppConfigWithTargetPath>
     </ItemGroup>
 
+    <PropertyGroup Condition="'$(OutputType)' != 'Library'">
+        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
+        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
+    </PropertyGroup>
+
     <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(OutputType)' != 'Library' AND '$(Configuration)' == 'Debug'">
         <ItemGroup>
             <FilesToCopy Include="$(SourceDirectory)\**\*.*" />

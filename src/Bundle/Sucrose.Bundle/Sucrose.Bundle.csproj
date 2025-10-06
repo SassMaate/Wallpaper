@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>true</UseWPF>
         <OutputType>WinExe</OutputType>
+        <UseWindowsForms>false</UseWindowsForms>
         <TargetFrameworks>net48</TargetFrameworks>
-        <StartupObject>$(RootNamespace).App</StartupObject>
         <AssemblyName>Sucrose.Bundle</AssemblyName>
         <RootNamespace>$(RootNamespace)</RootNamespace>
-        <UseWindowsForms>false</UseWindowsForms>
-        <UseWPF>true</UseWPF>
+        <StartupObject>$(RootNamespace).App</StartupObject>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Bundle\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Bundle\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Bundle\ARM64</OutputPath>
@@ -42,10 +42,5 @@
             <LogicalName>Packages\%(RecursiveDir)Sucrose%(Extension)</LogicalName>
         </EmbeddedResource>
     </ItemGroup>
-
-    <PropertyGroup>
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
 
 </Project>

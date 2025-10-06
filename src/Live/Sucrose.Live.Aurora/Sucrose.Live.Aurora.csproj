@@ -40,9 +40,4 @@
     <Import Project="..\..\Shared\Sucrose.Shared.Dependency\Sucrose.Shared.Dependency.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine.Aurora\Sucrose.Shared.Engine.Aurora.projitems" Label="Shared" />
 
-    <PropertyGroup>
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
-
 </Project>
