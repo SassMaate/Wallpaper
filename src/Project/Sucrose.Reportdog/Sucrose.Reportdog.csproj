@@ -1,12 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>true</UseWPF>
         <OutputType>Exe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
+        <UseWindowsForms>true</UseWindowsForms>
         <AssemblyName>Sucrose.Reportdog</AssemblyName>
         <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>true</UseWindowsForms>
-        <UseWPF>true</UseWPF>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);REPORTDOG</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Reportdog\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Reportdog\x64</OutputPath>

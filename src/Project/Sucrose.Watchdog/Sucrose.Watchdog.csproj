@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>true</UseWPF>
         <OutputType>WinExe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
+        <UseWindowsForms>false</UseWindowsForms>
         <AssemblyName>Sucrose.Watchdog</AssemblyName>
         <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>false</UseWindowsForms>
-        <UseWPF>true</UseWPF>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);WATCHDOG</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Watchdog\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Watchdog\x64</OutputPath>

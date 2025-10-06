@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>true</UseWPF>
         <OutputType>WinExe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
+        <UseWindowsForms>true</UseWindowsForms>
         <AssemblyName>Sucrose.Property</AssemblyName>
         <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>true</UseWindowsForms>
-        <UseWPF>true</UseWPF>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);PROPERTY</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Property\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Property\x64</OutputPath>

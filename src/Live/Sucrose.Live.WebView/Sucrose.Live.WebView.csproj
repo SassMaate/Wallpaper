@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
-        <AssemblyName>Sucrose.Live.WebView</AssemblyName>
-        <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>true</UseWindowsForms>
         <UseWPF>true</UseWPF>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <AssemblyName>Sucrose.Live.WebView</AssemblyName>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);ENGINE;LIVE_WEBVIEW</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\WebView\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\WebView\x64</OutputPath>

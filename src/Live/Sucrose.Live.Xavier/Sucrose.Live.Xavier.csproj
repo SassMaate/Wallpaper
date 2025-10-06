@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <StartupObject>$(AssemblyName).App</StartupObject>
-        <AssemblyName>Sucrose.Live.Xavier</AssemblyName>
-        <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>true</UseWindowsForms>
         <UseWPF>true</UseWPF>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <AssemblyName>Sucrose.Live.Xavier</AssemblyName>
+        <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);ENGINE;LIVE_XAVIER</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\Xavier\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\Xavier\x64</OutputPath>

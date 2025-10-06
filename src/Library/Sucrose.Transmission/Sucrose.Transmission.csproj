@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\Transmission\ARM64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\Transmission\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\Transmission\x86</OutputPath>
         <OutputType>Library</OutputType>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\Transmission\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\Transmission\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\Transmission\ARM64</OutputPath>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <UseWPF>true</UseWPF>
         <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <AssemblyName>Sucrose.Live.MpvPlayer</AssemblyName>
-        <RootNamespace>$(AssemblyName)</RootNamespace>
-        <UseWindowsForms>true</UseWindowsForms>
-        <UseWPF>true</UseWPF>
         <DefineConstants>$(DefineConstants);ENGINE;LIVE_MPVPLAYER</DefineConstants>
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\MpvPlayer\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\MpvPlayer\x64</OutputPath>
