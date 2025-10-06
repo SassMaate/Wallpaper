@@ -21,9 +21,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="TaskScheduler" Version="2.12.2" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
+        <PackageReference Include="Skylark.Wing" />
+        <PackageReference Include="TaskScheduler" />
+        <PackageReference Include="Skylark.Standard" />
     </ItemGroup>
 
     <ItemGroup>

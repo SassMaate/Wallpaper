@@ -7,11 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sucrose.Bundle", "Bundle\Su
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3943FC00-5155-481C-ABD2-2F1E094589A0}"
 	ProjectSection(SolutionItems) = preProject
+		..\global.json = ..\global.json
+		..\NuGet.Config = ..\NuGet.Config
 		..\.editorconfig = ..\.editorconfig
 		..\Directory.Build.props = ..\Directory.Build.props
 		..\Directory.Build.targets = ..\Directory.Build.targets
-		..\global.json = ..\global.json
-		..\NuGet.Config = ..\NuGet.Config
+		..\Directory.Packages.props = ..\Directory.Packages.props
 	EndProjectSection
 EndProject
 Global

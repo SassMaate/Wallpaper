@@ -21,9 +21,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
-        <PackageReference Include="DiscordRichPresence" Version="1.6.1.70" />
+        <PackageReference Include="Skylark.Wing" />
+        <PackageReference Include="Skylark.Standard" />
+        <PackageReference Include="DiscordRichPresence" />
     </ItemGroup>
 
     <ItemGroup>

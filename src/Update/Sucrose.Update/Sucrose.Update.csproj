@@ -21,11 +21,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="WPF-UI" Version="4.0.3" />
-        <PackageReference Include="Downloader" Version="4.0.3" />
-        <PackageReference Include="SharpCompress" Version="0.40.0" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
+        <PackageReference Include="WPF-UI" />
+        <PackageReference Include="Downloader" />
+        <PackageReference Include="Skylark.Wing" />
+        <PackageReference Include="SharpCompress" />
+        <PackageReference Include="Skylark.Standard" />
     </ItemGroup>
 
     <ItemGroup>

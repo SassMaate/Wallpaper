@@ -18,10 +18,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="SharpCompress" Version="0.40.0" />
-        <PackageReference Include="Skylark.Wing" Version="3.1.8.6" />
-        <PackageReference Include="Skylark.Standard" Version="3.1.7.2" />
-        <PackageReference Include="Costura.Fody" Version="6.0.0">
+        <PackageReference Include="Skylark.Wing" />
+        <PackageReference Include="SharpCompress" />
+        <PackageReference Include="Skylark.Standard" />
+        <PackageReference Include="Costura.Fody">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>compile; runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>

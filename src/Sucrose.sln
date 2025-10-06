@@ -4,11 +4,12 @@ VisualStudioVersion = 17.7.33808.371
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3943FC00-5155-481C-ABD2-2F1E094589A0}"
 	ProjectSection(SolutionItems) = preProject
+		..\global.json = ..\global.json
+		..\NuGet.Config = ..\NuGet.Config
 		..\.editorconfig = ..\.editorconfig
 		..\Directory.Build.props = ..\Directory.Build.props
-		..\global.json = ..\global.json
 		..\Directory.Build.targets = ..\Directory.Build.targets
-		..\NuGet.Config = ..\NuGet.Config
+		..\Directory.Packages.props = ..\Directory.Packages.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{5B4A4BA0-D823-4720-8C8C-10E5ECBB4474}"
