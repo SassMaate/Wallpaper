@@ -606,17 +606,22 @@ namespace Sucrose.Backgroundog.Helper
 
                                             if (Hardware.Sensors.Any())
                                             {
+                                                SBMI.CpuData.State = true;
+                                                SBMI.CpuData.Name = Hardware.Name;
+
                                                 foreach (ISensor Sensor in Hardware.Sensors)
                                                 {
                                                     if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Total")
                                                     {
-                                                        SBMI.CpuData.State = true;
-                                                        SBMI.CpuData.Min = Sensor.Min;
                                                         SBMI.CpuData.Max = Sensor.Max;
+                                                        SBMI.CpuData.Min = Sensor.Min;
                                                         SBMI.CpuData.Now = Sensor.Value;
-                                                        SBMI.CpuData.Name = Hardware.Name;
-
-                                                        break;
+                                                    }
+                                                    else if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Core Max")
+                                                    {
+                                                        SBMI.CpuData.CoreMax = Sensor.Max;
+                                                        SBMI.CpuData.CoreMin = Sensor.Min;
+                                                        SBMI.CpuData.CoreNow = Sensor.Value;
                                                     }
                                                 }
                                             }

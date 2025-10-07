@@ -19,15 +19,15 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public float? Max;
+        /// <summary>
+        /// 
+        /// </summary>
         public float? Min;
         /// <summary>
         /// 
         /// </summary>
         public float? Now;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? Max;
         /// <summary>
         /// 
         /// </summary>
@@ -40,6 +40,18 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public string Name;
+        /// <summary>
+        /// 
+        /// </summary>
+        public float? CoreMax;
+        /// <summary>
+        /// 
+        /// </summary>
+        public float? CoreMin;
+        /// <summary>
+        /// 
+        /// </summary>
+        public float? CoreNow;
         /// <summary>
         /// 
         /// </summary>
