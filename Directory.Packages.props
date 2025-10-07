@@ -24,6 +24,6 @@
         <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.0.3" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
         <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.3537.50" />
-        <PackageVersion Include="LibreHardwareMonitorLib" Version="0.9.5-pre497" />
+        <PackageVersion Include="LibreHardwareMonitorLib" Version="0.9.5-pre498" />
     </ItemGroup>
 </Project>
