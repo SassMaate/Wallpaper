@@ -604,18 +604,25 @@ namespace Sucrose.Backgroundog.Helper
                                         {
                                             //Hardware.Update();
 
-                                            foreach (ISensor Sensor in Hardware.Sensors)
+                                            if (Hardware.Sensors.Any())
                                             {
-                                                if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Total")
+                                                foreach (ISensor Sensor in Hardware.Sensors)
                                                 {
-                                                    SBMI.CpuData.State = true;
-                                                    SBMI.CpuData.Min = Sensor.Min;
-                                                    SBMI.CpuData.Max = Sensor.Max;
-                                                    SBMI.CpuData.Now = Sensor.Value;
-                                                    SBMI.CpuData.Name = Hardware.Name;
+                                                    if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Total")
+                                                    {
+                                                        SBMI.CpuData.State = true;
+                                                        SBMI.CpuData.Min = Sensor.Min;
+                                                        SBMI.CpuData.Max = Sensor.Max;
+                                                        SBMI.CpuData.Now = Sensor.Value;
+                                                        SBMI.CpuData.Name = Hardware.Name;
 
-                                                    break;
+                                                        break;
+                                                    }
                                                 }
+                                            }
+                                            else
+                                            {
+                                                SBMI.CpuData.State = false;
                                             }
                                         }
                                         catch (Exception Exception)
@@ -632,34 +639,58 @@ namespace Sucrose.Backgroundog.Helper
                                         {
                                             //Hardware.Update();
 
-                                            SBMI.MemoryData.State = true;
-                                            SBMI.MemoryData.Name = Hardware.Name;
-
-                                            foreach (ISensor Sensor in Hardware.Sensors)
+                                            if (Hardware.Sensors.Any())
                                             {
-                                                switch (Sensor.Name)
+                                                SBMI.MemoryData.State = true;
+
+                                                if (Hardware.Name == "Total Memory")
                                                 {
-                                                    case "Memory Used" when Sensor.SensorType == SensorType.Data:
-                                                        SBMI.MemoryData.MemoryUsed = Sensor.Value;
-                                                        break;
-                                                    case "Memory Available" when Sensor.SensorType == SensorType.Data:
-                                                        SBMI.MemoryData.MemoryAvailable = Sensor.Value;
-                                                        break;
-                                                    case "Memory" when Sensor.SensorType == SensorType.Load:
-                                                        SBMI.MemoryData.MemoryLoad = Sensor.Value;
-                                                        break;
-                                                    case "Virtual Memory Used" when Sensor.SensorType == SensorType.Data:
-                                                        SBMI.MemoryData.VirtualMemoryUsed = Sensor.Value;
-                                                        break;
-                                                    case "Virtual Memory Available" when Sensor.SensorType == SensorType.Data:
-                                                        SBMI.MemoryData.VirtualMemoryAvailable = Sensor.Value;
-                                                        break;
-                                                    case "Virtual Memory" when Sensor.SensorType == SensorType.Load:
-                                                        SBMI.MemoryData.VirtualMemoryLoad = Sensor.Value;
-                                                        break;
-                                                    default:
-                                                        break;
+                                                    SBMI.MemoryData.Name = Hardware.Name;
+
+                                                    foreach (ISensor Sensor in Hardware.Sensors)
+                                                    {
+                                                        switch (Sensor.Name)
+                                                        {
+                                                            case "Memory" when Sensor.SensorType == SensorType.Load:
+                                                                SBMI.MemoryData.MemoryLoad = Sensor.Value;
+                                                                break;
+                                                            case "Memory Used" when Sensor.SensorType == SensorType.Data:
+                                                                SBMI.MemoryData.MemoryUsed = Sensor.Value;
+                                                                break;
+                                                            case "Memory Available" when Sensor.SensorType == SensorType.Data:
+                                                                SBMI.MemoryData.MemoryAvailable = Sensor.Value;
+                                                                break;
+                                                            default:
+                                                                break;
+                                                        }
+                                                    }
                                                 }
+                                                else if (Hardware.Name == "Virtual Memory")
+                                                {
+                                                    SBMI.MemoryData.VirtualName = Hardware.Name;
+
+                                                    foreach (ISensor Sensor in Hardware.Sensors)
+                                                    {
+                                                        switch (Sensor.Name)
+                                                        {
+                                                            case "Virtual Memory" when Sensor.SensorType == SensorType.Load:
+                                                                SBMI.MemoryData.VirtualMemoryLoad = Sensor.Value;
+                                                                break;
+                                                            case "Virtual Memory Used" when Sensor.SensorType == SensorType.Data:
+                                                                SBMI.MemoryData.VirtualMemoryUsed = Sensor.Value;
+                                                                break;
+                                                            case "Virtual Memory Available" when Sensor.SensorType == SensorType.Data:
+                                                                SBMI.MemoryData.VirtualMemoryAvailable = Sensor.Value;
+                                                                break;
+                                                            default:
+                                                                break;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                SBMI.MemoryData.State = false;
                                             }
                                         }
                                         catch (Exception Exception)

@@ -224,6 +224,7 @@ namespace Sucrose.Backgroundog.Manage
             MemoryAvailable = 0f,
             VirtualMemoryUsed = 0f,
             VirtualMemoryLoad = 0f,
+            VirtualName = string.Empty,
             VirtualMemoryAvailable = 0f
         };
 

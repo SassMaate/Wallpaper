@@ -283,6 +283,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public string VirtualName;
+        /// <summary>
+        /// 
+        /// </summary>
         public float? MemoryAvailable;
         /// <summary>
         /// 
