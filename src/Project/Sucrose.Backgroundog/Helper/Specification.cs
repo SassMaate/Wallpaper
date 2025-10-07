@@ -731,13 +731,13 @@ namespace Sucrose.Backgroundog.Helper
                                                         case "Discharge Current" when Sensor.SensorType == SensorType.Current:
                                                             SBMI.BatteryData.DischargeCurrent = Sensor.Value;
                                                             break;
-                                                        case "Charge / Discharge Current" when Sensor.SensorType == SensorType.Current:
+                                                        case "Charge/Discharge Current" when Sensor.SensorType == SensorType.Current:
                                                             SBMI.BatteryData.ChargeDischargeCurrent = Sensor.Value;
                                                             break;
                                                         case "Designed Capacity" when Sensor.SensorType == SensorType.Energy:
                                                             SBMI.BatteryData.DesignedCapacity = Sensor.Value;
                                                             break;
-                                                        case "Full Charged Capacity" when Sensor.SensorType == SensorType.Energy:
+                                                        case "Fully-Charged Capacity" when Sensor.SensorType == SensorType.Energy:
                                                             SBMI.BatteryData.FullChargedCapacity = Sensor.Value;
                                                             break;
                                                         case "Remaining Capacity" when Sensor.SensorType == SensorType.Energy:
@@ -749,7 +749,7 @@ namespace Sucrose.Backgroundog.Helper
                                                         case "Discharge Rate" when Sensor.SensorType == SensorType.Power:
                                                             SBMI.BatteryData.DischargeRate = Sensor.Value;
                                                             break;
-                                                        case "Charge / Discharge Rate" when Sensor.SensorType == SensorType.Power:
+                                                        case "Charge/Discharge Rate" when Sensor.SensorType == SensorType.Power:
                                                             SBMI.BatteryData.ChargeDischargeRate = Sensor.Value;
                                                             break;
                                                         case "Degradation Level" when Sensor.SensorType == SensorType.Level:
