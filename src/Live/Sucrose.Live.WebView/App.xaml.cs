@@ -167,7 +167,7 @@ namespace Sucrose.Live.WebView
                 }
                 else
                 {
-                    if (SHV.Compare(SHV.Clear(Version), SHV.Clear("131.0.2903.112")) != SEVT.Latest)
+                    if (SHV.Compare(SHV.Clear(Version), SHV.Clear("131.0.2903.70")) != SEVT.Latest)
                     {
                         return true;
                     }
