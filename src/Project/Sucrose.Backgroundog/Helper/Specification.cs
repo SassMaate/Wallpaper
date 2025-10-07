@@ -673,13 +673,13 @@ namespace Sucrose.Backgroundog.Helper
                                                     {
                                                         switch (Sensor.Name)
                                                         {
-                                                            case "Virtual Memory" when Sensor.SensorType == SensorType.Load:
+                                                            case "Memory" when Sensor.SensorType == SensorType.Load:
                                                                 SBMI.MemoryData.VirtualMemoryLoad = Sensor.Value;
                                                                 break;
-                                                            case "Virtual Memory Used" when Sensor.SensorType == SensorType.Data:
+                                                            case "Memory Used" when Sensor.SensorType == SensorType.Data:
                                                                 SBMI.MemoryData.VirtualMemoryUsed = Sensor.Value;
                                                                 break;
-                                                            case "Virtual Memory Available" when Sensor.SensorType == SensorType.Data:
+                                                            case "Memory Available" when Sensor.SensorType == SensorType.Data:
                                                                 SBMI.MemoryData.VirtualMemoryAvailable = Sensor.Value;
                                                                 break;
                                                             default:
