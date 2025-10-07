@@ -9,13 +9,16 @@ namespace Sucrose.Backgroundog.Extension
         {
             return new JObject
             {
+                { "Max", SBMI.CpuData.Max },
                 { "Min", SBMI.CpuData.Min },
                 { "Now", SBMI.CpuData.Now },
-                { "Max", SBMI.CpuData.Max },
-                { "Name", SBMI.CpuData.Name },
                 { "Core", SBMI.CpuData.Core },
+                { "Name", SBMI.CpuData.Name },
                 { "State", SBMI.CpuData.State },
                 { "Thread", SBMI.CpuData.Thread },
+                { "CoreMax", SBMI.CpuData.CoreMax },
+                { "CoreMin", SBMI.CpuData.CoreMin },
+                { "CoreNow", SBMI.CpuData.CoreNow },
                 { "FullName", SBMI.CpuData.FullName }
             };
         }
@@ -43,8 +46,8 @@ namespace Sucrose.Backgroundog.Extension
                 { "Day", SBMI.DateData.Day },
                 { "Hour", SBMI.DateData.Hour },
                 { "Year", SBMI.DateData.Year },
-                { "State", SBMI.DateData.State },
                 { "Month", SBMI.DateData.Month },
+                { "State", SBMI.DateData.State },
                 { "Minute", SBMI.DateData.Minute },
                 { "Second", SBMI.DateData.Second },
                 { "Millisecond", SBMI.DateData.Millisecond }
@@ -61,30 +64,30 @@ namespace Sucrose.Backgroundog.Extension
                 { "Artist", SBMI.AudioData.Artist },
                 //{ "Hwnd", $"{SBMI.AudioData.Hwnd}" },
                 { "Subtitle", SBMI.AudioData.Subtitle },
-                { "Data", new JArray(SBMI.AudioData.Data) },
                 { "AlbumTitle", SBMI.AudioData.AlbumTitle },
-                { "TrackNumber", SBMI.AudioData.TrackNumber },
+                { "Data", new JArray(SBMI.AudioData.Data) },
                 { "AlbumArtist", SBMI.AudioData.AlbumArtist },
                 { "SourceAppId", SBMI.AudioData.SourceAppId },
+                { "TrackNumber", SBMI.AudioData.TrackNumber },
                 { "MediaType", $"{SBMI.AudioData.MediaType}" },
                 { "PlaybackRate", SBMI.AudioData.PlaybackRate },
                 { "PropsValid", $"{SBMI.AudioData.PropsValid}" },
                 { "RepeatMode", $"{SBMI.AudioData.RepeatMode}" },
-                //{ "SourceDeviceId", SBMI.AudioData.SourceDeviceId },
                 //{ "RenderDeviceId", SBMI.AudioData.RenderDeviceId },
                 { "ShuffleEnabled", SBMI.AudioData.ShuffleEnabled },
+                //{ "SourceDeviceId", SBMI.AudioData.SourceDeviceId },
                 //{ "PlaybackCaps", $"{SBMI.AudioData.PlaybackCaps}" },
                 { "PlaybackMode", $"{SBMI.AudioData.PlaybackMode}" },
-                { "ThumbnailString", SBMI.AudioData.ThumbnailString },
                 { "AlbumTrackCount", SBMI.AudioData.AlbumTrackCount },
+                { "ThumbnailString", SBMI.AudioData.ThumbnailString },
                 { "PlaybackState", $"{SBMI.AudioData.PlaybackState}" },
                 { "EndTime", SBMI.AudioData.EndTime.TotalMilliseconds },
                 { "Position", SBMI.AudioData.Position.TotalMilliseconds },
                 { "StartTime", SBMI.AudioData.StartTime.TotalMilliseconds },
                 { "LastPlayingFileTime", SBMI.AudioData.LastPlayingFileTime },
                 { "PositionSetFileTime", SBMI.AudioData.PositionSetFileTime },
-                { "MinSeekTime", SBMI.AudioData.MinSeekTime.TotalMilliseconds },
-                { "MaxSeekTime", SBMI.AudioData.MaxSeekTime.TotalMilliseconds }
+                { "MaxSeekTime", SBMI.AudioData.MaxSeekTime.TotalMilliseconds },
+                { "MinSeekTime", SBMI.AudioData.MinSeekTime.TotalMilliseconds }
             };
         }
 
@@ -94,11 +97,12 @@ namespace Sucrose.Backgroundog.Extension
             {
                 { "Name", SBMI.MemoryData.Name },
                 { "State", SBMI.MemoryData.State },
-                { "MemoryUsed", SBMI.MemoryData.MemoryUsed },
                 { "MemoryLoad", SBMI.MemoryData.MemoryLoad },
+                { "MemoryUsed", SBMI.MemoryData.MemoryUsed },
+                { "VirtualName", SBMI.MemoryData.VirtualName },
                 { "MemoryAvailable", SBMI.MemoryData.MemoryAvailable },
-                { "VirtualMemoryUsed", SBMI.MemoryData.VirtualMemoryUsed },
                 { "VirtualMemoryLoad", SBMI.MemoryData.VirtualMemoryLoad },
+                { "VirtualMemoryUsed", SBMI.MemoryData.VirtualMemoryUsed },
                 { "VirtualMemoryAvailable", SBMI.MemoryData.VirtualMemoryAvailable }
             };
         }
@@ -113,22 +117,22 @@ namespace Sucrose.Backgroundog.Extension
                 { "ChargeRate", SBMI.BatteryData.ChargeRate },
                 { "SavingMode", SBMI.BatteryData.SavingMode },
                 { "ChargeLevel", SBMI.BatteryData.ChargeLevel },
-                { "SaverStatus", SBMI.BatteryData.SaverStatus },
                 { "LifePercent", SBMI.BatteryData.LifePercent },
+                { "SaverStatus", SBMI.BatteryData.SaverStatus },
                 { "FullLifetime", SBMI.BatteryData.FullLifetime },
+                { "ACPowerStatus", SBMI.BatteryData.ACPowerStatus },
                 { "ChargeCurrent", SBMI.BatteryData.ChargeCurrent },
                 { "DischargeRate", SBMI.BatteryData.DischargeRate },
-                { "ACPowerStatus", SBMI.BatteryData.ACPowerStatus },
                 { "LifeRemaining", SBMI.BatteryData.LifeRemaining },
                 { "DischargeLevel", SBMI.BatteryData.DischargeLevel },
                 { "ChargeStatus", $"{SBMI.BatteryData.ChargeStatus}" },
-                { "DischargeCurrent", SBMI.BatteryData.DischargeCurrent },
-                { "DegradationLevel", SBMI.BatteryData.DegradationLevel },
                 { "DesignedCapacity", SBMI.BatteryData.DesignedCapacity },
+                { "DegradationLevel", SBMI.BatteryData.DegradationLevel },
+                { "DischargeCurrent", SBMI.BatteryData.DischargeCurrent },
                 { "RemainingCapacity", SBMI.BatteryData.RemainingCapacity },
                 { "PowerLineStatus", $"{SBMI.BatteryData.PowerLineStatus}" },
-                { "FullChargedCapacity", SBMI.BatteryData.FullChargedCapacity },
                 { "ChargeDischargeRate", SBMI.BatteryData.ChargeDischargeRate },
+                { "FullChargedCapacity", SBMI.BatteryData.FullChargedCapacity },
                 { "ChargeDischargeCurrent", SBMI.BatteryData.ChargeDischargeCurrent },
                 { "RemainingTimeEstimated", SBMI.BatteryData.RemainingTimeEstimated }
             };
@@ -140,8 +144,8 @@ namespace Sucrose.Backgroundog.Extension
             {
                 { "Amd", SBMI.GraphicData.Amd },
                 { "Name", SBMI.GraphicData.Name },
-                { "State", SBMI.GraphicData.State },
                 { "Intel", SBMI.GraphicData.Intel },
+                { "State", SBMI.GraphicData.State },
                 { "Nvidia", SBMI.GraphicData.Nvidia },
                 { "Manufacturer", SBMI.GraphicData.Manufacturer }
             };
@@ -151,8 +155,8 @@ namespace Sucrose.Backgroundog.Extension
         {
             return new JObject
             {
-                { "Name", SBMI.NetworkData.Name },
                 { "Host", SBMI.NetworkData.Host },
+                { "Name", SBMI.NetworkData.Name },
                 { "Ping", SBMI.NetworkData.Ping },
                 { "State", SBMI.NetworkData.State },
                 { "Upload", SBMI.NetworkData.Upload },

@@ -151,7 +151,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        private uint? PID;
+        //private uint? PID;
         /// <summary>
         /// 
         /// </summary>
@@ -163,15 +163,15 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        private IntPtr? Hwnd;
-        /// <summary>
-        /// 
-        /// </summary>
         public string Artist;
         /// <summary>
         /// 
         /// </summary>
         public double[] Data;
+        /// <summary>
+        /// 
+        /// </summary>
+        //private IntPtr? Hwnd;
         /// <summary>
         /// 
         /// </summary>
@@ -219,19 +219,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public TimeSpan MinSeekTime;
-        /// <summary>
-        /// 
-        /// </summary>
         public TimeSpan MaxSeekTime;
         /// <summary>
         /// 
         /// </summary>
-        private string SourceDeviceId;
+        public TimeSpan MinSeekTime;
         /// <summary>
         /// 
         /// </summary>
-        private string RenderDeviceId;
+        //private string RenderDeviceId;
+        /// <summary>
+        /// 
+        /// </summary>
+        //private string SourceDeviceId;
         /// <summary>
         /// 
         /// </summary>
@@ -267,7 +267,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        private MediaPlaybackCapabilities PlaybackCaps;
+        //private MediaPlaybackCapabilities PlaybackCaps;
     }
 
     /// <summary>
@@ -287,11 +287,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? MemoryUsed;
+        public float? MemoryLoad;
         /// <summary>
         /// 
         /// </summary>
-        public float? MemoryLoad;
+        public float? MemoryUsed;
         /// <summary>
         /// 
         /// </summary>
@@ -303,11 +303,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? VirtualMemoryUsed;
+        public float? VirtualMemoryLoad;
         /// <summary>
         /// 
         /// </summary>
-        public float? VirtualMemoryLoad;
+        public float? VirtualMemoryUsed;
         /// <summary>
         /// 
         /// </summary>
@@ -347,19 +347,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int LifeRemaining;
-        /// <summary>
-        /// 
-        /// </summary>
         public float LifePercent;
         /// <summary>
         /// 
         /// </summary>
-        public string SaverStatus;
+        public int LifeRemaining;
         /// <summary>
         /// 
         /// </summary>
         public float? ChargeLevel;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string SaverStatus;
         /// <summary>
         /// 
         /// </summary>
@@ -379,10 +379,6 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? DischargeCurrent;
-        /// <summary>
-        /// 
-        /// </summary>
         public float? DegradationLevel;
         /// <summary>
         /// 
@@ -391,15 +387,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public float? DischargeCurrent;
+        /// <summary>
+        /// 
+        /// </summary>
         public float? RemainingCapacity;
         /// <summary>
         /// 
         /// </summary>
-        public float? FullChargedCapacity;
+        public float? ChargeDischargeRate;
         /// <summary>
         /// 
         /// </summary>
-        public float? ChargeDischargeRate;
+        public float? FullChargedCapacity;
         /// <summary>
         /// 
         /// </summary>
@@ -467,11 +467,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public string Name;
+        public string Host;
         /// <summary>
         /// 
         /// </summary>
-        public string Host;
+        public string Name;
         /// <summary>
         /// 
         /// </summary>

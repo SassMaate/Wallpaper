@@ -146,11 +146,14 @@ namespace Sucrose.Backgroundog.Manage
 
         public static SBSDCS CpuData = new()
         {
+            Max = 0f,
             Min = 0f,
             Now = 0f,
-            Max = 0f,
             Core = 0,
             Thread = 0,
+            CoreMax = 0f,
+            CoreMin = 0f,
+            CoreNow = 0f,
             State = false,
             Name = string.Empty,
             FullName = string.Empty
@@ -218,12 +221,12 @@ namespace Sucrose.Backgroundog.Manage
         public static SBSDMYS MemoryData = new()
         {
             State = false,
-            MemoryUsed = 0f,
             MemoryLoad = 0f,
+            MemoryUsed = 0f,
             Name = string.Empty,
             MemoryAvailable = 0f,
-            VirtualMemoryUsed = 0f,
             VirtualMemoryLoad = 0f,
+            VirtualMemoryUsed = 0f,
             VirtualName = string.Empty,
             VirtualMemoryAvailable = 0f
         };
