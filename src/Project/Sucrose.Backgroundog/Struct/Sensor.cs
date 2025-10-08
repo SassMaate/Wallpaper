@@ -1,12 +1,12 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Sucrose.Backgroundog.Struct.Sensor
+namespace Sucrose.Backgroundog.Struct
 {
     /// <summary>
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct SensorStruct
+    public struct Sensor
     {
         /// <summary>
         /// 

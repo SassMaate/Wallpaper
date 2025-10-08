@@ -8,7 +8,7 @@ namespace Sucrose.Backgroundog.Struct.Data
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct NetworkStruct
+    public struct Network
     {
         /// <summary>
         /// 

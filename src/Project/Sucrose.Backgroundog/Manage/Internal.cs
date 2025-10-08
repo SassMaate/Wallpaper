@@ -4,15 +4,15 @@ using System.Diagnostics;
 using SBEAV = Sucrose.Backgroundog.Extension.AudioVisualizer;
 using SBEWL = Sucrose.Backgroundog.Extension.WindowsListener;
 using SBHI = Sucrose.Backgroundog.Helper.Initialize;
-using SBSDAS = Sucrose.Backgroundog.Struct.Data.AudioStruct;
-using SBSDBSS = Sucrose.Backgroundog.Struct.Data.BiosStruct;
-using SBSDBYS = Sucrose.Backgroundog.Struct.Data.BatteryStruct;
-using SBSDCS = Sucrose.Backgroundog.Struct.Data.CpuStruct;
-using SBSDDS = Sucrose.Backgroundog.Struct.Data.DateStruct;
-using SBSDGS = Sucrose.Backgroundog.Struct.Data.GraphicStruct;
-using SBSDMDS = Sucrose.Backgroundog.Struct.Data.MotherboardStruct;
-using SBSDMYS = Sucrose.Backgroundog.Struct.Data.MemoryStruct;
-using SBSDNS = Sucrose.Backgroundog.Struct.Data.NetworkStruct;
+using SBSDA = Sucrose.Backgroundog.Struct.Data.Audio;
+using SBSDBS = Sucrose.Backgroundog.Struct.Data.Bios;
+using SBSDBY = Sucrose.Backgroundog.Struct.Data.Battery;
+using SBSDC = Sucrose.Backgroundog.Struct.Data.Cpu;
+using SBSDD = Sucrose.Backgroundog.Struct.Data.Date;
+using SBSDG = Sucrose.Backgroundog.Struct.Data.Graphic;
+using SBSDMD = Sucrose.Backgroundog.Struct.Data.Motherboard;
+using SBSDMY = Sucrose.Backgroundog.Struct.Data.Memory;
+using SBSDN = Sucrose.Backgroundog.Struct.Data.Network;
 using SSDECPT = Sucrose.Shared.Dependency.Enum.CategoryPerformanceType;
 using SSDENPT = Sucrose.Shared.Dependency.Enum.NetworkPerformanceType;
 using SSDEPPT = Sucrose.Shared.Dependency.Enum.PausePerformanceType;
@@ -144,7 +144,7 @@ namespace Sucrose.Backgroundog.Manage
 
         public static string[] NetworkInterfaces = Array.Empty<string>();
 
-        public static SBSDCS CpuData = new()
+        public static SBSDC CpuData = new()
         {
             Max = 0f,
             Min = 0f,
@@ -159,7 +159,7 @@ namespace Sucrose.Backgroundog.Manage
             FullName = string.Empty
         };
 
-        public static SBSDBSS BiosData = new()
+        public static SBSDBS BiosData = new()
         {
             State = false,
             Name = string.Empty,
@@ -172,7 +172,7 @@ namespace Sucrose.Backgroundog.Manage
             CurrentLanguage = string.Empty
         };
 
-        public static SBSDDS DateData = new()
+        public static SBSDD DateData = new()
         {
             Day = 0,
             Hour = 0,
@@ -184,7 +184,7 @@ namespace Sucrose.Backgroundog.Manage
             Millisecond = 0
         };
 
-        public static SBSDAS AudioData = new()
+        public static SBSDA AudioData = new()
         {
             //PID = 0,
             State = false,
@@ -218,7 +218,7 @@ namespace Sucrose.Backgroundog.Manage
             //PlaybackCaps = MediaPlaybackCapabilities.None
         };
 
-        public static SBSDMYS MemoryData = new()
+        public static SBSDMY MemoryData = new()
         {
             State = false,
             MemoryLoad = 0f,
@@ -244,7 +244,7 @@ namespace Sucrose.Backgroundog.Manage
             IsMotherboardEnabled = true
         };
 
-        public static SBSDGS GraphicData = new()
+        public static SBSDG GraphicData = new()
         {
             Amd = new(),
             State = false,
@@ -254,7 +254,7 @@ namespace Sucrose.Backgroundog.Manage
             Manufacturer = string.Empty
         };
 
-        public static SBSDNS NetworkData = new()
+        public static SBSDN NetworkData = new()
         {
             Ping = 0,
             Upload = 0f,
@@ -268,7 +268,7 @@ namespace Sucrose.Backgroundog.Manage
             FormatDownloadData = string.Empty
         };
 
-        public static SBSDBYS BatteryData = new()
+        public static SBSDBY BatteryData = new()
         {
             Voltage = 0f,
             State = false,
@@ -295,7 +295,7 @@ namespace Sucrose.Backgroundog.Manage
             ChargeStatus = BatteryChargeStatus.Unknown
         };
 
-        public static SBSDMDS MotherboardData = new()
+        public static SBSDMD MotherboardData = new()
         {
             State = false,
             Name = string.Empty,

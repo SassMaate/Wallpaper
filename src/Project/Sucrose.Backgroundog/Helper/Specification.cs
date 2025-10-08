@@ -11,7 +11,7 @@ using SBER = Sucrose.Backgroundog.Extension.Remote;
 using SBEUV = Sucrose.Backgroundog.Extension.UpdateVisitor;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
-using SBSSSS = Sucrose.Backgroundog.Struct.Sensor.SensorStruct;
+using SBSS = Sucrose.Backgroundog.Struct.Sensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
 using SEST = Skylark.Enum.StorageType;
@@ -804,9 +804,9 @@ namespace Sucrose.Backgroundog.Helper
                                         {
                                             //Hardware.Update();
 
-                                            List<SBSSSS> Sensors = new()
+                                            List<SBSS> Sensors = new()
                                             {
-                                                new SBSSSS
+                                                new SBSS
                                                 {
                                                     Name = Hardware.Name,
                                                     Type = $"{Hardware.HardwareType}"
@@ -815,7 +815,7 @@ namespace Sucrose.Backgroundog.Helper
 
                                             foreach (ISensor Sensor in Hardware.Sensors)
                                             {
-                                                Sensors.Add(new SBSSSS
+                                                Sensors.Add(new SBSS
                                                 {
                                                     Max = Sensor.Max,
                                                     Min = Sensor.Min,

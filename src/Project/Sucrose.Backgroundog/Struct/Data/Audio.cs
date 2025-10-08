@@ -7,7 +7,7 @@ namespace Sucrose.Backgroundog.Struct.Data
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct AudioStruct
+    public struct Audio
     {
         /// <summary>
         /// 

@@ -1,8 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using NPSMLib;
-using System.Runtime.InteropServices;
-using SSPPSS = Skylark.Struct.Ping.PingSendStruct;
-using SSSSS = Skylark.Struct.Storage.StorageStruct;
+﻿using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -10,7 +6,7 @@ namespace Sucrose.Backgroundog.Struct.Data
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct DateStruct
+    public struct Date
     {
         /// <summary>
         /// 
