@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using Sucrose.Shared.Theme.Helper;
+using System.Collections.Concurrent;
+using System.IO;
 using SHV = Skylark.Helper.Versionly;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
@@ -114,6 +116,26 @@ namespace Sucrose.Shared.Zip.Helper
                 if (!string.IsNullOrEmpty(Info.Arguments) && Info.Arguments.Length > 250)
                 {
                     return SSDECT.Arguments;
+                }
+
+                if (Info.Localization != null && !Info.Localization.Any())
+                {
+                    return SSDECT.Localization;
+                }
+                else
+                {
+                    foreach (Localization Localization in Info.Localization.Values)
+                    {
+                        if (string.IsNullOrEmpty(Localization.Title) || Localization.Title.Length > 50)
+                        {
+                            return SSDECT.Title;
+                        }
+
+                        if (string.IsNullOrEmpty(Localization.Description) || Localization.Description.Length > 500)
+                        {
+                            return SSDECT.Description;
+                        }
+                    }
                 }
 
                 if (!SSZHZ.CheckFile(Archive, Info.Thumbnail))

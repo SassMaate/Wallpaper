@@ -32,8 +32,10 @@ using SSSHL = Sucrose.Shared.Space.Helper.Live;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
+using SSTHL = Sucrose.Shared.Theme.Helper.Localization;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SXAGAB = Sucrose.XamlAnimatedGif.AnimationBehavior;
+using SMMG = Sucrose.Manager.Manage.General;
 
 namespace Sucrose.Portal.Views.Controls
 {
@@ -80,21 +82,33 @@ namespace Sucrose.Portal.Views.Controls
 
         private void UpdateInfo()
         {
+            string Title = Info.Title;
+            string Description = Info.Description;
+
+            if (Info.Localization != null && Info.Localization.Any() && Info.Localization.TryGetValue(SMMG.Culture, out SSTHL Pairs))
+            {
+                if (Pairs != null)
+                {
+                    Title = Pairs.Title;
+                    Description = Pairs.Description;
+                }
+            }
+
             ToolTip TitleTip = new()
             {
-                Content = Info.Title
+                Content = Title
             };
 
             ToolTip DescriptionTip = new()
             {
-                Content = Info.Description
+                Content = Description
             };
 
             ThemeTitle.ToolTip = TitleTip;
             ThemeDescription.ToolTip = DescriptionTip;
 
-            ThemeTitle.Text = Info.Title;
-            ThemeDescription.Text = Info.Description;
+            ThemeTitle.Text = Title;
+            ThemeDescription.Text = Description;
         }
 
         private void MenuUse_Click(object sender, RoutedEventArgs e)

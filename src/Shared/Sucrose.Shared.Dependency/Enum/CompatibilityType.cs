@@ -40,6 +40,7 @@
         SystemTheme,
         TriggerTime,
         VolumeLevel,
+        Localization,
         PropertyList,
         SystemMemory,
         SystemBattery,
