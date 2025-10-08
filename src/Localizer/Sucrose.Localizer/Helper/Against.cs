@@ -169,49 +169,103 @@ namespace Sucrose.Localizer.Helper
         private static List<CsvRecord> ProcessRecordsForSorting(List<CsvRecord> records)
         {
             List<CsvRecord> processedRecords = new(records);
+            List<SortGroup> groups = IdentifySortGroups(processedRecords);
 
-            for (int i = 0; i < processedRecords.Count; i++)
+            // Sort each group
+            foreach (SortGroup group in groups)
             {
-                if (string.IsNullOrWhiteSpace(processedRecords[i].Key) || string.IsNullOrWhiteSpace(processedRecords[i].Value))
+                if (group.Records.Count > 1)
                 {
-                    // Find the range to sort
-                    int endIndex = i;
-                    int startIndex = FindBackwardRange(processedRecords, i);
+                    // Separate records that should not be sorted (Base64, empty keys)
+                    List<CsvRecord> excludedRecords = group.Records
+                        .Where(r => string.IsNullOrWhiteSpace(r.Key) ||
+                                   r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
+                        .ToList();
 
-                    if (startIndex < endIndex)
+                    // Sort only the records that should be sorted
+                    List<CsvRecord> sortableRecords = group.Records
+                        .Where(r => !string.IsNullOrWhiteSpace(r.Key) &&
+                                   !r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
+                        .OrderBy(r => r.Key.Length)           // 1. Shortest to longest
+                        .ThenBy(r => GetKeyForSorting(r.Key)) // 2. Alphabetical A-Z + numerical order
+                        .ToList();
+
+                    // Combine excluded records first, then sorted records
+                    List<CsvRecord> sortedGroup = new();
+                    sortedGroup.AddRange(excludedRecords);
+                    sortedGroup.AddRange(sortableRecords);
+
+                    // Replace the group records in processed records
+                    for (int i = 0; i < sortedGroup.Count && group.StartIndex + i < processedRecords.Count; i++)
                     {
-                        // Extract the range to sort
-                        List<CsvRecord> rangeToSort = processedRecords.Skip(startIndex).Take(endIndex - startIndex).ToList();
-
-                        // Separate records that should not be sorted (Base64, empty keys)
-                        List<CsvRecord> excludedRecords = rangeToSort
-                            .Where(r => string.IsNullOrWhiteSpace(r.Key) || 
-                                       r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
-                            .ToList();
-
-                        // Sort only the records that should be sorted
-                        List<CsvRecord> sortableRecords = rangeToSort
-                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && 
-                                       !r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
-                            .OrderBy(r => GetKeyForSorting(r.Key))
-                            .ThenBy(r => r.Key.Length)
-                            .ToList();
-
-                        // Combine excluded records first, then sorted records
-                        List<CsvRecord> finalRange = new();
-                        finalRange.AddRange(excludedRecords);
-                        finalRange.AddRange(sortableRecords);
-
-                        // Replace the range back with proper ordering
-                        for (int j = 0; j < finalRange.Count && startIndex + j < processedRecords.Count; j++)
-                        {
-                            processedRecords[startIndex + j] = finalRange[j];
-                        }
+                        processedRecords[group.StartIndex + i] = sortedGroup[i];
                     }
                 }
             }
 
             return processedRecords;
+        }
+
+        private static List<SortGroup> IdentifySortGroups(List<CsvRecord> records)
+        {
+            List<SortGroup> groups = new();
+            int currentGroupStart = -1;
+            string currentFile = null;
+
+            for (int i = 0; i < records.Count; i++)
+            {
+                bool isEmptyOrSpecialKey = string.IsNullOrWhiteSpace(records[i].Key) ||
+                                          string.IsNullOrWhiteSpace(records[i].Value) ||
+                                          records[i].Key.Equals("Base64", StringComparison.OrdinalIgnoreCase);
+
+                bool isFileChange = currentFile != null && records[i].File != currentFile;
+
+                // Start a new group when we find the first non-empty record of a file
+                if (!isEmptyOrSpecialKey && (currentGroupStart == -1 || isFileChange))
+                {
+                    // Finish previous group if exists
+                    if (currentGroupStart != -1)
+                    {
+                        groups.Add(new SortGroup
+                        {
+                            StartIndex = currentGroupStart,
+                            Records = records.Skip(currentGroupStart).Take(i - currentGroupStart).ToList()
+                        });
+                    }
+
+                    currentGroupStart = i;
+                    currentFile = records[i].File;
+                }
+                // End current group when we hit empty line or file change
+                else if (isEmptyOrSpecialKey && currentGroupStart != -1)
+                {
+                    groups.Add(new SortGroup
+                    {
+                        StartIndex = currentGroupStart,
+                        Records = records.Skip(currentGroupStart).Take(i - currentGroupStart).ToList()
+                    });
+                    currentGroupStart = -1;
+                    currentFile = null;
+                }
+            }
+
+            // Handle the last group if it doesn't end with empty line
+            if (currentGroupStart != -1)
+            {
+                groups.Add(new SortGroup
+                {
+                    StartIndex = currentGroupStart,
+                    Records = records.Skip(currentGroupStart).ToList()
+                });
+            }
+
+            return groups;
+        }
+
+        private class SortGroup
+        {
+            public int StartIndex { get; set; }
+            public List<CsvRecord> Records { get; set; } = new();
         }
 
         private static int FindBackwardRange(List<CsvRecord> records, int currentIndex)
@@ -359,16 +413,16 @@ namespace Sucrose.Localizer.Helper
         {
             // Extract text and number parts for natural sorting
             Match match = Regex.Match(key, @"^(.+?)(\d+)$");
-            
+
             if (match.Success)
             {
                 string textPart = match.Groups[1].Value;
                 int numberPart = int.Parse(match.Groups[2].Value);
-                
+
                 // Pad number with leading zeros for proper sorting
                 return $"{textPart}{numberPart:D10}";
             }
-            
+
             return key;
         }
 
@@ -379,22 +433,22 @@ namespace Sucrose.Localizer.Helper
             try
             {
                 using StreamReader sr = new(filePath);
-                int satirNumarasi = 1;
-                string satir;
+                int lineNumber = 1;
+                string line;
 
-                while ((satir = sr.ReadLine()) != null)
+                while ((line = sr.ReadLine()) != null)
                 {
-                    lines.Add(satirNumarasi, satir);
-                    satirNumarasi++;
+                    lines.Add(lineNumber, line);
+                    lineNumber++;
                 }
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("Dosya bulunamadı.");
+                Console.WriteLine("File not found.");
             }
             catch (IOException e)
             {
-                Console.WriteLine("Dosya okuma hatası: " + e.Message);
+                Console.WriteLine("File reading error: " + e.Message);
             }
 
             return lines;

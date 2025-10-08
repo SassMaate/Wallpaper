@@ -117,12 +117,12 @@ namespace Sucrose.Localizer.Helper
 
                     Console.WriteLine();
 
-                    Console.Write("Target language code (EN): ");
-                    string targetLanguage = Console.ReadLine();
+                    Console.Write("Source language code (EN): ");
+                    string sourceLanguage = Console.ReadLine();
 
                     Console.WriteLine();
 
-                    SLHA.AlphabeticIndexer(csvDirectory, targetLanguage);
+                    SLHA.AlphabeticIndexer(csvDirectory, sourceLanguage);
                     break;
                 case "9":
                     Console.Write("Location of CSV files: ");
