@@ -183,14 +183,14 @@ namespace Sucrose.Localizer.Helper
                         // Extract the range to sort
                         List<CsvRecord> rangeToSort = processedRecords.Skip(startIndex).Take(endIndex - startIndex).ToList();
 
-                        // Sort by key: alphabetic A-Z, then by length (short to long)
+                        // Sort by key with custom natural sorting (handles numbers correctly)
                         rangeToSort = rangeToSort
-                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && r.Key != "Base")
-                            .OrderBy(r => r.Key, StringComparer.OrdinalIgnoreCase)
+                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && !r.Key.Equals("Base", StringComparison.OrdinalIgnoreCase) && !r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
+                            .OrderBy(r => GetKeyForSorting(r.Key))
                             .ThenBy(r => r.Key.Length)
                             .ToList();
 
-                        // Replace the sorted range back
+                        // replace the sorted range back
                         for (int j = 0; j < rangeToSort.Count; j++)
                         {
                             if (startIndex + j < processedRecords.Count)
@@ -344,6 +344,23 @@ namespace Sucrose.Localizer.Helper
             }
 
             return filename;
+        }
+
+        private static string GetKeyForSorting(string key)
+        {
+            // Extract text and number parts for natural sorting
+            Match match = Regex.Match(key, @"^(.+?)(\d+)$");
+            
+            if (match.Success)
+            {
+                string textPart = match.Groups[1].Value;
+                int numberPart = int.Parse(match.Groups[2].Value);
+                
+                // Pad number with leading zeros for proper sorting
+                return $"{textPart}{numberPart:D10}";
+            }
+            
+            return key;
         }
 
         private static Dictionary<int, string> FileReadWithLines(string filePath)
