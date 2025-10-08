@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LIJSTEN KONDEN NIET WORDEN GEFILTERD</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">LIJSTEN VERGELIJKEN</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">TOEPASSING IS AL UP-TO-DATE</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">LIJSTEN VERGELIJKEN MISLUKT</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">TOEPASSING IS AL UP-TO-DATE</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">ZOEKEN NAAR VEREISTE BESTANDEN</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">VEREISTE BESTANDEN NIET GEVONDEN</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">DOWNLOADEN VAN VEREISTE BESTANDEN</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">VEREISTE BESTANDEN KONDEN NIET WORDEN GEDOWNLOAD</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">HET DOWNLOADEN VAN HET VEREISTE BESTAND WERD GEANNULEERD</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">ER IS EEN FOUT OPGETREDEN TIJDENS HET DOWNLOADEN VAN HET VEREISTE BESTAND</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">HET DOWNLOADEN VAN HET VEREISTE BESTAND WERD GEANNULEERD</system:String>
 
     <system:String x:Key="Update.MessageText.Running">GEDOWNLOADE BESTAND VOORBEREIDEN</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">GEDOWNLOADE BESTAND UITVOEREN</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">GEDOWNLOADE BESTAND UITGEVOERD</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">GEDOWNLOADE BESTAND NIET BRUIKBAAR</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">GEDOWNLOADE BESTAND VOORBEREIDEN MISLUKT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">GEDOWNLOADE BESTAND UITGEVOERD</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">GEDOWNLOADE BESTAND UITVOEREN</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">HET EXTRACTEREN VAN HET GEDOWNLOADE BESTAND</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">HET UITGEPAKTE BESTAND WORDT UITGEVOERD</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">HET UITGEPAKTE BESTAND IS UITGEVOERD</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">HET GEDOWNLOADE BESTAND IS MISLUKT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">HET GEDOWNLOADE BESTAND IS BESCHADIGD</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">HET GEDOWNLOADE BESTAND IS NIET GEBRUIKBAAR</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">HET GEDOWNLOADE BESTAND KON NIET WORDEN GEËXTRAHEERD</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">HET GEDOWNLOADE BESTAND IS MISLUKT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">HET GEDOWNLOADE BESTAND IS BESCHADIGD</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">HET UITGEPAKTE BESTAND IS UITGEVOERD</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">HET UITGEPAKTE BESTAND WORDT UITGEVOERD</system:String>
 </ResourceDictionary>

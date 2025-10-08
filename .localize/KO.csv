@@ -1,7 +1,7 @@
 Hash,File,Key,Value
 e586c525e054fdc54fc65178b20cca64,Locale.KO.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTG9jYWxlLnhhbWwiIC8+DQoNCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIueGFtbCIgLz4NCg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGl2ZS9MaXZlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmRvL1VuZG8uS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlVwZGF0ZS9VcGRhdGUuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlByb3BlcnR5L1Byb3BlcnR5LktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYXRjaGRvZy9XYXRjaGRvZy5LTy54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=
-6e9d25250392306554a99369bfea4d48,Discord\Discord.KO.xaml,Discord.BrowseButton,찾아보기
 76d5ef4a47d4345c5dd04ff323fff33c,Discord\Discord.KO.xaml,Discord.Details,벽지 엔진
+6e9d25250392306554a99369bfea4d48,Discord\Discord.KO.xaml,Discord.BrowseButton,찾아보기
 41653c48a988f8f65f3ec226bec98fa2,Discord\Discord.KO.xaml,Discord.DownloadButton,다운로드
 43d865b7d54608e2054977e82e76430d,Discord\Discord.KO.xaml,,
 8c41b21ab35b09d809e87b78887608e1,Discord\Discord.KO.xaml,Discord.LargestText0,바나나 아이스크림 강력
@@ -119,22 +119,22 @@ d8af422b196487a6497451420594a49e,Launcher\Launcher.KO.xaml,,
 61abc112883b4b67ba560fece568fee3,Launcher\Launcher.KO.xaml,,
 5f932182549e9f65b8276cc2d1fd2c29,Launcher\Launcher.KO.xaml,Launcher.ReportWindowTitle,Sucrose 진단
 5827e14b254197c7bbe8146426bb7055,Launcher\Launcher.KO.xaml,,
-7df9cc33b35c71950b15739244d7a332,Launcher\Launcher.KO.xaml,Launcher.SaveDialogFilter,ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*
 5cf20ae535685acde3b8fa88abda2c71,Launcher\Launcher.KO.xaml,Launcher.SaveDialogTitle,로그 파일 저장
+7df9cc33b35c71950b15739244d7a332,Launcher\Launcher.KO.xaml,Launcher.SaveDialogFilter,ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*
 27122fe29f927f3730954591078bd2b2,Launcher\Launcher.KO.xaml,,
-5e12583cf9a43161c418bd78d21c348e,Launcher\Launcher.KO.xaml,Launcher.RequestFeedbackText,요청 및 피드백
 311223a5143597be917136422471ee18,Launcher\Launcher.KO.xaml,Launcher.FeedbackText,피드백 보내기
+5e12583cf9a43161c418bd78d21c348e,Launcher\Launcher.KO.xaml,Launcher.RequestFeedbackText,요청 및 피드백
 d089796d0d6a3e6a3b59c378a48bac0c,Launcher\Launcher.KO.xaml,,
 eaf2be14ecd57b7408c92fc728b4eb57,Launcher\Launcher.KO.xaml,Launcher.SettingText,설정
 a5f82e89c4d3ea1ffeb6eb7c68ee4dfa,Launcher\Launcher.KO.xaml,,
 9c26a61710bef52b50e2426e87ab79c4,Launcher\Launcher.KO.xaml,Launcher.TrayText,Sucrose Wallpaper Engine
 bbb439fcdc9ecdae229cee915ca717af,Launcher\Launcher.KO.xaml,,
-3d225c093d2aa71c2853d80f6360eba2,Launcher\Launcher.KO.xaml,Launcher.WallReloadText,배경화면 다시 불러오기
-bb70d515c968bfbbf5afb73d842976dc,Launcher\Launcher.KO.xaml,Launcher.WallChangeText,배경화면 변경
-a88647532ef44c2967e41070d1c946d2,Launcher\Launcher.KO.xaml,Launcher.WallCloseText,배경화면 닫기
 ce355a4fb86fd68d7f62d70e7a296e7a,Launcher\Launcher.KO.xaml,Launcher.WallOpenText,배경화면 열기
-d50642223abd6744764ba364dc706970,Launcher\Launcher.KO.xaml,Launcher.WallStartText,배경화면 시작
 c9df57133d15819f83675d06828d4c54,Launcher\Launcher.KO.xaml,Launcher.WallStopText,배경화면 중지
+a88647532ef44c2967e41070d1c946d2,Launcher\Launcher.KO.xaml,Launcher.WallCloseText,배경화면 닫기
+d50642223abd6744764ba364dc706970,Launcher\Launcher.KO.xaml,Launcher.WallStartText,배경화면 시작
+bb70d515c968bfbbf5afb73d842976dc,Launcher\Launcher.KO.xaml,Launcher.WallChangeText,배경화면 변경
+3d225c093d2aa71c2853d80f6360eba2,Launcher\Launcher.KO.xaml,Launcher.WallReloadText,배경화면 다시 불러오기
 d3bb8e481af6eb2b9c25dee9a9c65b5e,Launcher\Launcher.KO.xaml,,
 d4873b718767476a97e5d6ffc51dad7a,Launcher\Launcher.KO.xaml,Launcher.ClosedText,닫힘
 507624f50e9e2d55a0cfdb7ca9cf36df,Launcher\Launcher.KO.xaml,Launcher.PausedText,일시 중지됨
@@ -188,21 +188,21 @@ cbeb29d15d810260f58c85f7b37f2aef,Property\Property.KO.xaml,Property.FileDropDown
 9c30da530230d8726f9f10960ff6b44d,Property\Property.KO.xaml,Property.Localization.CefSharp,CefSharp 전용
 5325a75f55f7302072816938d8aa4abc,Property\Property.KO.xaml,Property.Localization.MpvPlayer,MpvPlayer 전용
 06b8a11af61806ac5d0f3bc11f8996b4,Property\Property.KO.xaml,,
-9aa3bc5079f103cba37faadbb5eb36f1,Property\Property.KO.xaml,Property.Localization.Speed,속도
-59b063268c81d8b88515d4f5c59a813f,Property\Property.KO.xaml,Property.Localization.Gamma,감마
-8719dc786c4912011eae0297d44567a2,Property\Property.KO.xaml,Property.Localization.Mute,음소거
-c0f7bf2b2628a61c08084e36c46c5740,Property\Property.KO.xaml,Property.Localization.Sepia,세피아
 16a9dbc00fa2b359d556244668fd8344,Property\Property.KO.xaml,Property.Localization.Hue,색조
-e649d401ddfaaa68d12d593e0acb6a22,Property\Property.KO.xaml,Property.Localization.Mirror,미러링
 057607b8e3b6be4885a9bf0613fd5511,Property\Property.KO.xaml,Property.Localization.Blur,흐림
-f10cd8c2e3ed91eae18fd5f279aba52a,Property\Property.KO.xaml,Property.Localization.Contrast,대비
-461f4ae818fafa4f15b581bfeff6278a,Property\Property.KO.xaml,Property.Localization.Invert,반전
+8719dc786c4912011eae0297d44567a2,Property\Property.KO.xaml,Property.Localization.Mute,음소거
 684b49ac039795266c2ef6e88193881e,Property\Property.KO.xaml,Property.Localization.Zoom,확대
+59b063268c81d8b88515d4f5c59a813f,Property\Property.KO.xaml,Property.Localization.Gamma,감마
+c0f7bf2b2628a61c08084e36c46c5740,Property\Property.KO.xaml,Property.Localization.Sepia,세피아
+9aa3bc5079f103cba37faadbb5eb36f1,Property\Property.KO.xaml,Property.Localization.Speed,속도
+461f4ae818fafa4f15b581bfeff6278a,Property\Property.KO.xaml,Property.Localization.Invert,반전
+e649d401ddfaaa68d12d593e0acb6a22,Property\Property.KO.xaml,Property.Localization.Mirror,미러링
+f10cd8c2e3ed91eae18fd5f279aba52a,Property\Property.KO.xaml,Property.Localization.Contrast,대비
 11edcead6704b81f307a59a5affaa85a,Property\Property.KO.xaml,Property.Localization.Animation,애니메이션
-3ea4824601b318a706f47ae88a51e250,Property\Property.KO.xaml,Property.Localization.Sharpness,선명도
-a283517d610e0f1a4d8ac6ea338bd709,Property\Property.KO.xaml,Property.Localization.Saturation,채도
-5500d70b7b55c2a2947efe01cd05c1c3,Property\Property.KO.xaml,Property.Localization.Brightness,밝기
 1994d7705d5a6508be470acc27a14784,Property\Property.KO.xaml,Property.Localization.Grayscale,그레이스케일
+3ea4824601b318a706f47ae88a51e250,Property\Property.KO.xaml,Property.Localization.Sharpness,선명도
+5500d70b7b55c2a2947efe01cd05c1c3,Property\Property.KO.xaml,Property.Localization.Brightness,밝기
+a283517d610e0f1a4d8ac6ea338bd709,Property\Property.KO.xaml,Property.Localization.Saturation,채도
 ba4d184fe7e5329cdb6a46396886a4e7,Property\Property.KO.xaml,,
 a98788b4d7733f6ba0b00fd8731d869f,Property\Property.KO.xaml,Property.Localization.Mirror.Flat,평평한
 77360afc08cd5dc896811b2d2f1dade9,Property\Property.KO.xaml,Property.Localization.Mirror.Vertical,수직
@@ -248,8 +248,8 @@ c3c0841c609b66d4dea99a5f38969ccd,Update\Update.KO.xaml,Update.MessageText.Filter
 9ed6b6d05cb250b5600f12d3c0fee2a7,Update\Update.KO.xaml,Update.MessageText.Filtering.Error,목록을 필터링할 수 없습니다
 c88c49a551f4ed829c4e57f46feec7b6,Update\Update.KO.xaml,,
 64a59d7aa55cf2373beb166a715ff654,Update\Update.KO.xaml,Update.MessageText.Comparing,목록 비교 중
-fc5eda7ad570d59a690c9aca4eddc8b4,Update\Update.KO.xaml,Update.MessageText.Comparing.Update,응용 프로그램이 최신 상태입니다
 6a7fb370c5019ef638187fe01ab9cad5,Update\Update.KO.xaml,Update.MessageText.Comparing.Error,목록 비교 실패
+fc5eda7ad570d59a690c9aca4eddc8b4,Update\Update.KO.xaml,Update.MessageText.Comparing.Update,응용 프로그램이 최신 상태입니다
 f38287186a901a1f564c4f55cc0ea030,Update\Update.KO.xaml,,
 c1ee6de215cd21476eeb73a4528ee834,Update\Update.KO.xaml,Update.MessageText.Searching,필요한 파일을 검색 중입니다
 6271921ffdd41ca008216b48c225f005,Update\Update.KO.xaml,Update.MessageText.Searching.Not,필요한 파일을 찾을 수 없습니다
@@ -258,48 +258,48 @@ c1ee6de215cd21476eeb73a4528ee834,Update\Update.KO.xaml,Update.MessageText.Search
 e2c33809670cbce675a3e5215f031ee8,Update\Update.KO.xaml,,
 9e4b627e95f802277911cf118f919d4c,Update\Update.KO.xaml,Update.MessageText.Downloading,필요한 파일을 다운로드 중입니다
 9b66f3956229f20e1348aa8a9b950a87,Update\Update.KO.xaml,Update.MessageText.Downloading.Error,필요한 파일을 다운로드할 수 없습니다
-2dd7e8342f50d94b989f5495e2ca1aad,Update\Update.KO.xaml,Update.MessageText.Downloading.Complete.Cancel,필요한 파일의 다운로드가 취소되었습니다
 42d5847fe7c3a57be9e15984cf9913c0,Update\Update.KO.xaml,Update.MessageText.Downloading.Complete.Error,필요한 파일을 다운로드하는 동안 오류가 발생했습니다
+2dd7e8342f50d94b989f5495e2ca1aad,Update\Update.KO.xaml,Update.MessageText.Downloading.Complete.Cancel,필요한 파일의 다운로드가 취소되었습니다
 8e05252a2f83380ecfaf4343c58ffb75,Update\Update.KO.xaml,,
 fd12b202edafddad6339571ce84bcd79,Update\Update.KO.xaml,Update.MessageText.Running,다운로드한 파일 준비 중
-2abcaa2f72af7fab27e234c281f1b29f,Update\Update.KO.xaml,Update.MessageText.Running.Executing,다운로드한 파일 실행 중
-9455a9e2205a96f02511f0d61c09e7e7,Update\Update.KO.xaml,Update.MessageText.Running.Executed,다운로드한 파일 실행 완료
 d606363ca6018af2a3e8120cdb30b1b5,Update\Update.KO.xaml,Update.MessageText.Running.Not,다운로드한 파일을 사용할 수 없습니다
 6e2362f99e5d65d7d76a1c88ed36fd7a,Update\Update.KO.xaml,Update.MessageText.Running.Error,다운로드한 파일 준비 실패
+9455a9e2205a96f02511f0d61c09e7e7,Update\Update.KO.xaml,Update.MessageText.Running.Executed,다운로드한 파일 실행 완료
+2abcaa2f72af7fab27e234c281f1b29f,Update\Update.KO.xaml,Update.MessageText.Running.Executing,다운로드한 파일 실행 중
 af28d3282ab7570d4a531591f88d3ddc,Update\Update.KO.xaml,,
 0b8d6e7911174105fbc892dfe364ebc1,Update\Update.KO.xaml,Update.MessageText.Extracting,다운로드한 파일을 추출 중입니다
-3d0f26900dc8b5563d64d2a5337f8d8d,Update\Update.KO.xaml,Update.MessageText.Extracting.Executing,추출된 파일이 실행 중입니다
-472ec2c1d4f5a0e0a83ce5192eb84762,Update\Update.KO.xaml,Update.MessageText.Extracting.Executed,추출된 파일이 실행되었습니다
-a54b94f0b7ea009b44aaf3841327c5d2,Update\Update.KO.xaml,Update.MessageText.Extracting.Failed,다운로드한 파일이 실패했습니다
-3640a99eae3e5633c15871bf4ce0157e,Update\Update.KO.xaml,Update.MessageText.Extracting.Corrupt,다운로드한 파일이 손상되었습니다
 fd59bba2781010e8ebf9e7aacb80e51a,Update\Update.KO.xaml,Update.MessageText.Extracting.Not,다운로드한 파일을 사용할 수 없습니다
 651a399fec408b3923cd026465b0a5d2,Update\Update.KO.xaml,Update.MessageText.Extracting.Error,다운로드한 파일을 추출할 수 없습니다
-bc5ae5abc8b009d83102cb97667b30e8,Watchdog\Watchdog.KO.xaml,Watchdog.HelpButton,도움말
-a1fd2526efe37d9eb1757b32c329b800,Watchdog\Watchdog.KO.xaml,Watchdog.CloseButton,닫기
+a54b94f0b7ea009b44aaf3841327c5d2,Update\Update.KO.xaml,Update.MessageText.Extracting.Failed,다운로드한 파일이 실패했습니다
+3640a99eae3e5633c15871bf4ce0157e,Update\Update.KO.xaml,Update.MessageText.Extracting.Corrupt,다운로드한 파일이 손상되었습니다
+472ec2c1d4f5a0e0a83ce5192eb84762,Update\Update.KO.xaml,Update.MessageText.Extracting.Executed,추출된 파일이 실행되었습니다
+3d0f26900dc8b5563d64d2a5337f8d8d,Update\Update.KO.xaml,Update.MessageText.Extracting.Executing,추출된 파일이 실행 중입니다
 cf1568da7ceaedb3c7d8a97014c40123,Watchdog\Watchdog.KO.xaml,Watchdog.ErrorEmpty,안타깝게도 오류 세부 정보를 캡처할 수 없습니다.
-a9fc9f49b7911a0a94e5b55f7e941851,Watchdog\Watchdog.KO.xaml,Watchdog.ErrorMessage,예기치 않은 오류가 발생했습니다:
 71499324a841684cc27fd278d3215139,Watchdog\Watchdog.KO.xaml,Watchdog.ErrorTitle,오류
+bc5ae5abc8b009d83102cb97667b30e8,Watchdog\Watchdog.KO.xaml,Watchdog.HelpButton,도움말
 0897a56cb0f1a49a9341fa10470c1012,Watchdog\Watchdog.KO.xaml,Watchdog.HideButton,숨기기
 001012bc03501f465fddd4d45430e7b3,Watchdog\Watchdog.KO.xaml,Watchdog.ShowButton,보이기
 c890b15d95fe5dc96188a0a96e1f9da8,Watchdog\Watchdog.KO.xaml,Watchdog.StackTrace,스택 추적:
+a1fd2526efe37d9eb1757b32c329b800,Watchdog\Watchdog.KO.xaml,Watchdog.CloseButton,닫기
 e928c680deea1cc1800bdfcf399bb881,Watchdog\Watchdog.KO.xaml,Watchdog.WindowTitle,Sucrose Watchdog
-b34028ac88d94c615354521cc18d4833,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Data,데이터
-6dd67126ec4b05dc9601b1958c45ce60,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Sound,소리
+a9fc9f49b7911a0a94e5b55f7e941851,Watchdog\Watchdog.KO.xaml,Watchdog.ErrorMessage,예기치 않은 오류가 발생했습니다:
 7fd9e4467ee90705749126e518dd4ce0,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Log,로그
+b34028ac88d94c615354521cc18d4833,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Data,데이터
 2aa490528eec20633935dc8b7901fbdd,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Hook,훅
-3c0b18ac5705a0e63c75d5f64da2834f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Store,상점
-5bb1d987b70a1e7e9a76a54deb68311a,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Donate,기부
-1d8fc7728aa1c536de1d057de89d9347,Portal\Area\Portal.Area.KO.xaml,Portal.Area.System,시스템
 b2ebe08e09caa2a759e12654ec7c8870,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Cache,캐시
-bdb81e64927f6f6375a53ae1b55e9108,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Laptop,노트북
-2de9b5bdedba73133e53cd3becdb912f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Support,지원
 126b231c9271df25ab5f427a8c4e6ebe,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Reset,재설정
-0dbfd650d331c71a1db5e12b38c16802,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Windows,Windows
+6dd67126ec4b05dc9601b1958c45ce60,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Sound,소리
+3c0b18ac5705a0e63c75d5f64da2834f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Store,상점
 2cae33eef536ad9ad578e30eba21be5c,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Backup,백업
-5cee178cd61059c5a873441f5942931e,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Priority,우선 순위
-5e916a7669cedba1f78a72c945dc062f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Engines,엔진
+5bb1d987b70a1e7e9a76a54deb68311a,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Donate,기부
+bdb81e64927f6f6375a53ae1b55e9108,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Laptop,노트북
+1d8fc7728aa1c536de1d057de89d9347,Portal\Area\Portal.Area.KO.xaml,Portal.Area.System,시스템
 b7052f7fb036c1763439c291edc326a0,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Update,업데이트
+5e916a7669cedba1f78a72c945dc062f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Engines,엔진
 a469c305f3765d303aae405135630857,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Library,라이브러리
+2de9b5bdedba73133e53cd3becdb912f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Support,지원
+0dbfd650d331c71a1db5e12b38c16802,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Windows,Windows
+5cee178cd61059c5a873441f5942931e,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Priority,우선 순위
 f6c2e62098599a0a9a7c2e16d733303f,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Developer,개발자
 11ca7988fcdfdfe9d11c3aa6b7e8d4a1,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Extensions,확장 기능
 f2b06a36903f5b5c4ee852b002962fc6,Portal\Area\Portal.Area.KO.xaml,Portal.Area.OperatingSystem,운영 체제
@@ -307,79 +307,79 @@ fc5de4b31a16dde62d5de567506d4503,Portal\Area\Portal.Area.KO.xaml,Portal.Area.Sys
 94072ce62e9969de6f5e0a4812496ade,Portal\Area\Portal.Area.KO.xaml,Portal.Area.AppearanceBehavior,외관 및 동작
 e055d9eb86e42ce8bed4a7d49d58d749,Portal\Category\Portal.Category.KO.xaml,Portal.Category.All,전체
 107f429adebebe191ad158b2ea3b94c3,Portal\Category\Portal.Category.KO.xaml,,
-50394e10758a1b3058c449d1d500bfaf,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Abstract,추상
-ec857be8eb6bc16369063700a9b0e999,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Ambience,환경
-26fa0accd9daa22d55fde1e72933984e,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Animals,동물
-d4ba75f77a78966471cdc8c7b9aa40e1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Animation,애니메이션
-66686c3ac9a4b8ab917e601f11c20714,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Anime,애니메이션
-19e29adbb6386bfb3f69480847bba59c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArchitectureandBuildings,건축 및 건물
-2668d8e1e00297f1db047cd13e591211,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArtandAbstract,미술 및 추상
-3712588e0e2b2d4c3950d4713a6a1ed9,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArtificialIntelligence,인공지능
-8dec3bfa1041893d204f3547ad57feb8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Artworks,미술 작품
-b9bc2924000dfc5be5f920f036a9f9d5,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Bard,바드
-70d4bb6f7dba96341628894a6563298b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.BlackandWhite,흑백
-32c50967d0ee4c3efac75762c06f0a28,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Brands,브랜드
-1886bcd43e06979660d5f4f28043b89a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CartoonandComics,만화 및 만화책
-a89367a6c6a2d63011d76946be2b64f6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CitiesandPlaces,도시 및 장소
-a8a9939ae5066188eecef8f1218d253c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CloudsandSkies,구름 및 하늘
-58acd5021559fe92bdd83411a47bd447,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Colorful,다채로운
-01ecc482762cd67d515c519ec25b1c3e,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ColorfulGradients,다채로운 그라데이션
-70a46739c5ca55665524e218d02a8d7d,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ComicBooks,만화책
-b64aae8ddbbe2ec182a76fbd867f18d6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Cute,귀여운
-da5a43c05fbaff13d80e999080066917,Portal\Category\Portal.Category.KO.xaml,Portal.Category.DigitalArt,디지털 아트
-6648b1305dbeb8a04f86bfe4296f6493,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Dynamic,동적
-90078ee36eb20f5bba6749d5f6da54d6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Education,교육
-a794c9e34d2354ddde1d3734d9ab3501,Portal\Category\Portal.Category.KO.xaml,Portal.Category.EnchantedForests,마법의 숲
-b493c31b9aeabdaef48d16e4bbbc4c83,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Fantasy,판타지
-67d9248ff8454558bc11af1b6795251c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Fashion,패션
-af551b6ecf2560b335f6c30611ee903a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.FilmandTV,영화 및 TV
-b278e52833eebd008bb182fe036c7569,Portal\Category\Portal.Category.KO.xaml,Portal.Category.FoodandDrinks,음식 및 음료
-e0bdc8da7abe85e3cf0bc7044d237300,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Galaxy,은하
-29599e01b81bc3e3e3138d4640a96507,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Game,게임
-118303c7c19e1bd976fc59abb9ce65be,Portal\Category\Portal.Category.KO.xaml,Portal.Category.GeometricPatterns,기하학적 패턴
-cc097001afdc77701ea5a736cc2c895a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Halloween,할로윈
-a95c0e6c369f09ed784e2daff77ba2f8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Holidays,휴일
-f03773a9f571bf2794ea9ab578b0a646,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Horror,공포
-164f7e797a2c2555e2699e082b8aa44a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.InspirationalQuotes,영감을 주는 인용구
-5c1fa2378a6d4b3dec7725e09fcd7cf6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.KidsandCartoon,어린이 및 만화
-fadfc3ffa396203088ffb8c15141c973,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Landscape,풍경
-7490081d4884a19c62534cb80b2c4467,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Lifestyle,라이프스타일
-13dcbd1adbbd618ffa4cf70c9d3f3ed7,Portal\Category\Portal.Category.KO.xaml,Portal.Category.LineArt,선 그림
-041302855f1efd32af8d22230fe102e8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Love,사랑
-f3db39a9ad64a11a8192e7070fcfa32b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Medieval,중세
-89613fd9c726d74eb458a8d6f73968c4,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Minimalist,미니멀리스트
-497712f8853e382f3e05542c942dac10,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Music,음악
-dbba20e6c7e36ce1550a2800f9f7cd20,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Nature,자연
-b4f90feea7466ce427aa397be5a26a08,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Nightscapes,야경
-be3a3d19273ed3e0dc5f9d27d7b0b2c1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.PatternsandTextures,패턴 및 질감
-568277f39c5b8172330adfec5554129a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Persons,사람들
-60ae608235ab7a55fe5c12102cd48ee1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.PixelArt,픽셀 아트
-42e79ba0fa8c119c17ceeecae70e3dcd,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Retro,레트로
-6bc42e8b8e73690686620691e802395a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Science,과학
-a7cc5e8633fbdc798a52325403043c2d,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ScienceFiction,과학 소설
-d0eda5d8c3da7975887821a9c6cfa574,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Seasons,계절
 fb0e5ea308ef0bbc07a008f7bbec2a96,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Sky,하늘
-25ba3fe03c64dde7fbf71db1f9469f7a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Software,소프트웨어
+550ea1d3129d5c732e0861e64ec099e8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.War,전쟁
+b9bc2924000dfc5be5f920f036a9f9d5,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Bard,바드
+b64aae8ddbbe2ec182a76fbd867f18d6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Cute,귀여운
+29599e01b81bc3e3e3138d4640a96507,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Game,게임
+041302855f1efd32af8d22230fe102e8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Love,사랑
+755c9b2f93d37244365bc373213bca47,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Time,시간
+66686c3ac9a4b8ab917e601f11c20714,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Anime,애니메이션
+497712f8853e382f3e05542c942dac10,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Music,음악
+42e79ba0fa8c119c17ceeecae70e3dcd,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Retro,레트로
 428a67a753a6fa9d2e5ee0b773383d4c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Space,우주
+32c50967d0ee4c3efac75762c06f0a28,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Brands,브랜드
+e0bdc8da7abe85e3cf0bc7044d237300,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Galaxy,은하
+f03773a9f571bf2794ea9ab578b0a646,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Horror,공포
+dbba20e6c7e36ce1550a2800f9f7cd20,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Nature,자연
 7506ffc8a084058737f27654a308f93c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Sports,스포츠
-b1216467b7b7f0d1779d66cf9c28716a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Superheroes,슈퍼히어로
 58ae78f805cae4303747275ee4131af6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.System,시스템
 f211a06948f2414e63e1e16f59fe1a61,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Tavern,주점
-e7d081677ddb9c0bd5bf472ad9f72b0c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Technology,기술
 be94c3393f0a8f0e48a2d19012ddbbde,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Temple,신전
-755c9b2f93d37244365bc373213bca47,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Time,시간
-bd195a98517bf1604f9d4212fc311a9a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.UnderwaterandMarine,수중 및 해양
-8d75ef1316a6c6a8fc859bf0d153821b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Vehicles,차량
+26fa0accd9daa22d55fde1e72933984e,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Animals,동물
+6648b1305dbeb8a04f86bfe4296f6493,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Dynamic,동적
+b493c31b9aeabdaef48d16e4bbbc4c83,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Fantasy,판타지
+67d9248ff8454558bc11af1b6795251c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Fashion,패션
+13dcbd1adbbd618ffa4cf70c9d3f3ed7,Portal\Category\Portal.Category.KO.xaml,Portal.Category.LineArt,선 그림
+568277f39c5b8172330adfec5554129a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Persons,사람들
+6bc42e8b8e73690686620691e802395a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Science,과학
+d0eda5d8c3da7975887821a9c6cfa574,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Seasons,계절
 53455395218e383f5facb7269f2f3cbb,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Vintage,빈티지
-550ea1d3129d5c732e0861e64ec099e8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.War,전쟁
+50394e10758a1b3058c449d1d500bfaf,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Abstract,추상
+ec857be8eb6bc16369063700a9b0e999,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Ambience,환경
+8dec3bfa1041893d204f3547ad57feb8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Artworks,미술 작품
+58acd5021559fe92bdd83411a47bd447,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Colorful,다채로운
+a95c0e6c369f09ed784e2daff77ba2f8,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Holidays,휴일
+f3db39a9ad64a11a8192e7070fcfa32b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Medieval,중세
+60ae608235ab7a55fe5c12102cd48ee1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.PixelArt,픽셀 아트
+25ba3fe03c64dde7fbf71db1f9469f7a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Software,소프트웨어
+8d75ef1316a6c6a8fc859bf0d153821b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Vehicles,차량
+d4ba75f77a78966471cdc8c7b9aa40e1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Animation,애니메이션
+90078ee36eb20f5bba6749d5f6da54d6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Education,교육
+af551b6ecf2560b335f6c30611ee903a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.FilmandTV,영화 및 TV
+cc097001afdc77701ea5a736cc2c895a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Halloween,할로윈
+fadfc3ffa396203088ffb8c15141c973,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Landscape,풍경
+7490081d4884a19c62534cb80b2c4467,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Lifestyle,라이프스타일
+70a46739c5ca55665524e218d02a8d7d,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ComicBooks,만화책
+da5a43c05fbaff13d80e999080066917,Portal\Category\Portal.Category.KO.xaml,Portal.Category.DigitalArt,디지털 아트
+89613fd9c726d74eb458a8d6f73968c4,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Minimalist,미니멀리스트
+e7d081677ddb9c0bd5bf472ad9f72b0c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Technology,기술
+b4f90feea7466ce427aa397be5a26a08,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Nightscapes,야경
+b1216467b7b7f0d1779d66cf9c28716a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.Superheroes,슈퍼히어로
+70d4bb6f7dba96341628894a6563298b,Portal\Category\Portal.Category.KO.xaml,Portal.Category.BlackandWhite,흑백
+b278e52833eebd008bb182fe036c7569,Portal\Category\Portal.Category.KO.xaml,Portal.Category.FoodandDrinks,음식 및 음료
+2668d8e1e00297f1db047cd13e591211,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArtandAbstract,미술 및 추상
+a8a9939ae5066188eecef8f1218d253c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CloudsandSkies,구름 및 하늘
+5c1fa2378a6d4b3dec7725e09fcd7cf6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.KidsandCartoon,어린이 및 만화
+a7cc5e8633fbdc798a52325403043c2d,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ScienceFiction,과학 소설
+a89367a6c6a2d63011d76946be2b64f6,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CitiesandPlaces,도시 및 장소
+1886bcd43e06979660d5f4f28043b89a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.CartoonandComics,만화 및 만화책
+a794c9e34d2354ddde1d3734d9ab3501,Portal\Category\Portal.Category.KO.xaml,Portal.Category.EnchantedForests,마법의 숲
+01ecc482762cd67d515c519ec25b1c3e,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ColorfulGradients,다채로운 그라데이션
+118303c7c19e1bd976fc59abb9ce65be,Portal\Category\Portal.Category.KO.xaml,Portal.Category.GeometricPatterns,기하학적 패턴
+164f7e797a2c2555e2699e082b8aa44a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.InspirationalQuotes,영감을 주는 인용구
+be3a3d19273ed3e0dc5f9d27d7b0b2c1,Portal\Category\Portal.Category.KO.xaml,Portal.Category.PatternsandTextures,패턴 및 질감
+bd195a98517bf1604f9d4212fc311a9a,Portal\Category\Portal.Category.KO.xaml,Portal.Category.UnderwaterandMarine,수중 및 해양
+3712588e0e2b2d4c3950d4713a6a1ed9,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArtificialIntelligence,인공지능
+19e29adbb6386bfb3f69480847bba59c,Portal\Category\Portal.Category.KO.xaml,Portal.Category.ArchitectureandBuildings,건축 및 건물
 c7d37623dfc973adc3e056ef35c7bc56,Portal\Controls\Portal.Controls.KO.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVHJheUljb24vUG9ydGFsLlRyYXlJY29uLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckhlbHAvUG9ydGFsLk90aGVySGVscC5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVFZGl0L1BvcnRhbC5UaGVtZUVkaXQuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlN0b3JlQ2FyZC9Qb3J0YWwuU3RvcmVDYXJkLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckFib3V0L1BvcnRhbC5PdGhlckFib3V0LktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQYWdpbmF0aW9uL1BvcnRhbC5QYWdpbmF0aW9uLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZVNoYXJlL1BvcnRhbC5UaGVtZVNoYXJlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJMaWJyYXJ5Q2FyZC9Qb3J0YWwuTGlicmFyeUNhcmQuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lRGVsZXRlL1BvcnRhbC5UaGVtZURlbGV0ZS5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXZpZXcvUG9ydGFsLlRoZW1lUmV2aWV3LktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZUltcG9ydC9Qb3J0YWwuVGhlbWVJbXBvcnQuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lQ3JlYXRlL1BvcnRhbC5UaGVtZUNyZWF0ZS5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXBvcnQvUG9ydGFsLlRoZW1lUmVwb3J0LktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJFeHBhbmRlckNhcmQvUG9ydGFsLkV4cGFuZGVyQ2FyZC5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iV2FsbHBhcGVyQ3ljbGluZy9Qb3J0YWwuV2FsbHBhcGVyQ3ljbGluZy5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRGlzcGxheVByZWZlcmVuY2VzL1BvcnRhbC5EaXNwbGF5UHJlZmVyZW5jZXMuS08ueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+
 2c3e430062dfcbf912706def4aced9ec,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Stretch.Fill,채우기
 84cccce454f81efe83ec1e7d39257c5f,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Stretch.None,없음
 a2eb9a7b2cd04dcb03d191bf404a60d4,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Stretch.Uniform,균일하게
 97e3f539626705b35dc4fb5d83ffc762,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Stretch.UniformToFill,균일하게 채우기
 11ba2c8cff5adca34e735afa1a944b64,Portal\Enum\Portal.Enum.KO.xaml,,
-82a42adac1427846c441ce281c57e186,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.SortModeType.None,없음
 e4af2badb978425ed8eae934458e3ddc,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.SortModeType.Name,이름
+82a42adac1427846c441ce281c57e186,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.SortModeType.None,없음
 a3fb493b65ea95016dba682d09f62f4c,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.SortModeType.Creation,생성
 01bc740a672419793750b092f0e78aaf,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.SortModeType.Modification,수정
 facf884b7661cfa77caf604b48493212,Portal\Enum\Portal.Enum.KO.xaml,,
@@ -410,9 +410,9 @@ f5855cc675ab019e9b0fcf91f1464854,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Per
 446867f212d467d3e8b02e752f652c2a,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.PerformanceType.Pause,일시 정지
 67629ef28857cc34f9229f5f5d67a860,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.PerformanceType.Resume,재개
 725806b73c06e9776e99994af5795b31,Portal\Enum\Portal.Enum.KO.xaml,,
+3f36d7bcde3872ccb6925547ddd09ddb,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.Auto,자동
 87b48d3914117deada8026785cd65186,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.Mica,미카
 b6cd8fa014746cf2ce82c706fe3cde73,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.None,없음
-3f36d7bcde3872ccb6925547ddd09ddb,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.Auto,자동
 c9e01d8c002cc5a7065be36d7cd29295,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.Tabbed,탭식
 90a2b5b40d780ba44b88f6bcb55dd8ee,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.WindowBackdropType.Acrylic,아크릴
 ba910de071ec7a034ec186aa054543ea,Portal\Enum\Portal.Enum.KO.xaml,,
@@ -522,28 +522,28 @@ ef1265175a3be592cfb4332181fb645f,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
 7a23cefb46a698afa4931609bace9efa,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuHelpTip,도움말 보기
 24009c2ebb3ae92738667a6258efb91b,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuAboutTip,정보 보기
 1925a1c1a37d726749fbc35b24185fe9,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
-711c833e3bd023257e6a37877bbead14,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLibrary,라이브러리
 9509dee8e866caa00717a69e9c84c056,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuStore,상점
+711c833e3bd023257e6a37877bbead14,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLibrary,라이브러리
 7f92fa47a8692346a581aa02f53f8b37,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
-53848201f3802193eafb3b6fbed38823,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLibraryTip,테마 라이브러리
 552da0a6e5d77d1571015975cb9422e1,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuStoreTip,테마 상점
+53848201f3802193eafb3b6fbed38823,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLibraryTip,테마 라이브러리
 0913f4648fc545b20477d35f72e7e9dc,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
+36f69dcbf0a398a9c88178fb36b3c068,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOther,기타
+e4fda8ad876795e10cadc0bae895d31a,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonate,기부
+fe2c98f55807ab119071a1271c43f717,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuSystem,시스템
 da14f5db16a0bd73b28f93f9aa59e9ea,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuGeneral,일반
 871011e8f608227c5271b71b1bd79294,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPersonal,개인
-eba95645341d9ab01e631848f64768df,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPerformance,성능
 1ccb226bec3fe0a7bfb8a7562d27deba,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuWallpaper,배경화면
-fe2c98f55807ab119071a1271c43f717,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuSystem,시스템
-e4fda8ad876795e10cadc0bae895d31a,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonate,기부
-36f69dcbf0a398a9c88178fb36b3c068,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOther,기타
+eba95645341d9ab01e631848f64768df,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPerformance,성능
 b9b5153b259edad4deb5047c7edc735f,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
 b568ef4f3dc3e53cc431b02e7384ca03,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuBackTip,뒤로 가기
+b076c7f2f41cdc59f1c9cf8a450d10b7,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOtherTip,기타 설정
+832d66948c344d3f2dca81f5e3a81785,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonateTip,기부 설정
+4809cc424392279fa8116a1523219483,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuSystemTip,시스템 설정
 df75019e080dfb8ca38fbe029d980ee3,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuGeneralTip,일반 설정
 530542870b9637037ae892a30b5554ae,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPersonalTip,개인 설정
-1b7c83e8e152e0efd544c2a027e39399,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPerformanceTip,성능 설정
 0a0c0abb9206bb7f4c95ba49526d3a97,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuWallpaperTip,배경화면 설정
-4809cc424392279fa8116a1523219483,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuSystemTip,시스템 설정
-832d66948c344d3f2dca81f5e3a81785,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonateTip,기부 설정
-b076c7f2f41cdc59f1c9cf8a450d10b7,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOtherTip,기타 설정
+1b7c83e8e152e0efd544c2a027e39399,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuPerformanceTip,성능 설정
 625dd71faf9457ae20866fc32d9668cc,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
 a172aebc7ada74e000fa15bc40485ea9,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuSettingTip,설정
 beba4dae0a4d21282ab03a5ce5ef565a,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
@@ -551,20 +551,20 @@ beba4dae0a4d21282ab03a5ce5ef565a,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
 cfc1561f1b3e12cce49726c897abbc5c,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
 ffea9cea3ccf6701c309d454b4e61a62,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.SearchBoxTip,원하는 항목을 찾기 어려우십니까?
 88ba1d08794a12e6e7f07753762d0f5b,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
-618a49c02c868707c447e6609a4a9576,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLightTip,밝은 테마
 e01f3167b60b534a99ca44cf563f3b7e,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDarkTip,어두운 테마
+618a49c02c868707c447e6609a4a9576,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuLightTip,밝은 테마
 1312bca6b781f86a57f3f3eb4b797437,Portal\MainWindow\Portal.MainWindow.KO.xaml,,
+06b75557d80bb66cf4ecff35b98f39a8,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOtherOptionsTip,기타 옵션
+1a8a054352b83280d1240cc56d4e694f,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonateOptionsTip,기부 옵션
 7ea71a467256474db585fef084f39d88,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuCreateWallpaperTip,배경화면 생성
 c6bdd00773f7d362b899a0b297045767,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuWallpaperCyclingTip,배경 화면 순환
 6b57cf2004aa992144d9513a1dee6e60,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDisplayPreferencesTip,화면 설정
-1a8a054352b83280d1240cc56d4e694f,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuDonateOptionsTip,기부 옵션
-06b75557d80bb66cf4ecff35b98f39a8,Portal\MainWindow\Portal.MainWindow.KO.xaml,Portal.MainWindow.MenuOtherOptionsTip,기타 옵션
 ff3831eefa7ff897f363e76e39be404b,Portal\SettingPage\Portal.SettingPage.KO.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iT3RoZXJTZXR0aW5nUGFnZS9Qb3J0YWwuT3RoZXJTZXR0aW5nUGFnZS5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRG9uYXRlU2V0dGluZ1BhZ2UvUG9ydGFsLkRvbmF0ZVNldHRpbmdQYWdlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJTeXN0ZW1TZXR0aW5nUGFnZS9Qb3J0YWwuU3lzdGVtU2V0dGluZ1BhZ2UuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkdlbmVyYWxTZXR0aW5nUGFnZS9Qb3J0YWwuR2VuZXJhbFNldHRpbmdQYWdlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQZXJzb25hbFNldHRpbmdQYWdlL1BvcnRhbC5QZXJzb25hbFNldHRpbmdQYWdlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYWxscGFwZXJTZXR0aW5nUGFnZS9Qb3J0YWwuV2FsbHBhcGVyU2V0dGluZ1BhZ2UuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UvUG9ydGFsLlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UuS08ueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+
 c511c180517deacf6ccefd6d3ab65b0f,Portal\StorePage\Portal.StorePage.KO.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbFN0b3JlUGFnZS9Qb3J0YWwuRnVsbFN0b3JlUGFnZS5LTy54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iQnJva2VuU3RvcmVQYWdlL1BvcnRhbC5Ccm9rZW5TdG9yZVBhZ2UuS08ueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaFN0b3JlUGFnZS9Qb3J0YWwuU2VhcmNoU3RvcmVQYWdlLktPLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmtub3duU3RvcmVQYWdlL1BvcnRhbC5Vbmtub3duU3RvcmVQYWdlLktPLnhhbWwiIC8+DQogICAgPC9SZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg==
 432493c89668532845a0d1927cbc31a5,Portal\StorePage\Portal.StorePage.KO.xaml,,
 70d44c7b934aa05390f83f2975b3424f,Portal\StorePage\Portal.StorePage.KO.xaml,Portal.StorePage.Title,StorePage
-c0038774fff6f140e82554697432dd7a,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,Portal.DisplayPreferences.Title,디스플레이 환경 설정
 161ccff527ba03a72d318d83c957e86f,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,Portal.DisplayPreferences.Close,닫기
+c0038774fff6f140e82554697432dd7a,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,Portal.DisplayPreferences.Title,디스플레이 환경 설정
 1f234325b2d453c67300d768fa418eef,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,,
 81959ee4fc20b9f6980ff3531c74b1f6,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,Portal.DisplayPreferences.Expander,배치 모드
 33732cbb2a1a921489e6842ba455b421,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.KO.xaml,Portal.DisplayPreferences.Expander.Description,배경화면이 활성화된 화면에 적용되는 방법.
@@ -591,16 +591,16 @@ b9f0eee7fb726bd26dbbe89d4c82d6dd,Portal\Controls\ExpanderCard\Portal.ExpanderCar
 700dc81a7478605881c5855ed488b82d,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MoreTip,더 보기
 b4bacc114592e02a34e89bf17e39a69d,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.VersionTip,이 테마를 사용하려면 Sucrose를 업데이트하세요
 91b48e01c3c14d783f5a923bbdbb8d56,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,,
-e1088d86e50fa9977b64384e02eef811,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuReview,검토
 750a8f5b3dffdf2ebc04ead580358b68,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuUse,사용
+86dc8d404879890b53139aae2147bf1e,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuEdit,편집
+91c025d7db9df47cc0437fc01fe3375b,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuFind,찾기
+83956d57ab2b0f5e88e122fc4c5a8e3c,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuShare,공유
+63f9a2d744396df529bec989369fb2be,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuDelete,삭제
+e1088d86e50fa9977b64384e02eef811,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuReview,검토
 fc676a12f4af5ee61a4a5f98fcbd138f,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuPreview,미리보기
 37b339011439c529f08b92a5ac12926c,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuCustomize,사용자 정의
 83920a0a7e72f6d0c67409ca29d646da,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuCyclingAdd,사이클에 추가
 69871b54ba5e52b39ddb2d3e98092b1c,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuCyclingRemove,사이클에서 제거
-91c025d7db9df47cc0437fc01fe3375b,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuFind,찾기
-83956d57ab2b0f5e88e122fc4c5a8e3c,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuShare,공유
-63f9a2d744396df529bec989369fb2be,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuDelete,삭제
-86dc8d404879890b53139aae2147bf1e,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.MenuEdit,편집
 3c804ec3ec2eeed452a6d12359a85c91,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,,
 7c09702e915c346dd5315762b015b623,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.Closed,닫힘
 f98e3cc491385048abcfcedb1f9fabdd,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.Paused,일시 중지됨
@@ -608,8 +608,8 @@ bad339e286761f5765b20a74fe26fe9e,Portal\Controls\LibraryCard\Portal.LibraryCard.
 f0b5ab1af612055dabcbfd21139fb583,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.Selected,선택됨
 913071e90f1ff3c64888315057d6d672,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,,
 b4e2e0f3a4bd00c4aef80726ff6bcae7,Portal\Controls\LibraryCard\Portal.LibraryCard.KO.xaml,Portal.LibraryCard.Incompatible,호환되지 않음
-b93fcf88e88d933959f9b376e77f4a8d,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.Title,소개
 29eba86c0b2981e3576fccb6959713f7,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.Close,닫기
+b93fcf88e88d933959f9b376e77f4a8d,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.Title,소개
 7bfd7667c854e6bfe2c7223baefec729,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,,
 2a9c40945adfd4039b1aabf4e60694a8,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.About,"안녕하세요, 제 이름은 Bayram Emekli이며 Taiizor 사용자 이름으로도 알려져 있습니다. 무료 및 오픈 소스인 Sucrose Wallpaper Engine 응용 프로그램 개발자입니다. 제작한 응용 프로그램을 사용해 주셔서 감사합니다."
 edbba8e70f239ca15bfe3c6d763f5731,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,,
@@ -627,8 +627,8 @@ ea9c45f62c16d2cc21b6bee6d175120a,Portal\Controls\OtherAbout\Portal.OtherAbout.KO
 186bb1cf129f17377d76db3f1445c3e9,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.PrivacyPolicy,개인 정보 보호 정책
 574ef02dcf51e3295d8d7651c52e0257,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,,
 acb7275406d4f1b50794584a06e65234,Portal\Controls\OtherAbout\Portal.OtherAbout.KO.xaml,Portal.OtherAbout.CodeOfConduct,공동체 행동 강령
-6649fc04b82c4064fcf174ffd57bab4f,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,Portal.OtherHelp.Title,도움말
 1370531adc947de346108326fda1bce2,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,Portal.OtherHelp.Close,닫기
+6649fc04b82c4064fcf174ffd57bab4f,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,Portal.OtherHelp.Title,도움말
 ff349d2bfc3c3fb1b2425d5f609b2d75,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,,
 8854d419b4893c194816dda97349aa14,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,Portal.OtherHelp.WebPage,웹 페이지
 18cc09d88c7f78dd01b8938421c1c751,Portal\Controls\OtherHelp\Portal.OtherHelp.KO.xaml,Portal.OtherHelp.WebPage.Description,Sucrose Wallpaper Engine 공식 웹 페이지
@@ -650,10 +650,10 @@ d193e46672d2dfaa9b09086f4e4b3bc7,Portal\Controls\StoreCard\Portal.StoreCard.KO.x
 d1fa279b6f0dbcf1762ac87f3944e73e,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,,
 06db1d23bdd6ba28ce4d877fb9872495,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.VersionTip,이 테마를 사용하려면 Sucrose를 업데이트하세요
 3981dde859798ab3137bf979da6584a2,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,,
-ffa883505a946cd62100e3a80ed820f3,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuUpdating,업데이트 확인 중
+87e4fe7fce64d85e795bedbade2d9751,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuReport,신고
 e3744056bcb83e9a5a89f8acd81a9000,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuUpdate,업데이트 확인
 f90ebab7154b09a843daf4c2da21d49a,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuInstall,설치
-87e4fe7fce64d85e795bedbade2d9751,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuReport,신고
+ffa883505a946cd62100e3a80ed820f3,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.MenuUpdating,업데이트 확인 중
 ad164db8a802cc4fbb9e07f370c9ce1b,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,,
 cae9438c353aea43e548c4acae2fe003,Portal\Controls\StoreCard\Portal.StoreCard.KO.xaml,Portal.StoreCard.Incompatible,호환되지 않음
 009983ecf86a6c17c57011e97b2d9ec8,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.Title,테마 생성
@@ -682,27 +682,27 @@ aa4b7b8eb0e9f30ced4a450820f67fcd,Portal\Controls\ThemeCreate\Portal.ThemeCreate.
 05e0c2fe936b239993ee399827356c4d,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,,
 4ad6f66469f3bf17c349051043a4deed,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeUrl,Url
 32c9f1525f14d3b59a191739f027bf06,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeWeb,Web
-be3a9e9c5bf4ce073fb44023c4f51e8f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeApplication,응용 프로그램
-93e0bc8b48b774afb3727865b97fc939,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeThumbnail,썸네일
-5bc4b2be1597735258e6c8b9f5d379f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemePreview,미리보기
+e11b3c614d985ae07f222d90f8069f67,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTags,태그
 db2ff8d603c4c45d7e98bde8aebcddaa,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTitle,제목
-01dbd1d9348f8f1ab696beb8b1a1b5b5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeDescription,설명
 00b01c08cd5d67a2ab520cc16200b3db,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeAuthor,저자
 87163685cb8a76832f7fb5e85b8e9982,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeContact,연락처
-e11b3c614d985ae07f222d90f8069f67,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTags,태그
+5bc4b2be1597735258e6c8b9f5d379f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemePreview,미리보기
 ad20097c745cfc131ac271df268159f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeArguments,인수
+93e0bc8b48b774afb3727865b97fc939,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeThumbnail,썸네일
+be3a9e9c5bf4ce073fb44023c4f51e8f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeApplication,응용 프로그램
+01dbd1d9348f8f1ab696beb8b1a1b5b5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeDescription,설명
 215f0b16084698fc15668961c75990b6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,,
 18c97bf791d3293a2ae3f70d1a89ecf1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeUrl.Hint,유효한 Url 주소를 입력하세요
 4723ca1e193b65b13d21387d02a76451,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeWeb.Hint,Web 페이지 선택
-fa036a72aa5df5bb0fc6508d1fcf7cc1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeApplication.Hint,응용 프로그램 파일 선택
-999956c68822a7fd2c4051af1ab6c358,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeThumbnail.Hint,썸네일 이미지를 선택하세요
-78ec045dab354ee773d26b3296c44a49,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemePreview.Hint,미리보기 파일을 선택하세요
+383cfd8a01f6d46421d0894b1ba0a2e3,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTags.Hint,유효한 테마 태그를 입력하세요
 b432511260b1b3eb12fe725fcd649475,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTitle.Hint,유효한 제목을 입력하세요
-360a3e39f6db1e401c4eebf3e4ac5ae1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeDescription.Hint,유효한 설명을 입력하세요
 ca8b1b6462d03498cb6dffc4a2e6cd65,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeAuthor.Hint,유효한 저자 이름을 입력하세요
 ea5b2068a606d1d4450b965a9d8d9364,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeContact.Hint,유효한 연락처 주소를 입력하세요
-383cfd8a01f6d46421d0894b1ba0a2e3,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeTags.Hint,유효한 테마 태그를 입력하세요
+78ec045dab354ee773d26b3296c44a49,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemePreview.Hint,미리보기 파일을 선택하세요
 fd9a46039adaf9c731d33b1c1ebf56ca,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeArguments.Hint,유효한 애플리케이션 인수를 입력하세요
+999956c68822a7fd2c4051af1ab6c358,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeThumbnail.Hint,썸네일 이미지를 선택하세요
+fa036a72aa5df5bb0fc6508d1fcf7cc1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeApplication.Hint,응용 프로그램 파일 선택
+360a3e39f6db1e401c4eebf3e4ac5ae1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.ThemeDescription.Hint,유효한 설명을 입력하세요
 52ad30047a4866f1345ad95f41a5a3ac,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,,
 11ecc1c8b256d9d97fdeb2209eae1b2d,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.DragDrop.Delete,되돌리기
 3022a397a5fa44ef855a1188561dadc5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,,
@@ -738,50 +738,50 @@ a77a8a530e9183c713997bc5d16afe61,Portal\Controls\ThemeCreate\Portal.ThemeCreate.
 c7b8f78b73400914184cce3e1892740a,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.Access.Close,알겠습니다
 67a8dd05c5e51aa988395ed143cf08a2,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.Access.Title,접근 경고
 997d8321522835240b97fe513351003a,Portal\Controls\ThemeCreate\Portal.ThemeCreate.KO.xaml,Portal.ThemeCreate.Access.Message,선택한 파일에 접근할 권한이 없습니다.
+4dcf5d612ba76282e8b609f4876f181b,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.Close,닫기
 d2dc2c7c3ac037c481aaad6b761ce95a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.Title,테마 삭제
 b3bc36e2d7cd51b35ebc4e8173905563,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.Delete,삭제
-4dcf5d612ba76282e8b609f4876f181b,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.Close,닫기
 ca5a94dba69d9dcaa0bd949679cbeee5,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,,
-712940190161339f12e06c1b6588ce65,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTitle,제목
-8bdf52ec01a21243706bcd8630724d33,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeDescription,설명
-ab2c99cba933480d4dcd3b75a32246ad,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeType,유형
-95248ee69d553daee11c9b0ffaf7848d,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTypeName,Gif
-1180b49dcd7e1a8e9bb79a006d7e0918,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeAuthor,저자
-319bb63ff53f71be146a76b452118877,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeAuthorName,Taiizor
 5bec265ad93be61c389b59a23e6fd270,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeSize,크기
-406d45ccda4f4df82d96e240fcc013d2,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeSizeTotal,0 b
-7a3756dbcb3e37bc9e95b681fdfd1f7a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeVersion,버전
-4ff9040cc8896180f4e7fc9edc4a36e1,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeVersionText,0.0.0.0 (0.0.0.0)
 8b478eece67d661f43de9f55cff4ef1c,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTags,태그
-b8190e86378221fa0a2197e4c8cc4232,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTagsText,없음
+ab2c99cba933480d4dcd3b75a32246ad,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeType,유형
+712940190161339f12e06c1b6588ce65,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTitle,제목
+1180b49dcd7e1a8e9bb79a006d7e0918,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeAuthor,저자
 b32ad70b1d7db5c29a583ff7a6f681d8,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeCreate,만든 날짜
-4077282d877670e8728ab891ef172cb6,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeCreateDate,알 수 없음
 b27b9534db4cd13a5c4aa75569266638,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeModify,수정한 날짜
+7a3756dbcb3e37bc9e95b681fdfd1f7a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeVersion,버전
+b8190e86378221fa0a2197e4c8cc4232,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTagsText,없음
+95248ee69d553daee11c9b0ffaf7848d,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeTypeName,Gif
+406d45ccda4f4df82d96e240fcc013d2,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeSizeTotal,0 b
+319bb63ff53f71be146a76b452118877,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeAuthorName,Taiizor
+4077282d877670e8728ab891ef172cb6,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeCreateDate,알 수 없음
 a02afc195f53a49c2812772df106f850,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeModifyDate,알 수 없음
-68b9c2ea4e0f7c3ed0680ae2f6b66d8d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.Title,테마 편집
-b910b9c659b745c17f77353a0116b889,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.Close,닫기
+8bdf52ec01a21243706bcd8630724d33,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeDescription,설명
+4ff9040cc8896180f4e7fc9edc4a36e1,Portal\Controls\ThemeDelete\Portal.ThemeDelete.KO.xaml,Portal.ThemeDelete.ThemeVersionText,0.0.0.0 (0.0.0.0)
 f40d68095675b903309f28319815b50f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.Save,저장
+b910b9c659b745c17f77353a0116b889,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.Close,닫기
+68b9c2ea4e0f7c3ed0680ae2f6b66d8d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.Title,테마 편집
 147bf92dc15350b0c51baf21cc188fb6,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,,
+b6f580755d16221de4af5dacbb3e2d6f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTags,태그
 17e3ca9a33a7fe6cf3ed0b341b84778c,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTitle,제목
-24c0c3b2a16469e819979f087ba89047,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeDescription,설명
 dbc7c7005b027a827c7c0dab3953f913,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeAuthor,작성자
 0b4348ac2a33b907602b0711fea95d19,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeContact,연락처
-b6f580755d16221de4af5dacbb3e2d6f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTags,태그
 92f2ec14e09b64cc1b28059132c7be6e,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeArguments,인수
+24c0c3b2a16469e819979f087ba89047,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeDescription,설명
 6a1b6b6fcbd56af49b4726b5b9b9cedc,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,,
+14381c4455471c8de52ea9a83330f413,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTags.Hint,유효한 테마 태그를 입력하세요
 088b46c8b95b3e65023b24980090d4db,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTitle.Hint,유효한 제목을 입력하세요
-7dc8c7f9bb1f73a7ea8ef620803eb89d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeDescription.Hint,유효한 설명을 입력하세요
 4f54d6a8409eaad7ad4fd6eab141d492,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeAuthor.Hint,유효한 작성자 이름을 입력하세요
 5dbeb98b6edda40cc1e5d50ae8e42c0f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeContact.Hint,유효한 연락처 주소를 입력하세요
-14381c4455471c8de52ea9a83330f413,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeTags.Hint,유효한 테마 태그를 입력하세요
 908373fb68f5bd5125aa1283a67280e9,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeArguments.Hint,유효한 응용 프로그램 인수를 입력하세요
-c02f06d4da9a8fbb3ae5def27402313f,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,Portal.ThemeImport.Title,테마 가져오기
+7dc8c7f9bb1f73a7ea8ef620803eb89d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.KO.xaml,Portal.ThemeEdit.ThemeDescription.Hint,유효한 설명을 입력하세요
 958793eb53569f07938acb16821bcc89,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,Portal.ThemeImport.Close,닫기
+c02f06d4da9a8fbb3ae5def27402313f,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,Portal.ThemeImport.Title,테마 가져오기
 9077de6ed305fd09f7b8f9c800e32860,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,,
 90ddf4e857b39a22a705838b2c529079,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,Portal.ThemeImport.Info,테마 정보
 639cd5ed38ade11d9fdd33dce469b584,Portal\Controls\ThemeImport\Portal.ThemeImport.KO.xaml,Portal.ThemeImport.Type,유형
-294788ffcfddf1b2c0fe2bd6f77234b1,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Title,테마 보고
 bd6a831ab3b99841e0784c0e63cb3770,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Close,닫기
+294788ffcfddf1b2c0fe2bd6f77234b1,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Title,테마 보고
 81787b40657e60c1a80ec8991fb77b5c,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,,
 cd2713db95383fff21f70c241b3f78de,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.ThemeTitle,제목
 291a10e1bfcfd925ccd1939f0bdaf40f,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.ThemeDescription,설명
@@ -807,45 +807,45 @@ c3996c7e65bbfbcbdea6248219382ab3,Portal\Controls\ThemeReport\Portal.ThemeReport.
 0937012cfd4779246306ce7cf18405ba,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,,
 c43c6d31b145acd5c13c16f03e8e4152,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Reporter.Network,보고하려면 인터넷 연결이 필요합니다.
 ad62861d55fc0cfa3a19301d87e4f0c4,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,,
-61bdb07b475b66fe9d6699e8ca57a618,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Reporter.Report,보고
 0d6d42e8ee2fa8739c6b732ce026ed9f,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Reporter.GitHub,GitHub에서 보고
-6cece8b45be42c73923a643b30b05ec4,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.Title,테마 검토
+61bdb07b475b66fe9d6699e8ca57a618,Portal\Controls\ThemeReport\Portal.ThemeReport.KO.xaml,Portal.ThemeReport.Reporter.Report,보고
 a12e401a68d5a7904e002baea3621a0c,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.Close,닫기
+6cece8b45be42c73923a643b30b05ec4,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.Title,테마 검토
 33e9e6df43db661e3356bfa3bdee8d9c,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,,
-3dd28ab1b867c37488588924165d2fbe,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTitle,제목
-4e40eeed08da8b2e20f947b86e3070f7,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeDescription,설명
-5bbedb290ee1103c1e6c1439e2699095,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeType,유형
-d559f87df230f8c2abc9af3c8746350a,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTypeName,Gif
-08cab4b955c95b9221638f3b8a84ae31,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeAuthor,저자
-8060c62403fe93651e235e73302a6c8b,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeAuthorName,Taiizor
 b326f5ec0a567bd1b5a386beaa384159,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeSize,크기
-c7313b450dc96f8383b885a9f07cb304,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeSizeTotal,0 b
-a720f8597a91eda8da9957d81fcfeb94,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeVersion,버전
-ad8ab1ed868d463fcf6f1514fe68de5c,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0)
 4289d5e40fc6afc4668a660122081467,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTags,태그
-35f58383aab6d8210cafaa7e41b156f0,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTagsText,없음
+5bbedb290ee1103c1e6c1439e2699095,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeType,유형
+3dd28ab1b867c37488588924165d2fbe,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTitle,제목
+08cab4b955c95b9221638f3b8a84ae31,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeAuthor,저자
 4f2231a88a46ce033cb27668dbd2ad95,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeCreate,만든 날짜
-7e74fc83a3a72118a183bfa40bc398ef,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeCreateDate,알 수 없음
 86a58eed080cabaeabe16b987e908e1b,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeModify,수정한 날짜
-7e9794bdb291bae04a83d4b22568d43e,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeModifyDate,알 수 없음
 7887537297e876367a59aa1bce00b432,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeContact,테마 연락 주소
-d35ccb1f26a725f0298e1406ce28df59,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.Title,테마 공유
+a720f8597a91eda8da9957d81fcfeb94,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeVersion,버전
+35f58383aab6d8210cafaa7e41b156f0,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTagsText,없음
+d559f87df230f8c2abc9af3c8746350a,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeTypeName,Gif
+c7313b450dc96f8383b885a9f07cb304,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeSizeTotal,0 b
+8060c62403fe93651e235e73302a6c8b,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeAuthorName,Taiizor
+7e74fc83a3a72118a183bfa40bc398ef,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeCreateDate,알 수 없음
+7e9794bdb291bae04a83d4b22568d43e,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeModifyDate,알 수 없음
+4e40eeed08da8b2e20f947b86e3070f7,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeDescription,설명
+ad8ab1ed868d463fcf6f1514fe68de5c,Portal\Controls\ThemeReview\Portal.ThemeReview.KO.xaml,Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0)
 19217563718a1b73215368a8523ddcf9,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.Close,닫기
+d35ccb1f26a725f0298e1406ce28df59,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.Title,테마 공유
 4a6a31cc8a0d5a5f3cde050cfe9f279a,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 962c49583cde8b244ce7a7438e1d6413,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemeTitle,제목
 df4ba200af9fdb60fd41a61f1460963e,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemeDescription,설명
 a7a1298517cae703030ee3d96c88eddb,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
+c65e7c025dd4d196c565a3d5e49549e4,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemeCopy,링크 복사
 9693d74fc7005da653b4aaacc0d3b22a,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemeExport,내보내기
 5b4ce649e9fc6a50aa5145eed1a5c543,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish,스토어에 게시
-c65e7c025dd4d196c565a3d5e49549e4,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemeCopy,링크 복사
 4fbbebe81d936a5bf580355339a37cb2,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 2898e0019da26b9bdd2883ec85761207,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Publish,게시
 215af984440bd50b3eac7aa185edcb84,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Preparing,게시 준비가 곧 시작됩니다..
 4cc377642d64adbc26185abaa42a4435,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 139e2b84ce4af0938995a44731e5457e,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Limit,일일 테마 업로드 한도가 확인되고 있습니다..
 e5668b8d5138a5f83c3db07cd2e40c15,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
-2a4626619b61a2a15195998861623b81,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Limit.Exceeded,일일 테마 업로드 한도에 도달했습니다. 나중에 다시 시도해주세요.
 937b5e32331d9b7ee9681b4b366aed69,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Limit.Error,일일 테마 업로드 한도를 확인하는 중에 알 수 없는 오류가 발생했습니다.
+2a4626619b61a2a15195998861623b81,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Limit.Exceeded,일일 테마 업로드 한도에 도달했습니다. 나중에 다시 시도해주세요.
 01bd4fbcd7d370f39bff2e58d899a14c,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 3fd8f171a5e70b3ae44545c1c89e231b,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Compress,업로드 전에 테마를 압축하고 있습니다..
 539a2c20ad327af075ab32732df1a090,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Compress.Error,테마를 압축하는 중에 오류가 발생했습니다.
@@ -859,23 +859,23 @@ c5a2ceadbb468a5b075acb2d1c4da105,Portal\Controls\ThemeShare\Portal.ThemeShare.KO
 ae764e6cfeb2e0591b27f818ceb1fd95,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 4c1067c9d9aa674ccebf28911ce37bda,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload,압축된 테마를 업로드 준비 중입니다..
 a01592c837f5dde7eb6cecc2c0896965,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
-832f9d670d9c1c71cafb4f16c6f33cef,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload.Start,압축된 테마를 업로드 중입니다..
 af73fe1ff22e323830f9ba5de94d65b6,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload.Error,압축된 테마를 업로드하는 중에 알 수 없는 오류가 발생했습니다.
+832f9d670d9c1c71cafb4f16c6f33cef,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload.Start,압축된 테마를 업로드 중입니다..
 3c4e5e5d9a4fba891abce512a46998e1,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload.Errored,압축된 테마를 업로드하는 중에 예기치 않은 오류가 발생했습니다: {0}.
 98bfb88ba757192a45871914f44b76c8,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Upload.Succeded,압축된 테마가 성공적으로 업로드되었으며 확인 후 스토어에 게시될 것입니다.
 f094b4286f1e00540ae233b1caecf918,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
-2eec9032ca3ddffd85ef0e4fc8722b6d,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.SaveDialogFilter,ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*
 70ce6be10a91772432c45c1606069496,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.SaveDialogTitle,테마 파일 저장
+2eec9032ca3ddffd85ef0e4fc8722b6d,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.SaveDialogFilter,ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*
 903ecece273fcf9bced5673e9ff5a605,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,,
 a8510c25f0e065985c536aa686fd28ab,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Already.Close,알겠습니다
 f9134596e02f5ee6a712c5cec43fe81b,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Already.Title,게시 경고
 8f60d7852e340b37afba76c472a12f0c,Portal\Controls\ThemeShare\Portal.ThemeShare.KO.xaml,Portal.ThemeShare.ThemePublish.Already.Message,선택한 테마는 이미 스토어에서 다운로드되었습니다.
-711d72719f52b77421f7c4a8408b91d8,Portal\Controls\TrayIcon\Portal.TrayIcon.KO.xaml,Portal.TrayIcon.Title,시스템 트레이
 31c115bd25b18b506825e95ac8a30e87,Portal\Controls\TrayIcon\Portal.TrayIcon.KO.xaml,Portal.TrayIcon.Close,닫기
+711d72719f52b77421f7c4a8408b91d8,Portal\Controls\TrayIcon\Portal.TrayIcon.KO.xaml,Portal.TrayIcon.Title,시스템 트레이
 0526833f9c5c2b4785c1b49490ddf336,Portal\Controls\TrayIcon\Portal.TrayIcon.KO.xaml,,
 11901e04cafe9fe58215473ce4212b13,Portal\Controls\TrayIcon\Portal.TrayIcon.KO.xaml,Portal.TrayIcon.Message,Sucrose가 시스템 트레이로 최소화되었습니다. 계속하려면 Sucrose 아이콘을 오른쪽 클릭하세요.
-44427549ab82d0266cdb2d4948106249,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,Portal.WallpaperCycling.Title,배경화면 순환
 e7ae884f2ffa3cc25ec45c40538fbda2,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,Portal.WallpaperCycling.Close,닫기
+44427549ab82d0266cdb2d4948106249,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,Portal.WallpaperCycling.Title,배경화면 순환
 6b9f89c1b7be2091cb4d0022aaea31e3,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,,
 b0b21b9c835aba780d05f0d5fe06cc20,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,Portal.WallpaperCycling.Cycling,자동 배경화면 순환
 91c058c6d6ad5522a085491a9adb077c,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.KO.xaml,Portal.WallpaperCycling.Cycling.Description,배경화면이 자동으로 변경되는지 여부.
@@ -904,14 +904,14 @@ e97ac05e044477106c2ef96da0b54698,Portal\LibraryPage\SearchLibraryPage\Portal.Sea
 5b2e15520996885c7d3f4c42ec31f717,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.DonateMenu,기부 메뉴
 bb2b317bc2af000a4940d4527ac5d8a0,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.DonateMenu.Description,인터페이스에 표시되는 기부 메뉴의 가시성.
 f0fa2dcb303d3aa3243c396fa63d6a13,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,,
-acf88ad6d99bd49f695dfe6456b8de1c,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,표시
 af8305d147032267bde92676b27bd686,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide,숨기기
+acf88ad6d99bd49f695dfe6456b8de1c,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,표시
 fed619dc24bfe737237497649a86f261,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,,
 14660d3236b52e7819d2b758e1b4cfd8,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.Advertising,광고 지원
 2dc888cedd9ab06f245bb0a8596d2489,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.Advertising.Description,앱 개발을 지원하기 위해 광고를 시청하세요.
 09f2d29c083e138822373dd54b5e036b,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,,
-727c8640a92167cd1fd35b0111df82b9,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.Advertising.AdvertisingDelay,광고 지연 시간 (분):
 271b029980be102ed4967f7a17aa0fdb,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.Advertising.AdvertisingHint,팁: 광고는 최소한의 불편함을 유발하지 않도록 표시됩니다.
+727c8640a92167cd1fd35b0111df82b9,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.KO.xaml,Portal.DonateSettingPage.Advertising.AdvertisingDelay,광고 지연 시간 (분):
 d308cb19fecc8045f5e814314de66155,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.Title,GeneralSettingPage
 4afaab15e130ee6c38dd37da3afe83ae,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 23e73e3f68a50314dfe831d2ff432240,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.ApplicationLanguage,애플리케이션 언어
@@ -932,19 +932,19 @@ a9249bb4431d6438dfb15e2cb6b820cf,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 4f1b4cc1cae6a1ee7987f4e39749ebba,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon,알림 아이콘
 c7666c3bca61d62fed9ac2a33bb02262,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon.Description,시스템 트레이 가시성. Sucrose가 은밀하게 계속 실행됩니다.
 03bad4a6e5d6be58c4cb6b65e0877cb5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
-5e4e9dc517f2b0b7a64af1de75d6de77,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Show,표시
 c54ce86a277cc09a1d1997932f68940f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Hide,숨기기
+5e4e9dc517f2b0b7a64af1de75d6de77,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Show,표시
 954a64c99d74a0babfee09b7e0eaf173,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 4fe8f257bcbda04d2580d2766c5cafca,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.NotifyIcon.NotifyExit,시스템 트레이 닫힐 때 모든 Sucrose 앱을 종료합니다
 d9ee02b4c6d87bc097bc37a6ded220ab,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 32ca4a0ef2aa159e836463c545ae807e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop,창 배경
 b739f7ff2227b77e1326f7508bf74026,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.Description,앱 창 배경을 사용자 정의하는 데 사용됩니다.
 306a05c974300f4c4d27cc48280bb726,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
-0be70f4fb2ebb942f382e1142dd65e89,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,배경 이미지 선택
-ca0507fef5e0e465c06b537b5c3d0b82,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,배경 이미지 선택
-82d18adca1618fb8ab1d4f7a84d2ae11,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,이미지 파일 (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif
 0af4c57b7b4fb4ced0e891bf651eb833,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock,죄송합니다. 선택한 이미지 파일이 다른 프로세스에서 사용 중입니다
+0be70f4fb2ebb942f382e1142dd65e89,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,배경 이미지 선택
 d787aa9bb4a2275984c532f977106189,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access,선택한 이미지 파일에 접근할 권한이 없습니다
+82d18adca1618fb8ab1d4f7a84d2ae11,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,이미지 파일 (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif
+ca0507fef5e0e465c06b537b5c3d0b82,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,배경 이미지 선택
 f0609890794fbd82f7b255762cefa320,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 e1f677039fda8b41f5d0df2a7149e36f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch,배경 크기 조정:
 ffb02d16e35153da427a4b62da74f4b7,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
@@ -953,16 +953,16 @@ e2ff0f265ff8e881e725e8f0af60d7f3,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 aa81822f530a24570b13fb4f840f09fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume,음량
 4659e1ffd72cc325fe3b1fc1b57aa8fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume.Description,모든 벽지에 적용되는 음량 설정입니다.
 8dd82db558547099fcdc6576980b5a2a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
-b85228fd96f25010cddca0e9982c185e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,바탕 화면에만 포커스를 맞춘 경우에만 소리를 재생합니다
 8d7cd9a6106e4c7c773e6d32760b77f5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeActive,모든 애플리케이션이 음소거 상태일 때만 소리 재생
+b85228fd96f25010cddca0e9982c185e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,바탕 화면에만 포커스를 맞춘 경우에만 소리를 재생합니다
 3d41dab72d6f47a2480c07613c9a48c5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity,민감도 (초):
 5331c3a5cdfcc9547fd314dc72a72ad0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 d6a2a8c8bc383eeb62dd385bca2cbf13,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary,라이브러리 위치
 dece197e4d461de0c3d237b8615ca707,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.Description,추가한 테마가 저장될 위치입니다.
 58dbd34a751b1d8039f5864814ce5e25,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
-e5650dd96adafee4c50f5e756ee584ac,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,새 위치에 접근할 수 없습니다
-d195e041356e2826aed34bade9255495,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,빈 폴더를 선택하세요
 0991f16e5aeefb5c48f43a8e4e905c79,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move,위치를 변경하는 동안 잠시 기다려 주십시오
+d195e041356e2826aed34bade9255495,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,빈 폴더를 선택하세요
+e5650dd96adafee4c50f5e756ee584ac,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,새 위치에 접근할 수 없습니다
 f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,,
 0018647fbb84eff962ea274228304011,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.KO.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryMove,현재 라이브러리를 새 위치로 이동
 86a348dbbfe405290bb4bd47cc58f48d,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.Title,OtherSettingPage
@@ -976,8 +976,8 @@ f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 438a533fd217f099b1debe47297c23eb,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.DiscordHook,Discord
 7fdbb593e4cb2451e85df1b1777f782a,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.DiscordHook.Description,Sucrose는 Discord와의 통신을 담당합니다.
 80c3504d0804e60cce64b9d2096a0184,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,,
-245bac8d73e7fc3652a15c192b78c931,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.DiscordHook.DiscordRefresh,연결 갱신:
 1f3dab37fdcd898425b72205ea370d49,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.DiscordHook.DiscordDelay,갱신 주기 (초):
+245bac8d73e7fc3652a15c192b78c931,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.DiscordHook.DiscordRefresh,연결 갱신:
 2ab50a561cf88f71e3cd144b577806b0,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,,
 19e1245152b26ae22021b53bf91fb359,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.Agent,인터넷 대리인
 ec41c98f92f4aae352c1682c49556afc,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.KO.xaml,Portal.OtherSettingPage.Agent.Description,인터넷 연결이 필요한 상황에서의 대리인 신원입니다.

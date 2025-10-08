@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Ομοιόμορφη</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Ομοιόμορφο Γέμισμα</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">Καμία</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Όνομα</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">Καμία</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Δημιουργία</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Τροποποίηση</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Παύση</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Συνέχιση</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Αυτόματο</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Μίκα</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">Καμία</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Αυτόματο</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Καρτελέτα</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Ακρυλικό</system:String>
 

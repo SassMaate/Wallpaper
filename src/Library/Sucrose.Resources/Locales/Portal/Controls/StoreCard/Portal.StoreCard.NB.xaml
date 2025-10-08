@@ -7,10 +7,10 @@
 
     <system:String x:Key="Portal.StoreCard.VersionTip">For å bruke dette temaet, må du oppdatere Sucrose</system:String>
 
-    <system:String x:Key="Portal.StoreCard.MenuUpdating">Sjekker Etter Oppdateringer</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuReport">Rapporter</system:String>
     <system:String x:Key="Portal.StoreCard.MenuUpdate">Sjekk Etter Oppdateringer</system:String>
     <system:String x:Key="Portal.StoreCard.MenuInstall">Installer</system:String>
-    <system:String x:Key="Portal.StoreCard.MenuReport">Rapporter</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">Sjekker Etter Oppdateringer</system:String>
 
     <system:String x:Key="Portal.StoreCard.Incompatible">Inkompatibel</system:String>
 </ResourceDictionary>

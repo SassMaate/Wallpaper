@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnóstico de Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Archivos ZIP (*.zip)|*.zip|Todos los Archivos (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Guardar Archivo de Registro</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Archivos ZIP (*.zip)|*.zip|Todos los Archivos (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Solicitudes y Comentarios</system:String>
     <system:String x:Key="Launcher.FeedbackText">Enviar Comentarios</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Solicitudes y Comentarios</system:String>
 
     <system:String x:Key="Launcher.SettingText">Configuración</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Recargar Fondo de Pantalla</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Cambiar Fondo de Pantalla</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Cerrar Fondo de Pantalla</system:String>
     <system:String x:Key="Launcher.WallOpenText">Abrir Fondo de Pantalla</system:String>
-    <system:String x:Key="Launcher.WallStartText">Iniciar Fondo de Pantalla</system:String>
     <system:String x:Key="Launcher.WallStopText">Detener Fondo de Pantalla</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Cerrar Fondo de Pantalla</system:String>
+    <system:String x:Key="Launcher.WallStartText">Iniciar Fondo de Pantalla</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Cambiar Fondo de Pantalla</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Recargar Fondo de Pantalla</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Cerrado</system:String>
     <system:String x:Key="Launcher.PausedText">En Pausa</system:String>

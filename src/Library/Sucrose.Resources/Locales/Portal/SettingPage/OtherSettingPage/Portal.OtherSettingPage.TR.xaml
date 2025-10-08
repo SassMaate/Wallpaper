@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose, Discord ile arasındaki haberleşmeyi sağlar.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Bağlantı Yenileme:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Yenileme Süresi (Saniye):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Bağlantı Yenileme:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">İnternet Temsilcisi</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">İnternet bağlantısı gerektiren durumlardaki temsilci kimliğiniz.</system:String>

@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose erleichtert die Kommunikation mit Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Verbindung Aktualisieren:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Aktualisierungsintervall (Sekunden):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Verbindung Aktualisieren:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Internetagent</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Ihre Identität in Situationen, die eine Internetverbindung erfordern.</system:String>

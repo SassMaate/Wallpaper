@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Uniform</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Uniform pentru a umple</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">Niciunul</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Nume</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">Niciunul</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Creare</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Modificare</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Pauză</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Reia</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Automat</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Mica</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">Niciunul</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Automat</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Tab-uri</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Acrilic</system:String>
 

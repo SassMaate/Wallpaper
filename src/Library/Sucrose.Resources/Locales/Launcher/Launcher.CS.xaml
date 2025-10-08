@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnostika Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIP Soubory (*.zip)|*.zip|Všechny Soubory (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Uložit Záznam Souboru</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIP Soubory (*.zip)|*.zip|Všechny Soubory (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Požadavky a Zpětná Vazba</system:String>
     <system:String x:Key="Launcher.FeedbackText">Odeslat Zpětnou Vazbu</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Požadavky a Zpětná Vazba</system:String>
 
     <system:String x:Key="Launcher.SettingText">Nastavení</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Obnovit Tapetu</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Změnit Tapetu</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Zavřít Tapetu</system:String>
     <system:String x:Key="Launcher.WallOpenText">Otevřít Tapetu</system:String>
-    <system:String x:Key="Launcher.WallStartText">Spustit Tapetu</system:String>
     <system:String x:Key="Launcher.WallStopText">Zastavit Tapetu</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Zavřít Tapetu</system:String>
+    <system:String x:Key="Launcher.WallStartText">Spustit Tapetu</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Změnit Tapetu</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Obnovit Tapetu</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Zavřeno</system:String>
     <system:String x:Key="Launcher.PausedText">Pozastaveno</system:String>

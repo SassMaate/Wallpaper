@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.OtherHelp.Title">Ajuda</system:String>
     <system:String x:Key="Portal.OtherHelp.Close">Fechar</system:String>
+    <system:String x:Key="Portal.OtherHelp.Title">Ajuda</system:String>
 
     <system:String x:Key="Portal.OtherHelp.WebPage">Página da Web</system:String>
     <system:String x:Key="Portal.OtherHelp.WebPage.Description">Página oficial do Sucrose Wallpaper Engine na web</system:String>

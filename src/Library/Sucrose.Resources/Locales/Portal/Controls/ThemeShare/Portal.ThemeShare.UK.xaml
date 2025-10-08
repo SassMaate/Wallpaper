@@ -2,23 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeShare.Title">Поділитися Темою</system:String>
     <system:String x:Key="Portal.ThemeShare.Close">Закрити</system:String>
+    <system:String x:Key="Portal.ThemeShare.Title">Поділитися Темою</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemeTitle">Заголовок</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeDescription">Опис</system:String>
 
+    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Скопіювати посилання</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeExport">Експортувати</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish">Опублікувати в магазині</system:String>
-    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Скопіювати посилання</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Publish">Опублікувати</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Preparing">Підготовка до публікації незабаром розпочнеться..</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit">Перевіряється ваш денний ліміт на завантаження тем..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Ви досягли свого денного ліміту на завантаження тем, спробуйте пізніше.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Error">Сталася невідома помилка під час перевірки вашого денного ліміту на завантаження тем.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Ви досягли свого денного ліміту на завантаження тем, спробуйте пізніше.</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress">Тема стискається перед завантаженням..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress.Error">Сталася помилка під час стискання теми.</system:String>
@@ -32,13 +32,13 @@
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload">Стиснена тема готується до завантаження..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Стиснена тема завантажується..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Error">Сталася невідома помилка під час завантаження стисненої теми.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Стиснена тема завантажується..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Errored">Сталася несподівана помилка під час завантаження стисненої теми: {0}.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Succeded">Стиснену тему успішно завантажено і після перевірки вона буде опублікована в магазині.</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP Файли (*.zip)|*.zip|Всі Файли (*.*)|*.*</system:String>
     <system:String x:Key="Portal.ThemeShare.SaveDialogTitle">Зберегти Файл Tеми</system:String>
+    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP Файли (*.zip)|*.zip|Всі Файли (*.*)|*.*</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Зрозуміло</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Попередження про Публікацію</system:String>

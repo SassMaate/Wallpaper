@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Hanya untuk CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Hanya untuk MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Kecepatan</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
-    <system:String x:Key="Property.Localization.Mute">Bisu</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
     <system:String x:Key="Property.Localization.Hue">Rona</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Pencerminan</system:String>
     <system:String x:Key="Property.Localization.Blur">Kabur</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Kontras</system:String>
-    <system:String x:Key="Property.Localization.Invert">Balikkan</system:String>
+    <system:String x:Key="Property.Localization.Mute">Bisu</system:String>
     <system:String x:Key="Property.Localization.Zoom">Perbesaran</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
+    <system:String x:Key="Property.Localization.Speed">Kecepatan</system:String>
+    <system:String x:Key="Property.Localization.Invert">Balikkan</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Pencerminan</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Kontras</system:String>
     <system:String x:Key="Property.Localization.Animation">Animasi</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Ketajaman</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Saturasi</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Kecerahan</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Skala Abu-Abu</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Ketajaman</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Kecerahan</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Saturasi</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Datar</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Vertikal</system:String>

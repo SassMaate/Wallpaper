@@ -2,23 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeShare.Title">Thema Teilen</system:String>
     <system:String x:Key="Portal.ThemeShare.Close">Schließen</system:String>
+    <system:String x:Key="Portal.ThemeShare.Title">Thema Teilen</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemeTitle">Titel</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeDescription">Beschreibung</system:String>
 
+    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Link Kopieren</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeExport">Exportieren</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish">Im Shop Veröffentlichen</system:String>
-    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Link Kopieren</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Publish">Veröffentlichen</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Preparing">Vorbereitungen zur Veröffentlichung beginnen in Kürze..</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit">Ihr tägliches Upload-Limit für Themen wird überprüft..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Sie haben Ihr tägliches Upload-Limit für Themen erreicht, bitte versuchen Sie es später erneut.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Error">Beim Überprüfen Ihres täglichen Upload-Limits für Themen ist ein unbekannter Fehler aufgetreten.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Sie haben Ihr tägliches Upload-Limit für Themen erreicht, bitte versuchen Sie es später erneut.</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress">Das Thema wird vor dem Hochladen komprimiert..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress.Error">Beim Komprimieren des Themas ist ein Fehler aufgetreten.</system:String>
@@ -32,13 +32,13 @@
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload">Das komprimierte Thema wird zum Hochladen vorbereitet..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Das komprimierte Thema wird hochgeladen..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Error">Beim Hochladen des komprimierten Themas ist ein unbekannter Fehler aufgetreten.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Das komprimierte Thema wird hochgeladen..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Errored">Beim Hochladen des komprimierten Themas ist ein unerwarteter Fehler aufgetreten: {0}.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Succeded">Das komprimierte Thema wurde erfolgreich hochgeladen und wird nach der Überprüfung im Store veröffentlicht.</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP-Dateien (*.zip)|*.zip|Alle Dateien (*.*)|*.*</system:String>
     <system:String x:Key="Portal.ThemeShare.SaveDialogTitle">Thema-Datei Speichern</system:String>
+    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP-Dateien (*.zip)|*.zip|Alle Dateien (*.*)|*.*</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Verstanden</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Veröffentlichungshinweis</system:String>

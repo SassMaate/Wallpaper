@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">균일하게</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">균일하게 채우기</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">없음</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">이름</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">없음</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">생성</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">수정</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">일시 정지</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">재개</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">자동</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">미카</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">없음</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">자동</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">탭식</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">아크릴</system:String>
 

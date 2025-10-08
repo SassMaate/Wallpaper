@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplikasi</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Thumbnail</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Pratinjau</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Tag</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">Judul</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Deskripsi</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">Penulis</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">Kontak</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Tag</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Pratinjau</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">Argumen</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Thumbnail</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplikasi</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Deskripsi</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Harap masukkan url yang valid</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Pilih halaman web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Pilih file aplikasi</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Pilih gambar cover</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Pilih file pratinjau</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Harap masukkan tag tema yang valid</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Harap masukkan judul yang valid</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Harap masukkan deskripsi yang valid</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Harap masukkan nama penulis yang valid</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Harap masukkan alamat kontak yang valid</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Harap masukkan tag tema yang valid</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Pilih file pratinjau</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Harap masukkan argumen aplikasi yang valid</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Pilih gambar cover</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Pilih file aplikasi</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Harap masukkan deskripsi yang valid</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">Batalkan</system:String>
 

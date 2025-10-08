@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeReport.Title">主题报告</system:String>
     <system:String x:Key="Portal.ThemeReport.Close">关闭</system:String>
+    <system:String x:Key="Portal.ThemeReport.Title">主题报告</system:String>
 
     <system:String x:Key="Portal.ThemeReport.ThemeTitle">标题</system:String>
     <system:String x:Key="Portal.ThemeReport.ThemeDescription">描述</system:String>
@@ -29,6 +29,6 @@
 
     <system:String x:Key="Portal.ThemeReport.Reporter.Network">报告需要互联网连接。</system:String>
 
-    <system:String x:Key="Portal.ThemeReport.Reporter.Report">报告</system:String>
     <system:String x:Key="Portal.ThemeReport.Reporter.GitHub">通过 GitHub 报告</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Report">报告</system:String>
 </ResourceDictionary>

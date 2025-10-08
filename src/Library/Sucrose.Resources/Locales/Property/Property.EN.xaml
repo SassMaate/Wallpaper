@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Only for CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Only for MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Speed</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
-    <system:String x:Key="Property.Localization.Mute">Mute</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
     <system:String x:Key="Property.Localization.Hue">Hue</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Mirroring</system:String>
     <system:String x:Key="Property.Localization.Blur">Blur</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Contrast</system:String>
-    <system:String x:Key="Property.Localization.Invert">Invert</system:String>
+    <system:String x:Key="Property.Localization.Mute">Mute</system:String>
     <system:String x:Key="Property.Localization.Zoom">Zoom</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
+    <system:String x:Key="Property.Localization.Speed">Speed</system:String>
+    <system:String x:Key="Property.Localization.Invert">Invert</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Mirroring</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Contrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animation</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Sharpness</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Saturation</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Brightness</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Grayscale</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Sharpness</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Brightness</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Saturation</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Flat</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Vertical</system:String>

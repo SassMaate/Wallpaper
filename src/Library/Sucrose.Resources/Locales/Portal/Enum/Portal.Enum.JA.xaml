@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">均等</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">均等にフィル</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">なし</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">名前</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">なし</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">作成</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">変更</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">一時停止</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">再開</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">自動</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">マイカ</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">なし</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">自動</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">タブ</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">アクリル</system:String>
 

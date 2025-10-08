@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplikace</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Náhled</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Náhled</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Štítky</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">Název</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Popis</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">Autor</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">Kontakt</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Štítky</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Náhled</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">Argumenty</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Náhled</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplikace</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Popis</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Zadejte platnou Url adresu</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Vyberte webovou stránku</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Vyberte soubor aplikace</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Vyberte náhledový obrázek</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Vyberte soubor s náhledem</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Zadejte platné štítky pro šablonu</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Zadejte platný název</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Zadejte platný popis</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Zadejte platné jméno autora</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Zadejte platný kontakt</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Zadejte platné štítky pro šablonu</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Vyberte soubor s náhledem</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Zadejte platné argumenty aplikace</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Vyberte náhledový obrázek</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Vyberte soubor aplikace</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Zadejte platný popis</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">Odstranit</system:String>
 

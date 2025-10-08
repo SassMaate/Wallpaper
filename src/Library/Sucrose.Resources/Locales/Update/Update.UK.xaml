@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">СПИСКИ НЕ ВДАЛОСЯ ФІЛЬТРУВАТИ</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">ПОРІВНЯННЯ СПИСКІВ</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">ДОДАТОК ВЖЕ ОНОВЛЕНИЙ</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">НЕ ВДАЛОСЯ ПОРІВНЯТИ СПИСКИ</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">ДОДАТОК ВЖЕ ОНОВЛЕНИЙ</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">ПОШУК НЕОБХІДНИХ ФАЙЛІВ</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">НЕ ЗНАЙДЕНО НЕОБХІДНІ ФАЙЛИ</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">ЗАВАНТАЖЕННЯ НЕОБХІДНИХ ФАЙЛІВ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">НЕ ВДАЛОСЯ ЗАВАНТАЖИТИ НЕОБХІДНІ ФАЙЛИ</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">ЗАВАНТАЖЕННЯ НЕОБХІДНОГО ФАЙЛУ СКАСОВАНО</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">ПІД ЧАС ЗАВАНТАЖЕННЯ НЕОБХІДНОГО ФАЙЛУ ВИНИКЛА ПОМИЛКА</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">ЗАВАНТАЖЕННЯ НЕОБХІДНОГО ФАЙЛУ СКАСОВАНО</system:String>
 
     <system:String x:Key="Update.MessageText.Running">ПІДГОТОВКА ЗАВАНТАЖЕНОГО ФАЙЛУ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">ВИКОНАННЯ ЗАВАНТАЖЕНОГО ФАЙЛУ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">ЗАВАНТАЖЕНИЙ ФАЙЛ ВИКОНАНО</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">ЗАВАНТАЖЕНИЙ ФАЙЛ НЕ ПРИДАТНИЙ</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">НЕ ВДАЛОСЯ ПІДГОТУВАТИ ЗАВАНТАЖЕНИЙ ФАЙЛ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">ЗАВАНТАЖЕНИЙ ФАЙЛ ВИКОНАНО</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">ВИКОНАННЯ ЗАВАНТАЖЕНОГО ФАЙЛУ</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">РОЗПАКОВКА ЗАВАНТАЖЕНОГО ФАЙЛУ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">ВИКОНАННЯ РОЗПАКОВАНОГО ФАЙЛУ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">РОЗПАКОВАНИЙ ФАЙЛ ВИКОНАНО</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">ЗАВАНТАЖЕНИЙ ФАЙЛ НЕ ВДАЛОСЯ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ЗАВАНТАЖЕНИЙ ФАЙЛ ПОШКОДЖЕНИЙ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">ЗАВАНТАЖЕНИЙ ФАЙЛ НЕПРИДАТНИЙ ДЛЯ ВИКОРИСТАННЯ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">ЗАВАНТАЖЕНИЙ ФАЙЛ НЕ ВДАЛОСЯ РОЗПАКУВАТИ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">ЗАВАНТАЖЕНИЙ ФАЙЛ НЕ ВДАЛОСЯ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ЗАВАНТАЖЕНИЙ ФАЙЛ ПОШКОДЖЕНИЙ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">РОЗПАКОВАНИЙ ФАЙЛ ВИКОНАНО</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">ВИКОНАННЯ РОЗПАКОВАНОГО ФАЙЛУ</system:String>
 </ResourceDictionary>

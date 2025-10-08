@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LISTEN KONNTEN NICHT GEFILTERT WERDEN</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">VERGLEICHEN VON LISTEN</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">DIE ANWENDUNG IST BEREITS AKTUELL</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">LISTENVERGLEICH FEHLGESCHLAGEN</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">DIE ANWENDUNG IST BEREITS AKTUELL</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">SUCHE NACH ERFORDERLICHEN DATEIEN</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">ERFORDERLICHE DATEIEN NICHT GEFUNDEN</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">DOWNLOADEN DER ERFORDERLICHEN DATEIEN</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">ERFORDERLICHE DATEIEN KONNTEN NICHT HERUNTERGELADEN WERDEN</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DER DOWNLOAD DER ERFORDERLICHEN DATEI WURDE ABGEBROCHEN</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">BEIM HERUNTERLADEN DER ERFORDERLICHEN DATEI IST EIN FEHLER AUFGETRETEN</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DER DOWNLOAD DER ERFORDERLICHEN DATEI WURDE ABGEBROCHEN</system:String>
 
     <system:String x:Key="Update.MessageText.Running">VORBEREITUNG DER HERUNTERGELADENEN DATEI</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">AUSFÜHRUNG DER HERUNTERGELADENEN DATEI</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">HERUNTERGELADENE DATEI AUSGEFÜHRT</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">HERUNTERGELADENE DATEI NICHT VERWENDBAR</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">VORBEREITUNG DER HERUNTERGELADENEN DATEI FEHLGESCHLAGEN</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">HERUNTERGELADENE DATEI AUSGEFÜHRT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">AUSFÜHRUNG DER HERUNTERGELADENEN DATEI</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EXTRAHIEREN DER HERUNTERGELADENEN DATEI</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">DIE EXTRAHIERTE DATEI WIRD AUSGEFÜHRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">DIE EXTRAHIERTE DATEI WURDE AUSGEFÜHRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">DIE HERUNTERGELADENE DATEI IST FEHLGESCHLAGEN</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DIE HERUNTERGELADENE DATEI IST BESCHÄDIGT</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">DIE HERUNTERGELADENE DATEI IST NICHT VERWENDBAR</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">DIE HERUNTERGELADENE DATEI KONNTE NICHT EXTRAHIEREN WERDEN</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">DIE HERUNTERGELADENE DATEI IST FEHLGESCHLAGEN</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DIE HERUNTERGELADENE DATEI IST BESCHÄDIGT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">DIE EXTRAHIERTE DATEI WURDE AUSGEFÜHRT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">DIE EXTRAHIERTE DATEI WIRD AUSGEFÜHRT</system:String>
 </ResourceDictionary>

@@ -7,10 +7,10 @@
 
     <system:String x:Key="Portal.StoreCard.VersionTip">Uppdatera Sucrose för att använda det här temat</system:String>
 
-    <system:String x:Key="Portal.StoreCard.MenuUpdating">Kontrollerar Uppdateringar</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuReport">Rapportera</system:String>
     <system:String x:Key="Portal.StoreCard.MenuUpdate">Kontrollera Uppdateringar</system:String>
     <system:String x:Key="Portal.StoreCard.MenuInstall">Installera</system:String>
-    <system:String x:Key="Portal.StoreCard.MenuReport">Rapportera</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">Kontrollerar Uppdateringar</system:String>
 
     <system:String x:Key="Portal.StoreCard.Incompatible">Inkompatibel</system:String>
 </ResourceDictionary>

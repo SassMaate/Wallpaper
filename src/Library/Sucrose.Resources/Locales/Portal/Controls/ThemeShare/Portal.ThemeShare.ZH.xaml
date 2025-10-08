@@ -2,23 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeShare.Title">主题分享</system:String>
     <system:String x:Key="Portal.ThemeShare.Close">关闭</system:String>
+    <system:String x:Key="Portal.ThemeShare.Title">主题分享</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemeTitle">标题</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeDescription">描述</system:String>
 
+    <system:String x:Key="Portal.ThemeShare.ThemeCopy">复制链接</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeExport">导出</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish">发布到商店</system:String>
-    <system:String x:Key="Portal.ThemeShare.ThemeCopy">复制链接</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Publish">发布</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Preparing">发布准备即将开始..</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit">正在检查您的每日主题上传限制..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">您已达到每日主题上传限制，请稍后再试。</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Error">检查您的每日主题上传限制时发生未知错误。</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">您已达到每日主题上传限制，请稍后再试。</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress">主题在上传前正在压缩..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress.Error">压缩主题时发生错误。</system:String>
@@ -32,13 +32,13 @@
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload">压缩主题正在准备上传..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">压缩主题正在上传..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Error">上传压缩主题时发生未知错误。</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">压缩主题正在上传..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Errored">上传压缩主题时发生意外错误: {0}。</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Succeded">压缩主题已成功上传，验证后将在商店发布。</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP 文件 (*.zip)|*.zip|所有文件 (*.*)|*.*</system:String>
     <system:String x:Key="Portal.ThemeShare.SaveDialogTitle">保存主题文件</system:String>
+    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP 文件 (*.zip)|*.zip|所有文件 (*.*)|*.*</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">明白了</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">发布警告</system:String>

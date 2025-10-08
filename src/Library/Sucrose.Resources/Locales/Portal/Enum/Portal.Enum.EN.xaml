@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Uniform</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Uniform to Fill</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">None</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Name</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">None</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Creation</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Modification</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Pause</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Resume</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Auto</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Mica</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">None</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Auto</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Tabbed</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Acrylic</system:String>
 

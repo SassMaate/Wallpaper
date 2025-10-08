@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Menu Donacji</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">Widoczność menu dotacji w interfejsie.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Pokaż</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Ukryj</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Pokaż</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Wsparcie Reklamowe</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Wspomóż rozwój aplikacji, oglądając reklamy.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Opóźnienie Reklam (Minuty):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Porada: Reklamy będą wyświetlane w sposób minimalizujący uciążliwość.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Opóźnienie Reklam (Minuty):</system:String>
 </ResourceDictionary>

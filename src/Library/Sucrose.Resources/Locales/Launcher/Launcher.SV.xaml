@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Sucrose Diagnostik</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIP-Filer (*.zip)|*.zip|Alla Filer (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Spara Loggfil</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIP-Filer (*.zip)|*.zip|Alla Filer (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Förfrågningar och Feedback</system:String>
     <system:String x:Key="Launcher.FeedbackText">Skicka Feedback</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Förfrågningar och Feedback</system:String>
 
     <system:String x:Key="Launcher.SettingText">Inställningar</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Ladda Om Bakgrund</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Ändra Bakgrund</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Stäng Bakgrund</system:String>
     <system:String x:Key="Launcher.WallOpenText">Öppna Bakgrund</system:String>
-    <system:String x:Key="Launcher.WallStartText">Starta Bakgrund</system:String>
     <system:String x:Key="Launcher.WallStopText">Stoppa Bakgrund</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Stäng Bakgrund</system:String>
+    <system:String x:Key="Launcher.WallStartText">Starta Bakgrund</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Ändra Bakgrund</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Ladda Om Bakgrund</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Stängd</system:String>
     <system:String x:Key="Launcher.PausedText">Pausad</system:String>

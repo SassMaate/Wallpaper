@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Sucrose Diagnose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIP-Bestanden (*.zip)|*.zip|Alle Bestanden (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Logbestand Opslaan</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIP-Bestanden (*.zip)|*.zip|Alle Bestanden (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Verzoeken en Feedback</system:String>
     <system:String x:Key="Launcher.FeedbackText">Feedback Versturen</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Verzoeken en Feedback</system:String>
 
     <system:String x:Key="Launcher.SettingText">Instellingen</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Achtergrond Opnieuw Laden</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Achtergrond Wijzigen</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Achtergrond Sluiten</system:String>
     <system:String x:Key="Launcher.WallOpenText">Achtergrond Openen</system:String>
-    <system:String x:Key="Launcher.WallStartText">Achtergrond Starten</system:String>
     <system:String x:Key="Launcher.WallStopText">Achtergrond Stoppen</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Achtergrond Sluiten</system:String>
+    <system:String x:Key="Launcher.WallStartText">Achtergrond Starten</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Achtergrond Wijzigen</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Achtergrond Opnieuw Laden</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Gesloten</system:String>
     <system:String x:Key="Launcher.PausedText">Gepauzeerd</system:String>

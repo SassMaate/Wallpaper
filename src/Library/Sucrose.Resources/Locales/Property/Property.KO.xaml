@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">CefSharp 전용</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">MpvPlayer 전용</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">속도</system:String>
-    <system:String x:Key="Property.Localization.Gamma">감마</system:String>
-    <system:String x:Key="Property.Localization.Mute">음소거</system:String>
-    <system:String x:Key="Property.Localization.Sepia">세피아</system:String>
     <system:String x:Key="Property.Localization.Hue">색조</system:String>
-    <system:String x:Key="Property.Localization.Mirror">미러링</system:String>
     <system:String x:Key="Property.Localization.Blur">흐림</system:String>
-    <system:String x:Key="Property.Localization.Contrast">대비</system:String>
-    <system:String x:Key="Property.Localization.Invert">반전</system:String>
+    <system:String x:Key="Property.Localization.Mute">음소거</system:String>
     <system:String x:Key="Property.Localization.Zoom">확대</system:String>
+    <system:String x:Key="Property.Localization.Gamma">감마</system:String>
+    <system:String x:Key="Property.Localization.Sepia">세피아</system:String>
+    <system:String x:Key="Property.Localization.Speed">속도</system:String>
+    <system:String x:Key="Property.Localization.Invert">반전</system:String>
+    <system:String x:Key="Property.Localization.Mirror">미러링</system:String>
+    <system:String x:Key="Property.Localization.Contrast">대비</system:String>
     <system:String x:Key="Property.Localization.Animation">애니메이션</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">선명도</system:String>
-    <system:String x:Key="Property.Localization.Saturation">채도</system:String>
-    <system:String x:Key="Property.Localization.Brightness">밝기</system:String>
     <system:String x:Key="Property.Localization.Grayscale">그레이스케일</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">선명도</system:String>
+    <system:String x:Key="Property.Localization.Brightness">밝기</system:String>
+    <system:String x:Key="Property.Localization.Saturation">채도</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">평평한</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">수직</system:String>

@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Диагностика Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Файлы ZIP (*.zip)|*.zip|Все файлы (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Сохранить Файл Журнала</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Файлы ZIP (*.zip)|*.zip|Все файлы (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Запросы и Отзывы</system:String>
     <system:String x:Key="Launcher.FeedbackText">Отправить Отзыв</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Запросы и Отзывы</system:String>
 
     <system:String x:Key="Launcher.SettingText">Настройки</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Перезагрузить Oбои</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Изменить Oбои</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Закрыть Oбои</system:String>
     <system:String x:Key="Launcher.WallOpenText">Открыть Oбои</system:String>
-    <system:String x:Key="Launcher.WallStartText">Запустить Oбои</system:String>
     <system:String x:Key="Launcher.WallStopText">Остановить Oбои</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Закрыть Oбои</system:String>
+    <system:String x:Key="Launcher.WallStartText">Запустить Oбои</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Изменить Oбои</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Перезагрузить Oбои</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Закрыто</system:String>
     <system:String x:Key="Launcher.PausedText">Приостановлено</system:String>

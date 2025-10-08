@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Donasjonsmeny</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">Synligheten til donasjonsmenyen i grensesnittet.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Vis</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Skjul</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Vis</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Reklamestøtte</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Bidra til utviklingen av appen ved å se på reklamer.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Reklametid (minutter):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Tips: Reklamer vil bli vist for deg på en måte som gir deg minst mulig forstyrrelse.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Reklametid (minutter):</system:String>
 </ResourceDictionary>

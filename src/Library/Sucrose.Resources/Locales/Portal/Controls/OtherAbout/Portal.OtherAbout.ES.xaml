@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.OtherAbout.Title">Acerca De</system:String>
     <system:String x:Key="Portal.OtherAbout.Close">Cerrar</system:String>
+    <system:String x:Key="Portal.OtherAbout.Title">Acerca De</system:String>
 
     <system:String x:Key="Portal.OtherAbout.About">Hola, mi nombre es Bayram Emekli, también conocido por el nombre de usuario Taiizor. Soy el desarrollador de la aplicación Sucrose Wallpaper Engine, que es gratuita y de código abierto. Gracias por usar mi aplicación.</system:String>
 

@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose umožňuje komunikaci s Discordem.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Obnovit spojení:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Doba obnovení (v sekundách):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Obnovit spojení:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Internetová Zástupkyně</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Váš identifikátor zástupce v situacích, kdy je vyžadováno připojení k internetu.</system:String>

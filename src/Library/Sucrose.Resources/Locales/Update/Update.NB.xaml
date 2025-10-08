@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LISTENE KUNNE IKKE FILTRERES</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">SAMMENLIGNER LISTER</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APPLIKASJONEN ER ALLEREDE OPPDATERT</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">KUNNE IKKE SAMMENLIGNE LISTER</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APPLIKASJONEN ER ALLEREDE OPPDATERT</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">LETER ETTER NØDVENDIGE FILER</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">NØDVENDIGE FILER IKKE FUNNET</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">NEDLASTING AV NØDVENDIGE FILER</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">NØDVENDIGE FILER KUNNE IKKE LASTES NED</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">NEDLASTINGEN AV DEN NØDVENDIGE FILEN BLE AVBRUTT</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">DET OPPSTO EN FEIL UNDER NEDLASTINGEN AV DEN NØDVENDIGE FILEN</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">NEDLASTINGEN AV DEN NØDVENDIGE FILEN BLE AVBRUTT</system:String>
 
     <system:String x:Key="Update.MessageText.Running">FORBEREDER NEDLASTET FIL</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">UTFØRER NEDLASTET FIL</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">NEDLASTET FIL UTFØRT</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">NEDLASTET FIL IKKE BRUKBAR</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">KUNNE IKKE FORBEREDE NEDLASTET FIL</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">NEDLASTET FIL UTFØRT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">UTFØRER NEDLASTET FIL</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EKSTRAHERER DEN NEDLASTEDE FILEN</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">DEN EKSTRAHERTE FILEN BLIR UTFØRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">DEN EKSTRAHERTE FILEN HAR BLITT UTFØRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">DEN NEDLASTEDE FILEN MISLYKTES</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DEN NEDLASTEDE FILEN ER KORRUPT</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">DEN NEDLASTEDE FILEN ER IKKE BRUKBAR</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">DEN NEDLASTEDE FILEN KUNNE IKKE EKSTRAHERES</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">DEN NEDLASTEDE FILEN MISLYKTES</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DEN NEDLASTEDE FILEN ER KORRUPT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">DEN EKSTRAHERTE FILEN HAR BLITT UTFØRT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">DEN EKSTRAHERTE FILEN BLIR UTFØRT</system:String>
 </ResourceDictionary>

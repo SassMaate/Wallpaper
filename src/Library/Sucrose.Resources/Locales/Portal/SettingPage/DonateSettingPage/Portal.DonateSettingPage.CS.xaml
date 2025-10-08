@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Nastavení Dárcovského Menu</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">Viditelnost dárcovského menu v rozhraní.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Zobrazit</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Skrýt</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Zobrazit</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Podpora Reklamami</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Přispějte k rozvoji aplikace tím, že budete sledovat reklamy.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Doba zpoždění reklam (minuty):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Tip: Reklamy budou zobrazovány tak, aby vás co nejméně rušily.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Doba zpoždění reklam (minuty):</system:String>
 </ResourceDictionary>

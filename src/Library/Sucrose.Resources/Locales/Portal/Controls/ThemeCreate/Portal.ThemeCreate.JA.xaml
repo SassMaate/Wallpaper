@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">アプリケーション</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">サムネイル</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">プレビュー</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">タグ</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">タイトル</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">説明</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">著者</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">お問い合わせ</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">タグ</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">プレビュー</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">引数</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">サムネイル</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">アプリケーション</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">説明</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">有効なUrlを入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Webページを選択</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">アプリケーションファイルを選択</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">サムネイル画像を選択してください</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">プレビューファイルを選択してください</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">有効なテーマタグを入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">有効なタイトルを入力してください</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">有効な説明を入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">有効な著者名を入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">有効な連絡先情報を入力してください</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">有効なテーマタグを入力してください</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">プレビューファイルを選択してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">有効なアプリケーション引数を入力してください</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">サムネイル画像を選択してください</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">アプリケーションファイルを選択</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">有効な説明を入力してください</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">元に戻す</system:String>
 

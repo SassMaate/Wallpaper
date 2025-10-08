@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnostik Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Fail ZIP (*.zip)|*.zip|Semua Fail (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Simpan Fail Log</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Fail ZIP (*.zip)|*.zip|Semua Fail (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Permintaan dan Maklum Balas</system:String>
     <system:String x:Key="Launcher.FeedbackText">Hantar Maklum Balas</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Permintaan dan Maklum Balas</system:String>
 
     <system:String x:Key="Launcher.SettingText">Tetapan</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Muat Semula Wallpaper</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Tukar Wallpaper</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Tutup Wallpaper</system:String>
     <system:String x:Key="Launcher.WallOpenText">Buka Wallpaper</system:String>
-    <system:String x:Key="Launcher.WallStartText">Mulakan Wallpaper</system:String>
     <system:String x:Key="Launcher.WallStopText">Hentikan Wallpaper</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Tutup Wallpaper</system:String>
+    <system:String x:Key="Launcher.WallStartText">Mulakan Wallpaper</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Tukar Wallpaper</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Muat Semula Wallpaper</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Ditutup</system:String>
     <system:String x:Key="Launcher.PausedText">Dijeda</system:String>

@@ -22,19 +22,19 @@
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">Notification Area Icon</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">Visibility in the system tray. Sucrose will continue to run discreetly.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Visible</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">Invisible</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Visible</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">Close all Sucrose applications when the system tray is closed</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">Window Backdrop</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">Used to customize the background of the application window.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Select Background Image</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Select a background image</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Image Files (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Unfortunately, the selected image file is being used by another process</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Select Background Image</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Unfortunately, you dont have permission to access the selected image file</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Image Files (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Select a background image</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Background Stretch:</system:String>
 
@@ -43,16 +43,16 @@
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">Engine Volume</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">Volume that applies to all wallpapers.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Play sound only when focused on the desktop</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">Play sound only when all applications are silent</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Play sound only when focused on the desktop</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">Sensitivity (Seconds):</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">Library Location</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">Location where themes you add to your library are stored.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Unfortunately, you dont have access to the new location</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Please select an empty folder</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">Please wait while the location is being changed</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Please select an empty folder</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Unfortunately, you dont have access to the new location</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">Move your current library to the new location</system:String>
 </ResourceDictionary>

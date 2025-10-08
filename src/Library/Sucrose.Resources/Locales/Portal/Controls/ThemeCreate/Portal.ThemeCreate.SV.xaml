@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applikation</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Minitiatyrbild</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Förhandsgranskning</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Taggar</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">Rubrik</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beskrivning</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">Författare</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">Kontakt</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Taggar</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Förhandsgranskning</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">Argument</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Minitiatyrbild</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applikation</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beskrivning</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Ange en giltig Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Välj en webbsida</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Välj en applikationsfil</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Välj en miniatyrbild</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Välj en förhandsgranskningsfil</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Ange giltiga temataggar</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Ange en giltig rubrik</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Ange en giltig beskrivning</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Ange en giltig författarnamn</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Ange en giltig kontaktinformation</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Ange giltiga temataggar</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Välj en förhandsgranskningsfil</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Ange giltiga applikationsargument</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Välj en miniatyrbild</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Välj en applikationsfil</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Ange en giltig beskrivning</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">Ångra</system:String>
 

@@ -7,10 +7,10 @@
 
     <system:String x:Key="Portal.StoreCard.VersionTip">Για να χρησιμοποιήσετε αυτό το θέμα, ενημερώστε το Sucrose</system:String>
 
-    <system:String x:Key="Portal.StoreCard.MenuUpdating">Έλεγχος Για Ενημερώσεις</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuReport">Αναφορά</system:String>
     <system:String x:Key="Portal.StoreCard.MenuUpdate">Έλεγχος Ενημερώσεων</system:String>
     <system:String x:Key="Portal.StoreCard.MenuInstall">Εγκατάσταση</system:String>
-    <system:String x:Key="Portal.StoreCard.MenuReport">Αναφορά</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">Έλεγχος Για Ενημερώσεις</system:String>
 
     <system:String x:Key="Portal.StoreCard.Incompatible">Μη Συμβατό</system:String>
 </ResourceDictionary>

@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Меню пожертвований</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">Видимость меню пожертвований в интерфейсе.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Показать</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Скрыть</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Показать</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Рекламная поддержка</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Поддержите разработку приложения, просматривая рекламу.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Время рекламы (минуты):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Совет: Реклама будет отображаться с минимальным беспокойством для вас.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Время рекламы (минуты):</system:String>
 </ResourceDictionary>

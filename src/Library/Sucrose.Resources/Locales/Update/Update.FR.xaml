@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LES LISTES N'ONT PAS PU ÊTRE FILTRÉES</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">COMPARAISON DES LISTES</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">L'APPLICATION EST DÉJÀ À JOUR</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">ÉCHEC DE LA COMPARAISON DES LISTES</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">L'APPLICATION EST DÉJÀ À JOUR</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">RECHERCHE DES FICHIERS REQUIS</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">FICHIERS REQUIS NON TROUVÉS</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">TÉLÉCHARGEMENT DES FICHIERS REQUIS</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">LES FICHIERS REQUIS N'ONT PAS PU ÊTRE TÉLÉCHARGÉS</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">LE TÉLÉCHARGEMENT DU FICHIER REQUIS A ÉTÉ ANNULÉ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">UNE ERREUR EST SURVENUE LORS DU TÉLÉCHARGEMENT DU FICHIER REQUIS</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">LE TÉLÉCHARGEMENT DU FICHIER REQUIS A ÉTÉ ANNULÉ</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PRÉPARATION DU FICHIER TÉLÉCHARGÉ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">EXÉCUTION DU FICHIER TÉLÉCHARGÉ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">FICHIER TÉLÉCHARGÉ EXÉCUTÉ</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">FICHIER TÉLÉCHARGÉ INUTILISABLE</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">ÉCHEC DE LA PRÉPARATION DU FICHIER TÉLÉCHARGÉ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">FICHIER TÉLÉCHARGÉ EXÉCUTÉ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">EXÉCUTION DU FICHIER TÉLÉCHARGÉ</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EXTRACTION DU FICHIER TÉLÉCHARGÉ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">LE FICHIER EXTRAIT EST EN COURS D'EXÉCUTION</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">LE FICHIER EXTRAIT A ÉTÉ EXÉCUTÉ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">LE FICHIER TÉLÉCHARGÉ A ÉCHOUÉ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">LE FICHIER TÉLÉCHARGÉ EST CORROMPU</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">LE FICHIER TÉLÉCHARGÉ N'EST PAS UTILISABLE</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">LE FICHIER TÉLÉCHARGÉ N'A PAS PU ÊTRE EXTRAIT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">LE FICHIER TÉLÉCHARGÉ A ÉCHOUÉ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">LE FICHIER TÉLÉCHARGÉ EST CORROMPU</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">LE FICHIER EXTRAIT A ÉTÉ EXÉCUTÉ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">LE FICHIER EXTRAIT EST EN COURS D'EXÉCUTION</system:String>
 </ResourceDictionary>

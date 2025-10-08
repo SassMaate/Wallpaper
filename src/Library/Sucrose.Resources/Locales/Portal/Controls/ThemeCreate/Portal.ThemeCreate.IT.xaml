@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applicazione</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Miniatura</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Anteprima</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Tag</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">Titolo</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Descrizione</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">Autore</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">Contatto</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Tag</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Anteprima</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">Argomenti</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Miniatura</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applicazione</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Descrizione</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Inserisci un url valido</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Seleziona una pagina web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Seleziona un file di applicazione</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Seleziona un'immagine di copertina</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Seleziona un file GIF per l'anteprima</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Inserisci tag validi per il tema</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Inserisci un titolo valido</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Inserisci una descrizione valida</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Inserisci un nome autore valido</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Inserisci un contatto valido</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Inserisci tag validi per il tema</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Seleziona un file GIF per l'anteprima</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Inserisci argomenti validi per l'applicazione</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Seleziona un'immagine di copertina</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Seleziona un file di applicazione</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Inserisci una descrizione valida</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">Annulla</system:String>
 

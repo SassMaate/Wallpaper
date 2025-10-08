@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Rovnoměrný</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Rovnoměrně vyplnit</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">Žádný</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Název</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">Žádný</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Vytvoření</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Úprava</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Pozastavit</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Pokračovat</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Automatický</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Mika</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">Žádný</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Automatický</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Kartáčovaný</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Akrilový</system:String>
 

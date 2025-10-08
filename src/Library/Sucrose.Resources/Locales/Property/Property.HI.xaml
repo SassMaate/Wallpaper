@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">केवल CefSharp के लिए</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">केवल MpvPlayer के लिए</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">गति</system:String>
-    <system:String x:Key="Property.Localization.Gamma">गामा</system:String>
-    <system:String x:Key="Property.Localization.Mute">मूक</system:String>
-    <system:String x:Key="Property.Localization.Sepia">सेपिया</system:String>
     <system:String x:Key="Property.Localization.Hue">रंग</system:String>
-    <system:String x:Key="Property.Localization.Mirror">दर्पण</system:String>
     <system:String x:Key="Property.Localization.Blur">धुंधलापन</system:String>
-    <system:String x:Key="Property.Localization.Contrast">कंट्रास्ट</system:String>
-    <system:String x:Key="Property.Localization.Invert">नकारात्मक</system:String>
+    <system:String x:Key="Property.Localization.Mute">मूक</system:String>
     <system:String x:Key="Property.Localization.Zoom">ज़ूम</system:String>
+    <system:String x:Key="Property.Localization.Gamma">गामा</system:String>
+    <system:String x:Key="Property.Localization.Sepia">सेपिया</system:String>
+    <system:String x:Key="Property.Localization.Speed">गति</system:String>
+    <system:String x:Key="Property.Localization.Invert">नकारात्मक</system:String>
+    <system:String x:Key="Property.Localization.Mirror">दर्पण</system:String>
+    <system:String x:Key="Property.Localization.Contrast">कंट्रास्ट</system:String>
     <system:String x:Key="Property.Localization.Animation">एनीमेशन</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">तीक्ष्णता</system:String>
-    <system:String x:Key="Property.Localization.Saturation">संतृप्ति</system:String>
-    <system:String x:Key="Property.Localization.Brightness">चमक</system:String>
     <system:String x:Key="Property.Localization.Grayscale">ग्रे स्केल</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">तीक्ष्णता</system:String>
+    <system:String x:Key="Property.Localization.Brightness">चमक</system:String>
+    <system:String x:Key="Property.Localization.Saturation">संतृप्ति</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">समतल</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">ऊर्ध्वाधर</system:String>

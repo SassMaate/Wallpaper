@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">NÃO FOI POSSÍVEL FILTRAR AS LISTAS</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">COMPARANDO LISTAS</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APLICATIVO JÁ ESTÁ ATUALIZADO</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">FALHA AO COMPARAR LISTAS</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APLICATIVO JÁ ESTÁ ATUALIZADO</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">PROCURANDO POR ARQUIVOS NECESSÁRIOS</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">ARQUIVOS NECESSÁRIOS NÃO ENCONTRADOS</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">BAIXANDO ARQUIVOS NECESSÁRIOS</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">NÃO FOI POSSÍVEL BAIXAR OS ARQUIVOS NECESSÁRIOS</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">O DOWNLOAD DO ARQUIVO NECESSÁRIO FOI CANCELADO</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">OCORREU UM ERRO DURANTE O DOWNLOAD DO ARQUIVO NECESSÁRIO</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">O DOWNLOAD DO ARQUIVO NECESSÁRIO FOI CANCELADO</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PREPARANDO ARQUIVO BAIXADO</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTANDO ARQUIVO BAIXADO</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">ARQUIVO BAIXADO EXECUTADO</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">ARQUIVO BAIXADO NÃO UTILIZÁVEL</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">FALHA AO PREPARAR ARQUIVO BAIXADO</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">ARQUIVO BAIXADO EXECUTADO</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTANDO ARQUIVO BAIXADO</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EXTRAINDO O ARQUIVO BAIXADO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">O ARQUIVO EXTRAÍDO ESTÁ SENDO EXECUTADO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">O ARQUIVO EXTRAÍDO FOI EXECUTADO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">O ARQUIVO BAIXADO FALHOU</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">O ARQUIVO BAIXADO ESTÁ CORROMPIDO</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">O ARQUIVO BAIXADO NÃO É USÁVEL</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">NÃO FOI POSSÍVEL EXTRAIR O ARQUIVO BAIXADO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">O ARQUIVO BAIXADO FALHOU</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">O ARQUIVO BAIXADO ESTÁ CORROMPIDO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">O ARQUIVO EXTRAÍDO FOI EXECUTADO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">O ARQUIVO EXTRAÍDO ESTÁ SENDO EXECUTADO</system:String>
 </ResourceDictionary>

@@ -10,28 +10,28 @@
     <system:String x:Key="Portal.MainWindow.MenuHelpTip">Pokaż Pomoc</system:String>
     <system:String x:Key="Portal.MainWindow.MenuAboutTip">Pokaż o Programie</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLibrary">Biblioteka</system:String>
     <system:String x:Key="Portal.MainWindow.MenuStore">Sklep</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibrary">Biblioteka</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLibraryTip">Biblioteka motywów</system:String>
     <system:String x:Key="Portal.MainWindow.MenuStoreTip">Sklep z motywami</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibraryTip">Biblioteka motywów</system:String>
 
+    <system:String x:Key="Portal.MainWindow.MenuOther">Inne</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonate">Podarować</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Ogólne</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Osobiste</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPerformance">Wydajność</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Tapeta</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonate">Podarować</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOther">Inne</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformance">Wydajność</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuBackTip">Wróć</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuOtherTip">Inne ustawienia</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateTip">Ustawienia darowizny</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystemTip">Ustawienia systemu</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneralTip">Ustawienia ogólne</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonalTip">Ustawienia osobiste</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPerformanceTip">Ustawienia wydajności</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperTip">Ustawienia tapety</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuSystemTip">Ustawienia systemu</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonateTip">Ustawienia darowizny</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOtherTip">Inne ustawienia</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformanceTip">Ustawienia wydajności</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuSettingTip">Ustawienia</system:String>
 
@@ -39,12 +39,12 @@
 
     <system:String x:Key="Portal.MainWindow.SearchBoxTip">Masz trudności ze znalezieniem potrzebnego?</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLightTip">Jasny motyw</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDarkTip">Ciemny motyw</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLightTip">Jasny motyw</system:String>
 
+    <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Inne Opcje</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opcje Dotacji</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Utwórz Tapetę</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Cykliczna Zmiana Tapety</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDisplayPreferencesTip">Preferencje Wyświetlania</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opcje Dotacji</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Inne Opcje</system:String>
 </ResourceDictionary>

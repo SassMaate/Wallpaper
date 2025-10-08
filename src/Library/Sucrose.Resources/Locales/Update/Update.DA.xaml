@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LISTER KUNNE IKKE FILTRERES</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">SAMMENLIGNER LISTER</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APPLIKATIONEN ER ALLEREDE OPDATERET</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">KUNNE IKKE SAMMENLIGNE LISTER</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APPLIKATIONEN ER ALLEREDE OPDATERET</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">SØGER EFTER NØDVENDIGE FILER</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">NØDVENDIGE FILER IKKE FUNDET</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">DOWNLOADER NØDVENDIGE FILER</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">NØDVENDIGE FILER KUNNE IKKE DOWNLOADES</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DOWNLOAD AF DEN NØDVENDIGE FIL BLEV ANNULLERET</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">DER OPSTOD EN FEJL UNDER DOWNLOAD AF DEN NØDVENDIGE FIL</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DOWNLOAD AF DEN NØDVENDIGE FIL BLEV ANNULLERET</system:String>
 
     <system:String x:Key="Update.MessageText.Running">FORBEREDER DOWNLOAD FIL</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">UDFØRER DOWNLOAD FIL</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">DOWNLOAD FIL UDFØRT</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">DOWNLOAD FIL IKKE BRUGBAR</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">KUNNE IKKE FORBEREDE DOWNLOAD FIL</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">DOWNLOAD FIL UDFØRT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">UDFØRER DOWNLOAD FIL</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EKSTRAHERER DEN DOWNLOADEDE FIL</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">DEN EKSTRAHEREDE FIL BLIVER UDFØRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">DEN EKSTRAHEREDE FIL ER BLEVET UDFØRT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">DEN DOWNLOADEDE FIL MISLYKKEDES</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DEN DOWNLOADEDE FIL ER KORRUPT</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">DEN DOWNLOADEDE FIL KAN IKKE BRUGES</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">DEN DOWNLOADEDE FIL KUNNE IKKE EKSTRAHERES</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">DEN DOWNLOADEDE FIL MISLYKKEDES</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">DEN DOWNLOADEDE FIL ER KORRUPT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">DEN EKSTRAHEREDE FIL ER BLEVET UDFØRT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">DEN EKSTRAHEREDE FIL BLIVER UDFØRT</system:String>
 </ResourceDictionary>

@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">एप्लिकेशन</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">थंबनेल</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">पूर्वावलोकन</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">टैग्स</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">शीर्षक</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">विवरण</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">लेखक</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">संपर्क करें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">टैग्स</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">पूर्वावलोकन</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">आर्ग्यूमेंट्स</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">थंबनेल</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">एप्लिकेशन</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">विवरण</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">कृपया एक मान्य Url पता लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">एक Web पृष्ठ चुनें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">एक एप्लिकेशन फ़ाइल चुनें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">कृपया एक थंबनेल चित्र का चयन करें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">कृपया एक पूर्वावलोकन फ़ाइल का चयन करें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">कृपया मान्य थीम टैग्स लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">कृपया एक मान्य शीर्षक लिखें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">कृपया एक मान्य विवरण लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">कृपया एक मान्य लेखक नाम लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">कृपया एक मान्य संपर्क पता लिखें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">कृपया मान्य थीम टैग्स लिखें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">कृपया एक पूर्वावलोकन फ़ाइल का चयन करें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">कृपया मान्य ऐप्लिकेशन आर्ग्यूमेंट्स लिखें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">कृपया एक थंबनेल चित्र का चयन करें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">एक एप्लिकेशन फ़ाइल चुनें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">कृपया एक मान्य विवरण लिखें</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">पूर्व वस्तुओं को हटाएँ</system:String>
 

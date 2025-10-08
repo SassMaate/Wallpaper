@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Sucrose 진단</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">로그 파일 저장</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIP 파일 (*.zip)|*.zip|모든 파일 (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">요청 및 피드백</system:String>
     <system:String x:Key="Launcher.FeedbackText">피드백 보내기</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">요청 및 피드백</system:String>
 
     <system:String x:Key="Launcher.SettingText">설정</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">배경화면 다시 불러오기</system:String>
-    <system:String x:Key="Launcher.WallChangeText">배경화면 변경</system:String>
-    <system:String x:Key="Launcher.WallCloseText">배경화면 닫기</system:String>
     <system:String x:Key="Launcher.WallOpenText">배경화면 열기</system:String>
-    <system:String x:Key="Launcher.WallStartText">배경화면 시작</system:String>
     <system:String x:Key="Launcher.WallStopText">배경화면 중지</system:String>
+    <system:String x:Key="Launcher.WallCloseText">배경화면 닫기</system:String>
+    <system:String x:Key="Launcher.WallStartText">배경화면 시작</system:String>
+    <system:String x:Key="Launcher.WallChangeText">배경화면 변경</system:String>
+    <system:String x:Key="Launcher.WallReloadText">배경화면 다시 불러오기</system:String>
 
     <system:String x:Key="Launcher.ClosedText">닫힘</system:String>
     <system:String x:Key="Launcher.PausedText">일시 중지됨</system:String>

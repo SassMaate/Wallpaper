@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeReport.Title">테마 보고</system:String>
     <system:String x:Key="Portal.ThemeReport.Close">닫기</system:String>
+    <system:String x:Key="Portal.ThemeReport.Title">테마 보고</system:String>
 
     <system:String x:Key="Portal.ThemeReport.ThemeTitle">제목</system:String>
     <system:String x:Key="Portal.ThemeReport.ThemeDescription">설명</system:String>
@@ -29,6 +29,6 @@
 
     <system:String x:Key="Portal.ThemeReport.Reporter.Network">보고하려면 인터넷 연결이 필요합니다.</system:String>
 
-    <system:String x:Key="Portal.ThemeReport.Reporter.Report">보고</system:String>
     <system:String x:Key="Portal.ThemeReport.Reporter.GitHub">GitHub에서 보고</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Report">보고</system:String>
 </ResourceDictionary>

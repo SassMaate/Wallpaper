@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">ΟΙ ΛΙΣΤΕΣ ΔΕΝ ΗΤΑΝ ΕΦΙΚΤΟ ΝΑ ΦΙΛΤΡΑΡΙΣΤΟΥΝ</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">ΣΥΓΚΡΙΣΗ ΛΙΣΤΩΝ</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">Η ΕΦΑΡΜΟΓΗ ΕΙΝΑΙ ΗΔΗ ΕΝΗΜΕΡΩΜΕΝΗ</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">ΑΠΕΤΥΧΕ Η ΣΥΓΚΡΙΣΗ ΛΙΣΤΩΝ</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">Η ΕΦΑΡΜΟΓΗ ΕΙΝΑΙ ΗΔΗ ΕΝΗΜΕΡΩΜΕΝΗ</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">ΑΝΑΖΗΤΗΣΗ ΓΙΑ ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΑΡΧΕΙΑ</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΑΡΧΕΙΑ ΔΕΝ ΒΡΕΘΗΚΑΝ</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">ΚΑΤΕΒΑΖΟΝΤΑΣ ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΑΡΧΕΙΑ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">ΤΑ ΑΠΑΡΑΙΤΗΤΑ ΑΡΧΕΙΑ ΔΕΝ ΗΤΑΝ ΕΦΙΚΤΟ ΝΑ ΚΑΤΕΒΑΣΤΟΥΝ</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">Η ΛΗΨΗ ΤΟΥ ΑΠΑΡΑΙΤΗΤΟΥ ΑΡΧΕΙΟΥ ΑΚΥΡΩΘΗΚΕ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">ΥΠΗΡΞΕ ΣΦΑΛΜΑ ΚΑΤΑ ΤΗ ΛΗΨΗ ΤΟΥ ΑΠΑΡΑΙΤΗΤΟΥ ΑΡΧΕΙΟΥ</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">Η ΛΗΨΗ ΤΟΥ ΑΠΑΡΑΙΤΗΤΟΥ ΑΡΧΕΙΟΥ ΑΚΥΡΩΘΗΚΕ</system:String>
 
     <system:String x:Key="Update.MessageText.Running">ΠΡΟΕΤΟΙΜΑΣΙΑ ΤΟΥ ΛΗΦΘΕΝΤΟΣ ΑΡΧΕΙΟΥ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">ΕΚΤΕΛΕΣΗ ΤΟΥ ΛΗΦΘΕΝΤΟΣ ΑΡΧΕΙΟΥ</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">ΤΟ ΛΗΦΘΕΝ ΑΡΧΕΙΟ ΕΚΤΕΛΕΣΤΗΚΕ</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">ΤΟ ΛΗΦΘΕΝ ΑΡΧΕΙΟ ΔΕΝ ΕΙΝΑΙ ΧΡΗΣΙΜΟ</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">ΑΠΕΤΥΧΕ Η ΠΡΟΕΤΟΙΜΑΣΙΑ ΤΟΥ ΛΗΦΘΕΝΤΟΣ ΑΡΧΕΙΟΥ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">ΤΟ ΛΗΦΘΕΝ ΑΡΧΕΙΟ ΕΚΤΕΛΕΣΤΗΚΕ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">ΕΚΤΕΛΕΣΗ ΤΟΥ ΛΗΦΘΕΝΤΟΣ ΑΡΧΕΙΟΥ</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">ΑΠΟΣΥΜΠΙΕΣΗ ΤΟΥ ΚΑΤΕΒΑΣΜΕΝΟΥ ΑΡΧΕΙΟΥ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">ΤΟ ΑΠΟΣΥΜΠΙΕΣΜΕΝΟ ΑΡΧΕΙΟ ΕΚΤΕΛΕΙΤΑΙ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">ΤΟ ΑΠΟΣΥΜΠΙΕΣΜΕΝΟ ΑΡΧΕΙΟ ΕΧΕΙ ΕΚΤΕΛΕΣΤΕΙ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΑΠΕΤΥΧΕ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΕΙΝΑΙ ΚΑΤΕΣΤΡΑΜΜΕΝΟ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΔΕΝ ΕΙΝΑΙ ΧΡΗΣΙΜΟΠΟΙΗΣΙΜΟ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΔΕΝ ΗΤΑΝ ΕΦΙΚΤΟ ΝΑ ΑΠΟΣΥΜΠΙΕΣΤΕΙ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΑΠΕΤΥΧΕ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ΤΟ ΚΑΤΕΒΑΣΜΕΝΟ ΑΡΧΕΙΟ ΕΙΝΑΙ ΚΑΤΕΣΤΡΑΜΜΕΝΟ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">ΤΟ ΑΠΟΣΥΜΠΙΕΣΜΕΝΟ ΑΡΧΕΙΟ ΕΧΕΙ ΕΚΤΕΛΕΣΤΕΙ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">ΤΟ ΑΠΟΣΥΜΠΙΕΣΜΕΝΟ ΑΡΧΕΙΟ ΕΚΤΕΛΕΙΤΑΙ</system:String>
 </ResourceDictionary>

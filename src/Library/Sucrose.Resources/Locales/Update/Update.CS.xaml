@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">SEZNAMY NELZE FILTROVAT</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">POROVNÁVÁNÍ SEZNAMŮ</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKACE JE JIŽ AKTUÁLNÍ</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">NEPODAŘILO SE POROVNAT SEZNAMY</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKACE JE JIŽ AKTUÁLNÍ</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">HLEDÁNÍ POŽADOVANÝCH SOUBORŮ</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">POŽADOVANÉ SOUBORY NEBYLY NALEZENY</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">STAHUJÍ SE POŽADOVANÉ SOUBORY</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">POŽADOVANÉ SOUBORY NELZE STÁHNOUT</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">STAHOVÁNÍ POŽADOVANÉHO SOUBORU BYLO ZRUŠENO</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">BĚHEM STAHOVÁNÍ POŽADOVANÉHO SOUBORU DOŠLO K CHYBĚ</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">STAHOVÁNÍ POŽADOVANÉHO SOUBORU BYLO ZRUŠENO</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PŘÍPRAVA STAŽENÉHO SOUBORU</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">SPUŠTĚNÍ STAŽENÉHO SOUBORU</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">STAŽENÝ SOUBOR SPUŠTĚN</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">STAŽENÝ SOUBOR NELZE POUŽÍT</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">PŘÍPRAVA STAŽENÉHO SOUBORU SELHALA</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">STAŽENÝ SOUBOR SPUŠTĚN</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">SPUŠTĚNÍ STAŽENÉHO SOUBORU</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">ROZBALOVÁNÍ STÁHNUTÉHO SOUBORU</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">PROVÁDÍ SE ROZBALOVANÝ SOUBOR</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">ROZBALOVANÝ SOUBOR BYL PROVEDEN</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">STÁHNUTÝ SOUBOR SELHAL</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">STÁHNUTÝ SOUBOR JE POŠKOZENÝ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">STÁHNUTÝ SOUBOR NENÍ POUŽITELNÝ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">STÁHNUTÝ SOUBOR NELZE ROZBALIT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">STÁHNUTÝ SOUBOR SELHAL</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">STÁHNUTÝ SOUBOR JE POŠKOZENÝ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">ROZBALOVANÝ SOUBOR BYL PROVEDEN</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">PROVÁDÍ SE ROZBALOVANÝ SOUBOR</system:String>
 </ResourceDictionary>

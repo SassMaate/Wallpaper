@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Menu Sumbangan</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">Menu sumbangan pada antara muka yang boleh dilihat.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Tunjukkan</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Sembunyikan</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Tunjukkan</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Sokongan Beriklan</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Bantu membangunkan aplikasi dengan menonton iklan.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Jangka Waktu Iklan (Minit):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Tip: Iklan akan ditunjukkan pada tahap gangguan minimum.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Jangka Waktu Iklan (Minit):</system:String>
 </ResourceDictionary>

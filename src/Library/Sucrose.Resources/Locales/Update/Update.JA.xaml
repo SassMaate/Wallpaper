@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">リストをフィルタリングできませんでした</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">リストの比較中</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">アプリケーションは既に最新です</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">リストの比較に失敗しました</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">アプリケーションは既に最新です</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">必要なファイルを検索しています</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">必要なファイルが見つかりません</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">必要なファイルをダウンロードしています</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">必要なファイルをダウンロードできませんでした</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">必要なファイルのダウンロードがキャンセルされました</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">必要なファイルのダウンロード中にエラーが発生しました</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">必要なファイルのダウンロードがキャンセルされました</system:String>
 
     <system:String x:Key="Update.MessageText.Running">ダウンロードしたファイルを準備中</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">ダウンロードしたファイルを実行中</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">ダウンロードしたファイルを実行しました</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">ダウンロードしたファイルは使用できません</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">ダウンロードしたファイルの準備に失敗しました</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">ダウンロードしたファイルを実行しました</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">ダウンロードしたファイルを実行中</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">ダウンロードしたファイルを展開しています</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">展開されたファイルが実行されています</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">展開されたファイルが実行されました</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">ダウンロードしたファイルが失敗しました</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ダウンロードしたファイルが壊れています</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">ダウンロードしたファイルは使用できません</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">ダウンロードしたファイルを展開できませんでした</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">ダウンロードしたファイルが失敗しました</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ダウンロードしたファイルが壊れています</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">展開されたファイルが実行されました</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">展開されたファイルが実行されています</system:String>
 </ResourceDictionary>

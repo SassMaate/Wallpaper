@@ -28,27 +28,27 @@
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applikasjon</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Forsidebilde</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Forhåndsvisning</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Merker</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">Tittel</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beskrivelse</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">Forfatter</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact">Kontakt</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags">Merker</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">Forhåndsvisning</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments">Argumenter</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">Forsidebilde</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applikasjon</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beskrivelse</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Vennligst oppgi en gyldig URL</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Velg en nettside</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Velg en programfil</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Velg et forsidebilde</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Velg en forhåndsvisningsfil</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Vennligst oppgi gyldige tema-merker</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Vennligst oppgi en gyldig tittel</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Vennligst oppgi en gyldig beskrivelse</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Vennligst oppgi en gyldig forfatter</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Vennligst oppgi en gyldig kontaktadresse</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Vennligst oppgi gyldige tema-merker</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Velg en forhåndsvisningsfil</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Vennligst oppgi gyldige applikasjonsargumenter</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Velg et forsidebilde</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Velg en programfil</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">Vennligst oppgi en gyldig beskrivelse</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">Angre</system:String>
 

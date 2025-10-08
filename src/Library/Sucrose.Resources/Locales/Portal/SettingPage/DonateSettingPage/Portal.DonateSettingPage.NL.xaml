@@ -7,12 +7,12 @@
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu">Donatiemenu</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.Description">De zichtbaarheid van het donatiemenu in de interface.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Zichtbaar</system:String>
     <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide">Onzichtbaar</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.DonateMenu.DonateVisible.Show">Zichtbaar</system:String>
 
     <system:String x:Key="Portal.DonateSettingPage.Advertising">Gesponsorde Ondersteuning</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.Description">Draag bij aan de ontwikkeling van de app door advertenties te bekijken.</system:String>
 
-    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Advertentieduur (minuten):</system:String>
     <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingHint">Tip: Advertenties worden zo min mogelijk storend voor u weergegeven.</system:String>
+    <system:String x:Key="Portal.DonateSettingPage.Advertising.AdvertisingDelay">Advertentieduur (minuten):</system:String>
 </ResourceDictionary>

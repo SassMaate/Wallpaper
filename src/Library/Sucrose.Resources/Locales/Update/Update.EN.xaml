@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LISTS COULD NOT BE FILTERED</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">COMPARING LISTS</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APPLICATION IS ALREADY UP TO DATE</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">FAILED TO COMPARE LISTS</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APPLICATION IS ALREADY UP TO DATE</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">SEARCHING FOR REQUIRED FILES</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">REQUIRED FILES NOT FOUND</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">DOWNLOADING REQUIRED FILES</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">REQUIRED FILES COULD NOT BE DOWNLOADED</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">THE DOWNLOAD OF THE REQUIRED FILE WAS CANCELLED</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">THERE WAS AN ERROR WHILE DOWNLOADING THE REQUIRED FILE</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">THE DOWNLOAD OF THE REQUIRED FILE WAS CANCELLED</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PREPARING DOWNLOADED FILE</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTING DOWNLOADED FILE</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">DOWNLOADED FILE EXECUTED</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">DOWNLOADED FILE NOT USABLE</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">FAILED TO PREPARE DOWNLOADED FILE</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">DOWNLOADED FILE EXECUTED</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTING DOWNLOADED FILE</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">EXTRACTING THE DOWNLOADED FILE</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">THE EXTRACTED FILE IS BEING EXECUTED</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">THE EXTRACTED FILE HAS BEEN EXECUTED</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">THE DOWNLOADED FILE FAILED</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">THE DOWNLOADED FILE IS CORRUPT</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">THE DOWNLOADED FILE IS NOT USABLE</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">THE DOWNLOADED FILE COULD NOT BE EXTRACTED</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">THE DOWNLOADED FILE FAILED</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">THE DOWNLOADED FILE IS CORRUPT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">THE EXTRACTED FILE HAS BEEN EXECUTED</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">THE EXTRACTED FILE IS BEING EXECUTED</system:String>
 </ResourceDictionary>

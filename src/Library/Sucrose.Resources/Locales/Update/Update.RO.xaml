@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">NU S-AU PUTUT FILTRA LISTELE</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">COMPARAREA LISTELOR</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APLICAȚIA ESTE DEJA ACTUALIZATĂ</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">NU S-A PUTUT COMPARA LISTELE</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APLICAȚIA ESTE DEJA ACTUALIZATĂ</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">SE CAUTĂ FIȘIERELE NECESARE</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">FIȘIERELE NECESARE NU AU FOST GĂSITE</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">SE DESCARCĂ FIȘIERELE NECESARE</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">NU S-AU PUTUT DESCĂRCA FIȘIERELE NECESARE</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DESCĂRCAREA FIȘIERULUI NECESAR A FOST ANULATĂ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">A APĂRUT O EROARE ÎN TIMPUL DESCĂRCĂRII FIȘIERULUI NECESAR</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">DESCĂRCAREA FIȘIERULUI NECESAR A FOST ANULATĂ</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PREGĂTIREA FIȘIERULUI DESCĂRCAT</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTAREA FIȘIERULUI DESCĂRCAT</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">FIȘIERUL DESCĂRCAT A FOST EXECUTAT</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">FIȘIERUL DESCĂRCAT NU ESTE UTILIZABIL</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">NU S-A PUTUT PREGĂTI FIȘIERUL DESCĂRCAT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">FIȘIERUL DESCĂRCAT A FOST EXECUTAT</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">EXECUTAREA FIȘIERULUI DESCĂRCAT</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">SE EXTRAGE FIȘIERUL DESCĂRCAT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">FIȘIERUL EXTRAS ESTE ÎN CURS DE EXECUȚIE</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">FIȘIERUL EXTRAS A FOST EXECUTAT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">FIȘIERUL DESCĂRCAT A EȘUAT</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">FIȘIERUL DESCĂRCAT ESTE CORUPT</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">FIȘIERUL DESCĂRCAT NU ESTE UTILIZABIL</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">NU S-A PUTUT EXTRAGE FIȘIERUL DESCĂRCAT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">FIȘIERUL DESCĂRCAT A EȘUAT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">FIȘIERUL DESCĂRCAT ESTE CORUPT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">FIȘIERUL EXTRAS A FOST EXECUTAT</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">FIȘIERUL EXTRAS ESTE ÎN CURS DE EXECUȚIE</system:String>
 </ResourceDictionary>

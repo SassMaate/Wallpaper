@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">无法过滤列表</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">正在比较列表</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">应用程序已是最新</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">无法比较列表</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">应用程序已是最新</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">搜索所需文件</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">未找到所需文件</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">下载所需文件</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">无法下载所需文件</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">所需文件的下载已取消</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">下载所需文件时出现错误</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">所需文件的下载已取消</system:String>
 
     <system:String x:Key="Update.MessageText.Running">正在准备下载的文件</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">正在执行下载的文件</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">已执行下载的文件</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">下载的文件不可用</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">无法准备下载的文件</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">已执行下载的文件</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">正在执行下载的文件</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">提取已下载的文件</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">正在执行已提取的文件</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">已执行提取的文件</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">已下载的文件失败</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">已下载的文件损坏</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">已下载的文件无法使用</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">无法提取已下载的文件</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">已下载的文件失败</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">已下载的文件损坏</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">已执行提取的文件</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">正在执行已提取的文件</system:String>
 </ResourceDictionary>

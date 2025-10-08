@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose muliggjør kommunikasjon med Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Oppdatering av tilkobling:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Oppdateringsfrekvens (sekunder):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Oppdatering av tilkobling:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Nettverksagent</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Din agentidentitet for situasjoner som krever nettverkstilgang.</system:String>

@@ -2,8 +2,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Discord.BrowseButton">Jelajah</system:String>
     <system:String x:Key="Discord.Details">Mesin Wallpaper</system:String>
+    <system:String x:Key="Discord.BrowseButton">Jelajah</system:String>
     <system:String x:Key="Discord.DownloadButton">Unduh</system:String>
 
     <system:String x:Key="Discord.LargestText0">Kekuatan Es Krim Pisang</system:String>

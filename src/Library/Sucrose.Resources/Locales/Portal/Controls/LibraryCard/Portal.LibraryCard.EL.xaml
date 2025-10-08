@@ -8,16 +8,16 @@
     <system:String x:Key="Portal.LibraryCard.MoreTip">Περισσότερα</system:String>
     <system:String x:Key="Portal.LibraryCard.VersionTip">Για να χρησιμοποιήσετε αυτό το θέμα, ενημερώστε το Sucrose</system:String>
 
-    <system:String x:Key="Portal.LibraryCard.MenuReview">Κριτική</system:String>
     <system:String x:Key="Portal.LibraryCard.MenuUse">Χρησιμοποίησε</system:String>
+    <system:String x:Key="Portal.LibraryCard.MenuEdit">Επεξεργασία</system:String>
+    <system:String x:Key="Portal.LibraryCard.MenuFind">Εύρεση</system:String>
+    <system:String x:Key="Portal.LibraryCard.MenuShare">Κοινοποίηση</system:String>
+    <system:String x:Key="Portal.LibraryCard.MenuDelete">Διαγραφή</system:String>
+    <system:String x:Key="Portal.LibraryCard.MenuReview">Κριτική</system:String>
     <system:String x:Key="Portal.LibraryCard.MenuPreview">Προεπισκόπηση</system:String>
     <system:String x:Key="Portal.LibraryCard.MenuCustomize">Προσαρμογή</system:String>
     <system:String x:Key="Portal.LibraryCard.MenuCyclingAdd">Προσθήκη στον Κύκλο</system:String>
     <system:String x:Key="Portal.LibraryCard.MenuCyclingRemove">Αφαίρεση από τον Κύκλο</system:String>
-    <system:String x:Key="Portal.LibraryCard.MenuFind">Εύρεση</system:String>
-    <system:String x:Key="Portal.LibraryCard.MenuShare">Κοινοποίηση</system:String>
-    <system:String x:Key="Portal.LibraryCard.MenuDelete">Διαγραφή</system:String>
-    <system:String x:Key="Portal.LibraryCard.MenuEdit">Επεξεργασία</system:String>
 
     <system:String x:Key="Portal.LibraryCard.Closed">Κλειστό</system:String>
     <system:String x:Key="Portal.LibraryCard.Paused">Σε παύση</system:String>

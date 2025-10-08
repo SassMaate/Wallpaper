@@ -2,24 +2,24 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeReview.Title">Reseña del Tema</system:String>
     <system:String x:Key="Portal.ThemeReview.Close">Cerrar</system:String>
+    <system:String x:Key="Portal.ThemeReview.Title">Reseña del Tema</system:String>
 
-    <system:String x:Key="Portal.ThemeReview.ThemeTitle">Título</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeDescription">Descripción</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeType">Tipo</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeTypeName">Gif</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeAuthor">Autor</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeAuthorName">Taiizor</system:String>
     <system:String x:Key="Portal.ThemeReview.ThemeSize">Tamaño</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeSizeTotal">0 b</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeVersion">Versión</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeVersionText">0.0.0.0 (0.0.0.0)</system:String>
     <system:String x:Key="Portal.ThemeReview.ThemeTags">Etiquetas</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeTagsText">Ninguna</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeType">Tipo</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTitle">Título</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeAuthor">Autor</system:String>
     <system:String x:Key="Portal.ThemeReview.ThemeCreate">Creación</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeCreateDate">Desconocido</system:String>
     <system:String x:Key="Portal.ThemeReview.ThemeModify">Modificación</system:String>
-    <system:String x:Key="Portal.ThemeReview.ThemeModifyDate">Desconocido</system:String>
     <system:String x:Key="Portal.ThemeReview.ThemeContact">Dirección de Contacto del Tema</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeVersion">Versión</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTagsText">Ninguna</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTypeName">Gif</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeSizeTotal">0 b</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeAuthorName">Taiizor</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeCreateDate">Desconocido</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeModifyDate">Desconocido</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeDescription">Descripción</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeVersionText">0.0.0.0 (0.0.0.0)</system:String>
 </ResourceDictionary>

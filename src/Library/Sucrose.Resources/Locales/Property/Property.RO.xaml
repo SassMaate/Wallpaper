@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Doar pentru CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Doar pentru MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Viteză</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
-    <system:String x:Key="Property.Localization.Mute">Mut</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
     <system:String x:Key="Property.Localization.Hue">Nuanta</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Oglindire</system:String>
     <system:String x:Key="Property.Localization.Blur">Neclaritate</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Contrast</system:String>
-    <system:String x:Key="Property.Localization.Invert">Inversare</system:String>
+    <system:String x:Key="Property.Localization.Mute">Mut</system:String>
     <system:String x:Key="Property.Localization.Zoom">Zoom</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
+    <system:String x:Key="Property.Localization.Speed">Viteză</system:String>
+    <system:String x:Key="Property.Localization.Invert">Inversare</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Oglindire</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Contrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animatie</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Claritate</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Saturație</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Luminozitate</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Scara de Gri</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Claritate</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Luminozitate</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Saturație</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Plata</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Vertical</system:String>

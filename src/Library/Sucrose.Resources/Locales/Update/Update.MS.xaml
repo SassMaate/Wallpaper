@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">SENARAI TIDAK DAPAT DIFILTER</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">MEMBANDINGKAN SENARAI</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKASI SUDAH TERKINI</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">GAGAL UNTUK MEMBANDINGKAN SENARAI</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKASI SUDAH TERKINI</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">MENCARI FAIL-FALI DIPERLUKAN</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">FAIL-FALI DIPERLUKAN TIDAK DIjumpai</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">MENDOWNLOAD FAIL-FALI DIPERLUKAN</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">FAIL-FALI DIPERLUKAN TIDAK DAPAT DIDOWNLOAD</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">PENDOWNLOADAN FAIL YANG DIPERLUKAN TELAH DIBATALKAN</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">TERDAPAT RALAT SEMASA MENDOWNLOAD FAIL YANG DIPERLUKAN</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">PENDOWNLOADAN FAIL YANG DIPERLUKAN TELAH DIBATALKAN</system:String>
 
     <system:String x:Key="Update.MessageText.Running">SEDANG MENYEDIAKAN FAIL YANG DIMUAT TURUN</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">MELAKSANAKAN FAIL YANG DIMUAT TURUN</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">FAIL YANG DIMUAT TURUN TELAH DILAKSANAKAN</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">FAIL YANG DIMUAT TURUN TIDAK BOLEH DIGUNAKAN</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">GAGAL UNTUK MENYEDIAKAN FAIL YANG DIMUAT TURUN</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">FAIL YANG DIMUAT TURUN TELAH DILAKSANAKAN</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">MELAKSANAKAN FAIL YANG DIMUAT TURUN</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">MENGEKSTRAK FAIL YANG DIDOWNLOAD</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">FAIL YANG DIEKSTRAK SEDANG DIJALANKAN</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">FAIL YANG DIEKSTRAK TELAH DIJALANKAN</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">FAIL YANG DIDOWNLOAD GAGAL</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">FAIL YANG DIDOWNLOAD ROSAK</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">FAIL YANG DIDOWNLOAD TIDAK BOLEH DIGUNAKAN</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">FAIL YANG DIDOWNLOAD TIDAK DAPAT DIKSTRRAK</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">FAIL YANG DIDOWNLOAD GAGAL</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">FAIL YANG DIDOWNLOAD ROSAK</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">FAIL YANG DIEKSTRAK TELAH DIJALANKAN</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">FAIL YANG DIEKSTRAK SEDANG DIJALANKAN</system:String>
 </ResourceDictionary>

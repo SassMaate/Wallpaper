@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Pouze pro CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Pouze pro MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Rychlost</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
-    <system:String x:Key="Property.Localization.Mute">Ztlumit</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sépie</system:String>
     <system:String x:Key="Property.Localization.Hue">Odstín</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Zrcadlení</system:String>
     <system:String x:Key="Property.Localization.Blur">Rozmazání</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
-    <system:String x:Key="Property.Localization.Invert">Inverze</system:String>
+    <system:String x:Key="Property.Localization.Mute">Ztlumit</system:String>
     <system:String x:Key="Property.Localization.Zoom">Přiblížení</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sépie</system:String>
+    <system:String x:Key="Property.Localization.Speed">Rychlost</system:String>
+    <system:String x:Key="Property.Localization.Invert">Inverze</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Zrcadlení</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animace</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Ostrost</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Sytost</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Jas</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Šedá Škála</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Ostrost</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Jas</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Sytost</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Plochý</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Vertikální</system:String>

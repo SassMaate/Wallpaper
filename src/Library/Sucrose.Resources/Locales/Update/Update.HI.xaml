@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">सूचियों को फ़िल्टर नहीं किया जा सका</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">सूचियों की तुलना की जा रही है</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">एप्लिकेशन पहले से ही अद्यतित है</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">सूचियों की तुलना करने में विफल</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">एप्लिकेशन पहले से ही अद्यतित है</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">आवश्यक फ़ाइलें खोज रहे हैं</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">आवश्यक फ़ाइलें नहीं मिलीं</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">आवश्यक फ़ाइलें डाउनलोड कर रहे हैं</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">आवश्यक फ़ाइलें डाउनलोड नहीं की जा सकीं</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">आवश्यक फ़ाइल का डाउनलोड रद्द किया गया था</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">आवश्यक फ़ाइल के डाउनलोड के दौरान एक त्रुटि हुई</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">आवश्यक फ़ाइल का डाउनलोड रद्द किया गया था</system:String>
 
     <system:String x:Key="Update.MessageText.Running">डाउनलोड की गई फ़ाइल की तैयारी</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">डाउनलोड की गई फ़ाइल को निष्पादित किया जा रहा है</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">डाउनलोड की गई फ़ाइल निष्पादित हुई</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">डाउनलोड की गई फ़ाइल उपयोगी नहीं</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">डाउनलोड की गई फ़ाइल की तैयारी विफल</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">डाउनलोड की गई फ़ाइल निष्पादित हुई</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">डाउनलोड की गई फ़ाइल को निष्पादित किया जा रहा है</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">डाउनलोड किए गए फ़ाइल को निकाल रहे हैं</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">निकाला गया फ़ाइल कार्यान्वित हो रही है</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">निकाला गया फ़ाइल कार्यान्वित किया गया है</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">डाउनलोड की गई फ़ाइल असफल हो गई</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">डाउनलोड की गई फ़ाइल कोरप्ट है</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">डाउनलोड की गई फ़ाइल उपयोग योग्य नहीं है</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">डाउनलोड की गई फ़ाइल को निकाला नहीं जा सका</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">डाउनलोड की गई फ़ाइल असफल हो गई</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">डाउनलोड की गई फ़ाइल कोरप्ट है</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">निकाला गया फ़ाइल कार्यान्वित किया गया है</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">निकाला गया फ़ाइल कार्यान्वित हो रही है</system:String>
 </ResourceDictionary>

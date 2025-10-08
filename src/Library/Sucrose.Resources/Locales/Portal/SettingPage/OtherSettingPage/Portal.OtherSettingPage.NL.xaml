@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose maakt communicatie met Discord mogelijk.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Verbinding Vernieuwen:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Vernieuwingsinterval (seconden):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Verbinding Vernieuwen:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Internetvertegenwoordiger</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Uw vertegenwoordigers-ID in situaties waar internetverbinding vereist is.</system:String>

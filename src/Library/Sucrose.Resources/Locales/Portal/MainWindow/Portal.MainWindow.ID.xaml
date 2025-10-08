@@ -10,28 +10,28 @@
     <system:String x:Key="Portal.MainWindow.MenuHelpTip">Lihat Bantuan</system:String>
     <system:String x:Key="Portal.MainWindow.MenuAboutTip">Lihat Informasi</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLibrary">Perpustakaan</system:String>
     <system:String x:Key="Portal.MainWindow.MenuStore">Toko</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibrary">Perpustakaan</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLibraryTip">Perpustakaan Tema</system:String>
     <system:String x:Key="Portal.MainWindow.MenuStoreTip">Toko Tema</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibraryTip">Perpustakaan Tema</system:String>
 
+    <system:String x:Key="Portal.MainWindow.MenuOther">Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonate">Donasi</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Umum</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Pribadi</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPerformance">Kinerja</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Wallpaper</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonate">Donasi</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOther">Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformance">Kinerja</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuBackTip">Kembali</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuOtherTip">Pengaturan Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateTip">Pengaturan Donasi</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystemTip">Pengaturan Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneralTip">Pengaturan Umum</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonalTip">Pengaturan Pribadi</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPerformanceTip">Pengaturan Kinerja</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperTip">Pengaturan Wallpaper</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuSystemTip">Pengaturan Sistem</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonateTip">Pengaturan Donasi</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOtherTip">Pengaturan Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformanceTip">Pengaturan Kinerja</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuSettingTip">Pengaturan</system:String>
 
@@ -39,12 +39,12 @@
 
     <system:String x:Key="Portal.MainWindow.SearchBoxTip">Sulit menemukan yang Anda butuhkan?</system:String>
 
-    <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Terang</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDarkTip">Tema Gelap</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Terang</system:String>
 
+    <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Opsi Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opsi Donasi</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Buat Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Siklus Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDisplayPreferencesTip">Preferensi Tampilan</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opsi Donasi</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Opsi Lainnya</system:String>
 </ResourceDictionary>

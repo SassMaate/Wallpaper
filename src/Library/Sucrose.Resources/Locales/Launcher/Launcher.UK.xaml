@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Діагностика Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Файли ZIP (*.zip)|*.zip|Всі Файли (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Зберегти Файл Журналу</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Файли ZIP (*.zip)|*.zip|Всі Файли (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Запити та Відгуки</system:String>
     <system:String x:Key="Launcher.FeedbackText">Надіслати Відгук</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Запити та Відгуки</system:String>
 
     <system:String x:Key="Launcher.SettingText">Налаштування</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Перезавантажити Шпалери</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Змінити Шпалери</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Закрити Шпалери</system:String>
     <system:String x:Key="Launcher.WallOpenText">Відкрити Шпалери</system:String>
-    <system:String x:Key="Launcher.WallStartText">Запустити Шпалери</system:String>
     <system:String x:Key="Launcher.WallStopText">Зупинити Шпалери</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Закрити Шпалери</system:String>
+    <system:String x:Key="Launcher.WallStartText">Запустити Шпалери</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Змінити Шпалери</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Перезавантажити Шпалери</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Закрито</system:String>
     <system:String x:Key="Launcher.PausedText">Призупинено</system:String>

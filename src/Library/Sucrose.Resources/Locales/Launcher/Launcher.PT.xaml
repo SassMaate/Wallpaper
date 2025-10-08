@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnóstico do Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Arquivos ZIP (*.zip)|*.zip|Todos os Arquivos (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Salvar Arquivo de Log</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Arquivos ZIP (*.zip)|*.zip|Todos os Arquivos (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Solicitações e Feedback</system:String>
     <system:String x:Key="Launcher.FeedbackText">Enviar Feedback</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Solicitações e Feedback</system:String>
 
     <system:String x:Key="Launcher.SettingText">Configurações</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Recarregar Papel de Parede</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Alterar Papel de Parede</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Fechar Papel de Parede</system:String>
     <system:String x:Key="Launcher.WallOpenText">Abrir Papel de Parede</system:String>
-    <system:String x:Key="Launcher.WallStartText">Iniciar Papel de Parede</system:String>
     <system:String x:Key="Launcher.WallStopText">Parar Papel de Parede</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Fechar Papel de Parede</system:String>
+    <system:String x:Key="Launcher.WallStartText">Iniciar Papel de Parede</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Alterar Papel de Parede</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Recarregar Papel de Parede</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Fechado</system:String>
     <system:String x:Key="Launcher.PausedText">Pausado</system:String>

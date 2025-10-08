@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnosticare Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Fișiere ZIP (*.zip)|*.zip|Toate fișierele (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Salvare Fișier Jurnal</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Fișiere ZIP (*.zip)|*.zip|Toate fișierele (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Cerințe și Feedback</system:String>
     <system:String x:Key="Launcher.FeedbackText">Trimiteți Feedback</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Cerințe și Feedback</system:String>
 
     <system:String x:Key="Launcher.SettingText">Setări</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Reîncărcați Tapetul</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Schimbați Tapetul</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Închideți Tapetul</system:String>
     <system:String x:Key="Launcher.WallOpenText">Deschideți Tapetul</system:String>
-    <system:String x:Key="Launcher.WallStartText">Porniți Tapetul</system:String>
     <system:String x:Key="Launcher.WallStopText">Opriți Tapetul</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Închideți Tapetul</system:String>
+    <system:String x:Key="Launcher.WallStartText">Porniți Tapetul</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Schimbați Tapetul</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Reîncărcați Tapetul</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Închis</system:String>
     <system:String x:Key="Launcher.PausedText">Pus pe Pauză</system:String>

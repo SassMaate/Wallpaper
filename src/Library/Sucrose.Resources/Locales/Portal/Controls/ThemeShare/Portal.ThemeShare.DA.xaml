@@ -2,23 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeShare.Title">Del Tema</system:String>
     <system:String x:Key="Portal.ThemeShare.Close">Luk</system:String>
+    <system:String x:Key="Portal.ThemeShare.Title">Del Tema</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemeTitle">Titel</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeDescription">Beskrivelse</system:String>
 
+    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Kopier Link</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeExport">Eksporter</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish">Udgiv i Butikken</system:String>
-    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Kopier Link</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Publish">Udgiv</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Preparing">Forberedelser til udgivelse vil begynde snart..</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit">Din daglige tema upload grænse bliver kontrolleret..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Du har nået din daglige grænse for tema uploads, prøv venligst igen senere.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Error">En ukendt fejl opstod under kontrollen af din daglige tema upload grænse.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Du har nået din daglige grænse for tema uploads, prøv venligst igen senere.</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress">Temaet bliver komprimeret før upload..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress.Error">En fejl opstod under komprimeringen af temaet.</system:String>
@@ -32,13 +32,13 @@
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload">Det komprimerede tema forberedes til upload..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Det komprimerede tema uploades..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Error">En ukendt fejl opstod under upload af det komprimerede tema.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Det komprimerede tema uploades..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Errored">En uventet fejl opstod under upload af det komprimerede tema: {0}.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Succeded">Det komprimerede tema blev succesfuldt uploadet og vil blive udgivet i butikken efter verifikation.</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP-filer (*.zip)|*.zip|Alle filer (*.*)|*.*</system:String>
     <system:String x:Key="Portal.ThemeShare.SaveDialogTitle">Gem Tema Fil</system:String>
+    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">ZIP-filer (*.zip)|*.zip|Alle filer (*.*)|*.*</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Forstået</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Udgivelsesadvarsel</system:String>

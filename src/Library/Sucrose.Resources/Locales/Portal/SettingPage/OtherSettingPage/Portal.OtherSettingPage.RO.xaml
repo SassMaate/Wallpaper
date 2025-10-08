@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose facilitează comunicarea cu Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Reîmprospătare Conexiune:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Interval de Reîmprospătare (secunde):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Reîmprospătare Conexiune:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Reprezentant Internet</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Identitatea dvs. de reprezentant în situații care necesită conexiune la internet.</system:String>

@@ -22,19 +22,19 @@
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">Значок Yведомления</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">Видимость значка в системном лотке. Приложение Sucrose будет работать скрыто.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Показать</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">Скрыть</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Показать</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">Закрыть все приложения Sucrose при закрытии значка в системном лотке</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">Фон окна</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">Используется для настройки фона окна приложения.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Выбрать фоновое изображение</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Выберите фоновое изображение</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Изображения (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">К сожалению, выбранный файл изображения используется другим процессом</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Выбрать фоновое изображение</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">К сожалению, у вас нет прав доступа к выбранному файлу изображения</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Изображения (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Выберите фоновое изображение</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Размер фона:</system:String>
 
@@ -43,16 +43,16 @@
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">Громкость звука</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">Громкость, применяемая ко всем обоям.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Проигрывать звук только при активном рабочем столе</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">Воспроизводить звук только, когда все приложения без звука</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Проигрывать звук только при активном рабочем столе</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">Чувствительность (Секунды):</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">Местоположение библиотеки</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">Местоположение, где будут сохраняться добавленные вами обои.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">К сожалению, у вас нет доступа к новому местоположению</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Пожалуйста, выберите пустую папку</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">Подождите, пока местоположение изменится</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Пожалуйста, выберите пустую папку</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">К сожалению, у вас нет доступа к новому местоположению</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">Переместить текущую библиотеку в новое местоположение</system:String>
 </ResourceDictionary>

@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Seragam</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Seragam Untuk Isi</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">Tidak Ada</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Nama</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">Tidak Ada</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Pembuatan</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Modifikasi</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Berhenti</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Lanjutkan</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Otomatis</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Mika</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">Tidak Ada</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Otomatis</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Berlapik</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Akrilik</system:String>
 

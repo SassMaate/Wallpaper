@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Sucrose診断</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIPファイル (*.zip)|*.zip|すべてのファイル (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">ログファイルを保存</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIPファイル (*.zip)|*.zip|すべてのファイル (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">リクエストとフィードバック</system:String>
     <system:String x:Key="Launcher.FeedbackText">フィードバックを送信</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">リクエストとフィードバック</system:String>
 
     <system:String x:Key="Launcher.SettingText">設定</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">壁紙を再読み込み</system:String>
-    <system:String x:Key="Launcher.WallChangeText">壁紙を変更</system:String>
-    <system:String x:Key="Launcher.WallCloseText">壁紙を閉じる</system:String>
     <system:String x:Key="Launcher.WallOpenText">壁紙を開く</system:String>
-    <system:String x:Key="Launcher.WallStartText">壁紙を開始</system:String>
     <system:String x:Key="Launcher.WallStopText">壁紙を停止</system:String>
+    <system:String x:Key="Launcher.WallCloseText">壁紙を閉じる</system:String>
+    <system:String x:Key="Launcher.WallStartText">壁紙を開始</system:String>
+    <system:String x:Key="Launcher.WallChangeText">壁紙を変更</system:String>
+    <system:String x:Key="Launcher.WallReloadText">壁紙を再読み込み</system:String>
 
     <system:String x:Key="Launcher.ClosedText">閉じられました</system:String>
     <system:String x:Key="Launcher.PausedText">一時停止中</system:String>

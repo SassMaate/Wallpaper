@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Тільки для CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Тільки для MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Швидкість</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Гамма</system:String>
-    <system:String x:Key="Property.Localization.Mute">Без Звуку</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Сепія</system:String>
     <system:String x:Key="Property.Localization.Hue">Відтінок</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Відображення</system:String>
     <system:String x:Key="Property.Localization.Blur">Розмиття</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Контраст</system:String>
-    <system:String x:Key="Property.Localization.Invert">Інвертувати</system:String>
+    <system:String x:Key="Property.Localization.Mute">Без Звуку</system:String>
     <system:String x:Key="Property.Localization.Zoom">Масштаб</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Гамма</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Сепія</system:String>
+    <system:String x:Key="Property.Localization.Speed">Швидкість</system:String>
+    <system:String x:Key="Property.Localization.Invert">Інвертувати</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Відображення</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Контраст</system:String>
     <system:String x:Key="Property.Localization.Animation">Анімація</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Різкість</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Насиченість</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Яскравість</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Сіра Шкала</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Різкість</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Яскравість</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Насиченість</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Плоский</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Вертикальний</system:String>

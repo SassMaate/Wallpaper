@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">СПИСКИ НЕ МОГУТ БЫТЬ ОТФИЛЬТРОВАНЫ</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">СРАВНЕНИЕ СПИСКОВ</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">ПРИЛОЖЕНИЕ УЖЕ ОБНОВЛЕНО</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">НЕ УДАЛОСЬ СРАВНИТЬ СПИСКИ</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">ПРИЛОЖЕНИЕ УЖЕ ОБНОВЛЕНО</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">ПОИСК НЕОБХОДИМЫХ ФАЙЛОВ</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">НЕ НАЙДЕНЫ НЕОБХОДИМЫЕ ФАЙЛЫ</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">ЗАГРУЗКА НЕОБХОДИМЫХ ФАЙЛОВ</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">НЕОБХОДИМЫЕ ФАЙЛЫ НЕ МОГУТ БЫТЬ ЗАГРУЖЕНЫ</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">ЗАГРУЗКА НЕОБХОДИМОГО ФАЙЛА БЫЛА ОТМЕНЕНА</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">ПРИ ЗАГРУЗКЕ НЕОБХОДИМОГО ФАЙЛА ПРОИЗОШЛА ОШИБКА</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">ЗАГРУЗКА НЕОБХОДИМОГО ФАЙЛА БЫЛА ОТМЕНЕНА</system:String>
 
     <system:String x:Key="Update.MessageText.Running">ПОДГОТОВКА ЗАГРУЖЕННОГО ФАЙЛА</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">ВЫПОЛНЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">ЗАГРУЖЕННЫЙ ФАЙЛ ВЫПОЛНЕН</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">ЗАГРУЖЕННЫЙ ФАЙЛ НЕ ПРИГОДЕН ДЛЯ ИСПОЛЬЗОВАНИЯ</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">НЕ УДАЛОСЬ ПОДГОТОВИТЬ ЗАГРУЖЕННЫЙ ФАЙЛ</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">ЗАГРУЖЕННЫЙ ФАЙЛ ВЫПОЛНЕН</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">ВЫПОЛНЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">ИЗВЛЕЧЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">ИЗВЛЕЧЕННЫЙ ФАЙЛ ВЫПОЛНЯЕТСЯ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">ИЗВЛЕЧЕННЫЙ ФАЙЛ БЫЛ ВЫПОЛНЕН</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">ЗАГРУЖЕННЫЙ ФАЙЛ НЕ УДАЛОСЬ ИЗВЛЕЧЬ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ЗАГРУЖЕННЫЙ ФАЙЛ ПОВРЕЖДЁН</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">ЗАГРУЖЕННЫЙ ФАЙЛ НЕПРИГОДЕН ДЛЯ ИСПОЛЬЗОВАНИЯ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">НЕ УДАЛОСЬ ИЗВЛЕЧЬ ЗАГРУЖЕННЫЙ ФАЙЛ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">ЗАГРУЖЕННЫЙ ФАЙЛ НЕ УДАЛОСЬ ИЗВЛЕЧЬ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">ЗАГРУЖЕННЫЙ ФАЙЛ ПОВРЕЖДЁН</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">ИЗВЛЕЧЕННЫЙ ФАЙЛ БЫЛ ВЫПОЛНЕН</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">ИЗВЛЕЧЕННЫЙ ФАЙЛ ВЫПОЛНЯЕТСЯ</system:String>
 </ResourceDictionary>

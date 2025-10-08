@@ -7,10 +7,10 @@
 
     <system:String x:Key="Portal.StoreCard.VersionTip">Mettez à jour Sucrose pour pouvoir utiliser ce thème</system:String>
 
-    <system:String x:Key="Portal.StoreCard.MenuUpdating">Vérification des Mises à Jour</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuReport">Signaler</system:String>
     <system:String x:Key="Portal.StoreCard.MenuUpdate">Vérifier les Mises à Jour</system:String>
     <system:String x:Key="Portal.StoreCard.MenuInstall">Installer</system:String>
-    <system:String x:Key="Portal.StoreCard.MenuReport">Signaler</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">Vérification des Mises à Jour</system:String>
 
     <system:String x:Key="Portal.StoreCard.Incompatible">Incompatible</system:String>
 </ResourceDictionary>

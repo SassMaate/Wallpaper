@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose membolehkan komunikasi antara Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Muat Semula Sambungan:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Tempoh Muat Semula (Saiz):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Muat Semula Sambungan:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Wakil Internet</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Identiti wakil anda dalam situasi yang memerlukan sambungan internet.</system:String>

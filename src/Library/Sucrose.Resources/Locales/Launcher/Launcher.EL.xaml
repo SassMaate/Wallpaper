@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Διάγνωση Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Αρχεία ZIP (*.zip)|*.zip|Όλα τα Αρχεία (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Αποθήκευση Aρχείου Καταγραφής</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Αρχεία ZIP (*.zip)|*.zip|Όλα τα Αρχεία (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Αιτήματα Και Σχόλια</system:String>
     <system:String x:Key="Launcher.FeedbackText">Αποστολή Σχολίων</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Αιτήματα Και Σχόλια</system:String>
 
     <system:String x:Key="Launcher.SettingText">Ρυθμίσεις</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Επαναφόρτωση Ταπετσαρίας</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Αλλαγή Ταπετσαρίας</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Κλείσιμο Ταπετσαρίας</system:String>
     <system:String x:Key="Launcher.WallOpenText">Άνοιγμα Ταπετσαρίας</system:String>
-    <system:String x:Key="Launcher.WallStartText">Εκκίνηση Ταπετσαρίας</system:String>
     <system:String x:Key="Launcher.WallStopText">Διακοπή Ταπετσαρίας</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Κλείσιμο Ταπετσαρίας</system:String>
+    <system:String x:Key="Launcher.WallStartText">Εκκίνηση Ταπετσαρίας</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Αλλαγή Ταπετσαρίας</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Επαναφόρτωση Ταπετσαρίας</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Κλειστό</system:String>
     <system:String x:Key="Launcher.PausedText">Σε Παύση</system:String>

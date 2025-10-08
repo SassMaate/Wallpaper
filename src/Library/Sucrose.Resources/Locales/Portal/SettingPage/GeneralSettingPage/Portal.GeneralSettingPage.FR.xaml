@@ -22,19 +22,19 @@
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">Icône de la Zone de Notification</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">Visibilité dans la zone système. Sucrose continuera de fonctionner discrètement.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Afficher</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">Masquer</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Afficher</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">Fermer toutes les applications Sucrose lorsque la zone système est fermée</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">Fond de Fenêtre</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">Utilisé pour personnaliser l'arrière-plan de la fenêtre de l'application.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Sélectionner Une Image de Fond</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Sélectionner une image de fond</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Fichiers d'Image (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Malheureusement, le fichier image sélectionné est utilisé par un autre processus</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Sélectionner Une Image de Fond</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Malheureusement, vous n'avez pas la permission d'accéder au fichier image sélectionné</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Fichiers d'Image (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Sélectionner une image de fond</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Étirement de l'Arrière-Plan:</system:String>
 
@@ -43,16 +43,16 @@
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">Volume du Moteur</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">Volume qui s'applique à tous les fonds d'écran.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Lire le son uniquement lorsque le bureau est en focus</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">Lire le son uniquement lorsque toutes les applications sont en sourdine</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Lire le son uniquement lorsque le bureau est en focus</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">Sensibilité (Secondes):</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">Emplacement de la Bibliothèque</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">Emplacement où les thèmes que vous ajoutez à votre bibliothèque sont stockés.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Malheureusement, vous n'avez pas accès au nouvel emplacement</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Veuillez sélectionner un dossier vide</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">Veuillez patienter pendant que l'emplacement est modifié</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Veuillez sélectionner un dossier vide</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Malheureusement, vous n'avez pas accès au nouvel emplacement</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">Déplacez votre bibliothèque actuelle vers le nouvel emplacement</system:String>
 </ResourceDictionary>

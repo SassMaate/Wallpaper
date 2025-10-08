@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">SucroseはDiscordとの通信を担当します。</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">接続の更新:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">更新間隔 (秒):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">接続の更新:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">代理人</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">インターネット接続が必要な場合の代理人識別子。</system:String>

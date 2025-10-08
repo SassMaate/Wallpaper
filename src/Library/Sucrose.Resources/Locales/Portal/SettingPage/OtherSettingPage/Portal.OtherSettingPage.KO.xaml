@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose는 Discord와의 통신을 담당합니다.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">연결 갱신:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">갱신 주기 (초):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">연결 갱신:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">인터넷 대리인</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">인터넷 연결이 필요한 상황에서의 대리인 신원입니다.</system:String>

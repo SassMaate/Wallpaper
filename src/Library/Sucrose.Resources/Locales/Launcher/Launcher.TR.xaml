@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Sucrose Tanılama</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">ZIP Dosyaları (*.zip)|*.zip|Tüm Dosyalar (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Günlük Dosyasını Kaydet</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">ZIP Dosyaları (*.zip)|*.zip|Tüm Dosyalar (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">İstek ve Geri Bildirim</system:String>
     <system:String x:Key="Launcher.FeedbackText">Geri Bildirim Gönder</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">İstek ve Geri Bildirim</system:String>
 
     <system:String x:Key="Launcher.SettingText">Ayarlar</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Duvar Kağıdını Yenile</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Duvar Kağıdını Değiştir</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Duvar Kağıdını Kapat</system:String>
     <system:String x:Key="Launcher.WallOpenText">Duvar Kağıdını Aç</system:String>
-    <system:String x:Key="Launcher.WallStartText">Duvar Kağıdını Başlat</system:String>
     <system:String x:Key="Launcher.WallStopText">Duvar Kağıdını Durdur</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Duvar Kağıdını Kapat</system:String>
+    <system:String x:Key="Launcher.WallStartText">Duvar Kağıdını Başlat</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Duvar Kağıdını Değiştir</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Duvar Kağıdını Yenile</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Kapatıldı</system:String>
     <system:String x:Key="Launcher.PausedText">Durduruldu</system:String>

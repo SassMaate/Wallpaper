@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">목록을 필터링할 수 없습니다</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">목록 비교 중</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">응용 프로그램이 최신 상태입니다</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">목록 비교 실패</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">응용 프로그램이 최신 상태입니다</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">필요한 파일을 검색 중입니다</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">필요한 파일을 찾을 수 없습니다</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">필요한 파일을 다운로드 중입니다</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">필요한 파일을 다운로드할 수 없습니다</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">필요한 파일의 다운로드가 취소되었습니다</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">필요한 파일을 다운로드하는 동안 오류가 발생했습니다</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">필요한 파일의 다운로드가 취소되었습니다</system:String>
 
     <system:String x:Key="Update.MessageText.Running">다운로드한 파일 준비 중</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">다운로드한 파일 실행 중</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">다운로드한 파일 실행 완료</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">다운로드한 파일을 사용할 수 없습니다</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">다운로드한 파일 준비 실패</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">다운로드한 파일 실행 완료</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">다운로드한 파일 실행 중</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">다운로드한 파일을 추출 중입니다</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">추출된 파일이 실행 중입니다</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">추출된 파일이 실행되었습니다</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">다운로드한 파일이 실패했습니다</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">다운로드한 파일이 손상되었습니다</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">다운로드한 파일을 사용할 수 없습니다</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">다운로드한 파일을 추출할 수 없습니다</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">다운로드한 파일이 실패했습니다</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">다운로드한 파일이 손상되었습니다</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">추출된 파일이 실행되었습니다</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">추출된 파일이 실행 중입니다</system:String>
 </ResourceDictionary>

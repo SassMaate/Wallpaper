@@ -1,7 +1,7 @@
 Hash,File,Key,Value
 e586c525e054fdc54fc65178b20cca64,Locale.RU.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTG9jYWxlLnhhbWwiIC8+DQoNCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIueGFtbCIgLz4NCg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGl2ZS9MaXZlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmRvL1VuZG8uUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlVwZGF0ZS9VcGRhdGUuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlByb3BlcnR5L1Byb3BlcnR5LlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYXRjaGRvZy9XYXRjaGRvZy5SVS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=
-6e9d25250392306554a99369bfea4d48,Discord\Discord.RU.xaml,Discord.BrowseButton,Просмотр
 76d5ef4a47d4345c5dd04ff323fff33c,Discord\Discord.RU.xaml,Discord.Details,Движок Обоев
+6e9d25250392306554a99369bfea4d48,Discord\Discord.RU.xaml,Discord.BrowseButton,Просмотр
 41653c48a988f8f65f3ec226bec98fa2,Discord\Discord.RU.xaml,Discord.DownloadButton,Скачать
 43d865b7d54608e2054977e82e76430d,Discord\Discord.RU.xaml,,
 8c41b21ab35b09d809e87b78887608e1,Discord\Discord.RU.xaml,Discord.LargestText0,Сила бананового мороженого
@@ -119,22 +119,22 @@ d8af422b196487a6497451420594a49e,Launcher\Launcher.RU.xaml,,
 61abc112883b4b67ba560fece568fee3,Launcher\Launcher.RU.xaml,,
 5f932182549e9f65b8276cc2d1fd2c29,Launcher\Launcher.RU.xaml,Launcher.ReportWindowTitle,Диагностика Sucrose
 5827e14b254197c7bbe8146426bb7055,Launcher\Launcher.RU.xaml,,
-7df9cc33b35c71950b15739244d7a332,Launcher\Launcher.RU.xaml,Launcher.SaveDialogFilter,Файлы ZIP (*.zip)|*.zip|Все файлы (*.*)|*.*
 5cf20ae535685acde3b8fa88abda2c71,Launcher\Launcher.RU.xaml,Launcher.SaveDialogTitle,Сохранить Файл Журнала
+7df9cc33b35c71950b15739244d7a332,Launcher\Launcher.RU.xaml,Launcher.SaveDialogFilter,Файлы ZIP (*.zip)|*.zip|Все файлы (*.*)|*.*
 27122fe29f927f3730954591078bd2b2,Launcher\Launcher.RU.xaml,,
-5e12583cf9a43161c418bd78d21c348e,Launcher\Launcher.RU.xaml,Launcher.RequestFeedbackText,Запросы и Отзывы
 311223a5143597be917136422471ee18,Launcher\Launcher.RU.xaml,Launcher.FeedbackText,Отправить Отзыв
+5e12583cf9a43161c418bd78d21c348e,Launcher\Launcher.RU.xaml,Launcher.RequestFeedbackText,Запросы и Отзывы
 d089796d0d6a3e6a3b59c378a48bac0c,Launcher\Launcher.RU.xaml,,
 eaf2be14ecd57b7408c92fc728b4eb57,Launcher\Launcher.RU.xaml,Launcher.SettingText,Настройки
 a5f82e89c4d3ea1ffeb6eb7c68ee4dfa,Launcher\Launcher.RU.xaml,,
 9c26a61710bef52b50e2426e87ab79c4,Launcher\Launcher.RU.xaml,Launcher.TrayText,Sucrose Wallpaper Engine
 bbb439fcdc9ecdae229cee915ca717af,Launcher\Launcher.RU.xaml,,
-3d225c093d2aa71c2853d80f6360eba2,Launcher\Launcher.RU.xaml,Launcher.WallReloadText,Перезагрузить Oбои
-bb70d515c968bfbbf5afb73d842976dc,Launcher\Launcher.RU.xaml,Launcher.WallChangeText,Изменить Oбои
-a88647532ef44c2967e41070d1c946d2,Launcher\Launcher.RU.xaml,Launcher.WallCloseText,Закрыть Oбои
 ce355a4fb86fd68d7f62d70e7a296e7a,Launcher\Launcher.RU.xaml,Launcher.WallOpenText,Открыть Oбои
-d50642223abd6744764ba364dc706970,Launcher\Launcher.RU.xaml,Launcher.WallStartText,Запустить Oбои
 c9df57133d15819f83675d06828d4c54,Launcher\Launcher.RU.xaml,Launcher.WallStopText,Остановить Oбои
+a88647532ef44c2967e41070d1c946d2,Launcher\Launcher.RU.xaml,Launcher.WallCloseText,Закрыть Oбои
+d50642223abd6744764ba364dc706970,Launcher\Launcher.RU.xaml,Launcher.WallStartText,Запустить Oбои
+bb70d515c968bfbbf5afb73d842976dc,Launcher\Launcher.RU.xaml,Launcher.WallChangeText,Изменить Oбои
+3d225c093d2aa71c2853d80f6360eba2,Launcher\Launcher.RU.xaml,Launcher.WallReloadText,Перезагрузить Oбои
 d3bb8e481af6eb2b9c25dee9a9c65b5e,Launcher\Launcher.RU.xaml,,
 d4873b718767476a97e5d6ffc51dad7a,Launcher\Launcher.RU.xaml,Launcher.ClosedText,Закрыто
 507624f50e9e2d55a0cfdb7ca9cf36df,Launcher\Launcher.RU.xaml,Launcher.PausedText,Приостановлено
@@ -188,21 +188,21 @@ cbeb29d15d810260f58c85f7b37f2aef,Property\Property.RU.xaml,Property.FileDropDown
 9c30da530230d8726f9f10960ff6b44d,Property\Property.RU.xaml,Property.Localization.CefSharp,Только для CefSharp
 5325a75f55f7302072816938d8aa4abc,Property\Property.RU.xaml,Property.Localization.MpvPlayer,Только для MpvPlayer
 06b8a11af61806ac5d0f3bc11f8996b4,Property\Property.RU.xaml,,
-9aa3bc5079f103cba37faadbb5eb36f1,Property\Property.RU.xaml,Property.Localization.Speed,Скорость
-59b063268c81d8b88515d4f5c59a813f,Property\Property.RU.xaml,Property.Localization.Gamma,Гамма
-8719dc786c4912011eae0297d44567a2,Property\Property.RU.xaml,Property.Localization.Mute,Без Звука
-c0f7bf2b2628a61c08084e36c46c5740,Property\Property.RU.xaml,Property.Localization.Sepia,Сепия
 16a9dbc00fa2b359d556244668fd8344,Property\Property.RU.xaml,Property.Localization.Hue,Оттенок
-e649d401ddfaaa68d12d593e0acb6a22,Property\Property.RU.xaml,Property.Localization.Mirror,Отражение
 057607b8e3b6be4885a9bf0613fd5511,Property\Property.RU.xaml,Property.Localization.Blur,Размытие
-f10cd8c2e3ed91eae18fd5f279aba52a,Property\Property.RU.xaml,Property.Localization.Contrast,Контраст
-461f4ae818fafa4f15b581bfeff6278a,Property\Property.RU.xaml,Property.Localization.Invert,Инвертировать
+8719dc786c4912011eae0297d44567a2,Property\Property.RU.xaml,Property.Localization.Mute,Без Звука
 684b49ac039795266c2ef6e88193881e,Property\Property.RU.xaml,Property.Localization.Zoom,Масштаб
+59b063268c81d8b88515d4f5c59a813f,Property\Property.RU.xaml,Property.Localization.Gamma,Гамма
+c0f7bf2b2628a61c08084e36c46c5740,Property\Property.RU.xaml,Property.Localization.Sepia,Сепия
+9aa3bc5079f103cba37faadbb5eb36f1,Property\Property.RU.xaml,Property.Localization.Speed,Скорость
+461f4ae818fafa4f15b581bfeff6278a,Property\Property.RU.xaml,Property.Localization.Invert,Инвертировать
+e649d401ddfaaa68d12d593e0acb6a22,Property\Property.RU.xaml,Property.Localization.Mirror,Отражение
+f10cd8c2e3ed91eae18fd5f279aba52a,Property\Property.RU.xaml,Property.Localization.Contrast,Контраст
 11edcead6704b81f307a59a5affaa85a,Property\Property.RU.xaml,Property.Localization.Animation,Анимация
-3ea4824601b318a706f47ae88a51e250,Property\Property.RU.xaml,Property.Localization.Sharpness,Резкость
-a283517d610e0f1a4d8ac6ea338bd709,Property\Property.RU.xaml,Property.Localization.Saturation,Насыщенность
-5500d70b7b55c2a2947efe01cd05c1c3,Property\Property.RU.xaml,Property.Localization.Brightness,Яркость
 1994d7705d5a6508be470acc27a14784,Property\Property.RU.xaml,Property.Localization.Grayscale,Серая Шкала
+3ea4824601b318a706f47ae88a51e250,Property\Property.RU.xaml,Property.Localization.Sharpness,Резкость
+5500d70b7b55c2a2947efe01cd05c1c3,Property\Property.RU.xaml,Property.Localization.Brightness,Яркость
+a283517d610e0f1a4d8ac6ea338bd709,Property\Property.RU.xaml,Property.Localization.Saturation,Насыщенность
 ba4d184fe7e5329cdb6a46396886a4e7,Property\Property.RU.xaml,,
 a98788b4d7733f6ba0b00fd8731d869f,Property\Property.RU.xaml,Property.Localization.Mirror.Flat,Плоский
 77360afc08cd5dc896811b2d2f1dade9,Property\Property.RU.xaml,Property.Localization.Mirror.Vertical,Вертикальный
@@ -248,8 +248,8 @@ c3c0841c609b66d4dea99a5f38969ccd,Update\Update.RU.xaml,Update.MessageText.Filter
 9ed6b6d05cb250b5600f12d3c0fee2a7,Update\Update.RU.xaml,Update.MessageText.Filtering.Error,СПИСКИ НЕ МОГУТ БЫТЬ ОТФИЛЬТРОВАНЫ
 c88c49a551f4ed829c4e57f46feec7b6,Update\Update.RU.xaml,,
 64a59d7aa55cf2373beb166a715ff654,Update\Update.RU.xaml,Update.MessageText.Comparing,СРАВНЕНИЕ СПИСКОВ
-fc5eda7ad570d59a690c9aca4eddc8b4,Update\Update.RU.xaml,Update.MessageText.Comparing.Update,ПРИЛОЖЕНИЕ УЖЕ ОБНОВЛЕНО
 6a7fb370c5019ef638187fe01ab9cad5,Update\Update.RU.xaml,Update.MessageText.Comparing.Error,НЕ УДАЛОСЬ СРАВНИТЬ СПИСКИ
+fc5eda7ad570d59a690c9aca4eddc8b4,Update\Update.RU.xaml,Update.MessageText.Comparing.Update,ПРИЛОЖЕНИЕ УЖЕ ОБНОВЛЕНО
 f38287186a901a1f564c4f55cc0ea030,Update\Update.RU.xaml,,
 c1ee6de215cd21476eeb73a4528ee834,Update\Update.RU.xaml,Update.MessageText.Searching,ПОИСК НЕОБХОДИМЫХ ФАЙЛОВ
 6271921ffdd41ca008216b48c225f005,Update\Update.RU.xaml,Update.MessageText.Searching.Not,НЕ НАЙДЕНЫ НЕОБХОДИМЫЕ ФАЙЛЫ
@@ -258,48 +258,48 @@ c1ee6de215cd21476eeb73a4528ee834,Update\Update.RU.xaml,Update.MessageText.Search
 e2c33809670cbce675a3e5215f031ee8,Update\Update.RU.xaml,,
 9e4b627e95f802277911cf118f919d4c,Update\Update.RU.xaml,Update.MessageText.Downloading,ЗАГРУЗКА НЕОБХОДИМЫХ ФАЙЛОВ
 9b66f3956229f20e1348aa8a9b950a87,Update\Update.RU.xaml,Update.MessageText.Downloading.Error,НЕОБХОДИМЫЕ ФАЙЛЫ НЕ МОГУТ БЫТЬ ЗАГРУЖЕНЫ
-2dd7e8342f50d94b989f5495e2ca1aad,Update\Update.RU.xaml,Update.MessageText.Downloading.Complete.Cancel,ЗАГРУЗКА НЕОБХОДИМОГО ФАЙЛА БЫЛА ОТМЕНЕНА
 42d5847fe7c3a57be9e15984cf9913c0,Update\Update.RU.xaml,Update.MessageText.Downloading.Complete.Error,ПРИ ЗАГРУЗКЕ НЕОБХОДИМОГО ФАЙЛА ПРОИЗОШЛА ОШИБКА
+2dd7e8342f50d94b989f5495e2ca1aad,Update\Update.RU.xaml,Update.MessageText.Downloading.Complete.Cancel,ЗАГРУЗКА НЕОБХОДИМОГО ФАЙЛА БЫЛА ОТМЕНЕНА
 8e05252a2f83380ecfaf4343c58ffb75,Update\Update.RU.xaml,,
 fd12b202edafddad6339571ce84bcd79,Update\Update.RU.xaml,Update.MessageText.Running,ПОДГОТОВКА ЗАГРУЖЕННОГО ФАЙЛА
-2abcaa2f72af7fab27e234c281f1b29f,Update\Update.RU.xaml,Update.MessageText.Running.Executing,ВЫПОЛНЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА
-9455a9e2205a96f02511f0d61c09e7e7,Update\Update.RU.xaml,Update.MessageText.Running.Executed,ЗАГРУЖЕННЫЙ ФАЙЛ ВЫПОЛНЕН
 d606363ca6018af2a3e8120cdb30b1b5,Update\Update.RU.xaml,Update.MessageText.Running.Not,ЗАГРУЖЕННЫЙ ФАЙЛ НЕ ПРИГОДЕН ДЛЯ ИСПОЛЬЗОВАНИЯ
 6e2362f99e5d65d7d76a1c88ed36fd7a,Update\Update.RU.xaml,Update.MessageText.Running.Error,НЕ УДАЛОСЬ ПОДГОТОВИТЬ ЗАГРУЖЕННЫЙ ФАЙЛ
+9455a9e2205a96f02511f0d61c09e7e7,Update\Update.RU.xaml,Update.MessageText.Running.Executed,ЗАГРУЖЕННЫЙ ФАЙЛ ВЫПОЛНЕН
+2abcaa2f72af7fab27e234c281f1b29f,Update\Update.RU.xaml,Update.MessageText.Running.Executing,ВЫПОЛНЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА
 af28d3282ab7570d4a531591f88d3ddc,Update\Update.RU.xaml,,
 0b8d6e7911174105fbc892dfe364ebc1,Update\Update.RU.xaml,Update.MessageText.Extracting,ИЗВЛЕЧЕНИЕ ЗАГРУЖЕННОГО ФАЙЛА
-3d0f26900dc8b5563d64d2a5337f8d8d,Update\Update.RU.xaml,Update.MessageText.Extracting.Executing,ИЗВЛЕЧЕННЫЙ ФАЙЛ ВЫПОЛНЯЕТСЯ
-472ec2c1d4f5a0e0a83ce5192eb84762,Update\Update.RU.xaml,Update.MessageText.Extracting.Executed,ИЗВЛЕЧЕННЫЙ ФАЙЛ БЫЛ ВЫПОЛНЕН
-a54b94f0b7ea009b44aaf3841327c5d2,Update\Update.RU.xaml,Update.MessageText.Extracting.Failed,ЗАГРУЖЕННЫЙ ФАЙЛ НЕ УДАЛОСЬ ИЗВЛЕЧЬ
-3640a99eae3e5633c15871bf4ce0157e,Update\Update.RU.xaml,Update.MessageText.Extracting.Corrupt,ЗАГРУЖЕННЫЙ ФАЙЛ ПОВРЕЖДЁН
 fd59bba2781010e8ebf9e7aacb80e51a,Update\Update.RU.xaml,Update.MessageText.Extracting.Not,ЗАГРУЖЕННЫЙ ФАЙЛ НЕПРИГОДЕН ДЛЯ ИСПОЛЬЗОВАНИЯ
 651a399fec408b3923cd026465b0a5d2,Update\Update.RU.xaml,Update.MessageText.Extracting.Error,НЕ УДАЛОСЬ ИЗВЛЕЧЬ ЗАГРУЖЕННЫЙ ФАЙЛ
-bc5ae5abc8b009d83102cb97667b30e8,Watchdog\Watchdog.RU.xaml,Watchdog.HelpButton,Помощь
-a1fd2526efe37d9eb1757b32c329b800,Watchdog\Watchdog.RU.xaml,Watchdog.CloseButton,Закрыть
+a54b94f0b7ea009b44aaf3841327c5d2,Update\Update.RU.xaml,Update.MessageText.Extracting.Failed,ЗАГРУЖЕННЫЙ ФАЙЛ НЕ УДАЛОСЬ ИЗВЛЕЧЬ
+3640a99eae3e5633c15871bf4ce0157e,Update\Update.RU.xaml,Update.MessageText.Extracting.Corrupt,ЗАГРУЖЕННЫЙ ФАЙЛ ПОВРЕЖДЁН
+472ec2c1d4f5a0e0a83ce5192eb84762,Update\Update.RU.xaml,Update.MessageText.Extracting.Executed,ИЗВЛЕЧЕННЫЙ ФАЙЛ БЫЛ ВЫПОЛНЕН
+3d0f26900dc8b5563d64d2a5337f8d8d,Update\Update.RU.xaml,Update.MessageText.Extracting.Executing,ИЗВЛЕЧЕННЫЙ ФАЙЛ ВЫПОЛНЯЕТСЯ
 cf1568da7ceaedb3c7d8a97014c40123,Watchdog\Watchdog.RU.xaml,Watchdog.ErrorEmpty,"К сожалению, детали ошибки не были захвачены."
-a9fc9f49b7911a0a94e5b55f7e941851,Watchdog\Watchdog.RU.xaml,Watchdog.ErrorMessage,Произошла непредвиденная ошибка:
 71499324a841684cc27fd278d3215139,Watchdog\Watchdog.RU.xaml,Watchdog.ErrorTitle,Ошибка
+bc5ae5abc8b009d83102cb97667b30e8,Watchdog\Watchdog.RU.xaml,Watchdog.HelpButton,Помощь
 0897a56cb0f1a49a9341fa10470c1012,Watchdog\Watchdog.RU.xaml,Watchdog.HideButton,Скрыть
 001012bc03501f465fddd4d45430e7b3,Watchdog\Watchdog.RU.xaml,Watchdog.ShowButton,Показать
 c890b15d95fe5dc96188a0a96e1f9da8,Watchdog\Watchdog.RU.xaml,Watchdog.StackTrace,Трассировка стека:
+a1fd2526efe37d9eb1757b32c329b800,Watchdog\Watchdog.RU.xaml,Watchdog.CloseButton,Закрыть
 e928c680deea1cc1800bdfcf399bb881,Watchdog\Watchdog.RU.xaml,Watchdog.WindowTitle,Sucrose Watchdog
-b34028ac88d94c615354521cc18d4833,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Data,Данные
-6dd67126ec4b05dc9601b1958c45ce60,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Sound,Звук
+a9fc9f49b7911a0a94e5b55f7e941851,Watchdog\Watchdog.RU.xaml,Watchdog.ErrorMessage,Произошла непредвиденная ошибка:
 7fd9e4467ee90705749126e518dd4ce0,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Log,Лог
+b34028ac88d94c615354521cc18d4833,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Data,Данные
 2aa490528eec20633935dc8b7901fbdd,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Hook,Крюк
-3c0b18ac5705a0e63c75d5f64da2834f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Store,Магазин
-5bb1d987b70a1e7e9a76a54deb68311a,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Donate,Пожертвование
-1d8fc7728aa1c536de1d057de89d9347,Portal\Area\Portal.Area.RU.xaml,Portal.Area.System,Система
 b2ebe08e09caa2a759e12654ec7c8870,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Cache,Кэш
-bdb81e64927f6f6375a53ae1b55e9108,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Laptop,Ноутбук
-2de9b5bdedba73133e53cd3becdb912f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Support,Поддержка
 126b231c9271df25ab5f427a8c4e6ebe,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Reset,Сброс
-0dbfd650d331c71a1db5e12b38c16802,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Windows,Windows
+6dd67126ec4b05dc9601b1958c45ce60,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Sound,Звук
+3c0b18ac5705a0e63c75d5f64da2834f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Store,Магазин
 2cae33eef536ad9ad578e30eba21be5c,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Backup,Резервное Копирование
-5cee178cd61059c5a873441f5942931e,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Priority,Приоритет
-5e916a7669cedba1f78a72c945dc062f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Engines,Двигатели
+5bb1d987b70a1e7e9a76a54deb68311a,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Donate,Пожертвование
+bdb81e64927f6f6375a53ae1b55e9108,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Laptop,Ноутбук
+1d8fc7728aa1c536de1d057de89d9347,Portal\Area\Portal.Area.RU.xaml,Portal.Area.System,Система
 b7052f7fb036c1763439c291edc326a0,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Update,Обновление
+5e916a7669cedba1f78a72c945dc062f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Engines,Двигатели
 a469c305f3765d303aae405135630857,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Library,Библиотека
+2de9b5bdedba73133e53cd3becdb912f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Support,Поддержка
+0dbfd650d331c71a1db5e12b38c16802,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Windows,Windows
+5cee178cd61059c5a873441f5942931e,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Priority,Приоритет
 f6c2e62098599a0a9a7c2e16d733303f,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Developer,Разработчик
 11ca7988fcdfdfe9d11c3aa6b7e8d4a1,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Extensions,Расширения
 f2b06a36903f5b5c4ee852b002962fc6,Portal\Area\Portal.Area.RU.xaml,Portal.Area.OperatingSystem,Операционная Cистема
@@ -307,79 +307,79 @@ fc5de4b31a16dde62d5de567506d4503,Portal\Area\Portal.Area.RU.xaml,Portal.Area.Sys
 94072ce62e9969de6f5e0a4812496ade,Portal\Area\Portal.Area.RU.xaml,Portal.Area.AppearanceBehavior,Внешний вид и Поведение
 e055d9eb86e42ce8bed4a7d49d58d749,Portal\Category\Portal.Category.RU.xaml,Portal.Category.All,Все
 107f429adebebe191ad158b2ea3b94c3,Portal\Category\Portal.Category.RU.xaml,,
-50394e10758a1b3058c449d1d500bfaf,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Abstract,Абстракция
-ec857be8eb6bc16369063700a9b0e999,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Ambience,Атмосфера
-26fa0accd9daa22d55fde1e72933984e,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Animals,Животные
-d4ba75f77a78966471cdc8c7b9aa40e1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Animation,Анимация
-66686c3ac9a4b8ab917e601f11c20714,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Anime,Аниме
-19e29adbb6386bfb3f69480847bba59c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArchitectureandBuildings,Архитектура и Здания
-2668d8e1e00297f1db047cd13e591211,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArtandAbstract,Искусство и Абстракция
-3712588e0e2b2d4c3950d4713a6a1ed9,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArtificialIntelligence,Искусственный Интеллект
-8dec3bfa1041893d204f3547ad57feb8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Artworks,произведения искусства
-b9bc2924000dfc5be5f920f036a9f9d5,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Bard,Бард
-70d4bb6f7dba96341628894a6563298b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.BlackandWhite,Черно-белые
-32c50967d0ee4c3efac75762c06f0a28,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Brands,Бренды
-1886bcd43e06979660d5f4f28043b89a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CartoonandComics,Мультфильмы и Комиксы
-a89367a6c6a2d63011d76946be2b64f6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CitiesandPlaces,Города и Места
-a8a9939ae5066188eecef8f1218d253c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CloudsandSkies,Облака и Небеса
-58acd5021559fe92bdd83411a47bd447,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Colorful,Красочный
-01ecc482762cd67d515c519ec25b1c3e,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ColorfulGradients,Цветные Градиенты
-70a46739c5ca55665524e218d02a8d7d,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ComicBooks,Комиксы
-b64aae8ddbbe2ec182a76fbd867f18d6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Cute,Милый
-da5a43c05fbaff13d80e999080066917,Portal\Category\Portal.Category.RU.xaml,Portal.Category.DigitalArt,Цифровое Искусство
-6648b1305dbeb8a04f86bfe4296f6493,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Dynamic,Динамичные
-90078ee36eb20f5bba6749d5f6da54d6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Education,Образование
-a794c9e34d2354ddde1d3734d9ab3501,Portal\Category\Portal.Category.RU.xaml,Portal.Category.EnchantedForests,Волшебные Леса
-b493c31b9aeabdaef48d16e4bbbc4c83,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Fantasy,Фэнтези
-67d9248ff8454558bc11af1b6795251c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Fashion,Мода
-af551b6ecf2560b335f6c30611ee903a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.FilmandTV,Фильм и ТВ
-b278e52833eebd008bb182fe036c7569,Portal\Category\Portal.Category.RU.xaml,Portal.Category.FoodandDrinks,Еда и Напитки
-e0bdc8da7abe85e3cf0bc7044d237300,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Galaxy,Галактика
-29599e01b81bc3e3e3138d4640a96507,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Game,Игры
-118303c7c19e1bd976fc59abb9ce65be,Portal\Category\Portal.Category.RU.xaml,Portal.Category.GeometricPatterns,Геометрические Узоры
-cc097001afdc77701ea5a736cc2c895a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Halloween,Хэллоуин
-a95c0e6c369f09ed784e2daff77ba2f8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Holidays,Праздники
-f03773a9f571bf2794ea9ab578b0a646,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Horror,Ужас
-164f7e797a2c2555e2699e082b8aa44a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.InspirationalQuotes,Вдохновляющие Цитаты
-5c1fa2378a6d4b3dec7725e09fcd7cf6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.KidsandCartoon,Дети и Мультфильм
-fadfc3ffa396203088ffb8c15141c973,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Landscape,Пейзаж
-7490081d4884a19c62534cb80b2c4467,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Lifestyle,Образ Жизни
-13dcbd1adbbd618ffa4cf70c9d3f3ed7,Portal\Category\Portal.Category.RU.xaml,Portal.Category.LineArt,Линейное Искусство
-041302855f1efd32af8d22230fe102e8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Love,Любовь
-f3db39a9ad64a11a8192e7070fcfa32b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Medieval,Средневековье
-89613fd9c726d74eb458a8d6f73968c4,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Minimalist,Минимализм
-497712f8853e382f3e05542c942dac10,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Music,Музыка
-dbba20e6c7e36ce1550a2800f9f7cd20,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Nature,Природа
-b4f90feea7466ce427aa397be5a26a08,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Nightscapes,Ночные Пейзажи
-be3a3d19273ed3e0dc5f9d27d7b0b2c1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.PatternsandTextures,Узоры и Текстуры
-568277f39c5b8172330adfec5554129a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Persons,Люди
-60ae608235ab7a55fe5c12102cd48ee1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.PixelArt,Пиксельное Искусство
-42e79ba0fa8c119c17ceeecae70e3dcd,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Retro,Ретро
-6bc42e8b8e73690686620691e802395a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Science,Наука
-a7cc5e8633fbdc798a52325403043c2d,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ScienceFiction,Научная Фантастика
-d0eda5d8c3da7975887821a9c6cfa574,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Seasons,Сезоны
 fb0e5ea308ef0bbc07a008f7bbec2a96,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Sky,Небо
-25ba3fe03c64dde7fbf71db1f9469f7a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Software,Программное Oбеспечение
+550ea1d3129d5c732e0861e64ec099e8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.War,Война
+b9bc2924000dfc5be5f920f036a9f9d5,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Bard,Бард
+b64aae8ddbbe2ec182a76fbd867f18d6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Cute,Милый
+29599e01b81bc3e3e3138d4640a96507,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Game,Игры
+041302855f1efd32af8d22230fe102e8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Love,Любовь
+755c9b2f93d37244365bc373213bca47,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Time,Время
+66686c3ac9a4b8ab917e601f11c20714,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Anime,Аниме
+497712f8853e382f3e05542c942dac10,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Music,Музыка
+42e79ba0fa8c119c17ceeecae70e3dcd,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Retro,Ретро
 428a67a753a6fa9d2e5ee0b773383d4c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Space,Космос
+32c50967d0ee4c3efac75762c06f0a28,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Brands,Бренды
+e0bdc8da7abe85e3cf0bc7044d237300,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Galaxy,Галактика
+f03773a9f571bf2794ea9ab578b0a646,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Horror,Ужас
+dbba20e6c7e36ce1550a2800f9f7cd20,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Nature,Природа
 7506ffc8a084058737f27654a308f93c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Sports,Спорт
-b1216467b7b7f0d1779d66cf9c28716a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Superheroes,Супергерои
 58ae78f805cae4303747275ee4131af6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.System,Система
 f211a06948f2414e63e1e16f59fe1a61,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Tavern,Таверна
-e7d081677ddb9c0bd5bf472ad9f72b0c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Technology,Технологии
 be94c3393f0a8f0e48a2d19012ddbbde,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Temple,Храм
-755c9b2f93d37244365bc373213bca47,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Time,Время
-bd195a98517bf1604f9d4212fc311a9a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.UnderwaterandMarine,Подводный мир и Море
-8d75ef1316a6c6a8fc859bf0d153821b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Vehicles,Транспорт
+26fa0accd9daa22d55fde1e72933984e,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Animals,Животные
+6648b1305dbeb8a04f86bfe4296f6493,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Dynamic,Динамичные
+b493c31b9aeabdaef48d16e4bbbc4c83,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Fantasy,Фэнтези
+67d9248ff8454558bc11af1b6795251c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Fashion,Мода
+13dcbd1adbbd618ffa4cf70c9d3f3ed7,Portal\Category\Portal.Category.RU.xaml,Portal.Category.LineArt,Линейное Искусство
+568277f39c5b8172330adfec5554129a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Persons,Люди
+6bc42e8b8e73690686620691e802395a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Science,Наука
+d0eda5d8c3da7975887821a9c6cfa574,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Seasons,Сезоны
 53455395218e383f5facb7269f2f3cbb,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Vintage,Винтаж
-550ea1d3129d5c732e0861e64ec099e8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.War,Война
+50394e10758a1b3058c449d1d500bfaf,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Abstract,Абстракция
+ec857be8eb6bc16369063700a9b0e999,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Ambience,Атмосфера
+8dec3bfa1041893d204f3547ad57feb8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Artworks,произведения искусства
+58acd5021559fe92bdd83411a47bd447,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Colorful,Красочный
+a95c0e6c369f09ed784e2daff77ba2f8,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Holidays,Праздники
+f3db39a9ad64a11a8192e7070fcfa32b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Medieval,Средневековье
+60ae608235ab7a55fe5c12102cd48ee1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.PixelArt,Пиксельное Искусство
+25ba3fe03c64dde7fbf71db1f9469f7a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Software,Программное Oбеспечение
+8d75ef1316a6c6a8fc859bf0d153821b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Vehicles,Транспорт
+d4ba75f77a78966471cdc8c7b9aa40e1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Animation,Анимация
+90078ee36eb20f5bba6749d5f6da54d6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Education,Образование
+af551b6ecf2560b335f6c30611ee903a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.FilmandTV,Фильм и ТВ
+cc097001afdc77701ea5a736cc2c895a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Halloween,Хэллоуин
+fadfc3ffa396203088ffb8c15141c973,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Landscape,Пейзаж
+7490081d4884a19c62534cb80b2c4467,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Lifestyle,Образ Жизни
+70a46739c5ca55665524e218d02a8d7d,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ComicBooks,Комиксы
+da5a43c05fbaff13d80e999080066917,Portal\Category\Portal.Category.RU.xaml,Portal.Category.DigitalArt,Цифровое Искусство
+89613fd9c726d74eb458a8d6f73968c4,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Minimalist,Минимализм
+e7d081677ddb9c0bd5bf472ad9f72b0c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Technology,Технологии
+b4f90feea7466ce427aa397be5a26a08,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Nightscapes,Ночные Пейзажи
+b1216467b7b7f0d1779d66cf9c28716a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.Superheroes,Супергерои
+70d4bb6f7dba96341628894a6563298b,Portal\Category\Portal.Category.RU.xaml,Portal.Category.BlackandWhite,Черно-белые
+b278e52833eebd008bb182fe036c7569,Portal\Category\Portal.Category.RU.xaml,Portal.Category.FoodandDrinks,Еда и Напитки
+2668d8e1e00297f1db047cd13e591211,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArtandAbstract,Искусство и Абстракция
+a8a9939ae5066188eecef8f1218d253c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CloudsandSkies,Облака и Небеса
+5c1fa2378a6d4b3dec7725e09fcd7cf6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.KidsandCartoon,Дети и Мультфильм
+a7cc5e8633fbdc798a52325403043c2d,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ScienceFiction,Научная Фантастика
+a89367a6c6a2d63011d76946be2b64f6,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CitiesandPlaces,Города и Места
+1886bcd43e06979660d5f4f28043b89a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.CartoonandComics,Мультфильмы и Комиксы
+a794c9e34d2354ddde1d3734d9ab3501,Portal\Category\Portal.Category.RU.xaml,Portal.Category.EnchantedForests,Волшебные Леса
+01ecc482762cd67d515c519ec25b1c3e,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ColorfulGradients,Цветные Градиенты
+118303c7c19e1bd976fc59abb9ce65be,Portal\Category\Portal.Category.RU.xaml,Portal.Category.GeometricPatterns,Геометрические Узоры
+164f7e797a2c2555e2699e082b8aa44a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.InspirationalQuotes,Вдохновляющие Цитаты
+be3a3d19273ed3e0dc5f9d27d7b0b2c1,Portal\Category\Portal.Category.RU.xaml,Portal.Category.PatternsandTextures,Узоры и Текстуры
+bd195a98517bf1604f9d4212fc311a9a,Portal\Category\Portal.Category.RU.xaml,Portal.Category.UnderwaterandMarine,Подводный мир и Море
+3712588e0e2b2d4c3950d4713a6a1ed9,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArtificialIntelligence,Искусственный Интеллект
+19e29adbb6386bfb3f69480847bba59c,Portal\Category\Portal.Category.RU.xaml,Portal.Category.ArchitectureandBuildings,Архитектура и Здания
 c7d37623dfc973adc3e056ef35c7bc56,Portal\Controls\Portal.Controls.RU.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVHJheUljb24vUG9ydGFsLlRyYXlJY29uLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckhlbHAvUG9ydGFsLk90aGVySGVscC5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVFZGl0L1BvcnRhbC5UaGVtZUVkaXQuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlN0b3JlQ2FyZC9Qb3J0YWwuU3RvcmVDYXJkLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckFib3V0L1BvcnRhbC5PdGhlckFib3V0LlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQYWdpbmF0aW9uL1BvcnRhbC5QYWdpbmF0aW9uLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZVNoYXJlL1BvcnRhbC5UaGVtZVNoYXJlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJMaWJyYXJ5Q2FyZC9Qb3J0YWwuTGlicmFyeUNhcmQuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lRGVsZXRlL1BvcnRhbC5UaGVtZURlbGV0ZS5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXZpZXcvUG9ydGFsLlRoZW1lUmV2aWV3LlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZUltcG9ydC9Qb3J0YWwuVGhlbWVJbXBvcnQuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lQ3JlYXRlL1BvcnRhbC5UaGVtZUNyZWF0ZS5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXBvcnQvUG9ydGFsLlRoZW1lUmVwb3J0LlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJFeHBhbmRlckNhcmQvUG9ydGFsLkV4cGFuZGVyQ2FyZC5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iV2FsbHBhcGVyQ3ljbGluZy9Qb3J0YWwuV2FsbHBhcGVyQ3ljbGluZy5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRGlzcGxheVByZWZlcmVuY2VzL1BvcnRhbC5EaXNwbGF5UHJlZmVyZW5jZXMuUlUueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+
 2c3e430062dfcbf912706def4aced9ec,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.Stretch.Fill,Заполнить
 84cccce454f81efe83ec1e7d39257c5f,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.Stretch.None,Нет
 a2eb9a7b2cd04dcb03d191bf404a60d4,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.Stretch.Uniform,Пропорционально
 97e3f539626705b35dc4fb5d83ffc762,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.Stretch.UniformToFill,Заполнить с сохранением пропорций
 11ba2c8cff5adca34e735afa1a944b64,Portal\Enum\Portal.Enum.RU.xaml,,
-82a42adac1427846c441ce281c57e186,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.SortModeType.None,Нет
 e4af2badb978425ed8eae934458e3ddc,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.SortModeType.Name,Имя
+82a42adac1427846c441ce281c57e186,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.SortModeType.None,Нет
 a3fb493b65ea95016dba682d09f62f4c,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.SortModeType.Creation,Создание
 01bc740a672419793750b092f0e78aaf,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.SortModeType.Modification,Изменение
 facf884b7661cfa77caf604b48493212,Portal\Enum\Portal.Enum.RU.xaml,,
@@ -410,9 +410,9 @@ f5855cc675ab019e9b0fcf91f1464854,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.Per
 446867f212d467d3e8b02e752f652c2a,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.PerformanceType.Pause,Пауза
 67629ef28857cc34f9229f5f5d67a860,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.PerformanceType.Resume,Возобновить
 725806b73c06e9776e99994af5795b31,Portal\Enum\Portal.Enum.RU.xaml,,
+3f36d7bcde3872ccb6925547ddd09ddb,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.Auto,Авто
 87b48d3914117deada8026785cd65186,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.Mica,Мика
 b6cd8fa014746cf2ce82c706fe3cde73,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.None,Нет
-3f36d7bcde3872ccb6925547ddd09ddb,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.Auto,Авто
 c9e01d8c002cc5a7065be36d7cd29295,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.Tabbed,Вкладки
 90a2b5b40d780ba44b88f6bcb55dd8ee,Portal\Enum\Portal.Enum.RU.xaml,Portal.Enum.WindowBackdropType.Acrylic,Акрил
 ba910de071ec7a034ec186aa054543ea,Portal\Enum\Portal.Enum.RU.xaml,,
@@ -522,28 +522,28 @@ ef1265175a3be592cfb4332181fb645f,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
 7a23cefb46a698afa4931609bace9efa,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuHelpTip,Просмотр справки
 24009c2ebb3ae92738667a6258efb91b,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuAboutTip,Информация о программе
 1925a1c1a37d726749fbc35b24185fe9,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
-711c833e3bd023257e6a37877bbead14,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLibrary,Библиотека
 9509dee8e866caa00717a69e9c84c056,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuStore,Магазин
+711c833e3bd023257e6a37877bbead14,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLibrary,Библиотека
 7f92fa47a8692346a581aa02f53f8b37,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
-53848201f3802193eafb3b6fbed38823,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLibraryTip,Библиотека тем
 552da0a6e5d77d1571015975cb9422e1,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuStoreTip,Магазин тем
+53848201f3802193eafb3b6fbed38823,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLibraryTip,Библиотека тем
 0913f4648fc545b20477d35f72e7e9dc,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
+36f69dcbf0a398a9c88178fb36b3c068,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOther,Прочее
+e4fda8ad876795e10cadc0bae895d31a,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonate,Пожертвование
+fe2c98f55807ab119071a1271c43f717,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuSystem,Система
 da14f5db16a0bd73b28f93f9aa59e9ea,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuGeneral,Общие
 871011e8f608227c5271b71b1bd79294,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPersonal,Личные
-eba95645341d9ab01e631848f64768df,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPerformance,Производительность
 1ccb226bec3fe0a7bfb8a7562d27deba,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuWallpaper,Обои
-fe2c98f55807ab119071a1271c43f717,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuSystem,Система
-e4fda8ad876795e10cadc0bae895d31a,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonate,Пожертвование
-36f69dcbf0a398a9c88178fb36b3c068,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOther,Прочее
+eba95645341d9ab01e631848f64768df,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPerformance,Производительность
 b9b5153b259edad4deb5047c7edc735f,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
 b568ef4f3dc3e53cc431b02e7384ca03,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuBackTip,Назад
+b076c7f2f41cdc59f1c9cf8a450d10b7,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOtherTip,Другие настройки
+832d66948c344d3f2dca81f5e3a81785,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonateTip,Настройки пожертвования
+4809cc424392279fa8116a1523219483,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuSystemTip,Настройки системы
 df75019e080dfb8ca38fbe029d980ee3,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuGeneralTip,Общие настройки
 530542870b9637037ae892a30b5554ae,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPersonalTip,Личные настройки
-1b7c83e8e152e0efd544c2a027e39399,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPerformanceTip,Настройки производительности
 0a0c0abb9206bb7f4c95ba49526d3a97,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuWallpaperTip,Настройки обоев
-4809cc424392279fa8116a1523219483,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuSystemTip,Настройки системы
-832d66948c344d3f2dca81f5e3a81785,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonateTip,Настройки пожертвования
-b076c7f2f41cdc59f1c9cf8a450d10b7,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOtherTip,Другие настройки
+1b7c83e8e152e0efd544c2a027e39399,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuPerformanceTip,Настройки производительности
 625dd71faf9457ae20866fc32d9668cc,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
 a172aebc7ada74e000fa15bc40485ea9,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuSettingTip,Настройки
 beba4dae0a4d21282ab03a5ce5ef565a,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
@@ -551,20 +551,20 @@ beba4dae0a4d21282ab03a5ce5ef565a,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
 cfc1561f1b3e12cce49726c897abbc5c,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
 ffea9cea3ccf6701c309d454b4e61a62,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.SearchBoxTip,"Ищете то, что вам нужно?"
 88ba1d08794a12e6e7f07753762d0f5b,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
-618a49c02c868707c447e6609a4a9576,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLightTip,Светлая тема
 e01f3167b60b534a99ca44cf563f3b7e,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDarkTip,Тёмная тема
+618a49c02c868707c447e6609a4a9576,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuLightTip,Светлая тема
 1312bca6b781f86a57f3f3eb4b797437,Portal\MainWindow\Portal.MainWindow.RU.xaml,,
+06b75557d80bb66cf4ecff35b98f39a8,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOtherOptionsTip,Другие параметры
+1a8a054352b83280d1240cc56d4e694f,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonateOptionsTip,Параметры пожертвования
 7ea71a467256474db585fef084f39d88,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuCreateWallpaperTip,Создать обои
 c6bdd00773f7d362b899a0b297045767,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuWallpaperCyclingTip,Циклическая смена обоев
 6b57cf2004aa992144d9513a1dee6e60,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDisplayPreferencesTip,Параметры отображения
-1a8a054352b83280d1240cc56d4e694f,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuDonateOptionsTip,Параметры пожертвования
-06b75557d80bb66cf4ecff35b98f39a8,Portal\MainWindow\Portal.MainWindow.RU.xaml,Portal.MainWindow.MenuOtherOptionsTip,Другие параметры
 ff3831eefa7ff897f363e76e39be404b,Portal\SettingPage\Portal.SettingPage.RU.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iT3RoZXJTZXR0aW5nUGFnZS9Qb3J0YWwuT3RoZXJTZXR0aW5nUGFnZS5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRG9uYXRlU2V0dGluZ1BhZ2UvUG9ydGFsLkRvbmF0ZVNldHRpbmdQYWdlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJTeXN0ZW1TZXR0aW5nUGFnZS9Qb3J0YWwuU3lzdGVtU2V0dGluZ1BhZ2UuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkdlbmVyYWxTZXR0aW5nUGFnZS9Qb3J0YWwuR2VuZXJhbFNldHRpbmdQYWdlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQZXJzb25hbFNldHRpbmdQYWdlL1BvcnRhbC5QZXJzb25hbFNldHRpbmdQYWdlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYWxscGFwZXJTZXR0aW5nUGFnZS9Qb3J0YWwuV2FsbHBhcGVyU2V0dGluZ1BhZ2UuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UvUG9ydGFsLlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UuUlUueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+
 c511c180517deacf6ccefd6d3ab65b0f,Portal\StorePage\Portal.StorePage.RU.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbFN0b3JlUGFnZS9Qb3J0YWwuRnVsbFN0b3JlUGFnZS5SVS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iQnJva2VuU3RvcmVQYWdlL1BvcnRhbC5Ccm9rZW5TdG9yZVBhZ2UuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaFN0b3JlUGFnZS9Qb3J0YWwuU2VhcmNoU3RvcmVQYWdlLlJVLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmtub3duU3RvcmVQYWdlL1BvcnRhbC5Vbmtub3duU3RvcmVQYWdlLlJVLnhhbWwiIC8+DQogICAgPC9SZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg==
 432493c89668532845a0d1927cbc31a5,Portal\StorePage\Portal.StorePage.RU.xaml,,
 70d44c7b934aa05390f83f2975b3424f,Portal\StorePage\Portal.StorePage.RU.xaml,Portal.StorePage.Title,StorePage
-c0038774fff6f140e82554697432dd7a,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,Portal.DisplayPreferences.Title,Параметры отображения
 161ccff527ba03a72d318d83c957e86f,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,Portal.DisplayPreferences.Close,Закрыть
+c0038774fff6f140e82554697432dd7a,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,Portal.DisplayPreferences.Title,Параметры отображения
 1f234325b2d453c67300d768fa418eef,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,,
 81959ee4fc20b9f6980ff3531c74b1f6,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,Portal.DisplayPreferences.Expander,Режим размещения
 33732cbb2a1a921489e6842ba455b421,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.RU.xaml,Portal.DisplayPreferences.Expander.Description,Способ применения обоев к активным экранам.
@@ -591,16 +591,16 @@ b9f0eee7fb726bd26dbbe89d4c82d6dd,Portal\Controls\ExpanderCard\Portal.ExpanderCar
 700dc81a7478605881c5855ed488b82d,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MoreTip,Еще
 b4bacc114592e02a34e89bf17e39a69d,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.VersionTip,Для использования этой темы обновите Sucrose
 91b48e01c3c14d783f5a923bbdbb8d56,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,,
-e1088d86e50fa9977b64384e02eef811,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuReview,Обзор
 750a8f5b3dffdf2ebc04ead580358b68,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuUse,Использовать
+86dc8d404879890b53139aae2147bf1e,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuEdit,Изменить
+91c025d7db9df47cc0437fc01fe3375b,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuFind,Поиск
+83956d57ab2b0f5e88e122fc4c5a8e3c,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuShare,Поделиться
+63f9a2d744396df529bec989369fb2be,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuDelete,Удалить
+e1088d86e50fa9977b64384e02eef811,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuReview,Обзор
 fc676a12f4af5ee61a4a5f98fcbd138f,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuPreview,Предпросмотр
 37b339011439c529f08b92a5ac12926c,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuCustomize,Настроить
 83920a0a7e72f6d0c67409ca29d646da,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuCyclingAdd,Добавить в Цикл
 69871b54ba5e52b39ddb2d3e98092b1c,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuCyclingRemove,Удалить из Цикла
-91c025d7db9df47cc0437fc01fe3375b,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuFind,Поиск
-83956d57ab2b0f5e88e122fc4c5a8e3c,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuShare,Поделиться
-63f9a2d744396df529bec989369fb2be,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuDelete,Удалить
-86dc8d404879890b53139aae2147bf1e,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.MenuEdit,Изменить
 3c804ec3ec2eeed452a6d12359a85c91,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,,
 7c09702e915c346dd5315762b015b623,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.Closed,Закрыто
 f98e3cc491385048abcfcedb1f9fabdd,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.Paused,Приостановлено
@@ -608,8 +608,8 @@ bad339e286761f5765b20a74fe26fe9e,Portal\Controls\LibraryCard\Portal.LibraryCard.
 f0b5ab1af612055dabcbfd21139fb583,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.Selected,Выбрано
 913071e90f1ff3c64888315057d6d672,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,,
 b4e2e0f3a4bd00c4aef80726ff6bcae7,Portal\Controls\LibraryCard\Portal.LibraryCard.RU.xaml,Portal.LibraryCard.Incompatible,Несовместимый
-b93fcf88e88d933959f9b376e77f4a8d,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.Title,О нас
 29eba86c0b2981e3576fccb6959713f7,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.Close,Закрыть
+b93fcf88e88d933959f9b376e77f4a8d,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.Title,О нас
 7bfd7667c854e6bfe2c7223baefec729,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,,
 2a9c40945adfd4039b1aabf4e60694a8,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.About,"Привет, меня зовут Bayram Emekli, также известного под именем Taiizor. Я разработчик приложения Sucrose Wallpaper Engine, которое является бесплатным и с открытым исходным кодом. Спасибо за использование моего приложения."
 edbba8e70f239ca15bfe3c6d763f5731,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,,
@@ -627,8 +627,8 @@ ea9c45f62c16d2cc21b6bee6d175120a,Portal\Controls\OtherAbout\Portal.OtherAbout.RU
 186bb1cf129f17377d76db3f1445c3e9,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.PrivacyPolicy,Политика конфиденциальности
 574ef02dcf51e3295d8d7651c52e0257,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,,
 acb7275406d4f1b50794584a06e65234,Portal\Controls\OtherAbout\Portal.OtherAbout.RU.xaml,Portal.OtherAbout.CodeOfConduct,Правила поведения
-6649fc04b82c4064fcf174ffd57bab4f,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,Portal.OtherHelp.Title,Помощь
 1370531adc947de346108326fda1bce2,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,Portal.OtherHelp.Close,Закрыть
+6649fc04b82c4064fcf174ffd57bab4f,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,Portal.OtherHelp.Title,Помощь
 ff349d2bfc3c3fb1b2425d5f609b2d75,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,,
 8854d419b4893c194816dda97349aa14,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,Portal.OtherHelp.WebPage,Веб-сайт
 18cc09d88c7f78dd01b8938421c1c751,Portal\Controls\OtherHelp\Portal.OtherHelp.RU.xaml,Portal.OtherHelp.WebPage.Description,Официальный веб-сайт Sucrose Wallpaper Engine
@@ -650,10 +650,10 @@ d193e46672d2dfaa9b09086f4e4b3bc7,Portal\Controls\StoreCard\Portal.StoreCard.RU.x
 d1fa279b6f0dbcf1762ac87f3944e73e,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,,
 06db1d23bdd6ba28ce4d877fb9872495,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.VersionTip,Для использования этой темы обновите Sucrose
 3981dde859798ab3137bf979da6584a2,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,,
-ffa883505a946cd62100e3a80ed820f3,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuUpdating,Проверка Oбновлений
+87e4fe7fce64d85e795bedbade2d9751,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuReport,Сообщить о проблеме
 e3744056bcb83e9a5a89f8acd81a9000,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuUpdate,Проверить Oбновления
 f90ebab7154b09a843daf4c2da21d49a,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuInstall,Установить
-87e4fe7fce64d85e795bedbade2d9751,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuReport,Сообщить о проблеме
+ffa883505a946cd62100e3a80ed820f3,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.MenuUpdating,Проверка Oбновлений
 ad164db8a802cc4fbb9e07f370c9ce1b,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,,
 cae9438c353aea43e548c4acae2fe003,Portal\Controls\StoreCard\Portal.StoreCard.RU.xaml,Portal.StoreCard.Incompatible,Несовместимый
 009983ecf86a6c17c57011e97b2d9ec8,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.Title,Создание темы
@@ -682,27 +682,27 @@ aa4b7b8eb0e9f30ced4a450820f67fcd,Portal\Controls\ThemeCreate\Portal.ThemeCreate.
 05e0c2fe936b239993ee399827356c4d,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,,
 4ad6f66469f3bf17c349051043a4deed,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeUrl,Url
 32c9f1525f14d3b59a191739f027bf06,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeWeb,Web
-be3a9e9c5bf4ce073fb44023c4f51e8f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeApplication,Приложение
-93e0bc8b48b774afb3727865b97fc939,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeThumbnail,Обложка
-5bc4b2be1597735258e6c8b9f5d379f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemePreview,Предварительный просмотр
+e11b3c614d985ae07f222d90f8069f67,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTags,Теги
 db2ff8d603c4c45d7e98bde8aebcddaa,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTitle,Название
-01dbd1d9348f8f1ab696beb8b1a1b5b5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeDescription,Описание
 00b01c08cd5d67a2ab520cc16200b3db,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeAuthor,Автор
 87163685cb8a76832f7fb5e85b8e9982,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeContact,Контакт
-e11b3c614d985ae07f222d90f8069f67,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTags,Теги
+5bc4b2be1597735258e6c8b9f5d379f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemePreview,Предварительный просмотр
 ad20097c745cfc131ac271df268159f0,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeArguments,Аргументы
+93e0bc8b48b774afb3727865b97fc939,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeThumbnail,Обложка
+be3a9e9c5bf4ce073fb44023c4f51e8f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeApplication,Приложение
+01dbd1d9348f8f1ab696beb8b1a1b5b5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeDescription,Описание
 215f0b16084698fc15668961c75990b6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,,
 18c97bf791d3293a2ae3f70d1a89ecf1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeUrl.Hint,"Пожалуйста, введите действительный Url-адрес"
 4723ca1e193b65b13d21387d02a76451,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeWeb.Hint,Выберите Web-страницу
-fa036a72aa5df5bb0fc6508d1fcf7cc1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeApplication.Hint,Выберите файл приложения
-999956c68822a7fd2c4051af1ab6c358,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeThumbnail.Hint,Выберите обложку
-78ec045dab354ee773d26b3296c44a49,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemePreview.Hint,Выберите файл предварительного просмотра
+383cfd8a01f6d46421d0894b1ba0a2e3,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTags.Hint,"Пожалуйста, введите действительные теги темы"
 b432511260b1b3eb12fe725fcd649475,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTitle.Hint,"Пожалуйста, введите действительное название"
-360a3e39f6db1e401c4eebf3e4ac5ae1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeDescription.Hint,"Пожалуйста, введите действительное описание"
 ca8b1b6462d03498cb6dffc4a2e6cd65,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeAuthor.Hint,"Пожалуйста, введите действительное имя автора"
 ea5b2068a606d1d4450b965a9d8d9364,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeContact.Hint,"Пожалуйста, введите действительный контакт"
-383cfd8a01f6d46421d0894b1ba0a2e3,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeTags.Hint,"Пожалуйста, введите действительные теги темы"
+78ec045dab354ee773d26b3296c44a49,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemePreview.Hint,Выберите файл предварительного просмотра
 fd9a46039adaf9c731d33b1c1ebf56ca,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeArguments.Hint,"Пожалуйста, введите действительные аргументы приложения"
+999956c68822a7fd2c4051af1ab6c358,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeThumbnail.Hint,Выберите обложку
+fa036a72aa5df5bb0fc6508d1fcf7cc1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeApplication.Hint,Выберите файл приложения
+360a3e39f6db1e401c4eebf3e4ac5ae1,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.ThemeDescription.Hint,"Пожалуйста, введите действительное описание"
 52ad30047a4866f1345ad95f41a5a3ac,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,,
 11ecc1c8b256d9d97fdeb2209eae1b2d,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.DragDrop.Delete,Удалить
 3022a397a5fa44ef855a1188561dadc5,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,,
@@ -738,50 +738,50 @@ a77a8a530e9183c713997bc5d16afe61,Portal\Controls\ThemeCreate\Portal.ThemeCreate.
 c7b8f78b73400914184cce3e1892740a,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.Access.Close,Понял
 67a8dd05c5e51aa988395ed143cf08a2,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.Access.Title,Предупреждение о доступе
 997d8321522835240b97fe513351003a,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Portal.ThemeCreate.Access.Message,У вас нет разрешения на доступ к выбранному файлу.
+4dcf5d612ba76282e8b609f4876f181b,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.Close,Закрыть
 d2dc2c7c3ac037c481aaad6b761ce95a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.Title,Удаление темы
 b3bc36e2d7cd51b35ebc4e8173905563,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.Delete,Удалить
-4dcf5d612ba76282e8b609f4876f181b,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.Close,Закрыть
 ca5a94dba69d9dcaa0bd949679cbeee5,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,,
-712940190161339f12e06c1b6588ce65,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTitle,Заголовок
-8bdf52ec01a21243706bcd8630724d33,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeDescription,Описание
-ab2c99cba933480d4dcd3b75a32246ad,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeType,Тип
-95248ee69d553daee11c9b0ffaf7848d,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTypeName,Gif
-1180b49dcd7e1a8e9bb79a006d7e0918,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeAuthor,Автор
-319bb63ff53f71be146a76b452118877,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeAuthorName,Taiizor
 5bec265ad93be61c389b59a23e6fd270,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeSize,Размер
-406d45ccda4f4df82d96e240fcc013d2,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeSizeTotal,0 b
-7a3756dbcb3e37bc9e95b681fdfd1f7a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeVersion,Версия
-4ff9040cc8896180f4e7fc9edc4a36e1,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeVersionText,0.0.0.0 (0.0.0.0)
 8b478eece67d661f43de9f55cff4ef1c,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTags,Теги
-b8190e86378221fa0a2197e4c8cc4232,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTagsText,Отсутствуют
+ab2c99cba933480d4dcd3b75a32246ad,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeType,Тип
+712940190161339f12e06c1b6588ce65,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTitle,Заголовок
+1180b49dcd7e1a8e9bb79a006d7e0918,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeAuthor,Автор
 b32ad70b1d7db5c29a583ff7a6f681d8,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeCreate,Создано
-4077282d877670e8728ab891ef172cb6,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeCreateDate,Неизвестно
 b27b9534db4cd13a5c4aa75569266638,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeModify,Изменено
+7a3756dbcb3e37bc9e95b681fdfd1f7a,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeVersion,Версия
+b8190e86378221fa0a2197e4c8cc4232,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTagsText,Отсутствуют
+95248ee69d553daee11c9b0ffaf7848d,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeTypeName,Gif
+406d45ccda4f4df82d96e240fcc013d2,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeSizeTotal,0 b
+319bb63ff53f71be146a76b452118877,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeAuthorName,Taiizor
+4077282d877670e8728ab891ef172cb6,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeCreateDate,Неизвестно
 a02afc195f53a49c2812772df106f850,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeModifyDate,Неизвестно
-68b9c2ea4e0f7c3ed0680ae2f6b66d8d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.Title,Редактирование темы
-b910b9c659b745c17f77353a0116b889,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.Close,Закрыть
+8bdf52ec01a21243706bcd8630724d33,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeDescription,Описание
+4ff9040cc8896180f4e7fc9edc4a36e1,Portal\Controls\ThemeDelete\Portal.ThemeDelete.RU.xaml,Portal.ThemeDelete.ThemeVersionText,0.0.0.0 (0.0.0.0)
 f40d68095675b903309f28319815b50f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.Save,Сохранить
+b910b9c659b745c17f77353a0116b889,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.Close,Закрыть
+68b9c2ea4e0f7c3ed0680ae2f6b66d8d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.Title,Редактирование темы
 147bf92dc15350b0c51baf21cc188fb6,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,,
+b6f580755d16221de4af5dacbb3e2d6f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTags,Теги
 17e3ca9a33a7fe6cf3ed0b341b84778c,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTitle,Заголовок
-24c0c3b2a16469e819979f087ba89047,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeDescription,Описание
 dbc7c7005b027a827c7c0dab3953f913,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeAuthor,Автор
 0b4348ac2a33b907602b0711fea95d19,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeContact,Контакт
-b6f580755d16221de4af5dacbb3e2d6f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTags,Теги
 92f2ec14e09b64cc1b28059132c7be6e,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeArguments,Аргументы
+24c0c3b2a16469e819979f087ba89047,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeDescription,Описание
 6a1b6b6fcbd56af49b4726b5b9b9cedc,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,,
+14381c4455471c8de52ea9a83330f413,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTags.Hint,"Пожалуйста, введите действительные теги темы"
 088b46c8b95b3e65023b24980090d4db,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTitle.Hint,"Пожалуйста, введите действительное название"
-7dc8c7f9bb1f73a7ea8ef620803eb89d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeDescription.Hint,"Пожалуйста, введите действительное описание"
 4f54d6a8409eaad7ad4fd6eab141d492,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeAuthor.Hint,"Пожалуйста, введите действительное имя автора"
 5dbeb98b6edda40cc1e5d50ae8e42c0f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeContact.Hint,"Пожалуйста, введите действительный контакт"
-14381c4455471c8de52ea9a83330f413,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeTags.Hint,"Пожалуйста, введите действительные теги темы"
 908373fb68f5bd5125aa1283a67280e9,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeArguments.Hint,"Пожалуйста, введите действительные аргументы приложения"
-c02f06d4da9a8fbb3ae5def27402313f,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,Portal.ThemeImport.Title,Импорт темы
+7dc8c7f9bb1f73a7ea8ef620803eb89d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.RU.xaml,Portal.ThemeEdit.ThemeDescription.Hint,"Пожалуйста, введите действительное описание"
 958793eb53569f07938acb16821bcc89,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,Portal.ThemeImport.Close,Закрыть
+c02f06d4da9a8fbb3ae5def27402313f,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,Portal.ThemeImport.Title,Импорт темы
 9077de6ed305fd09f7b8f9c800e32860,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,,
 90ddf4e857b39a22a705838b2c529079,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,Portal.ThemeImport.Info,Информация о теме
 639cd5ed38ade11d9fdd33dce469b584,Portal\Controls\ThemeImport\Portal.ThemeImport.RU.xaml,Portal.ThemeImport.Type,Причины
-294788ffcfddf1b2c0fe2bd6f77234b1,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Title,Сообщить о Теме
 bd6a831ab3b99841e0784c0e63cb3770,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Close,Закрыть
+294788ffcfddf1b2c0fe2bd6f77234b1,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Title,Сообщить о Теме
 81787b40657e60c1a80ec8991fb77b5c,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,,
 cd2713db95383fff21f70c241b3f78de,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.ThemeTitle,Название
 291a10e1bfcfd925ccd1939f0bdaf40f,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.ThemeDescription,Описание
@@ -807,45 +807,45 @@ c3996c7e65bbfbcbdea6248219382ab3,Portal\Controls\ThemeReport\Portal.ThemeReport.
 0937012cfd4779246306ce7cf18405ba,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,,
 c43c6d31b145acd5c13c16f03e8e4152,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Reporter.Network,Для сообщения требуется подключение к Интернету.
 ad62861d55fc0cfa3a19301d87e4f0c4,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,,
-61bdb07b475b66fe9d6699e8ca57a618,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Reporter.Report,Сообщить
 0d6d42e8ee2fa8739c6b732ce026ed9f,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Reporter.GitHub,Сообщить из GitHub
-6cece8b45be42c73923a643b30b05ec4,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.Title,Обзор темы
+61bdb07b475b66fe9d6699e8ca57a618,Portal\Controls\ThemeReport\Portal.ThemeReport.RU.xaml,Portal.ThemeReport.Reporter.Report,Сообщить
 a12e401a68d5a7904e002baea3621a0c,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.Close,Закрыть
+6cece8b45be42c73923a643b30b05ec4,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.Title,Обзор темы
 33e9e6df43db661e3356bfa3bdee8d9c,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,,
-3dd28ab1b867c37488588924165d2fbe,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTitle,Заголовок
-4e40eeed08da8b2e20f947b86e3070f7,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeDescription,Описание
-5bbedb290ee1103c1e6c1439e2699095,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeType,Тип
-d559f87df230f8c2abc9af3c8746350a,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTypeName,Gif
-08cab4b955c95b9221638f3b8a84ae31,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeAuthor,Автор
-8060c62403fe93651e235e73302a6c8b,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeAuthorName,Taiizor
 b326f5ec0a567bd1b5a386beaa384159,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeSize,Размер
-c7313b450dc96f8383b885a9f07cb304,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeSizeTotal,0 b
-a720f8597a91eda8da9957d81fcfeb94,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeVersion,Версия
-ad8ab1ed868d463fcf6f1514fe68de5c,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0)
 4289d5e40fc6afc4668a660122081467,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTags,Теги
-35f58383aab6d8210cafaa7e41b156f0,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTagsText,Отсутствуют
+5bbedb290ee1103c1e6c1439e2699095,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeType,Тип
+3dd28ab1b867c37488588924165d2fbe,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTitle,Заголовок
+08cab4b955c95b9221638f3b8a84ae31,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeAuthor,Автор
 4f2231a88a46ce033cb27668dbd2ad95,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeCreate,Создано
-7e74fc83a3a72118a183bfa40bc398ef,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeCreateDate,Неизвестно
 86a58eed080cabaeabe16b987e908e1b,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeModify,Изменено
-7e9794bdb291bae04a83d4b22568d43e,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeModifyDate,Неизвестно
 7887537297e876367a59aa1bce00b432,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeContact,Контактная информация по теме
-d35ccb1f26a725f0298e1406ce28df59,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.Title,Поделиться Темой
+a720f8597a91eda8da9957d81fcfeb94,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeVersion,Версия
+35f58383aab6d8210cafaa7e41b156f0,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTagsText,Отсутствуют
+d559f87df230f8c2abc9af3c8746350a,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeTypeName,Gif
+c7313b450dc96f8383b885a9f07cb304,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeSizeTotal,0 b
+8060c62403fe93651e235e73302a6c8b,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeAuthorName,Taiizor
+7e74fc83a3a72118a183bfa40bc398ef,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeCreateDate,Неизвестно
+7e9794bdb291bae04a83d4b22568d43e,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeModifyDate,Неизвестно
+4e40eeed08da8b2e20f947b86e3070f7,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeDescription,Описание
+ad8ab1ed868d463fcf6f1514fe68de5c,Portal\Controls\ThemeReview\Portal.ThemeReview.RU.xaml,Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0)
 19217563718a1b73215368a8523ddcf9,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.Close,Закрыть
+d35ccb1f26a725f0298e1406ce28df59,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.Title,Поделиться Темой
 4a6a31cc8a0d5a5f3cde050cfe9f279a,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 962c49583cde8b244ce7a7438e1d6413,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemeTitle,Заголовок
 df4ba200af9fdb60fd41a61f1460963e,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemeDescription,Описание
 a7a1298517cae703030ee3d96c88eddb,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
+c65e7c025dd4d196c565a3d5e49549e4,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemeCopy,Копировать Cсылку
 9693d74fc7005da653b4aaacc0d3b22a,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemeExport,Экспорт
 5b4ce649e9fc6a50aa5145eed1a5c543,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish,Опубликовать в Магазине
-c65e7c025dd4d196c565a3d5e49549e4,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemeCopy,Копировать Cсылку
 4fbbebe81d936a5bf580355339a37cb2,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 2898e0019da26b9bdd2883ec85761207,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Publish,Опубликовать
 215af984440bd50b3eac7aa185edcb84,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Preparing,Подготовка к публикации начнется в ближайшее время..
 4cc377642d64adbc26185abaa42a4435,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 139e2b84ce4af0938995a44731e5457e,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Limit,Проверяется ваш дневной лимит загрузки тем..
 e5668b8d5138a5f83c3db07cd2e40c15,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
-2a4626619b61a2a15195998861623b81,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Limit.Exceeded,"Вы достигли дневного лимита загрузки тем, пожалуйста, попробуйте позже."
 937b5e32331d9b7ee9681b4b366aed69,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Limit.Error,Произошла неизвестная ошибка при проверке вашего дневного лимита загрузки тем.
+2a4626619b61a2a15195998861623b81,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Limit.Exceeded,"Вы достигли дневного лимита загрузки тем, пожалуйста, попробуйте позже."
 01bd4fbcd7d370f39bff2e58d899a14c,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 3fd8f171a5e70b3ae44545c1c89e231b,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Compress,Тема сжимается перед загрузкой..
 539a2c20ad327af075ab32732df1a090,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Compress.Error,Произошла ошибка при сжатии темы.
@@ -859,23 +859,23 @@ c5a2ceadbb468a5b075acb2d1c4da105,Portal\Controls\ThemeShare\Portal.ThemeShare.RU
 ae764e6cfeb2e0591b27f818ceb1fd95,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 4c1067c9d9aa674ccebf28911ce37bda,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload,Сжатая тема готовится к загрузке..
 a01592c837f5dde7eb6cecc2c0896965,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
-832f9d670d9c1c71cafb4f16c6f33cef,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload.Start,Сжатая тема загружается..
 af73fe1ff22e323830f9ba5de94d65b6,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload.Error,Произошла неизвестная ошибка при загрузке сжатой темы.
+832f9d670d9c1c71cafb4f16c6f33cef,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload.Start,Сжатая тема загружается..
 3c4e5e5d9a4fba891abce512a46998e1,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload.Errored,Произошла неожиданная ошибка при загрузке сжатой темы: {0}.
 98bfb88ba757192a45871914f44b76c8,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Upload.Succeded,Сжатая тема успешно загружена и будет опубликована в магазине после проверки.
 f094b4286f1e00540ae233b1caecf918,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
-2eec9032ca3ddffd85ef0e4fc8722b6d,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.SaveDialogFilter,ZIP Файлы (*.zip)|*.zip|Все Файлы (*.*)|*.*
 70ce6be10a91772432c45c1606069496,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.SaveDialogTitle,Сохранить файл темы
+2eec9032ca3ddffd85ef0e4fc8722b6d,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.SaveDialogFilter,ZIP Файлы (*.zip)|*.zip|Все Файлы (*.*)|*.*
 903ecece273fcf9bced5673e9ff5a605,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,,
 a8510c25f0e065985c536aa686fd28ab,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Already.Close,Понял
 f9134596e02f5ee6a712c5cec43fe81b,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Already.Title,Предупреждение о Публикации
 8f60d7852e340b37afba76c472a12f0c,Portal\Controls\ThemeShare\Portal.ThemeShare.RU.xaml,Portal.ThemeShare.ThemePublish.Already.Message,Выбранная тема уже загружена из магазина.
-711d72719f52b77421f7c4a8408b91d8,Portal\Controls\TrayIcon\Portal.TrayIcon.RU.xaml,Portal.TrayIcon.Title,Системный Трей
 31c115bd25b18b506825e95ac8a30e87,Portal\Controls\TrayIcon\Portal.TrayIcon.RU.xaml,Portal.TrayIcon.Close,Закрыть
+711d72719f52b77421f7c4a8408b91d8,Portal\Controls\TrayIcon\Portal.TrayIcon.RU.xaml,Portal.TrayIcon.Title,Системный Трей
 0526833f9c5c2b4785c1b49490ddf336,Portal\Controls\TrayIcon\Portal.TrayIcon.RU.xaml,,
 11901e04cafe9fe58215473ce4212b13,Portal\Controls\TrayIcon\Portal.TrayIcon.RU.xaml,Portal.TrayIcon.Message,"Sucrose было свернуто в системный трей. Щелкните правой кнопкой мыши по значку Sucrose, чтобы продолжить."
-44427549ab82d0266cdb2d4948106249,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,Portal.WallpaperCycling.Title,Циклическая Смена Обоев
 e7ae884f2ffa3cc25ec45c40538fbda2,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,Portal.WallpaperCycling.Close,Закрыть
+44427549ab82d0266cdb2d4948106249,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,Portal.WallpaperCycling.Title,Циклическая Смена Обоев
 6b9f89c1b7be2091cb4d0022aaea31e3,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,,
 b0b21b9c835aba780d05f0d5fe06cc20,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,Portal.WallpaperCycling.Cycling,Автоматическая Циклическая Смена Обоев
 91c058c6d6ad5522a085491a9adb077c,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.RU.xaml,Portal.WallpaperCycling.Cycling.Description,Изменяются ли обои автоматически или нет.
@@ -904,14 +904,14 @@ e97ac05e044477106c2ef96da0b54698,Portal\LibraryPage\SearchLibraryPage\Portal.Sea
 5b2e15520996885c7d3f4c42ec31f717,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.DonateMenu,Меню пожертвований
 bb2b317bc2af000a4940d4527ac5d8a0,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.DonateMenu.Description,Видимость меню пожертвований в интерфейсе.
 f0fa2dcb303d3aa3243c396fa63d6a13,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,,
-acf88ad6d99bd49f695dfe6456b8de1c,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,Показать
 af8305d147032267bde92676b27bd686,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide,Скрыть
+acf88ad6d99bd49f695dfe6456b8de1c,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,Показать
 fed619dc24bfe737237497649a86f261,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,,
 14660d3236b52e7819d2b758e1b4cfd8,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.Advertising,Рекламная поддержка
 2dc888cedd9ab06f245bb0a8596d2489,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.Advertising.Description,"Поддержите разработку приложения, просматривая рекламу."
 09f2d29c083e138822373dd54b5e036b,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,,
-727c8640a92167cd1fd35b0111df82b9,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.Advertising.AdvertisingDelay,Время рекламы (минуты):
 271b029980be102ed4967f7a17aa0fdb,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.Advertising.AdvertisingHint,Совет: Реклама будет отображаться с минимальным беспокойством для вас.
+727c8640a92167cd1fd35b0111df82b9,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.RU.xaml,Portal.DonateSettingPage.Advertising.AdvertisingDelay,Время рекламы (минуты):
 d308cb19fecc8045f5e814314de66155,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.Title,GeneralSettingPage
 4afaab15e130ee6c38dd37da3afe83ae,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 23e73e3f68a50314dfe831d2ff432240,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.ApplicationLanguage,Язык приложения
@@ -932,19 +932,19 @@ a9249bb4431d6438dfb15e2cb6b820cf,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 4f1b4cc1cae6a1ee7987f4e39749ebba,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon,Значок Yведомления
 c7666c3bca61d62fed9ac2a33bb02262,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon.Description,Видимость значка в системном лотке. Приложение Sucrose будет работать скрыто.
 03bad4a6e5d6be58c4cb6b65e0877cb5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
-5e4e9dc517f2b0b7a64af1de75d6de77,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Show,Показать
 c54ce86a277cc09a1d1997932f68940f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Hide,Скрыть
+5e4e9dc517f2b0b7a64af1de75d6de77,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Show,Показать
 954a64c99d74a0babfee09b7e0eaf173,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 4fe8f257bcbda04d2580d2766c5cafca,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.NotifyIcon.NotifyExit,Закрыть все приложения Sucrose при закрытии значка в системном лотке
 d9ee02b4c6d87bc097bc37a6ded220ab,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 32ca4a0ef2aa159e836463c545ae807e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop,Фон окна
 b739f7ff2227b77e1326f7508bf74026,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.Description,Используется для настройки фона окна приложения.
 306a05c974300f4c4d27cc48280bb726,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
-0be70f4fb2ebb942f382e1142dd65e89,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,Выбрать фоновое изображение
-ca0507fef5e0e465c06b537b5c3d0b82,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,Выберите фоновое изображение
-82d18adca1618fb8ab1d4f7a84d2ae11,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,Изображения (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif
 0af4c57b7b4fb4ced0e891bf651eb833,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock,"К сожалению, выбранный файл изображения используется другим процессом"
+0be70f4fb2ebb942f382e1142dd65e89,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,Выбрать фоновое изображение
 d787aa9bb4a2275984c532f977106189,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access,"К сожалению, у вас нет прав доступа к выбранному файлу изображения"
+82d18adca1618fb8ab1d4f7a84d2ae11,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,Изображения (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif
+ca0507fef5e0e465c06b537b5c3d0b82,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,Выберите фоновое изображение
 f0609890794fbd82f7b255762cefa320,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 e1f677039fda8b41f5d0df2a7149e36f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch,Размер фона:
 ffb02d16e35153da427a4b62da74f4b7,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
@@ -953,16 +953,16 @@ e2ff0f265ff8e881e725e8f0af60d7f3,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 aa81822f530a24570b13fb4f840f09fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume,Громкость звука
 4659e1ffd72cc325fe3b1fc1b57aa8fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume.Description,"Громкость, применяемая ко всем обоям."
 8dd82db558547099fcdc6576980b5a2a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
-b85228fd96f25010cddca0e9982c185e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,Проигрывать звук только при активном рабочем столе
 8d7cd9a6106e4c7c773e6d32760b77f5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeActive,"Воспроизводить звук только, когда все приложения без звука"
+b85228fd96f25010cddca0e9982c185e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,Проигрывать звук только при активном рабочем столе
 3d41dab72d6f47a2480c07613c9a48c5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity,Чувствительность (Секунды):
 5331c3a5cdfcc9547fd314dc72a72ad0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 d6a2a8c8bc383eeb62dd385bca2cbf13,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary,Местоположение библиотеки
 dece197e4d461de0c3d237b8615ca707,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.Description,"Местоположение, где будут сохраняться добавленные вами обои."
 58dbd34a751b1d8039f5864814ce5e25,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
-e5650dd96adafee4c50f5e756ee584ac,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,"К сожалению, у вас нет доступа к новому местоположению"
-d195e041356e2826aed34bade9255495,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,"Пожалуйста, выберите пустую папку"
 0991f16e5aeefb5c48f43a8e4e905c79,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move,"Подождите, пока местоположение изменится"
+d195e041356e2826aed34bade9255495,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,"Пожалуйста, выберите пустую папку"
+e5650dd96adafee4c50f5e756ee584ac,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,"К сожалению, у вас нет доступа к новому местоположению"
 f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,,
 0018647fbb84eff962ea274228304011,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.RU.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryMove,Переместить текущую библиотеку в новое местоположение
 86a348dbbfe405290bb4bd47cc58f48d,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.Title,OtherSettingPage
@@ -976,8 +976,8 @@ f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.Ge
 438a533fd217f099b1debe47297c23eb,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.DiscordHook,Discord
 7fdbb593e4cb2451e85df1b1777f782a,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.DiscordHook.Description,Sucrose обеспечивает связь с Discord.
 80c3504d0804e60cce64b9d2096a0184,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,,
-245bac8d73e7fc3652a15c192b78c931,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.DiscordHook.DiscordRefresh,Обновление связи:
 1f3dab37fdcd898425b72205ea370d49,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.DiscordHook.DiscordDelay,Интервал обновления (секунды):
+245bac8d73e7fc3652a15c192b78c931,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.DiscordHook.DiscordRefresh,Обновление связи:
 2ab50a561cf88f71e3cd144b577806b0,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,,
 19e1245152b26ae22021b53bf91fb359,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.Agent,Интернет-представитель
 ec41c98f92f4aae352c1682c49556afc,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.RU.xaml,Portal.OtherSettingPage.Agent.Description,"Ваш идентификатор представителя для случаев, требующих интернет-соединение."

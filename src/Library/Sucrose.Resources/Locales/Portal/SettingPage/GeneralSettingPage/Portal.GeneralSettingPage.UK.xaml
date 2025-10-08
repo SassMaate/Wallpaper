@@ -22,19 +22,19 @@
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">Піктограма в області сповіщень</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">Видимість піктограми в системному треї. Програма Sucrose буде працювати в фоновому режимі.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Показати</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">Сховати</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Показати</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">Закриваючи піктограму в області сповіщень, закривати всі програми Sucrose</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">Фон вікна</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">Використовується для налаштування фону вікна програми.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Обрати фонове зображення</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Вибрати фонове зображення</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Зображення (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">На жаль, вибраний файл зображення використовується іншим процесом</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Обрати фонове зображення</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">На жаль, у вас немає дозволу на доступ до вибраного файлу зображення</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Зображення (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Вибрати фонове зображення</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Розтягнути фон:</system:String>
 
@@ -43,16 +43,16 @@
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">Рівень звуку</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">Рівень звуку, який застосовується до всіх шпалер.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Звук відтворюється лише при фокусуванні на робочому столі</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">Відтворювати звук лише тоді, коли всі програми приглушені</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Звук відтворюється лише при фокусуванні на робочому столі</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">Чутливість (Секунди):</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">Місце розташування бібліотеки</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">Місце, де зберігатимуться теми, які ви додали до бібліотеки.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">На жаль, ви не маєте доступу до нового місця розташування</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Будь ласка, оберіть порожню папку</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">Зачекайте трохи, поки папку переміщується</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Будь ласка, оберіть порожню папку</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">На жаль, ви не маєте доступу до нового місця розташування</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">Перемістити вашу поточну бібліотеку в нове місце</system:String>
 </ResourceDictionary>

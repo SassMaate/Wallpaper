@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Το Sucrose διαχειρίζεται την επικοινωνία με το Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Ανανέωση σύνδεσης:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Διάστημα Ανανέωσης (δευτερόλεπτα):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Ανανέωση σύνδεσης:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Πράκτορας Διαδικτύου</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Το αναγνωριστικό πράκτορα σας για καταστάσεις που απαιτούν σύνδεση στο διαδίκτυο.</system:String>

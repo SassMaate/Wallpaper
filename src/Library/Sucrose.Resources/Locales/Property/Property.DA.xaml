@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Kun til CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Kun til MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Hastighed</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
-    <system:String x:Key="Property.Localization.Mute">Lydløs</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
     <system:String x:Key="Property.Localization.Hue">Farvetone</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Spejling</system:String>
     <system:String x:Key="Property.Localization.Blur">Sløring</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
-    <system:String x:Key="Property.Localization.Invert">Invertere</system:String>
+    <system:String x:Key="Property.Localization.Mute">Lydløs</system:String>
     <system:String x:Key="Property.Localization.Zoom">Zoom</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gamma</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sepia</system:String>
+    <system:String x:Key="Property.Localization.Speed">Hastighed</system:String>
+    <system:String x:Key="Property.Localization.Invert">Invertere</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Spejling</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animation</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Skarphed</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Mætning</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Lysstyrke</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Gråskala</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Skarphed</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Lysstyrke</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Mætning</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Flad</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Lodret</system:String>

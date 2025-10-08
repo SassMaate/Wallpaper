@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">समानानुपातिक</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">समानानुपातिक भरना</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">कोई नहीं</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">नाम</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">कोई नहीं</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">सृजन</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">संशोधन</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">रोकें</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">जारी रखें</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">स्वचालित</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">माइका</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">कोई नहीं</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">स्वचालित</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">टैब किया गया</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">ऐक्रिलिक</system:String>
 

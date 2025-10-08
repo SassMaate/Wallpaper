@@ -7,8 +7,8 @@
     <system:String x:Key="Portal.Enum.Stretch.Uniform">Пропорційно</system:String>
     <system:String x:Key="Portal.Enum.Stretch.UniformToFill">Пропорційно заповнити</system:String>
 
-    <system:String x:Key="Portal.Enum.SortModeType.None">Жоден</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Name">Назва</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">Жоден</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Creation">Створення</system:String>
     <system:String x:Key="Portal.Enum.SortModeType.Modification">Зміна</system:String>
 
@@ -39,9 +39,9 @@
     <system:String x:Key="Portal.Enum.PerformanceType.Pause">Пауза</system:String>
     <system:String x:Key="Portal.Enum.PerformanceType.Resume">Продовжити</system:String>
 
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Автоматично</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Міка</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.None">Ні</system:String>
-    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">Автоматично</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">Закладки</system:String>
     <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Акрил</system:String>
 

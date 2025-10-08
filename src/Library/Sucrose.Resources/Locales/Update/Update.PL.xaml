@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LISTY NIE MOGĄ BYĆ FILTROWANE</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">PORÓWNYWANIE LIST</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKACJA JEST JUŻ AKTUALNA</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">NIE UDAŁO SIĘ PORÓWNAĆ LIST</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">APLIKACJA JEST JUŻ AKTUALNA</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">WYSZUKIWANIE WYMAGANYCH PLIKÓW</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">NIE ZNALEZIONO WYMAGANYCH PLIKÓW</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">POBIERANIE WYMAGANYCH PLIKÓW</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">NIE MOŻNA POBRAĆ WYMAGANYCH PLIKÓW</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">POBIERANIE WYMAGANEGO PLIKU ZOSTAŁO ANULOWANE</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">WYSTĄPIŁ BŁĄD PODCZAS POBIERANIA WYMAGANEGO PLIKU</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">POBIERANIE WYMAGANEGO PLIKU ZOSTAŁO ANULOWANE</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PRZYGOTOWYWANIE POBRANEGO PLIKU</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">WYKONYWANIE POBRANEGO PLIKU</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">POBRANY PLIK WYKONANY</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">POBRANY PLIK NIE JEST UŻYWALNY</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">NIE UDAŁO SIĘ PRZYGOTOWAĆ POBRANEGO PLIKU</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">POBRANY PLIK WYKONANY</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">WYKONYWANIE POBRANEGO PLIKU</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">WYPYCHANIE POBRANEGO PLIKU</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">WYPYCHANY PLIK JEST WYKONYWANY</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">WYPYCHANY PLIK ZOSTAŁ WYKONANY</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">POBRANY PLIK NIE POWIODŁ SIĘ</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">POBRANY PLIK JEST USZKODZONY</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">POBRANY PLIK NIE MOŻE BYĆ UŻYWANY</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">NIE MOŻNA WYPYCHAĆ POBRANEGO PLIKU</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">POBRANY PLIK NIE POWIODŁ SIĘ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">POBRANY PLIK JEST USZKODZONY</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">WYPYCHANY PLIK ZOSTAŁ WYKONANY</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">WYPYCHANY PLIK JEST WYKONYWANY</system:String>
 </ResourceDictionary>

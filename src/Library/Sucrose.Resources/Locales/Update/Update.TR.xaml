@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">LİSTELER AYIKLANAMADI</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">LİSTELER KARŞILAŞTIRILIYOR</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">UYGULAMA ZATEN GÜNCEL</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">LİSTELER KARŞILAŞTIRILAMADI</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">UYGULAMA ZATEN GÜNCEL</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">GEREKLİ DOSYALAR ARANIYOR</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">GEREKLİ DOSYALAR BULUNAMADI</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">GEREKLİ DOSYALAR İNDİRİLİYOR</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">GEREKLİ DOSYALAR İNDİRİLEMEDİ</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">GEREKLİ DOSYA İNDİRİLİRKEN İPTAL OLDU</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">GEREKLİ DOSYA İNDİRİLİRKEN HATA OLDU</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">GEREKLİ DOSYA İNDİRİLİRKEN İPTAL OLDU</system:String>
 
     <system:String x:Key="Update.MessageText.Running">İNDİRİLEN DOSYA HAZIRLANIYOR</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">İNDİRİLEN DOSYA ÇALIŞTIRILIYOR</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">İNDİRİLEN DOSYA ÇALIŞTIRILDI</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">İNDİRİLEN DOSYA KULLANILAMAZ</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">İNDİRİLEN DOSYA HAZIRLANAMADI</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">İNDİRİLEN DOSYA ÇALIŞTIRILDI</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">İNDİRİLEN DOSYA ÇALIŞTIRILIYOR</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">İNDİRİLEN DOSYA ÇIKARTILIYOR</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">ÇIKARTILAN DOSYA ÇALIŞTIRILIYOR</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">ÇIKARTILAN DOSYA ÇALIŞTIRILDI</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">İNDİRİLEN DOSYA BAŞARISIZ OLDU</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">İNDİRİLEN DOSYA BOZUK</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">İNDİRİLEN DOSYA KULLANILAMAZ</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">İNDİRİLEN DOSYA ÇIKARILAMADI</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">İNDİRİLEN DOSYA BAŞARISIZ OLDU</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">İNDİRİLEN DOSYA BOZUK</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">ÇIKARTILAN DOSYA ÇALIŞTIRILDI</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">ÇIKARTILAN DOSYA ÇALIŞTIRILIYOR</system:String>
 </ResourceDictionary>

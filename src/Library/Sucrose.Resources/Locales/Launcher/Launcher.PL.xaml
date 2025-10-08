@@ -18,22 +18,22 @@
 
     <system:String x:Key="Launcher.ReportWindowTitle">Diagnostyka Sucrose</system:String>
 
-    <system:String x:Key="Launcher.SaveDialogFilter">Pliki ZIP (*.zip)|*.zip|Wszystkie Pliki (*.*)|*.*</system:String>
     <system:String x:Key="Launcher.SaveDialogTitle">Zapisz Plik Dziennika</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">Pliki ZIP (*.zip)|*.zip|Wszystkie Pliki (*.*)|*.*</system:String>
 
-    <system:String x:Key="Launcher.RequestFeedbackText">Prośby i Opinie</system:String>
     <system:String x:Key="Launcher.FeedbackText">Prześlij Opinię</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">Prośby i Opinie</system:String>
 
     <system:String x:Key="Launcher.SettingText">Ustawienia</system:String>
 
     <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
 
-    <system:String x:Key="Launcher.WallReloadText">Przeładuj Tapetę</system:String>
-    <system:String x:Key="Launcher.WallChangeText">Zmień Tapetę</system:String>
-    <system:String x:Key="Launcher.WallCloseText">Zamknij Tapetę</system:String>
     <system:String x:Key="Launcher.WallOpenText">Otwórz Tapetę</system:String>
-    <system:String x:Key="Launcher.WallStartText">Uruchom Tapetę</system:String>
     <system:String x:Key="Launcher.WallStopText">Zatrzymaj Tapetę</system:String>
+    <system:String x:Key="Launcher.WallCloseText">Zamknij Tapetę</system:String>
+    <system:String x:Key="Launcher.WallStartText">Uruchom Tapetę</system:String>
+    <system:String x:Key="Launcher.WallChangeText">Zmień Tapetę</system:String>
+    <system:String x:Key="Launcher.WallReloadText">Przeładuj Tapetę</system:String>
 
     <system:String x:Key="Launcher.ClosedText">Zamknięte</system:String>
     <system:String x:Key="Launcher.PausedText">Wstrzymane</system:String>

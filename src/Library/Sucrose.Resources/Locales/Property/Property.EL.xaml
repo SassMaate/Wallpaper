@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Μόνο για CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Μόνο για MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Ταχύτητα</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Γάμμα</system:String>
-    <system:String x:Key="Property.Localization.Mute">Σίγαση</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Σεπία</system:String>
     <system:String x:Key="Property.Localization.Hue">Απόχρωση</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Καθρέφτισμα</system:String>
     <system:String x:Key="Property.Localization.Blur">Θολούρα</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Αντίθεση</system:String>
-    <system:String x:Key="Property.Localization.Invert">Αντίστροφο</system:String>
+    <system:String x:Key="Property.Localization.Mute">Σίγαση</system:String>
     <system:String x:Key="Property.Localization.Zoom">Εστίαση</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Γάμμα</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Σεπία</system:String>
+    <system:String x:Key="Property.Localization.Speed">Ταχύτητα</system:String>
+    <system:String x:Key="Property.Localization.Invert">Αντίστροφο</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Καθρέφτισμα</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Αντίθεση</system:String>
     <system:String x:Key="Property.Localization.Animation">Κίνηση</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Ευκρίνεια</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Κορεσμός</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Φωτεινότητα</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Γκρίζα Κλίμακα</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Ευκρίνεια</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Φωτεινότητα</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Κορεσμός</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Επίπεδο</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Κάθετο</system:String>

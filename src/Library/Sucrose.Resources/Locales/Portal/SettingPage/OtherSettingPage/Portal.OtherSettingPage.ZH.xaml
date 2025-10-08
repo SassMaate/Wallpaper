@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord钩子</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose与Discord之间的通信。</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">刷新连接:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">刷新间隔 (秒):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">刷新连接:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">网络代理</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">您在需要互联网连接的情况下使用的代理标识。</system:String>

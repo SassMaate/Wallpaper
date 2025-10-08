@@ -22,19 +22,19 @@
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">Iconiță de Notificare</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">Vizibilitatea în zona de notificare a sistemului. Sucrose va continua să ruleze în mod discret.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Vizibil</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">Invizibil</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">Vizibil</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">La închiderea zonei de notificare, închide toate aplicațiile Sucrose</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">Fundal Fereastră</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">Utilizat pentru personalizarea fundalului ferestrei aplicației.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Selectați Imagine de Fundal</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Alegeți o imagine de fundal</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Fișiere imagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">Din păcate, fișierul imagine selectat este utilizat de un alt proces</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">Selectați Imagine de Fundal</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">Din păcate, nu aveți permisiunea de a accesa fișierul imagine selectat</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">Fișiere imagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">Alegeți o imagine de fundal</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">Redimensionare Fundal:</system:String>
 
@@ -43,16 +43,16 @@
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">Nivel de Sunet</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">Nivelul global al sunetului pentru toate tapetele.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Redă sunet numai când focusul este pe desktop</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">Redați sunetul doar când toate aplicațiile sunt în surdină</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">Redă sunet numai când focusul este pe desktop</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">Sensibilitate (Secunde):</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">Locația Bibliotecii Private</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">Locația în care temele adăugate în biblioteca dvs. vor fi stocate.</system:String>
 
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Din păcate, nu aveți acces la noua locație</system:String>
-    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Vă rugăm să selectați un director gol</system:String>
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">Așteptați puțin când se schimbă locația</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">Vă rugăm să selectați un director gol</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">Din păcate, nu aveți acces la noua locație</system:String>
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">Mută biblioteca curentă în noua locație</system:String>
 </ResourceDictionary>

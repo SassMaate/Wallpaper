@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Sadece CefSharp İçin</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Sadece MpvPlayer İçin</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Hız</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Gama</system:String>
-    <system:String x:Key="Property.Localization.Mute">Sessiz</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Sepya</system:String>
     <system:String x:Key="Property.Localization.Hue">Renk Tonu</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Aynalama</system:String>
     <system:String x:Key="Property.Localization.Blur">Bulanıklık</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
-    <system:String x:Key="Property.Localization.Invert">Negatiflik</system:String>
+    <system:String x:Key="Property.Localization.Mute">Sessiz</system:String>
     <system:String x:Key="Property.Localization.Zoom">Yakınlaştırma</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Gama</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Sepya</system:String>
+    <system:String x:Key="Property.Localization.Speed">Hız</system:String>
+    <system:String x:Key="Property.Localization.Invert">Negatiflik</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Aynalama</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Kontrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animasyon</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Keskinlik</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Doygunluk</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Parlaklık</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Gri Tonlama</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Keskinlik</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Parlaklık</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Doygunluk</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Düz</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Dikey</system:String>

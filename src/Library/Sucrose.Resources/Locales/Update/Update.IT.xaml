@@ -31,8 +31,8 @@
     <system:String x:Key="Update.MessageText.Filtering.Error">IMPOSSIBILE FILTRARE LE LISTE</system:String>
 
     <system:String x:Key="Update.MessageText.Comparing">CONFRONTO DELLE LISTE</system:String>
-    <system:String x:Key="Update.MessageText.Comparing.Update">L'APPLICAZIONE È GIÀ AGGIORNATA</system:String>
     <system:String x:Key="Update.MessageText.Comparing.Error">IMPOSSIBILE CONFRONTARE LE LISTE</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">L'APPLICAZIONE È GIÀ AGGIORNATA</system:String>
 
     <system:String x:Key="Update.MessageText.Searching">RICERCA DEI FILE RICHIESTI</system:String>
     <system:String x:Key="Update.MessageText.Searching.Not">FILE RICHIESTI NON TROVATI</system:String>
@@ -41,20 +41,20 @@
 
     <system:String x:Key="Update.MessageText.Downloading">SCARICAMENTO DEI FILE RICHIESTI</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Error">IMPOSSIBILE SCARICARE I FILE RICHIESTI</system:String>
-    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">IL DOWNLOAD DEL FILE RICHIESTO È STATO ANNULLATO</system:String>
     <system:String x:Key="Update.MessageText.Downloading.Complete.Error">SI È VERIFICATO UN ERRORE DURANTE IL DOWNLOAD DEL FILE RICHIESTO</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">IL DOWNLOAD DEL FILE RICHIESTO È STATO ANNULLATO</system:String>
 
     <system:String x:Key="Update.MessageText.Running">PREPARAZIONE DEL FILE SCARICATO</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executing">ESECUZIONE DEL FILE SCARICATO</system:String>
-    <system:String x:Key="Update.MessageText.Running.Executed">FILE SCARICATO ESEGUITO</system:String>
     <system:String x:Key="Update.MessageText.Running.Not">FILE SCARICATO NON UTILIZZABILE</system:String>
     <system:String x:Key="Update.MessageText.Running.Error">IMPOSSIBILE PREPARARE IL FILE SCARICATO</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">FILE SCARICATO ESEGUITO</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">ESECUZIONE DEL FILE SCARICATO</system:String>
 
     <system:String x:Key="Update.MessageText.Extracting">ESTRAZIONE DEL FILE SCARICATO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executing">IL FILE ESTRATTO STA ESSERE ESEGUITO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Executed">IL FILE ESTRATTO È STATO ESEGUITO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Failed">IL FILE SCARICATO È FALLITO</system:String>
-    <system:String x:Key="Update.MessageText.Extracting.Corrupt">IL FILE SCARICATO È CORROTTO</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Not">IL FILE SCARICATO NON È UTILIZZABILE</system:String>
     <system:String x:Key="Update.MessageText.Extracting.Error">IMPOSSIBILE ESTRARRE IL FILE SCARICATO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">IL FILE SCARICATO È FALLITO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">IL FILE SCARICATO È CORROTTO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">IL FILE ESTRATTO È STATO ESEGUITO</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">IL FILE ESTRATTO STA ESSERE ESEGUITO</system:String>
 </ResourceDictionary>

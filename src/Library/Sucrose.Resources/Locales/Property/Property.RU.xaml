@@ -31,21 +31,21 @@
     <system:String x:Key="Property.Localization.CefSharp">Только для CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Только для MpvPlayer</system:String>
 
-    <system:String x:Key="Property.Localization.Speed">Скорость</system:String>
-    <system:String x:Key="Property.Localization.Gamma">Гамма</system:String>
-    <system:String x:Key="Property.Localization.Mute">Без Звука</system:String>
-    <system:String x:Key="Property.Localization.Sepia">Сепия</system:String>
     <system:String x:Key="Property.Localization.Hue">Оттенок</system:String>
-    <system:String x:Key="Property.Localization.Mirror">Отражение</system:String>
     <system:String x:Key="Property.Localization.Blur">Размытие</system:String>
-    <system:String x:Key="Property.Localization.Contrast">Контраст</system:String>
-    <system:String x:Key="Property.Localization.Invert">Инвертировать</system:String>
+    <system:String x:Key="Property.Localization.Mute">Без Звука</system:String>
     <system:String x:Key="Property.Localization.Zoom">Масштаб</system:String>
+    <system:String x:Key="Property.Localization.Gamma">Гамма</system:String>
+    <system:String x:Key="Property.Localization.Sepia">Сепия</system:String>
+    <system:String x:Key="Property.Localization.Speed">Скорость</system:String>
+    <system:String x:Key="Property.Localization.Invert">Инвертировать</system:String>
+    <system:String x:Key="Property.Localization.Mirror">Отражение</system:String>
+    <system:String x:Key="Property.Localization.Contrast">Контраст</system:String>
     <system:String x:Key="Property.Localization.Animation">Анимация</system:String>
-    <system:String x:Key="Property.Localization.Sharpness">Резкость</system:String>
-    <system:String x:Key="Property.Localization.Saturation">Насыщенность</system:String>
-    <system:String x:Key="Property.Localization.Brightness">Яркость</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Серая Шкала</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">Резкость</system:String>
+    <system:String x:Key="Property.Localization.Brightness">Яркость</system:String>
+    <system:String x:Key="Property.Localization.Saturation">Насыщенность</system:String>
 
     <system:String x:Key="Property.Localization.Mirror.Flat">Плоский</system:String>
     <system:String x:Key="Property.Localization.Mirror.Vertical">Вертикальный</system:String>

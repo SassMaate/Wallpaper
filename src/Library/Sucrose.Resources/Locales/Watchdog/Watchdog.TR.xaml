@@ -2,13 +2,13 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Watchdog.HelpButton">Yardım</system:String>
-    <system:String x:Key="Watchdog.CloseButton">Çıkış</system:String>
     <system:String x:Key="Watchdog.ErrorEmpty">Maalesef hata detayları yakalanamadı.</system:String>
-    <system:String x:Key="Watchdog.ErrorMessage">Beklenmeyen bir hata oluştu:</system:String>
     <system:String x:Key="Watchdog.ErrorTitle">Hata</system:String>
+    <system:String x:Key="Watchdog.HelpButton">Yardım</system:String>
     <system:String x:Key="Watchdog.HideButton">Sakla</system:String>
     <system:String x:Key="Watchdog.ShowButton">Göster</system:String>
     <system:String x:Key="Watchdog.StackTrace">Yığın İzleme:</system:String>
+    <system:String x:Key="Watchdog.CloseButton">Çıkış</system:String>
     <system:String x:Key="Watchdog.WindowTitle">Sucrose Watchdog</system:String>
+    <system:String x:Key="Watchdog.ErrorMessage">Beklenmeyen bir hata oluştu:</system:String>
 </ResourceDictionary>

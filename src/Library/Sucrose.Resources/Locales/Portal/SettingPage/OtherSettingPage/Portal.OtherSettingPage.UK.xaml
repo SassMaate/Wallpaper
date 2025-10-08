@@ -13,8 +13,8 @@
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose забезпечує зв'язок з Discord.</system:String>
 
-    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Оновлення зв'язку:</system:String>
     <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">Частота оновлення (секунди):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">Оновлення зв'язку:</system:String>
 
     <system:String x:Key="Portal.OtherSettingPage.Agent">Представник інтернету</system:String>
     <system:String x:Key="Portal.OtherSettingPage.Agent.Description">Ваш ідентифікатор представника для випадків, коли потрібне підключення до інтернету.</system:String>

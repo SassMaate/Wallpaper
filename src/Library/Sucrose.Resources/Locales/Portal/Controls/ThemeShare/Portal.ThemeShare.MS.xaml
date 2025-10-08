@@ -2,23 +2,23 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.ThemeShare.Title">Kongsi Tema</system:String>
     <system:String x:Key="Portal.ThemeShare.Close">Tutup</system:String>
+    <system:String x:Key="Portal.ThemeShare.Title">Kongsi Tema</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemeTitle">Tajuk</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeDescription">Penerangan</system:String>
 
+    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Salin Pautan</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemeExport">Eksport Tema</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish">Terbitkan di Kedai</system:String>
-    <system:String x:Key="Portal.ThemeShare.ThemeCopy">Salin Pautan</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Publish">Terbitkan</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Preparing">Persiapan untuk penerbitan akan bermula tidak lama lagi..</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit">Had muat naik tema harian anda sedang diperiksa..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Anda telah mencapai had muat naik tema harian anda, sila cuba lagi kemudian.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Error">Ralat tidak diketahui berlaku semasa memeriksa had muat naik tema harian anda.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Limit.Exceeded">Anda telah mencapai had muat naik tema harian anda, sila cuba lagi kemudian.</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress">Tema sedang dimampatkan sebelum dimuat naik..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Compress.Error">Ralat berlaku semasa memampatkan tema.</system:String>
@@ -32,13 +32,13 @@
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload">Tema yang dimampatkan sedang disediakan untuk dimuat naik..</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Tema yang dimampatkan sedang dimuat naik..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Error">Ralat tidak diketahui berlaku semasa memuat naik tema yang dimampatkan.</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Start">Tema yang dimampatkan sedang dimuat naik..</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Errored">Ralat tidak dijangka berlaku semasa memuat naik tema yang dimampatkan: {0}.</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Upload.Succeded">Tema yang dimampatkan berjaya dimuat naik dan akan diterbitkan di stor selepas pengesahan.</system:String>
 
-    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">Fail ZIP (*.zip)|*.zip|Semua Fail (*.*)|*.*</system:String>
     <system:String x:Key="Portal.ThemeShare.SaveDialogTitle">Simpan Fail Tema</system:String>
+    <system:String x:Key="Portal.ThemeShare.SaveDialogFilter">Fail ZIP (*.zip)|*.zip|Semua Fail (*.*)|*.*</system:String>
 
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Faham</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Amaran Penerbitan</system:String>

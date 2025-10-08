@@ -7,10 +7,10 @@
 
     <system:String x:Key="Portal.StoreCard.VersionTip">Aby użyć tego motywu, zaktualizuj Sucrose</system:String>
 
-    <system:String x:Key="Portal.StoreCard.MenuUpdating">Sprawdzanie Aktualizacji</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuReport">Raport</system:String>
     <system:String x:Key="Portal.StoreCard.MenuUpdate">Sprawdź Aktualizacje</system:String>
     <system:String x:Key="Portal.StoreCard.MenuInstall">Zainstaluj</system:String>
-    <system:String x:Key="Portal.StoreCard.MenuReport">Raport</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">Sprawdzanie Aktualizacji</system:String>
 
     <system:String x:Key="Portal.StoreCard.Incompatible">Niekompatybilny</system:String>
 </ResourceDictionary>
