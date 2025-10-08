@@ -34,37 +34,12 @@
             Stretch="UniformToFill" />
 
         <controls:CustomGroupBox
-            Margin="10"
-            Background="#1a1a1a"
-            BorderBrush="Orange"
-            BorderThickness="2"
-            HeaderBackground="#222">
-            <controls:CustomGroupBox.Header>
-                <TextBlock
-                    Margin="0,12,0,0"
-                    FontSize="20"
-                    FontWeight="Bold"
-                    Foreground="White"
-                    Text="Localization" />
-            </controls:CustomGroupBox.Header>
-
-            <StackPanel>
-                <ui:TextBox
-                    Margin="0,3,0,0"
-                    PlaceholderText="Başlık yaz..." />
-                <ui:TextBox
-                    Margin="0,3,0,0"
-                    PlaceholderText="Açıklama yaz..." />
-            </StackPanel>
-        </controls:CustomGroupBox>
-
-        <controls:CustomGroupBox
             Margin="0,12,0,0"
+            Background="Transparent"
             BorderBrush="Orange"
             BorderThickness="2">
             <controls:CustomGroupBox.Header>
                 <StackPanel
-                    Margin="0,-31,0,0"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Center"
                     Orientation="Horizontal">
