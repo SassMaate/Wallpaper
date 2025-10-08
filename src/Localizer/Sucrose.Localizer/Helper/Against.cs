@@ -183,20 +183,29 @@ namespace Sucrose.Localizer.Helper
                         // Extract the range to sort
                         List<CsvRecord> rangeToSort = processedRecords.Skip(startIndex).Take(endIndex - startIndex).ToList();
 
-                        // Sort by key with custom natural sorting (handles numbers correctly)
-                        rangeToSort = rangeToSort
-                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && !r.Key.Equals("Base", StringComparison.OrdinalIgnoreCase) && !r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
+                        // Separate records that should not be sorted (Base64, empty keys)
+                        List<CsvRecord> excludedRecords = rangeToSort
+                            .Where(r => string.IsNullOrWhiteSpace(r.Key) || 
+                                       r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
+                            .ToList();
+
+                        // Sort only the records that should be sorted
+                        List<CsvRecord> sortableRecords = rangeToSort
+                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && 
+                                       !r.Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
                             .OrderBy(r => GetKeyForSorting(r.Key))
                             .ThenBy(r => r.Key.Length)
                             .ToList();
 
-                        // replace the sorted range back
-                        for (int j = 0; j < rangeToSort.Count; j++)
+                        // Combine excluded records first, then sorted records
+                        List<CsvRecord> finalRange = new();
+                        finalRange.AddRange(excludedRecords);
+                        finalRange.AddRange(sortableRecords);
+
+                        // Replace the range back with proper ordering
+                        for (int j = 0; j < finalRange.Count && startIndex + j < processedRecords.Count; j++)
                         {
-                            if (startIndex + j < processedRecords.Count)
-                            {
-                                processedRecords[startIndex + j] = rangeToSort[j];
-                            }
+                            processedRecords[startIndex + j] = finalRange[j];
                         }
                     }
                 }
@@ -212,10 +221,10 @@ namespace Sucrose.Localizer.Helper
             // Go backward from current position
             for (int i = currentIndex - 1; i >= 0; i--)
             {
-                // Stop if we find an empty key/value or "Base" key
+                // Stop if we find an empty key/value, "Base64" key
                 if (string.IsNullOrWhiteSpace(records[i].Key) ||
                     string.IsNullOrWhiteSpace(records[i].Value) ||
-                    records[i].Key.Equals("Base", StringComparison.OrdinalIgnoreCase))
+                    records[i].Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
                 {
                     break;
                 }
