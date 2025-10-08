@@ -8,7 +8,7 @@ using SEIT = Skylark.Enum.InputType;
 using SMME = Sucrose.Manager.Manage.Engine;
 using SSDEIMT = Sucrose.Shared.Dependency.Enum.InputModuleType;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSEAEA = Sucrose.Shared.Engine.Aurora.Event.Application;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SWHC = Skylark.Wing.Helper.Calculate;
@@ -85,7 +85,7 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                 SWIIDM DisplayManager = new SWHDMA();
                 SWHDMO display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
 
-                foreach (SSDSHS Application in SSEMI.Applications)
+                foreach (SSDSH Application in SSEMI.Applications)
                 {
                     if (display.Index == SSEMI.Applications.IndexOf(Application) + 1 || SMME.DisplayScreenType == SEDST.SpanAcross)
                     {
@@ -100,7 +100,7 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                         IntPtr Handle = SWNM.FindWindowEx(SSEAEA.FindWindowByProcessId(Application.Process.Id), IntPtr.Zero, null, null);
 
                         SWNM.PostMessageW(Handle, Message, wParam, (UIntPtr)lParam);
-                        SWNM.PostMessageW(Application.Handle, Message, wParam, (UIntPtr)lParam);
+                        SWNM.PostMessageW(Application.NativeHandle, Message, wParam, (UIntPtr)lParam);
                         SWNM.PostMessageW(Application.MainWindowHandle, Message, wParam, (UIntPtr)lParam);
 
                         SWNM.PostMessageW(SWNM.FindWindowEx(IntPtr.Zero, IntPtr.Zero, "Engine", null), Message, wParam, (UIntPtr)lParam);
@@ -117,7 +117,7 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                 SWIIDM DisplayManager = new SWHDMA();
                 SWHDMO display = DisplayManager.GetDisplayMonitorFromPoint(new Point(X, Y));
 
-                foreach (SSDSHS Application in SSEMI.Applications)
+                foreach (SSDSH Application in SSEMI.Applications)
                 {
                     if (display.Index == SSEMI.Applications.IndexOf(Application) + 1 || SMME.DisplayScreenType == SEDST.SpanAcross)
                     {
@@ -141,7 +141,7 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                         IntPtr Handle = SWNM.FindWindowEx(SSEAEA.FindWindowByProcessId(Application.Process.Id), IntPtr.Zero, null, null);
 
                         SWNM.PostMessageW(Handle, Message, wParam, (UIntPtr)lParam);
-                        SWNM.PostMessageW(Application.Handle, Message, wParam, (UIntPtr)lParam);
+                        SWNM.PostMessageW(Application.NativeHandle, Message, wParam, (UIntPtr)lParam);
                         SWNM.PostMessageW(Application.MainWindowHandle, Message, wParam, (UIntPtr)lParam);
 
                         SWNM.PostMessageW(SWNM.FindWindowEx(IntPtr.Zero, IntPtr.Zero, "Engine", null), Message, wParam, (UIntPtr)lParam);
@@ -190,9 +190,9 @@ namespace Sucrose.Shared.Engine.Aurora.Extension
                                 case RawMouseButtonFlags.MouseWheel:
                                     int MouseData = Mouse.Mouse.ButtonData;
 
-                                    foreach (SSDSHS Application in SSEMI.Applications)
+                                    foreach (SSDSH Application in SSEMI.Applications)
                                     {
-                                        SWNM.PostMessageW(Application.Handle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
+                                        SWNM.PostMessageW(Application.NativeHandle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
                                     }
                                     break;
                             }

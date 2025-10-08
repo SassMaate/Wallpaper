@@ -6,7 +6,7 @@ namespace Sucrose.Shared.Dependency.Struct
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct HostStruct
+    public struct Host
     {
         /// <summary>
         /// 

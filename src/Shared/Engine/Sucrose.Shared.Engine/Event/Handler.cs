@@ -2,7 +2,7 @@
 using SEDST = Skylark.Enum.DisplayScreenType;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSEHD = Sucrose.Shared.Engine.Helper.Data;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
@@ -113,15 +113,15 @@ namespace Sucrose.Shared.Engine.Event
             }
         }
 
-        public static async void ApplicationLoaded(SSDSHS Application)
+        public static async void ApplicationLoaded(SSDSH Application)
         {
             try
             {
                 //ShowInTaskbar = false : causing issue with Windows10-Windows11 Taskview.
-                SWHWO.RemoveWindowFromTaskbar(Application.Handle);
+                SWHWO.RemoveWindowFromTaskbar(Application.NativeHandle);
                 SWHWO.RemoveWindowFromTaskbar(Application.MainWindowHandle);
 
-                SWNM.ShowWindow(Application.Handle, (int)SWNM.SHOWWINDOW.SW_HIDE);
+                SWNM.ShowWindow(Application.NativeHandle, (int)SWNM.SHOWWINDOW.SW_HIDE);
                 SWNM.ShowWindow(Application.MainWindowHandle, (int)SWNM.SHOWWINDOW.SW_HIDE);
 
                 int Style = SWNM.GetWindowLong(Application.MainWindowHandle, (int)SWNM.GWL.GWL_STYLE);
@@ -130,7 +130,7 @@ namespace Sucrose.Shared.Engine.Event
                 int MainWindowStyle = SWNM.GetWindowLong(Application.MainWindowHandle, (int)SWNM.GWL.GWL_STYLE);
                 SWNM.SetWindowLong(Application.MainWindowHandle, (int)SWNM.GWL.GWL_STYLE, MainWindowStyle & ~((int)SWNM.WindowStyles.WS_CAPTION | (int)SWNM.WindowStyles.WS_THICKFRAME | (int)SWNM.WindowStyles.WS_MINIMIZE | (int)SWNM.WindowStyles.WS_MAXIMIZE | (int)SWNM.WindowStyles.WS_SYSMENU | (int)SWNM.WindowStyles.WS_DLGFRAME | (int)SWNM.WindowStyles.WS_BORDER | (int)SWNM.WindowStyles.WS_EX_CLIENTEDGE));
 
-                SWHWO.BorderlessWinStyle(Application.Handle);
+                SWHWO.BorderlessWinStyle(Application.NativeHandle);
                 SWHWO.BorderlessWinStyle(Application.MainWindowHandle);
             }
             catch (Exception Exception)
@@ -173,7 +173,7 @@ namespace Sucrose.Shared.Engine.Event
             }
         }
 
-        public static async void ApplicationRendered(SSDSHS Application)
+        public static async void ApplicationRendered(SSDSH Application)
         {
             try
             {
@@ -200,7 +200,7 @@ namespace Sucrose.Shared.Engine.Event
             }
         }
 
-        public static async void DisplaySettingsChanged(SSDSHS Application)
+        public static async void DisplaySettingsChanged(SSDSH Application)
         {
             try
             {
@@ -208,7 +208,7 @@ namespace Sucrose.Shared.Engine.Event
 
                 SSEMI.Displaying = new CancellationTokenSource();
 
-                SWNM.ShowWindow(Application.Handle, (int)SWNM.SHOWWINDOW.SW_HIDE);
+                SWNM.ShowWindow(Application.NativeHandle, (int)SWNM.SHOWWINDOW.SW_HIDE);
                 SWNM.ShowWindow(Application.MainWindowHandle, (int)SWNM.SHOWWINDOW.SW_HIDE);
 
                 try
@@ -221,7 +221,7 @@ namespace Sucrose.Shared.Engine.Event
 
                     ApplicationRendered(Application);
 
-                    SWNM.ShowWindow(Application.Handle, (int)SWNM.SHOWWINDOW.SW_SHOW);
+                    SWNM.ShowWindow(Application.NativeHandle, (int)SWNM.SHOWWINDOW.SW_SHOW);
                     SWNM.ShowWindow(Application.MainWindowHandle, (int)SWNM.SHOWWINDOW.SW_SHOW);
                 }
                 catch (TaskCanceledException) { }

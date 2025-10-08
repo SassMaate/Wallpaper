@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HostStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Host;
 
 namespace Sucrose.Shared.Space.Helper
 {
@@ -35,7 +35,7 @@ namespace Sucrose.Shared.Space.Helper
             }
         }
 
-        public static List<SSDSHS> GetHost()
+        public static List<SSDSH> GetHost()
         {
             return new()
             {

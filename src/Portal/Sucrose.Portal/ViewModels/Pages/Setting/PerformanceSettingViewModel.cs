@@ -17,7 +17,7 @@ using SSDECNT = Sucrose.Shared.Dependency.Enum.CommunicationType;
 using SSDEPPT = Sucrose.Shared.Dependency.Enum.PausePerformanceType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PerformanceType;
 using SSDMMB = Sucrose.Shared.Dependency.Manage.Manager.Backgroundog;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HostStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Host;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
@@ -588,7 +588,7 @@ namespace Sucrose.Portal.ViewModels.Pages
 
             NetworkPingType.SelectionChanged += (s, e) => NetworkPingTypeSelected($"{NetworkPingType.SelectedValue}");
 
-            foreach (SSDSHS Host in SSSHN.GetHost())
+            foreach (SSDSH Host in SSSHN.GetHost())
             {
                 NetworkPingType.Items.Add(Host.Name);
             }

@@ -1,12 +1,12 @@
 ﻿using System.Diagnostics;
 using System.IO;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 
 namespace Sucrose.Shared.Space.Helper
 {
     internal static class Processor
     {
-        public static SSDSHS Run(string Application)
+        public static SSDSH Run(string Application)
         {
             ProcessStartInfo ProcessInfo = new(Application)
             {
@@ -23,7 +23,7 @@ namespace Sucrose.Shared.Space.Helper
             return Result(Process);
         }
 
-        public static SSDSHS Runas(string Application)
+        public static SSDSH Runas(string Application)
         {
             ProcessStartInfo ProcessInfo = new(Application)
             {
@@ -41,27 +41,27 @@ namespace Sucrose.Shared.Space.Helper
             return Result(Process);
         }
 
-        public static SSDSHS Run(string Application, string Arguments)
+        public static SSDSH Run(string Application, string Arguments)
         {
             return Run(Application, Arguments, ProcessWindowStyle.Hidden);
         }
 
-        public static SSDSHS Runas(string Application, string Arguments)
+        public static SSDSH Runas(string Application, string Arguments)
         {
             return Runas(Application, Arguments, ProcessWindowStyle.Hidden);
         }
 
-        public static SSDSHS Run(string Application, string Arguments, ProcessWindowStyle Style)
+        public static SSDSH Run(string Application, string Arguments, ProcessWindowStyle Style)
         {
             return Run(Application, Arguments, Style, true);
         }
 
-        public static SSDSHS Runas(string Application, string Arguments, ProcessWindowStyle Style)
+        public static SSDSH Runas(string Application, string Arguments, ProcessWindowStyle Style)
         {
             return Runas(Application, Arguments, Style, true);
         }
 
-        public static SSDSHS Run(string Application, string Arguments, ProcessWindowStyle Style, bool Window)
+        public static SSDSH Run(string Application, string Arguments, ProcessWindowStyle Style, bool Window)
         {
             ProcessStartInfo ProcessInfo = new(Application, Parse(Arguments))
             {
@@ -80,7 +80,7 @@ namespace Sucrose.Shared.Space.Helper
             return Result(Process);
         }
 
-        public static SSDSHS Runas(string Application, string Arguments, ProcessWindowStyle Style, bool Window)
+        public static SSDSH Runas(string Application, string Arguments, ProcessWindowStyle Style, bool Window)
         {
             ProcessStartInfo ProcessInfo = new(Application, Parse(Arguments))
             {
@@ -199,7 +199,7 @@ namespace Sucrose.Shared.Space.Helper
             return Arguments;
         }
 
-        private static SSDSHS Result(Process Process)
+        private static SSDSH Result(Process Process)
         {
             try
             {
@@ -208,7 +208,7 @@ namespace Sucrose.Shared.Space.Helper
                 return new()
                 {
                     Process = Process,
-                    Handle = Process.Handle,
+                    NativeHandle = Process.Handle,
                     MainWindowHandle = Process.MainWindowHandle
                 };
             }

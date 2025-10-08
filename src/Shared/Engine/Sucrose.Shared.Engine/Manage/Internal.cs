@@ -1,7 +1,7 @@
 ﻿using System.Collections.Concurrent;
 using System.Windows.Threading;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSESB = Sucrose.Shared.Engine.Setting.Browser;
 using SSTHC = Sucrose.Shared.Theme.Helper.Compatible;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
@@ -47,9 +47,9 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static string AudioData = string.Empty;
 
-        public static string MemoryData = string.Empty;
+        public static List<SSDSH> Applications = new();
 
-        public static List<SSDSHS> Applications = new();
+        public static string MemoryData = string.Empty;
 
         public static string BatteryData = string.Empty;
 

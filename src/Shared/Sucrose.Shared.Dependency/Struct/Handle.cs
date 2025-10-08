@@ -7,16 +7,16 @@ namespace Sucrose.Shared.Dependency.Struct
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct HandleStruct
+    public struct Handle
     {
         /// <summary>
         /// 
         /// </summary>
-        public IntPtr Handle;
+        public Process Process;
         /// <summary>
         /// 
         /// </summary>
-        public Process Process;
+        public IntPtr NativeHandle;
         /// <summary>
         /// 
         /// </summary>

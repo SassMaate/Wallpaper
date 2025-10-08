@@ -1,4 +1,4 @@
-﻿using SSDSHS = Sucrose.Shared.Dependency.Struct.HandleStruct;
+﻿using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SWEACAM = Skylark.Wing.Extension.AudioController.AudioManager;
@@ -18,7 +18,7 @@ namespace Sucrose.Shared.Engine.Aurora.Helper
 
                     if (SSEMI.Applications.Count > 1)
                     {
-                        foreach (SSDSHS Application in SSEMI.Applications.Skip(1))
+                        foreach (SSDSH Application in SSEMI.Applications.Skip(1))
                         {
                             SWEVPCAM.SetApplicationVolume(Application.Process.Id, 0);
                         }
@@ -35,7 +35,7 @@ namespace Sucrose.Shared.Engine.Aurora.Helper
 
                         if (SSEMI.Applications.Count > 1)
                         {
-                            foreach (SSDSHS Application in SSEMI.Applications.Skip(1))
+                            foreach (SSDSH Application in SSEMI.Applications.Skip(1))
                             {
                                 SWEACAM.SetApplicationVolume(Application.Process.Id, 0);
                             }

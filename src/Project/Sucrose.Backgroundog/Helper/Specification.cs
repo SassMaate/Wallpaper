@@ -26,7 +26,7 @@ using SPMI = Sucrose.Pipe.Manage.Internal;
 using SSDECPT = Sucrose.Shared.Dependency.Enum.CategoryPerformanceType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PerformanceType;
 using SSDMMB = Sucrose.Shared.Dependency.Manage.Manager.Backgroundog;
-using SSDSHS = Sucrose.Shared.Dependency.Struct.HostStruct;
+using SSDSH = Sucrose.Shared.Dependency.Struct.Host;
 using SSEPPE = Skylark.Standard.Extension.Ping.PingExtension;
 using SSESSE = Skylark.Standard.Extension.Storage.StorageExtension;
 using SSIB = Sucrose.Signal.Interface.Backgroundog;
@@ -212,9 +212,9 @@ namespace Sucrose.Backgroundog.Helper
                         {
                             if (SSSHN.GetHostEntry())
                             {
-                                List<SSDSHS> Hosts = SSSHN.GetHost();
+                                List<SSDSH> Hosts = SSSHN.GetHost();
 
-                                foreach (SSDSHS Host in Hosts)
+                                foreach (SSDSH Host in Hosts)
                                 {
                                     if (SMMB.PingType == Host.Name)
                                     {
