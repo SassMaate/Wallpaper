@@ -176,6 +176,9 @@ namespace Sucrose.Localizer.Helper
             {
                 if (group.Records.Count > 1)
                 {
+                    string fileName = group.Records.FirstOrDefault()?.File ?? "Unknown";
+                    Console.WriteLine($"-- Processing group: {Path.GetFileName(fileName)} (Start: {group.StartIndex + 1}, Records: {group.Records.Count}) --");
+
                     // Separate records that should not be sorted (Base64, empty keys)
                     List<CsvRecord> excludedRecords = group.Records
                         .Where(r => string.IsNullOrWhiteSpace(r.Key) ||
