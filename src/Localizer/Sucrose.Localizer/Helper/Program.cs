@@ -1,4 +1,4 @@
-﻿using SLHA = Sucrose.Localizer.Helper.Against;
+using SLHA = Sucrose.Localizer.Helper.Against;
 using SLHC = Sucrose.Localizer.Helper.Creating;
 using SLHCTP = Sucrose.Localizer.Helper.CsvToPoe;
 using SLHCTX = Sucrose.Localizer.Helper.CsvToXaml;
@@ -22,7 +22,8 @@ namespace Sucrose.Localizer.Helper
             Console.WriteLine("5. Check the CSV files against each other");
             Console.WriteLine("6. Check the POEditor files against each other");
             Console.WriteLine("7. CSV files reindexer from CSV file");
-            Console.WriteLine("8. Create a new language file from CSV files");
+            Console.WriteLine("8. Alphabetic key indexer for CSV file");
+            Console.WriteLine("9. Create a new language file from CSV files");
 
             Console.WriteLine();
 
@@ -111,6 +112,19 @@ namespace Sucrose.Localizer.Helper
                     SLHA.ReindexCsv(csvDirectory, reindexerLang);
                     break;
                 case "8":
+                    Console.Write("Location of CSV files: ");
+                    csvDirectory = Console.ReadLine();
+
+                    Console.WriteLine();
+
+                    Console.Write("Target language code (EN): ");
+                    string targetLanguage = Console.ReadLine();
+
+                    Console.WriteLine();
+
+                    SLHA.AlphabeticIndexer(csvDirectory, targetLanguage);
+                    break;
+                case "9":
                     Console.Write("Location of CSV files: ");
                     csvDirectory = Console.ReadLine();
 

@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+using CsvHelper;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Sucrose.Localizer.Helper
 {
@@ -115,6 +117,141 @@ namespace Sucrose.Localizer.Helper
             Console.WriteLine();
             Console.WriteLine("POEditor file checking is complete.");
             Console.WriteLine();
+        }
+
+        public static void AlphabeticIndexer(string csvDirectory, string languageCode)
+        {
+            string csvFilePath = Path.Combine(csvDirectory, $"{languageCode}.csv");
+
+            if (!File.Exists(csvFilePath))
+            {
+                Console.WriteLine($"Error: {languageCode}.csv file not found.");
+                return;
+            }
+
+            Console.WriteLine($"Processing alphabetic indexer for {languageCode}.csv...");
+
+            List<CsvRecord> records = ReadCsvRecords(csvFilePath);
+            List<CsvRecord> processedRecords = ProcessRecordsForSorting(records);
+
+            // Write the processed records back to file
+            WriteCsvRecords(csvFilePath, processedRecords);
+
+            Console.WriteLine();
+            Console.WriteLine($"Alphabetic indexing for {languageCode}.csv is complete.");
+            Console.WriteLine();
+        }
+
+        private static List<CsvRecord> ReadCsvRecords(string filePath)
+        {
+            List<CsvRecord> records = new();
+
+            using StreamReader reader = new(filePath);
+            using CsvReader csv = new(reader, CultureInfo.InvariantCulture);
+
+            csv.Read();
+            csv.ReadHeader();
+
+            while (csv.Read())
+            {
+                records.Add(new CsvRecord
+                {
+                    Hash = csv.GetField("Hash"),
+                    File = csv.GetField("File"),
+                    Key = csv.GetField("Key"),
+                    Value = csv.GetField("Value")
+                });
+            }
+
+            return records;
+        }
+
+        private static List<CsvRecord> ProcessRecordsForSorting(List<CsvRecord> records)
+        {
+            List<CsvRecord> processedRecords = new(records);
+
+            for (int i = 0; i < processedRecords.Count; i++)
+            {
+                if (string.IsNullOrWhiteSpace(processedRecords[i].Key) || string.IsNullOrWhiteSpace(processedRecords[i].Value))
+                {
+                    // Find the range to sort
+                    int endIndex = i;
+                    int startIndex = FindBackwardRange(processedRecords, i);
+
+                    if (startIndex < endIndex)
+                    {
+                        // Extract the range to sort
+                        List<CsvRecord> rangeToSort = processedRecords.Skip(startIndex).Take(endIndex - startIndex).ToList();
+
+                        // Sort by key: alphabetic A-Z, then by length (short to long)
+                        rangeToSort = rangeToSort
+                            .Where(r => !string.IsNullOrWhiteSpace(r.Key) && r.Key != "Base")
+                            .OrderBy(r => r.Key, StringComparer.OrdinalIgnoreCase)
+                            .ThenBy(r => r.Key.Length)
+                            .ToList();
+
+                        // Replace the sorted range back
+                        for (int j = 0; j < rangeToSort.Count; j++)
+                        {
+                            if (startIndex + j < processedRecords.Count)
+                            {
+                                processedRecords[startIndex + j] = rangeToSort[j];
+                            }
+                        }
+                    }
+                }
+            }
+
+            return processedRecords;
+        }
+
+        private static int FindBackwardRange(List<CsvRecord> records, int currentIndex)
+        {
+            int startIndex = currentIndex;
+
+            // Go backward from current position
+            for (int i = currentIndex - 1; i >= 0; i--)
+            {
+                // Stop if we find an empty key/value or "Base" key
+                if (string.IsNullOrWhiteSpace(records[i].Key) ||
+                    string.IsNullOrWhiteSpace(records[i].Value) ||
+                    records[i].Key.Equals("Base", StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
+                startIndex = i;
+            }
+
+            return startIndex;
+        }
+
+        private static void WriteCsvRecords(string filePath, List<CsvRecord> records)
+        {
+            using StreamWriter writer = new(filePath);
+            using CsvWriter csv = new(writer, CultureInfo.InvariantCulture);
+
+            csv.WriteField("Hash");
+            csv.WriteField("File");
+            csv.WriteField("Key");
+            csv.WriteField("Value");
+            csv.NextRecord();
+
+            foreach (CsvRecord record in records)
+            {
+                csv.WriteField(record.Hash);
+                csv.WriteField(record.File);
+                csv.WriteField(record.Key);
+                csv.WriteField(record.Value);
+                csv.NextRecord();
+            }
+        }
+
+        private class CsvRecord
+        {
+            public string Hash { get; set; } = string.Empty;
+            public string File { get; set; } = string.Empty;
+            public string Key { get; set; } = string.Empty;
+            public string Value { get; set; } = string.Empty;
         }
 
         private static void CompareCsvFiles(string filePath1, string filePath2)
