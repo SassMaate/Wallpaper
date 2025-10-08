@@ -67,6 +67,7 @@
             x:Name="RootView"
             Grid.Row="1"
             Margin="0"
+            Cursor="Arrow"
             FrameMargin="10"
             IsBackButtonVisible="Collapsed"
             IsPaneToggleVisible="False"
@@ -132,13 +133,13 @@
                     Icon="{ui:SymbolIcon PuzzleCube16}"
                     TargetPageType="{x:Type setting:SystemSettingPage}"
                     ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuSystemTip}" />
-                <ui:NavigationViewItem
+                <!--<ui:NavigationViewItem
                     Name="Setting7"
                     Content="{DynamicResource Portal.MainWindow.MenuDonate}"
                     Cursor="Hand"
                     Icon="{ui:SymbolIcon Balloon16}"
                     TargetPageType="{x:Type setting:DonateSettingPage}"
-                    ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuDonateTip}" />
+                    ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuDonateTip}" />-->
                 <ui:NavigationViewItem
                     Name="Setting8"
                     Content="{DynamicResource Portal.MainWindow.MenuOther}"
