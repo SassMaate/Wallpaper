@@ -304,7 +304,7 @@ namespace Sucrose.Manager
 
         private class Settings
         {
-            public ConcurrentDictionary<string, object> Properties { get; set; } = new();
+            public Dictionary<string, object> Properties { get; set; } = new();
         }
     }
 }
