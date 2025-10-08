@@ -467,45 +467,45 @@ a2999a87a08dd9ecadc7bfffe6319bed,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.Com
 d22f29787c275b84a301a1b06878159e,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Locked,Die betreffende Datei wird von einem anderen Prozess verwendet
 17073f55564ef3714c813600f89ed3af,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Source,Die 'Source' Datei wurde nicht gefunden
 5866ed5c74a763c86ecfb0e5357f30f8,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Contact,Der 'Contact' Wert ist leer oder zu lang
-3ae6d75979d03b4cfa93e1d2a6927b73,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Preview,Die 'Preview' Datei wurde nicht gefunden
 06f5bcbec3063bbb3681aab5792cfb71,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Encrypt,Die zugehörige Datei ist verschlüsselt
+3ae6d75979d03b4cfa93e1d2a6927b73,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Preview,Die 'Preview' Datei wurde nicht gefunden
 721c6a1d7f3895af077da1ed41f9857a,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.ZipType,Die zugehörige Datei ist keine echte '.zip' Datei
 6bb6373a4596af66c43c31d42df7263e,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InfoFile,Die 'SucroseInfo.json' Datei wurde nicht gefunden
-8d65dbdd74573ad616068c24405e3d7c,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.NotFound,Die zugehörige Datei wurde nicht gefunden
 9f7ce3aa1fee0c5d6fb5869a304d4639,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.LoopMode,Ungültiger 'LoopMode' Wert
+8d65dbdd74573ad616068c24405e3d7c,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.NotFound,Die zugehörige Datei wurde nicht gefunden
 649b588af483e33a4c93f8886dc62651,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Arguments,Der 'Arguments' Wert ist zu lang
-89bd31ca50ef9b62691a290b03047a87,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Extension,Die zugehörige Datei hat keine '.zip' Erweiterung
-30f4df6fc78109838ba51c7568c17797,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Thumbnail,Die 'Thumbnail' Datei wurde nicht gefunden
-c4ad85363df07b00e8047070370f1810,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemProcessor,Ungültiger 'SystemProcessor' Wert
-5f53cbf06fd42b011b7301bca4553f4c,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.ThemeType,Ungültiger 'ThemeType' Wert
 fe787eb344f74f0a40d5d6fca2030bc5,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.EmptyInfo,Die 'SucroseInfo.json' Datei ist leer
+89bd31ca50ef9b62691a290b03047a87,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Extension,Die zugehörige Datei hat keine '.zip' Erweiterung
+5f53cbf06fd42b011b7301bca4553f4c,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.ThemeType,Ungültiger 'ThemeType' Wert
+30f4df6fc78109838ba51c7568c17797,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Thumbnail,Die 'Thumbnail' Datei wurde nicht gefunden
 bc1528041e0274abc551bbe6222f9500,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.AppVersion,Das Theme ist für eine höhere Version der Anwendung erstellt
 e458e949780eb42941874d3e573cb059,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidUrl,Die 'Source' enthält einen ungültigen Wert
 94ab59fc4fe9a20610b79ad8d4275165,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemBios,Ungültiger 'SystemBios' Wert
 760b85d51e19b353c13b15cc7ec81357,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemDate,Ungültiger 'SystemDate' Wert
+f9699118e5905e54e87023ce6af99f5b,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Description,Der 'Description' Wert ist leer oder zu lang
+0ed7a296f09776a57428a5c7346983af,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidFile,Ungültige Datei
+0b1fbf6e06199fe90994e612911a2795,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidInfo,Die 'SucroseInfo.json' Datei ist ungültig
+630f4157394019f1ab0f10da352aecef,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidTags,'Tags' Werte sind zu kurz oder zu lang
+dc77475fd179a9b7a6ac62b4ddeffd69,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.ShuffleMode,Ungültiger 'ShuffleMode' Wert
+cd4d4508ff47364236da59f3c7377dd8,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.StretchMode,Ungültiger 'StretchMode' Wert
 a8997741efc0f4082e7d8c81b690405f,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemAudio,Ungültiger 'SystemAudio' Wert
 2dd44358b431b0f7542a333bcef6c92a,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemTheme,Ungültiger 'SystemTheme' Wert
-f9699118e5905e54e87023ce6af99f5b,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.Description,Der 'Description' Wert ist leer oder zu lang
-0b1fbf6e06199fe90994e612911a2795,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidInfo,Die 'SucroseInfo.json' Datei ist ungültig
 ee7a016ceaea914f23a679f9715c44a9,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.TriggerTime,Ungültiger 'TriggerTime' Wert
-cd4d4508ff47364236da59f3c7377dd8,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.StretchMode,Ungültiger 'StretchMode' Wert
 0de9e9d845582e13be104f697803dc60,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.VolumeLevel,Ungültiger 'VolumeLevel' Wert
-dc77475fd179a9b7a6ac62b4ddeffd69,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.ShuffleMode,Ungültiger 'ShuffleMode' Wert
-630f4157394019f1ab0f10da352aecef,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidTags,'Tags' Werte sind zu kurz oder zu lang
-0ed7a296f09776a57428a5c7346983af,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidFile,Ungültige Datei
 5c56918130f32453870a32604d80d943,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.PropertyList,Der 'PropertyList' Wert ist leer
 d8d94d1046192a423e1058202273c472,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemMemory,Ungültiger 'SystemMemory' Wert
 0c8d6099d07adb4be0bae76ba9662737,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemBattery,Ungültiger 'SystemBattery' Wert
 e081d84ba7fff2a8add204acec7191e8,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemGraphic,Ungültiger 'SystemGraphic' Wert
 bb81f7423c05a32fa041e71737a7ee1c,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemNetwork,Ungültiger 'SystemNetwork' Wert
 0fb8ea035eca9b1ac2b9645faf3618f0,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidContact,'Contact' Wert ist nicht 'URL' oder 'E-Mail-Adresse'
-36a21ffa7f672730515c1afcfc20bace,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidExtension,Ungültige Dateierweiterung
 61e58c2a8cfc267e39c4077c79e0f20e,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.EmptyCompatible,Die 'SucroseCompatible.json' Datei ist leer
 f56e863046e71a28b57cb9510b2a157a,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.EmptyProperties,Die 'SucroseProperties.json' Datei ist leer
+c4ad85363df07b00e8047070370f1810,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemProcessor,Ungültiger 'SystemProcessor' Wert
+36a21ffa7f672730515c1afcfc20bace,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidExtension,Ungültige Dateierweiterung
 df06881b0fe2efb8e0e7ec433aa1bd5b,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.PropertyListener,Ungültiger 'PropertyListener' Wert
-bd1af240a77221d07cae120eee21e8e0,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemMotherboard,Ungültiger 'SystemMotherboard' Wert
 36f7ed1b07847e341aa48a66441454fe,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidCompatible,Die 'SucroseCompatible.json' Datei ist ungültig
 7966c238f14c7580134617d747697d72,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.InvalidProperties,Die 'SucroseProperties.json' Datei ist ungültig
+bd1af240a77221d07cae120eee21e8e0,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.SystemMotherboard,Ungültiger 'SystemMotherboard' Wert
 d8efb3df4ff47ccd98bdef11c436d481,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.PropertyLocalization,Ungültiger 'PropertyLocalization' Wert
 fea18d1fa167ee36e27d3088490725e2,Portal\Enum\Portal.Enum.DE.xaml,Portal.Enum.CompatibilityType.UnforeseenConsequences,Unvorhergesehene Folgen
 3aec8c9d676cf9da8b2239eb81ab34ab,Portal\LibraryPage\Portal.LibraryPage.DE.xaml,Base64,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbExpYnJhcnlQYWdlL1BvcnRhbC5GdWxsTGlicmFyeVBhZ2UuREUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkVtcHR5TGlicmFyeVBhZ2UvUG9ydGFsLkVtcHR5TGlicmFyeVBhZ2UuREUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaExpYnJhcnlQYWdlL1BvcnRhbC5TZWFyY2hMaWJyYXJ5UGFnZS5ERS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=
