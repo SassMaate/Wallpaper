@@ -171,6 +171,9 @@ namespace Sucrose.Localizer.Helper
             List<CsvRecord> processedRecords = new(records);
             List<SortGroup> groups = IdentifySortGroups(processedRecords);
 
+            Console.WriteLine($"Found {groups.Count} groups to process.");
+            Console.WriteLine();
+
             // Sort each group
             foreach (SortGroup group in groups)
             {
@@ -193,6 +196,14 @@ namespace Sucrose.Localizer.Helper
                         .ThenBy(r => GetKeyForSorting(r.Key)) // 2. Alphabetical A-Z + numerical order
                         .ToList();
 
+                    Console.WriteLine($"   Excluded: {excludedRecords.Count}, Sorted: {sortableRecords.Count}");
+
+                    if (sortableRecords.Count > 0)
+                    {
+                        Console.WriteLine($"   First key: {sortableRecords.First().Key}");
+                        Console.WriteLine($"   Last key: {sortableRecords.Last().Key}");
+                    }
+
                     // Combine excluded records first, then sorted records
                     List<CsvRecord> sortedGroup = new();
                     sortedGroup.AddRange(excludedRecords);
@@ -203,6 +214,15 @@ namespace Sucrose.Localizer.Helper
                     {
                         processedRecords[group.StartIndex + i] = sortedGroup[i];
                     }
+
+                    Console.WriteLine($"   Success: Group sorted and updated.");
+                    Console.WriteLine();
+                }
+                else
+                {
+                    string fileName = group.Records.FirstOrDefault()?.File ?? "Unknown";
+                    Console.WriteLine($"-- Skipping group: {Path.GetFileName(fileName)} (Single record) --");
+                    Console.WriteLine();
                 }
             }
 
@@ -269,26 +289,6 @@ namespace Sucrose.Localizer.Helper
         {
             public int StartIndex { get; set; }
             public List<CsvRecord> Records { get; set; } = new();
-        }
-
-        private static int FindBackwardRange(List<CsvRecord> records, int currentIndex)
-        {
-            int startIndex = currentIndex;
-
-            // Go backward from current position
-            for (int i = currentIndex - 1; i >= 0; i--)
-            {
-                // Stop if we find an empty key/value, "Base64" key
-                if (string.IsNullOrWhiteSpace(records[i].Key) ||
-                    string.IsNullOrWhiteSpace(records[i].Value) ||
-                    records[i].Key.Equals("Base64", StringComparison.OrdinalIgnoreCase))
-                {
-                    break;
-                }
-                startIndex = i;
-            }
-
-            return startIndex;
         }
 
         private static void WriteCsvRecords(string filePath, List<CsvRecord> records)
