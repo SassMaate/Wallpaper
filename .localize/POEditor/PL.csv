@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Nieprawidłowa wartość 'LoopMode',,Port
 Portal.Enum.CompatibilityType.Arguments,Wartość 'Arguments' jest zbyt długa,,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.Extension,Powiązany plik nie ma rozszerzenia '.zip',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Brak pliku 'Thumbnail',,Portal\Enum\Portal.Enum.PL.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Nieprawidłowa wartość 'SystemCpu',,Portal\Enum\Portal.Enum.PL.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Nieprawidłowa wartość 'SystemProcessor',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Nieprawidłowa wartość 'ThemeType',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Plik 'SucroseInfo.json' jest pusty,,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Motyw został stworzony dla wyższej wersji aplikacji,,Portal\Enum\Portal.Enum.PL.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Typ Komunikacji,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Określa metodę wysyłania wiadomości do motywów typu Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Użycie CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Co dzieje się z tapetą na podstawie ustawień użycia CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Processor,Użycie CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Co dzieje się z tapetą na podstawie ustawień użycia CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Użycie CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Użycie CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Użycie GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Co się dzieje z tapetą w zależności od ustawień użycia GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Graphic,Użycie GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Co się dzieje z tapetą w zależności od ustawień użycia GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Lista jednostek przetwarzania grafiki nie została jeszcze utworzona,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Lista jednostek przetwarzania grafiki nie została jeszcze utworzona,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Użycie GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Użycie GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Użycie Pamięci,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Co dzieje się z tapetą na podstawie ustawień użycia pamięci.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.PL.xaml,

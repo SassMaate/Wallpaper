@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,잘못된 'LoopMode' 값,,Portal\Enum\Por
 Portal.Enum.CompatibilityType.Arguments,'Arguments' 값이 너무 김,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.Extension,관련 파일이 '.zip' 확장자가 아님,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,'Thumbnail' 파일을 찾을 수 없음,,Portal\Enum\Portal.Enum.KO.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,잘못된 'SystemCpu' 값,,Portal\Enum\Portal.Enum.KO.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,잘못된 'SystemProcessor' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.ThemeType,잘못된 'ThemeType' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json' 파일이 비어 있음,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.AppVersion,테마가 더 높은 앱 버전용으로 만들어짐,,Portal\Enum\Portal.Enum.KO.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,통신 유형,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Web 타입의 테마에 메시지를 보내는 방법을 결정합니다.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,CPU 사용률,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,CPU 사용률 설정에 따라 배경화면이 어떻게 작동할지.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Processor,CPU 사용률,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Processor.Description,CPU 사용률 설정에 따라 배경화면이 어떻게 작동할지.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,CPU 사용률 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,CPU 사용률 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,GPU 사용,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,GPU 사용 설정에 따라 배경 화면에 어떤 일이 발생하는지.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Graphic,GPU 사용,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,GPU 사용 설정에 따라 배경 화면에 어떤 일이 발생하는지.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,그래픽 처리 장치 목록이 아직 생성되지 않았습니다,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,그래픽 처리 장치 목록이 아직 생성되지 않았습니다,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,GPU 사용 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,GPU 사용 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,메모리 사용량,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,
 Portal.PerformanceSettingPage.Memory.Description,메모리 사용 설정에 따라 배경화면이 어떻게 작동할지.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.KO.xaml,

@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Ugyldig 'LoopMode'-værdi,,Portal\Enum\Po
 Portal.Enum.CompatibilityType.Arguments,'Arguments' er for lang,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.Extension,Den pågældende fil har ikke '.zip' filtypen,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Kunne ikke finde 'Thumbnail'-filen,,Portal\Enum\Portal.Enum.DA.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Ugyldig 'SystemCpu'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Ugyldig 'SystemProcessor'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Ugyldig 'ThemeType'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json'-filen er tom,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Temaet er oprettet til en nyere version af programmet,,Portal\Enum\Portal.Enum.DA.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Kommunikationstype,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Afgør metoden til at sende beskeder til temaer af typen Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,CPU-brug,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Hvad der skal ske med tapetet baseret på dine CPU-brugsindstillinger.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Processor,CPU-brug,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Hvad der skal ske med tapetet baseret på dine CPU-brugsindstillinger.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,CPU-brug (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,CPU-brug (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,GPU Brug,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Hvad der skal ske med tapetet baseret på dine GPU-brugsindstillinger.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Graphic,GPU Brug,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Hvad der skal ske med tapetet baseret på dine GPU-brugsindstillinger.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Grafikbehandlingsenhederne er endnu ikke oprettet,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Grafikbehandlingsenhederne er endnu ikke oprettet,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,GPU Brug (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,GPU Brug (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Hukommelsesbrug,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Hvad der skal ske med tapetet baseret på dine hukommelsesbrugsindstillinger.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.DA.xaml,

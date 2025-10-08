@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Недопустимое значение
 Portal.Enum.CompatibilityType.Arguments,Значение 'Arguments' слишком длинное,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.Extension,Соответствующий файл не имеет расширение '.zip',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Файл 'Thumbnail' не найден,,Portal\Enum\Portal.Enum.RU.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Недопустимое значение 'SystemCpu',,Portal\Enum\Portal.Enum.RU.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Недопустимое значение 'SystemProcessor',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Недопустимое значение 'ThemeType',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Файл 'SucroseInfo.json' пуст,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Тема создана для более высокой версии приложения,,Portal\Enum\Portal.Enum.RU.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Тип коммуникации,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Определяет метод отправки сообщений темам типа Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Использование ЦП,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Определяет влияние ваших настроек использования процессора на обои.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Processor,Использование ЦП,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Определяет влияние ваших настроек использования процессора на обои.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Использование ЦП (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Использование ЦП (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Использование GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Что происходит с обоями в зависимости от настроек использования GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Graphic,Использование GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Что происходит с обоями в зависимости от настроек использования GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Список графических процессоров еще не создан,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Список графических процессоров еще не создан,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Использование GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Использование GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Использование памяти,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Определяет влияние ваших настроек использования памяти на обои.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RU.xaml,

@@ -476,7 +476,7 @@ d22f29787c275b84a301a1b06878159e,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.Com
 649b588af483e33a4c93f8886dc62651,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.Arguments,'Arguments' değeri çok uzun
 89bd31ca50ef9b62691a290b03047a87,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.Extension,İlgili dosya '.zip' uzantılı değil
 30f4df6fc78109838ba51c7568c17797,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.Thumbnail,'Thumbnail' dosyası bulunamadı
-ec8654343536c7a770e55e845096d6dd,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.SystemCpu,Geçersiz 'SystemCpu' değeri
+c4ad85363df07b00e8047070370f1810,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.SystemProcessor,Geçersiz 'SystemProcessor' değeri
 5f53cbf06fd42b011b7301bca4553f4c,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.ThemeType,Geçersiz 'ThemeType' değeri
 fe787eb344f74f0a40d5d6fca2030bc5,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json' dosyası boş
 bc1528041e0274abc551bbe6222f9500,Portal\Enum\Portal.Enum.TR.xaml,Portal.Enum.CompatibilityType.AppVersion,"Tema, uygulamanın daha yüksek bir sürümü için oluşturulmuş"
@@ -1032,18 +1032,18 @@ f9a269c4e35fcfaa6c5737bf2a6c39c8,Portal\SettingPage\PerformanceSettingPage\Porta
 7ed0d5dd5c608b6c634fc8873f92af89,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Communication,İletişim Türü
 80b741ff1a2a1f6b6463aaa0f044a8fe,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Communication.Description,Web türündeki temalara iletilecek olan mesajların yollanma türünü belirler.
 1711064b37867d4cc9b319a663cc3ca5,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-43a777f450a3741c8adbe503df6b8cf6,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Cpu,İşlemci Kullanımı
-60dce7d9da2e2e588ed8938ede6b2d45,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Cpu.Description,İşlemci kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
+20d4c590f550be1dcc4fa9d0c42a922e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor,İşlemci Kullanımı
+29978e165eb7156caeac7886341028e6,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor.Description,İşlemci kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
 46e6e118b7e1149417024ac3ffe64002,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-404f8ab8978d0fa796d3894a0ac0cda4,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Cpu.CpuUsage,İşlemci Kullanımı (%):
+f342732c9f28fec3cc86873feb43492d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor.ProcessorUsage,İşlemci Kullanımı (%):
 110c279dfc05eedfeff3d322468aa64d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-1292302067ac3f14f7ddd4595843a221,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Gpu,Ekran Kartı Kullanımı
-8f67270ac8a8735dec7fc1075cd67bc2,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Gpu.Description,Ekran kartı kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
+b04623476b6447505f64ae62ec5098e9,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic,Ekran Kartı Kullanımı
+dad2ee90cb2deb5edb92fc95e672e9a6,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.Description,Ekran kartı kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
 5d5efb69fe1e5235ee57dffc2ce53cbe,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-4212898169afb9a14c751126fb11df42,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Gpu.GpuAdapter,Ekran Kartı:
-0a3fa119e4be44f161e4b4044cc41baa,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Ekran kartları listesi henüz oluşturulmadı
+d8e858b87bfbfd2a6d6f7895d9dbb482,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicAdapter,Ekran Kartı:
+3a6d83d0f856f578c04a14ab681f6f19,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Ekran kartları listesi henüz oluşturulmadı
 f02363f9ef8d451b71fde9144cc132c8,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-25ce33892b5600e22dc981609ec42f54,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Gpu.GpuUsage,Ekran Kartı Kullanımı (%):
+6a18461adcec49aebffdb50ad530af6e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicUsage,Ekran Kartı Kullanımı (%):
 6baf6bc962cb76314dcd42636a4ed213,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 c5390944be5c341cef445f495a929fc1,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory,Bellek Kullanımı
 7d7cb5e31a7308e40387b342ab390f6b,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory.Description,Bellek kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.

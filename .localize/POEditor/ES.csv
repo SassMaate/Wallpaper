@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Valor 'LoopMode' no válido,,Portal\Enum\
 Portal.Enum.CompatibilityType.Arguments,El valor 'Arguments' es demasiado largo,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.Extension,El archivo relacionado no tiene extensión '.zip',,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Archivo 'Thumbnail' no encontrado,,Portal\Enum\Portal.Enum.ES.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Valor 'SystemCpu' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Valor 'SystemProcessor' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Valor 'ThemeType' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,El archivo 'SucroseInfo.json' está vacío,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.AppVersion,El tema está creado para una versión superior de la aplicación,,Portal\Enum\Portal.Enum.ES.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Tipo de Comunicación,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Determina el método de envío de mensajes a temas de tipo Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Uso de CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Qué sucede con el fondo de pantalla según la configuración de uso de CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Processor,Uso de CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Qué sucede con el fondo de pantalla según la configuración de uso de CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Uso de CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Uso de CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Uso de GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Qué pasa con el fondo de pantalla en función de la configuración de uso de GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Graphic,Uso de GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Qué pasa con el fondo de pantalla en función de la configuración de uso de GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,La lista de unidades de procesamiento gráfico aún no se ha creado,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,La lista de unidades de procesamiento gráfico aún no se ha creado,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Uso de GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Uso de GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Uso de Memoria,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Qué sucede con el fondo de pantalla según la configuración de uso de memoria.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ES.xaml,

@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Μη έγκυρη τιμή 'LoopMode',,Po
 Portal.Enum.CompatibilityType.Arguments,Η τιμή 'Arguments' είναι πολύ μεγάλη,,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.Extension,Το συγκεκριμένο αρχείο δεν έχει κατάληξη '.zip',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Το αρχείο 'Thumbnail' δεν βρέθηκε,,Portal\Enum\Portal.Enum.EL.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Μη έγκυρη τιμή 'SystemCpu',,Portal\Enum\Portal.Enum.EL.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Μη έγκυρη τιμή 'SystemProcessor',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Μη έγκυρη τιμή 'ThemeType',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Το αρχείο 'SucroseInfo.json' είναι άδειο,,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Το θέμα δημιουργήθηκε για μια υψηλότερη έκδοση της εφαρμογής,,Portal\Enum\Portal.Enum.EL.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Τύπος Επικοινωνίας,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Καθορίζει τη μέθοδο αποστολής μηνυμάτων σε θέματα τύπου Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Χρήση Επεξεργαστή,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Πώς θα επηρεάσει η ρύθμιση της χρήσης του επεξεργαστή το ταπετσαρία.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Processor,Χρήση Επεξεργαστή,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Πώς θα επηρεάσει η ρύθμιση της χρήσης του επεξεργαστή το ταπετσαρία.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Χρήση Επεξεργαστή (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Χρήση Επεξεργαστή (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Χρήση GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Τι συμβαίνει με το φόντο με βάση τις ρυθμίσεις χρήσης GPU σας.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Graphic,Χρήση GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Τι συμβαίνει με το φόντο με βάση τις ρυθμίσεις χρήσης GPU σας.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Η λίστα των μονάδων επεξεργασίας γραφικών δεν έχει δημιουργηθεί ακόμα,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Η λίστα των μονάδων επεξεργασίας γραφικών δεν έχει δημιουργηθεί ακόμα,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Χρήση GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Χρήση GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Χρήση Μνήμης,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Πώς θα επηρεάσει η ρύθμιση της χρήσης μνήμης το ταπετσαρία.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.EL.xaml,

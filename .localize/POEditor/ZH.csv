@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,无效的'LoopMode'值,,Portal\Enum\Porta
 Portal.Enum.CompatibilityType.Arguments,'Arguments' 值太长,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.Extension,相关文件不是'.zip'扩展名,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,'Thumbnail' 文件未找到,,Portal\Enum\Portal.Enum.ZH.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,无效的'SystemCpu'值,,Portal\Enum\Portal.Enum.ZH.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,无效的'SystemProcessor'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.ThemeType,无效的'ThemeType'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json' 文件为空,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.AppVersion,主题是为应用的较高版本创建的,,Portal\Enum\Portal.Enum.ZH.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,通信类型,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 Portal.PerformanceSettingPage.Communication.Description,确定将消息发送到 Web 类型主题的方法。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,CPU使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,根据您的CPU使用设置，将影响壁纸。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Processor,CPU使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Processor.Description,根据您的CPU使用设置，将影响壁纸。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,CPU使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,CPU使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,GPU 使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,根据您的 GPU 使用设置，壁纸会发生什么。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Graphic,GPU 使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,根据您的 GPU 使用设置，壁纸会发生什么。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,图形处理单元列表尚未创建,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,图形处理单元列表尚未创建,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,GPU 使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,GPU 使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,内存使用,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,
 Portal.PerformanceSettingPage.Memory.Description,根据您的内存使用设置，将影响壁纸。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.ZH.xaml,

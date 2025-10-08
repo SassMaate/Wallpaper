@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,'LoopMode'値が無効です,,Portal\Enum
 Portal.Enum.CompatibilityType.Arguments,'Arguments'の値が非常に長いです,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.Extension,関連ファイルは '.zip' 拡張子ではありません,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,'Thumbnail'ファイルが見つかりませんでした,,Portal\Enum\Portal.Enum.JA.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,'SystemCpu'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,'SystemProcessor'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.ThemeType,'ThemeType'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json'ファイルは空です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.AppVersion,テーマはより高いアプリケーションバージョンのために作成されました,,Portal\Enum\Portal.Enum.JA.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,通信タイプ,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Web タイプのテーマにメッセージを送信する方法を決定します。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,CPU 使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,CPU 使用率の設定による壁紙の動作。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Processor,CPU 使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Processor.Description,CPU 使用率の設定による壁紙の動作。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,CPU 使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,CPU 使用率 (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Utilizzo GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Graphic,Utilizzo GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,La lista delle unità di elaborazione grafica non è ancora stata creata,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,La lista delle unità di elaborazione grafica non è ancora stata creata,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Utilizzo GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Utilizzo GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,メモリ 使用率,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,
 Portal.PerformanceSettingPage.Memory.Description,メモリ 使用率の設定による壁紙の動作。,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.JA.xaml,

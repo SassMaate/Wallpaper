@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Valoare 'LoopMode' nevalidă,,Portal\Enum
 Portal.Enum.CompatibilityType.Arguments,Valoarea 'Arguments' este prea lungă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.Extension,Fișierul specificat nu are extensia '.zip',,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Fișierul 'Thumbnail' nu a fost găsit,,Portal\Enum\Portal.Enum.RO.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Valoare 'SystemCpu' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Valoare 'SystemProcessor' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Valoare 'ThemeType' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Fișierul 'SucroseInfo.json' este gol,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Tema a fost creată pentru o versiune mai înaltă a aplicației,,Portal\Enum\Portal.Enum.RO.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Tip de Comunicare,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Determină metoda de trimitere a mesajelor către temele de tip Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Utilizare Procesor,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a procesorului.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Processor,Utilizare Procesor,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a procesorului.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Utilizare Procesor (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Utilizare Procesor (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Utilizare GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Ce se întâmplă cu imaginea de fundal în funcție de setările de utilizare a GPU-ului.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Graphic,Utilizare GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Ce se întâmplă cu imaginea de fundal în funcție de setările de utilizare a GPU-ului.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,Lista unităților de procesare grafică nu a fost încă creată,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Lista unităților de procesare grafică nu a fost încă creată,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Utilizare GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Utilizare GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Utilizare Memorii,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a memoriei.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.RO.xaml,

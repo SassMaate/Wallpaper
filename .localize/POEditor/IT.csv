@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Valore 'LoopMode' non valido,,Portal\Enum
 Portal.Enum.CompatibilityType.Arguments,Valore 'Arguments' troppo lungo,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.Extension,Il file correlato non ha estensione '.zip',,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,File 'Thumbnail' non trovato,,Portal\Enum\Portal.Enum.IT.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Valore 'SystemCpu' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Valore 'SystemProcessor' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Valore 'ThemeType' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Il file 'SucroseInfo.json' è vuoto,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Tema creato per una versione più recente dell'applicazione,,Portal\Enum\Portal.Enum.IT.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Tipo di Comunicazione,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Determina il metodo di invio dei messaggi ai temi di tipo Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,Utilizzo della CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Processor,Utilizzo della CPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della CPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,Utilizzo della CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,Utilizzo della CPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,Utilizzo GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Graphic,Utilizzo GPU,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,La lista delle unità di elaborazione grafica non è ancora stata creata,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,La lista delle unità di elaborazione grafica non è ancora stata creata,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,Utilizzo GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,Utilizzo GPU (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Utilizzo della Memoria,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della memoria.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.IT.xaml,

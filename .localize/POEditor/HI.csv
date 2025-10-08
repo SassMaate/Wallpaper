@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,'LoopMode' मूल्य अमान�
 Portal.Enum.CompatibilityType.Arguments,'Arguments' मूल्य बहुत लंबा है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.Extension,संबंधित फ़ाइल '.zip' विस्तारण नहीं है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,'Thumbnail' फ़ाइल नहीं मिल सकी,,Portal\Enum\Portal.Enum.HI.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,'SystemCpu' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,'SystemProcessor' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.ThemeType,'ThemeType' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,'SucroseInfo.json' फ़ाइल खाली है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.AppVersion,"थीम, ऐप के एक उच्च संस्करण के लिए बनाई गई है",,Portal\Enum\Portal.Enum.HI.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,संचार प्रकार,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Web प्रकार के थीम्स को संदेश भेजने का तरीका निर्धारित करता है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,सीपीयू उपयोग,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,सीपीयू उपयोग सेटिंग्स के परिणामस्वरूप वॉलपेपर पर क्या होने वाला है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Processor,सीपीयू उपयोग,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Processor.Description,सीपीयू उपयोग सेटिंग्स के परिणामस्वरूप वॉलपेपर पर क्या होने वाला है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,सीपीयू उपयोग (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,सीपीयू उपयोग (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,GPU उपयोग,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,आपकी GPU उपयोग सेटिंग्स के आधार पर वॉलपेपर के साथ क्या होता है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Graphic,GPU उपयोग,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,आपकी GPU उपयोग सेटिंग्स के आधार पर वॉलपेपर के साथ क्या होता है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,ग्राफिक प्रोसेसिंग यूनिट्स की सूची अभी तक बनाई नहीं गई है,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,ग्राफिक प्रोसेसिंग यूनिट्स की सूची अभी तक बनाई नहीं गई है,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,GPU उपयोग (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,GPU उपयोग (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,मेमोरी उपयोग,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,
 Portal.PerformanceSettingPage.Memory.Description,मेमोरी उपयोग सेटिंग्स के परिणामस्वरूप वॉलपेपर पर क्या होने वाला है।,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HI.xaml,

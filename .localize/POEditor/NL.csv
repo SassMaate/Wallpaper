@@ -476,7 +476,7 @@ Portal.Enum.CompatibilityType.LoopMode,Ongeldige 'LoopMode' waarde,,Portal\Enum\
 Portal.Enum.CompatibilityType.Arguments,'Arguments' is te lang,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.Extension,Het relevante bestand heeft geen '.zip' extensie,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Bestand 'Thumbnail' niet gevonden,,Portal\Enum\Portal.Enum.NL.xaml,
-Portal.Enum.CompatibilityType.SystemCpu,Ongeldige 'SystemCpu' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,Ongeldige 'SystemProcessor' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.ThemeType,Ongeldige 'ThemeType' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.EmptyInfo,Bestand 'SucroseInfo.json' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Thema is gemaakt voor een hogere versie van de toepassing,,Portal\Enum\Portal.Enum.NL.xaml,
@@ -1032,18 +1032,18 @@ PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Port
 Portal.PerformanceSettingPage.Communication,Communicatietype,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 Portal.PerformanceSettingPage.Communication.Description,Bepaalt de methode om berichten te verzenden naar thema's van het type Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu,CPU-Gebruik,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
-Portal.PerformanceSettingPage.Cpu.Description,Het effect van uw CPU-gebruiksinstellingen op de achtergrondafbeelding.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Processor,CPU-Gebruik,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Processor.Description,Het effect van uw CPU-gebruiksinstellingen op de achtergrondafbeelding.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Cpu.CpuUsage,CPU-gebruik (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,CPU-gebruik (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu,GPU Gebruik,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
-Portal.PerformanceSettingPage.Gpu.Description,Wat er met de achtergrondafbeelding gebeurt op basis van je GPU-gebruikinstellingen.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Graphic,GPU Gebruik,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,Wat er met de achtergrondafbeelding gebeurt op basis van je GPU-gebruikinstellingen.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
-Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty,De lijst met grafische verwerkingsunits is nog niet aangemaakt,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,GPU:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,De lijst met grafische verwerkingsunits is nog niet aangemaakt,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
-Portal.PerformanceSettingPage.Gpu.GpuUsage,GPU Gebruik (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,GPU Gebruik (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,Please don't touch the translation in this line.
 Portal.PerformanceSettingPage.Memory,Geheugengebruik,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
 Portal.PerformanceSettingPage.Memory.Description,Het effect van uw geheugengebruiksinstellingen op de achtergrondafbeelding.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.NL.xaml,
