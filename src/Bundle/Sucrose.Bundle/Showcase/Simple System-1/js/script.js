@@ -298,7 +298,7 @@ function initChart() {
 	ramChart = new Chart(ctxRam, ramChartConfig);
 };
 
-function SucroseCpuData(obj) {
+function SucroseProcessorData(obj) {
 	if (obj != null) {
 		cpu = true;
 
@@ -312,7 +312,7 @@ function SucroseCpuData(obj) {
 	}
 }
 
-function SucroseGpuData(obj) {
+function SucroseGraphicData(obj) {
 	if (obj != null) {
 		gpu = true;
 
