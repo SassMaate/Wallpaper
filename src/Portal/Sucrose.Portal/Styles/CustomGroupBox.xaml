@@ -1,4 +1,4 @@
-﻿<ResourceDictionary
+<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Sucrose.Portal.Controls">
@@ -11,29 +11,59 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type controls:CustomGroupBox}">
                     <Grid>
-                        <!--  Border  -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!--  Top border with header  -->
+                        <Grid Grid.Row="0" Margin="0,0,0,-2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <!--  Top-left corner  -->
+                            <Border
+                                Grid.Column="0"
+                                Width="8"
+                                Height="2"
+                                VerticalAlignment="Center"
+                                Background="{TemplateBinding BorderBrush}"
+                                CornerRadius="8,0,0,0" />
+
+                            <!--  Header  -->
+                            <Border
+                                Grid.Column="1"
+                                Margin="8,0,8,0"
+                                Padding="6,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Background="{TemplateBinding HeaderBackground}">
+                                <ContentPresenter
+                                    ContentSource="Header"
+                                    RecognizesAccessKey="True" />
+                            </Border>
+
+                            <!--  Top-right border line  -->
+                            <Border
+                                Grid.Column="2"
+                                Height="2"
+                                VerticalAlignment="Center"
+                                Background="{TemplateBinding BorderBrush}"
+                                CornerRadius="0,8,0,0" />
+                        </Grid>
+
+                        <!--  Main content border  -->
                         <Border
-                            Margin="0,12,0,0"
+                            Grid.Row="1"
                             Padding="10"
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="8">
+                            BorderThickness="2,0,2,2"
+                            CornerRadius="0,0,8,8">
                             <ContentPresenter ContentSource="Content" />
-                        </Border>
-
-                        <!--  Header (overlapping border top)  -->
-                        <Border
-                            Margin="16,-5,0,0"
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Top"
-                            Background="{TemplateBinding HeaderBackground}"
-                            RenderTransformOrigin="0.5,0.5">
-                            <ContentPresenter
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Top"
-                                ContentSource="Header"
-                                RecognizesAccessKey="True" />
                         </Border>
                     </Grid>
                 </ControlTemplate>
