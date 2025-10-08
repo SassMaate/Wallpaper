@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">통신 유형</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Web 타입의 테마에 메시지를 보내는 방법을 결정합니다.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">CPU 사용률</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">CPU 사용률 설정에 따라 배경화면이 어떻게 작동할지.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">CPU 사용률</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">CPU 사용률 설정에 따라 배경화면이 어떻게 작동할지.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">CPU 사용률 (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">CPU 사용률 (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">GPU 사용</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">GPU 사용 설정에 따라 배경 화면에 어떤 일이 발생하는지.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">GPU 사용</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">GPU 사용 설정에 따라 배경 화면에 어떤 일이 발생하는지.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">그래픽 처리 장치 목록이 아직 생성되지 않았습니다</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">그래픽 처리 장치 목록이 아직 생성되지 않았습니다</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">GPU 사용 (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">GPU 사용 (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">메모리 사용량</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">메모리 사용 설정에 따라 배경화면이 어떻게 작동할지.</system:String>

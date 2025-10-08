@@ -12,9 +12,6 @@ namespace Sucrose.Shared.Theme.Helper
         [JsonProperty("LoopMode", Required = Required.Default)]
         public string LoopMode { get; set; } = string.Empty;
 
-        [JsonProperty("SystemCpu", Required = Required.Default)]
-        public string SystemCpu { get; set; } = string.Empty;
-
         [JsonProperty("ThemeType", Required = Required.Default)]
         public string ThemeType { get; set; } = string.Empty;
 
@@ -50,6 +47,9 @@ namespace Sucrose.Shared.Theme.Helper
 
         [JsonProperty("SystemNetwork", Required = Required.Default)]
         public string SystemNetwork { get; set; } = string.Empty;
+
+        [JsonProperty("SystemProcessor", Required = Required.Default)]
+        public string SystemProcessor { get; set; } = string.Empty;
 
         [JsonProperty("SystemMotherboard", Required = Required.Default)]
         public string SystemMotherboard { get; set; } = string.Empty;

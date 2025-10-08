@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">Значення 'Arguments' занадто довге</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Відповідний файл не має розширення '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Файл 'Thumbnail' не знайдено</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Недійсне значення 'SystemCpu'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Недійсне значення 'SystemProcessor'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Недійсне значення 'ThemeType'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Файл 'SucroseInfo.json' порожній</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Тема призначена для вищої версії програми</system:String>

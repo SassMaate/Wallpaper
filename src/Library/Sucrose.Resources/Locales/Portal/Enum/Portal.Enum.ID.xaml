@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">Nilai 'Arguments' terlalu panjang</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Berkas terkait bukan berkas dengan ekstensi '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Berkas 'Thumbnail' tidak ditemukan</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Nilai 'SystemCpu' tidak valid</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Nilai 'SystemProcessor' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Nilai 'ThemeType' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Berkas 'SucroseInfo.json' kosong</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Tema dibuat untuk versi aplikasi yang lebih tinggi</system:String>

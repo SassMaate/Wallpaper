@@ -6,7 +6,7 @@ namespace Sucrose.Memory.Manage.Readonly
     {
         public static readonly string File = "File";
 
-        public static readonly string Version = "v7";
+        public static readonly string Version = "v8";
 
         public static readonly string Check = "Check";
 

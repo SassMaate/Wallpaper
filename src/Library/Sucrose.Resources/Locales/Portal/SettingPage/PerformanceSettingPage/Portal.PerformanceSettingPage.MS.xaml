@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Jenis Komunikasi</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Menentukan kaedah penghantaran mesej kepada tema-tema jenis Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Penggunaan CPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Apa yang akan berlaku pada dinding semasa tetapan penggunaan CPU anda.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Penggunaan CPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Apa yang akan berlaku pada dinding semasa tetapan penggunaan CPU anda.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Penggunaan CPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Penggunaan CPU (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Penggunaan GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Apa yang berlaku pada latar belakang berdasarkan tetapan penggunaan GPU anda.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Penggunaan GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Apa yang berlaku pada latar belakang berdasarkan tetapan penggunaan GPU anda.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Senarai unit pemproses grafik belum dibuat</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Senarai unit pemproses grafik belum dibuat</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Penggunaan GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Penggunaan GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Penggunaan Memori</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Apa yang akan berlaku pada dinding semasa tetapan penggunaan memori anda.</system:String>

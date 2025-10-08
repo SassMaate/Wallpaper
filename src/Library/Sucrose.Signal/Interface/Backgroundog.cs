@@ -4,8 +4,6 @@ namespace Sucrose.Signal.Interface
 {
     public class Backgroundog
     {
-        public JObject Cpu { get; set; } = null;
-
         public JObject Bios { get; set; } = null;
 
         public JObject Date { get; set; } = null;
@@ -19,6 +17,8 @@ namespace Sucrose.Signal.Interface
         public JObject Graphic { get; set; } = null;
 
         public JObject Network { get; set; } = null;
+
+        public JObject Processor { get; set; } = null;
 
         public JObject Motherboard { get; set; } = null;
     }

@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">Valoarea 'Arguments' este prea lungă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Fișierul specificat nu are extensia '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Fișierul 'Thumbnail' nu a fost găsit</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Valoare 'SystemCpu' nevalidă</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Valoare 'SystemProcessor' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Valoare 'ThemeType' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Fișierul 'SucroseInfo.json' este gol</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Tema a fost creată pentru o versiune mai înaltă a aplicației</system:String>

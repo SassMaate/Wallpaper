@@ -39,8 +39,6 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static bool PropertiesWatcher = true;
 
-        public static string CpuData = string.Empty;
-
         public static string BiosData = string.Empty;
 
         public static string DateData = string.Empty;
@@ -64,6 +62,8 @@ namespace Sucrose.Shared.Engine.Manage
         public static IntPtr WindowHandle = IntPtr.Zero;
 
         public delegate void ExecuteNormal(string Script);
+
+        public static string ProcessorData = string.Empty;
 
         public static string CompatiblePath = string.Empty;
 

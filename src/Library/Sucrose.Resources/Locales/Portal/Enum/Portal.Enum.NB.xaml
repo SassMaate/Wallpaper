@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">'Arguments' verdien er for lang</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Den tilknyttede filen har ikke '.zip' filendelse</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">'Thumbnail' filen ble ikke funnet</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Ugyldig 'SystemCpu' verdi</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Ugyldig 'SystemProcessor' verdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Ugyldig 'ThemeType' verdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">'SucroseInfo.json' filen er tom</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Temaet er opprettet for en høyere versjon av applikasjonen</system:String>

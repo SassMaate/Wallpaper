@@ -148,181 +148,181 @@ namespace Sucrose.Portal.ViewModels.Pages
 
             Contents.Add(SystemResourcesArea);
 
-            SPVCEC Cpu = new()
+            SPVCEC Processor = new()
             {
                 Margin = new Thickness(0, 10, 0, 0)
             };
 
-            Cpu.LeftIcon.Symbol = SymbolRegular.DeveloperBoard24;
-            Cpu.Title.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Cpu");
-            Cpu.Description.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Cpu", "Description");
+            Processor.LeftIcon.Symbol = SymbolRegular.DeveloperBoard24;
+            Processor.Title.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Processor");
+            Processor.Description.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Processor", "Description");
 
-            ComboBox CpuPerformance = new();
+            ComboBox ProcessorPerformance = new();
 
-            CpuPerformance.SelectionChanged += (s, e) => CpuPerformanceSelected(CpuPerformance.SelectedIndex);
+            ProcessorPerformance.SelectionChanged += (s, e) => ProcessorPerformanceSelected(ProcessorPerformance.SelectedIndex);
 
             foreach (SSDEPT Type in Enum.GetValues(typeof(SSDEPT)))
             {
-                CpuPerformance.Items.Add(SRER.GetValue("Portal", "Enum", "PerformanceType", $"{Type}"));
+                ProcessorPerformance.Items.Add(SRER.GetValue("Portal", "Enum", "PerformanceType", $"{Type}"));
             }
 
-            CpuPerformance.SelectedIndex = (int)SSDMMB.CpuPerformance;
+            ProcessorPerformance.SelectedIndex = (int)SSDMMB.ProcessorPerformance;
 
-            Cpu.HeaderFrame = CpuPerformance;
+            Processor.HeaderFrame = ProcessorPerformance;
 
-            StackPanel CpuContent = new()
+            StackPanel ProcessorContent = new()
             {
                 Orientation = Orientation.Horizontal
             };
 
-            TextBlock CpuUsageText = new()
+            TextBlock ProcessorUsageText = new()
             {
-                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Cpu", "CpuUsage"),
+                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Processor", "ProcessorUsage"),
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
                 VerticalAlignment = VerticalAlignment.Center,
                 Margin = new Thickness(0, 0, 10, 0),
                 FontWeight = FontWeights.SemiBold
             };
 
-            NumberBox CpuUsage = new()
+            NumberBox ProcessorUsage = new()
             {
                 Icon = new SymbolIcon(SymbolRegular.ArrowTrendingLines24),
                 IconPlacement = ElementPlacement.Left,
                 Margin = new Thickness(0, 0, 10, 0),
+                Value = SMMB.ProcessorUsage,
                 ClearButtonEnabled = false,
-                Value = SMMB.CpuUsage,
                 MaxDecimalPlaces = 0,
                 Maximum = 100,
                 MaxLength = 3,
                 Minimum = 0
             };
 
-            CpuUsage.ValueChanged += (s, e) => CpuUsageChanged(CpuUsage.Value);
+            ProcessorUsage.ValueChanged += (s, e) => ProcessorUsageChanged(ProcessorUsage.Value);
 
-            CpuContent.Children.Add(CpuUsageText);
-            CpuContent.Children.Add(CpuUsage);
+            ProcessorContent.Children.Add(ProcessorUsageText);
+            ProcessorContent.Children.Add(ProcessorUsage);
 
-            Cpu.FooterCard = CpuContent;
+            Processor.FooterCard = ProcessorContent;
 
-            Contents.Add(Cpu);
+            Contents.Add(Processor);
 
-            SPVCEC Gpu = new()
+            SPVCEC Graphic = new()
             {
                 Margin = new Thickness(0, 10, 0, 0)
             };
 
-            Gpu.LeftIcon.Symbol = SymbolRegular.VideoPerson24;
-            Gpu.Title.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Gpu");
-            Gpu.Description.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Gpu", "Description");
+            Graphic.LeftIcon.Symbol = SymbolRegular.VideoPerson24;
+            Graphic.Title.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Graphic");
+            Graphic.Description.Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Graphic", "Description");
 
-            ComboBox GpuPerformance = new();
+            ComboBox GraphicPerformance = new();
 
-            GpuPerformance.SelectionChanged += (s, e) => GpuPerformanceSelected(GpuPerformance.SelectedIndex);
+            GraphicPerformance.SelectionChanged += (s, e) => GraphicPerformanceSelected(GraphicPerformance.SelectedIndex);
 
             foreach (SSDEPT Type in Enum.GetValues(typeof(SSDEPT)))
             {
-                GpuPerformance.Items.Add(SRER.GetValue("Portal", "Enum", "PerformanceType", $"{Type}"));
+                GraphicPerformance.Items.Add(SRER.GetValue("Portal", "Enum", "PerformanceType", $"{Type}"));
             }
 
-            GpuPerformance.SelectedIndex = (int)SSDMMB.GpuPerformance;
+            GraphicPerformance.SelectedIndex = (int)SSDMMB.GraphicPerformance;
 
-            Gpu.HeaderFrame = GpuPerformance;
+            Graphic.HeaderFrame = GraphicPerformance;
 
-            StackPanel GpuContent = new();
+            StackPanel GraphicContent = new();
 
-            StackPanel GpuAdapterContent = new()
+            StackPanel GraphicAdapterContent = new()
             {
                 Orientation = Orientation.Horizontal
             };
 
-            TextBlock GpuAdapterText = new()
+            TextBlock GraphicAdapterText = new()
             {
-                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Gpu", "GpuAdapter"),
+                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Graphic", "GraphicAdapter"),
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
                 VerticalAlignment = VerticalAlignment.Center,
                 Margin = new Thickness(0, 0, 10, 0),
                 FontWeight = FontWeights.SemiBold
             };
 
-            ComboBox GpuAdapter = new()
+            ComboBox GraphicAdapter = new()
             {
                 MaxDropDownHeight = 200,
                 MaxWidth = 700
             };
 
-            DynamicScrollViewer.SetVerticalScrollBarVisibility(GpuAdapter, ScrollBarVisibility.Auto);
+            DynamicScrollViewer.SetVerticalScrollBarVisibility(GraphicAdapter, ScrollBarVisibility.Auto);
 
             if (SMMS.GraphicInterfaces.Any())
             {
-                GpuAdapter.SelectionChanged += (s, e) => GpuAdapterSelected($"{GpuAdapter.SelectedValue}");
+                GraphicAdapter.SelectionChanged += (s, e) => GraphicAdapterSelected($"{GraphicAdapter.SelectedValue}");
 
                 foreach (string Interface in SMMS.GraphicInterfaces)
                 {
-                    GpuAdapter.Items.Add(Interface);
+                    GraphicAdapter.Items.Add(Interface);
                 }
 
                 string SelectedAdapter = SMMB.GraphicAdapter;
 
                 if (string.IsNullOrEmpty(SelectedAdapter))
                 {
-                    GpuAdapter.SelectedIndex = 0;
+                    GraphicAdapter.SelectedIndex = 0;
                 }
                 else
                 {
-                    GpuAdapter.SelectedValue = SelectedAdapter;
+                    GraphicAdapter.SelectedValue = SelectedAdapter;
                 }
             }
             else
             {
-                GpuAdapter.Items.Add(new ComboBoxItem()
+                GraphicAdapter.Items.Add(new ComboBoxItem()
                 {
-                    Content = SRER.GetValue("Portal", "PerformanceSettingPage", "Gpu", "GpuAdapter", "Empty"),
+                    Content = SRER.GetValue("Portal", "PerformanceSettingPage", "Graphic", "GraphicAdapter", "Empty"),
                     IsSelected = true
                 });
             }
 
-            StackPanel GpuUsageContent = new()
+            StackPanel GraphicUsageContent = new()
             {
                 Orientation = Orientation.Horizontal,
                 Margin = new Thickness(0, 10, 0, 0)
             };
 
-            TextBlock GpuUsageText = new()
+            TextBlock GraphicUsageText = new()
             {
-                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Gpu", "GpuUsage"),
+                Text = SRER.GetValue("Portal", "PerformanceSettingPage", "Graphic", "GraphicUsage"),
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
                 VerticalAlignment = VerticalAlignment.Center,
                 Margin = new Thickness(0, 0, 10, 0),
                 FontWeight = FontWeights.SemiBold
             };
 
-            NumberBox GpuUsage = new()
+            NumberBox GraphicUsage = new()
             {
                 Icon = new SymbolIcon(SymbolRegular.ArrowTrendingSparkle24),
                 IconPlacement = ElementPlacement.Left,
                 Margin = new Thickness(0, 0, 10, 0),
                 ClearButtonEnabled = false,
-                Value = SMMB.GpuUsage,
+                Value = SMMB.GraphicUsage,
                 MaxDecimalPlaces = 0,
                 Maximum = 100,
                 MaxLength = 3,
                 Minimum = 0
             };
 
-            GpuUsage.ValueChanged += (s, e) => GpuUsageChanged(GpuUsage.Value);
+            GraphicUsage.ValueChanged += (s, e) => GraphicUsageChanged(GraphicUsage.Value);
 
-            GpuAdapterContent.Children.Add(GpuAdapterText);
-            GpuAdapterContent.Children.Add(GpuAdapter);
+            GraphicAdapterContent.Children.Add(GraphicAdapterText);
+            GraphicAdapterContent.Children.Add(GraphicAdapter);
 
-            GpuUsageContent.Children.Add(GpuUsageText);
-            GpuUsageContent.Children.Add(GpuUsage);
+            GraphicUsageContent.Children.Add(GraphicUsageText);
+            GraphicUsageContent.Children.Add(GraphicUsage);
 
-            GpuContent.Children.Add(GpuAdapterContent);
-            GpuContent.Children.Add(GpuUsageContent);
+            GraphicContent.Children.Add(GraphicAdapterContent);
+            GraphicContent.Children.Add(GraphicUsageContent);
 
-            Gpu.FooterCard = GpuContent;
+            Graphic.FooterCard = GraphicContent;
 
-            Contents.Add(Gpu);
+            Contents.Add(Graphic);
 
             SPVCEC Memory = new()
             {
@@ -1008,54 +1008,6 @@ namespace Sucrose.Portal.ViewModels.Pages
             }
         }
 
-        private void CpuUsageChanged(double? Value)
-        {
-            int NewValue = Convert.ToInt32(Value);
-
-            if (NewValue != SMMB.CpuUsage)
-            {
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.CpuUsage, NewValue);
-            }
-        }
-
-        private void GpuUsageChanged(double? Value)
-        {
-            int NewValue = Convert.ToInt32(Value);
-
-            if (NewValue != SMMB.GpuUsage)
-            {
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GpuUsage, NewValue);
-            }
-        }
-
-        private void GpuAdapterSelected(string Value)
-        {
-            if (Value != SMMB.GraphicAdapter)
-            {
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GraphicAdapter, Value);
-            }
-        }
-
-        private void CpuPerformanceSelected(int Index)
-        {
-            if (Index != (int)SSDMMB.CpuPerformance)
-            {
-                SSDEPT Type = (SSDEPT)Index;
-
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.CpuPerformance, Type);
-            }
-        }
-
-        private void GpuPerformanceSelected(int Index)
-        {
-            if (Index != (int)SSDMMB.GpuPerformance)
-            {
-                SSDEPT Type = (SSDEPT)Index;
-
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GpuPerformance, Type);
-            }
-        }
-
         private void MemoryUsageChanged(double? Value)
         {
             int NewValue = Convert.ToInt32(Value);
@@ -1073,6 +1025,16 @@ namespace Sucrose.Portal.ViewModels.Pages
             if (NewValue != SMMB.PingValue)
             {
                 SMMI.BackgroundogSettingManager.SetSetting(SMMCB.PingValue, NewValue);
+            }
+        }
+
+        private void GraphicUsageChanged(double? Value)
+        {
+            int NewValue = Convert.ToInt32(Value);
+
+            if (NewValue != SMMB.GraphicUsage)
+            {
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GraphicUsage, NewValue);
             }
         }
 
@@ -1126,31 +1088,11 @@ namespace Sucrose.Portal.ViewModels.Pages
             }
         }
 
-        private void RemotePerformanceSelected(int Index)
+        private void GraphicAdapterSelected(string Value)
         {
-            if (Index != (int)SSDMMB.RemotePerformance)
+            if (Value != SMMB.GraphicAdapter)
             {
-                SSDEPT Type = (SSDEPT)Index;
-
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.RemotePerformance, Type);
-            }
-        }
-
-        private void NetworkUploadTypeSelected(int Index)
-        {
-            if (Index != (int)SMMB.UploadType)
-            {
-                SEST Type = (SEST)Index;
-
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.UploadType, Type);
-            }
-        }
-
-        private void NetworkAdapterSelected(string Value)
-        {
-            if (Value != SMMB.NetworkAdapter)
-            {
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.NetworkAdapter, Value);
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GraphicAdapter, Value);
             }
         }
 
@@ -1164,13 +1106,41 @@ namespace Sucrose.Portal.ViewModels.Pages
             }
         }
 
-        private void ConsolePerformanceSelected(int Index)
+        private void NetworkAdapterSelected(string Value)
         {
-            if (Index != (int)SSDMMB.ConsolePerformance)
+            if (Value != SMMB.NetworkAdapter)
+            {
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.NetworkAdapter, Value);
+            }
+        }
+
+        private void NetworkUploadTypeSelected(int Index)
+        {
+            if (Index != (int)SMMB.UploadType)
+            {
+                SEST Type = (SEST)Index;
+
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.UploadType, Type);
+            }
+        }
+
+        private void ProcessorUsageChanged(double? Value)
+        {
+            int NewValue = Convert.ToInt32(Value);
+
+            if (NewValue != SMMB.ProcessorUsage)
+            {
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.ProcessorUsage, NewValue);
+            }
+        }
+
+        private void RemotePerformanceSelected(int Index)
+        {
+            if (Index != (int)SSDMMB.RemotePerformance)
             {
                 SSDEPT Type = (SSDEPT)Index;
 
-                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.ConsolePerformance, Type);
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.RemotePerformance, Type);
             }
         }
 
@@ -1181,6 +1151,26 @@ namespace Sucrose.Portal.ViewModels.Pages
                 SSDEPT Type = (SSDEPT)Index;
 
                 SMMI.BackgroundogSettingManager.SetSetting(SMMCB.BatteryPerformance, Type);
+            }
+        }
+
+        private void ConsolePerformanceSelected(int Index)
+        {
+            if (Index != (int)SSDMMB.ConsolePerformance)
+            {
+                SSDEPT Type = (SSDEPT)Index;
+
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.ConsolePerformance, Type);
+            }
+        }
+
+        private void GraphicPerformanceSelected(int Index)
+        {
+            if (Index != (int)SSDMMB.GraphicPerformance)
+            {
+                SSDEPT Type = (SSDEPT)Index;
+
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.GraphicPerformance, Type);
             }
         }
 
@@ -1249,6 +1239,16 @@ namespace Sucrose.Portal.ViewModels.Pages
                 SSDEPPT Type = (SSDEPPT)Index;
 
                 SMMI.BackgroundogSettingManager.SetSetting(SMMCB.PausePerformanceType, Type);
+            }
+        }
+
+        private void ProcessorPerformanceSelected(int Index)
+        {
+            if (Index != (int)SSDMMB.ProcessorPerformance)
+            {
+                SSDEPT Type = (SSDEPT)Index;
+
+                SMMI.BackgroundogSettingManager.SetSetting(SMMCB.ProcessorPerformance, Type);
             }
         }
 

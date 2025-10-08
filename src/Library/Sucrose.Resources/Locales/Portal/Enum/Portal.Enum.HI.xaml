@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">'Arguments' मूल्य बहुत लंबा है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">संबंधित फ़ाइल '.zip' विस्तारण नहीं है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">'Thumbnail' फ़ाइल नहीं मिल सकी</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">'SystemCpu' मूल्य अमान्य है</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">'SystemProcessor' मूल्य अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">'ThemeType' मूल्य अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">'SucroseInfo.json' फ़ाइल खाली है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">थीम, ऐप के एक उच्च संस्करण के लिए बनाई गई है</system:String>

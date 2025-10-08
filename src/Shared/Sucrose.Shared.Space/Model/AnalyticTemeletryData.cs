@@ -124,14 +124,8 @@ namespace Sucrose.Shared.Space.Model
         [JsonProperty("BackgroundOpacity", Required = Required.Always)]
         public int BackgroundOpacity { get; set; }
 
-        [JsonProperty("CpuPerformance", Required = Required.Always)]
-        public string CpuPerformance { get; set; }
-
         [JsonProperty("CultureDisplay", Required = Required.Always)]
         public string CultureDisplay { get; set; }
-
-        [JsonProperty("GpuPerformance", Required = Required.Always)]
-        public string GpuPerformance { get; set; }
 
         [JsonProperty("GraphicAdapter", Required = Required.Always)]
         public string GraphicAdapter { get; set; }
@@ -253,6 +247,9 @@ namespace Sucrose.Shared.Space.Model
         [JsonProperty("CyclingTransitionTime", Required = Required.Always)]
         public int CyclingTransitionTime { get; set; }
 
+        [JsonProperty("GraphicPerformance", Required = Required.Always)]
+        public string GraphicPerformance { get; set; }
+
         [JsonProperty("LibraryDeleteConfirm", Required = Required.Always)]
         public bool LibraryDeleteConfirm { get; set; }
 
@@ -279,6 +276,9 @@ namespace Sucrose.Shared.Space.Model
 
         [JsonProperty("OperatingSystemBuild", Required = Required.Always)]
         public string OperatingSystemBuild { get; set; }
+
+        [JsonProperty("ProcessorPerformance", Required = Required.Always)]
+        public string ProcessorPerformance { get; set; }
 
         [JsonProperty("VolumeSilentSensitivity", Required = Required.Always)]
         public int VolumeSilentSensitivity { get; set; }

@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Tip de Comunicare</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Determină metoda de trimitere a mesajelor către temele de tip Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Utilizare Procesor</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a procesorului.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Utilizare Procesor</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a procesorului.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Utilizare Procesor (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Utilizare Procesor (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Utilizare GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Ce se întâmplă cu imaginea de fundal în funcție de setările de utilizare a GPU-ului.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Utilizare GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Ce se întâmplă cu imaginea de fundal în funcție de setările de utilizare a GPU-ului.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Lista unităților de procesare grafică nu a fost încă creată</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Lista unităților de procesare grafică nu a fost încă creată</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Utilizare GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Utilizare GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Utilizare Memorii</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Ce se întâmplă cu fundalul temei dvs. în funcție de setările de utilizare a memoriei.</system:String>

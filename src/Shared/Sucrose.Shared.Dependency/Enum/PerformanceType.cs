@@ -24,8 +24,6 @@
     internal enum CategoryPerformanceType
     {
         Not,
-        Cpu,
-        Gpu,
         Lock,
         Focus,
         Sleep,
@@ -33,9 +31,11 @@
         Remote,
         Battery,
         Console,
+        Graphic,
         Network,
         Session,
         Virtual,
+        Processor,
         FullScreen,
         ScreenSaver,
         BatterySaver

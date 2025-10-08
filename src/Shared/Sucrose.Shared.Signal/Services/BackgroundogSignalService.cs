@@ -18,11 +18,6 @@ namespace Sucrose.Shared.Signal.Services
 
                 if (Data != null)
                 {
-                    if (Data.Cpu != null)
-                    {
-                        SSEMI.CpuData = JsonConvert.SerializeObject(Data.Cpu, Formatting.Indented);
-                    }
-
                     if (Data.Bios != null)
                     {
                         SSEMI.BiosData = JsonConvert.SerializeObject(Data.Bios, Formatting.Indented);
@@ -56,6 +51,11 @@ namespace Sucrose.Shared.Signal.Services
                     if (Data.Network != null)
                     {
                         SSEMI.NetworkData = JsonConvert.SerializeObject(Data.Network, Formatting.Indented);
+                    }
+
+                    if (Data.Processor != null)
+                    {
+                        SSEMI.ProcessorData = JsonConvert.SerializeObject(Data.Processor, Formatting.Indented);
                     }
 
                     if (Data.Motherboard != null)

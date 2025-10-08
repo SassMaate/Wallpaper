@@ -5,24 +5,6 @@ namespace Sucrose.Backgroundog.Extension
 {
     internal static class Data
     {
-        public static JObject GetCpuInfo()
-        {
-            return new JObject
-            {
-                { "Max", SBMI.CpuData.Max },
-                { "Min", SBMI.CpuData.Min },
-                { "Now", SBMI.CpuData.Now },
-                { "Core", SBMI.CpuData.Core },
-                { "Name", SBMI.CpuData.Name },
-                { "State", SBMI.CpuData.State },
-                { "Thread", SBMI.CpuData.Thread },
-                { "CoreMax", SBMI.CpuData.CoreMax },
-                { "CoreMin", SBMI.CpuData.CoreMin },
-                { "CoreNow", SBMI.CpuData.CoreNow },
-                { "FullName", SBMI.CpuData.FullName }
-            };
-        }
-
         public static JObject GetBiosInfo()
         {
             return new JObject
@@ -197,6 +179,24 @@ namespace Sucrose.Backgroundog.Extension
                         { "Short", $"{SBMI.NetworkData.DownloadData.Short}" }
                     }
                 }
+            };
+        }
+
+        public static JObject GetProcessorInfo()
+        {
+            return new JObject
+            {
+                { "Max", SBMI.ProcessorData.Max },
+                { "Min", SBMI.ProcessorData.Min },
+                { "Now", SBMI.ProcessorData.Now },
+                { "Core", SBMI.ProcessorData.Core },
+                { "Name", SBMI.ProcessorData.Name },
+                { "State", SBMI.ProcessorData.State },
+                { "Thread", SBMI.ProcessorData.Thread },
+                { "CoreMax", SBMI.ProcessorData.CoreMax },
+                { "CoreMin", SBMI.ProcessorData.CoreMin },
+                { "CoreNow", SBMI.ProcessorData.CoreNow },
+                { "FullName", SBMI.ProcessorData.FullName }
             };
         }
 

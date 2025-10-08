@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">Hodnota 'Arguments' je příliš dlouhá</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Příslušný soubor není soubor s příponou '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Soubor 'Thumbnail' nebyl nalezen</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Neplatná hodnota 'SystemCpu'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Neplatná hodnota 'SystemProcessor'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Neplatná hodnota 'ThemeType'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Soubor 'SucroseInfo.json' je prázdný</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Téma vytvořeno pro vyšší verzi aplikace</system:String>

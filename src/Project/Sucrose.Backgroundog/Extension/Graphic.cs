@@ -31,7 +31,7 @@ namespace Sucrose.Backgroundog.Extension
 
                 IEnumerable<JObject> Items = Array.OfType<JObject>().Where(Item => Item["Type"]?.ToString() == "Load" && Item["Now"] != null);
 
-                return Items.OfType<JObject>().All(Item => double.TryParse(Item["Now"].ToString(), out double Now) && Now < SMMB.GpuUsage);
+                return Items.OfType<JObject>().All(Item => double.TryParse(Item["Now"].ToString(), out double Now) && Now < SMMB.GraphicUsage);
             }
             catch
             {
@@ -58,7 +58,7 @@ namespace Sucrose.Backgroundog.Extension
                     return false;
                 }
 
-                return Array.OfType<JObject>().Any(Item => Item["Type"]?.ToString() == "Load" && Item["Now"] != null && double.TryParse(Item["Now"].ToString(), out double Now) && Now >= SMMB.GpuUsage);
+                return Array.OfType<JObject>().Any(Item => Item["Type"]?.ToString() == "Load" && Item["Now"] != null && double.TryParse(Item["Now"].ToString(), out double Now) && Now >= SMMB.GraphicUsage);
             }
             catch
             {

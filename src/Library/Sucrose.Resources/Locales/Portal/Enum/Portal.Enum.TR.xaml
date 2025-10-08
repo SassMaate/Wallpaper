@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">'Arguments' değeri çok uzun</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">İlgili dosya '.zip' uzantılı değil</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">'Thumbnail' dosyası bulunamadı</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Geçersiz 'SystemCpu' değeri</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Geçersiz 'SystemProcessor' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Geçersiz 'ThemeType' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">'SucroseInfo.json' dosyası boş</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Tema, uygulamanın daha yüksek bir sürümü için oluşturulmuş</system:String>

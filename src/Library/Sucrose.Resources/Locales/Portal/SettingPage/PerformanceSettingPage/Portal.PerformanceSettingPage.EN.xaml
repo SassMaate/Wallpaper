@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Communication Type</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Determines the method of sending messages to themes of type Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Processor Usage</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">What happens to the wallpaper based on your processor usage settings.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Processor Usage</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">What happens to the wallpaper based on your processor usage settings.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Processor Usage (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Processor Usage (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Graphics Usage</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">What happens to the wallpaper based on your graphics usage settings.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Graphics Usage</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">What happens to the wallpaper based on your graphics usage settings.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">Graphics Processing Unit:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">The graphic processing units list has not been created yet</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">Graphics Processing Unit:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">The graphic processing units list has not been created yet</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Graphics Usage (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Graphics Usage (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Memory Usage</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">What happens to the wallpaper based on your memory usage settings.</system:String>

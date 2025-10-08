@@ -6,7 +6,7 @@ namespace Sucrose.Backgroundog.Struct.Data
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct Cpu
+    public struct Processor
     {
         /// <summary>
         /// 

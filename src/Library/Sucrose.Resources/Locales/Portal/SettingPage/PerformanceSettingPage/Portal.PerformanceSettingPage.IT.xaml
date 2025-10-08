@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Tipo di Comunicazione</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Determina il metodo di invio dei messaggi ai temi di tipo Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Utilizzo della CPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della CPU.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Utilizzo della CPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della CPU.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Utilizzo della CPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Utilizzo della CPU (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Utilizzo GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Utilizzo GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Cosa succede allo sfondo in base alle impostazioni di utilizzo della GPU.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">La lista delle unità di elaborazione grafica non è ancora stata creata</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">La lista delle unità di elaborazione grafica non è ancora stata creata</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Utilizzo GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Utilizzo GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Utilizzo della Memoria</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Cosa dovrebbe accadere al wallpaper in base alle tue impostazioni di utilizzo della memoria.</system:String>

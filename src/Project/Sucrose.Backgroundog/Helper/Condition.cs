@@ -37,16 +37,6 @@ namespace Sucrose.Backgroundog.Helper
             }
             else
             {
-                if (await CpuCondition())
-                {
-                    return;
-                }
-
-                if (await GpuCondition())
-                {
-                    return;
-                }
-
                 if (await LockCondition())
                 {
                     return;
@@ -82,6 +72,11 @@ namespace Sucrose.Backgroundog.Helper
                     return;
                 }
 
+                if (await GraphicCondition())
+                {
+                    return;
+                }
+
                 if (await NetworkCondition())
                 {
                     return;
@@ -93,6 +88,11 @@ namespace Sucrose.Backgroundog.Helper
                 }
 
                 if (await VirtualCondition())
+                {
+                    return;
+                }
+
+                if (await ProcessorCondition())
                 {
                     return;
                 }
@@ -186,66 +186,6 @@ namespace Sucrose.Backgroundog.Helper
                     }
                 }
             }
-        }
-
-        private static async Task<bool> CpuCondition()
-        {
-            if (SBMI.CategoryPerformance == SSDECPT.Cpu)
-            {
-                int Count = 0;
-                int MaxCount = 3;
-
-                while (SMMB.CpuUsage <= 0 || SBMI.CpuData.Now < SMMB.CpuUsage || SSDMMB.CpuPerformance == SSDEPT.Resume)
-                {
-                    if (Count >= MaxCount)
-                    {
-                        Lifecycle();
-                        SBMI.Condition = false;
-                        SBMI.Performance = SSDEPT.Resume;
-                        SBMI.CategoryPerformance = SSDECPT.Not;
-
-                        return true;
-                    }
-                    else
-                    {
-                        Count++;
-                    }
-
-                    await Task.Delay(TimeSpan.FromSeconds(1));
-                }
-            }
-
-            return false;
-        }
-
-        private static async Task<bool> GpuCondition()
-        {
-            if (SBMI.CategoryPerformance == SSDECPT.Gpu)
-            {
-                int Count = 0;
-                int MaxCount = 3;
-
-                while (SMMB.GpuUsage <= 0 || SBEG.Condition() || SSDMMB.GpuPerformance == SSDEPT.Resume)
-                {
-                    if (Count >= MaxCount)
-                    {
-                        Lifecycle();
-                        SBMI.Condition = false;
-                        SBMI.Performance = SSDEPT.Resume;
-                        SBMI.CategoryPerformance = SSDECPT.Not;
-
-                        return true;
-                    }
-                    else
-                    {
-                        Count++;
-                    }
-
-                    await Task.Delay(TimeSpan.FromSeconds(1));
-                }
-            }
-
-            return false;
         }
 
         private static async Task<bool> LockCondition()
@@ -458,6 +398,36 @@ namespace Sucrose.Backgroundog.Helper
             return false;
         }
 
+        private static async Task<bool> GraphicCondition()
+        {
+            if (SBMI.CategoryPerformance == SSDECPT.Graphic)
+            {
+                int Count = 0;
+                int MaxCount = 3;
+
+                while (SMMB.GraphicUsage <= 0 || SBEG.Condition() || SSDMMB.GraphicPerformance == SSDEPT.Resume)
+                {
+                    if (Count >= MaxCount)
+                    {
+                        Lifecycle();
+                        SBMI.Condition = false;
+                        SBMI.Performance = SSDEPT.Resume;
+                        SBMI.CategoryPerformance = SSDECPT.Not;
+
+                        return true;
+                    }
+                    else
+                    {
+                        Count++;
+                    }
+
+                    await Task.Delay(TimeSpan.FromSeconds(1));
+                }
+            }
+
+            return false;
+        }
+
         private static async Task<bool> NetworkCondition()
         {
             if (SBMI.CategoryPerformance == SSDECPT.Network)
@@ -575,6 +545,36 @@ namespace Sucrose.Backgroundog.Helper
                 int MaxCount = 3;
 
                 while (!SBMI.Virtuality || SSDMMB.VirtualPerformance == SSDEPT.Resume)
+                {
+                    if (Count >= MaxCount)
+                    {
+                        Lifecycle();
+                        SBMI.Condition = false;
+                        SBMI.Performance = SSDEPT.Resume;
+                        SBMI.CategoryPerformance = SSDECPT.Not;
+
+                        return true;
+                    }
+                    else
+                    {
+                        Count++;
+                    }
+
+                    await Task.Delay(TimeSpan.FromSeconds(1));
+                }
+            }
+
+            return false;
+        }
+
+        private static async Task<bool> ProcessorCondition()
+        {
+            if (SBMI.CategoryPerformance == SSDECPT.Processor)
+            {
+                int Count = 0;
+                int MaxCount = 3;
+
+                while (SMMB.ProcessorUsage <= 0 || SBMI.ProcessorData.Now < SMMB.ProcessorUsage || SSDMMB.ProcessorPerformance == SSDEPT.Resume)
                 {
                     if (Count >= MaxCount)
                     {

@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Τύπος Επικοινωνίας</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Καθορίζει τη μέθοδο αποστολής μηνυμάτων σε θέματα τύπου Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Χρήση Επεξεργαστή</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Πώς θα επηρεάσει η ρύθμιση της χρήσης του επεξεργαστή το ταπετσαρία.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Χρήση Επεξεργαστή</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Πώς θα επηρεάσει η ρύθμιση της χρήσης του επεξεργαστή το ταπετσαρία.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Χρήση Επεξεργαστή (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Χρήση Επεξεργαστή (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Χρήση GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Τι συμβαίνει με το φόντο με βάση τις ρυθμίσεις χρήσης GPU σας.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Χρήση GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Τι συμβαίνει με το φόντο με βάση τις ρυθμίσεις χρήσης GPU σας.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Η λίστα των μονάδων επεξεργασίας γραφικών δεν έχει δημιουργηθεί ακόμα</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Η λίστα των μονάδων επεξεργασίας γραφικών δεν έχει δημιουργηθεί ακόμα</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Χρήση GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Χρήση GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Χρήση Μνήμης</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Πώς θα επηρεάσει η ρύθμιση της χρήσης μνήμης το ταπετσαρία.</system:String>

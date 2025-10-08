@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">La valeur 'Arguments' est trop longue</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Le fichier associé n'a pas d'extension '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Fichier 'Thumbnail' introuvable</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Valeur 'SystemCpu' non valide</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Valeur 'SystemProcessor' non valide</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Valeur 'ThemeType' non valide</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Le fichier 'SucroseInfo.json' est vide</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Le thème est créé pour une version supérieure de l'application</system:String>

@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Tipo de Comunicación</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Determina el método de envío de mensajes a temas de tipo Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Uso de CPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Qué sucede con el fondo de pantalla según la configuración de uso de CPU.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Uso de CPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Qué sucede con el fondo de pantalla según la configuración de uso de CPU.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Uso de CPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Uso de CPU (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Uso de GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Qué pasa con el fondo de pantalla en función de la configuración de uso de GPU.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Uso de GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Qué pasa con el fondo de pantalla en función de la configuración de uso de GPU.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">La lista de unidades de procesamiento gráfico aún no se ha creado</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">La lista de unidades de procesamiento gráfico aún no se ha creado</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Uso de GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Uso de GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Uso de Memoria</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Qué sucede con el fondo de pantalla según la configuración de uso de memoria.</system:String>

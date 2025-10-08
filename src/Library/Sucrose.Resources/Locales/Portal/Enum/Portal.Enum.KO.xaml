@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">'Arguments' 값이 너무 김</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">관련 파일이 '.zip' 확장자가 아님</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">'Thumbnail' 파일을 찾을 수 없음</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">잘못된 'SystemCpu' 값</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">잘못된 'SystemProcessor' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">잘못된 'ThemeType' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">'SucroseInfo.json' 파일이 비어 있음</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">테마가 더 높은 앱 버전용으로 만들어짐</system:String>

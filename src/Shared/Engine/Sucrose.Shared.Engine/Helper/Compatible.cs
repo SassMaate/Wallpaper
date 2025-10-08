@@ -54,18 +54,6 @@ namespace Sucrose.Shared.Engine.Helper
                         }
                     }
 
-                    if (!string.IsNullOrEmpty(SSEMI.Compatible.SystemCpu))
-                    {
-                        try
-                        {
-                            Function(string.Format(SSEMI.Compatible.SystemCpu, SSEMI.CpuData));
-                        }
-                        catch (Exception Exception)
-                        {
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    }
-
                     if (!string.IsNullOrEmpty(SSEMI.Compatible.ThemeType))
                     {
                         try
@@ -203,6 +191,18 @@ namespace Sucrose.Shared.Engine.Helper
                         try
                         {
                             Function(string.Format(SSEMI.Compatible.SystemNetwork, SSEMI.NetworkData));
+                        }
+                        catch (Exception Exception)
+                        {
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    }
+
+                    if (!string.IsNullOrEmpty(SSEMI.Compatible.SystemProcessor))
+                    {
+                        try
+                        {
+                            Function(string.Format(SSEMI.Compatible.SystemProcessor, SSEMI.ProcessorData));
                         }
                         catch (Exception Exception)
                         {

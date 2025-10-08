@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">'Arguments' 值太长</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">相关文件不是'.zip'扩展名</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">'Thumbnail' 文件未找到</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">无效的'SystemCpu'值</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">无效的'SystemProcessor'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">无效的'ThemeType'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">'SucroseInfo.json' 文件为空</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">主题是为应用的较高版本创建的</system:String>

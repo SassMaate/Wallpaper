@@ -246,11 +246,6 @@ namespace Sucrose.Shared.Zip.Helper
                         return SSDECT.LoopMode;
                     }
 
-                    if (!string.IsNullOrEmpty(Compatible.SystemCpu) && !Compatible.SystemCpu.Contains("{0}"))
-                    {
-                        return SSDECT.SystemCpu;
-                    }
-
                     if (!string.IsNullOrEmpty(Compatible.ThemeType) && !Compatible.ThemeType.Contains("{0}"))
                     {
                         return SSDECT.ThemeType;
@@ -309,6 +304,11 @@ namespace Sucrose.Shared.Zip.Helper
                     if (!string.IsNullOrEmpty(Compatible.SystemNetwork) && !Compatible.SystemNetwork.Contains("{0}"))
                     {
                         return SSDECT.SystemNetwork;
+                    }
+
+                    if (!string.IsNullOrEmpty(Compatible.SystemProcessor) && !Compatible.SystemProcessor.Contains("{0}"))
+                    {
+                        return SSDECT.SystemProcessor;
                     }
 
                     if (!string.IsNullOrEmpty(Compatible.SystemMotherboard) && !Compatible.SystemMotherboard.Contains("{0}"))

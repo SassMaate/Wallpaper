@@ -105,7 +105,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">Wartość 'Arguments' jest zbyt długa</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Extension">Powiązany plik nie ma rozszerzenia '.zip'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Brak pliku 'Thumbnail'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.SystemCpu">Nieprawidłowa wartość 'SystemCpu'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Nieprawidłowa wartość 'SystemProcessor'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Nieprawidłowa wartość 'ThemeType'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">Plik 'SucroseInfo.json' jest pusty</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Motyw został stworzony dla wyższej wersji aplikacji</system:String>

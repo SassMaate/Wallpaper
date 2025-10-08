@@ -7,7 +7,7 @@ using SBHI = Sucrose.Backgroundog.Helper.Initialize;
 using SBSDA = Sucrose.Backgroundog.Struct.Data.Audio;
 using SBSDBS = Sucrose.Backgroundog.Struct.Data.Bios;
 using SBSDBY = Sucrose.Backgroundog.Struct.Data.Battery;
-using SBSDC = Sucrose.Backgroundog.Struct.Data.Cpu;
+using SBSDP = Sucrose.Backgroundog.Struct.Data.Processor;
 using SBSDD = Sucrose.Backgroundog.Struct.Data.Date;
 using SBSDG = Sucrose.Backgroundog.Struct.Data.Graphic;
 using SBSDMD = Sucrose.Backgroundog.Struct.Data.Motherboard;
@@ -51,8 +51,6 @@ namespace Sucrose.Backgroundog.Manage
         public static SSDEPPT PausePerformance;
 
         public static bool WindowsLock = false;
-
-        public static bool CpuManagement = true;
 
         public static bool FocusDesktop = false;
 
@@ -102,6 +100,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static bool EqualizerManagement = true;
 
+        public static bool ProcessorManagement = true;
+
         public static bool WindowsScreenSaver = false;
 
         public static bool FullScreenManagement = true;
@@ -143,21 +143,6 @@ namespace Sucrose.Backgroundog.Manage
         public static string[] GraphicInterfaces = Array.Empty<string>();
 
         public static string[] NetworkInterfaces = Array.Empty<string>();
-
-        public static SBSDC CpuData = new()
-        {
-            Max = 0f,
-            Min = 0f,
-            Now = 0f,
-            Core = 0,
-            Thread = 0,
-            CoreMax = 0f,
-            CoreMin = 0f,
-            CoreNow = 0f,
-            State = false,
-            Name = string.Empty,
-            FullName = string.Empty
-        };
 
         public static SBSDBS BiosData = new()
         {
@@ -293,6 +278,21 @@ namespace Sucrose.Backgroundog.Manage
             ACPowerStatus = string.Empty,
             PowerLineStatus = PowerLineStatus.Unknown,
             ChargeStatus = BatteryChargeStatus.Unknown
+        };
+
+        public static SBSDP ProcessorData = new()
+        {
+            Max = 0f,
+            Min = 0f,
+            Now = 0f,
+            Core = 0,
+            Thread = 0,
+            CoreMax = 0f,
+            CoreMin = 0f,
+            CoreNow = 0f,
+            State = false,
+            Name = string.Empty,
+            FullName = string.Empty
         };
 
         public static SBSDMD MotherboardData = new()

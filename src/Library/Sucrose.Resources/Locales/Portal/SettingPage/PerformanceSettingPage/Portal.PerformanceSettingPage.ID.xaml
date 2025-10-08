@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Jenis Komunikasi</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Menentukan metode pengiriman pesan ke tema-tema tipe Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">Penggunaan CPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Hasil pengaturan penggunaan CPU akan memengaruhi apa yang terjadi pada wallpaper.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">Penggunaan CPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Hasil pengaturan penggunaan CPU akan memengaruhi apa yang terjadi pada wallpaper.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">Penggunaan CPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">Penggunaan CPU (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Penggunaan GPU</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Apa yang terjadi pada latar belakang berdasarkan pengaturan penggunaan GPU Anda.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Penggunaan GPU</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Apa yang terjadi pada latar belakang berdasarkan pengaturan penggunaan GPU Anda.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Daftar unit pemrosesan grafis belum dibuat</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Daftar unit pemrosesan grafis belum dibuat</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Penggunaan GPU (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Penggunaan GPU (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Penggunaan Memori</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Hasil pengaturan penggunaan memori akan memengaruhi apa yang terjadi pada wallpaper.</system:String>

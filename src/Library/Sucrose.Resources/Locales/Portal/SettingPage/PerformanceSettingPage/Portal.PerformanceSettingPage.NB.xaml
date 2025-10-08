@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">Kommunikasjonstype</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Bestemmer metoden for å sende meldinger til temaer av typen Web.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">CPU-bruk</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">Hvordan tapetet skal reagere på dine CPU-bruksinnstillinger.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">CPU-bruk</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">Hvordan tapetet skal reagere på dine CPU-bruksinnstillinger.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">CPU-bruk (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">CPU-bruk (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">GPU Bruk</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Hva som skjer med bakgrunnsbildet basert på GPU-bruksinnstillingene dine.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">GPU Bruk</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Hva som skjer med bakgrunnsbildet basert på GPU-bruksinnstillingene dine.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">GPU:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Listen over grafikkprosessorer er ennå ikke opprettet</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">GPU:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Listen over grafikkprosessorer er ennå ikke opprettet</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">GPU Bruk (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">GPU Bruk (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Minnebruk</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Hvordan tapetet skal reagere på dine minnebrukinnstillinger.</system:String>

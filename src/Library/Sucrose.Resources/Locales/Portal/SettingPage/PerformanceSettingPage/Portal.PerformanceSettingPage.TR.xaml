@@ -15,18 +15,18 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">İletişim Türü</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">Web türündeki temalara iletilecek olan mesajların yollanma türünü belirler.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu">İşlemci Kullanımı</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.Description">İşlemci kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor">İşlemci Kullanımı</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">İşlemci kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Cpu.CpuUsage">İşlemci Kullanımı (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Processor.ProcessorUsage">İşlemci Kullanımı (%):</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu">Ekran Kartı Kullanımı</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.Description">Ekran kartı kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic">Ekran Kartı Kullanımı</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.Description">Ekran kartı kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter">Ekran Kartı:</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuAdapter.Empty">Ekran kartları listesi henüz oluşturulmadı</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter">Ekran Kartı:</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty">Ekran kartları listesi henüz oluşturulmadı</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Gpu.GpuUsage">Ekran Kartı Kullanımı (%):</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Graphic.GraphicUsage">Ekran Kartı Kullanımı (%):</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Memory">Bellek Kullanımı</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Memory.Description">Bellek kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.</system:String>

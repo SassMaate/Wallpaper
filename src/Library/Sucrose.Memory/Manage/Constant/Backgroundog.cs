@@ -2,10 +2,6 @@
 {
     public static class Backgroundog
     {
-        public const string CpuUsage = "CpuUsage";
-
-        public const string GpuUsage = "GpuUsage";
-
         public const string PingType = "PingType";
 
         public const string PingValue = "PingValue";
@@ -20,19 +16,19 @@
 
         public const string DownloadType = "DownloadType";
 
+        public const string GraphicUsage = "GraphicUsage";
+
         public const string PipeRequired = "PipeRequired";
 
         public const string AudioRequired = "AudioRequired";
 
         public const string DownloadValue = "DownloadValue";
 
-        public const string CpuPerformance = "CpuPerformance";
-
-        public const string GpuPerformance = "GpuPerformance";
-
         public const string GraphicAdapter = "GraphicAdapter";
 
         public const string NetworkAdapter = "NetworkAdapter";
+
+        public const string ProcessorUsage = "ProcessorUsage";
 
         public const string SignalRequired = "SignalRequired";
 
@@ -58,6 +54,8 @@
 
         public const string ConsolePerformance = "ConsolePerformance";
 
+        public const string GraphicPerformance = "GraphicPerformance";
+
         public const string NetworkPerformance = "NetworkPerformance";
 
         public const string PerformanceCounter = "PerformanceCounter";
@@ -67,6 +65,8 @@
         public const string VirtualPerformance = "VirtualPerformance";
 
         public const string PausePerformanceType = "PausePerformanceType";
+
+        public const string ProcessorPerformance = "ProcessorPerformance";
 
         public const string TransmissionRequired = "TransmissionRequired";
 

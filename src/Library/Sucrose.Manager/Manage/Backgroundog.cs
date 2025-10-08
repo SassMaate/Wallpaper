@@ -13,6 +13,10 @@ namespace Sucrose.Manager.Manage
 
         public static int UploadValue => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.UploadValue, 800), 0, 99999999);
 
+        public static int ProcessorUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.ProcessorUsage, 70), 0, 100);
+
+        public static int GraphicUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.GraphicUsage, 70), 0, 100);
+
         public static int BatteryUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.BatteryUsage, 50), 0, 100);
 
         public static int MemoryUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.MemoryUsage, 80), 0, 100);
@@ -24,10 +28,6 @@ namespace Sucrose.Manager.Manage
         public static string NetworkAdapter => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.NetworkAdapter, string.Empty);
 
         public static string GraphicAdapter => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.GraphicAdapter, string.Empty);
-
-        public static int GpuUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.GpuUsage, 70), 0, 100);
-
-        public static int CpuUsage => SHS.Clamp(SMMI.BackgroundogSettingManager.GetSettingStable(SMMCB.CpuUsage, 70), 0, 100);
 
         public static bool PerformanceCounter => SMMI.BackgroundogSettingManager.GetSetting(SMMCB.PerformanceCounter, true);
 

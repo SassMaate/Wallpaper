@@ -52,36 +52,6 @@ namespace Sucrose.Backgroundog.Helper
         {
             if (SBMI.Exit)
             {
-                if (SBMI.CpuManagement)
-                {
-                    SBMI.CpuManagement = false;
-
-                    _ = Task.Run(async () =>
-                    {
-                        try
-                        {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
-
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
-                            {
-                                SBMI.CpuData.State = true;
-                                SBMI.CpuData.FullName = SSSHM.Check(Object, "Name", string.Empty);
-                                SBMI.CpuData.Core = Convert.ToInt32(SSSHM.Check(Object, "NumberOfCores", "0"));
-                                SBMI.CpuData.Thread = Convert.ToInt32(SSSHM.Check(Object, "NumberOfLogicalProcessors", "0"));
-
-                                break;
-                            }
-
-                            SMMI.SystemSettingManager.SetSetting(SMMCS.ProcessorInterfaces, SSSHU.GetProcessor());
-                        }
-                        catch (Exception Exception)
-                        {
-                            SBMI.CpuManagement = true;
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    });
-                }
-
                 if (SBMI.BiosManagement)
                 {
                     SBMI.BiosManagement = false;
@@ -451,6 +421,36 @@ namespace Sucrose.Backgroundog.Helper
                     });
                 }
 
+                if (SBMI.ProcessorManagement)
+                {
+                    SBMI.ProcessorManagement = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
+
+                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            {
+                                SBMI.ProcessorData.State = true;
+                                SBMI.ProcessorData.FullName = SSSHM.Check(Object, "Name", string.Empty);
+                                SBMI.ProcessorData.Core = Convert.ToInt32(SSSHM.Check(Object, "NumberOfCores", "0"));
+                                SBMI.ProcessorData.Thread = Convert.ToInt32(SSSHM.Check(Object, "NumberOfLogicalProcessors", "0"));
+
+                                break;
+                            }
+
+                            SMMI.SystemSettingManager.SetSetting(SMMCS.ProcessorInterfaces, SSSHU.GetProcessor());
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.ProcessorManagement = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
                 if (SBMI.MotherboardManagement)
                 {
                     SBMI.MotherboardManagement = false;
@@ -606,28 +606,28 @@ namespace Sucrose.Backgroundog.Helper
 
                                             if (Hardware.Sensors.Any())
                                             {
-                                                SBMI.CpuData.State = true;
-                                                SBMI.CpuData.Name = Hardware.Name;
+                                                SBMI.ProcessorData.State = true;
+                                                SBMI.ProcessorData.Name = Hardware.Name;
 
                                                 foreach (ISensor Sensor in Hardware.Sensors)
                                                 {
                                                     if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Total")
                                                     {
-                                                        SBMI.CpuData.Max = Sensor.Max;
-                                                        SBMI.CpuData.Min = Sensor.Min;
-                                                        SBMI.CpuData.Now = Sensor.Value;
+                                                        SBMI.ProcessorData.Max = Sensor.Max;
+                                                        SBMI.ProcessorData.Min = Sensor.Min;
+                                                        SBMI.ProcessorData.Now = Sensor.Value;
                                                     }
                                                     else if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Core Max")
                                                     {
-                                                        SBMI.CpuData.CoreMax = Sensor.Max;
-                                                        SBMI.CpuData.CoreMin = Sensor.Min;
-                                                        SBMI.CpuData.CoreNow = Sensor.Value;
+                                                        SBMI.ProcessorData.CoreMax = Sensor.Max;
+                                                        SBMI.ProcessorData.CoreMin = Sensor.Min;
+                                                        SBMI.ProcessorData.CoreNow = Sensor.Value;
                                                     }
                                                 }
                                             }
                                             else
                                             {
-                                                SBMI.CpuData.State = false;
+                                                SBMI.ProcessorData.State = false;
                                             }
                                         }
                                         catch (Exception Exception)
@@ -881,7 +881,6 @@ namespace Sucrose.Backgroundog.Helper
 
                             await SPMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
                             {
-                                Cpu = SBED.GetCpuInfo(),
                                 Bios = SBED.GetBiosInfo(),
                                 Date = SBED.GetDateInfo(),
                                 Audio = SBED.GetAudioInfo(),
@@ -889,6 +888,7 @@ namespace Sucrose.Backgroundog.Helper
                                 Battery = SBED.GetBatteryInfo(),
                                 Graphic = SBED.GetGraphicInfo(),
                                 Network = SBED.GetNetworkInfo(),
+                                Processor = SBED.GetProcessorInfo(),
                                 Motherboard = SBED.GetMotherboardInfo()
                             }, SerializerSettings));
 
@@ -912,7 +912,6 @@ namespace Sucrose.Backgroundog.Helper
 
                             SSMI.BackgroundogManager.FileSave<SSIB>(new()
                             {
-                                Cpu = SBED.GetCpuInfo(),
                                 Bios = SBED.GetBiosInfo(),
                                 Date = SBED.GetDateInfo(),
                                 Audio = SBED.GetAudioInfo(),
@@ -920,6 +919,7 @@ namespace Sucrose.Backgroundog.Helper
                                 Battery = SBED.GetBatteryInfo(),
                                 Graphic = SBED.GetGraphicInfo(),
                                 Network = SBED.GetNetworkInfo(),
+                                Processor = SBED.GetProcessorInfo(),
                                 Motherboard = SBED.GetMotherboardInfo()
                             });
 
@@ -954,7 +954,6 @@ namespace Sucrose.Backgroundog.Helper
 
                             await STMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
                             {
-                                Cpu = SBED.GetCpuInfo(),
                                 Bios = SBED.GetBiosInfo(),
                                 Date = SBED.GetDateInfo(),
                                 Audio = SBED.GetAudioInfo(),
@@ -962,6 +961,7 @@ namespace Sucrose.Backgroundog.Helper
                                 Battery = SBED.GetBatteryInfo(),
                                 Graphic = SBED.GetGraphicInfo(),
                                 Network = SBED.GetNetworkInfo(),
+                                Processor = SBED.GetProcessorInfo(),
                                 Motherboard = SBED.GetMotherboardInfo()
                             }, SerializerSettings));
 
