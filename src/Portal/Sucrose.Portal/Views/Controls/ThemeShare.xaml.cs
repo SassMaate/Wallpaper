@@ -19,6 +19,7 @@ using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
+using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
@@ -360,8 +361,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
             }
 
-            ThemeTitle.Text = Info.Title;
-            ThemeDescription.Text = Info.Description;
+            (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
         }
 
         private async void ReportProgress(long BytesTransferred, long TotalBytes, double Percentage)

@@ -10,24 +10,24 @@ namespace Sucrose.Property.Helper
         {
             if (SPMI.Properties.PropertyLocalization != null && SPMI.Properties.PropertyLocalization.Any())
             {
-                if (SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture, out Dictionary<string, string> Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpper(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToLower(), out Pairs) || SPMI.Properties.PropertyLocalization.TryGetValue(SMMG.Culture.ToUpperInvariant(), out Pairs))
+                StringComparer Comparer = StringComparer.OrdinalIgnoreCase;
+
+                KeyValuePair<string, Dictionary<string, string>> Match = SPMI.Properties.PropertyLocalization.FirstOrDefault(p => Comparer.Equals(p.Key, SMMG.Culture));
+
+                if (Match.Value is Dictionary<string, string> Pairs && Pairs.TryGetValue(Key, out string Value))
                 {
-                    if (Pairs != null && Pairs.TryGetValue(Key, out string Value))
-                    {
-                        return Value;
-                    }
+                    return Value;
                 }
 
-                if (SPMI.Properties.PropertyLocalization.TryGetValue(SPMI.Properties.PropertyLocalization.First().Key, out Pairs))
+                Dictionary<string, string> Fallback = SPMI.Properties.PropertyLocalization.First().Value;
+
+                if (Fallback != null && Fallback.TryGetValue(Key, out Value))
                 {
-                    if (Pairs != null && Pairs.TryGetValue(Key, out string Value))
-                    {
-                        return Value;
-                    }
+                    return Value;
                 }
             }
 
-            if (Key.StartsWith("Property.Localization."))
+            if (Key.StartsWith("Property.Localization.", StringComparison.Ordinal))
             {
                 string Value = SRER.GetValue(Key);
 

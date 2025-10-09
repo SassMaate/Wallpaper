@@ -15,7 +15,6 @@ using SMMG = Sucrose.Manager.Manage.General;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMP = Sucrose.Manager.Manage.Portal;
-using SPHL = Sucrose.Portal.Helpers.Localization;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
@@ -24,6 +23,7 @@ using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SMMVA = Sucrose.Memory.Manage.Valuable.App;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
+using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPVCTR = Sucrose.Portal.Views.Controls.ThemeReport;
 using SRER = Sucrose.Resources.Extension.Resources;
@@ -447,23 +447,20 @@ namespace Sucrose.Portal.Views.Controls
 
                 if (Result)
                 {
-                    (string Title, string Description) = SPHL.Convert(Info);
+                    (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
 
                     ToolTip TitleTip = new()
                     {
-                        Content = Title
+                        Content = ThemeTitle.Text
                     };
 
                     ToolTip DescriptionTip = new()
                     {
-                        Content = Description
+                        Content = ThemeDescription.Text
                     };
 
                     ThemeTitle.ToolTip = TitleTip;
                     ThemeDescription.ToolTip = DescriptionTip;
-
-                    ThemeTitle.Text = Title;
-                    ThemeDescription.Text = Description;
 
                     string ImagePath = Path.Combine(Theme, Info.Thumbnail);
 

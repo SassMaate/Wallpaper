@@ -8,6 +8,7 @@ using SHC = Skylark.Helper.Culture;
 using SHN = Skylark.Helper.Numeric;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
+using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SSESSE = Skylark.Standard.Extension.Storage.StorageExtension;
@@ -17,7 +18,6 @@ using SSSSS = Skylark.Struct.Storage.StorageStruct;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
-using SPHL = Sucrose.Portal.Helpers.Localization;
 
 namespace Sucrose.Portal.Views.Controls
 {
@@ -44,10 +44,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
-            (string Title, string Description) = SPHL.Convert(Info);
-
-            ThemeTitle.Text = Title;
-            ThemeDescription.Text = Description;
+            (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
 
             ThemeTypeName.Text = Info.Type.ToString();
 

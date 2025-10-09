@@ -8,7 +8,6 @@ using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMMC = Sucrose.Manager.Manage.Cycling;
 using SMMCC = Sucrose.Memory.Manage.Constant.Cycling;
 using SMMCL = Sucrose.Memory.Manage.Constant.Library;
-using SMMG = Sucrose.Manager.Manage.General;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMP = Sucrose.Manager.Manage.Portal;
@@ -34,7 +33,6 @@ using SSSHL = Sucrose.Shared.Space.Helper.Live;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
-using SSTHL = Sucrose.Shared.Theme.Helper.Localization;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SXAGAB = Sucrose.XamlAnimatedGif.AnimationBehavior;
 
@@ -83,23 +81,20 @@ namespace Sucrose.Portal.Views.Controls
 
         private void UpdateInfo()
         {
-            (string Title, string Description) = SPHL.Convert(Info);
+            (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
 
             ToolTip TitleTip = new()
             {
-                Content = Title
+                Content = ThemeTitle.Text
             };
 
             ToolTip DescriptionTip = new()
             {
-                Content = Description
+                Content = ThemeDescription.Text
             };
 
             ThemeTitle.ToolTip = TitleTip;
             ThemeDescription.ToolTip = DescriptionTip;
-
-            ThemeTitle.Text = Title;
-            ThemeDescription.Text = Description;
         }
 
         private void MenuUse_Click(object sender, RoutedEventArgs e)
