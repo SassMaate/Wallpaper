@@ -57,8 +57,8 @@ namespace Sucrose.Portal.Views.Controls
 
             (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
 
-            ThemeTitle.IsReadOnly = true;
-            ThemeDescription.IsReadOnly = true;
+            ThemeTitle.IsReadOnly = false;
+            ThemeDescription.IsReadOnly = false;
         }
 
         private void PopulateLocalizationComboBox()
