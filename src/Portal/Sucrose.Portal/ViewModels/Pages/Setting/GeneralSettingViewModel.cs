@@ -455,7 +455,7 @@ namespace Sucrose.Portal.ViewModels.Pages
 
             SymbolIcon LibraryOpen = new()
             {
-                Symbol = SymbolRegular.FolderOpen24,
+                Symbol = SymbolRegular.FolderArrowUp24,
                 FontSize = 28,
                 Height = 32,
                 Width = 32
