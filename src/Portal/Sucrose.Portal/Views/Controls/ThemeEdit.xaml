@@ -50,13 +50,87 @@
                         Width="200"
                         Margin="12,0,0,0"
                         VerticalAlignment="Center"
+                        HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="Stretch"
                         ui:DynamicScrollViewer.VerticalScrollBarVisibility="Auto"
                         MaxDropDownHeight="200"
                         SelectedIndex="0">
-                        <ComboBoxItem Content="Türkçe" />
-                        <ComboBoxItem Content="Almanca" />
-                        <ComboBoxItem Content="İngilizce" />
-                        <ComboBoxItem Content="Orama Koyma Burama Koy" />
+                        <ComboBoxItem>
+                            <StackPanel
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Orientation="Horizontal">
+                                <ui:SymbolIcon
+                                    Width="32"
+                                    HorizontalAlignment="Left"
+                                    Symbol="Checkmark48" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalAlignment="Stretch"
+                                    FontSize="14"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    Text="Dolu Bilgi"
+                                    TextWrapping="WrapWithOverflow" />
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <StackPanel
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Orientation="Horizontal">
+                                <ui:SymbolIcon
+                                    Width="32"
+                                    HorizontalAlignment="Left"
+                                    Symbol="Dismiss48" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalAlignment="Stretch"
+                                    FontSize="14"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    Text="Boş Bilgi"
+                                    TextWrapping="WrapWithOverflow" />
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <StackPanel
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Orientation="Horizontal">
+                                <ui:SymbolIcon
+                                    Width="32"
+                                    HorizontalAlignment="Left"
+                                    Symbol="Prohibited48" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalAlignment="Stretch"
+                                    FontSize="14"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    Text="Hatalı Bilgi"
+                                    TextWrapping="WrapWithOverflow" />
+                            </StackPanel>
+                        </ComboBoxItem>
+                        <ComboBoxItem>
+                            <StackPanel
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Stretch"
+                                Orientation="Horizontal">
+                                <ui:SymbolIcon
+                                    Width="32"
+                                    HorizontalAlignment="Left"
+                                    Symbol="Edit48" />
+                                <TextBlock
+                                    Grid.Column="1"
+                                    Margin="10,0,0,0"
+                                    HorizontalAlignment="Stretch"
+                                    FontSize="14"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    Text="Değiştirilmiş Bilgi"
+                                    TextWrapping="WrapWithOverflow" />
+                            </StackPanel>
+                        </ComboBoxItem>
                     </ComboBox>
                 </StackPanel>
             </controls:CustomGroupBox.Header>

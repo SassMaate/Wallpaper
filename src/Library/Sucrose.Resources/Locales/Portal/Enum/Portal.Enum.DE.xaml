@@ -136,5 +136,6 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Die 'SucroseProperties.json' Datei ist ungültig</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Ungültiger 'SystemMotherboard' Wert</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Ungültiger 'PropertyLocalization' Wert</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ungültiger 'Localization' Wert</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Unvorhergesehene Folgen</system:String>
 </ResourceDictionary>

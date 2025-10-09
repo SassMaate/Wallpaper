@@ -136,5 +136,6 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Файл 'SucroseProperties.json' недійсний</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Недійсне значення 'SystemMotherboard'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Недійсне значення 'PropertyLocalization'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Недійсне значення 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Непередбачені Наслідки</system:String>
 </ResourceDictionary>

@@ -16,7 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Damlalık</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">Dosyayı sil</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Bu dosyayı sil</system:String>
     <system:String x:Key="Property.FileDropDown.OpenTip">Bir dosya seç</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Tüm Dosyalar (*.*)|*.*</system:String>
 

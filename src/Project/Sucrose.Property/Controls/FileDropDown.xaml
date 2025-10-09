@@ -17,34 +17,33 @@
             FontSize="16" />
         <Grid HorizontalAlignment="Stretch">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <ComboBox
-                x:Name="Component"
-                Grid.Column="0"
-                HorizontalAlignment="Stretch"
-                ui:DynamicScrollViewer.VerticalScrollBarVisibility="Auto"
-                MaxDropDownHeight="200" />
-            <ui:Button
-                x:Name="Delete"
-                Grid.Column="1"
-                Margin="10,0,10,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Stretch"
-                Appearance="Secondary"
-                Cursor="Hand"
-                Icon="{ui:SymbolIcon Delete48}"
-                IsEnabled="False" />
             <ui:Button
                 x:Name="Open"
-                Grid.Column="2"
+                Grid.Column="0"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Stretch"
                 Appearance="Secondary"
                 Cursor="Hand"
                 Icon="{ui:SymbolIcon Open48}" />
+            <ComboBox
+                x:Name="Component"
+                Grid.Column="1"
+                Margin="10,0,10,0"
+                HorizontalAlignment="Stretch"
+                ui:DynamicScrollViewer.VerticalScrollBarVisibility="Auto"
+                MaxDropDownHeight="200" />
+            <ui:Button
+                x:Name="Delete"
+                Grid.Column="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Stretch"
+                Appearance="Secondary"
+                Cursor="Hand"
+                Icon="{ui:SymbolIcon Delete48}" />
         </Grid>
     </StackPanel>
 </UserControl>
