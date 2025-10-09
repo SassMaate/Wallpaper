@@ -249,7 +249,7 @@ namespace Sucrose.Portal.Views.Controls
 
             return new ComboBoxItem
             {
-                IsSelected = SMMG.Culture == code && symbol == SymbolRegular.Checkmark48,
+                IsSelected = (SMMG.Culture == code || string.IsNullOrEmpty(code)) && symbol == SymbolRegular.Checkmark48,
                 Content = stackPanel,
                 Tag = code
             };
@@ -343,7 +343,6 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ThemeTitle_TextChanged(object sender, TextChangedEventArgs e)
         {
-            return;
             if (sender is TextBox ThemeTitle)
             {
                 string Language = GetSelectedLanguage();
@@ -373,7 +372,6 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ThemeDescription_TextChanged(object sender, TextChangedEventArgs e)
         {
-            return;
             if (sender is TextBox ThemeDescription)
             {
                 string Language = GetSelectedLanguage();
