@@ -40,11 +40,102 @@ namespace Sucrose.Portal.Views.Controls
             InitializeComponent();
         }
 
-        private void ContentDialog_PreviewKeyDown(object sender, KeyEventArgs e)
+        private string GetSelectedLanguage()
         {
-            if ((e.Key == Key.Enter || e.Key == Key.Escape) && (ThemeTitle.IsFocused || ThemeAuthor.IsFocused || ThemeContact.IsFocused || ThemeArguments.IsFocused || ThemeDescription.IsFocused))
+            if (LocalizationComboBox.SelectedItem is ComboBoxItem SelectedItem)
             {
-                e.Handled = true;
+                return SelectedItem.Tag?.ToString() ?? string.Empty;
+            }
+
+            return string.Empty;
+        }
+
+        private void OnLanguageChanged(string Code)
+        {
+            ThemeTitle.IsReadOnly = true;
+            ThemeDescription.IsReadOnly = true;
+
+            (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
+
+            ThemeTitle.IsReadOnly = true;
+            ThemeDescription.IsReadOnly = true;
+        }
+
+        private void PopulateLocalizationComboBox()
+        {
+            LocalizationComboBox.Items.Clear();
+
+            foreach (string Code in SRHR.ListLanguageManipulated())
+            {
+                string Language = SRER.GetValue("Locale", Code);
+                SymbolRegular Symbol = GetSymbolForLanguageStatus(Code);
+
+                if (SRER.CheckBack("Locale", Code))
+                {
+                    Language = "Varsayılan";
+                }
+                else
+                {
+                    Language = Regex.Replace(SRER.GetValue("Locale", Code), @"\s*\(.*?\)", "");
+                }
+
+                ComboBoxItem Item = CreateComboBoxItem(Code, Language, Symbol);
+
+                if (Item.IsSelected)
+                {
+                    (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
+                }
+
+                LocalizationComboBox.Items.Add(Item);
+            }
+        }
+
+        private void SetSelectedLanguage(string Code)
+        {
+            for (int Index = 0; Index < LocalizationComboBox.Items.Count; Index++)
+            {
+                if (LocalizationComboBox.Items[Index] is ComboBoxItem Item && Item.Tag?.ToString() == Code)
+                {
+                    LocalizationComboBox.SelectedIndex = Index;
+                    break;
+                }
+            }
+        }
+
+        private SymbolRegular GetSymbolForLanguageStatus(string Code)
+        {
+            (string Title, string Description) = SSTCLC.Convert(Info, Code);
+
+            if (string.IsNullOrWhiteSpace(Title) && string.IsNullOrWhiteSpace(Description))
+            {
+                if (Info.Localization != null && Info.Localization.ContainsKey(Code))
+                {
+                    Info.Localization.Remove(Code);
+
+                    if (!Info.Localization.Any())
+                    {
+                        Info.Localization = null;
+                    }
+                }
+
+                return SymbolRegular.Dismiss48;
+            }
+            else if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Description))
+            {
+                return SymbolRegular.Prohibited48;
+            }
+            else
+            {
+                (string ReserveTitle, string ReserveDescription) = SSTCLC.Convert(InfoReserve, Code);
+
+                if (ReserveTitle != Title || ReserveDescription != Description)
+                {
+                    return SymbolRegular.Edit48;
+                }
+                else
+                {
+                    return SymbolRegular.Checkmark48;
+                }
             }
         }
 
@@ -52,17 +143,14 @@ namespace Sucrose.Portal.Views.Controls
         {
             InfoReserve = SSTHI.FromJson(JsonConvert.SerializeObject(Info));
 
-            // Initialize LocalizationComboBox with dynamic items
             PopulateLocalizationComboBox();
 
-            // Add selection changed event handler
             LocalizationComboBox.SelectionChanged += LocalizationComboBox_SelectionChanged;
 
             ThemeTitle.IsReadOnly = false;
-            ThemeDescription.IsReadOnly = false;
-
             ThemeAuthor.Text = Info.Author;
             ThemeContact.Text = Info.Contact;
+            ThemeDescription.IsReadOnly = false;
             ThemeArguments.Text = Info.Arguments;
             ThemeTags.Text = SSSHT.Join(Info.Tags, ",", false, string.Empty);
 
@@ -83,6 +171,117 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     await SSWEW.Watch_CatchException(Exception);
                 }
+            }
+        }
+
+        private void ThemeTitle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox ThemeTitle && !ThemeTitle.IsReadOnly)
+            {
+                string Language = GetSelectedLanguage();
+
+                if (string.IsNullOrEmpty(Language))
+                {
+                    Info.Title = ThemeTitle.Text;
+                }
+                else
+                {
+                    Info.Localization ??= new Dictionary<string, SSTHL>();
+
+                    if (!Info.Localization.ContainsKey(Language))
+                    {
+                        Info.Localization[Language] = new SSTHL();
+                    }
+
+                    Info.Localization[Language].Title = ThemeTitle.Text;
+                }
+
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                {
+                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                }
+            }
+        }
+
+        private void ContentDialog_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Key == Key.Enter || e.Key == Key.Escape) && (ThemeTitle.IsFocused || ThemeAuthor.IsFocused || ThemeContact.IsFocused || ThemeArguments.IsFocused || ThemeDescription.IsFocused))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void ThemeDescription_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (sender is TextBox ThemeDescription && !ThemeDescription.IsReadOnly)
+            {
+                string Language = GetSelectedLanguage();
+
+                if (string.IsNullOrEmpty(Language))
+                {
+                    Info.Description = ThemeDescription.Text;
+                }
+                else
+                {
+                    Info.Localization ??= new Dictionary<string, SSTHL>();
+
+                    if (!Info.Localization.ContainsKey(Language))
+                    {
+                        Info.Localization[Language] = new SSTHL();
+                    }
+
+                    Info.Localization[Language].Description = ThemeDescription.Text;
+                }
+
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                {
+                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                }
+            }
+        }
+
+        private ComboBoxItem CreateComboBoxItem(string Code, string Name, SymbolRegular Symbol)
+        {
+            StackPanel StackPanel = new()
+            {
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Stretch,
+                Orientation = Orientation.Horizontal
+            };
+
+            SymbolIcon Icon = new()
+            {
+                Width = 32,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                Symbol = Symbol
+            };
+
+            TextBlock TextBlock = new()
+            {
+                Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
+                HorizontalAlignment = HorizontalAlignment.Stretch,
+                TextWrapping = TextWrapping.WrapWithOverflow,
+                Margin = new Thickness(10, 0, 0, 0),
+                FontSize = 14,
+                Text = Name
+            };
+
+            StackPanel.Children.Add(Icon);
+            StackPanel.Children.Add(TextBlock);
+
+            return new ComboBoxItem
+            {
+                IsSelected = (SMMG.Culture == Code || string.IsNullOrEmpty(Code)) && Symbol == SymbolRegular.Checkmark48,
+                Content = StackPanel,
+                Tag = Code
+            };
+        }
+
+        private void LocalizationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox ComboBox && ComboBox.SelectedItem is ComboBoxItem SelectedItem)
+            {
+                OnLanguageChanged(SelectedItem.Tag?.ToString() ?? string.Empty);
             }
         }
 
@@ -195,235 +394,10 @@ namespace Sucrose.Portal.Views.Controls
             base.OnButtonClick(Button);
         }
 
-        /// <summary>
-        /// Populates the LocalizationComboBox with available languages dynamically
-        /// </summary>
-        private void PopulateLocalizationComboBox()
-        {
-            LocalizationComboBox.Items.Clear();
-
-            foreach (string Code in SRHR.ListLanguageManipulated())
-            {
-                string Language = SRER.GetValue("Locale", Code);
-                SymbolRegular Symbol = GetSymbolForLanguageStatus(Code);
-
-                if (SRER.CheckBack("Locale", Code))
-                {
-                    Language = "Varsayılan";
-                }
-                else
-                {
-                    Language = Regex.Replace(Language, @"\s*\(.*?\)", "");
-                }
-
-                ComboBoxItem Item = CreateComboBoxItem(Code, Language, Symbol);
-
-                if (Item.IsSelected)
-                {
-                    (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
-                }
-
-                LocalizationComboBox.Items.Add(Item);
-            }
-        }
-
-        /// <summary>
-        /// Creates a ComboBoxItem with icon and text
-        /// </summary>
-        private ComboBoxItem CreateComboBoxItem(string code, string name, SymbolRegular symbol)
-        {
-            StackPanel stackPanel = new()
-            {
-                HorizontalAlignment = HorizontalAlignment.Left,
-                VerticalAlignment = VerticalAlignment.Stretch,
-                Orientation = Orientation.Horizontal
-            };
-
-            SymbolIcon icon = new()
-            {
-                Width = 32,
-                HorizontalAlignment = HorizontalAlignment.Left,
-                Symbol = symbol
-            };
-
-            TextBlock textBlock = new()
-            {
-                Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                TextWrapping = TextWrapping.WrapWithOverflow,
-                Margin = new Thickness(10, 0, 0, 0),
-                FontSize = 14,
-                Text = name
-            };
-
-            stackPanel.Children.Add(icon);
-            stackPanel.Children.Add(textBlock);
-
-            return new ComboBoxItem
-            {
-                IsSelected = (SMMG.Culture == code || string.IsNullOrEmpty(code)) && symbol == SymbolRegular.Checkmark48,
-                Content = stackPanel,
-                Tag = code
-            };
-        }
-
-        /// <summary>
-        /// Returns appropriate symbol based on language status
-        /// </summary>
-        private SymbolRegular GetSymbolForLanguageStatus(string languageCode)
-        {
-            (string Title, string Description) = SSTCLC.Convert(Info, languageCode);
-
-            if (string.IsNullOrWhiteSpace(Title) && string.IsNullOrWhiteSpace(Description))
-            {
-                if (Info.Localization != null && Info.Localization.ContainsKey(languageCode))
-                {
-                    Info.Localization.Remove(languageCode);
-
-                    if (!Info.Localization.Any())
-                    {
-                        Info.Localization = null;
-                    }
-                }
-
-                return SymbolRegular.Dismiss48;
-            }
-            else if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Description))
-            {
-                return SymbolRegular.Prohibited48;
-            }
-            else
-            {
-                (string ReserveTitle, string ReserveDescription) = SSTCLC.Convert(InfoReserve, languageCode);
-
-                if (ReserveTitle != Title || ReserveDescription != Description)
-                {
-                    return SymbolRegular.Edit48;
-                }
-                else
-                {
-                    return SymbolRegular.Checkmark48;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Gets the selected language code from ComboBox
-        /// </summary>
-        public string GetSelectedLanguage()
-        {
-            if (LocalizationComboBox.SelectedItem is ComboBoxItem selectedItem)
-            {
-                return selectedItem.Tag?.ToString() ?? string.Empty;
-            }
-
-            return string.Empty;
-        }
-
-        /// <summary>
-        /// Sets the selected language in ComboBox
-        /// </summary>
-        public void SetSelectedLanguage(string languageCode)
-        {
-            for (int i = 0; i < LocalizationComboBox.Items.Count; i++)
-            {
-                if (LocalizationComboBox.Items[i] is ComboBoxItem item && item.Tag?.ToString() == languageCode)
-                {
-                    LocalizationComboBox.SelectedIndex = i;
-                    break;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Handles language selection changes
-        /// </summary>
-        private void LocalizationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (sender is ComboBox comboBox && comboBox.SelectedItem is ComboBoxItem selectedItem)
-            {
-                string selectedLanguageCode = selectedItem.Tag?.ToString() ?? string.Empty;
-
-                // Here you can implement language-specific logic
-                OnLanguageChanged(selectedLanguageCode);
-            }
-        }
-
-        /// <summary>
-        /// Called when language selection changes
-        /// </summary>
-        private void OnLanguageChanged(string languageCode)
-        {
-            // Implement your language change logic here
-            // For example:
-            // - Update theme info based on selected language
-            // - Load localized strings
-            // - Update UI elements
-            (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, languageCode);
-        }
-
         public void Dispose()
         {
             GC.Collect();
             GC.SuppressFinalize(this);
-        }
-
-        private void ThemeTitle_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (sender is TextBox ThemeTitle && !ThemeTitle.IsReadOnly)
-            {
-                string Language = GetSelectedLanguage();
-
-                if (string.IsNullOrEmpty(Language))
-                {
-                    Info.Title = ThemeTitle.Text;
-                }
-                else
-                {
-                    Info.Localization ??= new Dictionary<string, SSTHL>();
-
-                    if (!Info.Localization.ContainsKey(Language))
-                    {
-                        Info.Localization[Language] = new SSTHL();
-                    }
-
-                    Info.Localization[Language].Title = ThemeTitle.Text;
-                }
-
-                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
-                {
-                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
-                }
-            }
-        }
-
-        private void ThemeDescription_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (sender is TextBox ThemeDescription && !ThemeDescription.IsReadOnly)
-            {
-                string Language = GetSelectedLanguage();
-
-                if (string.IsNullOrEmpty(Language))
-                {
-                    Info.Description = ThemeDescription.Text;
-                }
-                else
-                {
-                    Info.Localization ??= new Dictionary<string, SSTHL>();
-
-                    if (!Info.Localization.ContainsKey(Language))
-                    {
-                        Info.Localization[Language] = new SSTHL();
-                    }
-
-                    Info.Localization[Language].Description = ThemeDescription.Text;
-                }
-
-                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
-                {
-                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
-                }
-            }
         }
     }
 }
