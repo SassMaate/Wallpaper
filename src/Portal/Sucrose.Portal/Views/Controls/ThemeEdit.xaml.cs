@@ -83,19 +83,33 @@ namespace Sucrose.Portal.Views.Controls
         {
             if (Button == ContentDialogButton.Primary)
             {
-                if (string.IsNullOrEmpty(ThemeTitle.Text))
+                foreach (ComboBoxItem Item in LocalizationComboBox.Items)
                 {
-                    ThemeTitle.Focus();
-                    return;
+                    string Code = $"{Item.Tag}";
+
+                    if (GetSymbolForLanguageStatus(Code) == SymbolRegular.Prohibited48)
+                    {
+                        SetSelectedLanguage(Code);
+
+                        (string Title, string Description) = SSTCLC.Convert(Info, Code);
+
+                        if (string.IsNullOrEmpty(Title))
+                        {
+                            ThemeTitle.Focus();
+                            return;
+                        }
+                        else if (true)
+                        {
+                            ThemeDescription.Focus();
+                            return;
+                        }
+                    }
                 }
-                else if (string.IsNullOrEmpty(ThemeAuthor.Text))
+
+
+                if (string.IsNullOrEmpty(ThemeAuthor.Text))
                 {
                     ThemeAuthor.Focus();
-                    return;
-                }
-                else if (string.IsNullOrEmpty(ThemeDescription.Text))
-                {
-                    ThemeDescription.Focus();
                     return;
                 }
                 else if (!SSTHV.IsUrl(ThemeContact.Text) && !SSTHV.IsMail(ThemeContact.Text))
@@ -160,11 +174,8 @@ namespace Sucrose.Portal.Views.Controls
                         }
                     }
 
-
-                    Info.Title = ThemeTitle.Text;
                     Info.Author = ThemeAuthor.Text;
                     Info.Contact = ThemeContact.Text;
-                    Info.Description = ThemeDescription.Text;
                     Info.Version = SSSHV.Increment(Info.Version);
 
                     SSTHI.Write(Path.Combine(Theme, SMMRC.SucroseInfo), Info);
@@ -181,11 +192,7 @@ namespace Sucrose.Portal.Views.Controls
         {
             LocalizationComboBox.Items.Clear();
 
-            List<string> Languages = SRHR.ListLanguage();
-
-            Languages.Insert(0, string.Empty);
-
-            foreach (string Code in Languages)
+            foreach (string Code in SRHR.ListLanguageManipulated())
             {
                 string Language = SRER.GetValue("Locale", Code);
                 SymbolRegular Symbol = GetSymbolForLanguageStatus(Code);

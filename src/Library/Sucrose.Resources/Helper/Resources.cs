@@ -88,6 +88,15 @@ namespace Sucrose.Resources.Helper
                 .ToList();
         }
 
+        public static List<string> ListLanguageManipulated()
+        {
+            List<string> Languages = ListLanguage();
+
+            Languages.Insert(0, string.Empty);
+
+            return Languages;
+        }
+
         private static void RemoveResource()
         {
             List<ResourceDictionary> Resources = Application.Current.Resources.MergedDictionaries
