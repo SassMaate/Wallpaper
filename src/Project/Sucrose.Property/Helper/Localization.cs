@@ -12,7 +12,7 @@ namespace Sucrose.Property.Helper
             {
                 StringComparer Comparer = StringComparer.OrdinalIgnoreCase;
 
-                KeyValuePair<string, Dictionary<string, string>> Match = SPMI.Properties.PropertyLocalization.FirstOrDefault(p => Comparer.Equals(p.Key, SMMG.Culture));
+                KeyValuePair<string, Dictionary<string, string>> Match = SPMI.Properties.PropertyLocalization.FirstOrDefault(Pair => Comparer.Equals(Pair.Key, SMMG.Culture));
 
                 if (Match.Value is Dictionary<string, string> Pairs && Pairs.TryGetValue(Key, out string Value))
                 {
