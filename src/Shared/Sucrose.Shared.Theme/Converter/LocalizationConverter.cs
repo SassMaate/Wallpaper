@@ -7,9 +7,24 @@ namespace Sucrose.Shared.Theme.Converter
 {
     internal class LocalizationConverter
     {
-        public static string Title(SSTHI Info)
+        public static string TitleConvert(SSTHI Info)
         {
             return Convert(Info).Title;
+        }
+
+        public static string DescriptionConvert(SSTHI Info)
+        {
+            return Convert(Info).Description;
+        }
+
+        public static string TitleConvertCombine(SSTHI Info)
+        {
+            return ConvertCombine(Info).Title;
+        }
+
+        public static string DescriptionConvertCombine(SSTHI Info)
+        {
+            return ConvertCombine(Info).Description;
         }
 
         public static (string Title, string Description) Convert(SSTHI Info)
@@ -29,9 +44,21 @@ namespace Sucrose.Shared.Theme.Converter
             return (Info.Title, Info.Description);
         }
 
-        public static string Description(SSTHI Info)
+        public static (string Title, string Description) ConvertCombine(SSTHI Info, char Split = ' ')
         {
-            return Convert(Info).Description;
+            if (Info.Localization != null && Info.Localization.Any())
+            {
+                foreach (SSTHL Localization in Info.Localization.Values)
+                {
+                    if (!string.IsNullOrWhiteSpace(Localization.Title) && !string.IsNullOrWhiteSpace(Localization.Description))
+                    {
+                        Info.Title = string.Concat(Info.Title, Split, Localization.Title);
+                        Info.Description = string.Concat(Info.Description, Split, Localization.Description);
+                    }
+                }
+            }
+
+            return (Info.Title, Info.Description);
         }
     }
 }
