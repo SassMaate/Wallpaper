@@ -71,8 +71,10 @@ namespace Sucrose.Shared.Space.Helper
                 {
                     SSTHI Info = SSTHI.ReadJson(InfoPath);
 
-                    IEnumerable<string> SearchText = SSTCLC.TitleConvertCombine(Info).Split(' ')
-                        .Concat(SSTCLC.DescriptionConvertCombine(Info).Split(' '))
+                    (string Title, string Description) = SSTCLC.ConvertCombine(Info);
+
+                    IEnumerable<string> SearchText = Title.Split(' ')
+                        .Concat(Description.Split(' '))
                         .Concat(Info.Tags?.SelectMany(Tag => Tag.Split(' ')) ?? Array.Empty<string>());
 
                     Searches.TryAdd(Theme, SSSHR.RemoveExtraSpaces(string.Join(" ", SearchText.Select(Word => SSSHR.RemovePunctuation(Word).ToLowerInvariant()).Distinct())));
