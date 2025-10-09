@@ -21,8 +21,8 @@
             Padding="0"
             Appearance="Secondary"
             Click="PageBack_Click"
-            Content="◁"
-            Cursor="Hand" />
+            Cursor="Hand"
+            Icon="{ui:SymbolIcon Symbol=ArrowLeft48}" />
         <ToggleButton
             x:Name="Number1"
             Width="28"
@@ -112,8 +112,8 @@
             Padding="0"
             Appearance="Secondary"
             Click="PageNext_Click"
-            Content="▷"
-            Cursor="Hand" />
+            Cursor="Hand"
+            Icon="{ui:SymbolIcon Symbol=ArrowRight48}" />
         <ui:NumberBox
             x:Name="PageNumber"
             Margin="0,0,5,0"

@@ -47,8 +47,8 @@ namespace Sucrose.Portal.Views.Controls
             {
                 Icon = new SymbolIcon(SymbolRegular.Timer24),
                 IconPlacement = ElementPlacement.Left,
-                ClearButtonEnabled = false,
                 Value = SMMC.TransitionTime,
+                ClearButtonEnabled = false,
                 MaxDecimalPlaces = 0,
                 MaxLength = 3,
                 Maximum = 999,
