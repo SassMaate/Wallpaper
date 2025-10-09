@@ -173,8 +173,9 @@ d9e083d41be39e9aa4f551a9ccecc2c9,Property\Property.KO.xaml,Property.ColorPicker.
 6c2f03a0a3b798c092d9d9b0a3349828,Property\Property.KO.xaml,Property.ColorPicker.EyeDropper,색상 선택기
 7945e206e1a802035ddfffb17a200237,Property\Property.KO.xaml,Property.ColorPicker.Popup.Title,Sucrose Property Color Picker
 5161284f4099eed3c546858eaef7bf13,Property\Property.KO.xaml,,
-f542c5e17e936581499238e511c61636,Property\Property.KO.xaml,Property.FileDropDown.Tip,파일 선택
 8ca29985fddd614c1907ebf2081a9e1e,Property\Property.KO.xaml,Property.FileDropDown.Filter,모든 파일 (*.*)|*.*
+9bf282339b68a2cc9f70a4fb9ef1be2d,Property\Property.KO.xaml,Property.FileDropDown.OpenTip,파일 선택
+48d4c44879a83859123dbd75e0f2fd39,Property\Property.KO.xaml,Property.FileDropDown.DeleteTip,이 파일을 삭제
 93ba819937c919c5695a81c54f21cafc,Property\Property.KO.xaml,,
 0d37c49ea9cbcce1bcf210531b533bde,Property\Property.KO.xaml,Property.FileDropDown.Lock.Close,알겠습니다
 cbeb29d15d810260f58c85f7b37f2aef,Property\Property.KO.xaml,Property.FileDropDown.Lock.Title,파일 사용 중
@@ -492,6 +493,7 @@ a8997741efc0f4082e7d8c81b690405f,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.Com
 2dd44358b431b0f7542a333bcef6c92a,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.SystemTheme,잘못된 'SystemTheme' 값
 ee7a016ceaea914f23a679f9715c44a9,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.TriggerTime,잘못된 'TriggerTime' 값
 0de9e9d845582e13be104f697803dc60,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.VolumeLevel,잘못된 'VolumeLevel' 값
+adf92032102b2b405f54796cd4c14dce,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.Localization,잘못된 'Localization' 값
 5c56918130f32453870a32604d80d943,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.PropertyList,'PropertyList' 값이 비어 있음
 d8d94d1046192a423e1058202273c472,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.SystemMemory,잘못된 'SystemMemory' 값
 0c8d6099d07adb4be0bae76ba9662737,Portal\Enum\Portal.Enum.KO.xaml,Portal.Enum.CompatibilityType.SystemBattery,잘못된 'SystemBattery' 값

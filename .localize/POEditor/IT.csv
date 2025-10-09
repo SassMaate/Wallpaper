@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Conferma,,Property\Property.IT.xaml,
 Property.ColorPicker.EyeDropper,Conta-gocce,,Property\Property.IT.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.IT.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.IT.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Seleziona un file,,Property\Property.IT.xaml,
 Property.FileDropDown.Filter,Tutti i file (*.*)|*.*,,Property\Property.IT.xaml,
+Property.FileDropDown.OpenTip,Seleziona un file,,Property\Property.IT.xaml,
+Property.FileDropDown.DeleteTip,Elimina questo file,,Property\Property.IT.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.IT.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Capito,,Property\Property.IT.xaml,
 Property.FileDropDown.Lock.Title,File in Uso,,Property\Property.IT.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Valore 'SystemAudio' non valido,,Porta
 Portal.Enum.CompatibilityType.SystemTheme,Valore 'SystemTheme' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Valore 'TriggerTime' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Valore 'VolumeLevel' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
+Portal.Enum.CompatibilityType.Localization,Valore 'Localization' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Valore 'PropertyList' vuoto,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Valore 'SystemMemory' non valido,,Portal\Enum\Portal.Enum.IT.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Valore 'SystemBattery' non valido,,Portal\Enum\Portal.Enum.IT.xaml,

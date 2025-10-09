@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Pipet</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">Hapus file ini</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">Pilih sebuah file</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Semua File (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Pilih sebuah file</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Hapus file ini</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Mengerti</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">File Sedang Digunakan</system:String>

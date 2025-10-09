@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Подтвердить,,Property\Property.RU.xaml,
 Property.ColorPicker.EyeDropper,Пипетка,,Property\Property.RU.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.RU.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.RU.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Выберите файл,,Property\Property.RU.xaml,
 Property.FileDropDown.Filter,Все файлы (*.*)|*.*,,Property\Property.RU.xaml,
+Property.FileDropDown.OpenTip,Выберите файл,,Property\Property.RU.xaml,
+Property.FileDropDown.DeleteTip,Удалить этот файл,,Property\Property.RU.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.RU.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Понятно,,Property\Property.RU.xaml,
 Property.FileDropDown.Lock.Title,Файл используется,,Property\Property.RU.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Недопустимое значен�
 Portal.Enum.CompatibilityType.SystemTheme,Недопустимое значение 'SystemTheme',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Недопустимое значение 'TriggerTime',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Недопустимое значение 'VolumeLevel',,Portal\Enum\Portal.Enum.RU.xaml,
+Portal.Enum.CompatibilityType.Localization,Недопустимое значение 'Localization',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Значение 'PropertyList' отсутствует,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Недопустимое значение 'SystemMemory',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Недопустимое значение 'SystemBattery',,Portal\Enum\Portal.Enum.RU.xaml,
@@ -506,7 +508,7 @@ Portal.Enum.CompatibilityType.PropertyListener,Недопустимое знач
 Portal.Enum.CompatibilityType.InvalidCompatible,Файл 'SucroseCompatible.json' недействителен,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.InvalidProperties,Файл 'SucroseProperties.json' недействителен,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.SystemMotherboard,Недопустимое значение 'SystemMotherboard',,Portal\Enum\Portal.Enum.RU.xaml,
-Portal.Enum.CompatibilityType.PropertyLocalization,Файл 'PropertyLocalization.json' пуст,,Portal\Enum\Portal.Enum.RU.xaml,
+Portal.Enum.CompatibilityType.PropertyLocalization,Недопустимое значение 'PropertyLocalization',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.UnforeseenConsequences,Непредвиденные последствия,,Portal\Enum\Portal.Enum.RU.xaml,
 Base64⦙3,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbExpYnJhcnlQYWdlL1BvcnRhbC5GdWxsTGlicmFyeVBhZ2UuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkVtcHR5TGlicmFyeVBhZ2UvUG9ydGFsLkVtcHR5TGlicmFyeVBhZ2UuUlUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaExpYnJhcnlQYWdlL1BvcnRhbC5TZWFyY2hMaWJyYXJ5UGFnZS5SVS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=,Don't Touch,Portal\LibraryPage\Portal.LibraryPage.RU.xaml,Please don't touch the translation in this line.
 PASS⦙68,PASS⦙68,Don't Touch,Portal\LibraryPage\Portal.LibraryPage.RU.xaml,Please don't touch the translation in this line.

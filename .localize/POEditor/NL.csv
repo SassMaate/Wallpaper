@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Bevestigen,,Property\Property.NL.xaml,
 Property.ColorPicker.EyeDropper,Pipet,,Property\Property.NL.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.NL.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.NL.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Selecteer een bestand,,Property\Property.NL.xaml,
 Property.FileDropDown.Filter,Alle bestanden (*.*)|*.*,,Property\Property.NL.xaml,
+Property.FileDropDown.OpenTip,Selecteer een bestand,,Property\Property.NL.xaml,
+Property.FileDropDown.DeleteTip,Dit bestand verwijderen,,Property\Property.NL.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.NL.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Begrepen,,Property\Property.NL.xaml,
 Property.FileDropDown.Lock.Title,Bestand in gebruik,,Property\Property.NL.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Ongeldige 'SystemAudio' waarde,,Portal
 Portal.Enum.CompatibilityType.SystemTheme,Ongeldige 'SystemTheme' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Ongeldige 'TriggerTime' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Ongeldige 'VolumeLevel' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
+Portal.Enum.CompatibilityType.Localization,Ongeldige 'Localization' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Ongeldige 'SystemMemory' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Ongeldige 'SystemBattery' waarde,,Portal\Enum\Portal.Enum.NL.xaml,

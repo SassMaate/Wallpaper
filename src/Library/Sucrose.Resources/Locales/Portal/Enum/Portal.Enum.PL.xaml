@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Nieprawidłowa wartość 'SystemTheme'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Nieprawidłowa wartość 'TriggerTime'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Nieprawidłowa wartość 'VolumeLevel'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Nieprawidłowa wartość 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">Wartość 'PropertyList' jest pusta</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Nieprawidłowa wartość 'SystemMemory'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Nieprawidłowa wartość 'SystemBattery'</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Plik 'SucroseProperties.json' jest nieprawidłowy</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Nieprawidłowa wartość 'SystemMotherboard'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Nieprawidłowa wartość 'PropertyLocalization'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Nieprawidłowa wartość 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Niespodziewane Konsekwencje</system:String>
 </ResourceDictionary>

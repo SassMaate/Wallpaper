@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">잘못된 'SystemTheme' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">잘못된 'TriggerTime' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">잘못된 'VolumeLevel' 값</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">잘못된 'Localization' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' 값이 비어 있음</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">잘못된 'SystemMemory' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">잘못된 'SystemBattery' 값</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json' 파일이 잘못됨</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">잘못된 'SystemMotherboard' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">잘못된 'PropertyLocalization' 값</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">잘못된 'Localization' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">예상하지 못한 결과</system:String>
 </ResourceDictionary>

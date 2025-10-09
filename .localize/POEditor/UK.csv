@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Підтвердити,,Property\Property.UK.xaml,
 Property.ColorPicker.EyeDropper,Піпетка,,Property\Property.UK.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.UK.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.UK.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Виберіть файл,,Property\Property.UK.xaml,
 Property.FileDropDown.Filter,Усі файли (*.*)|*.*,,Property\Property.UK.xaml,
+Property.FileDropDown.OpenTip,Виберіть файл,,Property\Property.UK.xaml,
+Property.FileDropDown.DeleteTip,Видалити цей файл,,Property\Property.UK.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.UK.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Зрозуміло,,Property\Property.UK.xaml,
 Property.FileDropDown.Lock.Title,Файл використовується,,Property\Property.UK.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Недійсне значення 'Sys
 Portal.Enum.CompatibilityType.SystemTheme,Недійсне значення 'SystemTheme',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Недійсне значення 'TriggerTime',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Недійсне значення 'VolumeLevel',,Portal\Enum\Portal.Enum.UK.xaml,
+Portal.Enum.CompatibilityType.Localization,Недійсне значення 'Localization',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Значення 'PropertyList' порожнє,,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Недійсне значення 'SystemMemory',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Недійсне значення 'SystemBattery',,Portal\Enum\Portal.Enum.UK.xaml,

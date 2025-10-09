@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Ugyldig 'SystemTheme'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Ugyldig 'TriggerTime'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Ugyldig 'VolumeLevel'-værdi</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ugyldig 'Localization'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' er tomt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Ugyldig 'SystemMemory'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Ugyldig 'SystemBattery'-værdi</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json'-filen er ugyldig</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Ugyldig 'SystemMotherboard'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Ugyldig 'PropertyLocalization'-værdi</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ugyldig 'Localization'-værdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Uforudsete Konsekvenser</system:String>
 </ResourceDictionary>

@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">无效的'SystemTheme'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">无效的'TriggerTime'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">无效的'VolumeLevel'值</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">无效的'Localization'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' 值为空</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">无效的'SystemMemory'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">无效的'SystemBattery'值</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json' 文件无效</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">无效的'SystemMotherboard'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">无效的'PropertyLocalization'值</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">无效的'Localization'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">未预见的后果</system:String>
 </ResourceDictionary>

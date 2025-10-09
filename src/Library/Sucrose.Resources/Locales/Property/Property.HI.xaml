@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">नेत्र-स्रोत</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">इस फ़ाइल को हटाएँ</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">एक फ़ाइल का चयन करें</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">सभी फ़ाइलें (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">एक फ़ाइल का चयन करें</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">इस फ़ाइल को हटाएँ</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">समझ गया</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">फ़ाइल उपयोग में है</system:String>

@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Conta-gocce</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">Elimina questo file</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">Seleziona un file</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Tutti i file (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Seleziona un file</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Elimina questo file</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Capito</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">File in Uso</system:String>

@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Sahkan,,Property\Property.MS.xaml,
 Property.ColorPicker.EyeDropper,Dropper Mata,,Property\Property.MS.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.MS.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.MS.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Pilih sebuah fail,,Property\Property.MS.xaml,
 Property.FileDropDown.Filter,Semua Fail (*.*)|*.*,,Property\Property.MS.xaml,
+Property.FileDropDown.OpenTip,Pilih sebuah fail,,Property\Property.MS.xaml,
+Property.FileDropDown.DeleteTip,Padam fail ini,,Property\Property.MS.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.MS.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Faham,,Property\Property.MS.xaml,
 Property.FileDropDown.Lock.Title,Fail Sedang Digunakan,,Property\Property.MS.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Nilai 'SystemAudio' tidak sah,,Portal\
 Portal.Enum.CompatibilityType.SystemTheme,Nilai 'SystemTheme' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Nilai 'TriggerTime' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Nilai 'VolumeLevel' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
+Portal.Enum.CompatibilityType.Localization,Nilai 'Localization' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Nilai 'PropertyList' kosong,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Nilai 'SystemMemory' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Nilai 'SystemBattery' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,

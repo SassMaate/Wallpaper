@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,確認,,Property\Property.JA.xaml,
 Property.ColorPicker.EyeDropper,目詰め管,,Property\Property.JA.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.JA.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.JA.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,ファイルを選択,,Property\Property.JA.xaml,
 Property.FileDropDown.Filter,すべてのファイル (*.*)|*.*,,Property\Property.JA.xaml,
+Property.FileDropDown.OpenTip,ファイルを選択,,Property\Property.JA.xaml,
+Property.FileDropDown.DeleteTip,このファイルを削除,,Property\Property.JA.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.JA.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,了解しました,,Property\Property.JA.xaml,
 Property.FileDropDown.Lock.Title,ファイルが使用中です,,Property\Property.JA.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,'SystemAudio'値が無効です,,Porta
 Portal.Enum.CompatibilityType.SystemTheme,'SystemTheme'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,'TriggerTime'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,'VolumeLevel'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
+Portal.Enum.CompatibilityType.Localization,'Localization'の値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList'の値は空です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,'SystemMemory'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,'SystemBattery'値が無効です,,Portal\Enum\Portal.Enum.JA.xaml,

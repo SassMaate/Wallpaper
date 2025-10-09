@@ -173,8 +173,9 @@ d9e083d41be39e9aa4f551a9ccecc2c9,Property\Property.FR.xaml,Property.ColorPicker.
 6c2f03a0a3b798c092d9d9b0a3349828,Property\Property.FR.xaml,Property.ColorPicker.EyeDropper,Pipette
 7945e206e1a802035ddfffb17a200237,Property\Property.FR.xaml,Property.ColorPicker.Popup.Title,Sucrose Property Color Picker
 5161284f4099eed3c546858eaef7bf13,Property\Property.FR.xaml,,
-f542c5e17e936581499238e511c61636,Property\Property.FR.xaml,Property.FileDropDown.Tip,Sélectionner un fichier
 8ca29985fddd614c1907ebf2081a9e1e,Property\Property.FR.xaml,Property.FileDropDown.Filter,Tous les fichiers (*.*)|*.*
+9bf282339b68a2cc9f70a4fb9ef1be2d,Property\Property.FR.xaml,Property.FileDropDown.OpenTip,Sélectionner un fichier
+48d4c44879a83859123dbd75e0f2fd39,Property\Property.FR.xaml,Property.FileDropDown.DeleteTip,Supprimer ce fichier
 93ba819937c919c5695a81c54f21cafc,Property\Property.FR.xaml,,
 0d37c49ea9cbcce1bcf210531b533bde,Property\Property.FR.xaml,Property.FileDropDown.Lock.Close,Compris
 cbeb29d15d810260f58c85f7b37f2aef,Property\Property.FR.xaml,Property.FileDropDown.Lock.Title,Fichier en cours d'Utilisation
@@ -492,6 +493,7 @@ a8997741efc0f4082e7d8c81b690405f,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.Com
 2dd44358b431b0f7542a333bcef6c92a,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.SystemTheme,Valeur 'SystemTheme' non valide
 ee7a016ceaea914f23a679f9715c44a9,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.TriggerTime,Valeur 'TriggerTime' non valide
 0de9e9d845582e13be104f697803dc60,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.VolumeLevel,Valeur 'VolumeLevel' non valide
+adf92032102b2b405f54796cd4c14dce,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.Localization,Valeur 'Localization' non valide
 5c56918130f32453870a32604d80d943,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.PropertyList,La valeur 'PropertyList' est vide
 d8d94d1046192a423e1058202273c472,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.SystemMemory,Valeur 'SystemMemory' non valide
 0c8d6099d07adb4be0bae76ba9662737,Portal\Enum\Portal.Enum.FR.xaml,Portal.Enum.CompatibilityType.SystemBattery,Valeur 'SystemBattery' non valide

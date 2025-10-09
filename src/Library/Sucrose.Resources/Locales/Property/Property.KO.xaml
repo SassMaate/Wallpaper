@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">색상 선택기</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">이 파일을 삭제</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">파일 선택</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">모든 파일 (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">파일 선택</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">이 파일을 삭제</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">알겠습니다</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">파일 사용 중</system:String>

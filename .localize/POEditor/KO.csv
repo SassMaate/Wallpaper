@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,확인,,Property\Property.KO.xaml,
 Property.ColorPicker.EyeDropper,색상 선택기,,Property\Property.KO.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.KO.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.KO.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,파일 선택,,Property\Property.KO.xaml,
 Property.FileDropDown.Filter,모든 파일 (*.*)|*.*,,Property\Property.KO.xaml,
+Property.FileDropDown.OpenTip,파일 선택,,Property\Property.KO.xaml,
+Property.FileDropDown.DeleteTip,이 파일을 삭제,,Property\Property.KO.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.KO.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,알겠습니다,,Property\Property.KO.xaml,
 Property.FileDropDown.Lock.Title,파일 사용 중,,Property\Property.KO.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,잘못된 'SystemAudio' 값,,Portal\En
 Portal.Enum.CompatibilityType.SystemTheme,잘못된 'SystemTheme' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,잘못된 'TriggerTime' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,잘못된 'VolumeLevel' 값,,Portal\Enum\Portal.Enum.KO.xaml,
+Portal.Enum.CompatibilityType.Localization,잘못된 'Localization' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' 값이 비어 있음,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,잘못된 'SystemMemory' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,잘못된 'SystemBattery' 값,,Portal\Enum\Portal.Enum.KO.xaml,

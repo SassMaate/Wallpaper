@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Eye Dropper</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">Delete this file</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">Select a file</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">All Files (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Select a file</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Delete this file</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Got It</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">File in Use</system:String>

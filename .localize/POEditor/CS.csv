@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Potvrdit,,Property\Property.CS.xaml,
 Property.ColorPicker.EyeDropper,Pipeta,,Property\Property.CS.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.CS.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.CS.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Vyberte soubor,,Property\Property.CS.xaml,
 Property.FileDropDown.Filter,Všechny soubory (*.*)|*.*,,Property\Property.CS.xaml,
+Property.FileDropDown.OpenTip,Vyberte soubor,,Property\Property.CS.xaml,
+Property.FileDropDown.DeleteTip,Smazat tento soubor,,Property\Property.CS.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.CS.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Rozumím,,Property\Property.CS.xaml,
 Property.FileDropDown.Lock.Title,Soubor je používán,,Property\Property.CS.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Neplatná hodnota 'SystemAudio',,Porta
 Portal.Enum.CompatibilityType.SystemTheme,Neplatná hodnota 'SystemTheme',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Neplatná hodnota 'TriggerTime',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Neplatná hodnota 'VolumeLevel',,Portal\Enum\Portal.Enum.CS.xaml,
+Portal.Enum.CompatibilityType.Localization,Neplatná hodnota 'Localization',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Hodnota 'PropertyList' je prázdná,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Neplatná hodnota 'SystemMemory',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Neplatná hodnota 'SystemBattery',,Portal\Enum\Portal.Enum.CS.xaml,

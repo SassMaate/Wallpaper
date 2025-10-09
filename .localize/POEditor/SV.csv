@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Bekräfta,,Property\Property.SV.xaml,
 Property.ColorPicker.EyeDropper,Pipett,,Property\Property.SV.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.SV.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.SV.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Välj en fil,,Property\Property.SV.xaml,
 Property.FileDropDown.Filter,Alla filer (*.*)|*.*,,Property\Property.SV.xaml,
+Property.FileDropDown.OpenTip,Välj en fil,,Property\Property.SV.xaml,
+Property.FileDropDown.DeleteTip,Ta bort denna fil,,Property\Property.SV.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.SV.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Jag Förstår,,Property\Property.SV.xaml,
 Property.FileDropDown.Lock.Title,Filen används,,Property\Property.SV.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Ogiltigt värde för 'SystemAudio',,Po
 Portal.Enum.CompatibilityType.SystemTheme,Ogiltigt värde för 'SystemTheme',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Ogiltigt värde för 'TriggerTime',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Ogiltigt värde för 'VolumeLevel',,Portal\Enum\Portal.Enum.SV.xaml,
+Portal.Enum.CompatibilityType.Localization,Ogiltigt värde för 'Localization',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' är tomt,,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Ogiltigt värde för 'SystemMemory',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Ogiltigt värde för 'SystemBattery',,Portal\Enum\Portal.Enum.SV.xaml,

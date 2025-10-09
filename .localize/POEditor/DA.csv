@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Bekræft,,Property\Property.DA.xaml,
 Property.ColorPicker.EyeDropper,Pipette,,Property\Property.DA.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.DA.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.DA.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Vælg en fil,,Property\Property.DA.xaml,
 Property.FileDropDown.Filter,Alle filer (*.*)|*.*,,Property\Property.DA.xaml,
+Property.FileDropDown.OpenTip,Vælg en fil,,Property\Property.DA.xaml,
+Property.FileDropDown.DeleteTip,Slet denne fil,,Property\Property.DA.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.DA.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Forstået,,Property\Property.DA.xaml,
 Property.FileDropDown.Lock.Title,Filen er i brug,,Property\Property.DA.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Ugyldig 'SystemAudio'-værdi,,Portal\E
 Portal.Enum.CompatibilityType.SystemTheme,Ugyldig 'SystemTheme'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Ugyldig 'TriggerTime'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Ugyldig 'VolumeLevel'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
+Portal.Enum.CompatibilityType.Localization,Ugyldig 'Localization'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' er tomt,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Ugyldig 'SystemMemory'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Ugyldig 'SystemBattery'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,

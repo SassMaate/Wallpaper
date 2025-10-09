@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Ongeldige 'SystemTheme' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Ongeldige 'TriggerTime' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Ongeldige 'VolumeLevel' waarde</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ongeldige 'Localization' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' is leeg</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Ongeldige 'SystemMemory' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Ongeldige 'SystemBattery' waarde</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Bestand 'SucroseProperties.json' is ongeldig</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Ongeldige 'SystemMotherboard' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Ongeldige 'PropertyLocalization' waarde</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ongeldige 'Localization' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Onvoorziene Gevolgen</system:String>
 </ResourceDictionary>

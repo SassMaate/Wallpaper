@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Недопустимое значение 'SystemTheme'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Недопустимое значение 'TriggerTime'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Недопустимое значение 'VolumeLevel'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Недопустимое значение 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">Значение 'PropertyList' отсутствует</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Недопустимое значение 'SystemMemory'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Недопустимое значение 'SystemBattery'</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Файл 'SucroseProperties.json' недействителен</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Недопустимое значение 'SystemMotherboard'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Недопустимое значение 'PropertyLocalization'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Недопустимое значение 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Непредвиденные последствия</system:String>
 </ResourceDictionary>

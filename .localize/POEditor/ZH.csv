@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,确认,,Property\Property.ZH.xaml,
 Property.ColorPicker.EyeDropper,取色器,,Property\Property.ZH.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.ZH.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.ZH.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,选择文件,,Property\Property.ZH.xaml,
 Property.FileDropDown.Filter,所有文件 (*.*)|*.*,,Property\Property.ZH.xaml,
+Property.FileDropDown.OpenTip,选择文件,,Property\Property.ZH.xaml,
+Property.FileDropDown.DeleteTip,删除此文件,,Property\Property.ZH.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.ZH.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,明白了,,Property\Property.ZH.xaml,
 Property.FileDropDown.Lock.Title,文件正在使用,,Property\Property.ZH.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,无效的'SystemAudio'值,,Portal\Enum
 Portal.Enum.CompatibilityType.SystemTheme,无效的'SystemTheme'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,无效的'TriggerTime'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,无效的'VolumeLevel'值,,Portal\Enum\Portal.Enum.ZH.xaml,
+Portal.Enum.CompatibilityType.Localization,无效的'Localization'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' 值为空,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,无效的'SystemMemory'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,无效的'SystemBattery'值,,Portal\Enum\Portal.Enum.ZH.xaml,

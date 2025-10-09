@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Ogiltigt värde för 'SystemTheme'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Ogiltigt värde för 'TriggerTime'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Ogiltigt värde för 'VolumeLevel'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ogiltigt värde för 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' är tomt</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Ogiltigt värde för 'SystemMemory'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Ogiltigt värde för 'SystemBattery'</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Filen 'SucroseProperties.json' är ogiltig</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Ogiltigt värde för 'SystemMotherboard'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Ogiltigt värde för 'PropertyLocalization'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Ogiltigt värde för 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Oväntade Konsekvenser</system:String>
 </ResourceDictionary>

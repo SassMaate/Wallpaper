@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Onayla,,Property\Property.TR.xaml,
 Property.ColorPicker.EyeDropper,Damlalık,,Property\Property.TR.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.TR.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.TR.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Bir dosya seç,,Property\Property.TR.xaml,
 Property.FileDropDown.Filter,Tüm Dosyalar (*.*)|*.*,,Property\Property.TR.xaml,
+Property.FileDropDown.OpenTip,Bir dosya seç,,Property\Property.TR.xaml,
+Property.FileDropDown.DeleteTip,Bu dosyayı sil,,Property\Property.TR.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.TR.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Anladım,,Property\Property.TR.xaml,
 Property.FileDropDown.Lock.Title,Kullanım Uyarısı,,Property\Property.TR.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Geçersiz 'SystemAudio' değeri,,Porta
 Portal.Enum.CompatibilityType.SystemTheme,Geçersiz 'SystemTheme' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Geçersiz 'TriggerTime' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Geçersiz 'VolumeLevel' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
+Portal.Enum.CompatibilityType.Localization,Geçersiz 'Localization' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' değeri boş,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Geçersiz 'SystemMemory' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Geçersiz 'SystemBattery' değeri,,Portal\Enum\Portal.Enum.TR.xaml,

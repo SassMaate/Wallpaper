@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Valor 'SystemTheme' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Valor 'TriggerTime' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Valor 'VolumeLevel' inválido</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Valor 'Localization' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">O valor 'PropertyList' está vazio</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Valor 'SystemMemory' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Valor 'SystemBattery' inválido</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">O arquivo 'SucroseProperties.json' é inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Valor 'SystemMotherboard' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Valor 'PropertyLocalization' inválido</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Valor 'Localization' inválido</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Consequências Imprevistas</system:String>
 </ResourceDictionary>

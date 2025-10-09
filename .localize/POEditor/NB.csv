@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Bekreft,,Property\Property.NB.xaml,
 Property.ColorPicker.EyeDropper,Dråpeteller,,Property\Property.NB.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.NB.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.NB.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Velg en fil,,Property\Property.NB.xaml,
 Property.FileDropDown.Filter,Alle filer (*.*)|*.*,,Property\Property.NB.xaml,
+Property.FileDropDown.OpenTip,Velg en fil,,Property\Property.NB.xaml,
+Property.FileDropDown.DeleteTip,Slett denne filen,,Property\Property.NB.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.NB.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Forstått,,Property\Property.NB.xaml,
 Property.FileDropDown.Lock.Title,Filen er i bruk,,Property\Property.NB.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Ugyldig 'SystemAudio' verdi,,Portal\En
 Portal.Enum.CompatibilityType.SystemTheme,Ugyldig 'SystemTheme' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Ugyldig 'TriggerTime' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Ugyldig 'VolumeLevel' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
+Portal.Enum.CompatibilityType.Localization,Ugyldig 'Localization' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' verdien er tom,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Ugyldig 'SystemMemory' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Ugyldig 'SystemBattery' verdi,,Portal\Enum\Portal.Enum.NB.xaml,

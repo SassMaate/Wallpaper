@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Nilai 'SystemTheme' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Nilai 'TriggerTime' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Nilai 'VolumeLevel' tidak valid</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Nilai 'Localization' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">Nilai 'PropertyList' kosong</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Nilai 'SystemMemory' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Nilai 'SystemBattery' tidak valid</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Berkas 'SucroseProperties.json' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Nilai 'SystemMotherboard' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Nilai 'PropertyLocalization' tidak valid</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Nilai 'Localization' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Konsekuensi Tak Terduga</system:String>
 </ResourceDictionary>

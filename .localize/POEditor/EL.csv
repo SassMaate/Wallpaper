@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Επιβεβαίωση,,Property\Property.EL.xaml,
 Property.ColorPicker.EyeDropper,Πιπέτα,,Property\Property.EL.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.EL.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.EL.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Επιλογή αρχείου,,Property\Property.EL.xaml,
 Property.FileDropDown.Filter,Όλα τα αρχεία (*.*)|*.*,,Property\Property.EL.xaml,
+Property.FileDropDown.OpenTip,Επιλογή αρχείου,,Property\Property.EL.xaml,
+Property.FileDropDown.DeleteTip,Διαγραφή αυτού του αρχείου,,Property\Property.EL.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.EL.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Κατάλαβα,,Property\Property.EL.xaml,
 Property.FileDropDown.Lock.Title,Το αρχείο χρησιμοποιείται,,Property\Property.EL.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Μη έγκυρη τιμή 'SystemAudi
 Portal.Enum.CompatibilityType.SystemTheme,Μη έγκυρη τιμή 'SystemTheme',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Μη έγκυρη τιμή 'TriggerTime',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Μη έγκυρη τιμή 'VolumeLevel',,Portal\Enum\Portal.Enum.EL.xaml,
+Portal.Enum.CompatibilityType.Localization,Μη έγκυρη τιμή 'Localization',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Η τιμή 'PropertyList' είναι άδεια,,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Μη έγκυρη τιμή 'SystemMemory',,Portal\Enum\Portal.Enum.EL.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Μη έγκυρη τιμή 'SystemBattery',,Portal\Enum\Portal.Enum.EL.xaml,

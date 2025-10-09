@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Neplatná hodnota 'SystemTheme'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Neplatná hodnota 'TriggerTime'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Neplatná hodnota 'VolumeLevel'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Neplatná hodnota 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">Hodnota 'PropertyList' je prázdná</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Neplatná hodnota 'SystemMemory'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Neplatná hodnota 'SystemBattery'</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Soubor 'SucroseProperties.json' je neplatný</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Neplatná hodnota 'SystemMotherboard'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Neplatná hodnota 'PropertyLocalization'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Neplatná hodnota 'Localization'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Nepředvídatelné následky</system:String>
 </ResourceDictionary>

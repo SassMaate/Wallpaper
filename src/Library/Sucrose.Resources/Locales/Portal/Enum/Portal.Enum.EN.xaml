@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Invalid 'SystemTheme' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Invalid 'TriggerTime' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Invalid 'VolumeLevel' value</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Invalid 'Localization' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' value is empty</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Invalid 'SystemMemory' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Invalid 'SystemBattery' value</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json' file is invalid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Invalid 'SystemMotherboard' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Invalid 'PropertyLocalization' value</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Invalid 'Localization' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Unforeseen Consequences</system:String>
 </ResourceDictionary>

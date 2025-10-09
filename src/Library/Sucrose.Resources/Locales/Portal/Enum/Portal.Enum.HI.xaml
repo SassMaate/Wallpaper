@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">'SystemTheme' मूल्य अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">'TriggerTime' मूल्य अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">'VolumeLevel' मूल्य अमान्य है</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">अमान्य 'Localization' मूल्य</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' मूल्य खाली है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">'SystemMemory' मूल्य अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">'SystemBattery' मूल्य अमान्य है</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json' फ़ाइल अमान्य है</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">अमान्य 'SystemMotherboard' मूल्य</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">अमान्य 'PropertyLocalization' मूल्य</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">अमान्य 'Localization' मूल्य</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">अप्रत्याशित परिणाम</system:String>
 </ResourceDictionary>

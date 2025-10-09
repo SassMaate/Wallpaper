@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,पुष्टि करें,,Property\Property.
 Property.ColorPicker.EyeDropper,नेत्र-स्रोत,,Property\Property.HI.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.HI.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.HI.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,एक फ़ाइल का चयन करें,,Property\Property.HI.xaml,
 Property.FileDropDown.Filter,सभी फ़ाइलें (*.*)|*.*,,Property\Property.HI.xaml,
+Property.FileDropDown.OpenTip,एक फ़ाइल का चयन करें,,Property\Property.HI.xaml,
+Property.FileDropDown.DeleteTip,इस फ़ाइल को हटाएँ,,Property\Property.HI.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.HI.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,समझ गया,,Property\Property.HI.xaml,
 Property.FileDropDown.Lock.Title,फ़ाइल उपयोग में है,,Property\Property.HI.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,'SystemAudio' मूल्य अम�
 Portal.Enum.CompatibilityType.SystemTheme,'SystemTheme' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,'TriggerTime' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,'VolumeLevel' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
+Portal.Enum.CompatibilityType.Localization,अमान्य 'Localization' मूल्य,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.PropertyList,'PropertyList' मूल्य खाली है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,'SystemMemory' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,'SystemBattery' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,

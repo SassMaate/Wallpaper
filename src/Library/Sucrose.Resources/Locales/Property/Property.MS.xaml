@@ -16,9 +16,9 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Dropper Mata</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.DeleteTip">Padam fail ini</system:String>
-    <system:String x:Key="Property.FileDropDown.OpenTip">Pilih sebuah fail</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Semua Fail (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Pilih sebuah fail</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Padam fail ini</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Faham</system:String>
     <system:String x:Key="Property.FileDropDown.Lock.Title">Fail Sedang Digunakan</system:String>

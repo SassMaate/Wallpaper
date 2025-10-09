@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Geçersiz 'SystemTheme' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Geçersiz 'TriggerTime' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Geçersiz 'VolumeLevel' değeri</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Geçersiz 'Localization' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">'PropertyList' değeri boş</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Geçersiz 'SystemMemory' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Geçersiz 'SystemBattery' değeri</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">'SucroseProperties.json' dosyası geçersiz</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Geçersiz 'SystemMotherboard' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Geçersiz 'PropertyLocalization' değeri</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Geçersiz 'Localization' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Öngörülemeyen Sonuçlar</system:String>
 </ResourceDictionary>

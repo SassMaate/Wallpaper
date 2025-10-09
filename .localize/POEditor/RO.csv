@@ -173,8 +173,9 @@ Property.ColorPicker.Confirm,Confirmare,,Property\Property.RO.xaml,
 Property.ColorPicker.EyeDropper,Pipetă,,Property\Property.RO.xaml,
 Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.RO.xaml,
 PASS⦙24,PASS⦙24,Don't Touch,Property\Property.RO.xaml,Please don't touch the translation in this line.
-Property.FileDropDown.Tip,Selectați un fișier,,Property\Property.RO.xaml,
 Property.FileDropDown.Filter,Toate fișierele (*.*)|*.*,,Property\Property.RO.xaml,
+Property.FileDropDown.OpenTip,Selectați un fișier,,Property\Property.RO.xaml,
+Property.FileDropDown.DeleteTip,Ștergeți acest fișier,,Property\Property.RO.xaml,
 PASS⦙25,PASS⦙25,Don't Touch,Property\Property.RO.xaml,Please don't touch the translation in this line.
 Property.FileDropDown.Lock.Close,Am Înțeles,,Property\Property.RO.xaml,
 Property.FileDropDown.Lock.Title,Fișier în Uz,,Property\Property.RO.xaml,
@@ -492,6 +493,7 @@ Portal.Enum.CompatibilityType.SystemAudio,Valoare 'SystemAudio' nevalidă,,Porta
 Portal.Enum.CompatibilityType.SystemTheme,Valoare 'SystemTheme' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.TriggerTime,Valoare 'TriggerTime' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.VolumeLevel,Valoare 'VolumeLevel' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
+Portal.Enum.CompatibilityType.Localization,Valoare 'Localization' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.PropertyList,Valoarea 'PropertyList' este goală,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemMemory,Valoare 'SystemMemory' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemBattery,Valoare 'SystemBattery' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,

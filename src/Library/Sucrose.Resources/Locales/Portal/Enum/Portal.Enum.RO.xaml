@@ -121,6 +121,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">Valoare 'SystemTheme' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">Valoare 'TriggerTime' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">Valoare 'VolumeLevel' nevalidă</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Valoare 'Localization' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">Valoarea 'PropertyList' este goală</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">Valoare 'SystemMemory' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Valoare 'SystemBattery' nevalidă</system:String>
@@ -136,6 +137,5 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">Fișierul 'SucroseProperties.json' este nevalid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">Valoare 'SystemMotherboard' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">Valoare 'PropertyLocalization' nevalidă</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">Valoare 'Localization' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">Consecințe neprevăzute</system:String>
 </ResourceDictionary>
