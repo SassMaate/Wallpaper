@@ -16,6 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">取色器</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
+    <system:String x:Key="Property.FileDropDown.DeleteTip">删除此文件</system:String>
     <system:String x:Key="Property.FileDropDown.OpenTip">选择文件</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">所有文件 (*.*)|*.*</system:String>
 

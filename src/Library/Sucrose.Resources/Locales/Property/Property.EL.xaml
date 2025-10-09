@@ -16,6 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Πιπέτα</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Διαγραφή αυτού του αρχείου</system:String>
     <system:String x:Key="Property.FileDropDown.OpenTip">Επιλογή αρχείου</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Όλα τα αρχεία (*.*)|*.*</system:String>
 

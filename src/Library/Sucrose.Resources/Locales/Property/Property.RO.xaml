@@ -16,6 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Pipetă</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
+    <system:String x:Key="Property.FileDropDown.DeleteTip">Ștergeți acest fișier</system:String>
     <system:String x:Key="Property.FileDropDown.OpenTip">Selectați un fișier</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Toate fișierele (*.*)|*.*</system:String>
 
