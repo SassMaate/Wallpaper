@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Collections.Concurrent;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSTHL = Sucrose.Shared.Theme.Helper.Localization;
@@ -49,7 +48,7 @@ namespace Sucrose.Shared.Theme.Helper
         public string Arguments { get; set; } = string.Empty;
 
         [JsonProperty("Localization", Required = Required.Default)]
-        public ConcurrentDictionary<string, SSTHL> Localization { get; set; } = null;
+        public Dictionary<string, SSTHL> Localization { get; set; } = null;
     }
 
     internal partial class Info

@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.IO;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using SMML = Sucrose.Manager.Manage.Library;
@@ -16,11 +15,11 @@ namespace Sucrose.Portal.Views.Pages.Library
     /// </summary>
     public partial class FullLibraryPage : Page, IDisposable
     {
-        private readonly ConcurrentDictionary<string, string> Searches = new();
+        private readonly Dictionary<string, string> Searches = new();
 
         private readonly List<string> Themes = new();
 
-        public FullLibraryPage(ConcurrentDictionary<string, string> Searches, List<string> Themes)
+        public FullLibraryPage(Dictionary<string, string> Searches, List<string> Themes)
         {
             this.Themes.AddRange(Themes);
             this.Searches = Searches;
@@ -129,7 +128,7 @@ namespace Sucrose.Portal.Views.Pages.Library
                 if ((sender as SPVCLC).Delete)
                 {
                     Themes.Remove(Theme);
-                    Searches.TryRemove(Theme, out _);
+                    Searches.Remove(Theme, out _);
                 }
 
                 await Task.Delay(250);

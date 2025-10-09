@@ -20,9 +20,8 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(string Key, SSTMCBM Data)
         {
-            Data.Text = SPHL.Convert(Data.Text);
+            Component.Content = SPHL.Convert(Data.Text);
 
-            Component.Content = Data.Text;
             Component.IsChecked = Data.Value;
 
             Component.Checked += (s, e) => Component_Changed(Key, Data, true);
@@ -30,11 +29,9 @@ namespace Sucrose.Property.Controls
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;

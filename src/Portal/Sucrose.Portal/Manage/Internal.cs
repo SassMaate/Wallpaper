@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using Wpf.Ui;
+﻿using Wpf.Ui;
 using Wpf.Ui.Controls;
 using SPSBS = Sucrose.Portal.Services.BackdropService;
 using SPSCES = Sucrose.Portal.Services.CultureService;
@@ -32,17 +31,17 @@ namespace Sucrose.Portal.Manage
 
         public static IContentDialogService ContentDialogService;
 
+        public static Dictionary<string, bool> StoreDownloader = new();
+
+        public static Dictionary<string, bool> StoreDownloading = new();
+
         public static readonly SymbolRegular AllIcon = SymbolRegular.Home24;
-
-        public static ConcurrentDictionary<string, bool> StoreDownloader = new();
-
-        public static ConcurrentDictionary<string, bool> StoreDownloading = new();
 
         public static readonly SymbolRegular DefaultIcon = SymbolRegular.Wallpaper24;
 
         public static WindowBackdropType DefaultBackdropType = WindowBackdropType.None;
 
-        public static readonly ConcurrentDictionary<string, SymbolRegular> CategoryIcons = new()
+        public static readonly Dictionary<string, SymbolRegular> CategoryIcons = new()
         {
             ["Brands"] = SymbolRegular.Tag24,
             ["Brands"] = SymbolRegular.Tag24,

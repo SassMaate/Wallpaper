@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.Windows.Threading;
+﻿using System.Windows.Threading;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSESB = Sucrose.Shared.Engine.Setting.Browser;
@@ -199,7 +198,7 @@ namespace Sucrose.Shared.Engine.Manage
             "--disable-features=MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
         };
 
-        public static ConcurrentDictionary<string, string> CefArguments = new()
+        public static Dictionary<string, string> CefArguments = new()
         {
             //["enable-gpu"] = "1",
             //["enable-gpu-vsync"] = "1",

@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.IO;
+﻿using System.IO;
 using System.Windows;
 using Wpf.Ui.Abstractions.Controls;
 using SHG = Skylark.Helper.Generator;
@@ -37,7 +36,7 @@ namespace Sucrose.Portal.Views.Pages
     /// </summary>
     public partial class LibraryPage : INavigableView<SPVMPLVM>, IDisposable
     {
-        private ConcurrentDictionary<string, string> Searches = new();
+        private Dictionary<string, string> Searches = new();
 
         private SPVPLELP EmptyLibraryPage { get; set; }
 

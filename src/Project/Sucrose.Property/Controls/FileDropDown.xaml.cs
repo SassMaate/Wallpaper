@@ -29,44 +29,48 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(string Key, SSTMFDDM Data)
         {
-            Data.Text = SPHL.Convert(Data.Text);
-            Data.Value = SPHL.Convert(Data.Value);
-
             Component_Items(Data);
-            Label.Text = Data.Text;
-            Component.Text = Data.Value;
 
-            Command.Click += async (s, e) => await Command_Click(Data);
+            Label.Text = SPHL.Convert(Data.Text);
+            Component.Text = SPHL.Convert(Data.Value);
+
+            Open.Click += async (s, e) => await Open_Click(Data);
+            Delete.Click += async (s, e) => await Delete_Click(Data);
 
             Component.SelectionChanged += (s, e) => Component_Changed(Key, Data, $"{Component.SelectedValue}");
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;
             }
 
-            ToolTip CommandTip = new()
+            ToolTip OpenTip = new()
             {
-                Content = SRER.GetValue("Property", "FileDropDown", "Tip")
+                Content = SRER.GetValue("Property", "FileDropDown", "OpenTip")
             };
 
-            Command.ToolTip = CommandTip;
+            Open.ToolTip = OpenTip;
+
+            ToolTip DeleteTip = new()
+            {
+                Content = SRER.GetValue("Property", "FileDropDown", "DeleteTip")
+            };
+
+            Delete.ToolTip = DeleteTip;
         }
 
         private void Component_Items(SSTMFDDM Data)
         {
-            string Folder = Path.Combine(SPMI.Path, Data.Folder);
+            string Folder = Path.Combine(SPMI.Path, SPHL.Convert(Data.Folder));
 
             if (Directory.Exists(Folder))
             {
-                string[] Extensions = Data.Filter.Replace("*", "").Split('|');
+                string[] Extensions = SPHL.Convert(Data.Filter).Replace("*", "").Split('|');
                 string[] Files = Directory.GetFiles(Folder, "*.*", SearchOption.TopDirectoryOnly).Where(Record => Extensions.Any(Extension => Record.EndsWith(Extension))).ToArray();
 
                 foreach (string File in Files)
@@ -74,15 +78,20 @@ namespace Sucrose.Property.Controls
                     Component.Items.Add(Path.GetFileName(File));
                 }
 
-                Component.SelectedValue = Data.Value;
+                if (Files.Count() > 1)
+                {
+                    Delete.IsEnabled = true;
+                }
+
+                Component.SelectedValue = SPHL.Convert(Data.Value);
             }
         }
 
-        private async Task Command_Click(SSTMFDDM Data)
+        private async Task Open_Click(SSTMFDDM Data)
         {
             if (Directory.Exists(SPMI.Path))
             {
-                string Filter = $"{Data.Desc} ({Data.Filter.Replace("|", ", ")})|{Data.Filter.Replace('|', ';')}";
+                string Filter = $"{SPHL.Convert(Data.Desc)} ({SPHL.Convert(Data.Filter).Replace("|", ", ")})|{SPHL.Convert(Data.Filter).Replace('|', ';')}";
 
                 Filter += $"|{SRER.GetValue("Property", "FileDropDown", "Filter")}";
 
@@ -91,11 +100,11 @@ namespace Sucrose.Property.Controls
                     Filter = Filter,
                     FilterIndex = 1,
 
-                    Title = Data.Title,
-
                     Multiselect = false,
 
-                    InitialDirectory = SMMRP.Desktop
+                    InitialDirectory = SMMRP.Desktop,
+
+                    Title = SPHL.Convert(Data.Title)
                 };
 
                 if (FileDialog.ShowDialog() == true)
@@ -105,20 +114,14 @@ namespace Sucrose.Property.Controls
                         if (SSSHL.File(FileDialog.FileName))
                         {
                             string FileName = Path.GetFileName(FileDialog.FileName);
+                            string Target = Path.Combine(SPMI.Path, SPHL.Convert(Data.Folder), FileName);
 
-                            using (FileStream Source = new(FileDialog.FileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                            if (File.Exists(Target))
                             {
-                                string Target = Path.Combine(SPMI.Path, Data.Folder, FileName);
-
-                                if (File.Exists(Target))
-                                {
-                                    SSSHF.Delete(Target);
-                                }
-
-                                using FileStream Destination = new(Target, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
-
-                                Source.CopyTo(Destination);
+                                await Task.Run(() => SSSHF.Delete(Target));
                             }
+
+                            await Task.Run(() => SSSHF.CopyBuffer(FileDialog.FileName, Target));
 
                             await Task.Delay(500);
 
@@ -128,6 +131,11 @@ namespace Sucrose.Property.Controls
                             }
 
                             Component.SelectedValue = FileName;
+
+                            if (Component.Items.OfType<string>().Count() > 1)
+                            {
+                                Delete.IsEnabled = true;
+                            }
                         }
                         else
                         {
@@ -153,6 +161,44 @@ namespace Sucrose.Property.Controls
                         await Warning.ShowDialogAsync();
                     }
                 }
+            }
+
+            await Task.CompletedTask;
+        }
+
+        private async Task Delete_Click(SSTMFDDM Data)
+        {
+            Delete.IsEnabled = false;
+
+            if (Directory.Exists(SPMI.Path))
+            {
+                if (Component.SelectedValue != null)
+                {
+                    int Index = Component.SelectedIndex;
+                    string FileName = $"{Component.SelectedValue}";
+                    string Target = Path.Combine(SPMI.Path, SPHL.Convert(Data.Folder), FileName);
+
+                    Component.Items.Remove(FileName);
+
+                    if (File.Exists(Target))
+                    {
+                        await Task.Run(() => SSSHF.Delete(Target));
+                    }
+
+                    if (Index > 0)
+                    {
+                        Component.SelectedIndex = --Index;
+                    }
+                    else
+                    {
+                        Component.SelectedIndex = 0;
+                    }
+                }
+            }
+
+            if (Component.Items.OfType<string>().Count() > 1)
+            {
+                Delete.IsEnabled = true;
             }
 
             await Task.CompletedTask;

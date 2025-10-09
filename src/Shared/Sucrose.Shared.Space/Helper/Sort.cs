@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.IO;
+﻿using System.IO;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SSDESKT = Sucrose.Shared.Dependency.Enum.SortKindType;
@@ -58,7 +57,7 @@ namespace Sucrose.Shared.Space.Helper
             return Themes;
         }
 
-        public static (List<string>, ConcurrentDictionary<string, string>) Theme(List<string> Themes, ConcurrentDictionary<string, string> Searches)
+        public static (List<string>, Dictionary<string, string>) Theme(List<string> Themes, Dictionary<string, string> Searches)
         {
             Dictionary<string, object> SortThemes = new();
 

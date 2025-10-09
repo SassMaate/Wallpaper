@@ -1,5 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.IO;
+﻿using System.IO;
 using SEAT = Skylark.Enum.AssemblyType;
 using SHA = Skylark.Helper.Assemblies;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
@@ -62,7 +61,7 @@ namespace Sucrose.Shared.Space.Manage
 
         public static string Backgroundog => Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.Backgroundog), SMMRA.Backgroundog);
 
-        public static ConcurrentDictionary<SSDEET, string> EngineLive => new()
+        public static Dictionary<SSDEET, string> EngineLive => new()
         {
             [SSDEET.AuroraLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.AuroraLive), SMMRA.AuroraLive),
             [SSDEET.NebulaLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.NebulaLive), SMMRA.NebulaLive),
@@ -73,7 +72,7 @@ namespace Sucrose.Shared.Space.Manage
             [SSDEET.MpvPlayerLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.MpvPlayerLive), SMMRA.MpvPlayerLive)
         };
 
-        public static ConcurrentDictionary<string, string> TextEngineLive => new()
+        public static Dictionary<string, string> TextEngineLive => new()
         {
             [SMMRA.AuroraLive] = EngineLive[SSDEET.AuroraLive],
             [SMMRA.NebulaLive] = EngineLive[SSDEET.NebulaLive],

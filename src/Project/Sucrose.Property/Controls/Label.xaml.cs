@@ -19,17 +19,13 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(SSTMLM Data)
         {
-            Data.Value = SPHL.Convert(Data.Value);
-
-            Component.Text = Data.Value;
+            Component.Text = SPHL.Convert(Data.Value);
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;

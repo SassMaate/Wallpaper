@@ -20,23 +20,19 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(string Key, SSTMNBM Data)
         {
-            Data.Text = SPHL.Convert(Data.Text);
-
             Component.Maximum = Data.Max;
             Component.Minimum = Data.Min;
             Component.Value = Data.Value;
-            Component.PlaceholderText = Data.Text;
             Component.MaxDecimalPlaces = Data.Places;
+            Component.PlaceholderText = SPHL.Convert(Data.Text);
 
             Component.ValueChanged += (s, e) => Component_Changed(Key, Data, Component.Value);
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;

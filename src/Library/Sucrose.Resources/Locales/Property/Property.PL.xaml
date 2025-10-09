@@ -16,7 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Kroplomierz</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.Tip">Wybierz plik</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Wybierz plik</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Wszystkie pliki (*.*)|*.*</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Zrozumiano</system:String>

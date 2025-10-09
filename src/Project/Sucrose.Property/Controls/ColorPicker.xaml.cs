@@ -60,31 +60,7 @@ namespace Sucrose.Property.Controls
             }
         }
 
-        private void InitializeData(string Key, SSTMCPM Data)
-        {
-            Data.Text = SPHL.Convert(Data.Text);
-            Data.Value = SPHL.Convert(Data.Value);
-
-            Label.Text = Data.Text;
-            DrawingColor Color = SSECCE.HexToColor(Data.Value);
-            Component.Color = MediaColor.FromArgb(Color.A, Color.R, Color.G, Color.B);
-
-            DropDownButton.Click += (s, e) => DropDownButton_Click(Key, Data);
-
-            if (!string.IsNullOrEmpty(Data.Help))
-            {
-                Data.Help = SPHL.Convert(Data.Help);
-
-                ToolTip HelpTip = new()
-                {
-                    Content = Data.Help
-                };
-
-                Container.ToolTip = HelpTip;
-            }
-        }
-
-        private void DropDownButton_Click(string Key, SSTMCPM Data)
+        private void Command_Click(string Key, SSTMCPM Data)
         {
             CPicker Picker = SingleOpenHelper.CreateControl<CPicker>();
 
@@ -97,13 +73,22 @@ namespace Sucrose.Property.Controls
             {
                 Title = SRER.GetValue("Property", "ColorPicker", "Popup", "Title"),
                 WindowStartupLocation = WindowStartupLocation.Manual,
+                WindowState = WindowState.Normal,
                 ResizeMode = ResizeMode.NoResize,
                 WindowStyle = WindowStyle.None,
                 AllowsTransparency = true,
                 UseLayoutRounding = true,
                 PopupElement = Picker,
+                ShowActivated = true,
+                ShowCancel = true,
                 ShowBorder = true,
+                Focusable = true,
                 Topmost = true
+            };
+
+            Picker.SelectedColorChanged += (s, e) =>
+            {
+                Component.Color = e.Info;
             };
 
             Picker.Confirmed += (s, e) =>
@@ -117,11 +102,6 @@ namespace Sucrose.Property.Controls
                 PopupWindow.Close();
             };
 
-            Picker.SelectedColorChanged += (s, e) =>
-            {
-                Component.Color = e.Info;
-            };
-
             Picker.Canceled += delegate
             {
                 Component.Color = UndoColor;
@@ -130,6 +110,25 @@ namespace Sucrose.Property.Controls
             };
 
             PopupWindow.Show(Control, false);
+        }
+
+        private void InitializeData(string Key, SSTMCPM Data)
+        {
+            Label.Text = SPHL.Convert(Data.Text);
+            DrawingColor Color = SSECCE.HexToColor(SPHL.Convert(Data.Value));
+            Component.Color = MediaColor.FromArgb(Color.A, Color.R, Color.G, Color.B);
+
+            Command.Click += (s, e) => Command_Click(Key, Data);
+
+            if (!string.IsNullOrEmpty(Data.Help))
+            {
+                ToolTip HelpTip = new()
+                {
+                    Content = SPHL.Convert(Data.Help)
+                };
+
+                Container.ToolTip = HelpTip;
+            }
         }
     }
 }

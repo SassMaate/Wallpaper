@@ -20,22 +20,18 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(string Key, SSTMDDM Data)
         {
-            Data.Text = SPHL.Convert(Data.Text);
-            Data.Items = SPHL.Convert(Data.Items);
+            Label.Text = SPHL.Convert(Data.Text);
+            Component.ItemsSource = SPHL.Convert(Data.Items);
 
-            Label.Text = Data.Text;
-            Component.ItemsSource = Data.Items;
             Component.SelectedIndex = Data.Value;
 
             Component.SelectionChanged += (s, e) => Component_Changed(Key, Data, Component.SelectedIndex);
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;

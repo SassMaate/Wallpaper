@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Collections.Concurrent;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSTMCM = Sucrose.Shared.Theme.Model.ControlModel;
 
@@ -18,7 +17,7 @@ namespace Sucrose.Shared.Theme.Helper
         public Dictionary<string, SSTMCM> PropertyList { get; set; } = new();
 
         [JsonProperty("PropertyLocalization", Required = Required.Default)]
-        public ConcurrentDictionary<string, ConcurrentDictionary<string, string>> PropertyLocalization { get; set; } = null;
+        public Dictionary<string, Dictionary<string, string>> PropertyLocalization { get; set; } = null;
     }
 
     internal partial class Properties

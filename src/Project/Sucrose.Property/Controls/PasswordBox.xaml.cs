@@ -20,21 +20,16 @@ namespace Sucrose.Property.Controls
 
         private void InitializeData(string Key, SSTMPBM Data)
         {
-            Data.Text = SPHL.Convert(Data.Text);
-            Data.Value = SPHL.Convert(Data.Value);
-
-            Component.Password = Data.Value;
-            Component.PlaceholderText = Data.Text;
+            Component.Password = SPHL.Convert(Data.Value);
+            Component.PlaceholderText = SPHL.Convert(Data.Text);
 
             Component.PasswordChanged += (s, e) => Component_Changed(Key, Data, Component.Password);
 
             if (!string.IsNullOrEmpty(Data.Help))
             {
-                Data.Help = SPHL.Convert(Data.Help);
-
                 ToolTip HelpTip = new()
                 {
-                    Content = Data.Help
+                    Content = SPHL.Convert(Data.Help)
                 };
 
                 Component.ToolTip = HelpTip;

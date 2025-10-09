@@ -30,7 +30,8 @@
                                 Height="2"
                                 VerticalAlignment="Center"
                                 Background="{TemplateBinding BorderBrush}"
-                                CornerRadius="8,0,0,0" />
+                                CornerRadius="0,0,0,0" />
+                            <!--  8,0,0,0  -->
 
                             <!--  Header  -->
                             <Border
@@ -47,7 +48,8 @@
                                 Height="2"
                                 VerticalAlignment="Center"
                                 Background="{TemplateBinding BorderBrush}"
-                                CornerRadius="0,8,0,0" />
+                                CornerRadius="0,0,0,0" />
+                            <!--  0,8,0,0  -->
                         </Grid>
 
                         <!--  Main content border  -->

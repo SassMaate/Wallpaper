@@ -1,5 +1,4 @@
 ﻿using Sucrose.Shared.Theme.Helper;
-using System.Collections.Concurrent;
 using System.IO;
 using SHV = Skylark.Helper.Versionly;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;

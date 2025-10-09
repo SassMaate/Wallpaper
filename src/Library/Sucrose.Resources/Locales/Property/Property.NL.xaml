@@ -16,7 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">Pipet</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.Tip">Selecteer een bestand</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">Selecteer een bestand</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">Alle bestanden (*.*)|*.*</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">Begrepen</system:String>

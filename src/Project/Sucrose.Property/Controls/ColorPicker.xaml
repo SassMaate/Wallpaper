@@ -18,7 +18,7 @@
             FontSize="16" />
         <Grid x:Name="Container">
             <ui:DropDownButton
-                x:Name="DropDownButton"
+                x:Name="Command"
                 Content="         "
                 Cursor="Hand"
                 Icon="{ui:SymbolIcon EyeDropper24}" />

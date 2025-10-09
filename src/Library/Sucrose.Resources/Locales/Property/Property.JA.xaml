@@ -16,7 +16,7 @@
     <system:String x:Key="Property.ColorPicker.EyeDropper">目詰め管</system:String>
     <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
 
-    <system:String x:Key="Property.FileDropDown.Tip">ファイルを選択</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">ファイルを選択</system:String>
     <system:String x:Key="Property.FileDropDown.Filter">すべてのファイル (*.*)|*.*</system:String>
 
     <system:String x:Key="Property.FileDropDown.Lock.Close">了解しました</system:String>
