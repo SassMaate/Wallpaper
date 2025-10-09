@@ -1,4 +1,4 @@
-﻿<ui:ContentDialog
+<ui:ContentDialog
     x:Class="Sucrose.Portal.Views.Controls.ThemeEdit"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -34,6 +34,7 @@
             Stretch="UniformToFill" />
 
         <controls:CustomGroupBox
+            x:Name="LocalizationGroupBox"
             Margin="0,12,0,0"
             Background="Transparent"
             BorderBrush="{DynamicResource SeparatorBorderBrush}">
@@ -47,91 +48,14 @@
                         Text="Localization"
                         TextWrapping="WrapWithOverflow" />
                     <ComboBox
+                        x:Name="LocalizationComboBox"
                         Width="200"
                         Margin="12,0,0,0"
-                        VerticalAlignment="Center"
                         HorizontalContentAlignment="Stretch"
                         VerticalContentAlignment="Stretch"
                         ui:DynamicScrollViewer.VerticalScrollBarVisibility="Auto"
                         MaxDropDownHeight="200"
-                        SelectedIndex="0">
-                        <ComboBoxItem>
-                            <StackPanel
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Stretch"
-                                Orientation="Horizontal">
-                                <ui:SymbolIcon
-                                    Width="32"
-                                    HorizontalAlignment="Left"
-                                    Symbol="Checkmark48" />
-                                <TextBlock
-                                    Grid.Column="1"
-                                    Margin="10,0,0,0"
-                                    HorizontalAlignment="Stretch"
-                                    FontSize="14"
-                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                    Text="Dolu Bilgi"
-                                    TextWrapping="WrapWithOverflow" />
-                            </StackPanel>
-                        </ComboBoxItem>
-                        <ComboBoxItem>
-                            <StackPanel
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Stretch"
-                                Orientation="Horizontal">
-                                <ui:SymbolIcon
-                                    Width="32"
-                                    HorizontalAlignment="Left"
-                                    Symbol="Dismiss48" />
-                                <TextBlock
-                                    Grid.Column="1"
-                                    Margin="10,0,0,0"
-                                    HorizontalAlignment="Stretch"
-                                    FontSize="14"
-                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                    Text="Boş Bilgi"
-                                    TextWrapping="WrapWithOverflow" />
-                            </StackPanel>
-                        </ComboBoxItem>
-                        <ComboBoxItem>
-                            <StackPanel
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Stretch"
-                                Orientation="Horizontal">
-                                <ui:SymbolIcon
-                                    Width="32"
-                                    HorizontalAlignment="Left"
-                                    Symbol="Prohibited48" />
-                                <TextBlock
-                                    Grid.Column="1"
-                                    Margin="10,0,0,0"
-                                    HorizontalAlignment="Stretch"
-                                    FontSize="14"
-                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                    Text="Hatalı Bilgi"
-                                    TextWrapping="WrapWithOverflow" />
-                            </StackPanel>
-                        </ComboBoxItem>
-                        <ComboBoxItem>
-                            <StackPanel
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Stretch"
-                                Orientation="Horizontal">
-                                <ui:SymbolIcon
-                                    Width="32"
-                                    HorizontalAlignment="Left"
-                                    Symbol="Edit48" />
-                                <TextBlock
-                                    Grid.Column="1"
-                                    Margin="10,0,0,0"
-                                    HorizontalAlignment="Stretch"
-                                    FontSize="14"
-                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                    Text="Değiştirilmiş Bilgi"
-                                    TextWrapping="WrapWithOverflow" />
-                            </StackPanel>
-                        </ComboBoxItem>
-                    </ComboBox>
+                        SelectedIndex="0" />
                 </StackPanel>
             </controls:CustomGroupBox.Header>
 
@@ -148,7 +72,8 @@
                     AcceptsReturn="False"
                     AcceptsTab="False"
                     MaxLength="50"
-                    PlaceholderText="{DynamicResource Portal.ThemeEdit.ThemeTitle.Hint}" />
+                    PlaceholderText="{DynamicResource Portal.ThemeEdit.ThemeTitle.Hint}"
+                    TextChanged="ThemeTitle_TextChanged" />
 
                 <TextBlock
                     Margin="0,12,0,0"
@@ -163,6 +88,7 @@
                     AcceptsTab="False"
                     MaxLength="500"
                     PlaceholderText="{DynamicResource Portal.ThemeEdit.ThemeDescription.Hint}"
+                    TextChanged="ThemeDescription_TextChanged"
                     TextWrapping="WrapWithOverflow" />
             </StackPanel>
         </controls:CustomGroupBox>

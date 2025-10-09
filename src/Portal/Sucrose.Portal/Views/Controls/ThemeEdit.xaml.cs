@@ -1,16 +1,26 @@
-﻿using System.IO;
+using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using Wpf.Ui.Controls;
+using SMMG = Sucrose.Manager.Manage.General;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
 using SPMI = Sucrose.Portal.Manage.Internal;
+using SRER = Sucrose.Resources.Extension.Resources;
+using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSSHT = Sucrose.Shared.Space.Helper.Tags;
 using SSSHV = Sucrose.Shared.Space.Helper.Versionly;
+using SSTCLC = Sucrose.Shared.Theme.Converter.LocalizationConverter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
+using SSTHL = Sucrose.Shared.Theme.Helper.Localization;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using TextBlock = Wpf.Ui.Controls.TextBlock;
+using TextBox = Wpf.Ui.Controls.TextBox;
 
 namespace Sucrose.Portal.Views.Controls
 {
@@ -38,11 +48,15 @@ namespace Sucrose.Portal.Views.Controls
 
         private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
-            ThemeTitle.Text = Info.Title;
+            // Initialize LocalizationComboBox with dynamic items
+            PopulateLocalizationComboBox();
+
+            // Add selection changed event handler
+            LocalizationComboBox.SelectionChanged += LocalizationComboBox_SelectionChanged;
+
             ThemeAuthor.Text = Info.Author;
             ThemeContact.Text = Info.Contact;
             ThemeArguments.Text = Info.Arguments;
-            ThemeDescription.Text = Info.Description;
             ThemeTags.Text = SSSHT.Join(Info.Tags, ",", false, string.Empty);
 
             if (Info.Type != SSDEWT.Application)
@@ -160,10 +174,231 @@ namespace Sucrose.Portal.Views.Controls
             base.OnButtonClick(Button);
         }
 
+        /// <summary>
+        /// Populates the LocalizationComboBox with available languages dynamically
+        /// </summary>
+        private void PopulateLocalizationComboBox()
+        {
+            LocalizationComboBox.Items.Clear();
+
+            List<string> Languages = SRHR.ListLanguage();
+
+            Languages.Insert(0, string.Empty);
+
+            foreach (string Code in Languages)
+            {
+                string Language = SRER.GetValue("Locale", Code);
+                SymbolRegular Symbol = GetSymbolForLanguageStatus(Code);
+
+                if (SRER.CheckBack("Locale", Code))
+                {
+                    Language = "Varsayılan";
+                }
+                else
+                {
+                    Language = Regex.Replace(Language, @"\s*\(.*?\)", "");
+                }
+
+                ComboBoxItem Item = CreateComboBoxItem(Code, Language, Symbol);
+
+                if (Item.IsSelected)
+                {
+                    (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
+                }
+
+                LocalizationComboBox.Items.Add(Item);
+            }
+
+            if (LocalizationComboBox.SelectedValue == null)
+            {
+                LocalizationComboBox.SelectedIndex = 0;
+            }
+        }
+
+        /// <summary>
+        /// Creates a ComboBoxItem with icon and text
+        /// </summary>
+        private ComboBoxItem CreateComboBoxItem(string code, string name, SymbolRegular symbol)
+        {
+            StackPanel stackPanel = new()
+            {
+                HorizontalAlignment = HorizontalAlignment.Left,
+                VerticalAlignment = VerticalAlignment.Stretch,
+                Orientation = Orientation.Horizontal
+            };
+
+            SymbolIcon icon = new()
+            {
+                Width = 32,
+                HorizontalAlignment = HorizontalAlignment.Left,
+                Symbol = symbol
+            };
+
+            TextBlock textBlock = new()
+            {
+                Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
+                HorizontalAlignment = HorizontalAlignment.Stretch,
+                TextWrapping = TextWrapping.WrapWithOverflow,
+                Margin = new Thickness(10, 0, 0, 0),
+                FontSize = 14,
+                Text = name
+            };
+
+            stackPanel.Children.Add(icon);
+            stackPanel.Children.Add(textBlock);
+
+            return new ComboBoxItem
+            {
+                IsSelected = SMMG.Culture == code && symbol == SymbolRegular.Checkmark48,
+                Content = stackPanel,
+                Tag = code
+            };
+        }
+
+        /// <summary>
+        /// Returns appropriate symbol based on language status
+        /// </summary>
+        private SymbolRegular GetSymbolForLanguageStatus(string languageCode)
+        {
+            (string Title, string Description) = SSTCLC.Convert(Info, languageCode);
+
+            if (string.IsNullOrWhiteSpace(Title) && string.IsNullOrWhiteSpace(Description))
+            {
+                return SymbolRegular.Dismiss48;
+            }
+            else if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Description))
+            {
+                return SymbolRegular.Prohibited48;
+            }
+            else if (ThemeTitle.Text != Info.Title && ThemeDescription.Text != Info.Description && false) // Both changed but not saved
+            {
+                return SymbolRegular.Edit48;
+            }
+            else
+            {
+                return SymbolRegular.Checkmark48;
+            }
+        }
+
+        /// <summary>
+        /// Gets the selected language code from ComboBox
+        /// </summary>
+        public string GetSelectedLanguage()
+        {
+            if (LocalizationComboBox.SelectedItem is ComboBoxItem selectedItem)
+            {
+                return selectedItem.Tag?.ToString() ?? string.Empty;
+            }
+
+            return string.Empty;
+        }
+
+        /// <summary>
+        /// Sets the selected language in ComboBox
+        /// </summary>
+        public void SetSelectedLanguage(string languageCode)
+        {
+            for (int i = 0; i < LocalizationComboBox.Items.Count; i++)
+            {
+                if (LocalizationComboBox.Items[i] is ComboBoxItem item && item.Tag?.ToString() == languageCode)
+                {
+                    LocalizationComboBox.SelectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handles language selection changes
+        /// </summary>
+        private void LocalizationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (sender is ComboBox comboBox && comboBox.SelectedItem is ComboBoxItem selectedItem)
+            {
+                string selectedLanguageCode = selectedItem.Tag?.ToString() ?? string.Empty;
+
+                // Here you can implement language-specific logic
+                OnLanguageChanged(selectedLanguageCode);
+            }
+        }
+
+        /// <summary>
+        /// Called when language selection changes
+        /// </summary>
+        private void OnLanguageChanged(string languageCode)
+        {
+            // Implement your language change logic here
+            // For example:
+            // - Update theme info based on selected language
+            // - Load localized strings
+            // - Update UI elements
+            (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, languageCode);
+        }
+
         public void Dispose()
         {
             GC.Collect();
             GC.SuppressFinalize(this);
+        }
+
+        private void ThemeTitle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            return;
+            if (sender is TextBox ThemeTitle)
+            {
+                string Language = GetSelectedLanguage();
+
+                if (string.IsNullOrEmpty(Language))
+                {
+                    Info.Title = ThemeTitle.Text;
+                }
+                else
+                {
+                    Info.Localization ??= new Dictionary<string, SSTHL>();
+
+                    if (!Info.Localization.ContainsKey(Language))
+                    {
+                        Info.Localization[Language] = new SSTHL();
+                    }
+
+                    Info.Localization[Language].Title = ThemeTitle.Text;
+                }
+
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                {
+                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                }
+            }
+        }
+
+        private void ThemeDescription_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            return;
+            if (sender is TextBox ThemeDescription)
+            {
+                string Language = GetSelectedLanguage();
+
+                if (string.IsNullOrEmpty(Language))
+                {
+                    Info.Description = ThemeDescription.Text;
+                }
+                else
+                {
+                    Info.Localization ??= new Dictionary<string, SSTHL>();
+
+                    if (!Info.Localization.ContainsKey(Language))
+                    {
+                        Info.Localization[Language] = new SSTHL();
+                    }
+
+                    Info.Localization[Language].Description = ThemeDescription.Text;
+                }
+
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                {
+                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                }
+            }
         }
     }
 }
