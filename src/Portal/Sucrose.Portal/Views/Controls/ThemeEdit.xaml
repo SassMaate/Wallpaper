@@ -36,7 +36,7 @@
         <controls:CustomGroupBox
             Margin="0,12,0,0"
             Background="Transparent"
-            BorderBrush="Orange">
+            BorderBrush="{DynamicResource SeparatorBorderBrush}">
             <controls:CustomGroupBox.Header>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock
