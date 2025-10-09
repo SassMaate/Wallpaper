@@ -4,6 +4,31 @@ namespace Sucrose.Resources.Extension
 {
     public static class Resources
     {
+        public static bool CheckBack(string Key)
+        {
+            return GetValue(Key) == GetBack(Key);
+        }
+
+        public static bool CheckBack(string Area, string Key)
+        {
+            return GetValue(Area, Key) == GetBack(Area, Key);
+        }
+
+        public static bool CheckBack(string Area, string Prefix, string Key)
+        {
+            return GetValue(Area, Prefix, Key) == GetBack(Area, Prefix, Key);
+        }
+
+        public static bool CheckBack(string Area, string Prefix, string Key, string Suffix)
+        {
+            return GetValue(Area, Prefix, Key, Suffix) == GetBack(Area, Prefix, Key, Suffix);
+        }
+
+        public static bool CheckBack(string Area, string Prefix, string Key, string Suffix, string Last)
+        {
+            return GetValue(Area, Prefix, Key, Suffix, Last) == GetBack(Area, Prefix, Key, Suffix, Last);
+        }
+
         public static string GetValue(string Key)
         {
             return GetResource(Key, GetBack(Key));

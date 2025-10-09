@@ -31,7 +31,7 @@ namespace Sucrose.Property.Helper
             {
                 string Value = SRER.GetValue(Key);
 
-                if (Value != $"[{Key}]")
+                if (!SRER.CheckBack(Key))
                 {
                     return Value;
                 }
