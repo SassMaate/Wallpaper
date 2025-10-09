@@ -87,9 +87,12 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     string Code = $"{Item.Tag}";
 
-                    if (GetSymbolForLanguageStatus(Code) == SymbolRegular.Prohibited48)
+                    if ((string.IsNullOrEmpty(Code) && GetSymbolForLanguageStatus(string.Empty) != SymbolRegular.Checkmark48) || GetSymbolForLanguageStatus(Code) == SymbolRegular.Prohibited48)
                     {
-                        SetSelectedLanguage(Code);
+                        if (GetSelectedLanguage() != Code)
+                        {
+                            SetSelectedLanguage(Code);
+                        }
 
                         (string Title, string Description) = SSTCLC.Convert(Info, Code);
 
@@ -214,11 +217,6 @@ namespace Sucrose.Portal.Views.Controls
                 }
 
                 LocalizationComboBox.Items.Add(Item);
-            }
-
-            if (LocalizationComboBox.SelectedValue == null)
-            {
-                LocalizationComboBox.SelectedIndex = 0;
             }
         }
 
