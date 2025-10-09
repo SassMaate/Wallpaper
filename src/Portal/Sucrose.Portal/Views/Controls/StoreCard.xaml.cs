@@ -23,7 +23,6 @@ using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SMMVA = Sucrose.Memory.Manage.Valuable.App;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
-using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPVCTR = Sucrose.Portal.Views.Controls.ThemeReport;
 using SRER = Sucrose.Resources.Extension.Resources;
@@ -47,6 +46,7 @@ using SSSIW = Sucrose.Shared.Store.Interface.Wallpaper;
 using SSSMDTD = Sucrose.Shared.Space.Model.DownloadTelemetryData;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSSTMI = Sucrose.Shared.Store.Manage.Internal;
+using SSTCLC = Sucrose.Shared.Theme.Converter.LocalizationConverter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SXAGAB = Sucrose.XamlAnimatedGif.AnimationBehavior;
@@ -447,7 +447,7 @@ namespace Sucrose.Portal.Views.Controls
 
                 if (Result)
                 {
-                    (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
+                    (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info);
 
                     ToolTip TitleTip = new()
                     {

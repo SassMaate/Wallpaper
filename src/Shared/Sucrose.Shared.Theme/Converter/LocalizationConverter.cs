@@ -3,11 +3,14 @@ using SMMG = Sucrose.Manager.Manage.General;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHL = Sucrose.Shared.Theme.Helper.Localization;
 
-namespace Sucrose.Portal.Helpers
+namespace Sucrose.Shared.Theme.Converter
 {
-    internal static class Localization
+    internal class LocalizationConverter
     {
-        public static string Title(SSTHI Info) => Convert(Info).Title;
+        public static string Title(SSTHI Info)
+        {
+            return Convert(Info).Title;
+        }
 
         public static (string Title, string Description) Convert(SSTHI Info)
         {
@@ -26,6 +29,9 @@ namespace Sucrose.Portal.Helpers
             return (Info.Title, Info.Description);
         }
 
-        public static string Description(SSTHI Info) => Convert(Info).Description;
+        public static string Description(SSTHI Info)
+        {
+            return Convert(Info).Description;
+        }
     }
 }

@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Converter\ModelConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converter\LocalizationConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converter\VersionConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Converter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Info.cs" />

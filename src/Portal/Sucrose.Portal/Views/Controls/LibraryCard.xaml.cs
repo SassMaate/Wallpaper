@@ -16,7 +16,6 @@ using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
-using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPVCTD = Sucrose.Portal.Views.Controls.ThemeDelete;
 using SPVCTE = Sucrose.Portal.Views.Controls.ThemeEdit;
 using SPVCTR = Sucrose.Portal.Views.Controls.ThemeReview;
@@ -32,6 +31,7 @@ using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHL = Sucrose.Shared.Space.Helper.Live;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
+using SSTCLC = Sucrose.Shared.Theme.Converter.LocalizationConverter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SXAGAB = Sucrose.XamlAnimatedGif.AnimationBehavior;
@@ -81,7 +81,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void UpdateInfo()
         {
-            (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
+            (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info);
 
             ToolTip TitleTip = new()
             {

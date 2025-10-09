@@ -14,7 +14,7 @@ using SSTMTBM = Sucrose.Shared.Theme.Model.TextBoxModel;
 
 namespace Sucrose.Shared.Theme.Converter
 {
-    public class ModelConverter : JsonConverter
+    internal class ModelConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType)
         {

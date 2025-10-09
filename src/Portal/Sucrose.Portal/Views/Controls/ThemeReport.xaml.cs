@@ -21,10 +21,10 @@ using SSDERTT = Sucrose.Shared.Dependency.Enum.ReportThemeType;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
-using SPHL = Sucrose.Portal.Helpers.Localization;
 using SSSIW = Sucrose.Shared.Store.Interface.Wallpaper;
 using SSSMROD = Sucrose.Shared.Space.Model.ReportOptionalData;
 using SSSPMI = Sucrose.Shared.Space.Manage.Internal;
+using SSTCLC = Sucrose.Shared.Theme.Converter.LocalizationConverter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -73,7 +73,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
             }
 
-            (ThemeTitle.Text, ThemeDescription.Text) = SPHL.Convert(Info);
+            (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info);
 
             Reporter.LeftIcon.Symbol = SymbolRegular.Info24;
             Reporter.Title.Text = SRER.GetValue("Portal", "ThemeReport", "Reporter");
