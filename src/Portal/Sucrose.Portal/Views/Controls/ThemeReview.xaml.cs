@@ -17,6 +17,7 @@ using SSSSS = Skylark.Struct.Storage.StorageStruct;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SPHL = Sucrose.Portal.Helpers.Localization;
 
 namespace Sucrose.Portal.Views.Controls
 {
@@ -43,8 +44,10 @@ namespace Sucrose.Portal.Views.Controls
 
         private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
-            ThemeTitle.Text = Info.Title;
-            ThemeDescription.Text = Info.Description;
+            (string Title, string Description) = SPHL.Convert(Info);
+
+            ThemeTitle.Text = Title;
+            ThemeDescription.Text = Description;
 
             ThemeTypeName.Text = Info.Type.ToString();
 

@@ -117,23 +117,26 @@ namespace Sucrose.Shared.Zip.Helper
                     return SSDECT.Arguments;
                 }
 
-                if (Info.Localization != null && !Info.Localization.Any())
+                if (Info.Localization != null)
                 {
-                    return SSDECT.Localization;
-                }
-                else
-                {
-                    foreach (Localization Localization in Info.Localization.Values)
+                    if (Info.Localization.Any())
                     {
-                        if (string.IsNullOrEmpty(Localization.Title) || Localization.Title.Length > 50)
+                        foreach (Localization Localization in Info.Localization.Values)
                         {
-                            return SSDECT.Title;
-                        }
+                            if (string.IsNullOrEmpty(Localization.Title) || Localization.Title.Length > 50)
+                            {
+                                return SSDECT.Title;
+                            }
 
-                        if (string.IsNullOrEmpty(Localization.Description) || Localization.Description.Length > 500)
-                        {
-                            return SSDECT.Description;
+                            if (string.IsNullOrEmpty(Localization.Description) || Localization.Description.Length > 500)
+                            {
+                                return SSDECT.Description;
+                            }
                         }
+                    }
+                    else
+                    {
+                        return SSDECT.Localization;
                     }
                 }
 

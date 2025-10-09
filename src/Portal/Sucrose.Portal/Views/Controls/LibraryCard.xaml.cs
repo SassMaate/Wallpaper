@@ -17,6 +17,7 @@ using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SPEIL = Sucrose.Portal.Extension.ImageLoader;
+using SPHL = Sucrose.Portal.Helpers.Localization;
 using SPVCTD = Sucrose.Portal.Views.Controls.ThemeDelete;
 using SPVCTE = Sucrose.Portal.Views.Controls.ThemeEdit;
 using SPVCTR = Sucrose.Portal.Views.Controls.ThemeReview;
@@ -82,17 +83,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void UpdateInfo()
         {
-            string Title = Info.Title;
-            string Description = Info.Description;
-
-            if (Info.Localization != null && Info.Localization.Any() && Info.Localization.TryGetValue(SMMG.Culture, out SSTHL Pairs))
-            {
-                if (Pairs != null)
-                {
-                    Title = Pairs.Title;
-                    Description = Pairs.Description;
-                }
-            }
+            (string Title, string Description) = SPHL.Convert(Info);
 
             ToolTip TitleTip = new()
             {
