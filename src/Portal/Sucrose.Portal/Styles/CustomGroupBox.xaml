@@ -4,7 +4,6 @@
     xmlns:controls="clr-namespace:Sucrose.Portal.Controls">
 
     <Style TargetType="{x:Type controls:CustomGroupBox}">
-        <Setter Property="BorderThickness" Value="2" />
         <Setter Property="BorderBrush" Value="Orange" />
         <Setter Property="Background" Value="#1a1a1a" />
         <Setter Property="Template">
@@ -38,12 +37,8 @@
                                 Grid.Column="1"
                                 Margin="8,0,8,0"
                                 Padding="6,0"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Center"
                                 Background="{TemplateBinding HeaderBackground}">
-                                <ContentPresenter
-                                    ContentSource="Header"
-                                    RecognizesAccessKey="True" />
+                                <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
                             </Border>
 
                             <!--  Top-right border line  -->
