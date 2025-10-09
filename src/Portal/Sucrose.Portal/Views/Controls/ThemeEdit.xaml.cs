@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -31,6 +32,7 @@ namespace Sucrose.Portal.Views.Controls
     {
         private readonly SPEIL Loader = new();
         internal string Theme = string.Empty;
+        private SSTHI InfoReserve = new();
         internal SSTHI Info = new();
 
         public ThemeEdit() : base(SPMI.ContentDialogService.GetDialogHost())
@@ -48,11 +50,16 @@ namespace Sucrose.Portal.Views.Controls
 
         private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
+            InfoReserve = SSTHI.FromJson(JsonConvert.SerializeObject(Info));
+
             // Initialize LocalizationComboBox with dynamic items
             PopulateLocalizationComboBox();
 
             // Add selection changed event handler
             LocalizationComboBox.SelectionChanged += LocalizationComboBox_SelectionChanged;
+
+            ThemeTitle.IsReadOnly = false;
+            ThemeDescription.IsReadOnly = false;
 
             ThemeAuthor.Text = Info.Author;
             ThemeContact.Text = Info.Contact;
@@ -87,7 +94,7 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     string Code = $"{Item.Tag}";
 
-                    if ((string.IsNullOrEmpty(Code) && GetSymbolForLanguageStatus(string.Empty) != SymbolRegular.Checkmark48) || GetSymbolForLanguageStatus(Code) == SymbolRegular.Prohibited48)
+                    if ((string.IsNullOrEmpty(Code) && GetSymbolForLanguageStatus(Code) is SymbolRegular.Dismiss48 or SymbolRegular.Prohibited48) || GetSymbolForLanguageStatus(Code) == SymbolRegular.Prohibited48)
                     {
                         if (GetSelectedLanguage() != Code)
                         {
@@ -101,7 +108,7 @@ namespace Sucrose.Portal.Views.Controls
                             ThemeTitle.Focus();
                             return;
                         }
-                        else if (true)
+                        else if (string.IsNullOrEmpty(Description))
                         {
                             ThemeDescription.Focus();
                             return;
@@ -269,19 +276,34 @@ namespace Sucrose.Portal.Views.Controls
 
             if (string.IsNullOrWhiteSpace(Title) && string.IsNullOrWhiteSpace(Description))
             {
+                if (Info.Localization != null && Info.Localization.ContainsKey(languageCode))
+                {
+                    Info.Localization.Remove(languageCode);
+
+                    if (!Info.Localization.Any())
+                    {
+                        Info.Localization = null;
+                    }
+                }
+
                 return SymbolRegular.Dismiss48;
             }
             else if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Description))
             {
                 return SymbolRegular.Prohibited48;
             }
-            else if (ThemeTitle.Text != Info.Title && ThemeDescription.Text != Info.Description && false) // Both changed but not saved
-            {
-                return SymbolRegular.Edit48;
-            }
             else
             {
-                return SymbolRegular.Checkmark48;
+                (string ReserveTitle, string ReserveDescription) = SSTCLC.Convert(InfoReserve, languageCode);
+
+                if (ReserveTitle != Title || ReserveDescription != Description)
+                {
+                    return SymbolRegular.Edit48;
+                }
+                else
+                {
+                    return SymbolRegular.Checkmark48;
+                }
             }
         }
 
@@ -348,7 +370,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ThemeTitle_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (sender is TextBox ThemeTitle)
+            if (sender is TextBox ThemeTitle && !ThemeTitle.IsReadOnly)
             {
                 string Language = GetSelectedLanguage();
 
@@ -377,7 +399,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ThemeDescription_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (sender is TextBox ThemeDescription)
+            if (sender is TextBox ThemeDescription && !ThemeDescription.IsReadOnly)
             {
                 string Language = GetSelectedLanguage();
 

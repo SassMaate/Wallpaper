@@ -71,6 +71,7 @@
                     Margin="0,3,0,0"
                     AcceptsReturn="False"
                     AcceptsTab="False"
+                    IsReadOnly="True"
                     MaxLength="50"
                     PlaceholderText="{DynamicResource Portal.ThemeEdit.ThemeTitle.Hint}"
                     TextChanged="ThemeTitle_TextChanged" />
@@ -86,7 +87,10 @@
                     Margin="0,3,0,0"
                     AcceptsReturn="False"
                     AcceptsTab="False"
+                    IsReadOnly="True"
                     MaxLength="500"
+                    MaxLines="10"
+                    MinLines="5"
                     PlaceholderText="{DynamicResource Portal.ThemeEdit.ThemeDescription.Hint}"
                     TextChanged="ThemeDescription_TextChanged"
                     TextWrapping="WrapWithOverflow" />
