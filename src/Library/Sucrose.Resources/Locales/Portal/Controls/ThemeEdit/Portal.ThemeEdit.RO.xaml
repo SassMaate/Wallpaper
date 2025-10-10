@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Închide</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Editare Temă</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Implicit</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Etichete</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Titlu</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Autor</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Contact</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argumente</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Descriere</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Localizare</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Vă rugăm să introduceți etichete de temă valide</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Vă rugăm să introduceți un titlu valid</system:String>

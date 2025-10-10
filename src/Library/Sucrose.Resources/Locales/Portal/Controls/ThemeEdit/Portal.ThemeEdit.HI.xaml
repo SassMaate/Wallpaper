@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">बंद करें</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">थीम संपादन</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">डिफ़ॉल्ट</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">टैग</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">शीर्षक</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">लेखक</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">संपर्क करें</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">आर्ग्यूमेंट</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">विवरण</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">स्थानीयकरण</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">कृपया मान्य थीम टैग्स लिखें</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">कृपया एक मान्य शीर्षक लिखें</system:String>

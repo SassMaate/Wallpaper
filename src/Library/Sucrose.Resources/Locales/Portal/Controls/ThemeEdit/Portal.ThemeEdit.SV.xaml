@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Stäng</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Redigera Tema</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Standard</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Taggar</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Rubrik</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Författare</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Kontakt</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argument</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Beskrivning</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Lokalisering</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Ange giltiga temataggar</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Ange en giltig rubrik</system:String>

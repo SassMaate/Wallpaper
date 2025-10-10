@@ -72,11 +72,11 @@ namespace Sucrose.Portal.Views.Controls
 
                 if (SRER.CheckBack("Locale", Code))
                 {
-                    Language = "Varsayılan";
+                    Language = SRER.GetValue("Portal", "ThemeEdit", "Localization");
                 }
                 else
                 {
-                    Language = Regex.Replace(SRER.GetValue("Locale", Code), @"\s*\(.*?\)", "");
+                    Language = Regex.Replace(Language, @"\s*\(.*?\)", "");
                 }
 
                 ComboBoxItem Item = CreateComboBoxItem(Code, Language, Symbol);

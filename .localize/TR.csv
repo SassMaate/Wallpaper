@@ -764,13 +764,16 @@ f40d68095675b903309f28319815b50f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.x
 b910b9c659b745c17f77353a0116b889,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.Close,Kapat
 68b9c2ea4e0f7c3ed0680ae2f6b66d8d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.Title,Tema Düzenleme
 147bf92dc15350b0c51baf21cc188fb6,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,,
+0a10ca2d4ed1f93b0c91baf97d18bfb0,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.Localization,Varsayılan
+6a1b6b6fcbd56af49b4726b5b9b9cedc,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,,
 b6f580755d16221de4af5dacbb3e2d6f,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeTags,Etiketler
 17e3ca9a33a7fe6cf3ed0b341b84778c,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeTitle,Başlık
 dbc7c7005b027a827c7c0dab3953f913,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeAuthor,Yazar
 0b4348ac2a33b907602b0711fea95d19,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeContact,İletişim
 92f2ec14e09b64cc1b28059132c7be6e,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeArguments,Argümanlar
 24c0c3b2a16469e819979f087ba89047,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeDescription,Açıklama
-6a1b6b6fcbd56af49b4726b5b9b9cedc,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,,
+9ff0f9ac9584e0f7dd41e3df5bba599e,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeLocalization,Yerelleştirme
+1846563c7208a48c3abfe7a07313313d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,,
 14381c4455471c8de52ea9a83330f413,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeTags.Hint,Lütfen geçerli tema etiketleri yazın
 088b46c8b95b3e65023b24980090d4db,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeTitle.Hint,Lütfen geçerli bir başlık yazın
 4f54d6a8409eaad7ad4fd6eab141d492,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeAuthor.Hint,Lütfen geçerli bir yazar adı yazın
@@ -779,41 +782,41 @@ dbc7c7005b027a827c7c0dab3953f913,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.x
 7dc8c7f9bb1f73a7ea8ef620803eb89d,Portal\Controls\ThemeEdit\Portal.ThemeEdit.TR.xaml,Portal.ThemeEdit.ThemeDescription.Hint,Lütfen geçerli bir açıklama yazın
 958793eb53569f07938acb16821bcc89,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,Portal.ThemeImport.Close,Kapat
 c02f06d4da9a8fbb3ae5def27402313f,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,Portal.ThemeImport.Title,Tema İçeri Aktarma
-9077de6ed305fd09f7b8f9c800e32860,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,,
+606b9780c4bf51ef7727a34e61c47df0,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,,
 90ddf4e857b39a22a705838b2c529079,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,Portal.ThemeImport.Info,Tema Bilgileri
 639cd5ed38ade11d9fdd33dce469b584,Portal\Controls\ThemeImport\Portal.ThemeImport.TR.xaml,Portal.ThemeImport.Type,Sebep Açıklamaları
 bd6a831ab3b99841e0784c0e63cb3770,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Close,Kapat
 294788ffcfddf1b2c0fe2bd6f77234b1,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Title,Tema Raporlama
-81787b40657e60c1a80ec8991fb77b5c,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+94d8724234997761ce8b8f0fa3d24edb,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 cd2713db95383fff21f70c241b3f78de,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.ThemeTitle,Başlık
 291a10e1bfcfd925ccd1939f0bdaf40f,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.ThemeDescription,Açıklama
-94d8724234997761ce8b8f0fa3d24edb,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+e565c38000b6ee3944f1eaf08657ca84,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 e2cf688a76954466437240b780272bcc,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter,Rapor
 4cfcf4c7c472e5a59400fe262fc747ab,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Description,Temayı raporlama nedenlerinizi belirtin.
-e565c38000b6ee3944f1eaf08657ca84,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
-580e226f9e768ec8778eed804d7c534d,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Contact.Placeholder,Lütfen geçerli bir mail adresi yazın
 29c3a3a46642e390f919edfd586a757b,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+580e226f9e768ec8778eed804d7c534d,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Contact.Placeholder,Lütfen geçerli bir mail adresi yazın
+96dcd8931c1ec89b879499de85d26c53,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 9c848f43f7baf43b70a94b16ebdb07ca,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Description.Text,Ek Notlar:
 39d7aac5796c6a7642b5888320887cc3,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Description.Placeholder,Lütfen rapor nedenini ayrıntılı olarak açıklayın.
-96dcd8931c1ec89b879499de85d26c53,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
-8694b617db778cd9f0757d14eeb84ece,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Preparing,Raporlamak için gerekli hazırlıklara birazdan başlanacak..
 3fc957d8fb904bbd2132e0e823563ed1,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+8694b617db778cd9f0757d14eeb84ece,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Preparing,Raporlamak için gerekli hazırlıklara birazdan başlanacak..
+1a9aa0e7aca28997f1f7b72e5e0c6c9d,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 c5deae199d6f395898075e356cebc44f,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Checking,Raporlamak için gerekli kontroller yapılıyor..
 6bc155295ab34527a2212593a62d086f,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Checking.Error,Raporlamak için gerekli kontroller yapılırken bilinmeyen bir hata meydana geldi.
 f3f3682ebdb8f7eadbd44c1076eb45aa,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Checking.Status,"Raporlamak için şuanda uygun şartlar oluşturulamadı, lütfen daha sonra tekrar deneyin.."
-1a9aa0e7aca28997f1f7b72e5e0c6c9d,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+0937012cfd4779246306ce7cf18405ba,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 c3996c7e65bbfbcbdea6248219382ab3,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Sending,Raporlamak için bilgiler gönderiliyor..
 491e5bb5b91c671d8cd7b098ad931bf0,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Sending.Error,Rapor gönderilirken bir hata meydana geldi.
 8d9d7f65c26b37f3bdef571b5b061e15,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Sending.Errored,Rapor gönderilirken beklenmedik bir hata meydana geldi: {0}.
 40f8e1b3853243d0db10d879377dc6b3,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Sending.Succeded,"Rapor başarıyla gönderildi, teşekkür ederiz."
-0937012cfd4779246306ce7cf18405ba,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
-c43c6d31b145acd5c13c16f03e8e4152,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Network,Raporlamak için internet bağlantısı gerekli.
 ad62861d55fc0cfa3a19301d87e4f0c4,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
+c43c6d31b145acd5c13c16f03e8e4152,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Network,Raporlamak için internet bağlantısı gerekli.
+7496a7eb0457ba2fe057d4aa78c8ea6a,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,,
 0d6d42e8ee2fa8739c6b732ce026ed9f,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.GitHub,GitHub'dan Raporla
 61bdb07b475b66fe9d6699e8ca57a618,Portal\Controls\ThemeReport\Portal.ThemeReport.TR.xaml,Portal.ThemeReport.Reporter.Report,Raporla
 a12e401a68d5a7904e002baea3621a0c,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.Close,Kapat
 6cece8b45be42c73923a643b30b05ec4,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.Title,Tema İnceleme
-33e9e6df43db661e3356bfa3bdee8d9c,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,,
+16c993184f597d593b9c27c1dbc9beb1,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,,
 b326f5ec0a567bd1b5a386beaa384159,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.ThemeSize,Boyut
 4289d5e40fc6afc4668a660122081467,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.ThemeTags,Etiketler
 5bbedb290ee1103c1e6c1439e2699095,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.ThemeType,Tür
@@ -833,442 +836,442 @@ c7313b450dc96f8383b885a9f07cb304,Portal\Controls\ThemeReview\Portal.ThemeReview.
 ad8ab1ed868d463fcf6f1514fe68de5c,Portal\Controls\ThemeReview\Portal.ThemeReview.TR.xaml,Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0)
 19217563718a1b73215368a8523ddcf9,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.Close,Kapat
 d35ccb1f26a725f0298e1406ce28df59,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.Title,Tema Paylaşma
-4a6a31cc8a0d5a5f3cde050cfe9f279a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+a7a1298517cae703030ee3d96c88eddb,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 962c49583cde8b244ce7a7438e1d6413,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemeTitle,Başlık
 df4ba200af9fdb60fd41a61f1460963e,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemeDescription,Açıklama
-a7a1298517cae703030ee3d96c88eddb,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+4fbbebe81d936a5bf580355339a37cb2,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 c65e7c025dd4d196c565a3d5e49549e4,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemeCopy,Bağlantıyı Kopyala
 9693d74fc7005da653b4aaacc0d3b22a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemeExport,Dışarı Aktar
 5b4ce649e9fc6a50aa5145eed1a5c543,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish,Mağazada Yayınla
-4fbbebe81d936a5bf580355339a37cb2,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+4cc377642d64adbc26185abaa42a4435,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 2898e0019da26b9bdd2883ec85761207,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Publish,Yayınla
 215af984440bd50b3eac7aa185edcb84,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Preparing,Yayınlamak için gerekli hazırlıklara birazdan başlanacak..
-4cc377642d64adbc26185abaa42a4435,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
-139e2b84ce4af0938995a44731e5457e,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Limit,Günlük tema yükleme sınırınız kontrol ediliyor..
 e5668b8d5138a5f83c3db07cd2e40c15,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+139e2b84ce4af0938995a44731e5457e,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Limit,Günlük tema yükleme sınırınız kontrol ediliyor..
+01bd4fbcd7d370f39bff2e58d899a14c,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 937b5e32331d9b7ee9681b4b366aed69,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Limit.Error,Günlük tema yükleme sınırınız kontrol edilirken bilinmeyen bir hata meydana geldi.
 2a4626619b61a2a15195998861623b81,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Limit.Exceeded,"Günlük tema yükleme sınırınıza ulaşmışsınız, lütfen başka zaman tekrar deneyin."
-01bd4fbcd7d370f39bff2e58d899a14c,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+d8826d1c0320ebfb75c42d40429fced8,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 3fd8f171a5e70b3ae44545c1c89e231b,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Compress,Tema karşıya yüklenmeden önce sıkıştırılıyor..
 539a2c20ad327af075ab32732df1a090,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Compress.Error,Tema sıkıştırılırken bir hata meydana geldi.
-d8826d1c0320ebfb75c42d40429fced8,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
-3c5496824f63b70df63b4a94e731369a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Size,Sıkıştırılan temanın boyutu kontrol ediliyor..
 276a7387da1ba6082542f2943d52956a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
-e21dc7a594d5753cd9b108c5ca9bd860,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Size.Exceeded,Sıkıştırılan temanın boyutu {0} MB'den büyük olduğu için karşıya yüklenemiyor.
+3c5496824f63b70df63b4a94e731369a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Size,Sıkıştırılan temanın boyutu kontrol ediliyor..
 efb2a7ddc5be0e00ea0934c988385dc1,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+e21dc7a594d5753cd9b108c5ca9bd860,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Size.Exceeded,Sıkıştırılan temanın boyutu {0} MB'den büyük olduğu için karşıya yüklenemiyor.
+ae764e6cfeb2e0591b27f818ceb1fd95,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 549ca6c64a03cefb8c453f877404640a,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Check,Sıkıştırılan temanın karşıya yüklenmeden önce bütünlüğü kontrol ediliyor..
 c5a2ceadbb468a5b075acb2d1c4da105,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Check.Error,Sıkıştırılan temanın bütünlüğü kontrol edilirken bir hata meydana geldi.
-ae764e6cfeb2e0591b27f818ceb1fd95,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
-4c1067c9d9aa674ccebf28911ce37bda,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload,Sıkıştırılan tema karşıya yüklemek için hazırlanıyor..
 a01592c837f5dde7eb6cecc2c0896965,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+4c1067c9d9aa674ccebf28911ce37bda,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload,Sıkıştırılan tema karşıya yüklemek için hazırlanıyor..
+f094b4286f1e00540ae233b1caecf918,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 af73fe1ff22e323830f9ba5de94d65b6,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload.Error,Sıkıştırılan tema karşıya yüklenirken bilinmeyen bir hata meydana geldi.
 832f9d670d9c1c71cafb4f16c6f33cef,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload.Start,Sıkıştırılan tema karşıya yükleniyor..
 3c4e5e5d9a4fba891abce512a46998e1,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload.Errored,Sıkıştırılan tema karşıya yüklenirken beklenmedik bir hata meydana geldi: {0}.
 98bfb88ba757192a45871914f44b76c8,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Upload.Succeded,"Sıkıştırılan tema başarıyla karşıya yüklendi, kontrol edildikten sonra mağazada yayınlanacak."
-f094b4286f1e00540ae233b1caecf918,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+903ecece273fcf9bced5673e9ff5a605,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 70ce6be10a91772432c45c1606069496,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.SaveDialogTitle,Tema Dosyasını Kaydet
 2eec9032ca3ddffd85ef0e4fc8722b6d,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.SaveDialogFilter,ZIP Dosyaları (*.zip)|*.zip|Tüm Dosyalar (*.*)|*.*
-903ecece273fcf9bced5673e9ff5a605,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
+21d3a87d996bce69d212e6c9aa690e12,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,,
 a8510c25f0e065985c536aa686fd28ab,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Already.Close,Anladım
 f9134596e02f5ee6a712c5cec43fe81b,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Already.Title,Yayınlama Uyarısı
 8f60d7852e340b37afba76c472a12f0c,Portal\Controls\ThemeShare\Portal.ThemeShare.TR.xaml,Portal.ThemeShare.ThemePublish.Already.Message,Seçtiğiniz tema zaten hâli hazırda mağazadan yüklenmiş.
 31c115bd25b18b506825e95ac8a30e87,Portal\Controls\TrayIcon\Portal.TrayIcon.TR.xaml,Portal.TrayIcon.Close,Kapat
 711d72719f52b77421f7c4a8408b91d8,Portal\Controls\TrayIcon\Portal.TrayIcon.TR.xaml,Portal.TrayIcon.Title,Sistem Tepsisi
-0526833f9c5c2b4785c1b49490ddf336,Portal\Controls\TrayIcon\Portal.TrayIcon.TR.xaml,,
+22aee4d7cbaa7173366ec7786b98fc8f,Portal\Controls\TrayIcon\Portal.TrayIcon.TR.xaml,,
 11901e04cafe9fe58215473ce4212b13,Portal\Controls\TrayIcon\Portal.TrayIcon.TR.xaml,Portal.TrayIcon.Message,"Sucrose, sistem tepsisine küçültüldü. Devam etmek için lütfen Sucrose simgesine sağ tıklayın."
 e7ae884f2ffa3cc25ec45c40538fbda2,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Close,Kapat
 44427549ab82d0266cdb2d4948106249,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Title,Duvar Kağıdı Döngüsü
-6b9f89c1b7be2091cb4d0022aaea31e3,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
+de34bd13ddc38a79fb7d29d763205d0f,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
 b0b21b9c835aba780d05f0d5fe06cc20,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Cycling,Otomatik Duvar Kağıdı Döngüsü
 91c058c6d6ad5522a085491a9adb077c,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Cycling.Description,Duvar kağıdının otomatik olarak değişip değişmeyeceği.
-de34bd13ddc38a79fb7d29d763205d0f,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
+e872eb4b16d51898e132617ecc864c4a,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
 2079cff17480850e9bf9b7f6fdad5e36,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Time,Zaman Aralığı
 175d2175a39af1fb340505922926b473,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Time.Description,Belirlenen dakika sonrasında duvar kağıdı değişir.
-e872eb4b16d51898e132617ecc864c4a,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
+0c338e819b79f7b73f0c727892e72d44,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
 f81cd3d5bda6084aa15816dfc15ecba2,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Transition,Geçiş Modu
 52ccc058a882bf88568fbbb2f581c946,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.Transition.Description,Duvar kağıtları arasındaki geçiş modunu ayarlar.
-0c338e819b79f7b73f0c727892e72d44,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
+916421b3058d486aa24e23c50d117469,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
 6e75e0990b2e485057bf10a7775de8aa,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.List,Döngü Listesi
 f7c012f61d595ca323a24e2cf25fc1c7,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.List.Description,Döngü listesini varsayılana sıfırlar.
-916421b3058d486aa24e23c50d117469,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
+73c1842f1e1e55947d7197f0df508e92,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,,
 c99ed606a3391a009e1f0e08ea442e0e,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.TR.xaml,Portal.WallpaperCycling.List.Reset,Sıfırla
 af64bb2d938d24f1447d35604de13413,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.TR.xaml,Portal.EmptyLibraryPage.Title,EmptyLibraryPage
-5b98100e03643db855dc4e5feaa74620,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.TR.xaml,,
+c84f574872c1d2cf8b3be0069a73b200,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.TR.xaml,,
 a7d1dca6626dcdc5d3d5d8ba5cdd5728,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.TR.xaml,Portal.EmptyLibraryPage.TitleText,Kütüphaneniz Örümcek Ağları Tarafından Örülmüş
 30473bf2b6a1ba1547f026ddd0a320a5,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.TR.xaml,Portal.EmptyLibraryPage.DescriptionText,Duvar kağıtlarının yerine örümcek ağlarıyla muhteşem bir sanat eseri ortaya çıkmış
 2e1f793c2936093f5d07cfe070362f9f,Portal\LibraryPage\FullLibraryPage\Portal.FullLibraryPage.TR.xaml,Portal.FullLibraryPage.Title,FullLibraryPage
 e9377894836966553eb7d5651c38084c,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.TR.xaml,Portal.SearchLibraryPage.Title,SearchLibraryPage
-6dd4bae4a414821bd2db99ebc6584675,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.TR.xaml,,
+aa3e174c7491fe502dad01eeee1787a1,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.TR.xaml,,
 e97ac05e044477106c2ef96da0b54698,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.TR.xaml,Portal.SearchLibraryPage.TitleText,Kütüphaneniz Örümcek Ağlarıyla Büyülenmiş
 4cb462ddd54b332f853270b3219a96c0,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.TR.xaml,Portal.SearchLibraryPage.DescriptionText,Duvar kağıdı seçimindeki inceliğiniz yüzünden duvar kağıtlarına yer kalmadı
 5be9e2cef3fb8e9a7157bab1dd9417cc,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.Title,DonateSettingPage
-47e7dd0ed022d217e8d018ca7466a69a,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
+f0fa2dcb303d3aa3243c396fa63d6a13,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
 5b2e15520996885c7d3f4c42ec31f717,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.DonateMenu,Bağış Menüsü
 bb2b317bc2af000a4940d4527ac5d8a0,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.DonateMenu.Description,Arayüzdeki bağış menüsünün görünürlüğü.
-f0fa2dcb303d3aa3243c396fa63d6a13,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
+fed619dc24bfe737237497649a86f261,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
 af8305d147032267bde92676b27bd686,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide,Görünmez
 acf88ad6d99bd49f695dfe6456b8de1c,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,Görünür
-fed619dc24bfe737237497649a86f261,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
+09f2d29c083e138822373dd54b5e036b,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
 14660d3236b52e7819d2b758e1b4cfd8,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.Advertising,Reklamlı Destek
 2dc888cedd9ab06f245bb0a8596d2489,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.Advertising.Description,Reklam izleyerek uygulamanın geliştirilmesine katkıda bulunun.
-09f2d29c083e138822373dd54b5e036b,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
+8fb1e2c33f831387d24e67c56d2d9e95,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,,
 271b029980be102ed4967f7a17aa0fdb,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.Advertising.AdvertisingHint,İpucu: Reklamlar size en az seviyede rahatsızlık verecek şekilde gösterilecek.
 727c8640a92167cd1fd35b0111df82b9,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.TR.xaml,Portal.DonateSettingPage.Advertising.AdvertisingDelay,Reklam Süresi (Dakika):
 d308cb19fecc8045f5e814314de66155,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.Title,GeneralSettingPage
-4afaab15e130ee6c38dd37da3afe83ae,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+0749829e8d6ddff9f4f924f3863bfe9c,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 23e73e3f68a50314dfe831d2ff432240,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationLanguage,Uygulama Dili
 59e25f52e7da078f0413d66075dd1dba,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationLanguage.Description,Uygulamayı görüntülemek istediğiniz dili seçin.
-0749829e8d6ddff9f4f924f3863bfe9c,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+d342cce61fb53189a3c57b53e262592b,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 28a51faf1422ea244e397b0bad72598a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup,Başlangıçta Çalıştır
 3c46fb622e3a482706b0f4fd888b674a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Description,Duvar kağıdını oynatabilmek için başlangıçta Sucrose'nin arka planda çalışması gerekmekte.
-d342cce61fb53189a3c57b53e262592b,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+6e4bfe909296bc6ddcbb80f215a75f07,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 0d6093ff7091322b543834ebee7d32fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Startup.None,Hiçbiri
 c791b13db74da7072ff0f544507cba68,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Startup.Normal,Normal
 627a939563eeb39528291bd0d69742f5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Startup.Priority,Öncelikli
 492b7868b0ec5172e1df0648bd4d884d,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Startup.Scheduler,Zamanlayıcı
-6e4bfe909296bc6ddcbb80f215a75f07,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+a9249bb4431d6438dfb15e2cb6b820cf,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 49379deacf873d44d7de82de276bfa67,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Warning.Close,Anladım
 b80ace8d5364ff2f48f1fea3a6987605,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Warning.Title,Yönetici Hakları Uyarısı
 dbb0603216335bc30cc04e174ebe6742,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.ApplicationStartup.Warning.Message,Başlangıçta çalıştır durumunu değiştirmeniz için yönetici haklarına sahip olmanız gerekmekte.
-a9249bb4431d6438dfb15e2cb6b820cf,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+03bad4a6e5d6be58c4cb6b65e0877cb5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 4f1b4cc1cae6a1ee7987f4e39749ebba,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon,Bildirim Alanı Simgesi
 c7666c3bca61d62fed9ac2a33bb02262,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon.Description,Sistem tepsisi görünürlüğü. Sucrose gizli bir şekilde çalışmaya devam edecek.
-03bad4a6e5d6be58c4cb6b65e0877cb5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+954a64c99d74a0babfee09b7e0eaf173,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 c54ce86a277cc09a1d1997932f68940f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Hide,Görünmez
 5e4e9dc517f2b0b7a64af1de75d6de77,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon.Notify.Show,Görünür
-954a64c99d74a0babfee09b7e0eaf173,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
-4fe8f257bcbda04d2580d2766c5cafca,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon.NotifyExit,Sistem tepsisi kapatıldığında tüm Sucrose uygulamaları da kapatılsın
 d9ee02b4c6d87bc097bc37a6ded220ab,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+4fe8f257bcbda04d2580d2766c5cafca,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.NotifyIcon.NotifyExit,Sistem tepsisi kapatıldığında tüm Sucrose uygulamaları da kapatılsın
+306a05c974300f4c4d27cc48280bb726,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 32ca4a0ef2aa159e836463c545ae807e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop,Pencere Arka Planı
 b739f7ff2227b77e1326f7508bf74026,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.Description,Uygulama penceresinin arka planını özelleştirmek için kullanılır.
-306a05c974300f4c4d27cc48280bb726,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+f0609890794fbd82f7b255762cefa320,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 0af4c57b7b4fb4ced0e891bf651eb833,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock,Maalesef seçtiğiniz resim dosyası başka bir işlem tarafından kullanılıyor
 0be70f4fb2ebb942f382e1142dd65e89,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,Arkaplan Resmi Seç
 d787aa9bb4a2275984c532f977106189,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access,Maalesef seçtiğiniz resim dosyasına erişim yetkiniz bulunmuyor
 82d18adca1618fb8ab1d4f7a84d2ae11,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,Resim Dosyaları (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif
 ca0507fef5e0e465c06b537b5c3d0b82,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,Bir arkaplan resmi seçin
-f0609890794fbd82f7b255762cefa320,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
-e1f677039fda8b41f5d0df2a7149e36f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch,Arkaplan Boyutlandırma:
 ffb02d16e35153da427a4b62da74f4b7,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
-e2ff0f265ff8e881e725e8f0af60d7f3,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropOpacity,Arkaplan Opaklığı (%):
+e1f677039fda8b41f5d0df2a7149e36f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch,Arkaplan Boyutlandırma:
 77dadd08bfdf4511e092737e01e372e6,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+e2ff0f265ff8e881e725e8f0af60d7f3,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.WindowBackdrop.BackdropOpacity,Arkaplan Opaklığı (%):
+8dd82db558547099fcdc6576980b5a2a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 aa81822f530a24570b13fb4f840f09fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.EngineVolume,Ses Seviyesi
 4659e1ffd72cc325fe3b1fc1b57aa8fa,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.EngineVolume.Description,Tüm duvar kağıtları için geçerli olan ses seviyesi.
-8dd82db558547099fcdc6576980b5a2a,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+5331c3a5cdfcc9547fd314dc72a72ad0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 8d7cd9a6106e4c7c773e6d32760b77f5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeActive,Sesi yalnızca tüm uygulamalar sessizken oynat
 b85228fd96f25010cddca0e9982c185e,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,Sesi yalnızca masaüstü odaklandığında oynat
 3d41dab72d6f47a2480c07613c9a48c5,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity,Hassasiyet (Saniye):
-5331c3a5cdfcc9547fd314dc72a72ad0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+58dbd34a751b1d8039f5864814ce5e25,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 d6a2a8c8bc383eeb62dd385bca2cbf13,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary,Kütüphane Konumu
 dece197e4d461de0c3d237b8615ca707,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary.Description,Kütüphanenize eklediğiniz temaların saklanacağı konum.
-58dbd34a751b1d8039f5864814ce5e25,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 0991f16e5aeefb5c48f43a8e4e905c79,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move,Konum değiştirilirken lütfen biraz bekleyin
 d195e041356e2826aed34bade9255495,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,Lütfen boş bir klasör seçin
 e5650dd96adafee4c50f5e756ee584ac,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,Maalesef yeni konuma erişiminiz bulunmuyor
-f4b11a5b830d87e490398e394ca6c3f0,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
+441650aaf1e42909813184e7934af25f,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,,
 0018647fbb84eff962ea274228304011,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.TR.xaml,Portal.GeneralSettingPage.PrivateLibrary.LibraryMove,Mevcut kütüphanenizi yeni konuma taşı
 86a348dbbfe405290bb4bd47cc58f48d,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Title,OtherSettingPage
-5e07271c8f22d9dea5b0d4e772eea906,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+9238621dd022ea5eb2e66c622db2462c,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 968cc4057c3fd9c176f79f507dc39115,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.ReportData,Otomatik Hata Raporlama
 37a66f526dda8dcf11ca00f6ecb2f399,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.ReportData.Description,"Sucrose, bir hatayla karşılaştığında bunu hızlıca bildirmek için harekete geçer."
-9238621dd022ea5eb2e66c622db2462c,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+759b63a0d1eb65f6e3379548c4c17494,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 4ec5ff0c13bdd9f73dd5648f47d9e35e,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.StatisticsData,Kullanım İstatistiklerini Paylaş
 98b16d444d5fd826beffa0df5ed554e6,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.StatisticsData.Description,"Sucrose, kullanım istatistiklerinizi toplayarak uygulamanın gelişmesine olanak sağlar."
-759b63a0d1eb65f6e3379548c4c17494,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+80c3504d0804e60cce64b9d2096a0184,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 438a533fd217f099b1debe47297c23eb,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.DiscordHook,Discord
 7fdbb593e4cb2451e85df1b1777f782a,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.DiscordHook.Description,"Sucrose, Discord ile arasındaki haberleşmeyi sağlar."
-80c3504d0804e60cce64b9d2096a0184,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+2ab50a561cf88f71e3cd144b577806b0,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 1f3dab37fdcd898425b72205ea370d49,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.DiscordHook.DiscordDelay,Yenileme Süresi (Saniye):
 245bac8d73e7fc3652a15c192b78c931,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.DiscordHook.DiscordRefresh,Bağlantı Yenileme:
-2ab50a561cf88f71e3cd144b577806b0,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+5a2edca678cf9eaeaba19038d32e0427,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 19e1245152b26ae22021b53bf91fb359,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Agent,İnternet Temsilcisi
 ec41c98f92f4aae352c1682c49556afc,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Agent.Description,İnternet bağlantısı gerektiren durumlardaki temsilci kimliğiniz.
-5a2edca678cf9eaeaba19038d32e0427,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+d073fa32bedb3ea96cb4a8f52e567a98,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 8c3246da976c91621d73c34403323f52,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key,Kişisel Erişim Belirteci
 f4c717e5d041425ba08ac977d8da313a,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key.Description,Mağazayı ve uygulama güncellemeyi sorunsuz bir şekilde kullanmak için gerekli.
-d073fa32bedb3ea96cb4a8f52e567a98,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-ddffca4a08868e0e8eb001c4ff77b26c,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key.HintKey,Kişisel erişim belirtecini nasıl elde edeceğinizi bilmiyorsanız buraya tıklayın.
 9e80a7b8612db16d3deee5d2b9dd03e5,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+ddffca4a08868e0e8eb001c4ff77b26c,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key.HintKey,Kişisel erişim belirtecini nasıl elde edeceğinizi bilmiyorsanız buraya tıklayın.
+5d8a8c5ed08072f9d3aabec5f7d4400b,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 8ec685daf154647a4fb96f54447c5017,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key.PersonalKey,Lütfen bir kişisel erişim belirteci girin
 53d2e296ccdaa3197f6005edbfb2dc0c,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Key.PersonalKey.Valid,Lütfen geçerli bir kişisel erişim belirteci girin
-5d8a8c5ed08072f9d3aabec5f7d4400b,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+7f1f76ed51d58fc1a260d4cc017c5a63,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 2933fbbc21fe9cace0bcc5e13aa98c20,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Server,Güncelleme Sunucusu
 c7b6fc4ba3a323f30cb7274c7f3ddf85,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Server.Description,Güncelleme işlemlerinin hangi sunucu üzerinden yapılacağı.
-7f1f76ed51d58fc1a260d4cc017c5a63,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-57aaa33365d69fafe9a3cce303382b8f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Server.ServerHint,Not: Sunucu olarak {0} seçilmişse istek limitlerine takılmamak için bir {2} girilmesi gerekiyor. Aksi taktirde güncelleme işlemlerinde sorun yaşayabilirsiniz. Eğer ki {1} seçilmişse görece daha sorunsuz bir güncelleme deneyimi yaşarsınız.
 e3f6dbaa893cb32d067bc24e7305e998,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+57aaa33365d69fafe9a3cce303382b8f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Server.ServerHint,Not: Sunucu olarak {0} seçilmişse istek limitlerine takılmamak için bir {2} girilmesi gerekiyor. Aksi taktirde güncelleme işlemlerinde sorun yaşayabilirsiniz. Eğer ki {1} seçilmişse görece daha sorunsuz bir güncelleme deneyimi yaşarsınız.
+a27b00030a2388aa0b62ecefbeef74b9,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 8b2e6ae2ba4163633344856724f3dd54,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Module,Güncelleme Modülü
 802cf227176aa7184c4f99933055b655,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Module.Description,Güncelleme işleminin hangi modül üzerinden yapılacağı.
-a27b00030a2388aa0b62ecefbeef74b9,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+b2dc157ad04da5f729f78585b78139f8,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 a26f5c2a2215054defa27c117839c6d2,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Channel,Güncelleme Kanalı
 dbefa849a9aca7419ff857943550b769,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Channel.Description,Güncelleme işleminin hangi kanal üzerinden yapılıp yapılmayacağı.
-b2dc157ad04da5f729f78585b78139f8,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+f017b8cfc07b7bb94204425627dadb6f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 b6e5dd3373d32fbf3226446bfa0fa3cf,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Update,Güncelleme Yöntemi
 20acb0b21b6c2655262aa4aacbdc83b8,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Update.Description,Güncelleme işleminin hangi yöntemle yapılıp yapılmayacağı.
-f017b8cfc07b7bb94204425627dadb6f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-ba7f6459c9c62124d05412fde7caf47e,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Update.Limit,İndirme Bant Genişliği Sınırı:
 35afb0ef80ff5cbfb5b952a59cf6a601,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+ba7f6459c9c62124d05412fde7caf47e,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Update.Limit,İndirme Bant Genişliği Sınırı:
+051aea8c8d4382f85a50b9ac17f4b3f8,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 1950039f277e1ba4ced0c3934230f738,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Auto,Otomatik Güncelleme
 a8993391237a54f150b1e20b8d513058,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Auto.Description,Güncelleme işleminin otomatik olarak denetlenip denetlenmeyeceği.
-051aea8c8d4382f85a50b9ac17f4b3f8,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-ad6fe07b344fab5bda13457fe2ead162,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Auto.Update,Denetlemenin Nasıl Yapılacağı:
 c5c9dc4e2c08b6be49fc59f332205ed4,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+ad6fe07b344fab5bda13457fe2ead162,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Auto.Update,Denetlemenin Nasıl Yapılacağı:
+b41a5d15b616d5e658dff6cf1f72abae,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 89d172ec7ae3b0e7ca21c0f646ead15e,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer,Geliştirici Araçları
 3271bfc71add7663c1bf6fad989798e2,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.Description,WebView ve CefSharp motoru için geliştirici araçlarını yönetin.
-b41a5d15b616d5e658dff6cf1f72abae,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-b01e27378faa8c47945fa5b6b720f291,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.DeveloperMode,Varsayılan Geliştirici Araçları:
 d3bb6d1ff8b1e0f1772c9d745a8763ae,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
-5a2cae135c4a9ebe03e4bd6becfbc49f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.DeveloperPort,Hata Ayıklama Bağlantı Noktası:
+b01e27378faa8c47945fa5b6b720f291,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.DeveloperMode,Varsayılan Geliştirici Araçları:
 b717a3d722efd2284f2e55686845464f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
+5a2cae135c4a9ebe03e4bd6becfbc49f,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.DeveloperPort,Hata Ayıklama Bağlantı Noktası:
+812f96e4b4948dfc21a7d56bb78a92a2,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,,
 65b2f64438b41e73e7758d2affcd91c5,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.TR.xaml,Portal.OtherSettingPage.Developer.DeveloperHint,"İpucu: Varsayılan geliştirici araçları etkileşim desteklenen temalarda düzgün çalışmamaktadır. Hata ayıklama bağlantı noktası ise daha düzgün çalışmaktadır. Hazır olduğunuzda 'http://localhost:{0}' adresini veya Chrome tarayıcısı için 'chrome://inspect', Opera tarayıcısı için 'opera://inspect', Edge tarayıcısı için 'edge://inspect' adresini kullanabilirsiniz."
 f31e7eb66d805acb874f1bd9595cf339,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Title,PerformanceSettingPage
-887c7020f09b7e662c4d72b0f0803a26,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+5479d7e140b8c3bee05e766e917a0944,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 c1e8ae3ca87edefdf6af2f5df39adbf7,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Counter,Performans Sayaçları
 968a3b1a3e5d38052995ee9ed8a1e516,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Counter.Description,Tüm performans sayaçlarının arkaplanda çalışıp çalışmayacağı.
-5479d7e140b8c3bee05e766e917a0944,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-65a272d5aeec2ddfda1d1fee9c8460b0,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Counter.CounterHint,Not: Bazı Web türündeki temalar düzgün çalışmayabilir ve aşağıdaki performans ayarlarının hiç birisi çalışmayacaktır.
 c9694ff45f01117b02e67b3b2ac6ee8e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+65a272d5aeec2ddfda1d1fee9c8460b0,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Counter.CounterHint,Not: Bazı Web türündeki temalar düzgün çalışmayabilir ve aşağıdaki performans ayarlarının hiç birisi çalışmayacaktır.
+8bbe9bdc50d0d15be1e1dc7660212c6d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 f9a269c4e35fcfaa6c5737bf2a6c39c8,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Pause,Durdurma Kuralı
 554b15bc5c12f7d962130c97a9e895d9,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Pause.Description,Performans ayarlarınıza bağlı olarak duvar kağıdını durdurma kuralını belirler.
-8bbe9bdc50d0d15be1e1dc7660212c6d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+1711064b37867d4cc9b319a663cc3ca5,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 7ed0d5dd5c608b6c634fc8873f92af89,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Communication,İletişim Türü
 80b741ff1a2a1f6b6463aaa0f044a8fe,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Communication.Description,Web türündeki temalara iletilecek olan mesajların yollanma türünü belirler.
-1711064b37867d4cc9b319a663cc3ca5,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+46e6e118b7e1149417024ac3ffe64002,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 20d4c590f550be1dcc4fa9d0c42a922e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor,İşlemci Kullanımı
 29978e165eb7156caeac7886341028e6,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor.Description,İşlemci kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
-46e6e118b7e1149417024ac3ffe64002,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-f342732c9f28fec3cc86873feb43492d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor.ProcessorUsage,İşlemci Kullanımı (%):
 110c279dfc05eedfeff3d322468aa64d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+f342732c9f28fec3cc86873feb43492d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Processor.ProcessorUsage,İşlemci Kullanımı (%):
+5d5efb69fe1e5235ee57dffc2ce53cbe,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 b04623476b6447505f64ae62ec5098e9,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic,Ekran Kartı Kullanımı
 dad2ee90cb2deb5edb92fc95e672e9a6,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.Description,Ekran kartı kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
-5d5efb69fe1e5235ee57dffc2ce53cbe,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+f02363f9ef8d451b71fde9144cc132c8,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 d8e858b87bfbfd2a6d6f7895d9dbb482,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicAdapter,Ekran Kartı:
 3a6d83d0f856f578c04a14ab681f6f19,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,Ekran kartları listesi henüz oluşturulmadı
-f02363f9ef8d451b71fde9144cc132c8,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-6a18461adcec49aebffdb50ad530af6e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicUsage,Ekran Kartı Kullanımı (%):
 6baf6bc962cb76314dcd42636a4ed213,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+6a18461adcec49aebffdb50ad530af6e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Graphic.GraphicUsage,Ekran Kartı Kullanımı (%):
+27ed7ad4d7cf9d82168b2d4d8d60cd27,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 c5390944be5c341cef445f495a929fc1,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory,Bellek Kullanımı
 7d7cb5e31a7308e40387b342ab390f6b,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory.Description,Bellek kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
-27ed7ad4d7cf9d82168b2d4d8d60cd27,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-cb856927a4fea55c8c437ff516d8c038,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory.MemoryUsage,Bellek Kullanımı (%):
 c89413fdb4df25b3e916e17246c22ca4,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+cb856927a4fea55c8c437ff516d8c038,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Memory.MemoryUsage,Bellek Kullanımı (%):
+ba56c23e2b8113ed2fb0cf45a97b9362,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 2e0b85d28c6774df4960a9bf5e71384a,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network,Ağ Kullanımı
 ddd23ca979e91b021e3ce092e175632c,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.Description,Ağ kullanımı ayarlarınız sonucunda duvar kağıdına ne olacağı.
-ba56c23e2b8113ed2fb0cf45a97b9362,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+08a7905f35065ecf28b89d6c6d9feaf4,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 0dd977dc7abaf3e888b669ec0aed6b35,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkAdapter,Ağ Adaptörü:
 02fdde3541e073b31856b7fd95305961,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkAdapter.Empty,Ağ adaptörleri listesi henüz oluşturulmadı
-08a7905f35065ecf28b89d6c6d9feaf4,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-3b2e4962c25ac5975ddaa0a6209aa1aa,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkUpload,Yükleme Boyutu:
 8198ceb9957d980faa544ffdda289c06,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-92d6e12b5d19c4334a430225f2342be1,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkDownload,İndirme Boyutu:
+3b2e4962c25ac5975ddaa0a6209aa1aa,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkUpload,Yükleme Boyutu:
 ae73a706e496f6109ba687919be44914,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-e362a3879d4c34c7363cd7930611a0b7,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkPing,Ping Değeri (MS):
+92d6e12b5d19c4334a430225f2342be1,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkDownload,İndirme Boyutu:
 236c972c3b64e5541b37d44e0f78fcdb,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+e362a3879d4c34c7363cd7930611a0b7,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Network.NetworkPing,Ping Değeri (MS):
+5ce7c5f6d3e80d546e4126815f386e5d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 0bc61ba6b9f603e7a5e7ca81d2d434e0,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Lock,Oturum Kilidi
 a2edebd642f14d171a540b18ec1fba25,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Lock.Description,Oturum kilitlendiğinde duvar kağıdına ne olacağı.
-5ce7c5f6d3e80d546e4126815f386e5d,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+7a02d063f33d5b1fbf72f8980d6ea4bd,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 61f88fbc50c95606d7e249124b767db0,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Sleep,Uyku Modu
 54c1a693b9593bbaf617e5067633afa9,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Sleep.Description,Sistem uyku modundayken duvar kağıdına ne olacağı.
-7a02d063f33d5b1fbf72f8980d6ea4bd,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+26313769d38fd21ec5093ca15943a988,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 39269228b21844f594a4dcc5cf5120a1,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Console,Kullanıcı Değiştirme
 25eda5c8bb27ac614f1057f85f294e8f,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Console.Description,Kullanıcı değiştirildiğinde duvar kağıdına ne olacağı.
-26313769d38fd21ec5093ca15943a988,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+88fab4d4f49f03b52120f576cd868f85,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 06e49f6c19fb3a1e87945faf7c6c5d0c,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Session,Oturum Kapatma
 f1f0d7e0cc4daeae5b459217344cc8f2,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Session.Description,Oturum kapatıldığında duvar kağıdına ne olacağı.
-88fab4d4f49f03b52120f576cd868f85,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+b352054baf1f42709eecbd251d3ae0e3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 0ecc50db37f0a4e6092f3ae88ac6caec,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.ScreenSaver,Ekran Koruyucu
 c4d9d1cc8628ea05f51362d9b2dbf434,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.ScreenSaver.Description,Ekran koruyucu başlatıldığında duvar kağıdına ne olacağı.
-b352054baf1f42709eecbd251d3ae0e3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+8d5043fdafcf2773ae49899a633dce26,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 58407de8c8253247c5b53b2d41d2160a,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Battery,Pil Gücü
 7f2a075387284ff37864cfc56dcdc769,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Battery.Description,Dizüstü bilgisayar pil gücünde çalışırken duvar kağıdına ne olacağı.
-8d5043fdafcf2773ae49899a633dce26,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
-64455446b48b2346f6900db6b87efa5a,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Battery.BatteryUsage,Pil Durumu (%):
 ff334f9320bf8d54047972d506c0a5d3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+64455446b48b2346f6900db6b87efa5a,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Battery.BatteryUsage,Pil Durumu (%):
+1a5f9a600469d3388bcb166d71bec9a3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 7c51dcccf0702f98f844911fdb3d18ea,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.BatterySaver,Pil Tasarrufu
 1b03abaf536d04716db0d503a8cd2388,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.BatterySaver.Description,Dizüstü bilgisayar pil tasarrufu modundayken duvar kağıdına ne olacağı.
-1a5f9a600469d3388bcb166d71bec9a3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+90daabfdb334100eb55ea7c487f18d9c,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 040873a01b12c46e0232781affdb8a54,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Virtual,Sanallaştırma
 bd4c6aa05f22cd83103384222fbce66e,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Virtual.Description,Sanallaştırma uygulamaları çalışırken duvar kağıdına ne olacağı.
-90daabfdb334100eb55ea7c487f18d9c,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+6bd640283f6966cbd1e91d10b72614b3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 9653857720e3a2cb375c80b257f3adf4,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Remote,Uzak Masaüstü
 152bbfb0e683ce50a46ab94fc620c05b,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Remote.Description,Uzak masaüstü uygulamaları çalışırken duvar kağıdına ne olacağı.
-6bd640283f6966cbd1e91d10b72614b3,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+6ea5ebd656e975963dd8b1e3ced115cb,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 483535a611e7766e468ddc96d25b5ecd,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.FullScreen,Tam Ekran Modu
 f4b2eb64b970a36714177ffddbb2653b,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.FullScreen.Description,Tam ekranda her hangi bir uygulama çalışırken duvar kağıdına ne olacağı.
-6ea5ebd656e975963dd8b1e3ced115cb,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
+7250692dae313a30323f093743400805,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,,
 426dea2624930e8ad9e441228b4694d0,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Focus,Odaklanma Modu
 61703e81c363d5e60c15551db44a3e73,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.TR.xaml,Portal.PerformanceSettingPage.Focus.Description,Odağınızda her hangi başka bir uygulama varken duvar kağıdına ne olacağı.
 f8db5d5952741acc004b67026c636f28,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Title,PersonalSettingPage
-c8985e6286a0e9b8b84eb4cae4424aaa,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+91a6149a12c62339de39412d8464821e,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 4ebb6544fda3600703db6badb8d989da,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Server,Mağaza Sunucusu
 2d81d06ce4dad4c323b50426548212e5,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Server.Description,Mağazada listelenen temaların hangi sunucu üzerinden görüntüleneceği.
-91a6149a12c62339de39412d8464821e,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-30fb53d06dc483ad639e57451022a5df,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Server.ServerHint,Not: Sunucu olarak {0} seçilmişse istek limitlerine takılmamak için bir {2} girilmesi gerekiyor. Aksi taktirde mağazadaki temalara erişirken sorun yaşayabilirsiniz. Eğer ki {1} seçilmişse görece daha sorunsuz bir mağaza deneyimi yaşarsınız.
 d5a98adb0f7008f2de6b0e39fd49c1ec,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+30fb53d06dc483ad639e57451022a5df,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Server.ServerHint,Not: Sunucu olarak {0} seçilmişse istek limitlerine takılmamak için bir {2} girilmesi gerekiyor. Aksi taktirde mağazadaki temalara erişirken sorun yaşayabilirsiniz. Eğer ki {1} seçilmişse görece daha sorunsuz bir mağaza deneyimi yaşarsınız.
+564aa2c17402f0c7637f6ee72f258309,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 5a149c1466eb3c7e404c57df02440b39,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Duration,Mağaza Yenileme
 360b47f1621eb743c63d6de1a24988e6,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Duration.Description,Mağazada listelenen temaların ne kadar süreyle yenilenip yenilenmeyeceği.
-564aa2c17402f0c7637f6ee72f258309,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+00a9e4e785c69a8487eac3d28fe89437,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 15f8bce52f5329058eac436a0f6fce9c,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.StoreStart,Otomatik Başlatma
 b8deb6b20fc5d1114f4dc30b62b4b255,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.StoreStart.Description,Mağazadan indirilen temanın otomatik duvar kağıdı olarak ayarlanıp ayarlanmayacağı.
-00a9e4e785c69a8487eac3d28fe89437,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+33b8e98c49b435a49d13c2ed816fd710,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 cfbf0944a6dcb64cde091f7c318f79a9,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adult,Güvenli Olmayan İçerikler
 1b53275b453af22deb54d99daa0751c1,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adult.Description,Mağazada güvenli değil (NSFW) olarak işaretlenmiş içeriklerin gösterilip gösterilmeyeceği.
-33b8e98c49b435a49d13c2ed816fd710,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+f6aa735c5bafbaf2bfc11e535558bf36,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 9ff38e3c1a0de54139b26bd278cceec4,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Confirm,Silme Onayı
 d7a98e36c08b5f9d66ca4fc6680e1b98,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Confirm.Description,Kütüphanedeki temaları silerken onay isteyip istemeyeceği.
-f6aa735c5bafbaf2bfc11e535558bf36,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+92657c7131ce3099fe3f9613469503e5,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 a5086aadc29d056534265135d027b63b,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Delete,Bozuk Temalar
 02e89eb5ea021ba06ea41582e5b1dc87,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Delete.Description,Kütüphanedeki bozuk ya da eksik temaların otomatik silinip silinmeyeceği.
-92657c7131ce3099fe3f9613469503e5,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-c6f2b3484cee4a74d91ba3c0e8e801a8,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Delete.DeleteHint,Not: Dikkatli olunması gerekir. Aksi taktirde veri kayıplarına yol açabilir
 e3d0603cd200413db01375ab4e5d0409,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+c6f2b3484cee4a74d91ba3c0e8e801a8,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Delete.DeleteHint,Not: Dikkatli olunması gerekir. Aksi taktirde veri kayıplarına yol açabilir
+d431df14fbdfcecc9eda344b9be6bb51,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 0f27453524d5012192403b40411f968a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.LibraryStart,Otomatik Başlatma
 5cb8db56164fc6ca72645ce3f571b12d,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.LibraryStart.Description,Oluşturulan temanın otomatik duvar kağıdı olarak ayarlanıp ayarlanmayacağı.
-d431df14fbdfcecc9eda344b9be6bb51,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+1224c93288262fe1929ade17ec0d37bc,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 45aaa295f41028b65915a88e6c5a8131,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview,Tema Önizleme
 4805f25dd52989f5951d15c1598aa6a5,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview.Description,Görüntülenen temaların üzerine gelince önizlenip önizlenmeyeceği.
-1224c93288262fe1929ade17ec0d37bc,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+6ad53c2ab0879caed91f343bfffe35bd,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 73f4a142b2041449662c55c43b16b176,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview.StorePreview,Mağaza Önizlemesi:
 e3102bf3c844de64d999d5adc62b37ad,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview.StorePreviewHide,Detayların Gizlenmesi:
-6ad53c2ab0879caed91f343bfffe35bd,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+66dec0077fe913dee54dfb17d9cb447a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 493749a9692b9ce7edd64a399bba2257,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview.LibraryPreview,Kütüphane Önizlemesi:
 d8d01140adced1347c67bdd21ccfeb45,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Preview.LibraryPreviewHide,Detayların Gizlenmesi:
-66dec0077fe913dee54dfb17d9cb447a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+2dde0aef676de77d7042cd4d33663228,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 512e82ea1547d3607c449e980004f130,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive,Uyarlanabilir Düzen
 cc1078a55b9e77385d24e84923163c8a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive.Description,Görüntülenen temaların düzenini veya mesafesini özelleştirin.
-2dde0aef676de77d7042cd4d33663228,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-625ff964c8933c138651720a5654cade,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive.AdaptiveMargin,Boşluk Mesafesi (Piksel):
 69dccbdae5d2569c6f4b061112b8e557,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-15340e7b116659f51a902277812cb41a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive.AdaptiveLayout,Düzen Sırası (Adet):
+625ff964c8933c138651720a5654cade,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive.AdaptiveMargin,Boşluk Mesafesi (Piksel):
 5ec88e80f086bac2bad474ff7bc76b00,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+15340e7b116659f51a902277812cb41a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Adaptive.AdaptiveLayout,Düzen Sırası (Adet):
+0048368410d256f05aab0439d65016c9,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 d844f011755b8c8510f2784f146f5f73,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort,Kütüphane Sıralama
 563265f19853102d50b1ad94b13e2506,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort.Description,Kütüphanenizdeki temaların hangi biçimde ve nasıl sıralanacağını belirleyin.
-0048368410d256f05aab0439d65016c9,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-59e7fb8fd4c50e9ece7126da3e1bb68a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort.SortMode,Sıralama Modu:
 f75306ef1b9c951f799041e9cfb869aa,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
-423cf1761a1076a4ad503ba2af35daa8,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort.SortKind,Sıralama Türü:
+59e7fb8fd4c50e9ece7126da3e1bb68a,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort.SortMode,Sıralama Modu:
 728c53b6d6dbb785f4b5406269ceb4d0,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+423cf1761a1076a4ad503ba2af35daa8,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Sort.SortKind,Sıralama Türü:
+e2cb93d2429d2ea42e3a988e4c656c0d,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 d2a61303c0b04268945191b4a74be175,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Store,Mağaza Sayfalama
 f4194014f59a860ff39d21738edf237b,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Store.Description,Mağazadaki her bir sayfa için kaç tane tema olacağını belirleyin.
-e2cb93d2429d2ea42e3a988e4c656c0d,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
+43fe68bdb84bf76c8478e1a9af4e7a44,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,,
 a135502f696f1d0e9b26479e4dabff23,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Library,Kütüphane Sayfalama
 ce2ade6f16304ae0cc54a4299e72841b,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.TR.xaml,Portal.PersonalSettingPage.Library.Description,Kütüphanenizdeki her bir sayfa için kaç tane tema olacağını belirleyin.
 4c51c4820c06e5b2ca103cb6b18052a4,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Title,SystemSettingPage
-d5c42de46418ff71498cdb2f815ab530,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+db010cf348dc52cd6d17922319a9c3d7,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 4ae8de096caf6af5b6209427afc439b9,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary,Günlük Dosyaları
 2b09313b61aa5c57de596a9054375e2f,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Description,Uygulamanın oluşturmuş olduğu tüm günlük dosyalarını yönetme.
-db010cf348dc52cd6d17922319a9c3d7,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-f1f945e78de9c8838650251ba842a899,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Create,Oluştur
 8fc1e282d46326ff14f3082451fa396e,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-694f68334c02f3ca79b5c22bff8fe526,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Delete,Temizle
+f1f945e78de9c8838650251ba842a899,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Create,Oluştur
 c14a1777f5f4374d3a514f1ba934861d,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-dbe434fb4c2bb2fda8351440b0bc034b,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Hint,Not: Günlük dosyalarının kapladığı toplam alan {0}. Sadece temizliğe başlandığında tüm uygulamalar kapanacaktır.
+694f68334c02f3ca79b5c22bff8fe526,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Delete,Temizle
 66b55683621b6e13da869d7a49020899,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+dbe434fb4c2bb2fda8351440b0bc034b,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LogTemporary.Hint,Not: Günlük dosyalarının kapladığı toplam alan {0}. Sadece temizliğe başlandığında tüm uygulamalar kapanacaktır.
+56c7acab18122c87dfc20f0462ac6d72,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 d3b1b520a902b92255099087affa8c52,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary,Önbellek Temizleme
 a478329a5c16342e3a71822e1f1418b2,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary.Description,Uygulamanın oluşturmuş olduğu tüm önbellek dosyalarını temizleme.
-56c7acab18122c87dfc20f0462ac6d72,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-4171df426df61cf027aa9d1c02c6bfa7,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary.Start,Temizliğe Başla
 3bfa764409806aa22fbaaa66ba808cb8,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-f9952d1c864157cd1454285306b2192c,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary.Hint,Not: Önbellek dosyalarının kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+4171df426df61cf027aa9d1c02c6bfa7,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary.Start,Temizliğe Başla
 efac0a53028a6c438a97d5e704099599,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+f9952d1c864157cd1454285306b2192c,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.CacheTemporary.Hint,Not: Önbellek dosyalarının kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+da0dbefc46f78a32a77d783fb9f0ee89,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 e010a4c9825f2afc64a347d55f02535d,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary,Mağaza Temizleme
 95b0806f0de25705768ecef905f34045,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary.Description,Uygulamanın oluşturmuş olduğu tüm mağaza dosyalarını temizleme.
-da0dbefc46f78a32a77d783fb9f0ee89,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-a4915d34f5c144afd0c0916c38089aea,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary.Start,Temizliğe Başla
 7079363303cf62073d03ddfe0ad40d9d,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-e63c1ec3304acae9543d090a8ca9c608,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary.Hint,Not: Mağaza dosyalarının kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+a4915d34f5c144afd0c0916c38089aea,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary.Start,Temizliğe Başla
 1945fef06ed79d456dc61a4aeb304015,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+e63c1ec3304acae9543d090a8ca9c608,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.StoreTemporary.Hint,Not: Mağaza dosyalarının kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+fbf536624160a2c2992bb0a65b5b5fb0,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 c1d597bde3419c47dfbbe0d8bd21cef4,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary,Kütüphane Temizleme
 d2d727014c2f24b2878b8178ef07d16d,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary.Description,Kütüphanenizde bulunan veya oluşturmuş olduğunuz tüm tema dosyalarını temizleme.
-fbf536624160a2c2992bb0a65b5b5fb0,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-384473ec0533d34bcc377282c844d62f,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary.Start,Temizliğe Başla
 744275ed6ab09287b0ddf19d9df4c374,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-f4708a66ddffdd174955afef240a0edb,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary.Hint,Not: Kütüphanenizdeki temaların kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+384473ec0533d34bcc377282c844d62f,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary.Start,Temizliğe Başla
 f5c83e97d48ec15c20929a2cc181474d,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+f4708a66ddffdd174955afef240a0edb,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.LibraryTemporary.Hint,Not: Kütüphanenizdeki temaların kapladığı toplam alan {0}. Temizliğe başlandığında tüm uygulamalar kapanacaktır.
+9750e88970fb391dfa820c78eb14c374,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 50b14fe5f77378ce1c62a6db9fb51d74,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup,Ayar Dosyaları
 53536411476520f1d80ec888cddd7e2b,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Description,Uygulamanın oluşturmuş olduğu tüm ayar dosyalarını yönetme.
-9750e88970fb391dfa820c78eb14c374,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-49288739729a911fa75015f7ee81513a,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Export,Yedekle
 ec7fb76da2cb7c5cad0e64ce2f165872,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-4888f13bd46ba3f944803f6ccceeb3f6,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Import,Geri Yükle
+49288739729a911fa75015f7ee81513a,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Export,Yedekle
 e45332b8f086f89a2f22c598bd66d8b1,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-8d82d2ee89ac9eb81b1df8316feb7359,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Hint,Not: Seçtiğiniz işlem başladığında tüm uygulamalar kapanacaktır.
+4888f13bd46ba3f944803f6ccceeb3f6,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Import,Geri Yükle
 801954f009093e93175b6d14e9e3a41e,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+8d82d2ee89ac9eb81b1df8316feb7359,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingBackup.Hint,Not: Seçtiğiniz işlem başladığında tüm uygulamalar kapanacaktır.
+4261045e20ef4a8351b48180e1bd0268,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 dbf9f37864ce37bc7b4cc3c1282e7bfc,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset,Ayar Sıfırlama
 75dd25c6c4c9127697d66faf181b2841,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset.Description,Uygulamanın oluşturmuş olduğu tüm ayar dosyalarını sıfırlama.
-4261045e20ef4a8351b48180e1bd0268,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-dfb1b797a680806ca44dd2ea04761110,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset.Start,Sıfırlamaya Başla
 1013c0fe32f0554f8595004fa9715fc1,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
-c25ae247fd393c3a58c3bfe5307f0fb3,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset.Hint,Not: Sıfırlama işlemi başladığında tüm uygulamalar kapanacaktır.
+dfb1b797a680806ca44dd2ea04761110,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset.Start,Sıfırlamaya Başla
 342559471c13d058100ea0a1851f5026,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+c25ae247fd393c3a58c3bfe5307f0fb3,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.SettingReset.Hint,Not: Sıfırlama işlemi başladığında tüm uygulamalar kapanacaktır.
+d6dcce5535fd0f16d8ab9f6d27fd96cb,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 59c6e5794fd509d28a8e43b4e052e248,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Log.SaveDialogTitle,Günlük Dosyasını Kaydet
 52673a5196fd230de9762beb8cb57f98,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Log.SaveDialogFilter,ZIP Dosyaları (*.zip)|*.zip|Tüm Dosyalar (*.*)|*.*
-d6dcce5535fd0f16d8ab9f6d27fd96cb,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
+2f8e4ef9111507212ae33b2fd1ee4807,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,,
 92c2a385a61ca95a377f0d23c9dc91b4,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Access.Close,Anladım
 520e24541e1e5c597118798d88169df7,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Access.Title,Erişim Uyarısı
 b4e692c8a23c01a332a6738091709a2a,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.TR.xaml,Portal.SystemSettingPage.Access.Message,Seçtiğiniz konuma erişim yetkiniz bulunmamakta.
 796b4080f15a96d60306bb0b546d0c90,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.Title,WallpaperSettingPage
-2681fb890268dcb4f29f1620f742b03b,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+fde142f992d0cbbe99b1211592b05470,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 ec7146787e75fe0485442a643e99c44d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode,Etkileşim Yöntemi
 41afbee7bee7570a42a69dbe032d5301,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.Description,Desteklenen duvar kağıtlarında etkileşime girilebilecek yöntemleri belirler.
-fde142f992d0cbbe99b1211592b05470,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
-5d58e4351b5c42ef9e66e053e9e1c02f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.InputModule,Etkileşim Modülü:
 d5254e3357226758704e366ca9a2ea24,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
-e38ea5e4726a0625c2fdcec4fafd8355,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.InputDesktop,Etkileşimi yalnızca masaüstü odaklandığında işleme al
+5d58e4351b5c42ef9e66e053e9e1c02f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.InputModule,Etkileşim Modülü:
 c724d947f0a4567e9703560f2ae22702,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
-48e816ff0a00618f261913a75491d3a0,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.DesktopIcon,Masaüstü simgelerini yanlışlıkla seçmemek adına gizle
+e38ea5e4726a0625c2fdcec4fafd8355,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.InputDesktop,Etkileşimi yalnızca masaüstü odaklandığında işleme al
 e82020620e23957ab93dd3aa5957c4c3,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+48e816ff0a00618f261913a75491d3a0,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.InputMode.DesktopIcon,Masaüstü simgelerini yanlışlıkla seçmemek adına gizle
+e9aa629c681b94d9e06e4d3758005c78,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 4423b5bf7ee31c3fca11b8c15883ed24,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ScreenLayout,Ekran Yerleşimi
 f1702831f947c5cd61e7ce0b1a7fe4b2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ScreenLayout.Description,Duvar kağıtlarınızın ekrandaki yerleşimini değiştirir.
-e9aa629c681b94d9e06e4d3758005c78,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+234a5ce877310b4cf7a211858c9fe280,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 a9aa12b4aac6f7149fb86c8815c8ce68,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.StretchMode,Sığdırma Metodu
 061a101ce1d60a1b6b887ee132923e17,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.StretchMode.Description,Desteklenen duvar kağıtlarında ölçeklendirmeyi değiştirir.
-234a5ce877310b4cf7a211858c9fe280,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+f4b26f535ca5de11d4c277033f9d8e79,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 758e68f387df77a6b9a3ecbb5b1d69ba,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.StayAwake,Uyanık Kalma
 227c694ba41c89a6928cf93ea7370f35,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.StayAwake.Description,Desteklenen duvar kağıtlarında uyanık kalma durumunu değiştirir.
-f4b26f535ca5de11d4c277033f9d8e79,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+54908064462078f5caef367a9ca168b1,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 ef20fc2ff46b9d8dc0c96285af46e75e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.CrashMode,Çökme Durumu
 e749fdceb4f3f5035c58db61a8b6b2d0,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.CrashMode.Description,Masaüstü çöktüğünde veya kapandığında duvar kağıdının yenilenme durumunu değiştirir.
-54908064462078f5caef367a9ca168b1,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+b9fd4143c1774de7c5f8ce57e79a9e49,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 dbcdefd6080885f5b1be13ba9e8e3a3d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.LoopMode,Yineleme Durumu
 e7fe69b62211c0e9972371729052f0dc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.LoopMode.Description,Desteklenen duvar kağıtlarında yineleme durumunu değiştirir.
-b9fd4143c1774de7c5f8ce57e79a9e49,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+8f9707307c2249ffa252e9d87f9774f4,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 0b9fdbf6d35569e3581c5f7713348f3e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ShuffleMode,Karıştırma Durumu
 f14fb2b4c9236a9fc1c252e4f606d69c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ShuffleMode.Description,Desteklenen duvar kağıtlarında karıştırma durumunu değiştirir.
-8f9707307c2249ffa252e9d87f9774f4,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+e911c5b75f5b182e65f75f8fe3e1e357,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 6626eccaaacb031e3b21bafeadd1850e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.BackgroundImage,Arkaplan Görüntüsü
 fd0318ecf09d25b6c38b5c54e470608c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.BackgroundImage.Description,Hareketli duvar kağıdını masaüstü arkaplan görüntüsü olarak değiştirir.
-e911c5b75f5b182e65f75f8fe3e1e357,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+db644b60d6b654d9d4b707f43f9cdaa2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 c4b0d590ee09696f619aaddebdb2d026,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.HardwareAcceleration,Donanım Hızlandırma
 1a7ad47fcedfc22b6a74acb5985abc27,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.HardwareAcceleration.Description,Desteklenen duvar kağıtlarında donanım hızlandırma durumunu değiştirir.
-db644b60d6b654d9d4b707f43f9cdaa2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+dcb636507e1f0d5d0e36df11195553f9,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 cf8ce451aeb0269663b03bf3d96655d3,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.GifPlayer,Gif Eklentisi
 35e0a08acf791d3e33a0f0ceaf1cfd9d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.GifPlayer.Description,Kütüphanenizde bulunan Gif türündeki temaları oynatacak olan eklentiyi seçin.
-dcb636507e1f0d5d0e36df11195553f9,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+e810ccc06d6ef522a3bddfef573ac21d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 2d4e8acf226ca14ade58a8b3bab1a8a5,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.VideoPlayer,Video Eklentisi
 4e4cd080f44e90c23692664bb2e653cb,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.VideoPlayer.Description,Kütüphanenizde bulunan Video türündeki temaları oynatacak olan eklentiyi seçin.
-e810ccc06d6ef522a3bddfef573ac21d,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+5959ed47d067e72fbc189a46aa9b1ffc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 818cdab367890bd80726243caf969c8e,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.UrlPlayer,Url Motoru
 9f1a6adf4f79d549bcc16573e907c57b,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.UrlPlayer.Description,Kütüphanenizde bulunan Url türündeki temaları çalıştıracak olan motoru seçin.
-5959ed47d067e72fbc189a46aa9b1ffc,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+52bb6151ec2f3fcbf0e1aa54b6263d5f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 41e200895f21857b780eaf1223cd31fd,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.WebPlayer,Web Motoru
 23f8bd1520c0afe1153f5df77dbabf56,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.WebPlayer.Description,Kütüphanenizde bulunan Web türündeki temaları çalıştıracak olan motoru seçin.
-52bb6151ec2f3fcbf0e1aa54b6263d5f,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+6834d6a5c012ddaa3a58b35d1e0c8761,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 f12e3fe3a9bacd07cd6be01eee112b2c,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.YouTubePlayer,YouTube Motoru
 d6dc1b7ec620f2cfdb4bab4536d4c00a,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.YouTubePlayer.Description,Kütüphanenizde bulunan YouTube türündeki temaları çalıştıracak olan motoru seçin.
-6834d6a5c012ddaa3a58b35d1e0c8761,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
+b6a80c6760bef5af9702e9b9f64b65b2,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,,
 245b88769df0b69ee541df12c9b22405,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ApplicationPlayer,Application Motoru
 3be813ea9b2f1ed850921312b3f48eff,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.TR.xaml,Portal.WallpaperSettingPage.ApplicationPlayer.Description,Kütüphanenizde bulunan Application türündeki temaları çalıştıracak olan motoru seçin.
 fd4d960ef807170aa76d2c74f5d7b35c,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.TR.xaml,Portal.BrokenStorePage.Title,BrokenStorePage
-7a507d021008c23a51487d649eca94a5,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.TR.xaml,,
+ab1b09ae34d5cf53817439536c9930eb,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.TR.xaml,,
 98e1b02ea8b86a8920eecf76dfbe8ab9,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.TR.xaml,Portal.BrokenStorePage.TitleText,İnternet Işıklarının Sönük Kaldığı Bir An
 b1eaba83850086174dd8458bb388b08f,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.TR.xaml,Portal.BrokenStorePage.DescriptionText,"Yıldızsız bir gökyüzü gibi, burada da internetin parıltısı yok"
 31ceaaa9754386801919d24467122368,Portal\StorePage\FullStorePage\Portal.FullStorePage.TR.xaml,Portal.FullStorePage.Title,FullStorePage
 a2f8d2ba803cd7477b7f79259c7677f3,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.TR.xaml,Portal.SearchStorePage.Title,SearchStorePage
-9729dc94425687d70be727db640b5b03,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.TR.xaml,,
+375f403bb7a7b2512952ca2a63eee541,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.TR.xaml,,
 bc28a242b68bdd435d54e88f9a63b675,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.TR.xaml,Portal.SearchStorePage.TitleText,Aradıklarınızın Yanıtı Gökyüzünde Saklı Olabilir
 4a0189ab60dc14f9956b5358ed1ed45c,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.TR.xaml,Portal.SearchStorePage.DescriptionText,"Sonuçlar beklediğiniz gibi gelmiyorsa, gökyüzü size yeni bir deneyim sunabilir"
 ed736c8480adbb8d0a6503bb4802d707,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.TR.xaml,Portal.UnknownStorePage.Title,UnknownStorePage
-e9097c789282009deb5ade27bf42c0a6,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.TR.xaml,,
+2f0348eadc8884600a9705a7fef7c9bd,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.TR.xaml,,
 fe49f2bf1b0fcc5b9296405eb280dcb3,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.TR.xaml,Portal.UnknownStorePage.TitleText,Mağazada Ortaya Çıkan Gizemli Durumu Keşfedin
 805add8d9aa9921cab29243e32be16ec,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.TR.xaml,Portal.UnknownStorePage.DescriptionText,Bilinmeyenin peşine düşün ve mağazada meydana gelen gizemli durumu aydınlatma yolculuğuna çıkın

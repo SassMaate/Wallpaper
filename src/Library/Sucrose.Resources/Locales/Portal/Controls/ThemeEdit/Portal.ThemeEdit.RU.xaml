@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Закрыть</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Редактирование темы</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">По Умолчанию</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Теги</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Заголовок</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Автор</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Контакт</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Аргументы</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Описание</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Локализация</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Пожалуйста, введите действительные теги темы</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Пожалуйста, введите действительное название</system:String>

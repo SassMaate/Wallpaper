@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">关闭</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">主题编辑</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">默认</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">标签</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">标题</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">作者</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">联系方式</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">参数</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">描述</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">本地化</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">请输入有效的主题标签</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">请输入有效的标题</system:String>

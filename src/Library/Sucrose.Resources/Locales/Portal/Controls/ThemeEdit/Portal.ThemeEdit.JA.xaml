@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">閉じる</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">テーマの編集</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">デフォルト</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">タグ</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">タイトル</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">著者</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">お問い合わせ</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">引数</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">説明</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">ローカリゼーション</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">有効なテーマタグを入力してください</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">有効なタイトルを入力してください</system:String>

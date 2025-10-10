@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Sluiten</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Thema Bewerken</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Standaard</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Tags</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Titel</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Auteur</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Contact</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argumenten</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Beschrijving</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Lokalisatie</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Voer geldige thema-tags in</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Voer een geldige titel in</system:String>

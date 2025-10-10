@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Kapat</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Tema Düzenleme</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Varsayılan</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Etiketler</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Başlık</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Yazar</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">İletişim</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argümanlar</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Açıklama</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Yerelleştirme</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Lütfen geçerli tema etiketleri yazın</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Lütfen geçerli bir başlık yazın</system:String>

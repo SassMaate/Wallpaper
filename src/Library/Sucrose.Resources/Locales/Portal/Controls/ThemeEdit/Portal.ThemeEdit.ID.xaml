@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Tutup</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Edit Tema</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Bawaan</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Tags</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Judul</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Penulis</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Kontak</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argumen</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Deskripsi</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Lokalisasi</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Silakan tulis tag tema yang valid</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Silakan tulis judul yang valid</system:String>

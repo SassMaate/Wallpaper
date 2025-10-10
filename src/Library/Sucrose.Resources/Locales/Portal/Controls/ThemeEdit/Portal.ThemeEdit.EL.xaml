@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Κλείσιμο</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Επεξεργασία Θέματος</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Προεπιλογή</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Ετικέτες</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Τίτλος</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Συγγραφέας</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Επικοινωνία</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Ορίσματα</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Περιγραφή</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Τοπικοποίηση</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Παρακαλώ εισάγετε έγκυρες ετικέτες θέματος</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Παρακαλώ εισάγετε έναν έγκυρο τίτλο</system:String>

@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Zavřít</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Úprava šablony</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Výchozí</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Štítky</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Název</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Autor</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Kontakt</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argumenty</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Popis</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Lokalizace</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Prosím, zadejte platné štítky pro šablonu</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Prosím, zadejte platný název</system:String>

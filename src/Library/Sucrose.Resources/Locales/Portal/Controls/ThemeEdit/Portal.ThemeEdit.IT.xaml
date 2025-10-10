@@ -6,12 +6,15 @@
     <system:String x:Key="Portal.ThemeEdit.Close">Chiudi</system:String>
     <system:String x:Key="Portal.ThemeEdit.Title">Modifica Tema</system:String>
 
+    <system:String x:Key="Portal.ThemeEdit.Localization">Predefinito</system:String>
+
     <system:String x:Key="Portal.ThemeEdit.ThemeTags">Tag</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle">Titolo</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">Autore</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeContact">Contatto</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeArguments">Argomenti</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeDescription">Descrizione</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">Localizzazione</system:String>
 
     <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">Inserisci dei tag validi per il tema</system:String>
     <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">Inserisci un titolo valido</system:String>
