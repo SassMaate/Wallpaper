@@ -183,8 +183,8 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            SBMI.BatteryData.ACPowerStatus = $"{SWUP.GetACPowerStatus()}";
                             SBMI.BatteryData.SavingMode = SWUP.IsBatterySavingMode;
+                            SBMI.BatteryData.ACPowerStatus = $"{SWUP.GetACPowerStatus()}";
                             SBMI.BatteryData.SaverStatus = $"{SWUP.GetBatterySaverStatus()}";
 
                             SBMI.BatteryData.LifePercent = SystemInformation.PowerStatus.BatteryLifePercent;
@@ -217,45 +217,26 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 List<SSDSH> Hosts = SSSHN.GetHost();
 
-                                foreach (SSDSH Host in Hosts)
+                                SSDSH? Host = Hosts.FirstOrDefault(Host => Host.Name == SMMB.PingType);
+
+                                if (Host != null)
                                 {
-                                    if (SMMB.PingType == Host.Name)
+                                    if (string.IsNullOrEmpty(SBMI.PingAddress) || SMMB.PingType != SBMI.PingHost)
                                     {
-                                        if (string.IsNullOrEmpty(SBMI.PingAddress) || SMMB.PingType != SBMI.PingHost)
-                                        {
-                                            foreach (IPAddress Address in SSSHN.GetHostAddresses(Host.Address))
-                                            {
-                                                try
-                                                {
-                                                    SBMI.PingAddress = $"{Address}";
-
-                                                    SBMI.NetworkData.PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
-
-                                                    SBMI.PingHost = SMMB.PingType;
-                                                    SBMI.NetworkData.Host = Host.Address;
-                                                    SBMI.NetworkData.Ping = SBMI.NetworkData.PingData.RoundTrip;
-                                                    SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host.Address})";
-
-                                                    break;
-                                                }
-                                                catch (Exception Exception)
-                                                {
-                                                    SBMI.NetworkData.Ping = 0;
-                                                    SBMI.PingAddress = string.Empty;
-                                                    SBMI.NetworkData.PingData = new();
-                                                    await SSWEW.Watch_CatchException(Exception);
-                                                }
-                                            }
-                                        }
-                                        else
+                                        foreach (IPAddress Address in SSSHN.GetHostAddresses(Host?.Address))
                                         {
                                             try
                                             {
+                                                SBMI.PingAddress = $"{Address}";
+
                                                 SBMI.NetworkData.PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
 
-                                                SBMI.NetworkData.Host = Host.Address;
+                                                SBMI.PingHost = SMMB.PingType;
+                                                SBMI.NetworkData.Host = Host?.Address;
                                                 SBMI.NetworkData.Ping = SBMI.NetworkData.PingData.RoundTrip;
-                                                SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host.Address})";
+                                                SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host?.Address})";
+
+                                                break;
                                             }
                                             catch (Exception Exception)
                                             {
@@ -265,8 +246,24 @@ namespace Sucrose.Backgroundog.Helper
                                                 await SSWEW.Watch_CatchException(Exception);
                                             }
                                         }
+                                    }
+                                    else
+                                    {
+                                        try
+                                        {
+                                            SBMI.NetworkData.PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
 
-                                        break;
+                                            SBMI.NetworkData.Host = Host?.Address;
+                                            SBMI.NetworkData.Ping = SBMI.NetworkData.PingData.RoundTrip;
+                                            SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host?.Address})";
+                                        }
+                                        catch (Exception Exception)
+                                        {
+                                            SBMI.NetworkData.Ping = 0;
+                                            SBMI.PingAddress = string.Empty;
+                                            SBMI.NetworkData.PingData = new();
+                                            await SSWEW.Watch_CatchException(Exception);
+                                        }
                                     }
                                 }
                             }
