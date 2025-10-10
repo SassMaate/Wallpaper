@@ -106,6 +106,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static bool FullScreenManagement = true;
 
+        public static bool ProcessorManagement2 = true;
+
         public static bool VirtualityManagement = true;
 
         public static bool MotherboardManagement = true;
@@ -132,7 +134,11 @@ namespace Sucrose.Backgroundog.Manage
 
         public static PerformanceCounter DownloadCounter = null;
 
+        public static PerformanceCounter ProcessorCounter = null;
+
         public static int SpecificationTime = InitializeTime * 20;
+
+        public static PerformanceCounter[] ProcessorsCounter = null;
 
         public static NowPlayingSessionManager SessionManager = null;
 
@@ -293,9 +299,10 @@ namespace Sucrose.Backgroundog.Manage
             CoreMax = 0f,
             CoreMin = 0f,
             CoreNow = 0f,
+            Cores = new(),
             State = false,
-            Name = string.Empty,
-            FullName = string.Empty
+            ProcessorCount = 0,
+            Name = string.Empty
         };
 
         public static SBSDMD MotherboardData = new()

@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using Newtonsoft.Json.Linq;
+using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -39,6 +40,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public JArray Cores;
+        /// <summary>
+        /// 
+        /// </summary>
         public float? CoreMax;
         /// <summary>
         /// 
@@ -51,6 +56,6 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public string FullName;
+        public int? ProcessorCount;
     }
 }

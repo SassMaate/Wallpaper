@@ -1,6 +1,7 @@
 ﻿using LibreHardwareMonitor.Hardware;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 using System.Management;
 using System.Net;
 using System.Net.Sockets;
@@ -11,6 +12,7 @@ using SBER = Sucrose.Backgroundog.Extension.Remote;
 using SBEUV = Sucrose.Backgroundog.Extension.UpdateVisitor;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
+using SBSCS = Sucrose.Backgroundog.Struct.ChildSensor;
 using SBSS = Sucrose.Backgroundog.Struct.Sensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
@@ -434,7 +436,8 @@ namespace Sucrose.Backgroundog.Helper
                             foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
                             {
                                 SBMI.ProcessorData.State = true;
-                                SBMI.ProcessorData.FullName = SSSHM.Check(Object, "Name", string.Empty);
+                                SBMI.ProcessorData.ProcessorCount = Environment.ProcessorCount;
+                                SBMI.ProcessorData.Name = SSSHM.Check(Object, "Name", string.Empty);
                                 SBMI.ProcessorData.Core = Convert.ToInt32(SSSHM.Check(Object, "NumberOfCores", "0"));
                                 SBMI.ProcessorData.Thread = Convert.ToInt32(SSSHM.Check(Object, "NumberOfLogicalProcessors", "0"));
 
@@ -446,6 +449,75 @@ namespace Sucrose.Backgroundog.Helper
                         catch (Exception Exception)
                         {
                             SBMI.ProcessorManagement = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
+                if (SBMI.ProcessorManagement2)
+                {
+                    SBMI.ProcessorManagement2 = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            if (SBMI.ProcessorCounter == null)
+                            {
+                                SBMI.ProcessorCounter = new("Processor", "% Processor Time", "_Total");
+                            }
+                            else
+                            {
+                                SBMI.ProcessorData.Now = SBMI.ProcessorCounter.NextValue();
+
+                                SBMI.ProcessorData.Max = SBMI.ProcessorData.Now > SBMI.ProcessorData.Max ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Max;
+                                SBMI.ProcessorData.Min = SBMI.ProcessorData.Now < SBMI.ProcessorData.Min ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Min;
+                            }
+
+                            if (SBMI.ProcessorsCounter == null)
+                            {
+                                SBMI.ProcessorsCounter = new PerformanceCounter[Environment.ProcessorCount];
+
+                                for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
+                                {
+                                    SBMI.ProcessorsCounter[Core] = new PerformanceCounter("Processor", "% Processor Time", Core.ToString());
+                                }
+                            }
+                            else
+                            {
+                                List<SBSCS> Sensors = new();
+
+                                SBMI.ProcessorData.CoreNow = 0;
+
+                                for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
+                                {
+                                    float Now = SBMI.ProcessorsCounter[Core].NextValue();
+
+                                    SBMI.ProcessorData.CoreNow = SBMI.ProcessorData.CoreNow > Now ? SBMI.ProcessorData.CoreNow : Now;
+
+                                    SBMI.ProcessorData.CoreMax = SBMI.ProcessorData.CoreNow > SBMI.ProcessorData.CoreMax ? SBMI.ProcessorData.CoreNow : SBMI.ProcessorData.CoreMax;
+                                    SBMI.ProcessorData.CoreMin = SBMI.ProcessorData.CoreNow < SBMI.ProcessorData.CoreMin ? SBMI.ProcessorData.CoreNow : SBMI.ProcessorData.CoreMin;
+
+                                    Sensors.Add(new SBSCS
+                                    {
+                                        Now = Now,
+                                        Index = Core,
+                                        Name = $"Core #{Core}"
+                                    });
+                                }
+
+                                string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
+
+                                SBMI.ProcessorData.Cores = JArray.Parse(Result);
+                            }
+
+                            await Task.Delay(SBMI.SpecificationLessTime);
+
+                            SBMI.ProcessorManagement2 = true;
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.ProcessorManagement2 = true;
                             await SSWEW.Watch_CatchException(Exception);
                         }
                     });
@@ -596,47 +668,7 @@ namespace Sucrose.Backgroundog.Helper
 
                             foreach (IHardware Hardware in SBMI.Computer.Hardware)
                             {
-                                if (Hardware.HardwareType == HardwareType.Cpu)
-                                {
-                                    _ = Task.Run(async () =>
-                                    {
-                                        try
-                                        {
-                                            //Hardware.Update();
-
-                                            if (Hardware.Sensors.Any())
-                                            {
-                                                SBMI.ProcessorData.State = true;
-                                                SBMI.ProcessorData.Name = Hardware.Name;
-
-                                                foreach (ISensor Sensor in Hardware.Sensors)
-                                                {
-                                                    if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Total")
-                                                    {
-                                                        SBMI.ProcessorData.Max = Sensor.Max;
-                                                        SBMI.ProcessorData.Min = Sensor.Min;
-                                                        SBMI.ProcessorData.Now = Sensor.Value;
-                                                    }
-                                                    else if (Sensor.SensorType == SensorType.Load && Sensor.Name == "CPU Core Max")
-                                                    {
-                                                        SBMI.ProcessorData.CoreMax = Sensor.Max;
-                                                        SBMI.ProcessorData.CoreMin = Sensor.Min;
-                                                        SBMI.ProcessorData.CoreNow = Sensor.Value;
-                                                    }
-                                                }
-                                            }
-                                            else
-                                            {
-                                                SBMI.ProcessorData.State = false;
-                                            }
-                                        }
-                                        catch (Exception Exception)
-                                        {
-                                            await SSWEW.Watch_CatchException(Exception);
-                                        }
-                                    });
-                                }
-                                else if (Hardware.HardwareType == HardwareType.Memory)
+                                if (Hardware.HardwareType == HardwareType.Memory)
                                 {
                                     _ = Task.Run(async () =>
                                     {

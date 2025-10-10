@@ -194,12 +194,13 @@ namespace Sucrose.Backgroundog.Extension
                 { "Now", SBMI.ProcessorData.Now },
                 { "Core", SBMI.ProcessorData.Core },
                 { "Name", SBMI.ProcessorData.Name },
+                { "Cores", SBMI.ProcessorData.Cores },
                 { "State", SBMI.ProcessorData.State },
                 { "Thread", SBMI.ProcessorData.Thread },
                 { "CoreMax", SBMI.ProcessorData.CoreMax },
                 { "CoreMin", SBMI.ProcessorData.CoreMin },
                 { "CoreNow", SBMI.ProcessorData.CoreNow },
-                { "FullName", SBMI.ProcessorData.FullName }
+                { "ProcessorCount", SBMI.ProcessorData.ProcessorCount }
             };
         }
 
