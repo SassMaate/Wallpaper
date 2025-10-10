@@ -39,6 +39,18 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public int DayOfYear;
+        /// <summary>
+        /// 
+        /// </summary>
         public int Millisecond;
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTimeKind Kind;
+        /// <summary>
+        /// 
+        /// </summary>
+        public DayOfWeek DayOfWeek;
     }
 }

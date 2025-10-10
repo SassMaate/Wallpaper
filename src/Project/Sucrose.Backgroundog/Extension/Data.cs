@@ -32,7 +32,10 @@ namespace Sucrose.Backgroundog.Extension
                 { "State", SBMI.DateData.State },
                 { "Minute", SBMI.DateData.Minute },
                 { "Second", SBMI.DateData.Second },
-                { "Millisecond", SBMI.DateData.Millisecond }
+                { "Kind", $"{SBMI.DateData.Kind}" },
+                { "DayOfYear", SBMI.DateData.DayOfYear },
+                { "Millisecond", SBMI.DateData.Millisecond },
+                { "DayOfWeek", $"{SBMI.DateData.DayOfWeek}" }
             };
         }
 

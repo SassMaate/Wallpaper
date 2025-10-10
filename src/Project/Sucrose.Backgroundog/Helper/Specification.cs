@@ -96,10 +96,13 @@ namespace Sucrose.Backgroundog.Helper
                             State = true,
                             Day = Date.Day,
                             Hour = Date.Hour,
+                            Kind = Date.Kind,
                             Year = Date.Year,
                             Month = Date.Month,
                             Minute = Date.Minute,
                             Second = Date.Second,
+                            DayOfWeek = Date.DayOfWeek,
+                            DayOfYear = Date.DayOfYear,
                             Millisecond = Date.Millisecond
                         };
                     }

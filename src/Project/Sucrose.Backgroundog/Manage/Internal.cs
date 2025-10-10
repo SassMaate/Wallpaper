@@ -165,8 +165,11 @@ namespace Sucrose.Backgroundog.Manage
             Month = 0,
             Minute = 0,
             Second = 0,
+            DayOfYear = 0,
             State = false,
-            Millisecond = 0
+            Millisecond = 0,
+            DayOfWeek = DayOfWeek.Sunday,
+            Kind = DateTimeKind.Unspecified
         };
 
         public static SBSDA AudioData = new()
@@ -218,8 +221,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static Computer Computer = new()
         {
-            IsCpuEnabled = true,
             IsGpuEnabled = true,
+            IsCpuEnabled = false,
             IsPsuEnabled = false,
             IsMemoryEnabled = true,
             IsBatteryEnabled = true,
