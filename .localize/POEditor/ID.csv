@@ -345,6 +345,7 @@ Portal.Category.Medieval,Abad Pertengahan,,Portal\Category\Portal.Category.ID.xa
 Portal.Category.PixelArt,Seni Piksel,,Portal\Category\Portal.Category.ID.xaml,
 Portal.Category.Software,Perangkat Lunak,,Portal\Category\Portal.Category.ID.xaml,
 Portal.Category.Vehicles,Kendaraan,,Portal\Category\Portal.Category.ID.xaml,
+Portal.Category.Workshop,Bengkel,,Portal\Category\Portal.Category.ID.xaml,
 Portal.Category.Animation,Animasi,,Portal\Category\Portal.Category.ID.xaml,
 Portal.Category.Education,Pendidikan,,Portal\Category\Portal.Category.ID.xaml,
 Portal.Category.FilmandTV,Film dan TV,,Portal\Category\Portal.Category.ID.xaml,

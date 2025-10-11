@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Pixel Art</system:String>
     <system:String x:Key="Portal.Category.Software">Software</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Vozidla</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Dílna</system:String>
     <system:String x:Key="Portal.Category.Animation">Animace</system:String>
     <system:String x:Key="Portal.Category.Education">Vzdělání</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film a Televize</system:String>

@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">ピクセルアート</system:String>
     <system:String x:Key="Portal.Category.Software">ソフトウェア</system:String>
     <system:String x:Key="Portal.Category.Vehicles">乗り物</system:String>
+    <system:String x:Key="Portal.Category.Workshop">ワークショップ</system:String>
     <system:String x:Key="Portal.Category.Animation">アニメーション</system:String>
     <system:String x:Key="Portal.Category.Education">教育</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">映画とテレビ</system:String>

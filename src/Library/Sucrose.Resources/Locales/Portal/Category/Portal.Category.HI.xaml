@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">पिक्सेल कला</system:String>
     <system:String x:Key="Portal.Category.Software">सॉफ्टवेयर</system:String>
     <system:String x:Key="Portal.Category.Vehicles">वाहन</system:String>
+    <system:String x:Key="Portal.Category.Workshop">कार्यशाला</system:String>
     <system:String x:Key="Portal.Category.Animation">एनिमेशन</system:String>
     <system:String x:Key="Portal.Category.Education">शिक्षा</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">फिल्म और टीवी</system:String>

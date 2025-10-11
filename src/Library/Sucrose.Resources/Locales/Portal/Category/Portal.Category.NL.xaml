@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Pixelkunst</system:String>
     <system:String x:Key="Portal.Category.Software">Software</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Voertuigen</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Werkplaats</system:String>
     <system:String x:Key="Portal.Category.Animation">Animatie</system:String>
     <system:String x:Key="Portal.Category.Education">Onderwijs</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film en TV</system:String>

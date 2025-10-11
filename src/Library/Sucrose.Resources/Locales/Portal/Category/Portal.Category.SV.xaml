@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Pixelkonst</system:String>
     <system:String x:Key="Portal.Category.Software">Programvara</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Fordon</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Verkstad</system:String>
     <system:String x:Key="Portal.Category.Animation">Animering</system:String>
     <system:String x:Key="Portal.Category.Education">Utbildning</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film och TV</system:String>

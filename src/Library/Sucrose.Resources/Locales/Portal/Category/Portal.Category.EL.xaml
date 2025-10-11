@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Εικονοστοιχική Τέχνη</system:String>
     <system:String x:Key="Portal.Category.Software">Λογισμικό</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Οχήματα</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Εργαστήριο</system:String>
     <system:String x:Key="Portal.Category.Animation">Κινούμενα Σχέδια</system:String>
     <system:String x:Key="Portal.Category.Education">Εκπαίδευση</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Ταινία και Τηλεόραση</system:String>

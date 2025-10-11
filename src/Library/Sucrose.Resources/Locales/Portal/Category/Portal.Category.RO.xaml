@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Artă Pixel</system:String>
     <system:String x:Key="Portal.Category.Software">Software</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Vehicule</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Atelier</system:String>
     <system:String x:Key="Portal.Category.Animation">Animație</system:String>
     <system:String x:Key="Portal.Category.Education">Educație</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film și TV</system:String>

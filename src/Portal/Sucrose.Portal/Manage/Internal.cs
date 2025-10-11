@@ -58,8 +58,9 @@ namespace Sucrose.Portal.Manage
             ["Anime"] = SymbolRegular.Filmstrip24,
             ["Halloween"] = SymbolRegular.Broom24, //SymbolRegular.Wand24
             ["Science"] = SymbolRegular.Syringe24,
-            ["Nature"] = SymbolRegular.EarthLeaf24,
             ["Music"] = SymbolRegular.MusicNote224,
+            ["Nature"] = SymbolRegular.EarthLeaf24,
+            ["Workshop"] = SymbolRegular.Toolbox24,
             ["Abstract"] = SymbolRegular.HandDraw24,
             ["Animals"] = SymbolRegular.AnimalCat24,
             ["Cute"] = SymbolRegular.AnimalRabbit24,

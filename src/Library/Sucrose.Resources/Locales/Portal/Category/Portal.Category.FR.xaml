@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Art Pixel</system:String>
     <system:String x:Key="Portal.Category.Software">Logiciel</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Véhicules</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Atelier</system:String>
     <system:String x:Key="Portal.Category.Animation">Animation</system:String>
     <system:String x:Key="Portal.Category.Education">Éducation</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film &amp; Télévision</system:String>

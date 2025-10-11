@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Пиксельное Искусство</system:String>
     <system:String x:Key="Portal.Category.Software">Программное Oбеспечение</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Транспорт</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Мастерская</system:String>
     <system:String x:Key="Portal.Category.Animation">Анимация</system:String>
     <system:String x:Key="Portal.Category.Education">Образование</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Фильм и ТВ</system:String>

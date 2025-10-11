@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Seni Piksel</system:String>
     <system:String x:Key="Portal.Category.Software">Perangkat Lunak</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Kendaraan</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Bengkel</system:String>
     <system:String x:Key="Portal.Category.Animation">Animasi</system:String>
     <system:String x:Key="Portal.Category.Education">Pendidikan</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film dan TV</system:String>

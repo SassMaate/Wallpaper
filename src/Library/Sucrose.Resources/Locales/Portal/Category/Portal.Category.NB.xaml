@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Pikselkunst</system:String>
     <system:String x:Key="Portal.Category.Software">Programvare</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Kjøretøy</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Verksted</system:String>
     <system:String x:Key="Portal.Category.Animation">Animasjon</system:String>
     <system:String x:Key="Portal.Category.Education">Utdanning</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film og TV</system:String>

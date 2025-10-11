@@ -41,6 +41,7 @@
     <system:String x:Key="Portal.Category.PixelArt">Piksel Sanatı</system:String>
     <system:String x:Key="Portal.Category.Software">Yazılım</system:String>
     <system:String x:Key="Portal.Category.Vehicles">Araçlar</system:String>
+    <system:String x:Key="Portal.Category.Workshop">Atölye</system:String>
     <system:String x:Key="Portal.Category.Animation">Animasyon</system:String>
     <system:String x:Key="Portal.Category.Education">Eğitim</system:String>
     <system:String x:Key="Portal.Category.FilmandTV">Film ve Dizi</system:String>
