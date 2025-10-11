@@ -8,9 +8,9 @@
         <AssemblyName>Sucrose.Live.CefSharp</AssemblyName>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);ENGINE;LIVE_CEFSHARP</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\CefSharp\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\CefSharp\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Live\CefSharp\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Live\CefSharp\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Live\CefSharp\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Live\CefSharp\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

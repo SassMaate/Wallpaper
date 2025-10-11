@@ -8,9 +8,9 @@
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);PORTAL</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Portal\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Portal\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Portal\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Portal\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Portal\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Portal\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

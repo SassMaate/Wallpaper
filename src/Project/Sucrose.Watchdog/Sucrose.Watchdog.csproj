@@ -8,9 +8,9 @@
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);WATCHDOG</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Watchdog\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Watchdog\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Watchdog\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Watchdog\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Watchdog\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Watchdog\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

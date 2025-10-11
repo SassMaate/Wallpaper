@@ -3,9 +3,9 @@
     <PropertyGroup>
         <OutputType>Library</OutputType>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\Mpv.NET\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\Mpv.NET\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\Mpv.NET\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Library\Mpv.NET\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Library\Mpv.NET\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Library\Mpv.NET\ARM64</OutputPath>
     </PropertyGroup>
 
 </Project>

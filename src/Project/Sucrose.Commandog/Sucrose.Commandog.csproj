@@ -8,9 +8,9 @@
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);COMMANDOG</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Commandog\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Commandog\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Commandog\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Commandog\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Commandog\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Commandog\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

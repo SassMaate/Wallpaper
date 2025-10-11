@@ -6,7 +6,7 @@
 
     <PropertyGroup Condition="'$(OutputType)' != 'Library'">
         <ThreadPoolMinThreads>10</ThreadPoolMinThreads>
-        <ThreadPoolMaxThreads>250</ThreadPoolMaxThreads>
+        <ThreadPoolMaxThreads>500</ThreadPoolMaxThreads>
         <UseWindowsThreadPool>true</UseWindowsThreadPool>
         <ServerGarbageCollection>true</ServerGarbageCollection>
         <RetainVMGarbageCollection>false</RetainVMGarbageCollection>
@@ -42,7 +42,7 @@
 
     <PropertyGroup Condition="'$(OutputType)' != 'Library'">
         <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>..\..\Sucrose\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
+        <DestinationDirectory>$(BaseOutputPath)\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
     </PropertyGroup>
 
     <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(OutputType)' != 'Library' AND '$(Configuration)' == 'Debug'">

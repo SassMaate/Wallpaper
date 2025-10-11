@@ -25,6 +25,11 @@
     </PropertyGroup>
 
     <PropertyGroup>
+        <BaseOutputPath>..\..\Sucrose</BaseOutputPath>
+        <BaseIntermediateOutputPath>$(BaseOutputPath)\Object\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <NuGetAudit>true</NuGetAudit>
         <NuGetAuditLevel>moderate</NuGetAuditLevel>
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>

@@ -8,9 +8,9 @@
         <RootNamespace>$(AssemblyName)</RootNamespace>
         <StartupObject>$(AssemblyName).App</StartupObject>
         <DefineConstants>$(DefineConstants);UPDATE</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Update\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Update\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Update\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Update\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Update\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Update\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

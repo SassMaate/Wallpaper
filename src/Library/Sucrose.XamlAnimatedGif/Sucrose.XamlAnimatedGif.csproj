@@ -3,9 +3,9 @@
     <PropertyGroup>
         <UseWPF>true</UseWPF>
         <OutputType>Library</OutputType>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Library\XamlAnimatedGif\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Library\XamlAnimatedGif\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Library\XamlAnimatedGif\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Library\XamlAnimatedGif\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Library\XamlAnimatedGif\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Library\XamlAnimatedGif\ARM64</OutputPath>
     </PropertyGroup>
 
 </Project>

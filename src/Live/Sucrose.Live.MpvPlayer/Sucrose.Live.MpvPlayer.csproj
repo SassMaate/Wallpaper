@@ -8,9 +8,9 @@
         <StartupObject>$(AssemblyName).App</StartupObject>
         <AssemblyName>Sucrose.Live.MpvPlayer</AssemblyName>
         <DefineConstants>$(DefineConstants);ENGINE;LIVE_MPVPLAYER</DefineConstants>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Live\MpvPlayer\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Live\MpvPlayer\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Live\MpvPlayer\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Live\MpvPlayer\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Live\MpvPlayer\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Live\MpvPlayer\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">
