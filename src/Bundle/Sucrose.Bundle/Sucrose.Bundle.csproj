@@ -8,9 +8,9 @@
         <AssemblyName>Sucrose.Bundle</AssemblyName>
         <RootNamespace>$(RootNamespace)</RootNamespace>
         <StartupObject>$(RootNamespace).App</StartupObject>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">..\..\Sucrose\Bundle\x86</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">..\..\Sucrose\Bundle\x64</OutputPath>
-        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">..\..\Sucrose\Bundle\ARM64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Bundle\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Bundle\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Bundle\ARM64</OutputPath>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -38,7 +38,7 @@
         <EmbeddedResource Include="Showcase\**">
             <LogicalName>Showcase\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
-        <EmbeddedResource Include="..\..\Sucrose\Package\Compressed\net9.0-windows\Sucrose-$(Platform).7z">
+        <EmbeddedResource Include="$(BaseOutputPath)\Package\Compressed\net9.0-windows\Sucrose-$(Platform).7z">
             <LogicalName>Packages\%(RecursiveDir)Sucrose%(Extension)</LogicalName>
         </EmbeddedResource>
     </ItemGroup>

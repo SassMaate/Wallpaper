@@ -39,16 +39,4 @@
             <TargetPath>$(AssemblyName).exe.config</TargetPath>
         </AppConfigWithTargetPath>
     </ItemGroup>
-
-    <PropertyGroup Condition="'$(OutputType)' != 'Library'">
-        <SourceDirectory>$(OutputPath)\$(TargetFramework)\win-$(Platform)</SourceDirectory>
-        <DestinationDirectory>$(BaseOutputPath)\Package\$(TargetFramework)\$(Platform)\$(AssemblyName)\</DestinationDirectory>
-    </PropertyGroup>
-
-    <Target Name="CopyFiles" BeforeTargets="Build" Condition="'$(OutputType)' != 'Library' AND '$(Configuration)' == 'Debug'">
-        <ItemGroup>
-            <FilesToCopy Include="$(SourceDirectory)\**\*.*" />
-        </ItemGroup>
-        <Copy SourceFiles="@(FilesToCopy)" DestinationFiles="@(FilesToCopy->'$(DestinationDirectory)%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-    </Target>
 </Project>
