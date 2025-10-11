@@ -621,7 +621,7 @@ namespace Sucrose.Update.View
                             DateTime StartTime = DateTime.Now;
                             int BytesRead;
 
-                            while ((BytesRead = await SUMI.ProgressStream.ReadAsync(Buffer)) > 0)
+                            while (SUMI.ProgressStream != null && (BytesRead = await SUMI.ProgressStream.ReadAsync(Buffer)) > 0)
                             {
                                 await FileStream.WriteAsync(Buffer.AsMemory(0, BytesRead));
 
@@ -767,7 +767,8 @@ namespace Sucrose.Update.View
 
                                     if (SUMI.ProgressStream != null)
                                     {
-                                        SUMI.ProgressStream?.Cancel();
+                                        //SUMI.ProgressStream?.Cancel();
+                                        SUMI.ProgressStream?.Dispose();
                                         SUMI.ProgressStream = null;
                                     }
 
@@ -853,12 +854,6 @@ namespace Sucrose.Update.View
         {
             await Application.Current.Dispatcher.InvokeAsync(async () =>
             {
-                if (SUMI.ProgressStream != null)
-                {
-                    SUMI.ProgressStream?.Cancel();
-                    SUMI.ProgressStream = null;
-                }
-
                 await StepSilent();
 
                 Count = 0;
@@ -920,12 +915,6 @@ namespace Sucrose.Update.View
         {
             await Application.Current.Dispatcher.InvokeAsync(async () =>
             {
-                if (SUMI.ProgressStream != null)
-                {
-                    SUMI.ProgressStream?.Cancel();
-                    SUMI.ProgressStream = null;
-                }
-
                 await StepSilent();
 
                 Count = 0;
