@@ -130,7 +130,7 @@ namespace Sucrose.Update.View
 
             await Task.Delay(MinDelay);
 
-            if (StepCache())
+            if (await StepCache())
             {
                 await Task.Delay(MinDelay);
 
@@ -138,23 +138,23 @@ namespace Sucrose.Update.View
                 {
                     await Task.Delay(MinDelay);
 
-                    if (StepReleases())
+                    if (await StepReleases())
                     {
                         await Task.Delay(MinDelay);
 
-                        if (StepRelease())
+                        if (await StepRelease())
                         {
                             await Task.Delay(MinDelay);
 
-                            if (StepComparing())
+                            if (await StepComparing())
                             {
                                 await Task.Delay(MinDelay);
 
-                                if (StepSearching())
+                                if (await StepSearching())
                                 {
                                     await Task.Delay(MinDelay);
 
-                                    if (AutoType != SSDEUAT.SemiSilent || StepSilent())
+                                    if (AutoType != SSDEUAT.SemiSilent || await StepSilent())
                                     {
                                         await Task.Delay(MinDelay);
 
@@ -186,7 +186,113 @@ namespace Sucrose.Update.View
             }
         }
 
-        private bool StepCache()
+        private async Task StepRunning()
+        {
+            try
+            {
+                Message.Text = SRER.GetValue("Update", "MessageText", "Running");
+
+                Ring.Visibility = Visibility.Hidden;
+                Message.Visibility = Visibility.Visible;
+                Progress.Visibility = Visibility.Hidden;
+
+                TaskBarProgress.SetState(this, TaskBarProgressState.None);
+
+                if (HasBundle)
+                {
+                    await Task.Delay(MinDelay);
+
+                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Executing");
+
+                    await Task.Delay(MinDelay);
+
+                    await Task.Run(() => SSSHP.Run(Bundle, SSDMMU.AutoType == SSDEUAT.CompleteSilent ? "/s" : string.Empty, ProcessWindowStyle.Normal, true));
+
+                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Executed");
+                }
+                else
+                {
+                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Not");
+                }
+            }
+            catch (Exception Exception)
+            {
+                Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
+            }
+
+            await Task.Delay(MaxDelay);
+
+            Ring.Visibility = Visibility.Hidden;
+            Message.Visibility = Visibility.Hidden;
+            Reload.Visibility = Visibility.Visible;
+            Progress.Visibility = Visibility.Hidden;
+        }
+
+        private async Task StepExtracting()
+        {
+            try
+            {
+                Message.Text = SRER.GetValue("Update", "MessageText", "Extracting");
+
+                Ring.Visibility = Visibility.Hidden;
+                Message.Visibility = Visibility.Visible;
+                Progress.Visibility = Visibility.Hidden;
+
+                TaskBarProgress.SetState(this, TaskBarProgressState.None);
+
+                if (HasBundle)
+                {
+                    if (await Task.Run(() => SSSZHZ.CheckArchive(Bundle)))
+                    {
+                        SSDECYT Result = await Task.Run(() => SSSZEZ.Extract(Bundle, SUMI.CachePath));
+
+                        if (Result == SSDECYT.Pass)
+                        {
+                            await Task.Delay(MinDelay);
+
+                            Bundle = SSSHE.Change(Bundle, SSCHU.GetDescription(SSCEUET.Executable));
+
+                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Executing");
+
+                            await Task.Delay(MinDelay);
+
+                            await Task.Run(() => SSSHP.Run(Bundle, SSDMMU.AutoType == SSDEUAT.CompleteSilent ? "/s" : string.Empty, ProcessWindowStyle.Normal, true));
+
+                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Executed");
+                        }
+                        else
+                        {
+                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Extract");
+                        }
+                    }
+                    else
+                    {
+                        Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Corrupt");
+                    }
+                }
+                else
+                {
+                    Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Not");
+                }
+            }
+            catch (Exception Exception)
+            {
+                Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
+            }
+
+            await Task.Delay(MaxDelay);
+
+            Ring.Visibility = Visibility.Hidden;
+            Message.Visibility = Visibility.Hidden;
+            Reload.Visibility = Visibility.Visible;
+            Progress.Visibility = Visibility.Hidden;
+        }
+
+        private async Task<bool> StepCache()
         {
             try
             {
@@ -208,15 +314,17 @@ namespace Sucrose.Update.View
 
                 return true;
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Temporary", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
         }
 
-        private bool StepSilent()
+        private async Task<bool> StepSilent()
         {
             try
             {
@@ -234,8 +342,10 @@ namespace Sucrose.Update.View
 
                 return true;
             }
-            catch
+            catch (Exception Exception)
             {
+                await SSWEW.Watch_CatchException(Exception);
+
                 return false;
             }
         }
@@ -287,15 +397,17 @@ namespace Sucrose.Update.View
                     return false;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Connection", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
         }
 
-        private bool StepRelease()
+        private async Task<bool> StepRelease()
         {
             try
             {
@@ -319,15 +431,17 @@ namespace Sucrose.Update.View
                     return true;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Filtering", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
         }
 
-        private bool StepReleases()
+        private async Task<bool> StepReleases()
         {
             try
             {
@@ -351,15 +465,17 @@ namespace Sucrose.Update.View
                     return false;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Listing", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
         }
 
-        private bool StepComparing()
+        private async Task<bool> StepComparing()
         {
             try
             {
@@ -383,15 +499,17 @@ namespace Sucrose.Update.View
                     return false;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Comparing", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
         }
 
-        private bool StepSearching()
+        private async Task<bool> StepSearching()
         {
             try
             {
@@ -454,114 +572,14 @@ namespace Sucrose.Update.View
                     return false;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Searching", "Error");
 
+                await SSWEW.Watch_CatchException(Exception);
+
                 return false;
             }
-        }
-
-        private async Task StepRunning()
-        {
-            try
-            {
-                Message.Text = SRER.GetValue("Update", "MessageText", "Running");
-
-                Ring.Visibility = Visibility.Hidden;
-                Message.Visibility = Visibility.Visible;
-                Progress.Visibility = Visibility.Hidden;
-
-                TaskBarProgress.SetState(this, TaskBarProgressState.None);
-
-                if (HasBundle)
-                {
-                    await Task.Delay(MinDelay);
-
-                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Executing");
-
-                    await Task.Delay(MinDelay);
-
-                    await Task.Run(() => SSSHP.Run(Bundle, SSDMMU.AutoType == SSDEUAT.CompleteSilent ? "/s" : string.Empty, ProcessWindowStyle.Normal, true));
-
-                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Executed");
-                }
-                else
-                {
-                    Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Not");
-                }
-            }
-            catch
-            {
-                Message.Text = SRER.GetValue("Update", "MessageText", "Running", "Error");
-            }
-
-            await Task.Delay(MaxDelay);
-
-            Ring.Visibility = Visibility.Hidden;
-            Message.Visibility = Visibility.Hidden;
-            Reload.Visibility = Visibility.Visible;
-            Progress.Visibility = Visibility.Hidden;
-        }
-
-        private async Task StepExtracting()
-        {
-            try
-            {
-                Message.Text = SRER.GetValue("Update", "MessageText", "Extracting");
-
-                Ring.Visibility = Visibility.Hidden;
-                Message.Visibility = Visibility.Visible;
-                Progress.Visibility = Visibility.Hidden;
-
-                TaskBarProgress.SetState(this, TaskBarProgressState.None);
-
-                if (HasBundle)
-                {
-                    if (await Task.Run(() => SSSZHZ.CheckArchive(Bundle)))
-                    {
-                        SSDECYT Result = await Task.Run(() => SSSZEZ.Extract(Bundle, SUMI.CachePath));
-
-                        if (Result == SSDECYT.Pass)
-                        {
-                            await Task.Delay(MinDelay);
-
-                            Bundle = SSSHE.Change(Bundle, SSCHU.GetDescription(SSCEUET.Executable));
-
-                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Executing");
-
-                            await Task.Delay(MinDelay);
-
-                            await Task.Run(() => SSSHP.Run(Bundle, SSDMMU.AutoType == SSDEUAT.CompleteSilent ? "/s" : string.Empty, ProcessWindowStyle.Normal, true));
-
-                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Executed");
-                        }
-                        else
-                        {
-                            Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Extract");
-                        }
-                    }
-                    else
-                    {
-                        Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Corrupt");
-                    }
-                }
-                else
-                {
-                    Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Not");
-                }
-            }
-            catch
-            {
-                Message.Text = SRER.GetValue("Update", "MessageText", "Extracting", "Error");
-            }
-
-            await Task.Delay(MaxDelay);
-
-            Ring.Visibility = Visibility.Hidden;
-            Message.Visibility = Visibility.Hidden;
-            Reload.Visibility = Visibility.Visible;
-            Progress.Visibility = Visibility.Hidden;
         }
 
         private async Task<bool> StepDownloading()
@@ -647,9 +665,11 @@ namespace Sucrose.Update.View
                         return true;
                 }
             }
-            catch
+            catch (Exception Exception)
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Downloading", "Error");
+
+                await SSWEW.Watch_CatchException(Exception);
 
                 return false;
             }
@@ -748,11 +768,14 @@ namespace Sucrose.Update.View
                                     if (SUMI.ProgressStream != null)
                                     {
                                         SUMI.ProgressStream?.Cancel();
+                                        SUMI.ProgressStream = null;
                                     }
 
                                     if (SUMI.DownloadService != null)
                                     {
                                         await SUMI.DownloadService?.CancelTaskAsync();
+                                        await SUMI.DownloadService.DisposeAsync();
+                                        SUMI.DownloadService = null;
                                     }
                                 }
                             }
@@ -830,7 +853,13 @@ namespace Sucrose.Update.View
         {
             await Application.Current.Dispatcher.InvokeAsync(async () =>
             {
-                StepSilent();
+                if (SUMI.ProgressStream != null)
+                {
+                    SUMI.ProgressStream?.Cancel();
+                    SUMI.ProgressStream = null;
+                }
+
+                await StepSilent();
 
                 Count = 0;
                 Value = 0;
@@ -838,6 +867,8 @@ namespace Sucrose.Update.View
                 HasBundle = false;
 
                 SUMI.Trying = true;
+
+                await SSWEW.Watch_CatchException(e);
 
                 Message.Text = SRER.GetValue("Update", "MessageText", "Downloading", "Complete", "Error");
 
@@ -889,7 +920,13 @@ namespace Sucrose.Update.View
         {
             await Application.Current.Dispatcher.InvokeAsync(async () =>
             {
-                StepSilent();
+                if (SUMI.ProgressStream != null)
+                {
+                    SUMI.ProgressStream?.Cancel();
+                    SUMI.ProgressStream = null;
+                }
+
+                await StepSilent();
 
                 Count = 0;
                 Value = 0;
@@ -976,9 +1013,18 @@ namespace Sucrose.Update.View
         {
             await Application.Current.Dispatcher.InvokeAsync(async () =>
             {
+                if (SUMI.DownloadService != null)
+                {
+                    await SUMI.DownloadService?.CancelTaskAsync();
+
+                    await SUMI.DownloadService.DisposeAsync();
+
+                    SUMI.DownloadService = null;
+                }
+
                 if (e.Error != null || e.Cancelled)
                 {
-                    StepSilent();
+                    await StepSilent();
 
                     Count = 0;
                     Value = 0;
@@ -986,6 +1032,11 @@ namespace Sucrose.Update.View
                     HasBundle = false;
 
                     SUMI.Trying = true;
+
+                    if (e.Error != null)
+                    {
+                        await SSWEW.Watch_CatchException(e.Error);
+                    }
 
                     if (e.Cancelled)
                     {
