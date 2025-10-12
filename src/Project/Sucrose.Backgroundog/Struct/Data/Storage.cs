@@ -1,7 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Runtime.InteropServices;
-using SSSSS = Skylark.Struct.Storage.StorageStruct;
-using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -19,5 +17,13 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public JArray Drivers;
+        /// <summary>
+        /// 
+        /// </summary>
+        public JArray LogicalDrivers;
+        /// <summary>
+        /// 
+        /// </summary>
+        public JArray PhysicalDrivers;
     }
 }

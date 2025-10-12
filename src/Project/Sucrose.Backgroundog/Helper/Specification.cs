@@ -13,8 +13,9 @@ using SBEUV = Sucrose.Backgroundog.Extension.UpdateVisitor;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
 using SBSCS = Sucrose.Backgroundog.Struct.ChildSensor;
-using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
+using SBSDS = Sucrose.Backgroundog.Struct.DriverSensor;
 using SBSS = Sucrose.Backgroundog.Struct.Sensor;
+using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
 using SEST = Skylark.Enum.StorageType;
@@ -38,6 +39,7 @@ using SSMMS = Skylark.Struct.Monitor.MonitorStruct;
 using SSSHM = Sucrose.Shared.Space.Helper.Management;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
+using SSSSS = Skylark.Struct.Storage.StorageStruct;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using STMI = Sucrose.Transmission.Manage.Internal;
 using SWHFS = Skylark.Wing.Helper.FullScreen;
@@ -446,6 +448,133 @@ namespace Sucrose.Backgroundog.Helper
                         catch (Exception Exception)
                         {
                             SBMI.StorageManagement = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
+                if (SBMI.StorageManagement2)
+                {
+                    SBMI.StorageManagement2 = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            if (SBMI.LogicalCounter == null)
+                            {
+                                SBMI.LogicalCounter = new("LogicalDisk");
+                            }
+                            else
+                            {
+                                List<SBSDS> Sensors = new();
+
+                                _ = Task.Run(async () =>
+                                {
+                                    try
+                                    {
+                                        string[] Instances = SBMI.LogicalCounter.GetInstanceNames();
+
+                                        foreach (string Instance in Instances)
+                                        {
+                                            PerformanceCounter ReadCounter = new("LogicalDisk", "Disk Read Bytes/sec", Instance, true);
+                                            PerformanceCounter WriteCounter = new("LogicalDisk", "Disk Write Bytes/sec", Instance, true);
+
+                                            float Read = ReadCounter.NextValue();
+                                            float Write = WriteCounter.NextValue();
+
+                                            await Task.Delay(1000);
+
+                                            Read = ReadCounter.NextValue();
+                                            Write = WriteCounter.NextValue();
+
+                                            SSSSS ReadData = SSESSE.AutoConvert(Read, SEST.Byte, SEMST.Palila);
+                                            SSSSS WriteData = SSESSE.AutoConvert(Write, SEST.Byte, SEMST.Palila);
+
+                                            Sensors.Add(new SBSDS
+                                            {
+                                                Read = Read,
+                                                Write = Write,
+                                                Name = Instance,
+                                                ReadData = ReadData,
+                                                WriteData = WriteData,
+                                                FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
+                                                FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
+                                            });
+
+                                            ReadCounter.Dispose();
+                                            WriteCounter.Dispose();
+                                        }
+                                    }
+                                    catch { }
+                                });
+
+                                string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
+
+                                SBMI.StorageData.LogicalDrivers = JArray.Parse(Result);
+                            }
+
+
+                            if (SBMI.PhysicalCounter == null)
+                            {
+                                SBMI.PhysicalCounter = new("PhysicalDisk");
+                            }
+                            else
+                            {
+                                List<SBSDS> Sensors = new();
+
+                                _ = Task.Run(async () =>
+                                {
+                                    try
+                                    {
+                                        string[] Instances = SBMI.PhysicalCounter.GetInstanceNames();
+
+                                        foreach (string Instance in Instances)
+                                        {
+                                            PerformanceCounter ReadCounter = new("PhysicalDisk", "Disk Read Bytes/sec", Instance, true);
+                                            PerformanceCounter WriteCounter = new("PhysicalDisk", "Disk Write Bytes/sec", Instance, true);
+
+                                            float Read = ReadCounter.NextValue();
+                                            float Write = WriteCounter.NextValue();
+
+                                            await Task.Delay(1000);
+
+                                            Read = ReadCounter.NextValue();
+                                            Write = WriteCounter.NextValue();
+
+                                            SSSSS ReadData = SSESSE.AutoConvert(Read, SEST.Byte, SEMST.Palila);
+                                            SSSSS WriteData = SSESSE.AutoConvert(Write, SEST.Byte, SEMST.Palila);
+
+                                            Sensors.Add(new SBSDS
+                                            {
+                                                Read = Read,
+                                                Write = Write,
+                                                Name = Instance,
+                                                ReadData = ReadData,
+                                                WriteData = WriteData,
+                                                FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
+                                                FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
+                                            });
+
+                                            ReadCounter.Dispose();
+                                            WriteCounter.Dispose();
+                                        }
+                                    }
+                                    catch { }
+                                });
+
+                                string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
+
+                                SBMI.StorageData.PhysicalDrivers = JArray.Parse(Result);
+                            }
+
+                            await Task.Delay(SBMI.SpecificationLessTime);
+
+                            SBMI.StorageManagement2 = true;
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.StorageManagement2 = true;
                             await SSWEW.Watch_CatchException(Exception);
                         }
                     });

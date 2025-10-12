@@ -13,7 +13,6 @@ using SBSDMD = Sucrose.Backgroundog.Struct.Data.Motherboard;
 using SBSDMY = Sucrose.Backgroundog.Struct.Data.Memory;
 using SBSDN = Sucrose.Backgroundog.Struct.Data.Network;
 using SBSDP = Sucrose.Backgroundog.Struct.Data.Processor;
-using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 using SBSDS = Sucrose.Backgroundog.Struct.Data.Storage;
 using SEEST = Skylark.Enum.EnergySaverType;
 using SEPPT = Skylark.Enum.PowerPlanType;
@@ -106,6 +105,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static string PingHost = string.Empty;
 
+        public static bool StorageManagement2 = true;
+
         public static bool EqualizerManagement = true;
 
         public static bool ProcessorManagement = true;
@@ -153,6 +154,10 @@ namespace Sucrose.Backgroundog.Manage
         public static int SpecificationMaxTime = InitializeTime * 30;
 
         public static int SpecificationLessTime = InitializeTime * 10;
+
+        public static PerformanceCounterCategory LogicalCounter = null;
+
+        public static PerformanceCounterCategory PhysicalCounter = null;
 
         public static string[] GraphicInterfaces = Array.Empty<string>();
 
@@ -273,7 +278,9 @@ namespace Sucrose.Backgroundog.Manage
         public static SBSDS StorageData = new()
         {
             State = false,
-            Drivers = new()
+            Drivers = new(),
+            LogicalDrivers = new(),
+            PhysicalDrivers = new()
         };
 
         public static SBSDBY BatteryData = new()

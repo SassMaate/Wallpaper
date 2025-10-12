@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
-using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 
 namespace Sucrose.Backgroundog.Extension
 {
@@ -189,7 +188,9 @@ namespace Sucrose.Backgroundog.Extension
             return new JObject
             {
                 { "State", SBMI.StorageData.State },
-                { "Drivers", SBMI.StorageData.Drivers }
+                { "Drivers", SBMI.StorageData.Drivers },
+                { "LogicalDrivers", SBMI.StorageData.LogicalDrivers },
+                { "PhysicalDrivers", SBMI.StorageData.PhysicalDrivers }
             };
         }
 

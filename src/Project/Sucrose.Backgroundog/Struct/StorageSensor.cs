@@ -1,5 +1,4 @@
 ﻿using System.Runtime.InteropServices;
-using SSSSS = Skylark.Struct.Storage.StorageStruct;
 
 namespace Sucrose.Backgroundog.Struct
 {
