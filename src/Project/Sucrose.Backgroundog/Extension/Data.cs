@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
+using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 
 namespace Sucrose.Backgroundog.Extension
 {
@@ -187,7 +188,26 @@ namespace Sucrose.Backgroundog.Extension
         {
             return new JObject
             {
-                { "State", SBMI.StorageData.State }
+                { "State", SBMI.StorageData.State },
+                {
+                    "Drivers", new JObject
+                    {
+                        { "Size", SBMI.StorageData.Drivers.Size },
+                        { "Name", SBMI.StorageData.Drivers.Name },
+                        { "Caption", SBMI.StorageData.Drivers.Caption },
+                        { "DriveType", SBMI.StorageData.Drivers.DriveType },
+                        { "MediaType", SBMI.StorageData.Drivers.MediaType },
+                        { "Compressed", SBMI.StorageData.Drivers.Compressed },
+                        { "FreeSpace", SBMI.StorageData.Drivers.FreeSpace },
+                        { "FileSystem", SBMI.StorageData.Drivers.FileSystem },
+                        { "VolumeName", SBMI.StorageData.Drivers.VolumeName },
+                        { "Description", SBMI.StorageData.Drivers.Description },
+                        { "SupportsDiskQuotas", SBMI.StorageData.Drivers.SupportsDiskQuotas },
+                        { "VolumeSerialNumber", SBMI.StorageData.Drivers.VolumeSerialNumber },
+                        { "MaximumComponentLength", SBMI.StorageData.Drivers.MaximumComponentLength },
+                        { "SupportsFileBasedCompression", SBMI.StorageData.Drivers.SupportsFileBasedCompression }
+                    }
+                }
             };
         }
 

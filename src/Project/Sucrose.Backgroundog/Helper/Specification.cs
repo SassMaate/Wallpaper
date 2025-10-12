@@ -13,6 +13,7 @@ using SBEUV = Sucrose.Backgroundog.Extension.UpdateVisitor;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
 using SBSCS = Sucrose.Backgroundog.Struct.ChildSensor;
+using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 using SBSS = Sucrose.Backgroundog.Struct.Sensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;

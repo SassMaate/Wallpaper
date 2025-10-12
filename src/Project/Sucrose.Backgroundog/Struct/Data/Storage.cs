@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System.Runtime.InteropServices;
 using SSSSS = Skylark.Struct.Storage.StorageStruct;
+using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -17,10 +18,6 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public JArray Amd;
-        /// <summary>
-        /// 
-        /// </summary>
-        public SSSSS UploadData;
+        public SBSSS Drivers;
     }
 }
