@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.2",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.3",
   "Title": "Spirit Tree",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -11,5 +11,27 @@
   "Type": 4,
   "Source": "https://www.youtube.com/watch?v=DtE5Y5VGkjU",
   "Tags": null,
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Geistbaum",
+      "Description": "Eine ruhige 12-stündige Kirschblüten-Schleifen-Szene in 4K. Genieße sie! Spiele sie im Hintergrund, während du entspannst, lernst, meditierst oder schläfst."
+    },
+    "ES": {
+      "Title": "Árbol Espíritu",
+      "Description": "Una escena de bucle de flor de cerezo tranquila de 12 horas, en 4K. ¡Disfrútala! Reprodúcela en segundo plano mientras te relajas, estudias, meditas o duermes."
+    },
+    "FR": {
+      "Title": "Arbre Esprit",
+      "Description": "Une scène de boucle de fleurs de cerisier tranquille de 12 heures, en 4K. Profitez-en ! Jouez-la en arrière-plan pendant que vous vous détendez, étudiez, méditez ou dormez."
+    },
+    "PL": {
+      "Title": "Drzewo Ducha",
+      "Description": "Spokojna, 12-godzinna scena pętli kwitnącej wiśni w 4K. Ciesz się nią! Odtwarzaj ją w tle podczas relaksu, nauki, medytacji lub snu."
+    },
+    "TR": {
+      "Title": "Ruh Ağacı",
+      "Description": "Sakin bir 12 saatlik kiraz çiçeği döngüsü sahnesi, 4K çözünürlükte, keyfini çıkar! Rahatlayın, çalışın, meditasyon yapın veya uyurken arka planda oynatın."
+    }
+  }
 }

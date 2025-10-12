@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.4",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.5",
   "Title": "Particulate Medusae",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -14,5 +14,27 @@
     "Ocean",
     "Sea"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Partikuläre Quallen",
+      "Description": "Simulation von Weichkörper-Quallen. Erstellt mit Particulate.js und Three.js"
+    },
+    "ES": {
+      "Title": "Medusas Particuladas",
+      "Description": "Simulación de medusas de cuerpo blando. Construido con Particulate.js y Three.js"
+    },
+    "FR": {
+      "Title": "Méduse Particulaire",
+      "Description": "Simulation de méduses à corps mou. Construit avec Particulate.js et Three.js"
+    },
+    "PL": {
+      "Title": "Cząsteczkowe Meduzy",
+      "Description": "Symulacja meduz o miękkim ciele. Zbudowane przy użyciu Particulate.js i Three.js"
+    },
+    "TR": {
+      "Title": "Parçacıklı Denizanası",
+      "Description": "Yumuşak gövdeli denizanası simülasyonu. Particulate.js ve Three.js ile yapılmıştır"
+    }
+  }
 }

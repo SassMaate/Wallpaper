@@ -1,10 +1,10 @@
 {
-  "AppVersion": "25.10.8.0",
-  "Version": "1.0.0.5",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.6",
   "Title": "Simple System",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
-  "Description": "Minimal wallpaper that shows hardware readings in graph",
+  "Description": "Minimal wallpaper that shows hardware readings in graph.",
   "Author": "Dani John",
   "License": "License.txt",
   "Contact": "https://github.com/rocksdanister",
@@ -15,5 +15,27 @@
     "Graphic",
     "Chart"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Einfaches System",
+      "Description": "Minimalistisches Hintergrundbild, das Hardwarewerte als Diagramm anzeigt."
+    },
+    "ES": {
+      "Title": "Sistema Simple",
+      "Description": "Fondo de pantalla minimalista que muestra lecturas de hardware en gráfico."
+    },
+    "FR": {
+      "Title": "Système Simple",
+      "Description": "Fond d'écran minimaliste qui affiche les mesures matérielles sous forme de graphique."
+    },
+    "PL": {
+      "Title": "Prosty System",
+      "Description": "Minimalistyczna tapeta pokazująca odczyty sprzętowe na wykresie."
+    },
+    "TR": {
+      "Title": "Basit Sistem",
+      "Description": "Donanım okumalarını grafik olarak gösteren minimalist duvar kağıdı."
+    }
+  }
 }

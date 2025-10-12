@@ -1,10 +1,10 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.7",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.8",
   "Title": "Alve's Town",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
-  "Description": "Alve's Town: Pixelart city view with realtime day-night cycle",
+  "Description": "Alve's Town: Pixelart city view with realtime day-night cycle.",
   "Author": "Gabrz",
   "License": null,
   "Contact": "https://github.com/gabrz",
@@ -14,5 +14,27 @@
     "Weather",
     "Clock"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Alves Stadt",
+      "Description": "Alves Stadt: Pixelart-Stadtansicht mit Echtzeit-Tag-Nacht-Zyklus."
+    },
+    "ES": {
+      "Title": "La Ciudad de Alve",
+      "Description": "La Ciudad de Alve: Vista de ciudad en pixel art con ciclo día-noche en tiempo real."
+    },
+    "FR": {
+      "Title": "La Ville d'Alve",
+      "Description": "La Ville d'Alve : Vue de ville en pixel art avec cycle jour-nuit en temps réel."
+    },
+    "PL": {
+      "Title": "Miasto Alve",
+      "Description": "Miasto Alve: Widok miasta w stylu pixelart z rzeczywistym cyklem dnia i nocy."
+    },
+    "TR": {
+      "Title": "Alve'nin Kasabası",
+      "Description": "Alve'nin Kasabası: Gerçek zamanlı gün-gece döngüsüne sahip piksel sanat şehir manzarası."
+    }
+  }
 }

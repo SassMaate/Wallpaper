@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.6",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.7",
   "Title": "Bing Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -11,5 +11,27 @@
   "Type": 2,
   "Source": "Bing.html",
   "Tags": null,
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Bing Hintergrundbild",
+      "Description": "Du kannst es nutzen, um jeden Tag mit einem schönen Hintergrundbild zu begrüßen. In diesem Thema kannst du Bing's tägliches Hintergrundbild sehen."
+    },
+    "ES": {
+      "Title": "Fondo de Bing",
+      "Description": "Puedes usarlo para saludar cada día con un hermoso fondo. En este tema, puedes ver el fondo diario de Bing."
+    },
+    "FR": {
+      "Title": "Fond d'écran Bing",
+      "Description": "Vous pouvez l'utiliser pour commencer chaque journée avec un beau fond d'écran. Dans ce thème, vous pouvez voir le fond d'écran quotidien de Bing."
+    },
+    "PL": {
+      "Title": "Tapeta Bing",
+      "Description": "Możesz jej używać, aby każdego dnia witać się z piękną tapetą. W tym motywie możesz zobaczyć codzienną tapetę Bing."
+    },
+    "TR": {
+      "Title": "Bing Duvar Kağıdı",
+      "Description": "Bunu her günü güzel bir duvar kağıdı ile karşılamak için kullanabilirsin. Bu temada Bing'in günlük duvar kağıdını görüntüleyebilirsin."
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.5",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.6",
   "Title": "Ray Music Visualizer",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -17,5 +17,27 @@
     "Time",
     "Wave"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Ray Musik-Visualizer",
+      "Description": "Audienspektrum, das auf Systemklänge reagiert."
+    },
+    "ES": {
+      "Title": "Ray Visualizador de Música",
+      "Description": "Espectro de audio que reacciona al sonido del sistema."
+    },
+    "FR": {
+      "Title": "Ray Visualiseur Musical",
+      "Description": "Spectre audio qui réagit au son du système."
+    },
+    "PL": {
+      "Title": "Ray Wizualizator Muzyki",
+      "Description": "Spektrum audio reagujące na dźwięki systemu."
+    },
+    "TR": {
+      "Title": "Ray Müzik Görselleştirici",
+      "Description": "Sistem sesi ile tepki veren ses spektrumu."
+    }
+  }
 }

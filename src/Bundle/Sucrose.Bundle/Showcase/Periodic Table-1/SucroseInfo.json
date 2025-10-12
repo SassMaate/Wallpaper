@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.4",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.5",
   "Title": "Periodic Table",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,5 +13,27 @@
   "Tags": [
     "Chemical"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Periodensystem",
+      "Description": "Interaktive Periodentabelle der Elemente."
+    },
+    "ES": {
+      "Title": "Tabla Periódica",
+      "Description": "Tabla periódica interactiva de los elementos."
+    },
+    "FR": {
+      "Title": "Tableau Périodique",
+      "Description": "Tableau périodique interactif des éléments."
+    },
+    "PL": {
+      "Title": "Układ Okresowy",
+      "Description": "Interaktywna tabela okresowa pierwiastków."
+    },
+    "TR": {
+      "Title": "Periyodik Tablo",
+      "Description": "Etkileşimli elementler periyodik tablosu."
+    }
+  }
 }

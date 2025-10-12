@@ -1,19 +1,42 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "7.3.0.9",
+  "AppVersion": "25.10.12.0",
+  "Version": "7.3.0.10",
   "Title": "Neo Matrix",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
-  "Description": "This is a highly customizable animated Matrix wallpaper",
+  "Description": "This is a highly customizable animated Matrix wallpaper.",
   "Author": "Mohammad Mahdi Nazari",
   "License": "License.txt",
   "Contact": "https://github.com/IPdotSetAF",
   "Type": 2,
   "Source": "Matrix.html",
   "Tags": [
+    "Science Fiction",
     "Hacker",
     "Sci-Fi",
     "Music"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Neo-Matrix",
+      "Description": "Dies ist ein hochgradig anpassbares animiertes Matrix-Wallpaper."
+    },
+    "ES": {
+      "Title": "Neo Matrix",
+      "Description": "Este es un fondo de pantalla de Matrix animado y altamente personalizable."
+    },
+    "FR": {
+      "Title": "Neo Matrix",
+      "Description": "Ceci est un fond d'écran Matrix animé et hautement personnalisable."
+    },
+    "PL": {
+      "Title": "Neo Matrix",
+      "Description": "To wysoce konfigurowalna animowana tapeta Matrix."
+    },
+    "TR": {
+      "Title": "Neo Matrix",
+      "Description": "Bu, yüksek derecede özelleştirilebilir animasyonlu Matrix duvar kağıdıdır."
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.3",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.4",
   "Title": "Neomorphic Music Player",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,5 +13,27 @@
   "Tags": [
     "Media"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Neomorpher Musikplayer",
+      "Description": "Neomorpher Musikplayer"
+    },
+    "ES": {
+      "Title": "Reproductor de Música Neomórfico",
+      "Description": "Reproductor de Música Neomórfico"
+    },
+    "FR": {
+      "Title": "Lecteur de musique néomorphique",
+      "Description": "Lecteur de musique néomorphique"
+    },
+    "PL": {
+      "Title": "Neomorficzny Odtwarzacz Muzyki",
+      "Description": "Neomorficzny Odtwarzacz Muzyki"
+    },
+    "TR": {
+      "Title": "Neomorfik Müzik Çalar",
+      "Description": "Neomorfik Müzik Çalar"
+    }
+  }
 }

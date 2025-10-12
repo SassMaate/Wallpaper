@@ -1,10 +1,10 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.5",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.6",
   "Title": "Music Tunnel",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
-  "Description": "Mesmerizing infinite music tunnel",
+  "Description": "Mesmerizing infinite music tunnel.",
   "Author": "Dani John",
   "License": "License.txt",
   "Contact": "https://github.com/rocksdanister",
@@ -13,5 +13,27 @@
   "Tags": [
     "Worm"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Musiktunnel",
+      "Description": "Faszinierender unendlicher Musiktunnel."
+    },
+    "ES": {
+      "Title": "Túnel Musical",
+      "Description": "Hipnotizante túnel musical infinito."
+    },
+    "FR": {
+      "Title": "Tunnel Musical",
+      "Description": "Tunnel musical infini et envoûtant."
+    },
+    "PL": {
+      "Title": "Tunel Muzyczny",
+      "Description": "Hipnotyzujący, nieskończony tunel muzyczny."
+    },
+    "TR": {
+      "Title": "Müzik Tüneli",
+      "Description": "Büyüleyici sonsuz müzik tüneli."
+    }
+  }
 }

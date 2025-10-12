@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.5",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.6",
   "Title": "Sliding Clock Black & White",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -14,5 +14,27 @@
     "Abstract",
     "Date"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Schiebende Uhr Schwarz & Weiß",
+      "Description": "Das Sliding Clock Wallpaper bietet ein minimalistisches Design zur Zeiterfassung. Wähle zwischen schwarzen oder weißen Stilen, bei denen die Zahlen sanft gleiten, und füge deinem Arbeitsplatz einen modernen, künstlerischen Touch hinzu. Funktional und visuell beruhigend."
+    },
+    "ES": {
+      "Title": "Reloj Deslizante Blanco y Negro",
+      "Description": "El fondo de pantalla Sliding Clock ofrece un diseño minimalista para controlar el tiempo. Elige entre estilos negro o blanco, con números que se deslizan suavemente, agregando un toque moderno y artístico a tu espacio de trabajo. Es funcional y visualmente relajante."
+    },
+    "FR": {
+      "Title": "Horloge Coulissante Noir & Blanc",
+      "Description": "Le fond d'écran Sliding Clock propose un design minimaliste pour suivre le temps. Choisissez entre des styles noir ou blanc, avec des chiffres qui glissent doucement, ajoutant une touche moderne et artistique à votre espace de travail. À la fois fonctionnel et visuellement apaisant."
+    },
+    "PL": {
+      "Title": "Przesuwający Zegar Czarno-Biały",
+      "Description": "Tapeta Sliding Clock oferuje minimalistyczny design do śledzenia czasu. Wybierz między czarnym a białym stylem, gdzie cyfry płynnie przesuwają się, dodając nowoczesny, artystyczny akcent do twojego miejsca pracy. Funkcjonalne i wizualnie uspokajające."
+    },
+    "TR": {
+      "Title": "Kaydırmalı Saat Siyah & Beyaz",
+      "Description": "Sliding Clock duvar kağıdı, zamanı takip etmek için minimalist bir tasarım sunar. Siyah veya beyaz stiller arasında seçim yapabilir, sayılar pürüzsüz kayarken çalışma alanınıza modern ve sanatsal bir dokunuş ekleyebilirsiniz. Hem işlevsel hem de görsel olarak rahatlatıcıdır."
+    }
+  }
 }

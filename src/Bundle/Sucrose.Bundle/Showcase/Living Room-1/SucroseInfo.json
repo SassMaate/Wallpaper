@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.4",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.5",
   "Title": "Living Room",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,5 +13,27 @@
   "Tags": [
     "Clock"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Wohnzimmer",
+      "Description": "Ein Wohnzimmer mit Musik, Visualizer und mehr!"
+    },
+    "ES": {
+      "Title": "Sala de estar",
+      "Description": "¡Una sala de estar con música, visualizador y más!"
+    },
+    "FR": {
+      "Title": "Salon",
+      "Description": "Un salon avec musique, visualiseur et plus encore !"
+    },
+    "PL": {
+      "Title": "Salon",
+      "Description": "Salon z muzyką, wizualizerem i nie tylko!"
+    },
+    "TR": {
+      "Title": "Oturma Odası",
+      "Description": "Müzik, görselleştirici ve daha fazlasıyla bir oturma odası!"
+    }
+  }
 }

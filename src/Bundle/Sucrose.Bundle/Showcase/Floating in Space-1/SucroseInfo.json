@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.4",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.5",
   "Title": "Floating in Space",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -11,5 +11,27 @@
   "Type": 4,
   "Source": "https://www.youtube.com/watch?v=znNllvBt_Jg",
   "Tags": null,
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Im Weltraum schweben",
+      "Description": "Im Weltraum schweben - 12 Stunden - 4K Ultra HD 60FPS"
+    },
+    "ES": {
+      "Title": "Flotando en el espacio",
+      "Description": "Flotando en el espacio - 12 horas - 4K Ultra HD 60FPS"
+    },
+    "FR": {
+      "Title": "Flottant dans l'espace",
+      "Description": "Flottant dans l'espace - 12 heures - 4K Ultra HD 60FPS"
+    },
+    "PL": {
+      "Title": "Unosząc się w kosmosie",
+      "Description": "Unosząc się w kosmosie - 12 godzin - 4K Ultra HD 60FPS"
+    },
+    "TR": {
+      "Title": "Uzayda Süzülmek",
+      "Description": "Uzayda Süzülmek - 12 Saat - 4K Ultra HD 60FPS"
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.2",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.3",
   "Title": "Sky Series",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,5 +15,27 @@
     "Date",
     "Time"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Himmel-Serie",
+      "Description": "Treibe durch die friedliche „Himmel-Serie“, in der eine realistische Uhr mit den wechselnden Farben des Himmels von Tag zu Nacht synchronisiert. Sterne funkeln, während die Wolken des Sonnenuntergangs in die Dämmerung übergehen und eine friedliche Atmosphäre auf deinem Bildschirm schaffen."
+    },
+    "ES": {
+      "Title": "Serie del Cielo",
+      "Description": "Deslízate por la tranquila 'Serie del Cielo', donde un reloj realista se sincroniza con los tonos cambiantes del cielo del día a la noche. Las estrellas parpadean mientras las nubes del atardecer se desvanecen en el crepúsculo, creando un refugio pacífico en tu pantalla."
+    },
+    "FR": {
+      "Title": "Série Céleste",
+      "Description": "Laissez-vous dériver dans la paisible 'Série Céleste', où une horloge réaliste se synchronise avec les teintes changeantes du ciel du jour à la nuit. Les étoiles scintillent tandis que les nuages du coucher du soleil s'effacent dans le crépuscule, créant un havre de paix sur votre écran."
+    },
+    "PL": {
+      "Title": "Seria Niebo",
+      "Description": "Unos się przez spokojną 'Serię Niebo', w której realistyczny zegar synchronizuje się ze zmieniającymi się barwami nieba od dnia do nocy. Gwiazdy migoczą, gdy chmury zachodu słońca znikają w zmierzchu, tworząc spokojne schronienie na ekranie."
+    },
+    "TR": {
+      "Title": "Gökyüzü Serisi",
+      "Description": "Gerçekçi bir saatin gün boyu gökyüzünün değişen tonlarıyla senkronize olduğu huzurlu 'Gökyüzü Serisi'nde süzülün. Güneş batarken bulutlar alaca karanlığa karışırken yıldızlar parıldar, ekranınızda huzurlu bir atmosfer oluşturur."
+    }
+  }
 }

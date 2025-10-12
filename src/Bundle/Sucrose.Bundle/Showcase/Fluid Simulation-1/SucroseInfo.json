@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.6",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.7",
   "Title": "Fluid Simulation",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,5 +13,27 @@
   "Tags": [
     "Interaction"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Flüssigkeitssimulation",
+      "Description": "Flüssigkeitssimulation mit WebGL, reagiert auf Systemaudio und Mauszeiger."
+    },
+    "ES": {
+      "Title": "Simulación de Fluido",
+      "Description": "Simulación de fluidos usando WebGL, reacciona al audio del sistema y al cursor."
+    },
+    "FR": {
+      "Title": "Simulation de Fluide",
+      "Description": "Simulation de fluides avec WebGL, réagit à l'audio du système et au curseur."
+    },
+    "PL": {
+      "Title": "Symulacja Cieczy",
+      "Description": "Symulacja cieczy przy użyciu WebGL, reaguje na dźwięk systemowy i kursor."
+    },
+    "TR": {
+      "Title": "Sıvı Simülasyonu",
+      "Description": "WebGL kullanarak sıvı simülasyonu, sistem sesi ve imleç ile etkileşir."
+    }
+  }
 }

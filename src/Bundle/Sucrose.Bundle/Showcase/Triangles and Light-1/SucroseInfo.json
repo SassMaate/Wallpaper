@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.9.19.0",
-  "Version": "1.0.0.2",
+  "AppVersion": "25.10.12.0",
+  "Version": "1.0.0.3",
   "Title": "Triangles and Light",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,5 +13,27 @@
   "Tags": [
     "Interactive"
   ],
-  "Arguments": null
+  "Arguments": null,
+  "Localization": {
+    "DE": {
+      "Title": "Dreiecke und Licht",
+      "Description": "Dreiecksmuster-Generator mit Licht, das dem Cursor folgt."
+    },
+    "ES": {
+      "Title": "Triángulos y Luz",
+      "Description": "Generador de patrones de triángulos con luz que sigue el cursor."
+    },
+    "FR": {
+      "Title": "Triangles et Lumière",
+      "Description": "Générateur de motifs triangulaires avec lumière suivant le curseur."
+    },
+    "PL": {
+      "Title": "Trójkąty i Światło",
+      "Description": "Generator wzorów trójkątów z światłem podążającym za kursorem."
+    },
+    "TR": {
+      "Title": "Üçgenler ve Işık",
+      "Description": "İmleci takip eden ışık ile üçgen desen üreteci."
+    }
+  }
 }
