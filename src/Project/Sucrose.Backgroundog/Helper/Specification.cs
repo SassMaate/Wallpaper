@@ -539,6 +539,7 @@ namespace Sucrose.Backgroundog.Helper
                                 SBMI.MotherboardData.Product = SSSHM.Check(Object, "Product", string.Empty);
                                 SBMI.MotherboardData.Version = SSSHM.Check(Object, "Version", string.Empty);
                                 SBMI.MotherboardData.Manufacturer = SSSHM.Check(Object, "Manufacturer", string.Empty);
+                                SBMI.MotherboardData.Name = $"{SBMI.MotherboardData.Manufacturer} {SBMI.MotherboardData.Product}";
 
                                 break;
                             }
@@ -804,23 +805,6 @@ namespace Sucrose.Backgroundog.Helper
                                             {
                                                 SBMI.BatteryData.State = false;
                                             }
-                                        }
-                                        catch (Exception Exception)
-                                        {
-                                            await SSWEW.Watch_CatchException(Exception);
-                                        }
-                                    });
-                                }
-                                else if (Hardware.HardwareType == HardwareType.Motherboard)
-                                {
-                                    _ = Task.Run(async () =>
-                                    {
-                                        try
-                                        {
-                                            //Hardware.Update();
-
-                                            SBMI.MotherboardData.State = true;
-                                            SBMI.MotherboardData.Name = Hardware.Name;
                                         }
                                         catch (Exception Exception)
                                         {

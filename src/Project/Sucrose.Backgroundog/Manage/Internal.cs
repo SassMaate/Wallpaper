@@ -235,7 +235,7 @@ namespace Sucrose.Backgroundog.Manage
             IsNetworkEnabled = false,
             IsStorageEnabled = false,
             IsControllerEnabled = false,
-            IsMotherboardEnabled = true
+            IsMotherboardEnabled = false
         };
 
         public static SBSDG GraphicData = new()
