@@ -335,6 +335,43 @@ namespace Sucrose.Backgroundog.Helper
                     });
                 }
 
+                if (SBMI.MemoryManagement)
+                {
+                    SBMI.MemoryManagement = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            SWNM.MEMORYSTATUSEX MemoryStatus = new();
+
+                            if (SWNM.GlobalMemoryStatusEx(MemoryStatus))
+                            {
+                                SBMI.MemoryData.State = true;
+
+                                SBMI.MemoryData.Name = "Total Memory";
+                                SBMI.MemoryData.MemoryAvailable = (float)MemoryStatus.ullAvailPhys / (1024 * 1024 * 1024);
+                                SBMI.MemoryData.MemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPhys / MemoryStatus.ullTotalPhys);
+                                SBMI.MemoryData.MemoryUsed = (float)(MemoryStatus.ullTotalPhys - MemoryStatus.ullAvailPhys) / (1024 * 1024 * 1024);
+
+                                SBMI.MemoryData.VirtualName = "Virtual Memory";
+                                SBMI.MemoryData.VirtualMemoryAvailable = (float)MemoryStatus.ullAvailPageFile / (1024 * 1024 * 1024);
+                                SBMI.MemoryData.VirtualMemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPageFile / MemoryStatus.ullTotalPageFile);
+                                SBMI.MemoryData.VirtualMemoryUsed = (float)(MemoryStatus.ullTotalPageFile - MemoryStatus.ullAvailPageFile) / (1024 * 1024 * 1024);
+                            }
+
+                            await Task.Delay(SBMI.SpecificationLessTime);
+
+                            SBMI.MemoryManagement = true;
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.MemoryManagement = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
                 if (SBMI.NetworkManagement)
                 {
                     SBMI.NetworkManagement = false;
@@ -669,75 +706,7 @@ namespace Sucrose.Backgroundog.Helper
 
                             foreach (IHardware Hardware in SBMI.Computer.Hardware)
                             {
-                                if (Hardware.HardwareType == HardwareType.Memory)
-                                {
-                                    _ = Task.Run(async () =>
-                                    {
-                                        try
-                                        {
-                                            //Hardware.Update();
-
-                                            if (Hardware.Sensors.Any())
-                                            {
-                                                SBMI.MemoryData.State = true;
-
-                                                if (Hardware.Name == "Total Memory")
-                                                {
-                                                    SBMI.MemoryData.Name = Hardware.Name;
-
-                                                    foreach (ISensor Sensor in Hardware.Sensors)
-                                                    {
-                                                        switch (Sensor.Name)
-                                                        {
-                                                            case "Memory" when Sensor.SensorType == SensorType.Load:
-                                                                SBMI.MemoryData.MemoryLoad = Sensor.Value;
-                                                                break;
-                                                            case "Memory Used" when Sensor.SensorType == SensorType.Data:
-                                                                SBMI.MemoryData.MemoryUsed = Sensor.Value;
-                                                                break;
-                                                            case "Memory Available" when Sensor.SensorType == SensorType.Data:
-                                                                SBMI.MemoryData.MemoryAvailable = Sensor.Value;
-                                                                break;
-                                                            default:
-                                                                break;
-                                                        }
-                                                    }
-                                                }
-                                                else if (Hardware.Name == "Virtual Memory")
-                                                {
-                                                    SBMI.MemoryData.VirtualName = Hardware.Name;
-
-                                                    foreach (ISensor Sensor in Hardware.Sensors)
-                                                    {
-                                                        switch (Sensor.Name)
-                                                        {
-                                                            case "Memory" when Sensor.SensorType == SensorType.Load:
-                                                                SBMI.MemoryData.VirtualMemoryLoad = Sensor.Value;
-                                                                break;
-                                                            case "Memory Used" when Sensor.SensorType == SensorType.Data:
-                                                                SBMI.MemoryData.VirtualMemoryUsed = Sensor.Value;
-                                                                break;
-                                                            case "Memory Available" when Sensor.SensorType == SensorType.Data:
-                                                                SBMI.MemoryData.VirtualMemoryAvailable = Sensor.Value;
-                                                                break;
-                                                            default:
-                                                                break;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            else
-                                            {
-                                                SBMI.MemoryData.State = false;
-                                            }
-                                        }
-                                        catch (Exception Exception)
-                                        {
-                                            await SSWEW.Watch_CatchException(Exception);
-                                        }
-                                    });
-                                }
-                                else if (Hardware.HardwareType == HardwareType.Battery)
+                                if (Hardware.HardwareType == HardwareType.Battery)
                                 {
                                     _ = Task.Run(async () =>
                                     {

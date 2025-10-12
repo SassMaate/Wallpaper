@@ -76,6 +76,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static Timer InitializeTimer = null;
 
+        public static bool MemoryManagement = true;
+
         public static bool RemoteManagement = true;
 
         public static bool SignalManagement = true;
@@ -230,8 +232,8 @@ namespace Sucrose.Backgroundog.Manage
             IsGpuEnabled = true,
             IsCpuEnabled = false,
             IsPsuEnabled = false,
-            IsMemoryEnabled = true,
             IsBatteryEnabled = true,
+            IsMemoryEnabled = false,
             IsNetworkEnabled = false,
             IsStorageEnabled = false,
             IsControllerEnabled = false,
