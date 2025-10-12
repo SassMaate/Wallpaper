@@ -1,4 +1,6 @@
 ﻿using System.Runtime.InteropServices;
+using SEEST = Skylark.Enum.EnergySaverType;
+using SEPPT = Skylark.Enum.PowerPlanType;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -59,11 +61,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public SEPPT PowerPlanType;
+        /// <summary>
+        /// 
+        /// </summary>
         public string ACPowerStatus;
         /// <summary>
         /// 
         /// </summary>
         public int EstimatedRunTime;
+        /// <summary>
+        /// 
+        /// </summary>
+        public SEEST EnergySaverType;
         /// <summary>
         /// 
         /// </summary>

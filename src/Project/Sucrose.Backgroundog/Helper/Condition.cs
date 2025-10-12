@@ -3,6 +3,7 @@ using Skylark.Standard.Extension.Storage;
 using System.Diagnostics;
 using SBEG = Sucrose.Backgroundog.Extension.Graphic;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
+using SEEST = Skylark.Enum.EnergySaverType;
 using SMMA = Sucrose.Manager.Manage.Aurora;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMMCB = Sucrose.Memory.Manage.Constant.Backgroundog;
@@ -664,7 +665,7 @@ namespace Sucrose.Backgroundog.Helper
                 int Count = 0;
                 int MaxCount = 3;
 
-                while (!SBMI.BatteryData.SavingMode || SBMI.BatteryData.SaverStatus == "Off" || SSDMMB.BatterySaverPerformance == SSDEPT.Resume)
+                while (SBMI.BatteryData.EnergySaverType != SEEST.On || SSDMMB.BatterySaverPerformance == SSDEPT.Resume)
                 {
                     if (Count >= MaxCount)
                     {

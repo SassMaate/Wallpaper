@@ -1,4 +1,5 @@
-﻿using System.Management;
+﻿using System.Diagnostics;
+using System.Management;
 using SSSHV = Sucrose.Shared.Space.Helper.Virtual;
 
 namespace Sucrose.Backgroundog.Extension
@@ -9,18 +10,36 @@ namespace Sucrose.Backgroundog.Extension
         {
             try
             {
-                string Query = "SELECT * FROM Win32_Process WHERE ";
+                HashSet<string> Names = new(SSSHV.GetApp(), StringComparer.OrdinalIgnoreCase);
 
-                foreach (string Name in SSSHV.GetApp())
+                foreach (Process Process in Process.GetProcesses())
                 {
-                    Query += $"Name = '{Name}' OR ";
+                    if (Names.Contains(Process.ProcessName + ".exe"))
+                    {
+                        return true;
+                    }
                 }
 
-                Query = Query.TrimEnd(" OR ".ToCharArray());
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
-                ManagementObjectSearcher Searcher = new(Query);
+        public static bool VirtualityActive2()
+        {
+            try
+            {
+                List<string> Names = SSSHV.GetApp();
 
-                ManagementObjectCollection Collection = Searcher.Get();
+                string Conditions = string.Join(" OR ", Names.Select(Name => $"Name = '{Name}'"));
+                string Query = $"SELECT * FROM Win32_Process WHERE {Conditions}";
+
+                using ManagementObjectSearcher Searcher = new(Query);
+
+                using ManagementObjectCollection Collection = Searcher.Get();
 
                 return Collection.Count > 0;
             }

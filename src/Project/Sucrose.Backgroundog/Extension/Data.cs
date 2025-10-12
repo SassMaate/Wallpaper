@@ -109,7 +109,9 @@ namespace Sucrose.Backgroundog.Extension
                 { "DesignVoltage", SBMI.BatteryData.DesignVoltage },
                 { "LifeRemaining", SBMI.BatteryData.LifeRemaining },
                 { "ChargeStatus", $"{SBMI.BatteryData.ChargeStatus}" },
+                { "PowerPlanType", $"{SBMI.BatteryData.PowerPlanType}" },
                 { "EstimatedRunTime", SBMI.BatteryData.EstimatedRunTime },
+                { "EnergySaverType", $"{SBMI.BatteryData.EnergySaverType}" },
                 { "PowerLineStatus", $"{SBMI.BatteryData.PowerLineStatus}" },
                 { "EstimatedChargeRemaining", SBMI.BatteryData.EstimatedChargeRemaining }
             };

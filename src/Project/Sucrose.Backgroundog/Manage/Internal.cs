@@ -13,6 +13,8 @@ using SBSDMD = Sucrose.Backgroundog.Struct.Data.Motherboard;
 using SBSDMY = Sucrose.Backgroundog.Struct.Data.Memory;
 using SBSDN = Sucrose.Backgroundog.Struct.Data.Network;
 using SBSDP = Sucrose.Backgroundog.Struct.Data.Processor;
+using SEEST = Skylark.Enum.EnergySaverType;
+using SEPPT = Skylark.Enum.PowerPlanType;
 using SSDECPT = Sucrose.Shared.Dependency.Enum.CategoryPerformanceType;
 using SSDENPT = Sucrose.Shared.Dependency.Enum.NetworkPerformanceType;
 using SSDEPPT = Sucrose.Shared.Dependency.Enum.PausePerformanceType;
@@ -279,6 +281,8 @@ namespace Sucrose.Backgroundog.Manage
             Description = string.Empty,
             ACPowerStatus = string.Empty,
             EstimatedChargeRemaining = 0,
+            PowerPlanType = SEPPT.Custom,
+            EnergySaverType = SEEST.Disabled,
             PowerLineStatus = PowerLineStatus.Unknown,
             ChargeStatus = BatteryChargeStatus.Unknown
         };

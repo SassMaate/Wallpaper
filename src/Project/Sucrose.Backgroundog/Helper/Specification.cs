@@ -42,7 +42,8 @@ using STMI = Sucrose.Transmission.Manage.Internal;
 using SWHFS = Skylark.Wing.Helper.FullScreen;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWUD = Skylark.Wing.Utility.Desktop;
-using SWUP = Skylark.Wing.Utility.Power;
+using SWUPN = Skylark.Wing.Utility.Plan;
+using SWUPR = Skylark.Wing.Utility.Power;
 using SWUS = Skylark.Wing.Utility.Screene;
 using SystemInformation = System.Windows.Forms.SystemInformation;
 
@@ -202,15 +203,18 @@ namespace Sucrose.Backgroundog.Helper
                                 break;
                             }
 
-                            SBMI.BatteryData.SavingMode = SWUP.IsBatterySavingMode;
-                            SBMI.BatteryData.ACPowerStatus = $"{SWUP.GetACPowerStatus()}";
-                            SBMI.BatteryData.SaverStatus = $"{SWUP.GetBatterySaverStatus()}";
+                            SBMI.BatteryData.SavingMode = SWUPR.IsBatterySavingMode;
+                            SBMI.BatteryData.ACPowerStatus = $"{SWUPR.GetACPowerStatus()}";
+                            SBMI.BatteryData.EnergySaverType = SWUPR.GetEnergySaverState();
+                            SBMI.BatteryData.SaverStatus = $"{SWUPR.GetBatterySaverStatus()}";
 
                             SBMI.BatteryData.LifePercent = SystemInformation.PowerStatus.BatteryLifePercent;
                             SBMI.BatteryData.PowerLineStatus = SystemInformation.PowerStatus.PowerLineStatus;
                             SBMI.BatteryData.FullLifetime = SystemInformation.PowerStatus.BatteryFullLifetime;
                             SBMI.BatteryData.ChargeStatus = SystemInformation.PowerStatus.BatteryChargeStatus;
                             SBMI.BatteryData.LifeRemaining = SystemInformation.PowerStatus.BatteryLifeRemaining;
+
+                            SBMI.BatteryData.PowerPlanType = SWUPN.GetPlanFromGuid(SWUPN.GetActivePowerSchemeGuid());
 
                             await Task.Delay(SBMI.SpecificationTime);
 
@@ -697,7 +701,7 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            SBMI.RemoteDesktop = SBMI.WindowsRemote || SBER.DesktopActive();
+                            SBMI.RemoteDesktop = SBMI.WindowsRemote || SBER.RemotelyActive();
 
                             await Task.Delay(SBMI.SpecificationTime);
 
