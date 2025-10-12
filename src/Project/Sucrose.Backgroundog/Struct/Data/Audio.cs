@@ -44,15 +44,15 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public uint TrackNumber;
-        /// <summary>
-        /// 
-        /// </summary>
         public string AlbumTitle;
         /// <summary>
         /// 
         /// </summary>
         public TimeSpan Position;
+        /// <summary>
+        /// 
+        /// </summary>
+        public uint? TrackNumber;
         /// <summary>
         /// 
         /// </summary>
@@ -68,15 +68,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public double PlaybackRate;
-        /// <summary>
-        /// 
-        /// </summary>
         public bool ShuffleEnabled;
-        /// <summary>
-        /// 
-        /// </summary>
-        public uint AlbumTrackCount;
         /// <summary>
         /// 
         /// </summary>
@@ -85,6 +77,14 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public TimeSpan MinSeekTime;
+        /// <summary>
+        /// 
+        /// </summary>
+        public double? PlaybackRate;
+        /// <summary>
+        /// 
+        /// </summary>
+        public uint? AlbumTrackCount;
         /// <summary>
         /// 
         /// </summary>
