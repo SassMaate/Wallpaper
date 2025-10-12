@@ -500,6 +500,7 @@ d8d94d1046192a423e1058202273c472,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.Com
 0c8d6099d07adb4be0bae76ba9662737,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.SystemBattery,Valore 'SystemBattery' non valido
 e081d84ba7fff2a8add204acec7191e8,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.SystemGraphic,Valore 'SystemGraphic' non valido
 bb81f7423c05a32fa041e71737a7ee1c,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.SystemNetwork,Valore 'SystemNetwork' non valido
+6a2103aa0ea2730cb24a9f94664c4c2b,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.SystemStorage,Valore 'SystemStorage' non valido
 0fb8ea035eca9b1ac2b9645faf3618f0,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.InvalidContact,Il valore 'Contact' non è un URL o un indirizzo email
 61e58c2a8cfc267e39c4077c79e0f20e,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.EmptyCompatible,Il file 'SucroseCompatible.json' è vuoto
 f56e863046e71a28b57cb9510b2a157a,Portal\Enum\Portal.Enum.IT.xaml,Portal.Enum.CompatibilityType.EmptyProperties,Il file 'SucroseProperties.json' è vuoto

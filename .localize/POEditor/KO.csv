@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,잘못된 'SystemMemory' 값,,Portal\
 Portal.Enum.CompatibilityType.SystemBattery,잘못된 'SystemBattery' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,잘못된 'SystemGraphic' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,잘못된 'SystemNetwork' 값,,Portal\Enum\Portal.Enum.KO.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,잘못된 'SystemStorage' 값,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' 값이 'URL' 또는 '이메일 주소'가 아님,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' 파일이 비어 있음,,Portal\Enum\Portal.Enum.KO.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' 파일이 비어 있음,,Portal\Enum\Portal.Enum.KO.xaml,

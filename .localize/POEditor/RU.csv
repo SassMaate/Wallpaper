@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Недопустимое значен
 Portal.Enum.CompatibilityType.SystemBattery,Недопустимое значение 'SystemBattery',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Недопустимое значение 'SystemGraphic',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Недопустимое значение 'SystemNetwork',,Portal\Enum\Portal.Enum.RU.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Недопустимое значение 'SystemStorage',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,Значение 'Контакта' не является 'Url' или 'Адресом электронной почты',,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Файл 'SucroseCompatible.json' пуст,,Portal\Enum\Portal.Enum.RU.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Файл 'SucroseProperties.json' пуст,,Portal\Enum\Portal.Enum.RU.xaml,

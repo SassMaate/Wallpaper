@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Недійсне значення 'Sy
 Portal.Enum.CompatibilityType.SystemBattery,Недійсне значення 'SystemBattery',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Недійсне значення 'SystemGraphic',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Недійсне значення 'SystemNetwork',,Portal\Enum\Portal.Enum.UK.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Недійсне значення 'SystemStorage',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,Значення 'Contact' не є 'Url' або 'Email',,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Файл 'SucroseCompatible.json' порожній,,Portal\Enum\Portal.Enum.UK.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Файл 'SucroseProperties.json' порожній,,Portal\Enum\Portal.Enum.UK.xaml,

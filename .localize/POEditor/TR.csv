@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Geçersiz 'SystemMemory' değeri,,Por
 Portal.Enum.CompatibilityType.SystemBattery,Geçersiz 'SystemBattery' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Geçersiz 'SystemGraphic' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Geçersiz 'SystemNetwork' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Geçersiz 'SystemStorage' değeri,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' değeri 'Url' veya 'Mail Adresi' değil,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' dosyası boş,,Portal\Enum\Portal.Enum.TR.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' dosyası boş,,Portal\Enum\Portal.Enum.TR.xaml,

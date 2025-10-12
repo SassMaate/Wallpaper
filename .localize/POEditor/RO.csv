@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Valoare 'SystemMemory' nevalidă,,Por
 Portal.Enum.CompatibilityType.SystemBattery,Valoare 'SystemBattery' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Valoare 'SystemGraphic' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Valoare 'SystemNetwork' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Valoare 'SystemStorage' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,Valoarea 'Contact' nu este nici un URL sau adresă de email,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Fișierul 'SucroseCompatible.json' este gol,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Fișierul 'SucroseProperties.json' este gol,,Portal\Enum\Portal.Enum.RO.xaml,

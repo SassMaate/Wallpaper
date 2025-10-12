@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Valor 'SystemMemory' no válido,,Port
 Portal.Enum.CompatibilityType.SystemBattery,Valor 'SystemBattery' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Valor 'SystemGraphic' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Valor 'SystemNetwork' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Valor 'SystemStorage' no válido,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,El valor de 'Contact' no es 'URL' o 'Dirección de Correo Electrónico',,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,El archivo 'SucroseCompatible.json' está vacío,,Portal\Enum\Portal.Enum.ES.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,El archivo 'SucroseProperties.json' está vacío,,Portal\Enum\Portal.Enum.ES.xaml,

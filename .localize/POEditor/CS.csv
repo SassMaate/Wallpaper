@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Neplatná hodnota 'SystemMemory',,Por
 Portal.Enum.CompatibilityType.SystemBattery,Neplatná hodnota 'SystemBattery',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Neplatná hodnota 'SystemGraphic',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Neplatná hodnota 'SystemNetwork',,Portal\Enum\Portal.Enum.CS.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Neplatná hodnota 'SystemStorage',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,Hodnota 'Contact' není platný URL nebo e-mailová adresa,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Soubor 'SucroseCompatible.json' je prázdný,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Soubor 'SucroseProperties.json' je prázdný,,Portal\Enum\Portal.Enum.CS.xaml,

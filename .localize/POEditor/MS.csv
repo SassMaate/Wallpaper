@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Nilai 'SystemMemory' tidak sah,,Porta
 Portal.Enum.CompatibilityType.SystemBattery,Nilai 'SystemBattery' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Nilai 'SystemGraphic' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Nilai 'SystemNetwork' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Nilai 'SystemStorage' tidak sah,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,Nilai 'Contact' bukan 'Url' atau 'Alamat Emel',,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Fail 'SucroseCompatible.json' adalah kosong,,Portal\Enum\Portal.Enum.MS.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Fail 'SucroseProperties.json' adalah kosong,,Portal\Enum\Portal.Enum.MS.xaml,

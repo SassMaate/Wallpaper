@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Ongeldige 'SystemMemory' waarde,,Port
 Portal.Enum.CompatibilityType.SystemBattery,Ongeldige 'SystemBattery' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Ongeldige 'SystemGraphic' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ongeldige 'SystemNetwork' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Ongeldige 'SystemStorage' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' is geen 'URL' of 'E-mailadres',,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Bestand 'SucroseCompatible.json' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Bestand 'SucroseProperties.json' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,

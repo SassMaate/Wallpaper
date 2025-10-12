@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,'SystemMemory' मूल्य अम
 Portal.Enum.CompatibilityType.SystemBattery,'SystemBattery' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,'SystemGraphic' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,'SystemNetwork' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,'SystemStorage' मूल्य अमान्य है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' मूल्य 'Url' या 'मेल पता' नहीं है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' फ़ाइल खाली है,,Portal\Enum\Portal.Enum.HI.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' फ़ाइल खाली है,,Portal\Enum\Portal.Enum.HI.xaml,

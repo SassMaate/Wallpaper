@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,Ugyldig 'SystemMemory' verdi,,Portal\
 Portal.Enum.CompatibilityType.SystemBattery,Ugyldig 'SystemBattery' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,Ugyldig 'SystemGraphic' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ugyldig 'SystemNetwork' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,Ugyldig 'SystemStorage' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' verdien er verken en 'URL' eller en 'E-postadresse',,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' filen er tom,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' filen er tom,,Portal\Enum\Portal.Enum.NB.xaml,

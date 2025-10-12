@@ -500,6 +500,7 @@ Portal.Enum.CompatibilityType.SystemMemory,无效的'SystemMemory'值,,Portal\En
 Portal.Enum.CompatibilityType.SystemBattery,无效的'SystemBattery'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.SystemGraphic,无效的'SystemGraphic'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,无效的'SystemNetwork'值,,Portal\Enum\Portal.Enum.ZH.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,无效的'SystemStorage'值,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.InvalidContact,'Contact' 值不是'Url'或'电子邮件地址',,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' 文件为空,,Portal\Enum\Portal.Enum.ZH.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' 文件为空,,Portal\Enum\Portal.Enum.ZH.xaml,
