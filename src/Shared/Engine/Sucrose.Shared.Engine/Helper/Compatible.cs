@@ -114,18 +114,6 @@ namespace Sucrose.Shared.Engine.Helper
                         }
                     }
 
-                    if (!string.IsNullOrEmpty(SSEMI.Compatible.VolumeLevel))
-                    {
-                        try
-                        {
-                            Function(string.Format(SSEMI.Compatible.VolumeLevel, SSEHD.GetVolume()));
-                        }
-                        catch (Exception Exception)
-                        {
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    }
-
                     if (!string.IsNullOrEmpty(SSEMI.Compatible.ShuffleMode))
                     {
                         try
@@ -143,6 +131,18 @@ namespace Sucrose.Shared.Engine.Helper
                         try
                         {
                             Function(string.Format(SSEMI.Compatible.StretchMode, SSEHD.GetStretch()));
+                        }
+                        catch (Exception Exception)
+                        {
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    }
+
+                    if (!string.IsNullOrEmpty(SSEMI.Compatible.VolumeLevel))
+                    {
+                        try
+                        {
+                            Function(string.Format(SSEMI.Compatible.VolumeLevel, SSEHD.GetVolume()));
                         }
                         catch (Exception Exception)
                         {

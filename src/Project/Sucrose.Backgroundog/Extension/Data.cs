@@ -187,7 +187,7 @@ namespace Sucrose.Backgroundog.Extension
         {
             return new JObject
             {
-                { "State", SBMI.NetworkData.State }
+                { "State", SBMI.StorageData.State }
             };
         }
 
@@ -200,6 +200,7 @@ namespace Sucrose.Backgroundog.Extension
                 { "Now", SBMI.ProcessorData.Now },
                 { "Core", SBMI.ProcessorData.Core },
                 { "Name", SBMI.ProcessorData.Name },
+                { "Type", SBMI.ProcessorData.Type },
                 { "Cores", SBMI.ProcessorData.Cores },
                 { "State", SBMI.ProcessorData.State },
                 { "Thread", SBMI.ProcessorData.Thread },

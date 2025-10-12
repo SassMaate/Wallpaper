@@ -407,11 +407,11 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Battery");
+                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_LogicalDisk");
 
                             foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
                             {
-                                SBMI.BatteryData.State = true;
+                                SBMI.StorageData.State = true;
 
                                 SBMI.BatteryData.Name = SSSHM.Check(Object, "Name", string.Empty);
                                 SBMI.BatteryData.Description = SSSHM.Check(Object, "Description", string.Empty);
