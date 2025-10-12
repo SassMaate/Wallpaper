@@ -287,6 +287,43 @@ namespace Sucrose.Backgroundog.Helper
                     });
                 }
 
+                if (SBMI.MemoryManagement)
+                {
+                    SBMI.MemoryManagement = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            SWNM.MEMORYSTATUSEX MemoryStatus = new();
+
+                            if (SWNM.GlobalMemoryStatusEx(MemoryStatus))
+                            {
+                                SBMI.MemoryData.State = true;
+
+                                SBMI.MemoryData.Name = "Total Memory";
+                                SBMI.MemoryData.MemoryAvailable = (float)MemoryStatus.ullAvailPhys / (1024 * 1024 * 1024);
+                                SBMI.MemoryData.MemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPhys / MemoryStatus.ullTotalPhys);
+                                SBMI.MemoryData.MemoryUsed = (float)(MemoryStatus.ullTotalPhys - MemoryStatus.ullAvailPhys) / (1024 * 1024 * 1024);
+
+                                SBMI.MemoryData.VirtualName = "Virtual Memory";
+                                SBMI.MemoryData.VirtualMemoryAvailable = (float)MemoryStatus.ullAvailPageFile / (1024 * 1024 * 1024);
+                                SBMI.MemoryData.VirtualMemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPageFile / MemoryStatus.ullTotalPageFile);
+                                SBMI.MemoryData.VirtualMemoryUsed = (float)(MemoryStatus.ullTotalPageFile - MemoryStatus.ullAvailPageFile) / (1024 * 1024 * 1024);
+                            }
+
+                            await Task.Delay(SBMI.SpecificationLessTime);
+
+                            SBMI.MemoryManagement = true;
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.MemoryManagement = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
                 if (SBMI.GraphicManagement)
                 {
                     SBMI.GraphicManagement = false;
@@ -330,43 +367,6 @@ namespace Sucrose.Backgroundog.Helper
                         catch (Exception Exception)
                         {
                             SBMI.GraphicManagement2 = true;
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    });
-                }
-
-                if (SBMI.MemoryManagement)
-                {
-                    SBMI.MemoryManagement = false;
-
-                    _ = Task.Run(async () =>
-                    {
-                        try
-                        {
-                            SWNM.MEMORYSTATUSEX MemoryStatus = new();
-
-                            if (SWNM.GlobalMemoryStatusEx(MemoryStatus))
-                            {
-                                SBMI.MemoryData.State = true;
-
-                                SBMI.MemoryData.Name = "Total Memory";
-                                SBMI.MemoryData.MemoryAvailable = (float)MemoryStatus.ullAvailPhys / (1024 * 1024 * 1024);
-                                SBMI.MemoryData.MemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPhys / MemoryStatus.ullTotalPhys);
-                                SBMI.MemoryData.MemoryUsed = (float)(MemoryStatus.ullTotalPhys - MemoryStatus.ullAvailPhys) / (1024 * 1024 * 1024);
-
-                                SBMI.MemoryData.VirtualName = "Virtual Memory";
-                                SBMI.MemoryData.VirtualMemoryAvailable = (float)MemoryStatus.ullAvailPageFile / (1024 * 1024 * 1024);
-                                SBMI.MemoryData.VirtualMemoryLoad = 100.0f - (100.0f * MemoryStatus.ullAvailPageFile / MemoryStatus.ullTotalPageFile);
-                                SBMI.MemoryData.VirtualMemoryUsed = (float)(MemoryStatus.ullTotalPageFile - MemoryStatus.ullAvailPageFile) / (1024 * 1024 * 1024);
-                            }
-
-                            await Task.Delay(SBMI.SpecificationLessTime);
-
-                            SBMI.MemoryManagement = true;
-                        }
-                        catch (Exception Exception)
-                        {
-                            SBMI.MemoryManagement = true;
                             await SSWEW.Watch_CatchException(Exception);
                         }
                     });
