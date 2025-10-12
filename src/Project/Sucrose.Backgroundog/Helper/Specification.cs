@@ -204,9 +204,13 @@ namespace Sucrose.Backgroundog.Helper
                             }
 
                             SBMI.BatteryData.SavingMode = SWUPR.IsBatterySavingMode;
+                            SBMI.BatteryData.BatteryFlag = $"{SWUPR.GetBatteryFlag()}";
+                            SBMI.BatteryData.BatteryLifeTime = SWUPR.GetBatteryLifeTime();
                             SBMI.BatteryData.ACPowerStatus = $"{SWUPR.GetACPowerStatus()}";
                             SBMI.BatteryData.EnergySaverType = SWUPR.GetEnergySaverState();
                             SBMI.BatteryData.SaverStatus = $"{SWUPR.GetBatterySaverStatus()}";
+                            SBMI.BatteryData.BatteryLifePercent = SWUPR.GetBatteryLifePercent();
+                            SBMI.BatteryData.BatteryFullLifeTime = SWUPR.GetBatteryFullLifeTime();
 
                             SBMI.BatteryData.LifePercent = SystemInformation.PowerStatus.BatteryLifePercent;
                             SBMI.BatteryData.PowerLineStatus = SystemInformation.PowerStatus.PowerLineStatus;

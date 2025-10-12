@@ -61,6 +61,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public int BatteryLifeTime;
+        /// <summary>
+        /// 
+        /// </summary>
         public SEPPT PowerPlanType;
         /// <summary>
         /// 
@@ -74,6 +78,14 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public SEEST EnergySaverType;
+        /// <summary>
+        /// 
+        /// </summary>
+        public int BatteryFullLifeTime;
+        /// <summary>
+        /// 
+        /// </summary>
+        public byte BatteryLifePercent;
         /// <summary>
         /// 
         /// </summary>
