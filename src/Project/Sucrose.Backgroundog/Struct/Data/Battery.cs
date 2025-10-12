@@ -19,7 +19,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? Voltage;
+        public int Chemistry;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Status;
         /// <summary>
         /// 
         /// </summary>
@@ -31,7 +35,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? ChargeRate;
+        public int DesignVoltage;
         /// <summary>
         /// 
         /// </summary>
@@ -43,7 +47,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? ChargeLevel;
+        public string BatteryFlag;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Description;
         /// <summary>
         /// 
         /// </summary>
@@ -55,47 +63,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? ChargeCurrent;
+        public int EstimatedRunTime;
         /// <summary>
         /// 
         /// </summary>
-        public float? DischargeRate;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? DischargeLevel;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? DegradationLevel;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? DesignedCapacity;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? DischargeCurrent;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? RemainingCapacity;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? ChargeDischargeRate;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? FullChargedCapacity;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? ChargeDischargeCurrent;
-        /// <summary>
-        /// 
-        /// </summary>
-        public float? RemainingTimeEstimated;
+        public int EstimatedChargeRemaining;
         /// <summary>
         /// 
         /// </summary>

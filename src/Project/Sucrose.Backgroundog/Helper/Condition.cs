@@ -345,7 +345,7 @@ namespace Sucrose.Backgroundog.Helper
                 int Count = 0;
                 int MaxCount = 3;
 
-                while (SMMB.BatteryUsage <= 0 || SBMI.BatteryData.PowerLineStatus == PowerLineStatus.Online || SBMI.BatteryData.ACPowerStatus == "Online" || SBMI.BatteryData.ChargeLevel > SMMB.BatteryUsage || SSDMMB.BatteryPerformance == SSDEPT.Resume)
+                while (SMMB.BatteryUsage <= 0 || SBMI.BatteryData.PowerLineStatus == PowerLineStatus.Online || SBMI.BatteryData.ACPowerStatus == "Online" || SBMI.BatteryData.EstimatedChargeRemaining > SMMB.BatteryUsage || SSDMMB.BatteryPerformance == SSDEPT.Resume)
                 {
                     if (Count >= MaxCount)
                     {

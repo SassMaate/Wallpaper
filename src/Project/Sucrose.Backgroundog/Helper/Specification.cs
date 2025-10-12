@@ -185,6 +185,23 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
+                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Battery");
+
+                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            {
+                                SBMI.BatteryData.State = true;
+
+                                SBMI.BatteryData.Name = SSSHM.Check(Object, "Name", string.Empty);
+                                SBMI.BatteryData.Status = SSSHM.Check(Object, "Status", string.Empty);
+                                SBMI.BatteryData.Description = SSSHM.Check(Object, "Description", string.Empty);
+                                SBMI.BatteryData.Chemistry = Convert.ToInt32(SSSHM.Check(Object, "Chemistry", "0"));
+                                SBMI.BatteryData.DesignVoltage = Convert.ToInt32(SSSHM.Check(Object, "DesignVoltage", "0"));
+                                SBMI.BatteryData.EstimatedRunTime = Convert.ToInt32(SSSHM.Check(Object, "EstimatedRunTime", "0"));
+                                SBMI.BatteryData.EstimatedChargeRemaining = Convert.ToInt32(SSSHM.Check(Object, "EstimatedChargeRemaining", "0"));
+
+                                break;
+                            }
+
                             SBMI.BatteryData.SavingMode = SWUP.IsBatterySavingMode;
                             SBMI.BatteryData.ACPowerStatus = $"{SWUP.GetACPowerStatus()}";
                             SBMI.BatteryData.SaverStatus = $"{SWUP.GetBatterySaverStatus()}";
@@ -706,82 +723,7 @@ namespace Sucrose.Backgroundog.Helper
 
                             foreach (IHardware Hardware in SBMI.Computer.Hardware)
                             {
-                                if (Hardware.HardwareType == HardwareType.Battery)
-                                {
-                                    _ = Task.Run(async () =>
-                                    {
-                                        try
-                                        {
-                                            //Hardware.Update();
-
-                                            if (Hardware.Sensors.Any())
-                                            {
-                                                SBMI.BatteryData.State = true;
-                                                SBMI.BatteryData.Name = Hardware.Name;
-
-                                                foreach (ISensor Sensor in Hardware.Sensors)
-                                                {
-                                                    switch (Sensor.Name)
-                                                    {
-                                                        case "Charge Level" when Sensor.SensorType == SensorType.Level:
-                                                            SBMI.BatteryData.ChargeLevel = Sensor.Value;
-                                                            break;
-                                                        case "Discharge Level" when Sensor.SensorType == SensorType.Level:
-                                                            SBMI.BatteryData.DischargeLevel = Sensor.Value;
-                                                            break;
-                                                        case "Voltage" when Sensor.SensorType == SensorType.Voltage:
-                                                            SBMI.BatteryData.Voltage = Sensor.Value;
-                                                            break;
-                                                        case "Charge Current" when Sensor.SensorType == SensorType.Current:
-                                                            SBMI.BatteryData.ChargeCurrent = Sensor.Value;
-                                                            break;
-                                                        case "Discharge Current" when Sensor.SensorType == SensorType.Current:
-                                                            SBMI.BatteryData.DischargeCurrent = Sensor.Value;
-                                                            break;
-                                                        case "Charge/Discharge Current" when Sensor.SensorType == SensorType.Current:
-                                                            SBMI.BatteryData.ChargeDischargeCurrent = Sensor.Value;
-                                                            break;
-                                                        case "Designed Capacity" when Sensor.SensorType == SensorType.Energy:
-                                                            SBMI.BatteryData.DesignedCapacity = Sensor.Value;
-                                                            break;
-                                                        case "Fully-Charged Capacity" when Sensor.SensorType == SensorType.Energy:
-                                                            SBMI.BatteryData.FullChargedCapacity = Sensor.Value;
-                                                            break;
-                                                        case "Remaining Capacity" when Sensor.SensorType == SensorType.Energy:
-                                                            SBMI.BatteryData.RemainingCapacity = Sensor.Value;
-                                                            break;
-                                                        case "Charge Rate" when Sensor.SensorType == SensorType.Power:
-                                                            SBMI.BatteryData.ChargeRate = Sensor.Value;
-                                                            break;
-                                                        case "Discharge Rate" when Sensor.SensorType == SensorType.Power:
-                                                            SBMI.BatteryData.DischargeRate = Sensor.Value;
-                                                            break;
-                                                        case "Charge/Discharge Rate" when Sensor.SensorType == SensorType.Power:
-                                                            SBMI.BatteryData.ChargeDischargeRate = Sensor.Value;
-                                                            break;
-                                                        case "Degradation Level" when Sensor.SensorType == SensorType.Level:
-                                                            SBMI.BatteryData.DegradationLevel = Sensor.Value;
-                                                            break;
-                                                        case "Remaining Time (Estimated)" when Sensor.SensorType == SensorType.TimeSpan:
-                                                            SBMI.BatteryData.RemainingTimeEstimated = Sensor.Value;
-                                                            break;
-                                                        default:
-                                                            break;
-                                                    }
-                                                }
-                                            }
-                                            else
-                                            {
-                                                SBMI.BatteryData.State = false;
-                                            }
-                                        }
-                                        catch (Exception Exception)
-                                        {
-                                            await SSWEW.Watch_CatchException(Exception);
-                                        }
-                                    });
-                                }
-                                else if (Hardware.HardwareType is HardwareType.GpuAmd or HardwareType.GpuIntel or HardwareType.GpuNvidia)
+                                if (Hardware.HardwareType is HardwareType.GpuAmd or HardwareType.GpuIntel or HardwareType.GpuNvidia)
                                 {
                                     _ = Task.Run(async () =>
                                     {

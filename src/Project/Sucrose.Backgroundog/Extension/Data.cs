@@ -98,28 +98,20 @@ namespace Sucrose.Backgroundog.Extension
             {
                 { "Name", SBMI.BatteryData.Name },
                 { "State", SBMI.BatteryData.State },
-                { "Voltage", SBMI.BatteryData.Voltage },
-                { "ChargeRate", SBMI.BatteryData.ChargeRate },
+                { "Status", SBMI.BatteryData.Status },
+                { "Chemistry", SBMI.BatteryData.Chemistry },
                 { "SavingMode", SBMI.BatteryData.SavingMode },
-                { "ChargeLevel", SBMI.BatteryData.ChargeLevel },
+                { "Description", SBMI.BatteryData.Description },
                 { "LifePercent", SBMI.BatteryData.LifePercent },
                 { "SaverStatus", SBMI.BatteryData.SaverStatus },
                 { "FullLifetime", SBMI.BatteryData.FullLifetime },
                 { "ACPowerStatus", SBMI.BatteryData.ACPowerStatus },
-                { "ChargeCurrent", SBMI.BatteryData.ChargeCurrent },
-                { "DischargeRate", SBMI.BatteryData.DischargeRate },
+                { "DesignVoltage", SBMI.BatteryData.DesignVoltage },
                 { "LifeRemaining", SBMI.BatteryData.LifeRemaining },
-                { "DischargeLevel", SBMI.BatteryData.DischargeLevel },
                 { "ChargeStatus", $"{SBMI.BatteryData.ChargeStatus}" },
-                { "DesignedCapacity", SBMI.BatteryData.DesignedCapacity },
-                { "DegradationLevel", SBMI.BatteryData.DegradationLevel },
-                { "DischargeCurrent", SBMI.BatteryData.DischargeCurrent },
-                { "RemainingCapacity", SBMI.BatteryData.RemainingCapacity },
+                { "EstimatedRunTime", SBMI.BatteryData.EstimatedRunTime },
                 { "PowerLineStatus", $"{SBMI.BatteryData.PowerLineStatus}" },
-                { "ChargeDischargeRate", SBMI.BatteryData.ChargeDischargeRate },
-                { "FullChargedCapacity", SBMI.BatteryData.FullChargedCapacity },
-                { "ChargeDischargeCurrent", SBMI.BatteryData.ChargeDischargeCurrent },
-                { "RemainingTimeEstimated", SBMI.BatteryData.RemainingTimeEstimated }
+                { "EstimatedChargeRemaining", SBMI.BatteryData.EstimatedChargeRemaining }
             };
         }
 
