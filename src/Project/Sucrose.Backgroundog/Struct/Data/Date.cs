@@ -11,27 +11,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int Day;
+        public int? Day;
         /// <summary>
         /// 
         /// </summary>
-        public int Hour;
+        public int? Hour;
         /// <summary>
         /// 
         /// </summary>
-        public int Year;
+        public int? Year;
         /// <summary>
         /// 
         /// </summary>
-        public int Month;
-        /// <summary>
-        /// 
-        /// </summary>
-        public int Minute;
-        /// <summary>
-        /// 
-        /// </summary>
-        public int Second;
+        public int? Month;
         /// <summary>
         /// 
         /// </summary>
@@ -39,18 +31,26 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int DayOfYear;
+        public int? Minute;
         /// <summary>
         /// 
         /// </summary>
-        public int Millisecond;
+        public int? Second;
         /// <summary>
         /// 
         /// </summary>
-        public DateTimeKind Kind;
+        public int? DayOfYear;
         /// <summary>
         /// 
         /// </summary>
-        public DayOfWeek DayOfWeek;
+        public int? Millisecond;
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTimeKind? Kind;
+        /// <summary>
+        /// 
+        /// </summary>
+        public DayOfWeek? DayOfWeek;
     }
 }

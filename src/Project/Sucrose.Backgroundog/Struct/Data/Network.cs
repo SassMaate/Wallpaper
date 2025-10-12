@@ -13,7 +13,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public long Ping;
+        public long? Ping;
         /// <summary>
         /// 
         /// </summary>

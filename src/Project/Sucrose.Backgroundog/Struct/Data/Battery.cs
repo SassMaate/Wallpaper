@@ -21,11 +21,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int Chemistry;
+        public string Status;
         /// <summary>
         /// 
         /// </summary>
-        public string Status;
+        public int? Chemistry;
         /// <summary>
         /// 
         /// </summary>
@@ -33,19 +33,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int FullLifetime;
+        public int? FullLifetime;
         /// <summary>
         /// 
         /// </summary>
-        public int DesignVoltage;
+        public int? DesignVoltage;
         /// <summary>
         /// 
         /// </summary>
-        public float LifePercent;
+        public float? LifePercent;
         /// <summary>
         /// 
         /// </summary>
-        public int LifeRemaining;
+        public int? LifeRemaining;
         /// <summary>
         /// 
         /// </summary>
@@ -61,10 +61,6 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int BatteryLifeTime;
-        /// <summary>
-        /// 
-        /// </summary>
         public SEPPT PowerPlanType;
         /// <summary>
         /// 
@@ -73,7 +69,7 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int EstimatedRunTime;
+        public int? BatteryLifeTime;
         /// <summary>
         /// 
         /// </summary>
@@ -81,15 +77,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public int BatteryFullLifeTime;
+        public int? EstimatedRunTime;
         /// <summary>
         /// 
         /// </summary>
-        public byte BatteryLifePercent;
+        public int? BatteryFullLifeTime;
         /// <summary>
         /// 
         /// </summary>
-        public int EstimatedChargeRemaining;
+        public byte? BatteryLifePercent;
+        /// <summary>
+        /// 
+        /// </summary>
+        public int? EstimatedChargeRemaining;
         /// <summary>
         /// 
         /// </summary>

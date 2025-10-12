@@ -20,5 +20,9 @@ namespace Sucrose.Backgroundog.Struct
         /// 
         /// </summary>
         public string Name;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string Type;
     }
 }

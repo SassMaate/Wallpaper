@@ -501,6 +501,8 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 SBMI.ProcessorData.Now = SBMI.ProcessorCounter.NextValue();
 
+                                SBMI.ProcessorData.Type = $"{SBMI.ProcessorCounter.CounterType}";
+
                                 SBMI.ProcessorData.Max = SBMI.ProcessorData.Now > SBMI.ProcessorData.Max ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Max;
                                 SBMI.ProcessorData.Min = SBMI.ProcessorData.Now < SBMI.ProcessorData.Min ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Min;
                             }
@@ -533,7 +535,8 @@ namespace Sucrose.Backgroundog.Helper
                                     {
                                         Now = Now,
                                         Index = Core,
-                                        Name = $"Core #{Core}"
+                                        Name = $"Core #{Core}",
+                                        Type = $"{SBMI.ProcessorsCounter[Core].CounterType}"
                                     });
                                 }
 

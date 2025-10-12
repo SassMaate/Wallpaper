@@ -13,6 +13,7 @@ using SBSDMD = Sucrose.Backgroundog.Struct.Data.Motherboard;
 using SBSDMY = Sucrose.Backgroundog.Struct.Data.Memory;
 using SBSDN = Sucrose.Backgroundog.Struct.Data.Network;
 using SBSDP = Sucrose.Backgroundog.Struct.Data.Processor;
+using SBSDS = Sucrose.Backgroundog.Struct.Data.Storage;
 using SEEST = Skylark.Enum.EnergySaverType;
 using SEPPT = Skylark.Enum.PowerPlanType;
 using SSDECPT = Sucrose.Shared.Dependency.Enum.CategoryPerformanceType;
@@ -266,6 +267,12 @@ namespace Sucrose.Backgroundog.Manage
             DownloadData = new(),
             FormatUploadData = string.Empty,
             FormatDownloadData = string.Empty
+        };
+
+        public static SBSDS StorageData = new()
+        {
+            Amd = new(),
+            State = false
         };
 
         public static SBSDBY BatteryData = new()

@@ -40,6 +40,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public string Type;
+        /// <summary>
+        /// 
+        /// </summary>
         public JArray Cores;
         /// <summary>
         /// 
