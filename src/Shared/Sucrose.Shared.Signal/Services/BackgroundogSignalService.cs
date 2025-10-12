@@ -53,6 +53,11 @@ namespace Sucrose.Shared.Signal.Services
                         SSEMI.NetworkData = JsonConvert.SerializeObject(Data.Network, Formatting.Indented);
                     }
 
+                    if (Data.Storage != null)
+                    {
+                        SSEMI.StorageData = JsonConvert.SerializeObject(Data.Storage, Formatting.Indented);
+                    }
+
                     if (Data.Processor != null)
                     {
                         SSEMI.ProcessorData = JsonConvert.SerializeObject(Data.Processor, Formatting.Indented);

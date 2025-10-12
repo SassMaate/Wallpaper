@@ -94,6 +94,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static bool SessionManagement = true;
 
+        public static bool StorageManagement = true;
+
         public static bool ComputerManagement = true;
 
         public static bool GraphicManagement2 = true;

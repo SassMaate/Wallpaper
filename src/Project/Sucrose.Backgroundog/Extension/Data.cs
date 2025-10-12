@@ -183,6 +183,14 @@ namespace Sucrose.Backgroundog.Extension
             };
         }
 
+        public static JObject GetStorageInfo()
+        {
+            return new JObject
+            {
+                { "State", SBMI.NetworkData.State }
+            };
+        }
+
         public static JObject GetProcessorInfo()
         {
             return new JObject

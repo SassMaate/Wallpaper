@@ -18,6 +18,8 @@ namespace Sucrose.Pipe.Interface
 
         public JObject Network { get; set; } = null;
 
+        public JObject Storage { get; set; } = null;
+
         public JObject Processor { get; set; } = null;
 
         public JObject Motherboard { get; set; } = null;
