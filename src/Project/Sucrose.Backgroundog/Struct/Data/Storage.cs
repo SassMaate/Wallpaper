@@ -18,6 +18,6 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public SBSSS Drivers;
+        public JArray Drivers;
     }
 }

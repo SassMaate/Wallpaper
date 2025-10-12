@@ -408,17 +408,36 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
+                            List<SBSSS> Sensors = new();
+
                             ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_LogicalDisk");
 
                             foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
                             {
                                 SBMI.StorageData.State = true;
 
-                                SBMI.BatteryData.Name = SSSHM.Check(Object, "Name", string.Empty);
-                                SBMI.BatteryData.Description = SSSHM.Check(Object, "Description", string.Empty);
-
-                                break;
+                                Sensors.Add(new SBSSS
+                                {
+                                    Name = SSSHM.Check(Object, "Name", string.Empty),
+                                    Caption = SSSHM.Check(Object, "Caption", string.Empty),
+                                    Size = Convert.ToInt64(SSSHM.Check(Object, "Size", "0")),
+                                    FileSystem = SSSHM.Check(Object, "FileSystem", string.Empty),
+                                    VolumeName = SSSHM.Check(Object, "VolumeName", string.Empty),
+                                    Description = SSSHM.Check(Object, "Description", string.Empty),
+                                    DriveType = Convert.ToInt32(SSSHM.Check(Object, "DriveType", "0")),
+                                    FreeSpace = Convert.ToInt64(SSSHM.Check(Object, "FreeSpace", "0")),
+                                    MediaType = Convert.ToInt32(SSSHM.Check(Object, "MediaType", "0")),
+                                    Compressed = Convert.ToBoolean(SSSHM.Check(Object, "Compressed", "False")),
+                                    VolumeSerialNumber = SSSHM.Check(Object, "VolumeSerialNumber", string.Empty),
+                                    SupportsDiskQuotas = Convert.ToBoolean(SSSHM.Check(Object, "SupportsDiskQuotas", "False")),
+                                    MaximumComponentLength = Convert.ToInt32(SSSHM.Check(Object, "MaximumComponentLength", "0")),
+                                    SupportsFileBasedCompression = Convert.ToBoolean(SSSHM.Check(Object, "SupportsFileBasedCompression", "False"))
+                                });
                             }
+
+                            string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
+
+                            SBMI.StorageData.Drivers = JArray.Parse(Result);
 
                             await Task.Delay(SBMI.SpecificationTime);
 
