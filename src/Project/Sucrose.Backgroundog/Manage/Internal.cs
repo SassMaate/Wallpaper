@@ -155,13 +155,15 @@ namespace Sucrose.Backgroundog.Manage
 
         public static int SpecificationLessTime = InitializeTime * 10;
 
-        public static PerformanceCounterCategory LogicalCounter = null;
-
-        public static PerformanceCounterCategory PhysicalCounter = null;
+        public static int SpecificationPeakTime = InitializeTime * 100;
 
         public static string[] GraphicInterfaces = Array.Empty<string>();
 
         public static string[] NetworkInterfaces = Array.Empty<string>();
+
+        public static List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> LogicalsCounter = null;
+
+        public static List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> PhysicalsCounter = null;
 
         public static SBSDBS BiosData = new()
         {
