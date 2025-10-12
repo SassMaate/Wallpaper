@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Geçersiz 'SystemBattery' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Geçersiz 'SystemGraphic' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Geçersiz 'SystemNetwork' değeri</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Geçersiz 'SystemStorage' değeri</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' değeri 'Url' veya 'Mail Adresi' değil</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json' dosyası boş</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json' dosyası boş</system:String>

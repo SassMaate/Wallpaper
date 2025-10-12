@@ -52,9 +52,11 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static string BatteryData = string.Empty;
 
+        public static string GraphicData = string.Empty;
+
         public static string NetworkData = string.Empty;
 
-        public static string GraphicData = string.Empty;
+        public static string StorageData = string.Empty;
 
         public static string WatcherFile = string.Empty;
 

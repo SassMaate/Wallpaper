@@ -330,6 +330,11 @@ namespace Sucrose.Shared.Zip.Helper
                         return SSDECT.SystemNetwork;
                     }
 
+                    if (!string.IsNullOrEmpty(Compatible.SystemStorage) && !Compatible.SystemStorage.Contains("{0}"))
+                    {
+                        return SSDECT.SystemStorage;
+                    }
+
                     if (!string.IsNullOrEmpty(Compatible.SystemProcessor) && !Compatible.SystemProcessor.Contains("{0}"))
                     {
                         return SSDECT.SystemProcessor;

@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Neplatná hodnota 'SystemBattery'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Neplatná hodnota 'SystemGraphic'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Neplatná hodnota 'SystemNetwork'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Neplatná hodnota 'SystemStorage'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Hodnota 'Contact' není platný URL nebo e-mailová adresa</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Soubor 'SucroseCompatible.json' je prázdný</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Soubor 'SucroseProperties.json' je prázdný</system:String>

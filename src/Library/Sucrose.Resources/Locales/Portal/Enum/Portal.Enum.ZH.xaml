@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">无效的'SystemBattery'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">无效的'SystemGraphic'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">无效的'SystemNetwork'值</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">无效的'SystemStorage'值</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' 值不是'Url'或'电子邮件地址'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json' 文件为空</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json' 文件为空</system:String>

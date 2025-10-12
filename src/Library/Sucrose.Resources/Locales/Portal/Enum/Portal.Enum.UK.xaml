@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Недійсне значення 'SystemBattery'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Недійсне значення 'SystemGraphic'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Недійсне значення 'SystemNetwork'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Недійсне значення 'SystemStorage'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Значення 'Contact' не є 'Url' або 'Email'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Файл 'SucroseCompatible.json' порожній</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Файл 'SucroseProperties.json' порожній</system:String>

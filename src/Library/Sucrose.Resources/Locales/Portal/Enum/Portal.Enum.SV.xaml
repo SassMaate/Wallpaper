@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Ogiltigt värde för 'SystemBattery'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Ogiltigt värde för 'SystemGraphic'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Ogiltigt värde för 'SystemNetwork'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Ogiltigt värde för 'SystemStorage'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Fältet 'Contact' innehåller varken en giltig URL eller e-postadress</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Filen 'SucroseCompatible.json' är tom</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Filen 'SucroseProperties.json' är tom</system:String>

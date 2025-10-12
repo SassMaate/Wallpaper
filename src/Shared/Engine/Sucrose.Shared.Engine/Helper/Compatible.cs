@@ -198,6 +198,18 @@ namespace Sucrose.Shared.Engine.Helper
                         }
                     }
 
+                    if (!string.IsNullOrEmpty(SSEMI.Compatible.SystemStorage))
+                    {
+                        try
+                        {
+                            Function(string.Format(SSEMI.Compatible.SystemStorage, SSEMI.StorageData));
+                        }
+                        catch (Exception Exception)
+                        {
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    }
+
                     if (!string.IsNullOrEmpty(SSEMI.Compatible.SystemProcessor))
                     {
                         try

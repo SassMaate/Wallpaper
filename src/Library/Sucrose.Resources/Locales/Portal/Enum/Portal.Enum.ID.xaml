@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Nilai 'SystemBattery' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Nilai 'SystemGraphic' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Nilai 'SystemNetwork' tidak valid</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Nilai 'SystemStorage' tidak valid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Nilai 'Contact' bukan URL atau alamat email</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Berkas 'SucroseCompatible.json' kosong</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Berkas 'SucroseProperties.json' kosong</system:String>

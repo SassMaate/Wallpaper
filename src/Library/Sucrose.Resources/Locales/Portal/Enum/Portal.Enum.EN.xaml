@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">Invalid 'SystemBattery' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Invalid 'SystemGraphic' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Invalid 'SystemNetwork' value</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Invalid 'SystemStorage' value</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">The 'Contact' value is not 'URL' or 'Email Address'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json' file is empty</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json' file is empty</system:String>

@@ -48,6 +48,9 @@ namespace Sucrose.Shared.Theme.Helper
         [JsonProperty("SystemNetwork", Required = Required.Default)]
         public string SystemNetwork { get; set; } = string.Empty;
 
+        [JsonProperty("SystemStorage", Required = Required.Default)]
+        public string SystemStorage { get; set; } = string.Empty;
+
         [JsonProperty("SystemProcessor", Required = Required.Default)]
         public string SystemProcessor { get; set; } = string.Empty;
 

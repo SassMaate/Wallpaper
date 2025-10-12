@@ -148,14 +148,14 @@ namespace Sucrose.Shared.Engine.Extension
 
                 await WriteFile(context, path);
 
-                //                string filename = Path.GetFileName(path);
-                //                byte[] content = File.ReadAllBytes(path);
+                //string filename = Path.GetFileName(path);
+                //byte[] content = File.ReadAllBytes(path);
 
-                //                response.ContentLength64 = content.Length;
-                //                response.StatusCode = (int)HttpStatusCode.NotModified;
-                //                response.ContentType = GetContentType(path);
+                //response.ContentLength64 = content.Length;
+                //response.StatusCode = (int)HttpStatusCode.NotModified;
+                //response.ContentType = GetContentType(path);
 
-                //                await response.OutputStream.WriteAsync(content.AsMemory(0, content.Length));
+                //await response.OutputStream.WriteAsync(content.AsMemory(0, content.Length));
             }
             else
             {

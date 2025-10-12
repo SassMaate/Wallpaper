@@ -127,6 +127,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">'SystemBattery'値が無効です</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">'SystemGraphic'値が無効です</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">'SystemNetwork'値が無効です</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">'SystemStorage'値が無効です</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact'の値は 'Url' または 'メールアドレス' ではありません</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json'ファイルは空です</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json'ファイルは空です</system:String>

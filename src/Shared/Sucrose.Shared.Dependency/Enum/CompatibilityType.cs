@@ -46,6 +46,7 @@
         SystemBattery,
         SystemGraphic,
         SystemNetwork,
+        SystemStorage,
         InvalidContact,
         EmptyCompatible,
         EmptyProperties,
