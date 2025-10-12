@@ -480,9 +480,9 @@ namespace Sucrose.Backgroundog.Helper
                                     Sensors.Add(new SBSDS
                                     {
                                         Read = Read,
-                                        ReadData = ReadData,
                                         Write = Write,
                                         Name = Instance,
+                                        ReadData = ReadData,
                                         WriteData = WriteData,
                                         FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
                                         FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
@@ -513,9 +513,9 @@ namespace Sucrose.Backgroundog.Helper
                                     Sensors.Add(new SBSDS
                                     {
                                         Read = Read,
-                                        ReadData = ReadData,
                                         Write = Write,
                                         Name = Instance,
+                                        ReadData = ReadData,
                                         WriteData = WriteData,
                                         FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
                                         FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
