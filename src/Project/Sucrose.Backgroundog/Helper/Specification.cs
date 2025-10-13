@@ -1,4 +1,3 @@
-using LibreHardwareMonitor.Hardware;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
@@ -7,15 +6,13 @@ using System.Net;
 using System.Net.Sockets;
 using SBEAS = Sucrose.Backgroundog.Extension.AudioSession;
 using SBED = Sucrose.Backgroundog.Extension.Data;
-using SBEG = Sucrose.Backgroundog.Extension.Graphic;
 using SBER = Sucrose.Backgroundog.Extension.Remote;
 using SBES = Sucrose.Backgroundog.Extension.Storage;
-using SBEUV = Sucrose.Backgroundog.Extension.UpdateVisitor;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
+using SBEVAE = Sucrose.Backgroundog.Enumerators.VorticeAdapterEnumerator;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
 using SBSCS = Sucrose.Backgroundog.Struct.ChildSensor;
 using SBSDS = Sucrose.Backgroundog.Struct.DriverSensor;
-using SBSS = Sucrose.Backgroundog.Struct.Sensor;
 using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
@@ -367,7 +364,7 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            SBMI.GraphicInterfaces = SSSHU.GetGraphic();
+                            SBMI.GraphicInterfaces = SBEVAE.EnumerateAdaptersDescription();
 
                             SMMI.SystemSettingManager.SetSetting(SMMCS.GraphicInterfaces, SBMI.GraphicInterfaces);
 
@@ -472,6 +469,79 @@ namespace Sucrose.Backgroundog.Helper
                     });
                 }
 
+                if (SBMI.GraphicManagement2)
+                {
+                    SBMI.GraphicManagement2 = false;
+
+                    _ = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            if (SBMI.GraphicInterfaces.Any())
+                            {
+                                if (string.IsNullOrWhiteSpace(SBMI.GraphicData.Name) || SBMI.GraphicData.Name != SMMB.GraphicAdapter)
+                                {
+                                    if (SBMI.GraphicCounter != null)
+                                    {
+                                        SBMI.GraphicCounter.ForEach(Counter =>
+                                        {
+                                            Counter?.Dispose();
+                                        });
+
+                                        SBMI.GraphicCounter = null;
+                                    }
+
+                                    SBMI.GraphicCounter = new();
+
+                                    PerformanceCounterCategory Category = new("GPU Engine");
+                                    string[] Instances = Category.GetInstanceNames();
+
+                                    SBEVAE.GetNameToLuidMapping().TryGetValue(SMMB.GraphicAdapter, out string Luid);
+                                    SBMI.GraphicData.Manufacturer = SBEVAE.GetGpuVendorNameByName(SMMB.GraphicAdapter);
+
+                                    foreach (string Instance in Instances)
+                                    {
+                                        if (Instance.EndsWith("engtype_3D") && Instance.Contains(Luid ?? SMMRG.Unknown))
+                                        {
+                                            foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
+                                            {
+                                                if (Counter.CounterName.Equals("Utilization Percentage"))
+                                                {
+                                                    _ = Counter.NextValue();
+
+                                                    SBMI.GraphicCounter.Add(Counter);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    SBMI.GraphicData.Max = 0;
+                                    SBMI.GraphicData.Now = 0;
+                                    SBMI.GraphicData.Min = 100;
+                                    SBMI.GraphicData.State = true;
+                                    SBMI.GraphicData.Name = SMMB.GraphicAdapter;
+                                }
+                                else
+                                {
+                                    SBMI.GraphicData.Now = SBMI.GraphicCounter.Sum(Counter => Counter.NextValue());
+
+                                    SBMI.GraphicData.Max = SBMI.GraphicData.Now > SBMI.GraphicData.Max ? SBMI.GraphicData.Now : SBMI.GraphicData.Max;
+                                    SBMI.GraphicData.Min = SBMI.GraphicData.Now < SBMI.GraphicData.Min ? SBMI.GraphicData.Now : SBMI.GraphicData.Min;
+                                }
+                            }
+
+                            await Task.Delay(SBMI.SpecificationLessTime);
+
+                            SBMI.GraphicManagement2 = true;
+                        }
+                        catch (Exception Exception)
+                        {
+                            SBMI.GraphicManagement2 = true;
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    });
+                }
+
                 if (SBMI.StorageManagement2)
                 {
                     SBMI.StorageManagement2 = false;
@@ -552,29 +622,6 @@ namespace Sucrose.Backgroundog.Helper
                         catch (Exception Exception)
                         {
                             SBMI.StorageManagement2 = true;
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    });
-                }
-
-                if (SBMI.GraphicManagement2)
-                {
-                    SBMI.GraphicManagement2 = false;
-
-                    _ = Task.Run(async () =>
-                    {
-                        try
-                        {
-                            SBMI.GraphicData.Name = SMMB.GraphicAdapter;
-                            SBMI.GraphicData.Manufacturer = SBEG.Manufacturer();
-
-                            await Task.Delay(SBMI.SpecificationLessTime);
-
-                            SBMI.GraphicManagement2 = true;
-                        }
-                        catch (Exception Exception)
-                        {
-                            SBMI.GraphicManagement2 = true;
                             await SSWEW.Watch_CatchException(Exception);
                         }
                     });
@@ -893,87 +940,6 @@ namespace Sucrose.Backgroundog.Helper
                     });
                 }
 
-                if (SBMI.ComputerManagement)
-                {
-                    SBMI.ComputerManagement = false;
-
-                    _ = Task.Run(async () =>
-                    {
-                        try
-                        {
-                            SBMI.Computer.Accept(new SBEUV());
-
-                            foreach (IHardware Hardware in SBMI.Computer.Hardware)
-                            {
-                                if (Hardware.HardwareType is HardwareType.GpuAmd or HardwareType.GpuIntel or HardwareType.GpuNvidia)
-                                {
-                                    _ = Task.Run(async () =>
-                                    {
-                                        try
-                                        {
-                                            //Hardware.Update();
-
-                                            List<SBSS> Sensors = new()
-                                            {
-                                                new SBSS
-                                                {
-                                                    Name = Hardware.Name,
-                                                    Type = $"{Hardware.HardwareType}"
-                                                }
-                                            };
-
-                                            foreach (ISensor Sensor in Hardware.Sensors)
-                                            {
-                                                Sensors.Add(new SBSS
-                                                {
-                                                    Max = Sensor.Max,
-                                                    Min = Sensor.Min,
-                                                    Name = Sensor.Name,
-                                                    Now = Sensor.Value,
-                                                    Type = $"{Sensor.SensorType}"
-                                                });
-                                            }
-
-                                            string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
-
-                                            switch (Hardware.HardwareType)
-                                            {
-                                                case HardwareType.GpuAmd:
-                                                    SBMI.GraphicData.State = true;
-                                                    SBMI.GraphicData.Amd = JArray.Parse(Result);
-                                                    break;
-                                                case HardwareType.GpuIntel:
-                                                    SBMI.GraphicData.State = true;
-                                                    SBMI.GraphicData.Intel = JArray.Parse(Result);
-                                                    break;
-                                                case HardwareType.GpuNvidia:
-                                                    SBMI.GraphicData.State = true;
-                                                    SBMI.GraphicData.Nvidia = JArray.Parse(Result);
-                                                    break;
-                                                default:
-                                                    break;
-                                            }
-                                        }
-                                        catch (Exception Exception)
-                                        {
-                                            await SSWEW.Watch_CatchException(Exception);
-                                        }
-                                    });
-                                }
-                            }
-
-                            await Task.Delay(SBMI.SpecificationLessTime);
-
-                            SBMI.ComputerManagement = true;
-                        }
-                        catch (Exception Exception)
-                        {
-                            SBMI.ComputerManagement = true;
-                            await SSWEW.Watch_CatchException(Exception);
-                        }
-                    });
-                }
-
                 _ = Task.Run(async () =>
                 {
                     try
@@ -1092,31 +1058,6 @@ namespace Sucrose.Backgroundog.Helper
                         await SSWEW.Watch_CatchException(Exception);
                     }
                 });
-
-                //_ = Task.Run(() =>
-                //{
-                //    foreach (IHardware Hardware in SBMI.Computer.Hardware)
-                //    {
-                //        Console.WriteLine("Hardware: {0}, Type: {1}", Hardware.Name, Hardware.HardwareType);
-
-                //        foreach (IHardware Subhardware in Hardware.SubHardware)
-                //        {
-                //            Console.WriteLine("\tSubhardware: {0}, Type: {1}", Subhardware.Name, Hardware.HardwareType);
-
-                //            foreach (ISensor Sensor in Subhardware.Sensors)
-                //            {
-                //                Console.WriteLine("\t\tSensor: {0}, Type: {1}, Value: {2}", Sensor.Name, Sensor.SensorType, Sensor.Value);
-                //            }
-                //        }
-
-                //        foreach (ISensor Sensor in Hardware.Sensors)
-                //        {
-                //            Console.WriteLine("\tSensor: {0}, Type: {1}, Value: {2}", Sensor.Name, Sensor.SensorType, Sensor.Value);
-                //        }
-                //    }
-
-                //    Console.WriteLine("----------------------------------------------");
-                //});
             }
 
             await Task.CompletedTask;

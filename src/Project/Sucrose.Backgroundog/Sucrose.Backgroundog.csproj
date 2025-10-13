@@ -24,9 +24,9 @@
         <PackageReference Include="NAudio" />
         <PackageReference Include="NPSMLib" />
         <PackageReference Include="Skylark.Wing" />
+        <PackageReference Include="Vortice.DXGI" />
         <PackageReference Include="MathNet.Numerics" />
         <PackageReference Include="Skylark.Standard" />
-        <PackageReference Include="LibreHardwareMonitorLib" />
     </ItemGroup>
 
     <ItemGroup>

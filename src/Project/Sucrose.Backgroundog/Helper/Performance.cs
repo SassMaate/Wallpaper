@@ -1,7 +1,6 @@
 ﻿using Skylark.Enum;
 using Skylark.Standard.Extension.Storage;
 using System.Diagnostics;
-using SBEG = Sucrose.Backgroundog.Extension.Graphic;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
 using SEEST = Skylark.Enum.EnergySaverType;
 using SMMA = Sucrose.Manager.Manage.Aurora;
@@ -404,7 +403,7 @@ namespace Sucrose.Backgroundog.Helper
                 int MaxCount = 5;
                 SSDEPT Performance = SSDMMB.GraphicPerformance;
 
-                while (SBMI.GraphicData.State && SMMB.GraphicUsage > 0 && SBEG.Performance() && SSDMMB.GraphicPerformance == Performance)
+                while (SBMI.GraphicData.State && SMMB.GraphicUsage > 0 && SBMI.GraphicData.Now >= SMMB.GraphicUsage && SSDMMB.GraphicPerformance == Performance)
                 {
                     if (Count >= MaxCount)
                     {

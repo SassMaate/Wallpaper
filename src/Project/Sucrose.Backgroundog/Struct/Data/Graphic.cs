@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -16,19 +15,19 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public JArray Amd;
+        public float? Max;
+        /// <summary>
+        /// 
+        /// </summary>
+        public float? Min;
+        /// <summary>
+        /// 
+        /// </summary>
+        public float? Now;
         /// <summary>
         /// 
         /// </summary>
         public string Name;
-        /// <summary>
-        /// 
-        /// </summary>
-        public JArray Intel;
-        /// <summary>
-        /// 
-        /// </summary>
-        public JArray Nvidia;
         /// <summary>
         /// 
         /// </summary>

@@ -1,5 +1,4 @@
-﻿using LibreHardwareMonitor.Hardware;
-using NPSMLib;
+﻿using NPSMLib;
 using System.Diagnostics;
 using SBEAV = Sucrose.Backgroundog.Extension.AudioVisualizer;
 using SBEWL = Sucrose.Backgroundog.Extension.WindowsListener;
@@ -97,8 +96,6 @@ namespace Sucrose.Backgroundog.Manage
 
         public static bool StorageManagement = true;
 
-        public static bool ComputerManagement = true;
-
         public static bool GraphicManagement2 = true;
 
         public static bool NetworkManagement2 = true;
@@ -148,6 +145,8 @@ namespace Sucrose.Backgroundog.Manage
         public static int SpecificationTime = InitializeTime * 20;
 
         public static PerformanceCounter[] ProcessorsCounter = null;
+
+        public static List<PerformanceCounter> GraphicCounter = null;
 
         public static NowPlayingSessionManager SessionManager = null;
 
@@ -240,25 +239,12 @@ namespace Sucrose.Backgroundog.Manage
             VirtualMemoryAvailable = 0f
         };
 
-        public static Computer Computer = new()
-        {
-            IsGpuEnabled = true,
-            IsCpuEnabled = false,
-            IsPsuEnabled = false,
-            IsMemoryEnabled = false,
-            IsBatteryEnabled = false,
-            IsNetworkEnabled = false,
-            IsStorageEnabled = false,
-            IsControllerEnabled = false,
-            IsMotherboardEnabled = false
-        };
-
         public static SBSDG GraphicData = new()
         {
-            Amd = new(),
+            Max = 0f,
+            Now = 0f,
+            Min = 100f,
             State = false,
-            Intel = new(),
-            Nvidia = new(),
             Name = string.Empty,
             Manufacturer = string.Empty
         };

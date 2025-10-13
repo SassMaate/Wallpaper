@@ -18,8 +18,6 @@ namespace Sucrose.Backgroundog.Helper
         {
             SBEW.Start();
 
-            SBMI.Computer.Open();
-
             TimerCallback Callback = InitializeTimer_Callback;
             SBMI.InitializeTimer = new(Callback, null, 0, SBMI.InitializeTime);
 
@@ -33,8 +31,6 @@ namespace Sucrose.Backgroundog.Helper
         public async Task Stop()
         {
             SBEW.Stop();
-
-            SBMI.Computer.Close();
 
             SBMI.InitializeTimer.Dispose();
 
