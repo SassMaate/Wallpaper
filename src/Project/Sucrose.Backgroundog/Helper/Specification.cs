@@ -441,14 +441,14 @@ namespace Sucrose.Backgroundog.Helper
                                 };
 
                                 Sensor.SizeData = SSESSE.AutoConvert(Sensor.Size ?? 0, SEST.Byte, SEMST.Palila);
-                                Sensor.FormatSizeData = SHN.Numeral(Sensor.SizeData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.SizeData.Text;
+                                Sensor.FormatSizeData = SHN.Numeral(Sensor.SizeData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.SizeData.TypeText;
 
                                 Sensor.FreeSpaceData = SSESSE.AutoConvert(Sensor.FreeSpace ?? 0, SEST.Byte, SEMST.Palila);
-                                Sensor.FormatFreeSpaceData = SHN.Numeral(Sensor.FreeSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.FreeSpaceData.Text;
+                                Sensor.FormatFreeSpaceData = SHN.Numeral(Sensor.FreeSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.FreeSpaceData.TypeText;
 
                                 Sensor.UsedSpace = Sensor.Size - Sensor.FreeSpace;
                                 Sensor.UsedSpaceData = SSESSE.AutoConvert(Sensor.UsedSpace ?? 0, SEST.Byte, SEMST.Palila);
-                                Sensor.FormatUsedSpaceData = SHN.Numeral(Sensor.UsedSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.UsedSpaceData.Text;
+                                Sensor.FormatUsedSpaceData = SHN.Numeral(Sensor.UsedSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.UsedSpaceData.TypeText;
 
                                 Sensors.Add(Sensor);
                             }
@@ -499,8 +499,8 @@ namespace Sucrose.Backgroundog.Helper
                                         Name = Instance,
                                         ReadData = ReadData,
                                         WriteData = WriteData,
-                                        FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
-                                        FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
+                                        FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.TypeText,
+                                        FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.TypeText,
                                     });
                                 }
 
@@ -532,8 +532,8 @@ namespace Sucrose.Backgroundog.Helper
                                         Name = Instance,
                                         ReadData = ReadData,
                                         WriteData = WriteData,
-                                        FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.Text,
-                                        FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.Text,
+                                        FormatReadData = SHN.Numeral(ReadData.Value, true, true, 2, '0', SECNT.None) + " " + ReadData.TypeText,
+                                        FormatWriteData = SHN.Numeral(WriteData.Value, true, true, 2, '0', SECNT.None) + " " + WriteData.TypeText,
                                     });
                                 }
 
@@ -742,7 +742,7 @@ namespace Sucrose.Backgroundog.Helper
 
                                             SBMI.NetworkData.UploadData = SSESSE.AutoConvert(SBMI.NetworkData.Upload, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.FormatUploadData = SHN.Numeral(SBMI.NetworkData.UploadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.UploadData.Text;
+                                            SBMI.NetworkData.FormatUploadData = SHN.Numeral(SBMI.NetworkData.UploadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.UploadData.TypeText;
                                         }
 
                                         if (SBMI.DownloadCounter != null)
@@ -751,12 +751,12 @@ namespace Sucrose.Backgroundog.Helper
 
                                             SBMI.NetworkData.DownloadData = SSESSE.AutoConvert(SBMI.NetworkData.Download, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.FormatDownloadData = SHN.Numeral(SBMI.NetworkData.DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.DownloadData.Text;
+                                            SBMI.NetworkData.FormatDownloadData = SHN.Numeral(SBMI.NetworkData.DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.DownloadData.TypeText;
                                         }
 
                                         SBMI.NetworkData.Total = SBMI.NetworkData.Upload + SBMI.NetworkData.Download;
                                         SBMI.NetworkData.TotalData = SSESSE.AutoConvert(SBMI.NetworkData.Total, SEST.Byte, SEMST.Palila);
-                                        SBMI.NetworkData.FormatTotalData = SHN.Numeral(SBMI.NetworkData.TotalData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.TotalData.Text;
+                                        SBMI.NetworkData.FormatTotalData = SHN.Numeral(SBMI.NetworkData.TotalData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.TotalData.TypeText;
 
                                         break;
                                     }

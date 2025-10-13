@@ -157,41 +157,48 @@ namespace Sucrose.Backgroundog.Extension
                         { "Buffer", SBMI.NetworkData.PingData.Buffer },
                         { "Address", SBMI.NetworkData.PingData.Address },
                         { "Fragment", SBMI.NetworkData.PingData.Fragment },
-                        { "Result", $"{SBMI.NetworkData.PingData.Result}" },
-                        { "RoundTrip", SBMI.NetworkData.PingData.RoundTrip }
+                        { "Result", (int)SBMI.NetworkData.PingData.Result },
+                        { "RoundTrip", SBMI.NetworkData.PingData.RoundTrip },
+                        { "ResultText", SBMI.NetworkData.PingData.ResultText }
                     }
                 },
                 {
                     "TotalData", new JObject
                     {
-                        { "Text", SBMI.NetworkData.TotalData.Text },
+                        { "More", SBMI.NetworkData.TotalData.More },
                         { "Value", SBMI.NetworkData.TotalData.Value },
-                        { "Long", $"{SBMI.NetworkData.TotalData.Long}" },
-                        { "More", $"{SBMI.NetworkData.TotalData.More}" },
-                        { "Type", $"{SBMI.NetworkData.TotalData.Type}" },
-                        { "Short", $"{SBMI.NetworkData.TotalData.Short}" }
+                        { "Long", (int)SBMI.NetworkData.TotalData.Long },
+                        { "Type", (int)SBMI.NetworkData.TotalData.Type },
+                        { "Short", (int)SBMI.NetworkData.TotalData.Short },
+                        { "LongText", SBMI.NetworkData.TotalData.LongText },
+                        { "TypeText", SBMI.NetworkData.TotalData.TypeText },
+                        { "ShortText", SBMI.NetworkData.TotalData.ShortText }
                     }
                 },
                 {
                     "UploadData", new JObject
                     {
-                        { "Text", SBMI.NetworkData.UploadData.Text },
+                        { "More", SBMI.NetworkData.UploadData.More },
                         { "Value", SBMI.NetworkData.UploadData.Value },
-                        { "Long", $"{SBMI.NetworkData.UploadData.Long}" },
-                        { "More", $"{SBMI.NetworkData.UploadData.More}" },
-                        { "Type", $"{SBMI.NetworkData.UploadData.Type}" },
-                        { "Short", $"{SBMI.NetworkData.UploadData.Short}" }
+                        { "Long", (int)SBMI.NetworkData.UploadData.Long },
+                        { "Type", (int)SBMI.NetworkData.UploadData.Type },
+                        { "Short", (int)SBMI.NetworkData.UploadData.Short },
+                        { "LongText", SBMI.NetworkData.UploadData.LongText },
+                        { "TypeText", SBMI.NetworkData.UploadData.TypeText },
+                        { "ShortText", SBMI.NetworkData.UploadData.ShortText }
                     }
                 },
                 {
                     "DownloadData", new JObject
                     {
-                        { "Text", SBMI.NetworkData.DownloadData.Text },
+                        { "More", SBMI.NetworkData.DownloadData.More },
                         { "Value", SBMI.NetworkData.DownloadData.Value },
-                        { "Long", $"{SBMI.NetworkData.DownloadData.Long}" },
-                        { "More", $"{SBMI.NetworkData.DownloadData.More}" },
-                        { "Type", $"{SBMI.NetworkData.DownloadData.Type}" },
-                        { "Short", $"{SBMI.NetworkData.DownloadData.Short}" }
+                        { "Long", (int)SBMI.NetworkData.DownloadData.Long },
+                        { "Type", (int)SBMI.NetworkData.DownloadData.Type },
+                        { "Short", (int)SBMI.NetworkData.DownloadData.Short },
+                        { "LongText", SBMI.NetworkData.DownloadData.LongText },
+                        { "TypeText", SBMI.NetworkData.DownloadData.TypeText },
+                        { "ShortText", SBMI.NetworkData.DownloadData.ShortText }
                     }
                 }
             };
