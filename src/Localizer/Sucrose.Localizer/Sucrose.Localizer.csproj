@@ -21,6 +21,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Skylark" />
         <PackageReference Include="CsvHelper" />
         <PackageReference Include="Skylark.Standard" />
     </ItemGroup>
