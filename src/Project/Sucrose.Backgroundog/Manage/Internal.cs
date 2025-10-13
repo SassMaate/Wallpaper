@@ -315,15 +315,15 @@ namespace Sucrose.Backgroundog.Manage
         public static SBSDP ProcessorData = new()
         {
             Max = 0f,
-            Min = 0f,
             Now = 0f,
             Core = 0,
+            Min = 100f,
             Thread = 0,
             CoreMax = 0f,
-            CoreMin = 0f,
             CoreNow = 0f,
             Cores = new(),
             State = false,
+            CoreMin = 100f,
             ProcessorCount = 0,
             Name = string.Empty
         };

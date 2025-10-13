@@ -607,6 +607,8 @@ namespace Sucrose.Backgroundog.Helper
                             if (SBMI.ProcessorCounter == null)
                             {
                                 SBMI.ProcessorCounter = new("Processor", "% Processor Time", "_Total");
+
+                                _ = SBMI.ProcessorCounter.NextValue();
                             }
                             else
                             {
@@ -624,7 +626,9 @@ namespace Sucrose.Backgroundog.Helper
 
                                 for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
                                 {
-                                    SBMI.ProcessorsCounter[Core] = new PerformanceCounter("Processor", "% Processor Time", Core.ToString());
+                                    SBMI.ProcessorsCounter[Core] = new PerformanceCounter("Processor", "% Processor Time", $"{Core}");
+
+                                    _ = SBMI.ProcessorsCounter[Core].NextValue();
                                 }
                             }
                             else
