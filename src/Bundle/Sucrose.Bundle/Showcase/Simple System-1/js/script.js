@@ -1,6 +1,3 @@
-var amdGpu = [];
-var intelGpu = [];
-var nvidiaGpu = [];
 var cpuCounter = 0;
 var gpuCounter = 0;
 var netDownCounter = 0;
@@ -308,6 +305,9 @@ function SucroseProcessorData(obj) {
 
 			//chart data
 			cpuCounter = obj.Now;
+
+			//update chart
+			cpuChartConfig.options.title.text = cpuName;
 		}
 	}
 }
@@ -317,47 +317,14 @@ function SucroseGraphicData(obj) {
 		gpu = true;
 
 		if (obj.State) {
-			amdGpu = obj.Amd;
-			intelGpu = obj.Intel;
-			nvidiaGpu = obj.Nvidia;
-			
+			//hw name
 			gpuName = obj.Name;
 
-			let highestNow = -Infinity;
-			
-			let manufacturer = obj.Manufacturer;
-
-			//hw name
 			//chart data
+			gpuCounter = obj.Now;
 
-			if (manufacturer == "Nvidia" && nvidiaGpu != null) {
-				nvidiaGpu.forEach(gpu => {
-					if (gpu.Type === "Load" && gpu.Now !== null && gpu.Now > highestNow) {
-						highestNow = gpu.Now;
-					}
-				});
-
-				gpuCounter = highestNow.toFixed(2);
-			} else if (manufacturer == "Amd" && amdGpu != null) {
-				amdGpu.forEach(gpu => {
-					if (gpu.Type === "Load" && gpu.Now !== null && gpu.Now > highestNow) {
-						highestNow = gpu.Now;
-					}
-				});
-
-				gpuCounter = highestNow.toFixed(2);
-			} else if (manufacturer == "Intel" && intelGpu != null) {
-				intelGpu.forEach(gpu => {
-					if (gpu.Type === "Load" && gpu.Now !== null && gpu.Now > highestNow) {
-						highestNow = gpu.Now;
-					}
-				});
-
-				gpuCounter = highestNow.toFixed(2);
-			} else {
-				gpuName = "Unknown";
-				gpuCounter = 0;
-			}
+			//update chart
+			gpuChartConfig.options.title.text = gpuName;
 		}
 	}
 }
@@ -371,8 +338,11 @@ function SucroseNetworkData(obj) {
 			netCardName = obj.Name;
 
 			//chart data
-			netDownCounter = obj.Download / (1024 * 1024);
 			netUpCounter = obj.Upload / (1024 * 1024);
+			netDownCounter = obj.Download / (1024 * 1024);
+
+			//update chart
+			netChartConfig.options.title.text = netCardName;
 		}
 	}
 }
@@ -389,6 +359,9 @@ function SucroseMemoryData(obj) {
 
 			//chart data
 			memUsed = obj.MemoryLoad;
+
+			//update chart
+			ramChartConfig.options.title.text = memoryName;
 		}
 	}
 }
