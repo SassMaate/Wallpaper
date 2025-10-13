@@ -107,7 +107,7 @@ namespace Sucrose.Reportdog.Helper
             {
                 if (SMMG.TelemetryData)
                 {
-                    if (SSSHN.GetHostEntry())
+                    if (await SSSHN.GetHostEntryAsync())
                     {
                         using HttpClient Client = new();
 
@@ -243,7 +243,7 @@ namespace Sucrose.Reportdog.Helper
         {
             try
             {
-                if (SMMG.TelemetryData && SSSHN.GetHostEntry())
+                if (SMMG.TelemetryData && await SSSHN.GetHostEntryAsync())
                 {
                     using HttpClient Client = new();
 
@@ -272,7 +272,7 @@ namespace Sucrose.Reportdog.Helper
         {
             try
             {
-                if (SMMG.ExceptionData && SSSHN.GetHostEntry())
+                if (SMMG.ExceptionData && await SSSHN.GetHostEntryAsync())
                 {
                     await Task.Delay(50);
 

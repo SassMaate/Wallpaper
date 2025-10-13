@@ -14,6 +14,7 @@ namespace Sucrose.Shared.Space.Helper
                 try
                 {
                     _ = Dns.GetHostEntry(Host.Address);
+
                     return true;
                 }
                 catch { }

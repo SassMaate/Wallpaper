@@ -128,7 +128,7 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            if (SSSHN.GetHostEntry())
+                            if (await SSSHN.GetHostEntryAsync())
                             {
                                 SBMI.NetworkData.Online = true;
 

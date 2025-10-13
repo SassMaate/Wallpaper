@@ -86,7 +86,7 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (DownloadSymbol.Symbol == SymbolRegular.CloudArrowDown24)
                 {
-                    if (SSSHN.GetHostEntry())
+                    if (await SSSHN.GetHostEntryAsync())
                     {
                         State = true;
                         Error = false;

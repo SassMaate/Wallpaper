@@ -356,7 +356,7 @@ namespace Sucrose.Update.View
             {
                 Message.Text = SRER.GetValue("Update", "MessageText", "Connection");
 
-                if (SSSHN.GetHostEntry())
+                if (await SSSHN.GetHostEntryAsync())
                 {
                     SSSHS.Apply();
 
