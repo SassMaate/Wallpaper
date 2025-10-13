@@ -215,8 +215,12 @@ namespace Sucrose.Mpv.NET.API
             {
                 if (!disposed)
                 {
-                    PlatformDll.Utils.FreeLibrary(dllHandle);
-                    NativeLibrary.Free(dllHandle);
+                    try
+                    {
+                        PlatformDll.Utils.FreeLibrary(dllHandle);
+                        NativeLibrary.Free(dllHandle);
+                    }
+                    catch { }
                 }
 
                 disposed = true;
