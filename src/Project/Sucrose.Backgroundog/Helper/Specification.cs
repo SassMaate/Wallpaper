@@ -422,7 +422,7 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 SBMI.StorageData.State = true;
 
-                                Sensors.Add(new SBSSS
+                                SBSSS Sensor = new()
                                 {
                                     Name = SSSHM.Check(Object, "Name", string.Empty),
                                     Caption = SSSHM.Check(Object, "Caption", string.Empty),
@@ -438,7 +438,19 @@ namespace Sucrose.Backgroundog.Helper
                                     SupportsDiskQuotas = Convert.ToBoolean(SSSHM.Check(Object, "SupportsDiskQuotas", "False")),
                                     MaximumComponentLength = Convert.ToInt32(SSSHM.Check(Object, "MaximumComponentLength", "0")),
                                     SupportsFileBasedCompression = Convert.ToBoolean(SSSHM.Check(Object, "SupportsFileBasedCompression", "False"))
-                                });
+                                };
+
+                                Sensor.SizeData = SSESSE.AutoConvert(Sensor.Size ?? 0, SEST.Byte, SEMST.Palila);
+                                Sensor.FormatSizeData = SHN.Numeral(Sensor.SizeData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.SizeData.Text;
+
+                                Sensor.FreeSpaceData = SSESSE.AutoConvert(Sensor.FreeSpace ?? 0, SEST.Byte, SEMST.Palila);
+                                Sensor.FormatFreeSpaceData = SHN.Numeral(Sensor.FreeSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.FreeSpaceData.Text;
+
+                                Sensor.UsedSpace = Sensor.Size - Sensor.FreeSpace;
+                                Sensor.UsedSpaceData = SSESSE.AutoConvert(Sensor.UsedSpace ?? 0, SEST.Byte, SEMST.Palila);
+                                Sensor.FormatUsedSpaceData = SHN.Numeral(Sensor.UsedSpaceData.Value, true, true, 2, '0', SECNT.None) + " " + Sensor.UsedSpaceData.Text;
+
+                                Sensors.Add(Sensor);
                             }
 
                             string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);

@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using SSSSS = Skylark.Struct.Storage.StorageStruct;
 
 namespace Sucrose.Backgroundog.Struct
 {
@@ -31,11 +32,19 @@ namespace Sucrose.Backgroundog.Struct
         /// <summary>
         /// 
         /// </summary>
+        public SSSSS SizeData;
+        /// <summary>
+        /// 
+        /// </summary>
         public bool Compressed;
         /// <summary>
         /// 
         /// </summary>
         public long? FreeSpace;
+        /// <summary>
+        /// 
+        /// </summary>
+        public long? UsedSpace;
         /// <summary>
         /// 
         /// </summary>
@@ -51,11 +60,31 @@ namespace Sucrose.Backgroundog.Struct
         /// <summary>
         /// 
         /// </summary>
+        public SSSSS FreeSpaceData;
+        /// <summary>
+        /// 
+        /// </summary>
+        public SSSSS UsedSpaceData;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string FormatSizeData;
+        /// <summary>
+        /// 
+        /// </summary>
         public bool SupportsDiskQuotas;
         /// <summary>
         /// 
         /// </summary>
         public string VolumeSerialNumber;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string FormatFreeSpaceData;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string FormatUsedSpaceData;
         /// <summary>
         /// 
         /// </summary>
