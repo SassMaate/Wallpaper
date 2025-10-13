@@ -142,6 +142,7 @@ namespace Sucrose.Backgroundog.Extension
                 { "Name", SBMI.NetworkData.Name },
                 { "Ping", SBMI.NetworkData.Ping },
                 { "State", SBMI.NetworkData.State },
+                { "Online", SBMI.NetworkData.Online },
                 { "Upload", SBMI.NetworkData.Upload },
                 { "Download", SBMI.NetworkData.Download },
                 { "PingAddress", SBMI.NetworkData.PingAddress },

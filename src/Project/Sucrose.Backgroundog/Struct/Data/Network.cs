@@ -29,6 +29,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public bool Online;
+        /// <summary>
+        /// 
+        /// </summary>
         public float Upload;
         /// <summary>
         /// 

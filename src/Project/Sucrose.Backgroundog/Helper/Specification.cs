@@ -129,6 +129,8 @@ namespace Sucrose.Backgroundog.Helper
                         {
                             if (SSSHN.GetHostEntry())
                             {
+                                SBMI.NetworkData.Online = true;
+
                                 List<SSDSH> Hosts = SSSHN.GetHost();
 
                                 SSDSH? Host = Hosts.FirstOrDefault(Host => Host.Name == SMMB.PingType);
@@ -184,6 +186,7 @@ namespace Sucrose.Backgroundog.Helper
                             else
                             {
                                 SBMI.NetworkData.Ping = 0;
+                                SBMI.NetworkData.Online = false;
                                 SBMI.NetworkData.PingData = new();
                             }
 

@@ -269,6 +269,7 @@ namespace Sucrose.Backgroundog.Manage
             Upload = 0f,
             State = false,
             Download = 0f,
+            Online = false,
             PingData = new(),
             UploadData = new(),
             Name = string.Empty,
