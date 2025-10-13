@@ -44,15 +44,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public JArray PingData;
+        public JObject PingData;
         /// <summary>
         /// 
         /// </summary>
-        public JArray TotalData;
-        /// <summary>
-        /// 
-        /// </summary>
-        public JArray UploadData;
+        public JObject TotalData;
         /// <summary>
         /// 
         /// </summary>
@@ -60,7 +56,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public JArray DownloadData;
+        public JObject UploadData;
+        /// <summary>
+        /// 
+        /// </summary>
+        public JObject DownloadData;
         /// <summary>
         /// 
         /// </summary>

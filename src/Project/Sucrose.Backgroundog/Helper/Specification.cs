@@ -1,4 +1,4 @@
-﻿using LibreHardwareMonitor.Hardware;
+using LibreHardwareMonitor.Hardware;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
@@ -152,7 +152,7 @@ namespace Sucrose.Backgroundog.Helper
                                                 SBMI.NetworkData.Host = Host?.Address;
                                                 SBMI.NetworkData.Ping = PingData.RoundTrip;
                                                 SBMI.NetworkData.PingAddress = $"{PingData.Address} ({Host?.Address})";
-                                                SBMI.NetworkData.PingData = JArray.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
+                                                SBMI.NetworkData.PingData = JObject.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
 
                                                 break;
                                             }
@@ -174,7 +174,7 @@ namespace Sucrose.Backgroundog.Helper
                                             SBMI.NetworkData.Host = Host?.Address;
                                             SBMI.NetworkData.Ping = PingData.RoundTrip;
                                             SBMI.NetworkData.PingAddress = $"{PingData.Address} ({Host?.Address})";
-                                            SBMI.NetworkData.PingData = JArray.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
+                                            SBMI.NetworkData.PingData = JObject.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
                                         }
                                         catch (Exception Exception)
                                         {
@@ -745,7 +745,7 @@ namespace Sucrose.Backgroundog.Helper
 
                                             SSSSS UploadData = SSESSE.AutoConvert(SBMI.NetworkData.Upload, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.UploadData = JArray.Parse(JsonConvert.SerializeObject(UploadData, Formatting.Indented));
+                                            SBMI.NetworkData.UploadData = JObject.Parse(JsonConvert.SerializeObject(UploadData, Formatting.Indented));
                                             SBMI.NetworkData.FormatUploadData = SHN.Numeral(UploadData.Value, true, true, 2, '0', SECNT.None) + " " + UploadData.TypeText;
                                         }
 
@@ -755,7 +755,7 @@ namespace Sucrose.Backgroundog.Helper
 
                                             SSSSS DownloadData = SSESSE.AutoConvert(SBMI.NetworkData.Download, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.DownloadData = JArray.Parse(JsonConvert.SerializeObject(DownloadData, Formatting.Indented));
+                                            SBMI.NetworkData.DownloadData = JObject.Parse(JsonConvert.SerializeObject(DownloadData, Formatting.Indented));
                                             SBMI.NetworkData.FormatDownloadData = SHN.Numeral(DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + DownloadData.TypeText;
                                         }
 
@@ -763,7 +763,7 @@ namespace Sucrose.Backgroundog.Helper
 
                                         SSSSS TotalData = SSESSE.AutoConvert(SBMI.NetworkData.Total, SEST.Byte, SEMST.Palila);
 
-                                        SBMI.NetworkData.TotalData = JArray.Parse(JsonConvert.SerializeObject(TotalData, Formatting.Indented));
+                                        SBMI.NetworkData.TotalData = JObject.Parse(JsonConvert.SerializeObject(TotalData, Formatting.Indented));
                                         SBMI.NetworkData.FormatTotalData = SHN.Numeral(TotalData.Value, true, true, 2, '0', SECNT.None) + " " + TotalData.TypeText;
 
                                         break;
