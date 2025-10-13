@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SSDSH = Sucrose.Shared.Dependency.Struct.Host;
 
 namespace Sucrose.Shared.Space.Helper
@@ -11,7 +12,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                _ = Dns.GetHostEntry("www.google.com");
+                _ = Dns.GetHostEntry(SMMRU.Soferity.Replace("https://", ""));
 
                 return true;
             }
@@ -25,7 +26,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                _ = await Dns.GetHostEntryAsync("www.google.com");
+                _ = await Dns.GetHostEntryAsync(SMMRU.Soferity.Replace("https://", ""));
 
                 return true;
             }

@@ -142,9 +142,8 @@ namespace Sucrose.XamlAnimatedGif
 
         private static string GetCacheFileName(Uri uri)
         {
-            using SHA1 sha1 = SHA1.Create();
             byte[] bytes = Encoding.UTF8.GetBytes(uri.AbsoluteUri);
-            byte[] hash = sha1.ComputeHash(bytes);
+            byte[] hash = SHA1.HashData(bytes);
             return ToHex(hash);
         }
 

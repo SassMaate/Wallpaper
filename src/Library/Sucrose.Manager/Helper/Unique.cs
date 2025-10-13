@@ -9,7 +9,7 @@ namespace Sucrose.Manager.Helper
     {
         public static Guid Generate(string Value)
         {
-            return SHG.ByteToGuid(MD5.Create().ComputeHash(SHE.GetBytes(Value, SEET.UTF8)));
+            return SHG.ByteToGuid(MD5.HashData(SHE.GetBytes(Value, SEET.UTF8)));
         }
 
         public static string GenerateText(string Value)

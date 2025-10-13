@@ -13,12 +13,14 @@ namespace Sucrose.Manager.Converter
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             string value = (string)reader.Value;
+
             return IPAddress.Parse(value);
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             IPAddress ipAddress = (IPAddress)value;
+
             writer.WriteValue(ipAddress.ToString());
         }
     }

@@ -14,6 +14,7 @@ namespace Sucrose.Manager.Converter
             if (reader.TokenType == JsonToken.String)
             {
                 string enumValue = (string)reader.Value;
+
                 return Enum.Parse(objectType, enumValue, true);
             }
 
