@@ -111,7 +111,7 @@ namespace Sucrose.Mpv.NET.API
                         "Ensure you're using the correct libmpv version compatible with this architecture.\n" +
                         "For x64, use a 64-bit (x86_64) libmpv; for x86, use a 32-bit (i686) libmpv; for ARM64, ensure compatibility with 64-bit (aarch64) libmpv.\n" +
                         "Check that the required DLLs are present in the application directory, and that your system meets the required dependencies.\n\n" +
-                        "If you believe you have the correct architecture, you can visit https://support.microsoft.com/kb/2977003#latest-microsoft-visual-c-redistributable-version " +
+                        "If you believe you have the correct architecture, you can visit https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist " +
                         "to check for any issues related to the necessary dependencies and download the required ones to resolve them.\n\n" +
                         "If you believe you have done everything correctly, please reach out to the appropriate support channels for assistance."
                     );
