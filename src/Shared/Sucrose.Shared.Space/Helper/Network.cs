@@ -1,7 +1,6 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Net;
 using System.Net.NetworkInformation;
-using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SSDSH = Sucrose.Shared.Dependency.Struct.Host;
 
 namespace Sucrose.Shared.Space.Helper
@@ -10,30 +9,33 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static bool GetHostEntry()
         {
-            try
+            foreach (SSDSH Host in GetHost())
             {
-                _ = Dns.GetHostEntry(SMMRU.Soferity.Replace("https://", ""));
+                try
+                {
+                    _ = Dns.GetHostEntry(Host.Address);
+                    return true;
+                }
+                catch { }
+            }
 
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return false;
         }
 
         public static async Task<bool> GetHostEntryAsync()
         {
-            try
+            foreach (SSDSH Host in GetHost())
             {
-                _ = await Dns.GetHostEntryAsync(SMMRU.Soferity.Replace("https://", ""));
+                try
+                {
+                    _ = await Dns.GetHostEntryAsync(Host.Address);
 
-                return true;
+                    return true;
+                }
+                catch { }
             }
-            catch
-            {
-                return false;
-            }
+
+            return false;
         }
 
         public static List<SSDSH> GetHost()
@@ -64,6 +66,16 @@ namespace Sucrose.Shared.Space.Helper
                 {
                     Name = "Yandex",
                     Address = "www.yandex.com"
+                },
+                new()
+                {
+                    Name = "Microsoft",
+                    Address = "www.microsoft.com"
+                },
+                new()
+                {
+                    Name = "Cloudflare",
+                    Address = "www.cloudflare.com"
                 },
                 new()
                 {
