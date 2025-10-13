@@ -742,6 +742,10 @@ namespace Sucrose.Backgroundog.Helper
                                             SBMI.NetworkData.FormatDownloadData = SHN.Numeral(SBMI.NetworkData.DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.DownloadData.Text;
                                         }
 
+                                        SBMI.NetworkData.Total = SBMI.NetworkData.Upload + SBMI.NetworkData.Download;
+                                        SBMI.NetworkData.TotalData = SSESSE.AutoConvert(SBMI.NetworkData.Total, SEST.Byte, SEMST.Palila);
+                                        SBMI.NetworkData.FormatTotalData = SHN.Numeral(SBMI.NetworkData.TotalData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.TotalData.Text;
+
                                         break;
                                     }
                                 }

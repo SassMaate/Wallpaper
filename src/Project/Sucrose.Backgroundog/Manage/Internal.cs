@@ -266,14 +266,17 @@ namespace Sucrose.Backgroundog.Manage
         public static SBSDN NetworkData = new()
         {
             Ping = 0,
+            Total = 0f,
             Upload = 0f,
             State = false,
             Download = 0f,
             Online = false,
             PingData = new(),
+            TotalData = new(),
             UploadData = new(),
             Name = string.Empty,
             DownloadData = new(),
+            FormatTotalData = string.Empty,
             FormatUploadData = string.Empty,
             FormatDownloadData = string.Empty
         };

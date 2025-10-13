@@ -33,6 +33,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public float Total;
+        /// <summary>
+        /// 
+        /// </summary>
         public float Upload;
         /// <summary>
         /// 
@@ -45,6 +49,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public SSSSS TotalData;
+        /// <summary>
+        /// 
+        /// </summary>
         public SSSSS UploadData;
         /// <summary>
         /// 
@@ -54,6 +62,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public string PingAddress;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string FormatTotalData;
         /// <summary>
         /// 
         /// </summary>
