@@ -274,8 +274,10 @@ namespace Sucrose.Backgroundog.Manage
             PingData = new(),
             TotalData = new(),
             UploadData = new(),
+            Host = string.Empty,
             Name = string.Empty,
             DownloadData = new(),
+            PingAddress = string.Empty,
             FormatTotalData = string.Empty,
             FormatUploadData = string.Empty,
             FormatDownloadData = string.Empty
@@ -322,13 +324,14 @@ namespace Sucrose.Backgroundog.Manage
             Core = 0,
             Min = 100f,
             Thread = 0,
-            CoreMax = 0f,
-            CoreNow = 0f,
             Cores = new(),
+            CoresMax = 0f,
+            CoresNow = 0f,
             State = false,
-            CoreMin = 100f,
+            CoresMin = 100f,
             ProcessorCount = 0,
-            Name = string.Empty
+            Name = string.Empty,
+            Type = string.Empty
         };
 
         public static SBSDMD MotherboardData = new()

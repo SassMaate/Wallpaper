@@ -48,15 +48,15 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public float? CoreMax;
+        public float? CoresMax;
         /// <summary>
         /// 
         /// </summary>
-        public float? CoreMin;
+        public float? CoresMin;
         /// <summary>
         /// 
         /// </summary>
-        public float? CoreNow;
+        public float? CoresNow;
         /// <summary>
         /// 
         /// </summary>

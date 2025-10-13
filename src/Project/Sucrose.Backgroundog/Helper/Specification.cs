@@ -37,6 +37,7 @@ using SSESSE = Skylark.Standard.Extension.Storage.StorageExtension;
 using SSIB = Sucrose.Signal.Interface.Backgroundog;
 using SSMI = Sucrose.Signal.Manage.Internal;
 using SSMMS = Skylark.Struct.Monitor.MonitorStruct;
+using SSPPSS = Skylark.Struct.Ping.PingSendStruct;
 using SSSHM = Sucrose.Shared.Space.Helper.Management;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
@@ -145,12 +146,13 @@ namespace Sucrose.Backgroundog.Helper
                                             {
                                                 SBMI.PingAddress = $"{Address}";
 
-                                                SBMI.NetworkData.PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
+                                                SSPPSS PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
 
                                                 SBMI.PingHost = SMMB.PingType;
                                                 SBMI.NetworkData.Host = Host?.Address;
-                                                SBMI.NetworkData.Ping = SBMI.NetworkData.PingData.RoundTrip;
-                                                SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host?.Address})";
+                                                SBMI.NetworkData.Ping = PingData.RoundTrip;
+                                                SBMI.NetworkData.PingAddress = $"{PingData.Address} ({Host?.Address})";
+                                                SBMI.NetworkData.PingData = JArray.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
 
                                                 break;
                                             }
@@ -167,11 +169,12 @@ namespace Sucrose.Backgroundog.Helper
                                     {
                                         try
                                         {
-                                            SBMI.NetworkData.PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
+                                            SSPPSS PingData = await SSEPPE.SendAsync(SBMI.PingAddress, 1000);
 
                                             SBMI.NetworkData.Host = Host?.Address;
-                                            SBMI.NetworkData.Ping = SBMI.NetworkData.PingData.RoundTrip;
-                                            SBMI.NetworkData.PingAddress = $"{SBMI.NetworkData.PingData.Address} ({Host?.Address})";
+                                            SBMI.NetworkData.Ping = PingData.RoundTrip;
+                                            SBMI.NetworkData.PingAddress = $"{PingData.Address} ({Host?.Address})";
+                                            SBMI.NetworkData.PingData = JArray.Parse(JsonConvert.SerializeObject(PingData, Formatting.Indented));
                                         }
                                         catch (Exception Exception)
                                         {
@@ -647,16 +650,16 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 List<SBSCS> Sensors = new();
 
-                                SBMI.ProcessorData.CoreNow = 0;
+                                SBMI.ProcessorData.CoresNow = 0;
 
                                 for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
                                 {
                                     float Now = SBMI.ProcessorsCounter[Core].NextValue();
 
-                                    SBMI.ProcessorData.CoreNow = SBMI.ProcessorData.CoreNow > Now ? SBMI.ProcessorData.CoreNow : Now;
+                                    SBMI.ProcessorData.CoresNow = SBMI.ProcessorData.CoresNow > Now ? SBMI.ProcessorData.CoresNow : Now;
 
-                                    SBMI.ProcessorData.CoreMax = SBMI.ProcessorData.CoreNow > SBMI.ProcessorData.CoreMax ? SBMI.ProcessorData.CoreNow : SBMI.ProcessorData.CoreMax;
-                                    SBMI.ProcessorData.CoreMin = SBMI.ProcessorData.CoreNow < SBMI.ProcessorData.CoreMin ? SBMI.ProcessorData.CoreNow : SBMI.ProcessorData.CoreMin;
+                                    SBMI.ProcessorData.CoresMax = SBMI.ProcessorData.CoresNow > SBMI.ProcessorData.CoresMax ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMax;
+                                    SBMI.ProcessorData.CoresMin = SBMI.ProcessorData.CoresNow < SBMI.ProcessorData.CoresMin ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMin;
 
                                     Sensors.Add(new SBSCS
                                     {
@@ -740,23 +743,28 @@ namespace Sucrose.Backgroundog.Helper
                                         {
                                             SBMI.NetworkData.Upload = SBMI.UploadCounter.NextValue();
 
-                                            SBMI.NetworkData.UploadData = SSESSE.AutoConvert(SBMI.NetworkData.Upload, SEST.Byte, SEMST.Palila);
+                                            SSSSS UploadData = SSESSE.AutoConvert(SBMI.NetworkData.Upload, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.FormatUploadData = SHN.Numeral(SBMI.NetworkData.UploadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.UploadData.TypeText;
+                                            SBMI.NetworkData.UploadData = JArray.Parse(JsonConvert.SerializeObject(UploadData, Formatting.Indented));
+                                            SBMI.NetworkData.FormatUploadData = SHN.Numeral(UploadData.Value, true, true, 2, '0', SECNT.None) + " " + UploadData.TypeText;
                                         }
 
                                         if (SBMI.DownloadCounter != null)
                                         {
                                             SBMI.NetworkData.Download = SBMI.DownloadCounter.NextValue();
 
-                                            SBMI.NetworkData.DownloadData = SSESSE.AutoConvert(SBMI.NetworkData.Download, SEST.Byte, SEMST.Palila);
+                                            SSSSS DownloadData = SSESSE.AutoConvert(SBMI.NetworkData.Download, SEST.Byte, SEMST.Palila);
 
-                                            SBMI.NetworkData.FormatDownloadData = SHN.Numeral(SBMI.NetworkData.DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.DownloadData.TypeText;
+                                            SBMI.NetworkData.DownloadData = JArray.Parse(JsonConvert.SerializeObject(DownloadData, Formatting.Indented));
+                                            SBMI.NetworkData.FormatDownloadData = SHN.Numeral(DownloadData.Value, true, true, 2, '0', SECNT.None) + " " + DownloadData.TypeText;
                                         }
 
                                         SBMI.NetworkData.Total = SBMI.NetworkData.Upload + SBMI.NetworkData.Download;
-                                        SBMI.NetworkData.TotalData = SSESSE.AutoConvert(SBMI.NetworkData.Total, SEST.Byte, SEMST.Palila);
-                                        SBMI.NetworkData.FormatTotalData = SHN.Numeral(SBMI.NetworkData.TotalData.Value, true, true, 2, '0', SECNT.None) + " " + SBMI.NetworkData.TotalData.TypeText;
+
+                                        SSSSS TotalData = SSESSE.AutoConvert(SBMI.NetworkData.Total, SEST.Byte, SEMST.Palila);
+
+                                        SBMI.NetworkData.TotalData = JArray.Parse(JsonConvert.SerializeObject(TotalData, Formatting.Indented));
+                                        SBMI.NetworkData.FormatTotalData = SHN.Numeral(TotalData.Value, true, true, 2, '0', SECNT.None) + " " + TotalData.TypeText;
 
                                         break;
                                     }

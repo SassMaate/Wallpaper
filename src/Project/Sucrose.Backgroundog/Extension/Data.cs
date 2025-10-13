@@ -146,61 +146,14 @@ namespace Sucrose.Backgroundog.Extension
                 { "Online", SBMI.NetworkData.Online },
                 { "Upload", SBMI.NetworkData.Upload },
                 { "Download", SBMI.NetworkData.Download },
+                { "PingData", SBMI.NetworkData.PingData },
+                { "TotalData", SBMI.NetworkData.TotalData },
+                { "UploadData", SBMI.NetworkData.UploadData },
                 { "PingAddress", SBMI.NetworkData.PingAddress },
+                { "DownloadData", SBMI.NetworkData.DownloadData },
                 { "FormatTotalData", SBMI.NetworkData.FormatTotalData },
                 { "FormatUploadData", SBMI.NetworkData.FormatUploadData },
-                { "FormatDownloadData", SBMI.NetworkData.FormatDownloadData },
-                {
-                    "PingData", new JObject
-                    {
-                        { "Ttl", SBMI.NetworkData.PingData.Ttl },
-                        { "Buffer", SBMI.NetworkData.PingData.Buffer },
-                        { "Address", SBMI.NetworkData.PingData.Address },
-                        { "Fragment", SBMI.NetworkData.PingData.Fragment },
-                        { "Result", (int)SBMI.NetworkData.PingData.Result },
-                        { "RoundTrip", SBMI.NetworkData.PingData.RoundTrip },
-                        { "ResultText", SBMI.NetworkData.PingData.ResultText }
-                    }
-                },
-                {
-                    "TotalData", new JObject
-                    {
-                        { "More", SBMI.NetworkData.TotalData.More },
-                        { "Value", SBMI.NetworkData.TotalData.Value },
-                        { "Long", (int)SBMI.NetworkData.TotalData.Long },
-                        { "Type", (int)SBMI.NetworkData.TotalData.Type },
-                        { "Short", (int)SBMI.NetworkData.TotalData.Short },
-                        { "LongText", SBMI.NetworkData.TotalData.LongText },
-                        { "TypeText", SBMI.NetworkData.TotalData.TypeText },
-                        { "ShortText", SBMI.NetworkData.TotalData.ShortText }
-                    }
-                },
-                {
-                    "UploadData", new JObject
-                    {
-                        { "More", SBMI.NetworkData.UploadData.More },
-                        { "Value", SBMI.NetworkData.UploadData.Value },
-                        { "Long", (int)SBMI.NetworkData.UploadData.Long },
-                        { "Type", (int)SBMI.NetworkData.UploadData.Type },
-                        { "Short", (int)SBMI.NetworkData.UploadData.Short },
-                        { "LongText", SBMI.NetworkData.UploadData.LongText },
-                        { "TypeText", SBMI.NetworkData.UploadData.TypeText },
-                        { "ShortText", SBMI.NetworkData.UploadData.ShortText }
-                    }
-                },
-                {
-                    "DownloadData", new JObject
-                    {
-                        { "More", SBMI.NetworkData.DownloadData.More },
-                        { "Value", SBMI.NetworkData.DownloadData.Value },
-                        { "Long", (int)SBMI.NetworkData.DownloadData.Long },
-                        { "Type", (int)SBMI.NetworkData.DownloadData.Type },
-                        { "Short", (int)SBMI.NetworkData.DownloadData.Short },
-                        { "LongText", SBMI.NetworkData.DownloadData.LongText },
-                        { "TypeText", SBMI.NetworkData.DownloadData.TypeText },
-                        { "ShortText", SBMI.NetworkData.DownloadData.ShortText }
-                    }
-                }
+                { "FormatDownloadData", SBMI.NetworkData.FormatDownloadData }
             };
         }
 
@@ -228,9 +181,9 @@ namespace Sucrose.Backgroundog.Extension
                 { "Cores", SBMI.ProcessorData.Cores },
                 { "State", SBMI.ProcessorData.State },
                 { "Thread", SBMI.ProcessorData.Thread },
-                { "CoreMax", SBMI.ProcessorData.CoreMax },
-                { "CoreMin", SBMI.ProcessorData.CoreMin },
-                { "CoreNow", SBMI.ProcessorData.CoreNow },
+                { "CoresMax", SBMI.ProcessorData.CoresMax },
+                { "CoresMin", SBMI.ProcessorData.CoresMin },
+                { "CoresNow", SBMI.ProcessorData.CoresNow },
                 { "ProcessorCount", SBMI.ProcessorData.ProcessorCount }
             };
         }

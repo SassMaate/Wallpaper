@@ -1,6 +1,5 @@
-﻿using System.Runtime.InteropServices;
-using SSPPSS = Skylark.Struct.Ping.PingSendStruct;
-using SSSSS = Skylark.Struct.Storage.StorageStruct;
+﻿using Newtonsoft.Json.Linq;
+using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data
 {
@@ -45,23 +44,23 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
-        public SSPPSS PingData;
+        public JArray PingData;
         /// <summary>
         /// 
         /// </summary>
-        public SSSSS TotalData;
+        public JArray TotalData;
         /// <summary>
         /// 
         /// </summary>
-        public SSSSS UploadData;
-        /// <summary>
-        /// 
-        /// </summary>
-        public SSSSS DownloadData;
+        public JArray UploadData;
         /// <summary>
         /// 
         /// </summary>
         public string PingAddress;
+        /// <summary>
+        /// 
+        /// </summary>
+        public JArray DownloadData;
         /// <summary>
         /// 
         /// </summary>
