@@ -1,9 +1,9 @@
 ﻿using SMMCE = Sucrose.Memory.Manage.Constant.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
+using SSDEHPT = Sucrose.Shared.Dependency.Enum.HighPerformanceType;
 using SSDEIMT = Sucrose.Shared.Dependency.Enum.InputModuleType;
 using SSDEST = Sucrose.Shared.Dependency.Enum.StretchType;
-using SSDEHPT = Sucrose.Shared.Dependency.Enum.HighPerformanceType;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 
 namespace Sucrose.Shared.Dependency.Manage.Manager
