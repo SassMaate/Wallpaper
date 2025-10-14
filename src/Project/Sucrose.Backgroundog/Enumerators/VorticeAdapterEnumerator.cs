@@ -32,7 +32,7 @@ namespace Sucrose.Backgroundog.Enumerators
                 using IDXGIFactory1 factory = DXGI.CreateDXGIFactory1<IDXGIFactory1>();
 
                 // Enumerate all adapters
-                for (int index = 0; factory.EnumAdapters1(index, out IDXGIAdapter1 adapter).Success; index++)
+                for (uint index = 0; factory.EnumAdapters1(index, out IDXGIAdapter1 adapter).Success; index++)
                 {
                     using (adapter)
                     {
@@ -251,9 +251,8 @@ namespace Sucrose.Backgroundog.Enumerators
 
     public class VorticeAdapterInfo
     {
-        public int Index { get; }
-
         public Luid Luid { get; }
+        public uint Index { get; }
 
         public uint DeviceId { get; }
 
@@ -290,19 +289,19 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public ulong DedicatedVideoMemoryMB => DedicatedVideoMemory / 1024 / 1024;
 
-        internal VorticeAdapterInfo(AdapterDescription1 desc, int index)
+        internal VorticeAdapterInfo(AdapterDescription1 desc, uint index)
         {
             Index = index;
             Luid = desc.Luid;
             Flags = desc.Flags;
+            DeviceId = desc.DeviceId;
+            Revision = desc.Revision;
+            VendorId = desc.VendorId;
             Description = desc.Description;
-            DeviceId = (uint)desc.DeviceId;
-            Revision = (uint)desc.Revision;
-            VendorId = (uint)desc.VendorId;
-            SubsystemId = (uint)desc.SubsystemId;
-            SharedSystemMemory = (ulong)(nint)desc.SharedSystemMemory;
-            DedicatedVideoMemory = (ulong)(nint)desc.DedicatedVideoMemory;
-            DedicatedSystemMemory = (ulong)(nint)desc.DedicatedSystemMemory;
+            SubsystemId = desc.SubsystemId;
+            SharedSystemMemory = (ulong)desc.SharedSystemMemory;
+            DedicatedVideoMemory = (ulong)desc.DedicatedVideoMemory;
+            DedicatedSystemMemory = (ulong)desc.DedicatedSystemMemory;
         }
 
         public override string ToString()

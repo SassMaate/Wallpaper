@@ -3,9 +3,9 @@ using System.Text;
 using SCHA = Sucrose.Commandog.Helper.Arguments;
 using SHC = Skylark.Helper.Culture;
 using SMMG = Sucrose.Manager.Manage.General;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
-using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Commandog
 {

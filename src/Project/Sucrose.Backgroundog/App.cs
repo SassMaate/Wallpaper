@@ -5,11 +5,11 @@ using SHC = Skylark.Helper.Culture;
 using SMMG = Sucrose.Manager.Manage.General;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
-using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Backgroundog
 {

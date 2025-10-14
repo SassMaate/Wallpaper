@@ -12,6 +12,7 @@ using SRHR = Sucrose.Resources.Helper.Resources;
 using SSCEUET = Sucrose.Shared.Core.Enum.UpdateExtensionType;
 using SSCHU = Sucrose.Shared.Core.Helper.Update;
 using SSDEUAT = Sucrose.Shared.Dependency.Enum.UpdateAutoType;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMMU = Sucrose.Shared.Dependency.Manage.Manager.Update;
 using SSSHE = Sucrose.Shared.Space.Helper.Extension;
@@ -20,7 +21,6 @@ using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
 using SUMI = Sucrose.Update.Manage.Internal;
-using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SUVMW = Sucrose.Update.View.MainWindow;
 
 namespace Sucrose.Update

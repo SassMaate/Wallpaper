@@ -13,6 +13,7 @@ using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSEAVA = Sucrose.Shared.Engine.Aurora.View.Application;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
@@ -27,7 +28,6 @@ using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
-using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Live.Aurora
 {
