@@ -7,6 +7,7 @@ using System.Net.Sockets;
 using SBEAS = Sucrose.Backgroundog.Extension.AudioSession;
 using SBEC = Sucrose.Backgroundog.Extension.Core;
 using SBED = Sucrose.Backgroundog.Extension.Data;
+using SBEG = Sucrose.Backgroundog.Extension.Graphic;
 using SBER = Sucrose.Backgroundog.Extension.Remote;
 using SBES = Sucrose.Backgroundog.Extension.Storage;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
@@ -493,36 +494,20 @@ namespace Sucrose.Backgroundog.Helper
                                         SBMI.GraphicCounter = null;
                                     }
 
-                                    SBMI.GraphicCounter = new();
-
-                                    PerformanceCounterCategory Category = new("GPU Engine");
-                                    SBMI.GraphicData.Instances = Category.GetInstanceNames();
-
                                     SBEVAE.GetNameToLuidMapping().TryGetValue(SMMB.GraphicAdapter, out SBMI.GraphicData.Luid);
 
-                                    foreach (string Instance in SBMI.GraphicData.Instances)
-                                    {
-                                        if (Instance.EndsWith("engtype_3D") && Instance.Contains(SBMI.GraphicData.Luid ?? SMMRG.Unknown))
-                                        {
-                                            foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
-                                            {
-                                                if (Counter.CounterName.Equals("Utilization Percentage"))
-                                                {
-                                                    SBMI.GraphicCounter.Add(Counter);
+                                    SBMI.GraphicCounter = SBEG.CreateCounters("GPU Engine", SBMI.GraphicData.Luid ?? SMMRG.Unknown);
 
-                                                    _ = Counter.NextValue();
-                                                }
-                                            }
-                                        }
-                                    }
+                                    SBEG.InstanceValues(SBMI.GraphicCounter);
 
                                     SBMI.GraphicData.State = true;
                                     SBMI.GraphicData.Name = SMMB.GraphicAdapter;
+                                    SBMI.GraphicData.Instances = SBEG.GetInstances("GPU Engine");
                                     SBMI.GraphicData.Manufacturer = SBEVAE.GetGpuVendorNameByName(SMMB.GraphicAdapter);
                                 }
                                 else
                                 {
-                                    SBMI.GraphicData.Now = SHS.Clamp(SBMI.GraphicCounter.Sum(Counter => Counter.NextValue()), 0f, 100f);
+                                    SBMI.GraphicData.Now = SHS.Clamp(SBEG.GetValue(SBMI.GraphicCounter), 0f, 100f);
 
                                     SBMI.GraphicData.Max = SHS.Clamp((SBMI.GraphicData.Now > SBMI.GraphicData.Max ? SBMI.GraphicData.Now : SBMI.GraphicData.Max) ?? 0f, 0f, 100f);
                                     SBMI.GraphicData.Min = SHS.Clamp((SBMI.GraphicData.Now < SBMI.GraphicData.Min ? SBMI.GraphicData.Now : SBMI.GraphicData.Min) ?? 100f, 0f, 100f);
