@@ -3,12 +3,15 @@ using SMMI = Sucrose.Manager.Manage.Internal;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEIMT = Sucrose.Shared.Dependency.Enum.InputModuleType;
 using SSDEST = Sucrose.Shared.Dependency.Enum.StretchType;
+using SSDEHPT = Sucrose.Shared.Dependency.Enum.HighPerformanceType;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 
 namespace Sucrose.Shared.Dependency.Manage.Manager
 {
     internal static class Engine
     {
+        public static SSDEHPT GraphicPreference => SMMI.EngineSettingManager.GetSetting(SMMCE.GraphicPreference, SSDEHPT.HighPerformance);
+
         public static SSDEET Application => SMMI.EngineSettingManager.GetSetting(SMMCE.Application, (SSDEET)SSSMI.ApplicationEngine);
 
         public static SSDEIMT InputModuleType => SMMI.EngineSettingManager.GetSetting(SMMCE.InputModuleType, SSDEIMT.RawInput);

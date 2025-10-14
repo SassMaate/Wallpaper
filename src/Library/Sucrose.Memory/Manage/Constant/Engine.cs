@@ -58,6 +58,8 @@
 
         public const string DisplayScreenType = "DisplayScreenType";
 
+        public const string GraphicPreference = "GraphicPreference";
+
         public const string BackgroundImagePath = "BackgroundImagePath";
 
         public const string DuplicateScreenType = "DuplicateScreenType";

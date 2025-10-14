@@ -7,6 +7,13 @@
         Resume
     }
 
+    internal enum HighPerformanceType
+    {
+        Default,
+        PowerSaving,
+        HighPerformance
+    }
+
     internal enum PausePerformanceType
     {
         Heavy,
