@@ -11,13 +11,14 @@ using SBES = Sucrose.Backgroundog.Extension.Storage;
 using SBEV = Sucrose.Backgroundog.Extension.Virtual;
 using SBEVAE = Sucrose.Backgroundog.Enumerators.VorticeAdapterEnumerator;
 using SBMI = Sucrose.Backgroundog.Manage.Internal;
-using SBSCS = Sucrose.Backgroundog.Struct.ChildSensor;
+using SBSCS = Sucrose.Backgroundog.Struct.CoreSensor;
 using SBSDS = Sucrose.Backgroundog.Struct.DriverSensor;
 using SBSSS = Sucrose.Backgroundog.Struct.StorageSensor;
 using SECNT = Skylark.Enum.ClearNumericType;
 using SEMST = Skylark.Enum.ModeStorageType;
 using SEST = Skylark.Enum.StorageType;
 using SHN = Skylark.Helper.Numeric;
+using SHS = Skylark.Helper.Skymath;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMMCB = Sucrose.Memory.Manage.Constant.Backgroundog;
 using SMMCS = Sucrose.Memory.Manage.Constant.System;
@@ -523,10 +524,10 @@ namespace Sucrose.Backgroundog.Helper
                                 }
                                 else
                                 {
-                                    SBMI.GraphicData.Now = SBMI.GraphicCounter.Sum(Counter => Counter.NextValue());
+                                    SBMI.GraphicData.Now = SHS.Clamp(SBMI.GraphicCounter.Sum(Counter => Counter.NextValue()), 0f, 100f);
 
-                                    SBMI.GraphicData.Max = SBMI.GraphicData.Now > SBMI.GraphicData.Max ? SBMI.GraphicData.Now : SBMI.GraphicData.Max;
-                                    SBMI.GraphicData.Min = SBMI.GraphicData.Now < SBMI.GraphicData.Min ? SBMI.GraphicData.Now : SBMI.GraphicData.Min;
+                                    SBMI.GraphicData.Max = SHS.Clamp((SBMI.GraphicData.Now > SBMI.GraphicData.Max ? SBMI.GraphicData.Now : SBMI.GraphicData.Max) ?? 0f, 0f, 100f);
+                                    SBMI.GraphicData.Min = SHS.Clamp((SBMI.GraphicData.Now < SBMI.GraphicData.Min ? SBMI.GraphicData.Now : SBMI.GraphicData.Min) ?? 100f, 0f, 100f);
                                 }
                             }
 
@@ -674,12 +675,12 @@ namespace Sucrose.Backgroundog.Helper
                             }
                             else
                             {
-                                SBMI.ProcessorData.Now = SBMI.ProcessorCounter.NextValue();
-
                                 SBMI.ProcessorData.Type = $"{SBMI.ProcessorCounter.CounterType}";
 
-                                SBMI.ProcessorData.Max = SBMI.ProcessorData.Now > SBMI.ProcessorData.Max ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Max;
-                                SBMI.ProcessorData.Min = SBMI.ProcessorData.Now < SBMI.ProcessorData.Min ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Min;
+                                SBMI.ProcessorData.Now = SHS.Clamp(SBMI.ProcessorCounter.NextValue(), 0f, 100f);
+
+                                SBMI.ProcessorData.Max = SHS.Clamp((SBMI.ProcessorData.Now > SBMI.ProcessorData.Max ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Max) ?? 0f, 0f, 100f);
+                                SBMI.ProcessorData.Min = SHS.Clamp((SBMI.ProcessorData.Now < SBMI.ProcessorData.Min ? SBMI.ProcessorData.Now : SBMI.ProcessorData.Min) ?? 100f, 0f, 100f);
                             }
 
                             if (SBMI.ProcessorsCounter == null)
@@ -701,18 +702,20 @@ namespace Sucrose.Backgroundog.Helper
 
                                 for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
                                 {
-                                    float Now = SBMI.ProcessorsCounter[Core].NextValue();
+                                    float Now = SHS.Clamp(SBMI.ProcessorsCounter[Core].NextValue(), 0f, 100f);
 
-                                    SBMI.ProcessorData.CoresNow = SBMI.ProcessorData.CoresNow > Now ? SBMI.ProcessorData.CoresNow : Now;
+                                    SBMI.ProcessorData.CoresNow = SHS.Clamp((SBMI.ProcessorData.CoresNow > Now ? SBMI.ProcessorData.CoresNow : Now) ?? 0f, 0f, 100f);
 
-                                    SBMI.ProcessorData.CoresMax = SBMI.ProcessorData.CoresNow > SBMI.ProcessorData.CoresMax ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMax;
-                                    SBMI.ProcessorData.CoresMin = SBMI.ProcessorData.CoresNow < SBMI.ProcessorData.CoresMin ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMin;
+                                    SBMI.ProcessorData.CoresMax = SHS.Clamp((SBMI.ProcessorData.CoresNow > SBMI.ProcessorData.CoresMax ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMax) ?? 0f, 0f, 100f);
+                                    SBMI.ProcessorData.CoresMin = SHS.Clamp((SBMI.ProcessorData.CoresNow < SBMI.ProcessorData.CoresMin ? SBMI.ProcessorData.CoresNow : SBMI.ProcessorData.CoresMin) ?? 100f, 0f, 100f);
 
                                     Sensors.Add(new SBSCS
                                     {
                                         Now = Now,
                                         Index = Core,
                                         Name = $"Core #{Core}",
+                                        IsMax = Now == SBMI.ProcessorData.CoresMax,
+                                        IsMin = Now == SBMI.ProcessorData.CoresMin,
                                         Type = $"{SBMI.ProcessorsCounter[Core].CounterType}"
                                     });
                                 }

@@ -6,12 +6,20 @@ namespace Sucrose.Backgroundog.Struct
     /// 
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    public struct ChildSensor
+    public struct CoreSensor
     {
         /// <summary>
         /// 
         /// </summary>
         public int? Index;
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool IsMax;
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool IsMin;
         /// <summary>
         /// 
         /// </summary>
