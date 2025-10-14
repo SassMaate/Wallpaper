@@ -27,7 +27,15 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// <summary>
         /// 
         /// </summary>
+        public string Luid;
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name;
+        /// <summary>
+        /// 
+        /// </summary>
+        public string[] Instances;
         /// <summary>
         /// 
         /// </summary>

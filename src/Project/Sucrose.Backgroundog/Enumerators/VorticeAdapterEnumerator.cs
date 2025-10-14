@@ -275,9 +275,9 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public string VendorName => VendorId switch
         {
-            0x10DE => "NVIDIA",
             0x1002 => "AMD",
             0x8086 => "Intel",
+            0x10DE => "NVIDIA",
             0x1414 => "Microsoft",
             _ => "Unknown"
         };

@@ -496,32 +496,29 @@ namespace Sucrose.Backgroundog.Helper
                                     SBMI.GraphicCounter = new();
 
                                     PerformanceCounterCategory Category = new("GPU Engine");
-                                    string[] Instances = Category.GetInstanceNames();
+                                    SBMI.GraphicData.Instances = Category.GetInstanceNames();
 
-                                    SBEVAE.GetNameToLuidMapping().TryGetValue(SMMB.GraphicAdapter, out string Luid);
-                                    SBMI.GraphicData.Manufacturer = SBEVAE.GetGpuVendorNameByName(SMMB.GraphicAdapter);
+                                    SBEVAE.GetNameToLuidMapping().TryGetValue(SMMB.GraphicAdapter, out SBMI.GraphicData.Luid);
 
-                                    foreach (string Instance in Instances)
+                                    foreach (string Instance in SBMI.GraphicData.Instances)
                                     {
-                                        if (Instance.EndsWith("engtype_3D") && Instance.Contains(Luid ?? SMMRG.Unknown))
+                                        if (Instance.EndsWith("engtype_3D") && Instance.Contains(SBMI.GraphicData.Luid ?? SMMRG.Unknown))
                                         {
                                             foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
                                             {
                                                 if (Counter.CounterName.Equals("Utilization Percentage"))
                                                 {
-                                                    _ = Counter.NextValue();
-
                                                     SBMI.GraphicCounter.Add(Counter);
+
+                                                    _ = Counter.NextValue();
                                                 }
                                             }
                                         }
                                     }
 
-                                    SBMI.GraphicData.Max = 0;
-                                    SBMI.GraphicData.Now = 0;
-                                    SBMI.GraphicData.Min = 100;
                                     SBMI.GraphicData.State = true;
                                     SBMI.GraphicData.Name = SMMB.GraphicAdapter;
+                                    SBMI.GraphicData.Manufacturer = SBEVAE.GetGpuVendorNameByName(SMMB.GraphicAdapter);
                                 }
                                 else
                                 {

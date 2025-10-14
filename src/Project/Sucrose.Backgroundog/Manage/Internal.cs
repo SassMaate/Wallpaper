@@ -245,8 +245,10 @@ namespace Sucrose.Backgroundog.Manage
             Now = 0f,
             Min = 100f,
             State = false,
+            Luid = string.Empty,
             Name = string.Empty,
-            Manufacturer = string.Empty
+            Manufacturer = string.Empty,
+            Instances = Array.Empty<string>()
         };
 
         public static SBSDN NetworkData = new()

@@ -128,9 +128,11 @@ namespace Sucrose.Backgroundog.Extension
                 { "Max", SBMI.GraphicData.Max },
                 { "Min", SBMI.GraphicData.Min },
                 { "Now", SBMI.GraphicData.Now },
+                { "Luid", SBMI.GraphicData.Luid },
                 { "Name", SBMI.GraphicData.Name },
                 { "State", SBMI.GraphicData.State },
-                { "Manufacturer", SBMI.GraphicData.Manufacturer }
+                { "Manufacturer", SBMI.GraphicData.Manufacturer },
+                { "Instances", new JArray(SBMI.GraphicData.Instances) }
             };
         }
 
