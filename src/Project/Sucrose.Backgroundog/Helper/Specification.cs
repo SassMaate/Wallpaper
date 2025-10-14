@@ -1023,28 +1023,70 @@ namespace Sucrose.Backgroundog.Helper
                                 TypeNameHandling = TypeNameHandling.None
                             };
 
-                            await STMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
+                            try
                             {
-                                Bios = SBED.GetBiosInfo(),
-                                Date = SBED.GetDateInfo(),
-                                Audio = SBED.GetAudioInfo(),
-                                Memory = SBED.GetMemoryInfo(),
-                                Battery = SBED.GetBatteryInfo(),
-                                Graphic = SBED.GetGraphicInfo(),
-                                Network = SBED.GetNetworkInfo(),
-                                Storage = SBED.GetStorageInfo(),
-                                Processor = SBED.GetProcessorInfo(),
-                                Motherboard = SBED.GetMotherboardInfo()
-                            }, SerializerSettings));
+                                await STMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
+                                {
+                                    Bios = SBED.GetBiosInfo(),
+                                    Date = SBED.GetDateInfo(),
+                                    Audio = SBED.GetAudioInfo(),
+                                    Memory = SBED.GetMemoryInfo(),
+                                    Battery = SBED.GetBatteryInfo(),
+                                    Graphic = SBED.GetGraphicInfo(),
+                                    Network = SBED.GetNetworkInfo(),
+                                    Storage = SBED.GetStorageInfo(),
+                                    Processor = SBED.GetProcessorInfo(),
+                                    Motherboard = SBED.GetMotherboardInfo()
+                                }, SerializerSettings));
+                            }
+                            catch (InvalidOperationException Exception) when (Exception.Message.Contains("Failed to connect after"))
+                            {
+                                // Clean up the failed manager
+                                try
+                                {
+                                    await STMI.BackgroundogManager.DisposeClient();
+                                }
+                                catch { }
+
+                                STMI.BackgroundogManager = null;
+
+                                // Connection retries failed, log and skip this cycle
+                                await SSWEW.Watch_CatchException(Exception);
+                            }
+                            catch (TimeoutException Exception)
+                            {
+                                // Clean up the failed manager
+                                try
+                                {
+                                    await STMI.BackgroundogManager.DisposeClient();
+                                }
+                                catch { }
+
+                                STMI.BackgroundogManager = null;
+
+                                // Connection timeout, log and skip this cycle
+                                await SSWEW.Watch_CatchException(Exception);
+                            }
 
                             SBMI.TransmissionManagement = true;
                         }
                     }
                     catch (SocketException Exception)
                     {
+                        // Clean up the existing manager before creating a new one
+                        if (STMI.BackgroundogManager != null)
+                        {
+                            try
+                            {
+                                await STMI.BackgroundogManager.DisposeClient();
+                            }
+                            catch { }
+                        }
+
+                        STMI.BackgroundogManager = null;
                         SBMI.TransmissionManagement = true;
+
                         await SSWEW.Watch_CatchException(Exception);
-                        STMI.BackgroundogManager = new(SMMRG.Loopback, SMMB.TransmissionPort);
                     }
                     catch (Exception Exception)
                     {
