@@ -5,6 +5,7 @@ using System.Management;
 using System.Net;
 using System.Net.Sockets;
 using SBEAS = Sucrose.Backgroundog.Extension.AudioSession;
+using SBEC = Sucrose.Backgroundog.Extension.Core;
 using SBED = Sucrose.Backgroundog.Extension.Data;
 using SBER = Sucrose.Backgroundog.Extension.Remote;
 using SBES = Sucrose.Backgroundog.Extension.Storage;
@@ -698,7 +699,7 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 List<SBSCS> Sensors = new();
 
-                                SBMI.ProcessorData.CoresNow = 0;
+                                SBMI.ProcessorData.CoresNow = 0f;
 
                                 for (int Core = 0; Core < SBMI.ProcessorsCounter.Length; Core++)
                                 {
@@ -713,12 +714,15 @@ namespace Sucrose.Backgroundog.Helper
                                     {
                                         Now = Now,
                                         Index = Core,
+                                        IsMax = false,
+                                        IsMin = false,
                                         Name = $"Core #{Core}",
-                                        IsMax = Now == SBMI.ProcessorData.CoresMax,
-                                        IsMin = Now == SBMI.ProcessorData.CoresMin,
-                                        Type = $"{SBMI.ProcessorsCounter[Core].CounterType}"
+                                        Type = SBMI.ProcessorsCounter[Core].CounterType,
+                                        TypeText = $"{SBMI.ProcessorsCounter[Core].CounterType}"
                                     });
                                 }
+
+                                Sensors = SBEC.UpdateExtremes(Sensors);
 
                                 string Result = JsonConvert.SerializeObject(Sensors, Formatting.Indented);
 

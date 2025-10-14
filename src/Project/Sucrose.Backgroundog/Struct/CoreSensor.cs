@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct
 {
@@ -31,6 +32,10 @@ namespace Sucrose.Backgroundog.Struct
         /// <summary>
         /// 
         /// </summary>
-        public string Type;
+        public string TypeText;
+        /// <summary>
+        /// 
+        /// </summary>
+        public PerformanceCounterType Type;
     }
 }
