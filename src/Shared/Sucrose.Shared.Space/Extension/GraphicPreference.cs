@@ -95,8 +95,7 @@ namespace Sucrose.Shared.Space.Extension
 
                 Dictionary<string, string> settings = ParseRegistryValue(registryValue);
 
-                if (settings.TryGetValue(GpuPreferenceKey, out string preferenceValue)
-                    && int.TryParse(preferenceValue, out int preferenceInt))
+                if (settings.TryGetValue(GpuPreferenceKey, out string preferenceValue) && int.TryParse(preferenceValue, out int preferenceInt))
                 {
                     if (Enum.IsDefined(typeof(SSDEHPT), preferenceInt))
                     {
