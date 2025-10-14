@@ -169,8 +169,6 @@ namespace Sucrose.Portal
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
-            SSDHG.Configure(SSSMI.CefSharpProcess);
-
             SSDHR.Configure();
 
             SSDHG.Configure();
