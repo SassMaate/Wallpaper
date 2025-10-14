@@ -496,18 +496,21 @@ namespace Sucrose.Backgroundog.Helper
 
                                     SBEVAE.GetNameToLuidMapping().TryGetValue(SMMB.GraphicAdapter, out SBMI.GraphicData.Luid);
 
+                                    SBMI.GraphicData.Instances = SBEG.GetInstances("GPU Engine");
+
                                     SBMI.GraphicCounter = SBEG.CreateCounters("GPU Engine", SBMI.GraphicData.Luid ?? SMMRG.Unknown);
 
                                     SBEG.InstanceValues(SBMI.GraphicCounter);
 
                                     SBMI.GraphicData.State = true;
                                     SBMI.GraphicData.Name = SMMB.GraphicAdapter;
-                                    SBMI.GraphicData.Instances = SBEG.GetInstances("GPU Engine");
                                     SBMI.GraphicData.Manufacturer = SBEVAE.GetGpuVendorNameByName(SMMB.GraphicAdapter);
                                 }
                                 else
                                 {
                                     SBMI.GraphicData.Now = SHS.Clamp(SBEG.GetValue(SBMI.GraphicCounter), 0f, 100f);
+
+                                    SBEG.UpdateCounters(SBMI.GraphicCounter, ref SBMI.GraphicData.Instances, "GPU Engine", SBMI.GraphicData.Luid ?? SMMRG.Unknown);
 
                                     SBMI.GraphicData.Max = SHS.Clamp((SBMI.GraphicData.Now > SBMI.GraphicData.Max ? SBMI.GraphicData.Now : SBMI.GraphicData.Max) ?? 0f, 0f, 100f);
                                     SBMI.GraphicData.Min = SHS.Clamp((SBMI.GraphicData.Now < SBMI.GraphicData.Min ? SBMI.GraphicData.Now : SBMI.GraphicData.Min) ?? 100f, 0f, 100f);

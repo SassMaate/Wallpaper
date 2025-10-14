@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Collections.Generic;
 
 namespace Sucrose.Backgroundog.Extension
 {
@@ -10,6 +9,22 @@ namespace Sucrose.Backgroundog.Extension
             PerformanceCounterCategory Category = new(CategoryName);
 
             return Category.GetInstanceNames();
+        }
+
+        public static float GetValue(List<PerformanceCounter> Counters)
+        {
+            float Value = 0f;
+
+            foreach (PerformanceCounter Counter in Counters)
+            {
+                try
+                {
+                    Value += Counter.NextValue();
+                }
+                catch { }
+            }
+
+            return Value;
         }
 
         public static void InstanceValues(List<PerformanceCounter> Counters)
@@ -51,20 +66,34 @@ namespace Sucrose.Backgroundog.Extension
             return Counters;
         }
 
-        public static float GetValue(List<PerformanceCounter> Counters)
+        public static void UpdateCounters(List<PerformanceCounter> Counters, ref string[] SavedInstances, string CategoryName, string Luid)
         {
-            float Value = 0f;
+            string[] CurrentInstances = GetInstances(CategoryName);
 
-            foreach (PerformanceCounter Counter in Counters)
+            List<string> NewInstances = CurrentInstances.Except(SavedInstances).ToList();
+
+            if (NewInstances.Any())
             {
-                try
-                {
-                    Value += Counter.NextValue();
-                }
-                catch { }
-            }
+                PerformanceCounterCategory Category = new(CategoryName);
 
-            return Value;
+                foreach (string Instance in NewInstances)
+                {
+                    if (Instance.EndsWith("engtype_3D") && Instance.Contains(Luid))
+                    {
+                        foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
+                        {
+                            if (Counter.CounterName.Equals("Utilization Percentage"))
+                            {
+                                Counters.Add(Counter);
+                            }
+                        }
+                    }
+                }
+
+                SavedInstances = SavedInstances.Concat(NewInstances).ToArray();
+
+                InstanceValues(Counters);
+            }
         }
     }
 }
