@@ -27,6 +27,7 @@ using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Live.Aurora
 {
@@ -98,6 +99,8 @@ namespace Sucrose.Live.Aurora
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

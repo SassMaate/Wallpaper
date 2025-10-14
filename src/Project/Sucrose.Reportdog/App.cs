@@ -10,6 +10,7 @@ using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Reportdog
 {
@@ -19,6 +20,8 @@ namespace Sucrose.Reportdog
         {
             try
             {
+                SSDHG.Configure();
+
                 SSDHR.Configure();
 
                 Console.InputEncoding = Encoding.UTF8;

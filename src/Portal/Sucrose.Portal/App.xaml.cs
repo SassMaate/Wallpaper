@@ -16,6 +16,7 @@ using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SPMAC = Sucrose.Portal.Models.AppConfig;
 using SPSAHS = Sucrose.Portal.Services.ApplicationHostService;
 using SPSCIW = Sucrose.Portal.Services.Contracts.IWindow;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SPSWPS = Sucrose.Portal.Services.WindowsProviderService;
 using SPVMPDSVM = Sucrose.Portal.ViewModels.Pages.DonateSettingViewModel;
 using SPVMPGSVM = Sucrose.Portal.ViewModels.Pages.GeneralSettingViewModel;
@@ -43,6 +44,7 @@ using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 
 namespace Sucrose.Portal
 {
@@ -167,7 +169,11 @@ namespace Sucrose.Portal
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
+            SSDHG.Configure(SSSMI.CefSharpProcess);
+
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         /// <summary>

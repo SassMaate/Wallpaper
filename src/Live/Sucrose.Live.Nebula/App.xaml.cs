@@ -18,6 +18,7 @@ using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
 using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSENVV = Sucrose.Shared.Engine.Nebula.View.Video;
 using SSSHC = Sucrose.Shared.Space.Helper.Cycyling;
@@ -98,6 +99,8 @@ namespace Sucrose.Live.Nebula
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

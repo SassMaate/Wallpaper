@@ -5,6 +5,7 @@ using SHC = Skylark.Helper.Culture;
 using SMMG = Sucrose.Manager.Manage.General;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Commandog
 {
@@ -14,6 +15,8 @@ namespace Sucrose.Commandog
         {
             try
             {
+                SSDHG.Configure();
+
                 SSDHR.Configure();
 
                 Console.InputEncoding = Encoding.UTF8;

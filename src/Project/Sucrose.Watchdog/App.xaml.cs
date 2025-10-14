@@ -15,6 +15,7 @@ using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMRW = Sucrose.Memory.Manage.Readonly.Watch;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSCHA = Sucrose.Shared.Core.Helper.Architecture;
 using SSCHF = Sucrose.Shared.Core.Helper.Framework;
 using SSCHOS = Sucrose.Shared.Core.Helper.OperatingSystem;
@@ -93,6 +94,8 @@ namespace Sucrose.Watchdog
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

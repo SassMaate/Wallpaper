@@ -18,6 +18,7 @@ using SMMG = Sucrose.Manager.Manage.General;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
@@ -59,6 +60,8 @@ using SSTHP = Sucrose.Shared.Theme.Helper.Properties;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
+using SSSMI = Sucrose.Shared.Space.Manage.Internal;
+using Newtonsoft.Json;
 
 namespace Sucrose.Live.WebView
 {
@@ -130,6 +133,8 @@ namespace Sucrose.Live.WebView
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()
@@ -284,7 +289,10 @@ namespace Sucrose.Live.WebView
 
                         CoreWebView2EnvironmentOptions Options = new()
                         {
-                            Language = SMMG.Culture
+                            Language = SMMG.Culture,
+                            AreBrowserExtensionsEnabled = false,
+                            IsCustomCrashReportingEnabled = false,
+                            ScrollBarStyle = CoreWebView2ScrollbarStyle.FluentOverlay
                         };
 
                         SSEMI.BrowserSettings.WebView = SMME.WebArguments;

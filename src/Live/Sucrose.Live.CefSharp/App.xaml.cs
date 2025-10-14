@@ -22,6 +22,7 @@ using SMML = Sucrose.Manager.Manage.Library;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
@@ -137,6 +138,8 @@ namespace Sucrose.Live.CefSharp
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

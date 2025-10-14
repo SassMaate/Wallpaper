@@ -10,6 +10,7 @@ using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEH = Sucrose.Shared.Discord.Extension.Hook;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSLCI = Sucrose.Shared.Launcher.Command.Interface;
 using SSLMI = Sucrose.Shared.Launcher.Manage.Internal;
 using SSMI = Sucrose.Signal.Manage.Internal;
@@ -90,6 +91,8 @@ namespace Sucrose.Launcher
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

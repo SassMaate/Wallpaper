@@ -15,6 +15,7 @@ using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SPMI = Sucrose.Property.Manage.Internal;
 using SPVMW = Sucrose.Property.View.MainWindow;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
@@ -87,6 +88,8 @@ namespace Sucrose.Property
             ConfigHelper.Instance.SetLang(SMMG.Culture);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

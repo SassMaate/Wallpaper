@@ -24,6 +24,7 @@ using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
 using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEMPHC = Sucrose.Shared.Engine.MpvPlayer.Helper.Config;
 using SSEMPHP = Sucrose.Shared.Engine.MpvPlayer.Helper.Properties;
@@ -111,6 +112,8 @@ namespace Sucrose.Live.MpvPlayer
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

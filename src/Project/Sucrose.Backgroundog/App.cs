@@ -9,6 +9,7 @@ using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 
 namespace Sucrose.Backgroundog
 {
@@ -18,6 +19,8 @@ namespace Sucrose.Backgroundog
         {
             try
             {
+                SSDHG.Configure();
+
                 SSDHR.Configure();
 
                 Console.InputEncoding = Encoding.UTF8;

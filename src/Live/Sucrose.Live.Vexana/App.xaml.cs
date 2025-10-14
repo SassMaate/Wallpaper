@@ -17,6 +17,7 @@ using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
 using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEVVG = Sucrose.Shared.Engine.Vexana.View.Gif;
@@ -98,6 +99,8 @@ namespace Sucrose.Live.Vexana
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

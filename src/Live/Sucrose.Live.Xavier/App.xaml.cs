@@ -20,6 +20,7 @@ using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEXVG = Sucrose.Shared.Engine.Xavier.View.Gif;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSSHC = Sucrose.Shared.Space.Helper.Cycyling;
 using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHS = Sucrose.Shared.Space.Helper.Security;
@@ -98,6 +99,8 @@ namespace Sucrose.Live.Xavier
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()

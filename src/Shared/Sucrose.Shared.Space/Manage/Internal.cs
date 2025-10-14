@@ -4,6 +4,7 @@ using SHA = Skylark.Helper.Assemblies;
 using SMMRA = Sucrose.Memory.Manage.Readonly.App;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRP = Sucrose.Memory.Manage.Readonly.Process;
 using SSDEAET = Sucrose.Shared.Dependency.Enum.ApplicationEngineType;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEGET = Sucrose.Shared.Dependency.Enum.GifEngineType;
@@ -40,6 +41,8 @@ namespace Sucrose.Shared.Space.Manage
         public static string Locales => Path.Combine(This, SMMRF.Locales);
 
         public static string Requirements => Path.Combine(This, SMMRF.Requirements);
+
+        public static string CefSharpProcess => Path.Combine(This, SMMRP.CefSharpFullName);
 
         public static string App => SSSHE.Change(SHA.Assemble(SEAT.Entry).Location, ".exe");
 

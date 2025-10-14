@@ -20,6 +20,7 @@ using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
 using SUMI = Sucrose.Update.Manage.Internal;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SUVMW = Sucrose.Update.View.MainWindow;
 
 namespace Sucrose.Update
@@ -80,6 +81,8 @@ namespace Sucrose.Update
             SHC.All = new CultureInfo(SMMG.Culture, true);
 
             SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         protected void Close()
