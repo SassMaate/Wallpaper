@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 
 namespace Sucrose.Backgroundog.Extension
 {
@@ -6,19 +6,42 @@ namespace Sucrose.Backgroundog.Extension
     {
         public static string[] GetInstances(string CategoryName)
         {
-            PerformanceCounterCategory Category = new(CategoryName);
+            try
+            {
+                PerformanceCounterCategory Category = new(CategoryName);
 
-            return Category.GetInstanceNames();
+                return Category.GetInstanceNames();
+            }
+            catch
+            {
+                return Array.Empty<string>();
+            }
         }
 
         public static void InstanceValues(List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> Counters)
         {
-            foreach ((_, PerformanceCounter Write, PerformanceCounter Read) in Counters)
+            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = new();
+
+            foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in Counters)
             {
                 try
                 {
                     _ = Read.NextValue();
                     _ = Write.NextValue();
+                }
+                catch
+                {
+                    InvalidCounters.Add((Instance, Write, Read));
+                }
+            }
+
+            foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in InvalidCounters)
+            {
+                try
+                {
+                    Read?.Dispose();
+                    Write?.Dispose();
+                    Counters.Remove((Instance, Write, Read));
                 }
                 catch { }
             }
@@ -45,6 +68,7 @@ namespace Sucrose.Backgroundog.Extension
 
         public static List<(string Instance, float Write, float Read)> GetValues(List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> Counters)
         {
+            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = new();
             List<(string Instance, float Write, float Read)> Values = new();
 
             foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in Counters)
@@ -52,6 +76,20 @@ namespace Sucrose.Backgroundog.Extension
                 try
                 {
                     Values.Add((Instance, Write.NextValue(), Read.NextValue()));
+                }
+                catch
+                {
+                    InvalidCounters.Add((Instance, Write, Read));
+                }
+            }
+
+            foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in InvalidCounters)
+            {
+                try
+                {
+                    Read?.Dispose();
+                    Write?.Dispose();
+                    Counters.Remove((Instance, Write, Read));
                 }
                 catch { }
             }

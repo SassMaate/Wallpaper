@@ -6,20 +6,41 @@ namespace Sucrose.Backgroundog.Extension
     {
         public static string[] GetInstances(string CategoryName)
         {
-            PerformanceCounterCategory Category = new(CategoryName);
+            try
+            {
+                PerformanceCounterCategory Category = new(CategoryName);
 
-            return Category.GetInstanceNames();
+                return Category.GetInstanceNames();
+            }
+            catch
+            {
+                return Array.Empty<string>();
+            }
         }
 
         public static float GetValue(List<PerformanceCounter> Counters)
         {
             float Value = 0f;
+            List<PerformanceCounter> InvalidCounters = new();
 
             foreach (PerformanceCounter Counter in Counters)
             {
                 try
                 {
                     Value += Counter.NextValue();
+                }
+                catch
+                {
+                    InvalidCounters.Add(Counter);
+                }
+            }
+
+            foreach (PerformanceCounter InvalidCounter in InvalidCounters)
+            {
+                try
+                {
+                    InvalidCounter?.Dispose();
+                    Counters.Remove(InvalidCounter);
                 }
                 catch { }
             }
@@ -29,11 +50,26 @@ namespace Sucrose.Backgroundog.Extension
 
         public static void InstanceValues(List<PerformanceCounter> Counters)
         {
+            List<PerformanceCounter> InvalidCounters = new();
+
             foreach (PerformanceCounter Counter in Counters)
             {
                 try
                 {
                     _ = Counter.NextValue();
+                }
+                catch
+                {
+                    InvalidCounters.Add(Counter);
+                }
+            }
+
+            foreach (PerformanceCounter InvalidCounter in InvalidCounters)
+            {
+                try
+                {
+                    InvalidCounter?.Dispose();
+                    Counters.Remove(InvalidCounter);
                 }
                 catch { }
             }
@@ -68,32 +104,68 @@ namespace Sucrose.Backgroundog.Extension
 
         public static void UpdateCounters(List<PerformanceCounter> Counters, ref string[] SavedInstances, string CategoryName, string Luid)
         {
-            string[] CurrentInstances = GetInstances(CategoryName);
-
-            List<string> NewInstances = CurrentInstances.Except(SavedInstances).ToList();
-
-            if (NewInstances.Any())
+            try
             {
-                PerformanceCounterCategory Category = new(CategoryName);
+                string[] CurrentInstances = GetInstances(CategoryName);
 
-                foreach (string Instance in NewInstances)
+                List<string> RemovedInstances = SavedInstances.Except(CurrentInstances).ToList();
+
+                if (RemovedInstances.Any())
                 {
-                    if (Instance.EndsWith("engtype_3D") && Instance.Contains(Luid))
+                    List<PerformanceCounter> InvalidCounters = new();
+                    foreach (PerformanceCounter Counter in Counters)
                     {
-                        foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
+                        try
                         {
-                            if (Counter.CounterName.Equals("Utilization Percentage"))
+                            if (RemovedInstances.Any(Counter.InstanceName.Contains))
                             {
-                                Counters.Add(Counter);
+                                InvalidCounters.Add(Counter);
                             }
                         }
+                        catch { }
+                    }
+
+                    foreach (PerformanceCounter InvalidCounter in InvalidCounters)
+                    {
+                        try
+                        {
+                            InvalidCounter?.Dispose();
+                            Counters.Remove(InvalidCounter);
+                        }
+                        catch { }
                     }
                 }
 
-                SavedInstances = SavedInstances.Concat(NewInstances).ToArray();
+                List<string> NewInstances = CurrentInstances.Except(SavedInstances).ToList();
 
-                InstanceValues(Counters);
+                if (NewInstances.Any())
+                {
+                    PerformanceCounterCategory Category = new(CategoryName);
+
+                    foreach (string Instance in NewInstances)
+                    {
+                        try
+                        {
+                            if (Instance.EndsWith("engtype_3D") && Instance.Contains(Luid))
+                            {
+                                foreach (PerformanceCounter Counter in Category.GetCounters(Instance))
+                                {
+                                    if (Counter.CounterName.Equals("Utilization Percentage"))
+                                    {
+                                        Counters.Add(Counter);
+                                    }
+                                }
+                            }
+                        }
+                        catch { }
+                    }
+
+                    InstanceValues(Counters);
+                }
+
+                SavedInstances = CurrentInstances;
             }
+            catch { }
         }
     }
 }
