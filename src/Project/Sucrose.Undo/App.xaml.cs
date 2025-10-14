@@ -1,16 +1,19 @@
 using Microsoft.Win32;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Media;
 using System.Text;
 using System.Windows;
 using System.Windows.Threading;
 using SHC = Skylark.Helper.Culture;
-using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
+using SMMG = Sucrose.Manager.Manage.General;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
-using SRER = Sucrose.Resources.Extension.Resources;
 using SRHR = Sucrose.Resources.Helper.Resources;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
+using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
+using SUMI = Sucrose.Undo.Manage.Internal;
 using SWUD = Skylark.Wing.Utility.Desktop;
 
 namespace Sucrose.Undo
@@ -20,34 +23,16 @@ namespace Sucrose.Undo
     /// </summary>
     public partial class App : Application
     {
-        private static string Message => SRER.GetValue("Undo", "QuestionMessage") + Environment.NewLine + Environment.NewLine + SRER.GetValue("Undo", "QuestionDescription");
-
-        private static string Runtime => Path.Combine(UninstallPath, $"{SMMRG.AppName}.{SMMRF.Runtime}");
-
-        private static string UninstallPath => Path.Combine(SMMRP.LocalApplicationData, SMMRG.AppName);
-
-        private static string UninstallDataPath => Path.Combine(SMMRP.ApplicationData, SMMRG.AppName);
-
-        private static string RegistryName => @"Software\Microsoft\Windows\CurrentVersion\Uninstall";
-
-        private static string BatchFile = Path.Combine(SMMRP.Temp, $"del_{Guid.NewGuid():N}.bat");
-
-        private static string StartMenu => Path.Combine(SMMRP.StartMenu, "Programs", Shortcut);
-
-        private static string Undo => Path.Combine(UninstallPath, $"{SMMRG.AppName}.Undo");
-
-        private static string Desktop => Path.Combine(SMMRP.Desktop, Shortcut);
-
-        private static string Title => SRER.GetValue("Undo", "QuestionTitle");
-
-        private static string Shortcut => $"{SMMRG.AppLongName}.lnk";
-
-        private static int Delay => 1000;
-
         public App()
         {
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
             Current.DispatcherUnhandledException += Current_DispatcherUnhandledException;
+
+            SHC.All = new CultureInfo(SMMG.Culture, true);
+
+            SSDHR.Configure();
+
+            SSDHG.Configure();
         }
 
         private static void DeleteDirectory(string Location)
@@ -60,7 +45,7 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Files)
                     {
-                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(Runtime, StringComparison.OrdinalIgnoreCase))
+                        if (!Record.StartsWith(SUMI.Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(SUMI.Runtime, StringComparison.OrdinalIgnoreCase))
                         {
                             try
                             {
@@ -77,7 +62,7 @@ namespace Sucrose.Undo
                 {
                     foreach (string Record in Folders)
                     {
-                        if (!Record.StartsWith(Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(Runtime, StringComparison.OrdinalIgnoreCase))
+                        if (!Record.StartsWith(SUMI.Undo, StringComparison.OrdinalIgnoreCase) && !Record.StartsWith(SUMI.Runtime, StringComparison.OrdinalIgnoreCase))
                         {
                             try
                             {
@@ -121,15 +106,15 @@ namespace Sucrose.Undo
                 BatchContent.AppendLine($"taskkill /PID {Environment.ProcessId} /T /F > nul 2>&1");
                 BatchContent.AppendLine("timeout /t 3 /nobreak > nul");
 
-                BatchContent.AppendLine($@"rd /s /q ""{Undo}"" > nul 2>&1");
-                BatchContent.AppendLine($@"rd /s /q ""{Runtime}"" > nul 2>&1");
-                BatchContent.AppendLine($@"rd /s /q ""{UninstallPath}"" > nul 2>&1");
+                BatchContent.AppendLine($@"rd /s /q ""{SUMI.Undo}"" > nul 2>&1");
+                BatchContent.AppendLine($@"rd /s /q ""{SUMI.Runtime}"" > nul 2>&1");
+                BatchContent.AppendLine($@"rd /s /q ""{SUMI.UninstallPath}"" > nul 2>&1");
 
                 BatchContent.AppendLine(@"del ""%~f0"" > nul 2>&1");
                 BatchContent.AppendLine("endlocal");
                 BatchContent.AppendLine("exit");
 
-                File.WriteAllText(BatchFile, BatchContent.ToString(), Encoding.ASCII);
+                File.WriteAllText(SUMI.BatchFile, BatchContent.ToString(), Encoding.ASCII);
 
                 Process.Start(new ProcessStartInfo
                 {
@@ -138,7 +123,7 @@ namespace Sucrose.Undo
                     UseShellExecute = true,
                     WorkingDirectory = SMMRP.Temp,
                     WindowStyle = ProcessWindowStyle.Hidden,
-                    Arguments = $"/c start /B \"\" \"{BatchFile}\""
+                    Arguments = $"/c start /B \"\" \"{SUMI.BatchFile}\""
                 });
             }
             catch { }
@@ -157,60 +142,60 @@ namespace Sucrose.Undo
         {
             base.OnStartup(e);
 
-            MessageBoxResult Result = MessageBoxResult.Cancel;
+            SRHR.SetLanguage(SMMG.Culture);
 
-            SRHR.SetLanguage(SHC.CurrentUITwoLetterISOLanguageName);
+            MessageBoxResult Result = MessageBoxResult.Cancel;
 
             if (!e.Args.Any())
             {
                 SystemSounds.Asterisk.Play();
 
-                Result = MessageBox.Show(Message, Title, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                Result = MessageBox.Show(SUMI.Message, SUMI.Title, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
             }
 
             if (Result is MessageBoxResult.Yes or MessageBoxResult.No)
             {
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
                 TerminateProcess(SMMRG.AppName);
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
                 TerminateProcess(SMMRG.AppName);
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
                 SWUD.RefreshDesktop();
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
-                DeleteDirectory(UninstallPath);
+                DeleteDirectory(SUMI.UninstallPath);
 
                 if (Result == MessageBoxResult.Yes)
                 {
-                    await Task.Delay(Delay);
+                    await Task.Delay(SUMI.Delay);
 
-                    DeleteDirectory(UninstallDataPath);
+                    DeleteDirectory(SUMI.UninstallDataPath);
                 }
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
-                if (File.Exists(Desktop))
+                if (File.Exists(SUMI.Desktop))
                 {
-                    File.Delete(Desktop);
+                    File.Delete(SUMI.Desktop);
                 }
 
-                if (File.Exists(StartMenu))
+                if (File.Exists(SUMI.StartMenu))
                 {
-                    File.Delete(StartMenu);
+                    File.Delete(SUMI.StartMenu);
                 }
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
-                RegistryKey HomeKey = Registry.CurrentUser.OpenSubKey(RegistryName, true);
+                RegistryKey HomeKey = Registry.CurrentUser.OpenSubKey(SUMI.RegistryName, true);
                 HomeKey?.DeleteSubKey(SMMRG.AppName, false);
 
-                await Task.Delay(Delay);
+                await Task.Delay(SUMI.Delay);
 
                 DeleteSelf();
             }

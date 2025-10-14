@@ -48,7 +48,9 @@ namespace Sucrose.Shared.Watchdog.Extension
 
         private static Task WriteLog(string Text)
         {
-#if PORTAL
+#if UNDO
+            SMMI.UndoLogManager.Log(SELLT.Error, Text);
+#elif PORTAL
             SMMI.PortalLogManager.Log(SELLT.Error, Text);
 #elif UPDATE
             SMMI.UpdateLogManager.Log(SELLT.Error, Text);

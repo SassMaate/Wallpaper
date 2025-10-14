@@ -5,6 +5,8 @@ namespace Sucrose.Manager.Manage
 {
     public static class Internal
     {
+        public static readonly SMLM UndoLogManager = new("Undo-{0}.log");
+
         public static readonly SMSM HookSettingManager = new("Hook.json");
 
         public static readonly SMLM PortalLogManager = new("Portal-{0}.log");
