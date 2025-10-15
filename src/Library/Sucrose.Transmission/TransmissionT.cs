@@ -1,4 +1,5 @@
 using System.Net;
+using System.Net.Sockets;
 using STEMREA = Sucrose.Transmission.Event.MessageReceivedEventArgs;
 using STHTC = Sucrose.Transmission.Helper.TransmissionClient;
 using STHTS = Sucrose.Transmission.Helper.TransmissionServer;
@@ -18,13 +19,7 @@ namespace Sucrose.Transmission
         {
             if (!TC.IsConnected)
             {
-                try
-                {
-                    await TC.Stop();
-                }
-                catch { }
-
-                await TC.Start(Host, Port);
+                await StartClientWithRetry();
             }
         }
 
@@ -32,16 +27,30 @@ namespace Sucrose.Transmission
         {
             if (!TC.IsConnected)
             {
-                try
-                {
-                    await TC.Stop();
-                }
-                catch { }
-
-                await TC.Start(Host, Port);
+                await StartClientWithRetry();
             }
 
-            await TC.SendMessage(Message);
+            if (TC.IsConnected)
+            {
+                try
+                {
+                    await TC.SendMessage(Message);
+                }
+                catch (InvalidOperationException Exception)
+                {
+                    // Connection lost, try to reconnect once
+                    await StartClientWithRetry(maxRetries: 1);
+
+                    if (TC.IsConnected)
+                    {
+                        await TC.SendMessage(Message);
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException("Failed to send message after reconnection attempt", Exception);
+                    }
+                }
+            }
         }
 
         public async Task StartServer()
@@ -85,6 +94,65 @@ namespace Sucrose.Transmission
         protected virtual void OnMessageReceived(STEMREA e)
         {
             MessageReceived?.Invoke(this, e);
+        }
+
+        private async Task StartClientWithRetry(int maxRetries = 3)
+        {
+            Exception lastException = null;
+
+            for (int i = 0; i <= maxRetries; i++)
+            {
+                try
+                {
+                    // Clean up previous connection
+                    try
+                    {
+                        await TC.Stop();
+                    }
+                    catch { }
+
+                    // Attempt to connect
+                    await TC.Start(Host, Port);
+
+                    // If successful, return
+                    if (TC.IsConnected)
+                    {
+                        return;
+                    }
+                }
+                catch (TimeoutException Exception)
+                {
+                    lastException = Exception;
+
+                    if (i < maxRetries)
+                    {
+                        // Wait before retry with exponential backoff
+                        await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
+                    }
+                }
+                catch (InvalidOperationException Exception) when (Exception.InnerException is SocketException)
+                {
+                    lastException = Exception;
+
+                    if (i < maxRetries)
+                    {
+                        // Wait before retry with exponential backoff
+                        await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
+                    }
+                }
+                catch (Exception Exception)
+                {
+                    lastException = Exception;
+
+                    break; // Don't retry on unexpected exceptions
+                }
+            }
+
+            // If we get here, all retries failed
+            if (lastException != null)
+            {
+                throw new InvalidOperationException($"Failed to connect after {maxRetries} retries", lastException);
+            }
         }
     }
 }

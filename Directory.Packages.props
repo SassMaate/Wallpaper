@@ -23,7 +23,7 @@
     <PackageVersion Include="WindowsAPICodePackShell" Version="8.0.8" />
     <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="140.1.140" />
     <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.0.3" />
-    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.9" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.10" />
     <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.3590-prerelease" />
   </ItemGroup>
 </Project>

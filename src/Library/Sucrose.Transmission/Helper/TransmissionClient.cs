@@ -6,49 +6,105 @@ namespace Sucrose.Transmission.Helper
     internal class TransmissionClient : IDisposable
     {
         private bool _isConnected;
-        private StreamWriter _writer;
         private TcpClient _tcpClient;
+        private StreamWriter _writer;
+        private readonly SemaphoreSlim _sendSemaphore = new(1, 1);
 
         public bool IsConnected => _tcpClient?.Connected ?? false;
 
         public async Task Start(IPAddress host, int port)
         {
-            _tcpClient = new();
-
-            await _tcpClient.ConnectAsync(host, port);
-
-            _isConnected = true;
-
-            NetworkStream stream = _tcpClient.GetStream();
-
-            _writer = new StreamWriter(stream)
+            try
             {
-                AutoFlush = true
-            };
+                // Ensure clean state
+                if (_tcpClient != null)
+                {
+                    await Stop();
+                }
+
+                _tcpClient = new TcpClient();
+
+                // Set timeout for connection (5 seconds)
+                using CancellationTokenSource cts = new(TimeSpan.FromSeconds(5));
+
+                await _tcpClient.ConnectAsync(host, port, cts.Token);
+
+                if (_tcpClient.Connected)
+                {
+                    _isConnected = true;
+
+                    // Configure keep-alive
+                    _tcpClient.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
+                    _tcpClient.Client.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveTime, 10);
+                    _tcpClient.Client.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveInterval, 2);
+
+                    // Set receive and send timeouts
+                    _tcpClient.ReceiveTimeout = 5000; // 5 seconds
+                    _tcpClient.SendTimeout = 2500; // 2.5 seconds
+
+                    NetworkStream stream = _tcpClient.GetStream();
+
+                    _writer = new StreamWriter(stream)
+                    {
+                        AutoFlush = true
+                    };
+                }
+                else
+                {
+                    throw new InvalidOperationException("Failed to establish connection");
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                _isConnected = false;
+
+                throw new TimeoutException($"Connection to {host}:{port} timed out");
+            }
+            catch (SocketException Exception)
+            {
+                _isConnected = false;
+
+                await Stop();
+                throw new InvalidOperationException($"Failed to connect to {host}:{port}: {Exception.Message}", Exception);
+            }
+            catch (Exception)
+            {
+                _isConnected = false;
+
+                await Stop();
+                throw;
+            }
         }
 
         public async Task Stop()
         {
             _isConnected = false;
 
-            if (_writer != null)
+            try
             {
-                await _writer.DisposeAsync();
-
-                _writer = null;
-            }
-
-            if (_tcpClient != null)
-            {
-                if (_tcpClient.Connected)
+                if (_writer != null)
                 {
-                    _tcpClient.Close();
+                    await _writer.DisposeAsync();
+
+                    _writer = null;
                 }
-
-                await Task.Run(() => _tcpClient.Dispose());
-
-                _tcpClient = null;
             }
+            catch { }
+
+            try
+            {
+                if (_tcpClient != null)
+                {
+                    if (_tcpClient.Connected)
+                    {
+                        _tcpClient.Close();
+                    }
+
+                    _tcpClient.Dispose();
+                    _tcpClient = null;
+                }
+            }
+            catch { }
         }
 
         public async Task SendMessage(string Message)
@@ -60,13 +116,36 @@ namespace Sucrose.Transmission.Helper
 
             if (!string.IsNullOrWhiteSpace(Message))
             {
-                await _writer.WriteLineAsync(Message);
+                await _sendSemaphore.WaitAsync();
+
+                try
+                {
+                    await _writer.WriteLineAsync(Message);
+                }
+                catch (IOException Exception)
+                {
+                    _isConnected = false;
+
+                    throw new InvalidOperationException("Failed to send message. Connection may be lost.", Exception);
+                }
+                catch (ObjectDisposedException)
+                {
+                    _isConnected = false;
+
+                    throw new InvalidOperationException("Connection is closed.");
+                }
+                finally
+                {
+                    _sendSemaphore.Release();
+                }
             }
         }
 
         public void Dispose()
         {
             _ = Stop();
+
+            _sendSemaphore?.Dispose();
         }
     }
 }

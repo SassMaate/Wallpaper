@@ -1,4 +1,5 @@
 ﻿#if RELEASE
+using System.Runtime.InteropServices;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 #endif
 
@@ -13,7 +14,19 @@ namespace Sucrose.Shared.Dependency.Helper
             Environment.SetEnvironmentVariable("DOTNET_MULTILEVEL_LOOKUP", "0", EnvironmentVariableTarget.Process);
             Environment.SetEnvironmentVariable("DOTNET_ROLL_FORWARD", "LatestMajor", EnvironmentVariableTarget.Process);
 
-            Environment.SetEnvironmentVariable("PATH", $"{SSSMI.Runtime};{SSSMI.This}", EnvironmentVariableTarget.Process);
+            switch (RuntimeInformation.OSArchitecture)
+            {
+                case Architecture.X86:
+                    Environment.SetEnvironmentVariable("DOTNET_ROOT(x86)", SSSMI.Runtime, EnvironmentVariableTarget.Process);
+                    break;
+                case Architecture.Arm64:
+                    Environment.SetEnvironmentVariable("DOTNET_ROOT(arm64)", SSSMI.Runtime, EnvironmentVariableTarget.Process);
+                    break;
+                default:
+                    break;
+            }
+
+            Environment.SetEnvironmentVariable("PATH", $"{SSSMI.Runtime};{SSSMI.This};{Environment.GetEnvironmentVariable("PATH") ?? string.Empty}", EnvironmentVariableTarget.Process);
 #endif
         }
     }

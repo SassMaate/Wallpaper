@@ -37,7 +37,7 @@
     Number of retry attempts per project. Default: 3
 
 .PARAMETER RetryDelay
-    Delay between retries in seconds. Default: 2
+    Delay between retries in seconds. Default: 3
 
 .PARAMETER InstallRuntime
     If true, installs .NET runtimes. Default: true
@@ -46,7 +46,7 @@
     If true, compresses the published package using 7zip. Default: true
 
 .PARAMETER DotNetVersion
-    Version of .NET to install. Default: 9.0.305
+    Version of .NET to install. Default: 9.0.306
 
 .EXAMPLE
     .\Sucrose.ps1
@@ -108,7 +108,7 @@ param (
     [string]$CompressPackage = "true",
 
     [Parameter(HelpMessage = ".NET version to install")]
-    [string]$DotNetVersion = "9.0.305"
+    [string]$DotNetVersion = "9.0.306"
 )
 
 #region Initialization
