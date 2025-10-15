@@ -1,4 +1,5 @@
-﻿using SPEMREA = Sucrose.Pipe.Event.MessageReceivedEventArgs;
+using System.IO.Pipes;
+using SPEMREA = Sucrose.Pipe.Event.MessageReceivedEventArgs;
 using SPHPC = Sucrose.Pipe.Helper.PipeClient;
 using SPHPS = Sucrose.Pipe.Helper.PipeServer;
 
@@ -15,13 +16,7 @@ namespace Sucrose.Pipe
         {
             if (!PC.IsConnected)
             {
-                try
-                {
-                    await PC.Stop();
-                }
-                catch { }
-
-                await PC.Start(PipeName);
+                await StartClientWithRetry();
             }
         }
 
@@ -29,16 +24,30 @@ namespace Sucrose.Pipe
         {
             if (!PC.IsConnected)
             {
-                try
-                {
-                    await PC.Stop();
-                }
-                catch { }
-
-                await PC.Start(PipeName);
+                await StartClientWithRetry();
             }
 
-            await PC.SendMessage(Message);
+            if (PC.IsConnected)
+            {
+                try
+                {
+                    await PC.SendMessage(Message);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    // Connection lost, try to reconnect once
+                    await StartClientWithRetry(maxRetries: 1);
+                    
+                    if (PC.IsConnected)
+                    {
+                        await PC.SendMessage(Message);
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException("Failed to send message after reconnection attempt", ex);
+                    }
+                }
+            }
         }
 
         public async Task StartServer()
@@ -82,6 +91,62 @@ namespace Sucrose.Pipe
         protected virtual void OnMessageReceived(SPEMREA e)
         {
             MessageReceived?.Invoke(this, e);
+        }
+
+        private async Task StartClientWithRetry(int maxRetries = 3)
+        {
+            Exception lastException = null;
+            
+            for (int i = 0; i <= maxRetries; i++)
+            {
+                try
+                {
+                    // Clean up previous connection
+                    try
+                    {
+                        await PC.Stop();
+                    }
+                    catch { }
+
+                    // Attempt to connect
+                    await PC.Start(PipeName);
+                    
+                    // If successful, return
+                    if (PC.IsConnected)
+                    {
+                        return;
+                    }
+                }
+                catch (TimeoutException ex)
+                {
+                    lastException = ex;
+                    if (i < maxRetries)
+                    {
+                        // Wait before retry with exponential backoff
+                        await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
+                    }
+                }
+                catch (InvalidOperationException ex) when (ex.InnerException is IOException)
+                {
+                    lastException = ex;
+                    if (i < maxRetries)
+                    {
+                        // Wait before retry with exponential backoff
+                        await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    lastException = ex;
+                    break; // Don't retry on unexpected exceptions
+                }
+            }
+
+            // If we get here, all retries failed
+            if (lastException != null)
+            {
+                throw new InvalidOperationException($"Failed to connect to pipe after {maxRetries} retries", lastException);
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.IO.Pipes;
+using System.IO.Pipes;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 
 namespace Sucrose.Pipe.Helper
@@ -8,44 +8,87 @@ namespace Sucrose.Pipe.Helper
         private bool _isConnected;
         private StreamWriter _writer;
         private NamedPipeClientStream _pipeClient;
+        private readonly SemaphoreSlim _sendSemaphore = new(1, 1);
 
         public bool IsConnected => _pipeClient?.IsConnected ?? false;
 
         public async Task Start(string pipeName)
         {
-            _pipeClient = new(SMMRG.PipeServerName, pipeName, PipeDirection.Out, PipeOptions.Asynchronous);
-
-            await _pipeClient.ConnectAsync();
-            _isConnected = true;
-
-            _writer = new(_pipeClient)
+            try
             {
-                AutoFlush = true
-            };
+                // Ensure clean state
+                if (_pipeClient != null)
+                {
+                    await Stop();
+                }
+
+                _pipeClient = new(SMMRG.PipeServerName, pipeName, PipeDirection.Out, PipeOptions.Asynchronous);
+                
+                // Set timeout for connection (5 seconds)
+                using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+                
+                await _pipeClient.ConnectAsync(cts.Token);
+
+                if (_pipeClient.IsConnected)
+                {
+                    _isConnected = true;
+                    
+                    _writer = new(_pipeClient)
+                    {
+                        AutoFlush = true
+                    };
+                }
+                else
+                {
+                    throw new InvalidOperationException("Failed to establish pipe connection");
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                _isConnected = false;
+                throw new TimeoutException($"Connection to pipe '{pipeName}' timed out");
+            }
+            catch (IOException ex)
+            {
+                _isConnected = false;
+                await Stop();
+                throw new InvalidOperationException($"Failed to connect to pipe '{pipeName}': {ex.Message}", ex);
+            }
+            catch (Exception ex)
+            {
+                _isConnected = false;
+                await Stop();
+                throw;
+            }
         }
 
         public async Task Stop()
         {
             _isConnected = false;
 
-            if (_writer != null)
+            try
             {
-                await _writer.DisposeAsync();
-
-                _writer = null;
-            }
-
-            if (_pipeClient != null)
-            {
-                if (_pipeClient.IsConnected)
+                if (_writer != null)
                 {
-                    _pipeClient.Close();
+                    await _writer.DisposeAsync();
+                    _writer = null;
                 }
-
-                await _pipeClient.DisposeAsync();
-
-                _pipeClient = null;
             }
+            catch { }
+
+            try
+            {
+                if (_pipeClient != null)
+                {
+                    if (_pipeClient.IsConnected)
+                    {
+                        _pipeClient.Close();
+                    }
+                    await _pipeClient.DisposeAsync();
+                    _pipeClient = null;
+                }
+            }
+            catch { }
         }
 
         public async Task SendMessage(string message)
@@ -57,13 +100,32 @@ namespace Sucrose.Pipe.Helper
 
             if (!string.IsNullOrWhiteSpace(message))
             {
-                await _writer.WriteLineAsync(message);
+                await _sendSemaphore.WaitAsync();
+                try
+                {
+                    await _writer.WriteLineAsync(message);
+                }
+                catch (IOException ex)
+                {
+                    _isConnected = false;
+                    throw new InvalidOperationException("Failed to send message. Pipe connection may be broken.", ex);
+                }
+                catch (ObjectDisposedException)
+                {
+                    _isConnected = false;
+                    throw new InvalidOperationException("Pipe connection is closed.");
+                }
+                finally
+                {
+                    _sendSemaphore.Release();
+                }
             }
         }
 
         public void Dispose()
         {
             _ = Stop();
+            _sendSemaphore?.Dispose();
         }
     }
 }
