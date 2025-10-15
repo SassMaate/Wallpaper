@@ -767,15 +767,25 @@ namespace Sucrose.Update.View
 
                                     if (SUMI.ProgressStream != null)
                                     {
-                                        //SUMI.ProgressStream?.Cancel();
-                                        SUMI.ProgressStream?.Dispose();
+                                        try
+                                        {
+                                            //SUMI.ProgressStream?.Cancel();
+                                            SUMI.ProgressStream?.Dispose();
+                                        }
+                                        catch { }
+
                                         SUMI.ProgressStream = null;
                                     }
 
                                     if (SUMI.DownloadService != null)
                                     {
-                                        await SUMI.DownloadService?.CancelTaskAsync();
-                                        await SUMI.DownloadService.DisposeAsync();
+                                        try
+                                        {
+                                            await SUMI.DownloadService?.CancelTaskAsync();
+                                            await SUMI.DownloadService.DisposeAsync();
+                                        }
+                                        catch { }
+
                                         SUMI.DownloadService = null;
                                     }
                                 }
@@ -1004,11 +1014,15 @@ namespace Sucrose.Update.View
             {
                 if (SUMI.DownloadService != null)
                 {
-                    await SUMI.DownloadService?.CancelTaskAsync();
+                    try
+                    {
+                        await SUMI.DownloadService?.CancelTaskAsync();
 
-                    await SUMI.DownloadService.DisposeAsync();
+                        await SUMI.DownloadService.DisposeAsync();
 
-                    SUMI.DownloadService = null;
+                        SUMI.DownloadService = null;
+                    }
+                    catch { }
                 }
 
                 if (e.Error != null || e.Cancelled)
