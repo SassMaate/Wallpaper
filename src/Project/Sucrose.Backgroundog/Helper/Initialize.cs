@@ -19,7 +19,7 @@ namespace Sucrose.Backgroundog.Helper
             SBEW.Start();
 
             TimerCallback Callback = InitializeTimer_Callback;
-            SBMI.InitializeTimer = new(Callback, null, 0, SBMI.InitializeTime);
+            SBMI.InitializeTimer = new(Callback, null, SBMI.InitializeDueTime, SBMI.InitializeTime);
 
             SMMI.BackgroundogSettingManager.SetSetting(new KeyValuePair<string, bool>[]
             {

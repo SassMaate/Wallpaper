@@ -142,6 +142,8 @@ namespace Sucrose.Backgroundog.Manage
 
         public static PerformanceCounter ProcessorCounter = null;
 
+        public static int InitializeDueTime = InitializeTime * 30;
+
         public static int SpecificationTime = InitializeTime * 20;
 
         public static PerformanceCounter[] ProcessorsCounter = null;
