@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Net;
 using SEET = Skylark.Enum.EncodeType;
 using SHE = Skylark.Helper.Encode;
@@ -6,14 +6,17 @@ using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SSSHP = Sucrose.Shared.Space.Helper.Port;
+using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 
 namespace Sucrose.Shared.Engine.Extension
 {
     internal class LocalHttpServer(string themeFolder, string customFolder = null)
     {
         private readonly int Port = SSSHP.Available(SMMRG.Loopback);
+        private CancellationTokenSource _cancellationTokenSource;
         private readonly string Host = $"{SMMRG.Loopback}";
         private readonly HttpListener Listener = new();
+        private Task _listenerTask;
 
         public string GetUrl()
         {
@@ -22,28 +25,94 @@ namespace Sucrose.Shared.Engine.Extension
 
         public async void StartAsync()
         {
-            Listener.Prefixes.Add($"http://localhost:{Port}/");
-            Listener.Prefixes.Add($"http://{SMMRG.Loopback}:{Port}/");
-
-            if (string.IsNullOrEmpty(customFolder))
+            try
             {
-                customFolder = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content);
-            }
+                // Stop existing listener if any
+                Stop();
 
-            if (Listener != null && !Listener.IsListening)
-            {
-                Listener.Start();
+                Listener.Prefixes.Add($"http://localhost:{Port}/");
+                Listener.Prefixes.Add($"http://{SMMRG.Loopback}:{Port}/");
 
-                await Task.Run(async () =>
+                if (string.IsNullOrEmpty(customFolder))
                 {
-                    while (Listener.IsListening)
+                    customFolder = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Content);
+                }
+
+                if (Listener != null && !Listener.IsListening)
+                {
+                    _cancellationTokenSource = new CancellationTokenSource();
+
+                    Listener.Start();
+
+                    // Start listener loop without blocking
+                    _listenerTask = Task.Run(() => ListenerLoop(_cancellationTokenSource.Token));
+                }
+            }
+            catch (HttpListenerException Exception)
+            {
+                // Port might be in use or listener configuration error
+                // Swallow exception to prevent application crash
+                await SSWEW.Watch_CatchException(Exception);
+            }
+            catch (Exception Exception)
+            {
+                // Unexpected error during startup
+                await SSWEW.Watch_CatchException(Exception);
+            }
+        }
+
+        private async Task ListenerLoop(CancellationToken cancellationToken)
+        {
+            while (!cancellationToken.IsCancellationRequested && Listener.IsListening)
+            {
+                try
+                {
+                    // GetContextAsync with cancellation support
+                    Task<HttpListenerContext> getContextTask = Listener.GetContextAsync();
+                    TaskCompletionSource<bool> tcs = new();
+
+                    using (cancellationToken.Register(() => tcs.TrySetCanceled()))
                     {
-                        await Task.Run(async () =>
+                        Task completedTask = await Task.WhenAny(getContextTask, tcs.Task);
+
+                        if (completedTask == tcs.Task)
                         {
-                            await HandleRequest(await Listener.GetContextAsync());
-                        });
+                            // Cancellation requested
+                            break;
+                        }
+
+                        HttpListenerContext context = await getContextTask;
+
+                        // Handle request in parallel without blocking the listener loop
+                        _ = Task.Run(() => HandleRequest(context), cancellationToken);
                     }
-                });
+                }
+                catch (HttpListenerException Exception) when (Exception.ErrorCode == 995) // ERROR_OPERATION_ABORTED
+                {
+                    // Listener was stopped, this is expected
+                    break;
+                }
+                catch (HttpListenerException)
+                {
+                    // Other listener errors (e.g., "This operation is not supported")
+                    // Break the loop to prevent continuous errors
+                    break;
+                }
+                catch (ObjectDisposedException)
+                {
+                    // Listener was disposed
+                    break;
+                }
+                catch (OperationCanceledException)
+                {
+                    // Cancellation requested
+                    break;
+                }
+                catch (Exception)
+                {
+                    // Unexpected error, log and continue
+                    await Task.Delay(1000, cancellationToken); // Brief pause before retry
+                }
             }
         }
 
@@ -96,6 +165,11 @@ namespace Sucrose.Shared.Engine.Extension
 
             try
             {
+                if (!File.Exists(path))
+                {
+                    return;
+                }
+
                 using FileStream fs = File.OpenRead(path);
 
                 string filename = Path.GetFileName(path);
@@ -115,69 +189,144 @@ namespace Sucrose.Shared.Engine.Extension
                 while ((read = await fs.ReadAsync(buffer, 0, buffer.Length)) > 0)
                 {
                     await outputStream.WriteAsync(buffer.AsMemory(0, read));
-
                     await outputStream.FlushAsync();
                 }
             }
-            catch { }
+            catch (IOException)
+            {
+                // File read error or stream closed
+            }
+            catch (HttpListenerException)
+            {
+                // Response stream closed by client
+            }
+            catch (ObjectDisposedException)
+            {
+                // Response was disposed
+            }
+            catch (Exception)
+            {
+                // Unexpected error
+            }
         }
 
         private async Task HandleRequest(HttpListenerContext context)
         {
+            if (context == null)
+            {
+                return;
+            }
+
             HttpListenerResponse response = context.Response;
 
-            response.Headers.Add("Access-Control-Allow-Origin", "*");
-            response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
-            response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
-
-            string customPath = Path.Combine(customFolder, context.Request.Url.LocalPath.TrimStart('/'));
-            string themePath = Path.Combine(themeFolder, context.Request.Url.LocalPath.TrimStart('/'));
-
-            if (File.Exists(themePath) || File.Exists(customPath))
+            try
             {
-                string path = string.Empty;
+                response.Headers.Add("Access-Control-Allow-Origin", "*");
+                response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
+                response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
 
-                if (File.Exists(themePath))
+                string customPath = Path.Combine(customFolder, context.Request.Url.LocalPath.TrimStart('/'));
+                string themePath = Path.Combine(themeFolder, context.Request.Url.LocalPath.TrimStart('/'));
+
+                if (File.Exists(themePath) || File.Exists(customPath))
                 {
-                    path = themePath;
+                    string path = string.Empty;
+
+                    if (File.Exists(themePath))
+                    {
+                        path = themePath;
+                    }
+                    else
+                    {
+                        path = customPath;
+                    }
+
+                    await WriteFile(context, path);
+
+                    //string filename = Path.GetFileName(path);
+                    //byte[] content = File.ReadAllBytes(path);
+
+                    //response.ContentLength64 = content.Length;
+                    //response.StatusCode = (int)HttpStatusCode.NotModified;
+                    //response.ContentType = GetContentType(path);
+
+                    //await response.OutputStream.WriteAsync(content.AsMemory(0, content.Length));
                 }
                 else
                 {
-                    path = customPath;
+                    byte[] message = SHE.GetBytes("File not found", SEET.UTF8);
+
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
+
+                    await response.OutputStream.WriteAsync(message.AsMemory(0, message.Length));
                 }
-
-                await WriteFile(context, path);
-
-                //string filename = Path.GetFileName(path);
-                //byte[] content = File.ReadAllBytes(path);
-
-                //response.ContentLength64 = content.Length;
-                //response.StatusCode = (int)HttpStatusCode.NotModified;
-                //response.ContentType = GetContentType(path);
-
-                //await response.OutputStream.WriteAsync(content.AsMemory(0, content.Length));
             }
-            else
+            catch (HttpListenerException)
             {
-                byte[] message = SHE.GetBytes("File not found", SEET.UTF8);
-
-                response.StatusCode = (int)HttpStatusCode.NotFound;
-
-                await response.OutputStream.WriteAsync(message.AsMemory(0, message.Length));
+                // Client disconnected or response error
             }
-
-            response.OutputStream.Close();
-
-            response.Close();
+            catch (ObjectDisposedException)
+            {
+                // Response was disposed
+            }
+            catch (Exception)
+            {
+                // Unexpected error
+            }
+            finally
+            {
+                try
+                {
+                    response.OutputStream.Close();
+                    response.Close();
+                }
+                catch
+                {
+                    // Ignore errors during cleanup
+                }
+            }
         }
 
         public void Stop()
         {
-            if (Listener != null && !Listener.IsListening)
+            try
             {
-                Listener.Stop();
-                Listener.Close();
+                // Signal cancellation
+                if (_cancellationTokenSource != null && !_cancellationTokenSource.IsCancellationRequested)
+                {
+                    _cancellationTokenSource.Cancel();
+                }
             }
+            catch { }
+
+            try
+            {
+                // Stop listener
+                if (Listener != null && Listener.IsListening)
+                {
+                    Listener.Stop();
+                    Listener.Close();
+                }
+            }
+            catch { }
+
+            try
+            {
+                // Wait for listener task to complete (with timeout)
+                if (_listenerTask != null && !_listenerTask.IsCompleted)
+                {
+                    _listenerTask.Wait(TimeSpan.FromSeconds(2));
+                }
+            }
+            catch { }
+
+            try
+            {
+                _cancellationTokenSource?.Dispose();
+
+                _cancellationTokenSource = null;
+            }
+            catch { }
         }
     }
 }
