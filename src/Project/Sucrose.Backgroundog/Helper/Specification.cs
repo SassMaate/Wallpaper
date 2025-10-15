@@ -1036,15 +1036,19 @@ namespace Sucrose.Backgroundog.Helper
                                 Processor = SBED.GetProcessorInfo(),
                                 Motherboard = SBED.GetMotherboardInfo()
                             });
-
-                            SBMI.SignalManagement = true;
                         }
+                    }
+                    catch (InvalidOperationException Exception) when (Exception.Message.Contains("Failed to write file after"))
+                    {
+                        // Signal write failed after retries
+                        await SSWEW.Watch_CatchException(Exception);
                     }
                     catch (Exception Exception)
                     {
-                        SBMI.SignalManagement = true;
                         await SSWEW.Watch_CatchException(Exception);
                     }
+
+                    SBMI.SignalManagement = true;
                 });
 
                 _ = Task.Run(async () =>

@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
@@ -16,87 +16,155 @@ namespace Sucrose.Signal
         private FileSystemWatcher FileWatcher;
 
         public FileSystemEventHandler CreatedEventHandler;
-        //public FileSystemEventHandler ChangedEventHandler;
-        //public FileSystemEventHandler DeletedEventHandler;
-        //public RenamedEventHandler RenamedEventHandler;
 
         public void StopChannel()
         {
-            if (FileWatcher != null)
+            try
             {
-                FileWatcher.EnableRaisingEvents = false;
-                FileWatcher.Dispose();
+                if (FileWatcher != null)
+                {
+                    FileWatcher.EnableRaisingEvents = false;
+                    FileWatcher.Dispose();
+                    FileWatcher = null;
+                }
+            }
+            catch (Exception)
+            {
+                // Swallow exceptions during shutdown
             }
         }
 
         public void StartChannel(FileSystemEventHandler Handler)
         {
-            CreatedEventHandler += Handler;
-
-            if (Directory.Exists(Source))
+            try
             {
-                string[] Files = Directory.GetFiles(Source, "*.*", SearchOption.TopDirectoryOnly);
+                CreatedEventHandler += Handler;
 
-                foreach (string Record in Files)
+                // Ensure directory exists and clean up old files
+                if (Directory.Exists(Source))
                 {
-                    if (FileCheck(Record))
+                    try
                     {
-                        File.Delete(Record);
+                        string[] Files = Directory.GetFiles(Source, "*.*", SearchOption.TopDirectoryOnly);
+
+                        foreach (string Record in Files)
+                        {
+                            if (FileCheck(Record))
+                            {
+                                try
+                                {
+                                    File.Delete(Record);
+                                }
+                                catch (IOException)
+                                {
+                                    // File is in use, skip
+                                }
+                                catch (UnauthorizedAccessException)
+                                {
+                                    // No permission, skip
+                                }
+                            }
+                        }
+                    }
+                    catch (DirectoryNotFoundException)
+                    {
+                        // Directory was deleted during operation, recreate
+                        Directory.CreateDirectory(Source);
                     }
                 }
-            }
-            else
-            {
-                Directory.CreateDirectory(Source);
-            }
-
-            FileWatcher = new()
-            {
-                NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName,
-                Filter = "*.*",
-                Path = Source
-            };
-
-            FileWatcher.Created += (s, e) =>
-            {
-                if (FileCheck(e.FullPath))
+                else
                 {
-                    CreatedEventHandler?.Invoke(s, e);
+                    Directory.CreateDirectory(Source);
                 }
-            };
 
-            //FileWatcher.Changed += (s, e) =>
-            //{
-            //    if (FileCheck(e.FullPath))
-            //    {
-            //        ChangedEventHandler?.Invoke(s, e);
-            //    }
-            //};
+                // Stop existing watcher if any
+                if (FileWatcher != null)
+                {
+                    StopChannel();
+                }
 
-            //FileWatcher.Deleted += (s, e) =>
-            //{
-            //    if (FileCheck(e.FullPath))
-            //    {
-            //        DeletedEventHandler?.Invoke(s, e);
-            //    }
-            //};
+                FileWatcher = new()
+                {
+                    Path = Source,
+                    Filter = "*.*",
+                    InternalBufferSize = 64 * 1024, // Increase buffer size to reduce overflow errors
+                    NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName
+                };
 
-            //FileWatcher.Renamed += (s, e) =>
-            //{
-            //    if (FileCheck(e.FullPath))
-            //    {
-            //        RenamedEventHandler?.Invoke(s, e);
-            //    }
-            //};
+                FileWatcher.Error += (s, e) =>
+                {
+                    Exception Exception = e.GetException();
 
-            FileWatcher.EnableRaisingEvents = true;
+                    if (Exception is InternalBufferOverflowException)
+                    {
+                        // Buffer overflow, restart the watcher
+                        try
+                        {
+                            FileWatcher.EnableRaisingEvents = true;
+                            FileWatcher.EnableRaisingEvents = false;
+                        }
+                        catch { }
+                    }
+                };
+
+                FileWatcher.Created += (s, e) =>
+                {
+                    try
+                    {
+                        if (FileCheck(e.FullPath))
+                        {
+                            CreatedEventHandler?.Invoke(s, e);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        // Swallow exceptions in event handler to prevent watcher from stopping
+                    }
+                };
+
+                FileWatcher.EnableRaisingEvents = true;
+            }
+            catch (Exception)
+            {
+                // Unexpected error during startup
+            }
         }
 
         public void FileSave<T>(T Data)
         {
-            string Destination = Path.Combine(Source, $"{Path.GetFileNameWithoutExtension(Name)}-{Guid.NewGuid()}{Path.GetExtension(Name)}");
+            try
+            {
+                // Ensure directory exists
+                if (!Directory.Exists(Source))
+                {
+                    Directory.CreateDirectory(Source);
+                }
 
-            SSHW.Write(Destination, JsonConvert.SerializeObject(Data, SerializerSettings));
+                string Destination = Path.Combine(Source, $"{Path.GetFileNameWithoutExtension(Name)}-{Guid.NewGuid()}{Path.GetExtension(Name)}");
+
+                SSHW.Write(Destination, JsonConvert.SerializeObject(Data, SerializerSettings));
+            }
+            catch (DirectoryNotFoundException)
+            {
+                // Directory was deleted, recreate and retry once
+                Directory.CreateDirectory(Source);
+
+                string Destination = Path.Combine(Source, $"{Path.GetFileNameWithoutExtension(Name)}-{Guid.NewGuid()}{Path.GetExtension(Name)}");
+
+                SSHW.Write(Destination, JsonConvert.SerializeObject(Data, SerializerSettings));
+            }
+            catch (IOException)
+            {
+                // File is locked or in use
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // No permission to write
+            }
+            catch (Exception)
+            {
+                // Unexpected error
+            }
         }
 
         public string FileName(string Source)
@@ -122,8 +190,24 @@ namespace Sucrose.Signal
 
                 return Data;
             }
-            catch
+            catch (FileNotFoundException)
             {
+                // File not found is expected in some cases
+                return Default;
+            }
+            catch (IOException)
+            {
+                // File is locked or in use
+                return Default;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // No permission to read
+                return Default;
+            }
+            catch (Exception)
+            {
+                // Unexpected error
                 return Default;
             }
         }
@@ -132,9 +216,15 @@ namespace Sucrose.Signal
         {
             try
             {
+                // Small random delay to reduce contention
                 await Task.Delay(SMMRG.Randomise.Next(5, 50));
 
                 string Data = SSHR.Read(Source);
+
+                if (string.IsNullOrWhiteSpace(Data))
+                {
+                    return Default;
+                }
 
                 if (Delete)
                 {
@@ -143,8 +233,33 @@ namespace Sucrose.Signal
 
                 return JsonConvert.DeserializeObject<T>(Data, SerializerSettings);
             }
-            catch
+            catch (FileNotFoundException)
             {
+                // File not found is expected in some cases
+                return Default;
+            }
+            catch (IOException)
+            {
+                // File is locked or in use
+                return Default;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                // No permission to read
+                return Default;
+            }
+            catch (JsonException)
+            {
+                // Deserialization failed
+                if (Delete && File.Exists(Source))
+                {
+                    DeletionTimer(Source); // Delete corrupt file
+                }
+                return Default;
+            }
+            catch (Exception)
+            {
+                // Unexpected error
                 return Default;
             }
         }
