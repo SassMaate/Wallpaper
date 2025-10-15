@@ -1,4 +1,3 @@
-using System.IO.Pipes;
 using SPEMREA = Sucrose.Pipe.Event.MessageReceivedEventArgs;
 using SPHPC = Sucrose.Pipe.Helper.PipeClient;
 using SPHPS = Sucrose.Pipe.Helper.PipeServer;
@@ -33,18 +32,18 @@ namespace Sucrose.Pipe
                 {
                     await PC.SendMessage(Message);
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException Exception)
                 {
                     // Connection lost, try to reconnect once
                     await StartClientWithRetry(maxRetries: 1);
-                    
+
                     if (PC.IsConnected)
                     {
                         await PC.SendMessage(Message);
                     }
                     else
                     {
-                        throw new InvalidOperationException("Failed to send message after reconnection attempt", ex);
+                        throw new InvalidOperationException("Failed to send message after reconnection attempt", Exception);
                     }
                 }
             }
@@ -96,7 +95,7 @@ namespace Sucrose.Pipe
         private async Task StartClientWithRetry(int maxRetries = 3)
         {
             Exception lastException = null;
-            
+
             for (int i = 0; i <= maxRetries; i++)
             {
                 try
@@ -110,34 +109,37 @@ namespace Sucrose.Pipe
 
                     // Attempt to connect
                     await PC.Start(PipeName);
-                    
+
                     // If successful, return
                     if (PC.IsConnected)
                     {
                         return;
                     }
                 }
-                catch (TimeoutException ex)
+                catch (TimeoutException Exception)
                 {
-                    lastException = ex;
+                    lastException = Exception;
+
                     if (i < maxRetries)
                     {
                         // Wait before retry with exponential backoff
                         await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
                     }
                 }
-                catch (InvalidOperationException ex) when (ex.InnerException is IOException)
+                catch (InvalidOperationException Exception) when (Exception.InnerException is IOException)
                 {
-                    lastException = ex;
+                    lastException = Exception;
+
                     if (i < maxRetries)
                     {
                         // Wait before retry with exponential backoff
                         await Task.Delay(TimeSpan.FromSeconds(Math.Pow(2, i)));
                     }
                 }
-                catch (Exception ex)
+                catch (Exception Exception)
                 {
-                    lastException = ex;
+                    lastException = Exception;
+
                     break; // Don't retry on unexpected exceptions
                 }
             }

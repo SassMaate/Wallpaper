@@ -23,16 +23,16 @@ namespace Sucrose.Pipe.Helper
                 }
 
                 _pipeClient = new(SMMRG.PipeServerName, pipeName, PipeDirection.Out, PipeOptions.Asynchronous);
-                
+
                 // Set timeout for connection (5 seconds)
-                using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(5));
-                
+                using CancellationTokenSource cts = new(TimeSpan.FromSeconds(5));
+
                 await _pipeClient.ConnectAsync(cts.Token);
 
                 if (_pipeClient.IsConnected)
                 {
                     _isConnected = true;
-                    
+
                     _writer = new(_pipeClient)
                     {
                         AutoFlush = true
@@ -46,18 +46,23 @@ namespace Sucrose.Pipe.Helper
             catch (OperationCanceledException)
             {
                 _isConnected = false;
+
                 throw new TimeoutException($"Connection to pipe '{pipeName}' timed out");
             }
-            catch (IOException ex)
+            catch (IOException Exception)
             {
                 _isConnected = false;
+
                 await Stop();
-                throw new InvalidOperationException($"Failed to connect to pipe '{pipeName}': {ex.Message}", ex);
+
+                throw new InvalidOperationException($"Failed to connect to pipe '{pipeName}': {Exception.Message}", Exception);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 _isConnected = false;
+
                 await Stop();
+
                 throw;
             }
         }
@@ -71,6 +76,7 @@ namespace Sucrose.Pipe.Helper
                 if (_writer != null)
                 {
                     await _writer.DisposeAsync();
+
                     _writer = null;
                 }
             }
@@ -84,7 +90,9 @@ namespace Sucrose.Pipe.Helper
                     {
                         _pipeClient.Close();
                     }
+
                     await _pipeClient.DisposeAsync();
+
                     _pipeClient = null;
                 }
             }
@@ -101,18 +109,21 @@ namespace Sucrose.Pipe.Helper
             if (!string.IsNullOrWhiteSpace(message))
             {
                 await _sendSemaphore.WaitAsync();
+
                 try
                 {
                     await _writer.WriteLineAsync(message);
                 }
-                catch (IOException ex)
+                catch (IOException Exception)
                 {
                     _isConnected = false;
-                    throw new InvalidOperationException("Failed to send message. Pipe connection may be broken.", ex);
+
+                    throw new InvalidOperationException("Failed to send message. Pipe connection may be broken.", Exception);
                 }
                 catch (ObjectDisposedException)
                 {
                     _isConnected = false;
+
                     throw new InvalidOperationException("Pipe connection is closed.");
                 }
                 finally
@@ -125,6 +136,7 @@ namespace Sucrose.Pipe.Helper
         public void Dispose()
         {
             _ = Stop();
+
             _sendSemaphore?.Dispose();
         }
     }

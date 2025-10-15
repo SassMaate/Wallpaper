@@ -949,51 +949,45 @@ namespace Sucrose.Backgroundog.Helper
                                 TypeNameHandling = TypeNameHandling.None
                             };
 
-                            string messageToSend = JsonConvert.SerializeObject(new SPIB()
-                            {
-                                Bios = SBED.GetBiosInfo(),
-                                Date = SBED.GetDateInfo(),
-                                Audio = SBED.GetAudioInfo(),
-                                Memory = SBED.GetMemoryInfo(),
-                                Battery = SBED.GetBatteryInfo(),
-                                Graphic = SBED.GetGraphicInfo(),
-                                Network = SBED.GetNetworkInfo(),
-                                Storage = SBED.GetStorageInfo(),
-                                Processor = SBED.GetProcessorInfo(),
-                                Motherboard = SBED.GetMotherboardInfo()
-                            }, SerializerSettings);
-
                             try
                             {
-                                await SPMI.BackgroundogManager.StartClient(messageToSend);
+                                await SPMI.BackgroundogManager.StartClient(JsonConvert.SerializeObject(new SPIB()
+                                {
+                                    Bios = SBED.GetBiosInfo(),
+                                    Date = SBED.GetDateInfo(),
+                                    Audio = SBED.GetAudioInfo(),
+                                    Memory = SBED.GetMemoryInfo(),
+                                    Battery = SBED.GetBatteryInfo(),
+                                    Graphic = SBED.GetGraphicInfo(),
+                                    Network = SBED.GetNetworkInfo(),
+                                    Storage = SBED.GetStorageInfo(),
+                                    Processor = SBED.GetProcessorInfo(),
+                                    Motherboard = SBED.GetMotherboardInfo()
+                                }, SerializerSettings));
                             }
-                            catch (InvalidOperationException ex) when (ex.Message.Contains("Failed to connect to pipe after"))
+                            catch (InvalidOperationException Exception) when (Exception.Message.Contains("Failed to connect to pipe after"))
                             {
+                                // Clean up the failed manager
+                                try
+                                {
+                                    await SPMI.BackgroundogManager.DisposeClient();
+                                }
+                                catch { }
+
                                 // Connection retries failed, log and skip this cycle
-                                await SSWEW.Watch_CatchException(ex);
-                                
-                                // Clean up the failed manager
-                                try
-                                {
-                                    await SPMI.BackgroundogManager.DisposeClient();
-                                }
-                                catch { }
-                                
-                                SPMI.BackgroundogManager = null;
+                                await SSWEW.Watch_CatchException(Exception);
                             }
-                            catch (TimeoutException ex)
+                            catch (TimeoutException Exception)
                             {
-                                // Connection timeout, log and skip this cycle
-                                await SSWEW.Watch_CatchException(ex);
-                                
                                 // Clean up the failed manager
                                 try
                                 {
                                     await SPMI.BackgroundogManager.DisposeClient();
                                 }
                                 catch { }
-                                
-                                SPMI.BackgroundogManager = null;
+
+                                // Connection timeout, log and skip this cycle
+                                await SSWEW.Watch_CatchException(Exception);
                             }
 
                             SBMI.PipeManagement = true;
@@ -1001,9 +995,6 @@ namespace Sucrose.Backgroundog.Helper
                     }
                     catch (IOException Exception)
                     {
-                        SBMI.PipeManagement = true;
-                        await SSWEW.Watch_CatchException(Exception);
-                        
                         // Clean up the existing manager before creating a new one
                         if (SPMI.BackgroundogManager != null)
                         {
@@ -1013,8 +1004,9 @@ namespace Sucrose.Backgroundog.Helper
                             }
                             catch { }
                         }
-                        
-                        SPMI.BackgroundogManager = null;
+
+                        SBMI.PipeManagement = true;
+                        await SSWEW.Watch_CatchException(Exception);
                     }
                     catch (Exception Exception)
                     {

@@ -39,8 +39,8 @@ namespace Sucrose.Transmission.Helper
                     _tcpClient.Client.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveInterval, 2);
 
                     // Set receive and send timeouts
-                    _tcpClient.ReceiveTimeout = 5000; // 5 seconds
                     _tcpClient.SendTimeout = 2500; // 2.5 seconds
+                    _tcpClient.ReceiveTimeout = 5000; // 5 seconds
 
                     NetworkStream stream = _tcpClient.GetStream();
 
@@ -65,6 +65,7 @@ namespace Sucrose.Transmission.Helper
                 _isConnected = false;
 
                 await Stop();
+
                 throw new InvalidOperationException($"Failed to connect to {host}:{port}: {Exception.Message}", Exception);
             }
             catch (Exception)
@@ -72,6 +73,7 @@ namespace Sucrose.Transmission.Helper
                 _isConnected = false;
 
                 await Stop();
+
                 throw;
             }
         }
@@ -101,6 +103,7 @@ namespace Sucrose.Transmission.Helper
                     }
 
                     _tcpClient.Dispose();
+
                     _tcpClient = null;
                 }
             }

@@ -8,8 +8,8 @@ namespace Sucrose.Pipe.Helper
         private bool _isRunning;
         private StreamReader _reader;
         private NamedPipeServerStream _pipeServer;
-        private CancellationTokenSource _cancellationTokenSource;
         private readonly SemaphoreSlim _clientLock = new(1, 1);
+        private CancellationTokenSource _cancellationTokenSource;
 
         public bool IsConnected => _pipeServer?.IsConnected ?? false;
 
@@ -30,9 +30,9 @@ namespace Sucrose.Pipe.Helper
                 try
                 {
                     // Wait for connection with cancellation support
-                    using var waitCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token);
-                    waitCts.CancelAfter(TimeSpan.FromSeconds(30)); // 30 second timeout for accepting connections
-                    
+                    using CancellationTokenSource waitCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token);
+                    waitCts.CancelAfter(TimeSpan.FromSeconds(5)); // 5 second timeout for accepting connections
+
                     await _pipeServer.WaitForConnectionAsync(waitCts.Token);
                     _reader = new(_pipeServer);
 
@@ -41,23 +41,23 @@ namespace Sucrose.Pipe.Helper
                         try
                         {
                             // Read with timeout
-                            using var readCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token);
-                            readCts.CancelAfter(TimeSpan.FromSeconds(60)); // 60 second read timeout
-                            
-                            var readTask = _reader.ReadLineAsync();
-                            var readTcs = new TaskCompletionSource<string>();
-                            
+                            using CancellationTokenSource readCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token);
+                            readCts.CancelAfter(TimeSpan.FromSeconds(15)); // 15 second read timeout
+
+                            Task<string> readTask = _reader.ReadLineAsync();
+                            TaskCompletionSource<string> readTcs = new();
+
                             using (readCts.Token.Register(() => readTcs.TrySetCanceled()))
                             {
-                                var completedTask = await Task.WhenAny(readTask, readTcs.Task);
-                                
+                                Task<string> completedTask = await Task.WhenAny(readTask, readTcs.Task);
+
                                 if (completedTask == readTcs.Task)
                                 {
                                     break; // Timeout or cancellation
                                 }
-                                
+
                                 string message = await readTask;
-                                
+
                                 if (message == null) // End of stream
                                 {
                                     break;
@@ -89,12 +89,13 @@ namespace Sucrose.Pipe.Helper
                     // Server shutdown requested
                     break;
                 }
-                catch (IOException ex)
+                catch (IOException)
                 {
                     // Pipe error, recreate if still running
                     if (_isRunning)
                     {
                         await CleanupAndRecreate(pipeName);
+
                         await Task.Delay(1000, _cancellationTokenSource.Token).ConfigureAwait(false);
                     }
                 }
@@ -104,6 +105,7 @@ namespace Sucrose.Pipe.Helper
                     if (_isRunning)
                     {
                         await CleanupAndRecreate(pipeName);
+
                         await Task.Delay(1000, _cancellationTokenSource.Token).ConfigureAwait(false);
                     }
                 }
@@ -133,7 +135,9 @@ namespace Sucrose.Pipe.Helper
                     {
                         _pipeServer.Disconnect();
                     }
+
                     await _pipeServer.DisposeAsync();
+
                     _pipeServer = null;
                 }
             }
@@ -150,6 +154,7 @@ namespace Sucrose.Pipe.Helper
         private async Task CleanupClient()
         {
             await _clientLock.WaitAsync();
+
             try
             {
                 if (_reader != null)
@@ -159,6 +164,7 @@ namespace Sucrose.Pipe.Helper
                         _reader.Dispose();
                     }
                     catch { }
+
                     _reader = null;
                 }
 
@@ -180,7 +186,7 @@ namespace Sucrose.Pipe.Helper
         private async Task CleanupAndRecreate(string pipeName)
         {
             await CleanupClient();
-            
+
             try
             {
                 if (_pipeServer != null)
@@ -196,6 +202,7 @@ namespace Sucrose.Pipe.Helper
         public void Dispose()
         {
             _ = Stop();
+
             _clientLock?.Dispose();
         }
     }

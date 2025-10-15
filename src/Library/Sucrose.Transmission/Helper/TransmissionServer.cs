@@ -154,6 +154,7 @@ namespace Sucrose.Transmission.Helper
                 if (_tcpListener != null)
                 {
                     _tcpListener.Stop();
+
                     _tcpListener = null;
                 }
             }
@@ -162,6 +163,7 @@ namespace Sucrose.Transmission.Helper
             try
             {
                 _cancellationTokenSource?.Dispose();
+
                 _cancellationTokenSource = null;
             }
             catch { }
@@ -177,8 +179,8 @@ namespace Sucrose.Transmission.Helper
                 client.Client.SetSocketOption(SocketOptionLevel.Tcp, SocketOptionName.TcpKeepAliveInterval, 2);
 
                 // Set timeouts
-                client.ReceiveTimeout = 15000; // 15 seconds
                 client.SendTimeout = 5000; // 5 seconds
+                client.ReceiveTimeout = 15000; // 15 seconds
             }
         }
 
