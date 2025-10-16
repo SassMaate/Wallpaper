@@ -87,8 +87,8 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_ThreadException(Exception);
 
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             AppDomain.CurrentDomain.FirstChanceException += async (s, e) =>
@@ -97,8 +97,8 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Close();
                 //Message(Exception);
+                //Close();
             };
 
             AppDomain.CurrentDomain.UnhandledException += async (s, e) =>
@@ -107,32 +107,32 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             TaskScheduler.UnobservedTaskException += async (s, e) =>
             {
+                e.SetObserved();
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                e.SetObserved();
-
+                //Message(Exception);
                 //Close();
-                Message(Exception);
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>
             {
+                e.Handled = true;
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                e.Handled = true;
-
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);

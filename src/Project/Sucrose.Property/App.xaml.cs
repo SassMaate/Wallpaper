@@ -15,11 +15,11 @@ using SMMRM = Sucrose.Memory.Manage.Readonly.Mutex;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SPMI = Sucrose.Property.Manage.Internal;
 using SPVMW = Sucrose.Property.View.MainWindow;
-using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SRHR = Sucrose.Resources.Helper.Resources;
 using SSDEET = Sucrose.Shared.Dependency.Enum.EngineType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
+using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
@@ -40,14 +40,26 @@ namespace Sucrose.Property
 
         public App()
         {
+            System.Windows.Forms.Application.SetUnhandledExceptionMode(UnhandledExceptionMode.Automatic);
+
+            System.Windows.Forms.Application.ThreadException += async (s, e) =>
+            {
+                Exception Exception = e.Exception;
+
+                await SSWEW.Watch_ThreadException(Exception);
+
+                Message(Exception);
+                //Close();
+            };
+
             AppDomain.CurrentDomain.FirstChanceException += async (s, e) =>
             {
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Close();
                 //Message(Exception);
+                //Close();
             };
 
             AppDomain.CurrentDomain.UnhandledException += async (s, e) =>
@@ -56,32 +68,32 @@ namespace Sucrose.Property
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             TaskScheduler.UnobservedTaskException += async (s, e) =>
             {
+                e.SetObserved();
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                e.SetObserved();
-
-                //Close();
                 //Message(Exception);
+                //Close();
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>
             {
+                e.Handled = true;
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                e.Handled = true;
-
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);

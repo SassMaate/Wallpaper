@@ -1,5 +1,7 @@
 ﻿using System.Globalization;
 using System.Windows;
+using System.Windows.Forms;
+using Application = System.Windows.Application;
 using SHC = Skylark.Helper.Culture;
 using SMMCU = Sucrose.Memory.Manage.Constant.Update;
 using SMMG = Sucrose.Manager.Manage.General;
@@ -34,14 +36,26 @@ namespace Sucrose.Update
 
         public App()
         {
+            System.Windows.Forms.Application.SetUnhandledExceptionMode(UnhandledExceptionMode.Automatic);
+
+            System.Windows.Forms.Application.ThreadException += async (s, e) =>
+            {
+                Exception Exception = e.Exception;
+
+                await SSWEW.Watch_ThreadException(Exception);
+
+                Message(Exception);
+                //Close();
+            };
+
             AppDomain.CurrentDomain.FirstChanceException += async (s, e) =>
             {
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Close();
                 //Message(Exception);
+                //Close();
             };
 
             AppDomain.CurrentDomain.UnhandledException += async (s, e) =>
@@ -50,32 +64,32 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             TaskScheduler.UnobservedTaskException += async (s, e) =>
             {
+                e.SetObserved();
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                e.SetObserved();
-
-                //Close();
                 //Message(Exception);
+                //Close();
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>
             {
+                e.Handled = true;
+
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                e.Handled = true;
-
-                //Close();
                 Message(Exception);
+                //Close();
             };
 
             SHC.All = new CultureInfo(SMMG.Culture, true);
