@@ -76,7 +76,7 @@ namespace Sucrose.Watchdog
                 e.SetObserved();
 
                 //Close();
-                Message(Exception);
+                //Message(Exception);
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>

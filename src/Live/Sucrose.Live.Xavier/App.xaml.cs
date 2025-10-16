@@ -81,7 +81,7 @@ namespace Sucrose.Live.Xavier
                 e.SetObserved();
 
                 //Close();
-                Message(Exception);
+                //Message(Exception);
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>

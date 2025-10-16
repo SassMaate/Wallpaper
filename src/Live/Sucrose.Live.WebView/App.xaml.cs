@@ -113,7 +113,7 @@ namespace Sucrose.Live.WebView
                 e.SetObserved();
 
                 //Close();
-                Message(Exception);
+                //Message(Exception);
             };
 
             Current.DispatcherUnhandledException += async (s, e) =>
