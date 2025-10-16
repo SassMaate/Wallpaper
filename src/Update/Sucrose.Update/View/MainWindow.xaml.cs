@@ -37,6 +37,7 @@ using SSDECYT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
 using SSDEUAT = Sucrose.Shared.Dependency.Enum.UpdateAutoType;
 using SSDEUMT = Sucrose.Shared.Dependency.Enum.UpdateModuleType;
 using SSDEUST = Sucrose.Shared.Dependency.Enum.UpdateServerType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMU = Sucrose.Shared.Dependency.Manage.Manager.Update;
 using SSESSE = Skylark.Standard.Extension.Storage.StorageExtension;
 using SSHG = Skylark.Standard.Helper.GitHub;
@@ -366,10 +367,6 @@ namespace Sucrose.Update.View
                     {
                         if (SMMG.TelemetryData)
                         {
-                            using HttpClient Client = new();
-
-                            Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                             SSSMUTD UpdateData = new()
                             {
                                 AppVersion = SSCHV.GetText(),
@@ -378,7 +375,7 @@ namespace Sucrose.Update.View
 
                             StringContent Content = new(JsonConvert.SerializeObject(UpdateData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                            HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Update}/{SSSHU.GetGuid()}", Content);
+                            HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Update}/{SSSHU.GetGuid()}", Content);
 
                             Response.EnsureSuccessStatusCode();
                         }
@@ -596,11 +593,7 @@ namespace Sucrose.Update.View
                         {
                             int BufferSize = 8192;
 
-                            using HttpClient Client = new();
-
-                            Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
-                            using HttpResponseMessage Response = await Client.GetAsync(SUMI.Source, HttpCompletionOption.ResponseHeadersRead);
+                            using HttpResponseMessage Response = await SSDMI.Client.GetAsync(SUMI.Source, HttpCompletionOption.ResponseHeadersRead);
 
                             Response.EnsureSuccessStatusCode();
 

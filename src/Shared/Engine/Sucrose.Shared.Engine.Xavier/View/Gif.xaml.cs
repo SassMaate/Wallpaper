@@ -3,6 +3,8 @@ using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
+using SMMG = Sucrose.Manager.Manage.General;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSEEH = Sucrose.Shared.Engine.Event.Handler;
 using SSEHD = Sucrose.Shared.Engine.Helper.Data;
 using SSEHR = Sucrose.Shared.Engine.Helper.Run;
@@ -34,6 +36,8 @@ namespace Sucrose.Shared.Engine.Xavier.View
             SXAGAB.SetCacheFramesInMemory(SSEXMI.ImageEngine, false);
             SXAGAB.SetAnimateInDesignMode(SSEXMI.ImageEngine, false);
             SXAGAB.SetAutoStart(SSEXMI.ImageEngine, true);
+            SXAGAB.SetClientUserAgent(SMMG.UserAgent);
+            SXAGAB.SetHttpClient(SSDMI.Client);
 
             SSEMI.GeneralTimer.Tick += new EventHandler(GeneralTimer_Tick);
             SSEMI.GeneralTimer.Interval = new TimeSpan(0, 0, 1);

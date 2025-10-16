@@ -33,6 +33,7 @@ using SPVPSSSP = Sucrose.Portal.Views.Pages.Setting.SystemSettingPage;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSDEACT = Sucrose.Shared.Dependency.Enum.ArgumentCommandType;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
@@ -120,6 +121,7 @@ namespace Sucrose.Portal.Views.Windows
                 RootView.Loaded += (_, _) => RootView.Navigate(typeof(SPVPLP));
             }
 
+            SXAGAB.SetHttpClient(SSDMI.Client);
             SXAGAB.SetClientUserAgent(SMMG.UserAgent);
             SXAGAB.SetDownloadCacheExpiration(TimeSpan.FromHours(SMMP.StoreDuration));
             SXAGAB.SetDownloadCacheLocation(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, SMMRF.Temporary));
@@ -288,10 +290,6 @@ namespace Sucrose.Portal.Views.Windows
                     {
                         if (SMMG.TelemetryData)
                         {
-                            using HttpClient Client = new();
-
-                            Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                             SSSMSTD SearchData = new()
                             {
                                 ActivePage = ActivePage,
@@ -301,7 +299,7 @@ namespace Sucrose.Portal.Views.Windows
 
                             StringContent Content = new(JsonConvert.SerializeObject(SearchData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                            HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Search}/{SSSHU.GetGuid()}", Content);
+                            HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Search}/{SSSHU.GetGuid()}", Content);
 
                             Response.EnsureSuccessStatusCode();
                         }

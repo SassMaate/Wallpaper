@@ -159,9 +159,9 @@ namespace Sucrose.Shared.Space.Helper
 
                 foreach (Process Process in Process.GetProcessesByName(Path.GetFileNameWithoutExtension(Application)))
                 {
-                    //Process.CloseMainWindow();
-                    //Process.Close();
-                    Process.Kill();
+                    //Process?.CloseMainWindow();
+                    //Process?.Close();
+                    Process?.Kill();
 
                     Result = true;
                 }
@@ -203,7 +203,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                Process.WaitForInputIdle();
+                Process?.WaitForInputIdle();
 
                 return new()
                 {

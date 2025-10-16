@@ -7,6 +7,7 @@ using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHS = Sucrose.Shared.Store.Helper.Store;
 using SSSIC = Sucrose.Shared.Store.Interface.Contents;
@@ -18,7 +19,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
 {
     internal static class Download
     {
-        public static bool Store(string Store, string Agent)
+        public static bool Store(string Store)
         {
             string StorePath = Path.GetDirectoryName(Store);
 
@@ -46,13 +47,11 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                 Directory.CreateDirectory(StorePath);
             }
 
-            InitializeClient(Agent);
-
             try
             {
                 string StoreUri = $"{SSSHS.Source(SSDESST.Soferity)}/{SMMRS.StoreSource}/{SMMRC.StoreFile}";
 
-                using HttpResponseMessage Response = SSSMI.Client.GetAsync(StoreUri).Result;
+                using HttpResponseMessage Response = SSDMI.Client.GetAsync(StoreUri).Result;
 
                 Response.EnsureSuccessStatusCode();
 
@@ -75,7 +74,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             return false;
         }
 
-        public static bool Pattern(string Pattern, string Agent)
+        public static bool Pattern(string Pattern)
         {
             string PatternPath = Path.GetDirectoryName(Pattern);
 
@@ -103,13 +102,11 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                 Directory.CreateDirectory(PatternPath);
             }
 
-            InitializeClient(Agent);
-
             try
             {
                 string PatternUri = $"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Kernel}/{SMMRS.Pattern}";
 
-                using HttpResponseMessage Response = SSSMI.Client.GetAsync(PatternUri).Result;
+                using HttpResponseMessage Response = SSDMI.Client.GetAsync(PatternUri).Result;
 
                 Response.EnsureSuccessStatusCode();
 
@@ -132,7 +129,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             return false;
         }
 
-        public static bool Cache(KeyValuePair<string, SSSIW> Wallpaper, string Theme, string Agent)
+        public static bool Cache(KeyValuePair<string, SSSIW> Wallpaper, string Theme)
         {
             string InfoPath = Path.Combine(Theme, SMMRC.SucroseInfo);
             string CoverPath = Path.Combine(Theme, Wallpaper.Value.Cover);
@@ -188,15 +185,13 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             {
                 SPMI.StoreDownloading[Theme] = false;
 
-                InitializeClient(Agent);
-
                 try
                 {
                     string InfoUri = EncodeSpacesOnly($"{SMMRU.SoferityStore}/{Wallpaper.Value.Source}/{Wallpaper.Key}/{SMMRC.SucroseInfo}");
                     string CoverUri = EncodeSpacesOnly($"{SMMRU.SoferityStore}/{Wallpaper.Value.Source}/{Wallpaper.Key}/{Wallpaper.Value.Cover}");
 
-                    using HttpResponseMessage ResponseInfo = SSSMI.Client.GetAsync(InfoUri).Result;
-                    using HttpResponseMessage ResponseCover = SSSMI.Client.GetAsync(CoverUri).Result;
+                    using HttpResponseMessage ResponseInfo = SSDMI.Client.GetAsync(InfoUri).Result;
+                    using HttpResponseMessage ResponseCover = SSDMI.Client.GetAsync(CoverUri).Result;
 
                     ResponseInfo.EnsureSuccessStatusCode();
                     ResponseCover.EnsureSuccessStatusCode();
@@ -224,13 +219,11 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             }
         }
 
-        public static async Task<bool> Theme(string Source, string Output, string Agent, string Guid, string Keys, bool Sub = true)
+        public static async Task<bool> Theme(string Source, string Output, string Guid, string Keys, bool Sub = true)
         {
-            InitializeClient(Agent);
-
             SSSMI.StoreService.Info[Keys] = new SSSID(0, 0, 0, "0%", "0/0", Guid);
 
-            return await DownloadFolder(Source, Output, Agent, Keys, Sub);
+            return await DownloadFolder(Source, Output, Keys, Sub);
         }
 
         private static string EncodeSpacesOnly(string Source)
@@ -238,28 +231,43 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             return Source.Replace(" ", "%20");
         }
 
-        private static void InitializeClient(string Agent)
+        private static string Contents(string Repository, string Path)
         {
-            if (SSSMI.State)
+            string BaseUri = $"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Kernel}/{SMMRS.File}/{Repository}";
+
+            if (!string.IsNullOrEmpty(Path))
             {
-                SSSMI.State = false;
+                string Replace = $"{SMMRS.StoreDirectory}/";
 
-                SSSMI.Client.DefaultRequestHeaders.Clear();
+                Path = Path.StartsWith(Replace) ? Path[Replace.Length..] : Path;
 
-                SSSMI.Client.DefaultRequestHeaders.Add("User-Agent", Agent);
+                BaseUri += $"/{Path}";
+            }
+
+            HttpResponseMessage Response = SSDMI.Client.GetAsync(BaseUri).Result;
+
+            string Result = Response.Content.ReadAsStringAsync().Result;
+
+            Response.EnsureSuccessStatusCode();
+
+            if (Response.IsSuccessStatusCode)
+            {
+                return Result;
+            }
+            else
+            {
+                throw new Exception(Result);
             }
         }
 
-        private static async Task<bool> DownloadFolder(string Source, string Output, string Agent, string Keys, bool Sub)
+        private static List<SSSIC> ContentsList(string Repository, string Path)
         {
-            SSSMI.StoreService.TotalFileCount(Keys, await GetTotalFileCount(Source, Agent, Sub));
-
-            return await DownloadFilesRecursively(Source, Output, Agent, Keys, Sub);
+            return JsonConvert.DeserializeObject<List<SSSIC>>(Contents(Repository, Path));
         }
 
-        private static async Task<int> GetTotalFileCount(string Source, string Agent, bool Sub)
+        private static async Task<int> GetTotalFileCount(string Source, bool Sub)
         {
-            List<SSSIC> Contents = ContentsList(SMMRS.StoreDirectory, Source, Agent);
+            List<SSSIC> Contents = ContentsList(SMMRS.StoreDirectory, Source);
 
             int Count = 0;
 
@@ -273,7 +281,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                 {
                     Source = Content.Path;
 
-                    int SubTotalFileCount = await GetTotalFileCount(Source, Agent, Sub);
+                    int SubTotalFileCount = await GetTotalFileCount(Source, Sub);
 
                     Count += SubTotalFileCount;
                 }
@@ -282,9 +290,16 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             return Count;
         }
 
-        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Agent, string Keys, bool Sub)
+        private static async Task<bool> DownloadFolder(string Source, string Output, string Keys, bool Sub)
         {
-            List<SSSIC> Contents = ContentsList(SMMRS.StoreDirectory, Source, Agent);
+            SSSMI.StoreService.TotalFileCount(Keys, await GetTotalFileCount(Source, Sub));
+
+            return await DownloadFilesRecursively(Source, Output, Keys, Sub);
+        }
+
+        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Keys, bool Sub)
+        {
+            List<SSSIC> Contents = ContentsList(SMMRS.StoreDirectory, Source);
 
             foreach (SSSIC Content in Contents)
             {
@@ -297,7 +312,7 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                         Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
                     }
 
-                    using HttpResponseMessage Response = await SSSMI.Client.GetAsync(Content.DownloadUrl);
+                    using HttpResponseMessage Response = await SSDMI.Client.GetAsync(Content.DownloadUrl);
 
                     Response.EnsureSuccessStatusCode();
 
@@ -318,47 +333,11 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                     Source = Content.Path;
                     string SubOutput = Path.Combine(Output, Content.Name);
 
-                    await DownloadFilesRecursively(Source, SubOutput, Agent, Keys, Sub);
+                    await DownloadFilesRecursively(Source, SubOutput, Keys, Sub);
                 }
             }
 
             return true;
-        }
-
-        private static List<SSSIC> ContentsList(string Repository, string Path, string Agent)
-        {
-            return JsonConvert.DeserializeObject<List<SSSIC>>(Contents(Repository, Path, Agent));
-        }
-
-        private static string Contents(string Repository, string Path, string Agent)
-        {
-            InitializeClient(Agent);
-
-            string BaseUri = $"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Kernel}/{SMMRS.File}/{Repository}";
-
-            if (!string.IsNullOrEmpty(Path))
-            {
-                string Replace = $"{SMMRS.StoreDirectory}/";
-
-                Path = Path.StartsWith(Replace) ? Path[Replace.Length..] : Path;
-
-                BaseUri += $"/{Path}";
-            }
-
-            HttpResponseMessage Response = SSSMI.Client.GetAsync(BaseUri).Result;
-
-            string Result = Response.Content.ReadAsStringAsync().Result;
-
-            Response.EnsureSuccessStatusCode();
-
-            if (Response.IsSuccessStatusCode)
-            {
-                return Result;
-            }
-            else
-            {
-                throw new Exception(Result);
-            }
         }
     }
 }

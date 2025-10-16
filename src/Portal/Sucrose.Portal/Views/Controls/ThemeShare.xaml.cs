@@ -10,8 +10,6 @@ using System.Windows.Media.Imaging;
 using Wpf.Ui.Controls;
 using MessageBox = Wpf.Ui.Controls.MessageBox;
 using SaveFileDialog = Microsoft.Win32.SaveFileDialog;
-using SMMG = Sucrose.Manager.Manage.General;
-using SMMO = Sucrose.Manager.Manage.Objectionable;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
@@ -24,6 +22,7 @@ using SRER = Sucrose.Resources.Extension.Resources;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMP = Sucrose.Shared.Dependency.Manage.Manager.Portal;
 using SSSEPS = Sucrose.Shared.Space.Extension.ProgressStream;
 using SSSHC = Sucrose.Shared.Space.Helper.Clean;
@@ -131,8 +130,8 @@ namespace Sucrose.Portal.Views.Controls
 
                         bool Result = SSDMMP.StoreServerType switch
                         {
-                            SSDESST.GitHub => SSSHGHD.Store(StoreFile, SMMG.UserAgent, SMMO.PersonalAccessToken),
-                            _ => SSSHSD.Store(StoreFile, SMMG.UserAgent),
+                            SSDESST.GitHub => SSSHGHD.Store(StoreFile),
+                            _ => SSSHSD.Store(StoreFile),
                         };
 
                         if (Result)
@@ -206,14 +205,10 @@ namespace Sucrose.Portal.Views.Controls
 
                     string TempFile = string.Empty;
 
-                    using HttpClient Client = new();
-
                     HttpResponseMessage Response = new()
                     {
                         StatusCode = HttpStatusCode.BadGateway
                     };
-
-                    Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
 
                     State.Text = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Limit");
 
@@ -221,7 +216,7 @@ namespace Sucrose.Portal.Views.Controls
 
                     try
                     {
-                        Response = await Client.GetAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Upload}/{SMMRS.Theme}/{SMMRS.Check}/{SSSHU.GetGuid()}");
+                        Response = await SSDMI.Client.GetAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Upload}/{SMMRS.Theme}/{SMMRS.Check}/{SSSHU.GetGuid()}");
 
                         Response.EnsureSuccessStatusCode();
                     }
@@ -294,7 +289,7 @@ namespace Sucrose.Portal.Views.Controls
 
                                     try
                                     {
-                                        Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Upload}/{SMMRS.Theme}/{SSSHU.GetGuid()}/{(Category.SelectedItem as ComboBoxItem).Tag}/{SSCHV.GetText()}", Content);
+                                        Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Upload}/{SMMRS.Theme}/{SSSHU.GetGuid()}/{(Category.SelectedItem as ComboBoxItem).Tag}/{SSCHV.GetText()}", Content);
 
                                         Response.EnsureSuccessStatusCode();
                                     }

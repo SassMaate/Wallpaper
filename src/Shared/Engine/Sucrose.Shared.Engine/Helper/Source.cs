@@ -2,12 +2,12 @@
 using System.Net.Http;
 using SEDST = Skylark.Enum.DisplayScreenType;
 using SEST = Skylark.Enum.ScreenType;
-using SMMG = Sucrose.Manager.Manage.General;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSECCE = Skylark.Standard.Extension.Cryptology.CryptologyExtension;
 using SSEHD = Sucrose.Shared.Engine.Helper.Data;
 using SSMMS = Skylark.Struct.Monitor.MonitorStruct;
@@ -228,14 +228,7 @@ namespace Sucrose.Shared.Engine.Helper
                 }
                 else
                 {
-                    using HttpClient Client = new()
-                    {
-                        Timeout = Timeout.InfiniteTimeSpan
-                    };
-
-                    Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
-                    using HttpResponseMessage Response = Client.GetAsync(Source).Result;
+                    using HttpResponseMessage Response = SSDMI.Client.GetAsync(Source).Result;
                     using Stream Content = Response.Content.ReadAsStreamAsync().Result;
                     using FileStream Stream = new(LocalSource, FileMode.OpenOrCreate, FileAccess.Write, FileShare.None);
 

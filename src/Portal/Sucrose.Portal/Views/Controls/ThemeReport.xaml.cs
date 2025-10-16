@@ -8,7 +8,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using Wpf.Ui.Controls;
 using Button = Wpf.Ui.Controls.Button;
-using SMMG = Sucrose.Manager.Manage.General;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRS = Sucrose.Memory.Manage.Readonly.Soferity;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
@@ -18,6 +17,7 @@ using SRER = Sucrose.Resources.Extension.Resources;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDERTT = Sucrose.Shared.Dependency.Enum.ReportThemeType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSSHN = Sucrose.Shared.Space.Helper.Network;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSHU = Sucrose.Shared.Space.Helper.User;
@@ -210,14 +210,10 @@ namespace Sucrose.Portal.Views.Controls
 
                     if (await SSSHN.GetHostEntryAsync())
                     {
-                        using HttpClient Client = new();
-
                         HttpResponseMessage Response = new()
                         {
                             StatusCode = HttpStatusCode.BadGateway
                         };
-
-                        Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
 
                         ReporterState.Text = SRER.GetValue("Portal", "ThemeReport", "Reporter", "Checking");
 
@@ -225,7 +221,7 @@ namespace Sucrose.Portal.Views.Controls
 
                         try
                         {
-                            Response = await Client.GetAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Report}/{SMMRS.Check}/{SSSHU.GetGuid()}");
+                            Response = await SSDMI.Client.GetAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Report}/{SMMRS.Check}/{SSSHU.GetGuid()}");
 
                             Response.EnsureSuccessStatusCode();
                         }
@@ -261,7 +257,7 @@ namespace Sucrose.Portal.Views.Controls
 
                                 StringContent Content = new(JsonConvert.SerializeObject(ReportData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                                Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Report}/{SSSHU.GetGuid()}", Content);
+                                Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Report}/{SSSHU.GetGuid()}", Content);
 
                                 Response.EnsureSuccessStatusCode();
                             }

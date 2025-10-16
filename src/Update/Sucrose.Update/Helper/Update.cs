@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Net.Http;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSIIR = Skylark.Standard.Interface.IReleases;
 
 namespace Sucrose.Update.Helper
@@ -31,9 +32,7 @@ namespace Sucrose.Update.Helper
                 }
             }
 
-            HttpClient Client = InitializeClient(UserAgent);
-
-            HttpResponseMessage Response = Client.GetAsync(Uri).Result;
+            HttpResponseMessage Response = SSDMI.Client.GetAsync(Uri).Result;
 
             string Result = Response.Content.ReadAsStringAsync().Result;
 
@@ -93,17 +92,6 @@ namespace Sucrose.Update.Helper
             public string Content { get; } = content;
 
             public DateTime Timestamp { get; } = timestamp;
-        }
-
-        private static HttpClient InitializeClient(string UserAgent)
-        {
-            HttpClient Client = new();
-
-            Client.DefaultRequestHeaders.Clear();
-
-            Client.DefaultRequestHeaders.Add("User-Agent", UserAgent);
-
-            return Client;
         }
     }
 }

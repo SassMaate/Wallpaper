@@ -120,7 +120,7 @@ namespace Sucrose.Update
                 SSWHD.Add(SMMRW.Source, SSSHE.Change(SUMI.Source, SSCHU.GetDescription(SSCEUET.Executable)));
 
                 SSSHW.Start(SMMRA.Update, Exception, Show, Path);
-                
+
                 if (Show)
                 {
                     Close();

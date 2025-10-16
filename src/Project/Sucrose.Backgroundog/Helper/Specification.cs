@@ -255,8 +255,8 @@ namespace Sucrose.Backgroundog.Helper
 
                                 try
                                 {
-                                    SBMI.AudioVisualizer.Stop();
-                                    SBMI.SessionManager.SessionListChanged -= (s, e) => SBEAS.SessionListChanged();
+                                    SBMI.AudioVisualizer?.Stop();
+                                    SBMI.SessionManager?.SessionListChanged -= (s, e) => SBEAS.SessionListChanged();
                                 }
                                 catch { }
                             }

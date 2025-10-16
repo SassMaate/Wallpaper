@@ -13,6 +13,13 @@ namespace Sucrose.XamlAnimatedGif
         public static TimeSpan DownloadCacheExpiration { get; set; } = TimeSpan.FromDays(30);
         public static string DownloadCacheLocation { get; set; } = Path.GetTempPath();
         public static string ClientUserAgent { get; set; } = "XamlAnimatedGif";
+        public static HttpClient HttpClient { get; set; } = new()
+        {
+            DefaultRequestHeaders =
+            {
+                { "User-Agent", ClientUserAgent }
+            }
+        };
 
         public static Task<Stream> GetStreamFromUriAsync(Uri uri, IProgress<int> progress)
         {
@@ -40,8 +47,7 @@ namespace Sucrose.XamlAnimatedGif
         {
             try
             {
-                using HttpClient client = new();
-                client.DefaultRequestHeaders.Add("User-Agent", ClientUserAgent);
+                using HttpClient client = HttpClient;
                 HttpRequestMessage request = new(HttpMethod.Get, uri);
                 HttpResponseMessage response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();

@@ -29,6 +29,7 @@ using SRER = Sucrose.Resources.Extension.Resources;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMP = Sucrose.Shared.Dependency.Manage.Manager.Portal;
 using SSLHK = Sucrose.Shared.Live.Helper.Kill;
 using SSLHR = Sucrose.Shared.Live.Helper.Run;
@@ -130,10 +131,6 @@ namespace Sucrose.Portal.Views.Controls
             {
                 if (SMMG.TelemetryData)
                 {
-                    using HttpClient Client = new();
-
-                    Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                     SSSMDTD DownloadData = new()
                     {
                         AppVersion = SSCHV.GetText(),
@@ -145,7 +142,7 @@ namespace Sucrose.Portal.Views.Controls
 
                     StringContent Content = new(JsonConvert.SerializeObject(DownloadData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                    HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Download}/{SSSHU.GetGuid()}", Content);
+                    HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Download}/{SSSHU.GetGuid()}", Content);
 
                     Response.EnsureSuccessStatusCode();
                 }
@@ -173,10 +170,10 @@ namespace Sucrose.Portal.Views.Controls
                 switch (SSDMMP.StoreServerType)
                 {
                     case SSDESST.GitHub:
-                        await SSSHGHD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Agent, Guid, Keys, Key);
+                        await SSSHGHD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Guid, Keys);
                         break;
                     default:
-                        await SSSHSD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Agent, Guid, Keys);
+                        await SSSHSD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Guid, Keys);
                         break;
                 }
 
@@ -254,8 +251,8 @@ namespace Sucrose.Portal.Views.Controls
 
                 SPMI.StoreDownloader[Theme] = SSDMMP.StoreServerType switch
                 {
-                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme, Agent, Key),
-                    _ => SSSHSD.Cache(Wallpaper, Theme, Agent),
+                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
+                    _ => SSSHSD.Cache(Wallpaper, Theme),
                 };
 
                 if (SPMI.StoreDownloader[Theme])

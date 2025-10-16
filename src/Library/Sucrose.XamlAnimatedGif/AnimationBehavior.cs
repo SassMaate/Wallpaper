@@ -2,6 +2,7 @@
 using Sucrose.XamlAnimatedGif.Extensions;
 using System.ComponentModel;
 using System.IO;
+using System.Net.Http;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Markup;
@@ -165,6 +166,20 @@ namespace Sucrose.XamlAnimatedGif
         public static void SetClientUserAgent(string userAgent)
         {
             UriLoader.ClientUserAgent = userAgent;
+        }
+
+        #endregion
+
+        #region HttpClient
+
+        public static HttpClient GetHttpClient()
+        {
+            return UriLoader.HttpClient;
+        }
+
+        public static void SetHttpClient(HttpClient httpClient)
+        {
+            UriLoader.HttpClient = httpClient;
         }
 
         #endregion

@@ -20,6 +20,7 @@ using SSCHM = Sucrose.Shared.Core.Helper.Memory;
 using SSCHOS = Sucrose.Shared.Core.Helper.OperatingSystem;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSCMMU = Sucrose.Shared.Core.Manage.Manager.Update;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMB = Sucrose.Shared.Dependency.Manage.Manager.Backgroundog;
 using SSDMMC = Sucrose.Shared.Dependency.Manage.Manager.Cycling;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
@@ -109,10 +110,6 @@ namespace Sucrose.Reportdog.Helper
                 {
                     if (await SSSHN.GetHostEntryAsync())
                     {
-                        using HttpClient Client = new();
-
-                        Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                         CultureInfo Culture = new(SWNM.GetUserDefaultUILanguage());
 
                         SSSMATD AnalyticData = new()
@@ -220,7 +217,7 @@ namespace Sucrose.Reportdog.Helper
 
                         StringContent Content = new(JsonConvert.SerializeObject(AnalyticData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                        HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Analytic}/{SSSHU.GetGuid()}", Content);
+                        HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Analytic}/{SSSHU.GetGuid()}", Content);
 
                         Response.EnsureSuccessStatusCode();
 
@@ -245,10 +242,6 @@ namespace Sucrose.Reportdog.Helper
             {
                 if (SMMG.TelemetryData && await SSSHN.GetHostEntryAsync())
                 {
-                    using HttpClient Client = new();
-
-                    Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                     SSSMOTD OnlineData = new()
                     {
                         AppVersion = SSCHV.GetText(),
@@ -257,7 +250,7 @@ namespace Sucrose.Reportdog.Helper
 
                     StringContent Content = new(JsonConvert.SerializeObject(OnlineData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                    HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Online}/{SSSHU.GetGuid()}", Content);
+                    HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Telemetry}/{SMMRS.Online}/{SSSHU.GetGuid()}", Content);
 
                     Response.EnsureSuccessStatusCode();
                 }
@@ -278,15 +271,11 @@ namespace Sucrose.Reportdog.Helper
 
                     if (File.Exists(Path))
                     {
-                        using HttpClient Client = new();
-
-                        Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
                         SSSMTED ThrowData = JsonConvert.DeserializeObject<SSSMTED>(SSSHW.Read(Path));
 
                         StringContent Content = new(JsonConvert.SerializeObject(ThrowData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                        HttpResponseMessage Response = await Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Exception}/{SMMRS.Throw}/{SSSHU.GetGuid()}", Content);
+                        HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Exception}/{SMMRS.Throw}/{SSSHU.GetGuid()}", Content);
 
                         Response.EnsureSuccessStatusCode();
 

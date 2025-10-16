@@ -1,8 +1,6 @@
 ﻿using System.IO;
 using System.Windows;
 using Wpf.Ui.Abstractions.Controls;
-using SMMG = Sucrose.Manager.Manage.General;
-using SMMO = Sucrose.Manager.Manage.Objectionable;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
@@ -56,13 +54,13 @@ namespace Sucrose.Portal.Views.Pages
 
                 bool Result = SSDMMP.StoreServerType switch
                 {
-                    SSDESSRT.GitHub => SSSHGHD.Store(StoreFile, SMMG.UserAgent, SMMO.PersonalAccessToken),
-                    _ => SSSHSD.Store(StoreFile, SMMG.UserAgent)
+                    SSDESSRT.GitHub => SSSHGHD.Store(StoreFile),
+                    _ => SSSHSD.Store(StoreFile)
                 };
 
                 if (Result)
                 {
-                    if (SSDMMP.StoreServerType == SSDESSRT.Soferity && SSSHSD.Pattern(PatternFile, SMMG.UserAgent))
+                    if (SSDMMP.StoreServerType == SSDESSRT.Soferity && SSSHSD.Pattern(PatternFile))
                     {
                         Store = SSSHS.ReadJson(PatternFile);
                     }

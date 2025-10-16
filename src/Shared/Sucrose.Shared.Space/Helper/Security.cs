@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using System.Net.Security;
 
 namespace Sucrose.Shared.Space.Helper
 {
@@ -7,13 +6,10 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static void Apply()
         {
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls13;
-            //ServicePointManager.SecurityProtocol = (SecurityProtocolType)192 | (SecurityProtocolType)768 | (SecurityProtocolType)3072 | (SecurityProtocolType)12288;
+            ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
 
-            ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) =>
-            {
-                return sslPolicyErrors == SslPolicyErrors.None;
-            };
+            //ServicePointManager.SecurityProtocol = (SecurityProtocolType)0 | (SecurityProtocolType)3072 | (SecurityProtocolType)12288;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.SystemDefault | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls13;
         }
     }
 }

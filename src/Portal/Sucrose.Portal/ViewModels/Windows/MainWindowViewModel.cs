@@ -12,7 +12,6 @@ using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMMCG = Sucrose.Memory.Manage.Constant.General;
 using SMMCK = Sucrose.Memory.Manage.Constant.Kernel;
 using SMMCL = Sucrose.Memory.Manage.Constant.Library;
-using SMMD = Sucrose.Manager.Manage.Donate;
 using SMME = Sucrose.Manager.Manage.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMMP = Sucrose.Manager.Manage.Portal;

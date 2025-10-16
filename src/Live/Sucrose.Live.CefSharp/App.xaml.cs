@@ -35,6 +35,7 @@ using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSECSHP = Sucrose.Shared.Engine.CefSharp.Helper.Properties;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
@@ -576,11 +577,7 @@ namespace Sucrose.Live.CefSharp
             string File = Path.Combine(SMMRP.Temp, $"VC_redist.arm64.{Guid.NewGuid()}.exe");
 #endif
 
-            HttpClient Client = new();
-
-            Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
-            HttpResponseMessage Response = await Client.GetAsync(Url);
+            HttpResponseMessage Response = await SSDMI.Client.GetAsync(Url);
 
             Response.EnsureSuccessStatusCode();
 

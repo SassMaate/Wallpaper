@@ -32,6 +32,7 @@ using SSDEPT = Sucrose.Shared.Dependency.Enum.PropertiesType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
@@ -490,11 +491,7 @@ namespace Sucrose.Live.WebView
         {
             string File = Path.Combine(SMMRP.Temp, $"MicrosoftEdgeWebView2Setup.{Guid.NewGuid()}.exe");
 
-            HttpClient Client = new();
-
-            Client.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
-
-            HttpResponseMessage Response = await Client.GetAsync(SMMRU.WebView2);
+            HttpResponseMessage Response = await SSDMI.Client.GetAsync(SMMRU.WebView2);
 
             Response.EnsureSuccessStatusCode();
 

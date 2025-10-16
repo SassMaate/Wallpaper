@@ -1,10 +1,13 @@
 ﻿using System.IO;
 using System.Net.Http;
+using SMMG = Sucrose.Manager.Manage.General;
+using SMMO = Sucrose.Manager.Manage.Objectionable;
 using SMMP = Sucrose.Manager.Manage.Portal;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SMMRGH = Sucrose.Memory.Manage.Readonly.GitHub;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SPMI = Sucrose.Portal.Manage.Internal;
+using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSHG = Skylark.Standard.Helper.GitHub;
 using SSIIC = Skylark.Standard.Interface.IContents;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
@@ -17,7 +20,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
 {
     internal static class Download
     {
-        public static bool Store(string Store, string Agent, string Key)
+        public static bool Store(string Store)
         {
             string StorePath = Path.GetDirectoryName(Store);
 
@@ -45,17 +48,17 @@ namespace Sucrose.Shared.Store.Helper.GitHub
                 Directory.CreateDirectory(StorePath);
             }
 
-            InitializeClient(Agent, Key);
+            InitializeClient();
 
             try
             {
-                List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, SMMRGH.StoreSource, SMMRGH.Branch, Agent, Key);
+                List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, SMMRGH.StoreSource, SMMRGH.Branch);
 
                 foreach (SSIIC Content in Contents)
                 {
                     if (Content.Name == SMMRC.StoreFile)
                     {
-                        using HttpResponseMessage Response = SSSMI.Client.GetAsync(Content.DownloadUrl).Result;
+                        using HttpResponseMessage Response = SSDMI.ClientGitHub.GetAsync(Content.DownloadUrl).Result;
 
                         Response.EnsureSuccessStatusCode();
 
@@ -82,7 +85,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
             return false;
         }
 
-        public static bool Cache(KeyValuePair<string, SSSIW> Wallpaper, string Theme, string Agent, string Key)
+        public static bool Cache(KeyValuePair<string, SSSIW> Wallpaper, string Theme)
         {
             string InfoPath = Path.Combine(Theme, SMMRC.SucroseInfo);
             string CoverPath = Path.Combine(Theme, Wallpaper.Value.Cover);
@@ -138,15 +141,15 @@ namespace Sucrose.Shared.Store.Helper.GitHub
             {
                 SPMI.StoreDownloading[Theme] = false;
 
-                InitializeClient(Agent, Key);
+                InitializeClient();
 
                 try
                 {
                     string InfoUri = EncodeSpacesOnly($"{SMMRU.RawGitHubStoreBranch}/{Wallpaper.Value.Source}/{Wallpaper.Key}/{SMMRC.SucroseInfo}");
                     string CoverUri = EncodeSpacesOnly($"{SMMRU.RawGitHubStoreBranch}/{Wallpaper.Value.Source}/{Wallpaper.Key}/{Wallpaper.Value.Cover}");
 
-                    using HttpResponseMessage ResponseInfo = SSSMI.Client.GetAsync(InfoUri).Result;
-                    using HttpResponseMessage ResponseCover = SSSMI.Client.GetAsync(CoverUri).Result;
+                    using HttpResponseMessage ResponseInfo = SSDMI.ClientGitHub.GetAsync(InfoUri).Result;
+                    using HttpResponseMessage ResponseCover = SSDMI.ClientGitHub.GetAsync(CoverUri).Result;
 
                     ResponseInfo.EnsureSuccessStatusCode();
                     ResponseCover.EnsureSuccessStatusCode();
@@ -174,13 +177,13 @@ namespace Sucrose.Shared.Store.Helper.GitHub
             }
         }
 
-        public static async Task<bool> Theme(string Source, string Output, string Agent, string Guid, string Keys, string Key, bool Sub = true)
+        public static async Task<bool> Theme(string Source, string Output, string Guid, string Keys, bool Sub = true)
         {
-            InitializeClient(Agent, Key);
+            InitializeClient();
 
             SSSMI.StoreService.Info[Keys] = new SSSID(0, 0, 0, "0%", "0/0", Guid);
 
-            return await DownloadFolder(Source, Output, Agent, Keys, Key, Sub);
+            return await DownloadFolder(Source, Output, Keys, Sub);
         }
 
         private static string EncodeSpacesOnly(string Source)
@@ -188,33 +191,33 @@ namespace Sucrose.Shared.Store.Helper.GitHub
             return Source.Replace(" ", "%20");
         }
 
-        private static void InitializeClient(string Agent, string Key)
+        private static void InitializeClient()
         {
             if (SSSMI.State)
             {
                 SSSMI.State = false;
 
-                SSSMI.Client.DefaultRequestHeaders.Clear();
+                SSDMI.ClientGitHub.DefaultRequestHeaders.Clear();
 
-                SSSMI.Client.DefaultRequestHeaders.Add("User-Agent", Agent);
+                SSDMI.ClientGitHub.DefaultRequestHeaders.Add("User-Agent", SMMG.UserAgent);
 
-                if (!string.IsNullOrEmpty(Key))
+                if (!string.IsNullOrEmpty(SMMO.PersonalAccessToken))
                 {
-                    SSSMI.Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {Key}");
+                    SSDMI.ClientGitHub.DefaultRequestHeaders.Add("Authorization", $"Bearer {SMMO.PersonalAccessToken}");
                 }
             }
         }
 
-        private static async Task<bool> DownloadFolder(string Source, string Output, string Agent, string Keys, string Key, bool Sub)
+        private static async Task<bool> DownloadFolder(string Source, string Output, string Keys, bool Sub)
         {
-            SSSMI.StoreService.TotalFileCount(Keys, await GetTotalFileCount(Source, Agent, Key, Sub));
+            SSSMI.StoreService.TotalFileCount(Keys, await GetTotalFileCount(Source, Sub));
 
-            return await DownloadFilesRecursively(Source, Output, Agent, Keys, Key, Sub);
+            return await DownloadFilesRecursively(Source, Output, Keys, Sub);
         }
 
-        private static async Task<int> GetTotalFileCount(string Source, string Agent, string Key, bool Sub)
+        private static async Task<int> GetTotalFileCount(string Source, bool Sub)
         {
-            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch, Agent, Key);
+            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch);
 
             int Count = 0;
 
@@ -228,7 +231,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
                 {
                     Source = Content.Path;
 
-                    int SubTotalFileCount = await GetTotalFileCount(Source, Agent, Key, Sub);
+                    int SubTotalFileCount = await GetTotalFileCount(Source, Sub);
 
                     Count += SubTotalFileCount;
                 }
@@ -237,9 +240,9 @@ namespace Sucrose.Shared.Store.Helper.GitHub
             return Count;
         }
 
-        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Agent, string Keys, string Key, bool Sub)
+        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Keys, bool Sub)
         {
-            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch, Agent, Key);
+            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch);
 
             foreach (SSIIC Content in Contents)
             {
@@ -252,7 +255,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
                         Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
                     }
 
-                    using HttpResponseMessage Response = await SSSMI.Client.GetAsync(Content.DownloadUrl);
+                    using HttpResponseMessage Response = await SSDMI.ClientGitHub.GetAsync(Content.DownloadUrl);
 
                     Response.EnsureSuccessStatusCode();
 
@@ -273,7 +276,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
                     Source = Content.Path;
                     string SubOutput = Path.Combine(Output, Content.Name);
 
-                    await DownloadFilesRecursively(Source, SubOutput, Agent, Keys, Key, Sub);
+                    await DownloadFilesRecursively(Source, SubOutput, Keys, Sub);
                 }
             }
 
