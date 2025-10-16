@@ -218,7 +218,7 @@ namespace Sucrose.Portal.Views.Controls
                     {
                         Response = await SSDMI.Client.GetAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Optional}/{SMMRS.Upload}/{SMMRS.Theme}/{SMMRS.Check}/{SSSHU.GetGuid()}");
 
-                        Response.EnsureSuccessStatusCode();
+                        //Response.EnsureSuccessStatusCode();
                     }
                     catch
                     {

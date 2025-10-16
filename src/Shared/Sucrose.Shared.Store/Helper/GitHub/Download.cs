@@ -52,7 +52,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
 
             try
             {
-                List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, SMMRGH.StoreSource, SMMRGH.Branch);
+                List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, SMMRGH.StoreSource, SMMRGH.Branch, SMMG.UserAgent, SMMO.PersonalAccessToken);
 
                 foreach (SSIIC Content in Contents)
                 {
@@ -217,7 +217,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
 
         private static async Task<int> GetTotalFileCount(string Source, bool Sub)
         {
-            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch);
+            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch, SMMG.UserAgent, SMMO.PersonalAccessToken);
 
             int Count = 0;
 
@@ -242,7 +242,7 @@ namespace Sucrose.Shared.Store.Helper.GitHub
 
         private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Keys, bool Sub)
         {
-            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch);
+            List<SSIIC> Contents = SSHG.ContentsList(SMMRGH.Owner, SMMRGH.StoreRepository, Source, SMMRGH.Branch, SMMG.UserAgent, SMMO.PersonalAccessToken);
 
             foreach (SSIIC Content in Contents)
             {

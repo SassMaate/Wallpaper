@@ -63,17 +63,13 @@ namespace Sucrose.Portal.Views.Controls
         private readonly string Theme = string.Empty;
         private readonly SPEIL Loader = new();
         private string Keys = string.Empty;
-        private readonly string Agent;
         private readonly string Guid;
-        private readonly string Key;
         private bool State;
         private SSTHI Info;
         private bool Error;
 
-        internal StoreCard(string Theme, KeyValuePair<string, SSSIW> Wallpaper, string Agent, string Key)
+        internal StoreCard(string Theme, KeyValuePair<string, SSSIW> Wallpaper)
         {
-            this.Key = Key;
-            this.Agent = Agent;
             this.Theme = Theme;
             this.Wallpaper = Wallpaper;
             Guid = Path.Combine(Wallpaper.Value.Source, Wallpaper.Key);
