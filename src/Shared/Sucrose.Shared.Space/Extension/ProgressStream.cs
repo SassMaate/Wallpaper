@@ -55,16 +55,16 @@ namespace Sucrose.Shared.Space.Extension
             Stream.Flush();
         }
 
-        public virtual void Dispose()
-        {
-            base.Dispose();
-            Stream.Dispose();
-        }
-
         public override long Position
         {
             get => Stream.Position;
             set => Stream.Position = value;
+        }
+
+        public virtual new void Dispose()
+        {
+            base.Dispose();
+            Stream.Dispose();
         }
 
         public override void SetLength(long value)

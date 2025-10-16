@@ -40,7 +40,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_ThreadException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -50,7 +50,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -60,7 +60,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -72,7 +72,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -84,7 +84,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -104,17 +104,20 @@ namespace Sucrose.Launcher
             Shutdown();
         }
 
-        protected void Message(Exception Exception)
+        protected void Message(Exception Exception, bool Show)
         {
             if (HasError)
             {
-                HasError = false;
+                HasError = !Show;
 
                 string Path = SMMI.LauncherLogManager.LogFile();
 
-                SSSHW.Start(SMMRA.Launcher, Exception, Path);
+                SSSHW.Start(SMMRA.Launcher, Exception, Show, Path);
 
-                Close();
+                if (Show)
+                {
+                    Close();
+                }
             }
         }
 

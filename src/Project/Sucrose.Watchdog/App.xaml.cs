@@ -56,7 +56,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_ThreadException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -66,7 +66,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -76,7 +76,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -88,7 +88,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -100,7 +100,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -142,17 +142,20 @@ namespace Sucrose.Watchdog
             }
         }
 
-        protected void Message(Exception Exception)
+        protected void Message(Exception Exception, bool Show)
         {
             if (HasError)
             {
-                HasError = false;
+                HasError = !Show;
 
                 string Path = SMMI.WatchdogLogManager.LogFile();
 
-                SSSHW.Start(SMMRA.Watchdog, Exception, Path);
+                SSSHW.Start(SMMRA.Watchdog, Exception, Show, Path);
 
-                Close();
+                if (Show)
+                {
+                    Close();
+                }
             }
         }
 
@@ -160,19 +163,21 @@ namespace Sucrose.Watchdog
         {
             if (Args.Any())
             {
+                bool Show = true;
                 string Decode = SSECCE.BaseToText(Args.First());
                 string[] Arguments = Decode.Split(SMMRG.ValueSeparatorChar);
 
                 if (Arguments.Any() && Arguments.Count() == 3)
                 {
                     Guid Id = Guid.NewGuid();
-                    string Log = Arguments[2];
+                    string Log = Arguments[3];
                     string Text = string.Empty;
                     string Source = string.Empty;
                     string User = SSSHUR.GetName();
                     string Model = SSSHUR.GetModel();
                     string Application = Arguments[0];
                     string RawException = Arguments[1];
+                    bool.TryParse(Arguments[2], out Show);
                     Guid AppId = SSSHUE.Generate(Application);
                     string Manufacturer = SSSHUR.GetManufacturer();
                     Exception Exception = SSSEWE.Convert(RawException);
@@ -226,16 +231,19 @@ namespace Sucrose.Watchdog
                         SSSHP.Kill(Application);
                     }
 
-                    switch (SSDMMG.ThemeType)
+                    if (Show)
                     {
-                        case SEWTT.Dark:
-                            SWVDEMB DarkMessageBox = new(RawException, Message, Log, Source, Text);
-                            DarkMessageBox.ShowDialog();
-                            break;
-                        default:
-                            SWVLEMB LightMessageBox = new(RawException, Message, Log, Source, Text);
-                            LightMessageBox.ShowDialog();
-                            break;
+                        switch (SSDMMG.ThemeType)
+                        {
+                            case SEWTT.Dark:
+                                SWVDEMB DarkMessageBox = new(RawException, Message, Log, Source, Text);
+                                DarkMessageBox.ShowDialog();
+                                break;
+                            default:
+                                SWVLEMB LightMessageBox = new(RawException, Message, Log, Source, Text);
+                                LightMessageBox.ShowDialog();
+                                break;
+                        }
                     }
 
                     Close();

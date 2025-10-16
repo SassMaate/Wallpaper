@@ -44,7 +44,7 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_ThreadException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -54,7 +54,7 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -64,7 +64,7 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -76,7 +76,7 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -88,7 +88,7 @@ namespace Sucrose.Update
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -108,20 +108,23 @@ namespace Sucrose.Update
             Shutdown();
         }
 
-        protected void Message(Exception Exception)
+        protected void Message(Exception Exception, bool Show)
         {
             if (HasError)
             {
-                HasError = false;
+                HasError = !Show;
 
                 string Path = SMMI.UpdateLogManager.LogFile();
 
                 SSWHD.Add(SMMRW.Text, SRER.GetValue("Update", "HelpText"));
                 SSWHD.Add(SMMRW.Source, SSSHE.Change(SUMI.Source, SSCHU.GetDescription(SSCEUET.Executable)));
 
-                SSSHW.Start(SMMRA.Update, Exception, Path);
-
-                Close();
+                SSSHW.Start(SMMRA.Update, Exception, Show, Path);
+                
+                if (Show)
+                {
+                    Close();
+                }
             }
         }
 

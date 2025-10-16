@@ -33,13 +33,13 @@ namespace Sucrose.Shared.Space.Helper
             SSSHF.WriteStream(FilePath, FileContent);
         }
 
-        public static void Start(string Application, Exception Exception, string Path)
+        public static void Start(string Application, Exception Exception, bool Show, string Path)
         {
             if (Check())
             {
                 Exception = Data(Exception);
 
-                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Watchdog}{SMMRG.ValueSeparator}{SSSMI.Watchdog}{SMMRG.ValueSeparator}{Encrypt(Application, Exception, Path)}");
+                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Watchdog}{SMMRG.ValueSeparator}{SSSMI.Watchdog}{SMMRG.ValueSeparator}{Encrypt(Application, Exception, Show, Path)}");
             }
         }
 
@@ -63,9 +63,9 @@ namespace Sucrose.Shared.Space.Helper
             return Exception;
         }
 
-        private static string Encrypt(string Application, Exception Exception, string Path)
+        private static string Encrypt(string Application, Exception Exception, bool Show, string Path)
         {
-            return SSECCE.TextToBase($"{Application}{SMMRG.ValueSeparator}{SSSEWE.Convert(Exception)}{SMMRG.ValueSeparator}{Path}");
+            return SSECCE.TextToBase($"{Application}{SMMRG.ValueSeparator}{SSSEWE.Convert(Exception)}{SMMRG.ValueSeparator}{Show}{SMMRG.ValueSeparator}{Path}");
         }
     }
 }

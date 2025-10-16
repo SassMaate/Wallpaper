@@ -103,11 +103,17 @@
                 case MpvEventID.TrackSwitched:
                     InvokeSimple(TrackSwitched);
                     break;
+                case MpvEventID.Idle:
+                    InvokeSimple(Idle);
+                    break;
                 case MpvEventID.Pause:
                     InvokeSimple(Pause);
                     break;
                 case MpvEventID.Unpause:
                     InvokeSimple(Unpause);
+                    break;
+                case MpvEventID.Tick:
+                    InvokeSimple(Tick);
                     break;
                 case MpvEventID.ScriptInputDispatch:
                     InvokeSimple(ScriptInputDispatch);

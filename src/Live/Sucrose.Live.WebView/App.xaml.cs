@@ -80,7 +80,7 @@ namespace Sucrose.Live.WebView
 
                 await SSWEW.Watch_ThreadException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -90,7 +90,7 @@ namespace Sucrose.Live.WebView
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -100,7 +100,7 @@ namespace Sucrose.Live.WebView
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -112,7 +112,7 @@ namespace Sucrose.Live.WebView
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
-                //Message(Exception);
+                Message(Exception, false);
                 //Close();
             };
 
@@ -124,7 +124,7 @@ namespace Sucrose.Live.WebView
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
 
-                Message(Exception);
+                Message(Exception, true);
                 //Close();
             };
 
@@ -142,17 +142,20 @@ namespace Sucrose.Live.WebView
             Shutdown();
         }
 
-        protected void Message(Exception Exception)
+        protected void Message(Exception Exception, bool Show)
         {
             if (HasError)
             {
-                HasError = false;
+                HasError = !Show;
 
                 string Path = SMMI.WebViewLiveLogManager.LogFile();
 
-                SSSHW.Start(SMMRA.WebViewLive, Exception, Path);
+                SSSHW.Start(SMMRA.WebViewLive, Exception, Show, Path);
 
-                Close();
+                if (Show)
+                {
+                    Close();
+                }
             }
         }
 
