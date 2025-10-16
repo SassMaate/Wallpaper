@@ -138,12 +138,10 @@ namespace Sucrose.Backgroundog.Helper
                         {
                             try
                             {
-                                Process[] Processes = Process.GetProcesses();
-
-                                Processes?
-                                    .Where(Process => (Process.ProcessName.Contains(SMMRP.WebViewName) || Process.ProcessName.Contains(SMMRP.CefSharpName)) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName))
-                                    .ToList()
-                                    .ForEach(Process =>
+                                Process.GetProcesses()
+                                    ?.Where(Process => (Process.ProcessName.Contains(SMMRP.WebViewName) || Process.ProcessName.Contains(SMMRP.CefSharpName)) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName))
+                                    ?.ToList()
+                                    ?.ForEach(Process =>
                                     {
                                         SSSEL.Resume(Process.MainWindowHandle);
                                         SSSEL.Resume(Process.Handle);

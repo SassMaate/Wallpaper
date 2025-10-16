@@ -20,7 +20,7 @@ namespace Sucrose.Shared.Engine.Helper
                 {
                     if (SMME.WallpaperVolume > 0 && SMME.VolumeSilent)
                     {
-                        foreach (Process Process in Process.GetProcesses().Where(Proc => !Proc.ProcessName.Contains(SMMRG.AppName) && !SSEMI.Processes.ToList().Any(Id => Id == Proc.Id) && !SSEMI.Applications.ToList().Any(App => App.Process.Id == Proc.Id)))
+                        foreach (Process Process in Process.GetProcesses()?.Where(Proc => !Proc.ProcessName.Contains(SMMRG.AppName) && !SSEMI.Processes.ToList().Any(Id => Id == Proc.Id) && !SSEMI.Applications.ToList().Any(App => App.Process.Id == Proc.Id)))
                         {
                             float? Volume = 0;
                             bool? Muted = true;

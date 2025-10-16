@@ -13,9 +13,9 @@ namespace Sucrose.Shared.Engine.CefSharp.Helper
             try
             {
                 Process.GetProcesses()
-                    .Where(Process => Process.ProcessName.Contains(SMMRP.CefSharpName) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName) && !SSEMI.Processes.Contains(Process.Id))
-                    .ToList()
-                    .ForEach(Process => SSEMI.Processes.Add(Process.Id));
+                    ?.Where(Process => Process.ProcessName.Contains(SMMRP.CefSharpName) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName) && !SSEMI.Processes.Contains(Process.Id))
+                    ?.ToList()
+                    ?.ForEach(Process => SSEMI.Processes.Add(Process.Id));
             }
             catch { }
         }

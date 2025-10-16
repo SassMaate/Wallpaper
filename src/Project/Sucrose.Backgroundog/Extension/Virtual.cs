@@ -14,7 +14,7 @@ namespace Sucrose.Backgroundog.Extension
 
                 foreach (Process Process in Process.GetProcesses())
                 {
-                    if (Names.Contains(Process.ProcessName + ".exe"))
+                    if (Names.Contains(Process?.ProcessName + ".exe"))
                     {
                         return true;
                     }
