@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
+using System.Windows.Resources;
 
 namespace Sucrose.XamlAnimatedGif
 {
@@ -47,9 +48,8 @@ namespace Sucrose.XamlAnimatedGif
         {
             try
             {
-                using HttpClient client = HttpClient;
                 HttpRequestMessage request = new(HttpMethod.Get, uri);
-                HttpResponseMessage response = await client.SendAsync(request);
+                HttpResponseMessage response = await HttpClient.SendAsync(request);
                 response.EnsureSuccessStatusCode();
                 long length = response.Content.Headers.ContentLength ?? 0;
                 using Stream responseStream = await response.Content.ReadAsStreamAsync();
@@ -83,9 +83,7 @@ namespace Sucrose.XamlAnimatedGif
         {
             if (uri.Scheme == PackUriHelper.UriSchemePack)
             {
-                System.Windows.Resources.StreamResourceInfo sri = uri.Authority == "siteoforigin:,,,"
-                    ? Application.GetRemoteStream(uri)
-                    : Application.GetResourceStream(uri);
+                StreamResourceInfo sri = uri.Authority == "siteoforigin:,,," ? Application.GetRemoteStream(uri) : Application.GetResourceStream(uri);
 
                 if (sri != null)
                 {
