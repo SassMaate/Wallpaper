@@ -58,7 +58,7 @@ namespace Sucrose.Live.Nebula
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                Message(Exception, false);
+                //Message(Exception, false);
                 //Close();
             };
 

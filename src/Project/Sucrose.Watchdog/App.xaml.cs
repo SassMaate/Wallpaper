@@ -66,7 +66,7 @@ namespace Sucrose.Watchdog
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                Message(Exception, false);
+                //Message(Exception, false);
                 //Close();
             };
 

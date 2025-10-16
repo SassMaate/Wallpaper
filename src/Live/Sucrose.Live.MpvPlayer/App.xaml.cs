@@ -71,7 +71,7 @@ namespace Sucrose.Live.MpvPlayer
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                Message(Exception, false);
+                //Message(Exception, false);
                 //Close();
             };
 

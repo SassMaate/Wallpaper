@@ -50,7 +50,7 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                Message(Exception, false);
+                //Message(Exception, false);
                 //Close();
             };
 

@@ -58,7 +58,7 @@ namespace Sucrose.Property
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
-                Message(Exception, false);
+                //Message(Exception, false);
                 //Close();
             };
 
