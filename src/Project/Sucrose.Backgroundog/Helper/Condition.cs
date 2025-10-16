@@ -140,7 +140,7 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 Process[] Processes = Process.GetProcesses();
 
-                                Processes
+                                Processes?
                                     .Where(Process => (Process.ProcessName.Contains(SMMRP.WebViewName) || Process.ProcessName.Contains(SMMRP.CefSharpName)) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName))
                                     .ToList()
                                     .ForEach(Process =>

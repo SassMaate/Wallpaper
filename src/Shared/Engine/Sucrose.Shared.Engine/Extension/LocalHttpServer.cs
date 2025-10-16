@@ -14,24 +14,23 @@ namespace Sucrose.Shared.Engine.Extension
     {
         private readonly int Port = SSSHP.Available(SMMRG.Loopback);
         private CancellationTokenSource _cancellationTokenSource;
-        private readonly string Host = $"{SMMRG.Loopback}";
         private readonly HttpListener Listener = new();
         private Task _listenerTask;
 
-        public string GetUrl()
+        public string Host()
         {
-            return $"http://{Host}:{Port}/";
+            return $"http://{SMMRG.Loopback}:{Port}/";
         }
 
-        public async void StartAsync()
+        public async Task StartAsync()
         {
             try
             {
                 // Stop existing listener if any
-                Stop();
+                await StopAsync();
 
+                Listener.Prefixes.Add(Host());
                 Listener.Prefixes.Add($"http://localhost:{Port}/");
-                Listener.Prefixes.Add($"http://{SMMRG.Loopback}:{Port}/");
 
                 if (string.IsNullOrEmpty(customFolder))
                 {
@@ -45,7 +44,18 @@ namespace Sucrose.Shared.Engine.Extension
                     Listener.Start();
 
                     // Start listener loop without blocking
-                    _listenerTask = Task.Run(() => ListenerLoop(_cancellationTokenSource.Token));
+                    _listenerTask = Task.Run(async () =>
+                    {
+                        try
+                        {
+                            await ListenerLoop(_cancellationTokenSource.Token);
+                        }
+                        catch (Exception Exception)
+                        {
+                            // Log any unhandled exceptions from the listener loop
+                            await SSWEW.Watch_CatchException(Exception);
+                        }
+                    }, _cancellationTokenSource.Token);
                 }
             }
             catch (HttpListenerException Exception)
@@ -84,7 +94,18 @@ namespace Sucrose.Shared.Engine.Extension
                         HttpListenerContext context = await getContextTask;
 
                         // Handle request in parallel without blocking the listener loop
-                        _ = Task.Run(() => HandleRequest(context), cancellationToken);
+                        _ = Task.Run(async () =>
+                        {
+                            try
+                            {
+                                await HandleRequest(context);
+                            }
+                            catch (Exception Exception)
+                            {
+                                // Log any unhandled exceptions from request handling
+                                await SSWEW.Watch_CatchException(Exception);
+                            }
+                        }, cancellationToken);
                     }
                 }
                 catch (HttpListenerException Exception) when (Exception.ErrorCode == 995) // ERROR_OPERATION_ABORTED
@@ -108,10 +129,16 @@ namespace Sucrose.Shared.Engine.Extension
                     // Cancellation requested
                     break;
                 }
-                catch (Exception)
+                catch (Exception Exception)
                 {
                     // Unexpected error, log and continue
-                    await Task.Delay(1000, cancellationToken); // Brief pause before retry
+                    await SSWEW.Watch_CatchException(Exception);
+
+                    // Check if we should continue
+                    if (!cancellationToken.IsCancellationRequested)
+                    {
+                        await Task.Delay(1000, cancellationToken); // Brief pause before retry
+                    }
                 }
             }
         }
@@ -186,7 +213,7 @@ namespace Sucrose.Shared.Engine.Extension
 
                 using Stream outputStream = response.OutputStream;
 
-                while ((read = await fs.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                while ((read = await fs.ReadAsync(buffer)) > 0)
                 {
                     await outputStream.WriteAsync(buffer.AsMemory(0, read));
                     await outputStream.FlushAsync();
@@ -289,6 +316,16 @@ namespace Sucrose.Shared.Engine.Extension
 
         public void Stop()
         {
+            // Synchronous wrapper for backward compatibility
+            try
+            {
+                StopAsync().GetAwaiter().GetResult();
+            }
+            catch { }
+        }
+
+        public async Task StopAsync()
+        {
             try
             {
                 // Signal cancellation
@@ -315,7 +352,7 @@ namespace Sucrose.Shared.Engine.Extension
                 // Wait for listener task to complete (with timeout)
                 if (_listenerTask != null && !_listenerTask.IsCompleted)
                 {
-                    _listenerTask.Wait(TimeSpan.FromSeconds(2));
+                    await _listenerTask.WaitAsync(TimeSpan.FromSeconds(2));
                 }
             }
             catch { }

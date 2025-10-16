@@ -1,4 +1,4 @@
-﻿using CefSharp;
+using CefSharp;
 using CefSharp.Wpf.HwndHost;
 using Microsoft.Win32;
 using System.Collections;
@@ -146,7 +146,7 @@ namespace Sucrose.Live.CefSharp
 
         protected void Close()
         {
-            Task.Run(() => LocalServer?.Stop());
+            LocalServer?.Stop();
             Environment.Exit(0);
             Current.Shutdown();
             Shutdown();
@@ -506,9 +506,9 @@ namespace Sucrose.Live.CefSharp
 
                             LocalServer = new(Path.Combine(SSEMI.LibraryLocation, SSEMI.LibrarySelected));
 
-                            await Task.Run(() => LocalServer.StartAsync());
+                            SSEMI.Host = LocalServer.Host();
 
-                            SSEMI.Host = LocalServer.GetUrl();
+                            await LocalServer.StartAsync();
 
                             SSECSMI.CefEngine = new();
 
