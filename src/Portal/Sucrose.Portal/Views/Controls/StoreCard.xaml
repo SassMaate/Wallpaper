@@ -49,27 +49,35 @@
         </ContextMenu>
     </UserControl.ContextMenu>
 
-    <Border>
-        <Border.Effect>
+    <Border
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        ClipToBounds="True"
+        CornerRadius="10">
+        <!--<Border.Effect>
             <DropShadowEffect
                 BlurRadius="10"
                 Direction="300"
                 Opacity="0.25"
                 ShadowDepth="12"
                 Color="{DynamicResource SolidBackgroundFillColorBaseAlt}" />
-        </Border.Effect>
+        </Border.Effect>-->
 
         <Grid>
-            <Grid x:Name="Progress">
-                <Grid.Background>
+            <Border
+                x:Name="Progress"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                ClipToBounds="True"
+                CornerRadius="10">
+                <Border.Background>
                     <SolidColorBrush Opacity="0.5" Color="{DynamicResource ApplicationBackgroundColor}" />
-                </Grid.Background>
-
+                </Border.Background>
                 <ui:ProgressRing
                     Width="120"
                     Height="120"
                     IsIndeterminate="True" />
-            </Grid>
+            </Border>
 
             <Grid x:Name="Warn" Visibility="Hidden">
                 <Grid.Background>
@@ -85,116 +93,124 @@
             </Grid>
 
             <Grid x:Name="Card" Visibility="Hidden">
-                <Grid.Background>
-                    <VisualBrush Stretch="UniformToFill">
-                        <VisualBrush.Visual>
-                            <Grid>
-                                <Image
-                                    x:Name="Imagine"
-                                    Source="{x:Null}"
-                                    Stretch="UniformToFill" />
-                                <Image
-                                    x:Name="Imaginer"
-                                    HorizontalAlignment="Stretch"
-                                    VerticalAlignment="Center"
-                                    xag:AnimationBehavior.AnimateInDesignMode="False"
-                                    xag:AnimationBehavior.AutoStart="True"
-                                    xag:AnimationBehavior.CacheFramesInMemory="False"
-                                    xag:AnimationBehavior.RepeatBehavior="Forever"
-                                    xag:AnimationBehavior.SourceUri="{x:Null}"
-                                    Stretch="UniformToFill"
-                                    StretchDirection="Both" />
-                            </Grid>
-                        </VisualBrush.Visual>
-                    </VisualBrush>
-                </Grid.Background>
+                <Rectangle RadiusX="10" RadiusY="10">
+                    <Rectangle.Fill>
+                        <VisualBrush Stretch="UniformToFill">
+                            <VisualBrush.Visual>
+                                <Grid>
+                                    <Image
+                                        x:Name="Imagine"
+                                        Source="{x:Null}"
+                                        Stretch="UniformToFill" />
+                                    <Image
+                                        x:Name="Imaginer"
+                                        HorizontalAlignment="Stretch"
+                                        VerticalAlignment="Center"
+                                        xag:AnimationBehavior.AnimateInDesignMode="False"
+                                        xag:AnimationBehavior.AutoStart="True"
+                                        xag:AnimationBehavior.CacheFramesInMemory="False"
+                                        xag:AnimationBehavior.RepeatBehavior="Forever"
+                                        xag:AnimationBehavior.SourceUri="{x:Null}"
+                                        Stretch="UniformToFill"
+                                        StretchDirection="Both" />
+                                </Grid>
+                            </VisualBrush.Visual>
+                        </VisualBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
 
-                <Grid
-                    x:Name="Preview"
+                <Border
                     HorizontalAlignment="Stretch"
-                    VerticalAlignment="Bottom">
-                    <Grid.Background>
+                    VerticalAlignment="Bottom"
+                    ClipToBounds="True"
+                    CornerRadius="0,0,10,10">
+                    <Border.Background>
                         <SolidColorBrush Opacity="0.75" Color="{DynamicResource ApplicationBackgroundColor}" />
-                    </Grid.Background>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
+                    </Border.Background>
+                    <Grid
+                        x:Name="Preview"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Bottom">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
 
-                    <Canvas
-                        x:Name="Titler"
-                        Grid.Row="0"
-                        Margin="5,5,5,25">
-                        <ui:TextBlock
-                            x:Name="ThemeTitle"
-                            Width="{Binding ActualWidth, ElementName=Titler}"
-                            FontSize="16"
-                            FontWeight="Bold"
-                            Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                            Text="{DynamicResource Portal.StoreCard.TitleText}"
-                            TextTrimming="CharacterEllipsis"
-                            TextWrapping="NoWrap" />
-                    </Canvas>
-                    <Canvas
-                        x:Name="Descriptioner"
-                        Grid.Row="1"
-                        Margin="5,0,5,20">
-                        <ui:TextBlock
-                            x:Name="ThemeDescription"
-                            Width="{Binding ActualWidth, ElementName=Descriptioner}"
-                            FontSize="12"
-                            FontWeight="SemiBold"
-                            Foreground="{DynamicResource TextPlaceholderColorBrush}"
-                            Text="{DynamicResource Portal.StoreCard.DescriptionText}"
-                            TextTrimming="CharacterEllipsis"
-                            TextWrapping="NoWrap" />
-                    </Canvas>
-
-                    <ui:Button
-                        x:Name="Download"
-                        Grid.Row="0"
-                        Grid.RowSpan="2"
-                        Grid.Column="1"
-                        Width="41.06"
-                        Padding="0"
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Stretch"
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"
-                        Appearance="Transparent"
-                        BorderBrush="Transparent"
-                        Click="Download_Click">
-                        <Grid>
-                            <ui:SymbolIcon
-                                x:Name="IncompatibleVersion"
-                                Width="36"
-                                Cursor="Hand"
-                                FontSize="36"
-                                Foreground="{DynamicResource PaletteRedBrush}"
-                                Symbol="BoxDismiss24"
-                                ToolTipService.ToolTip="{DynamicResource Portal.StoreCard.VersionTip}"
-                                Visibility="Collapsed" />
-                            <ui:SymbolIcon
-                                x:Name="DownloadSymbol"
-                                Width="36"
-                                Cursor="Hand"
-                                FontSize="36"
+                        <Canvas
+                            x:Name="Titler"
+                            Grid.Row="0"
+                            Margin="5,5,5,25">
+                            <ui:TextBlock
+                                x:Name="ThemeTitle"
+                                Width="{Binding ActualWidth, ElementName=Titler}"
+                                FontSize="16"
+                                FontWeight="Bold"
                                 Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                Symbol="CloudArrowDown24" />
-                            <ui:ProgressRing
-                                x:Name="DownloadRing"
-                                Width="36"
-                                Height="36"
-                                Progress="0"
-                                Visibility="Collapsed" />
-                            <!--<Image Source="pack://application:,,,/Assets/Icon/DownloadFromCloud.png"/>-->
-                        </Grid>
-                    </ui:Button>
-                </Grid>
+                                Text="{DynamicResource Portal.StoreCard.TitleText}"
+                                TextTrimming="CharacterEllipsis"
+                                TextWrapping="NoWrap" />
+                        </Canvas>
+                        <Canvas
+                            x:Name="Descriptioner"
+                            Grid.Row="1"
+                            Margin="5,0,5,20">
+                            <ui:TextBlock
+                                x:Name="ThemeDescription"
+                                Width="{Binding ActualWidth, ElementName=Descriptioner}"
+                                FontSize="12"
+                                FontWeight="SemiBold"
+                                Foreground="{DynamicResource TextPlaceholderColorBrush}"
+                                Text="{DynamicResource Portal.StoreCard.DescriptionText}"
+                                TextTrimming="CharacterEllipsis"
+                                TextWrapping="NoWrap" />
+                        </Canvas>
+
+                        <ui:Button
+                            x:Name="Download"
+                            Grid.Row="0"
+                            Grid.RowSpan="2"
+                            Grid.Column="1"
+                            Width="41.06"
+                            Padding="0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Stretch"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            Appearance="Transparent"
+                            BorderBrush="Transparent"
+                            Click="Download_Click">
+                            <Grid>
+                                <ui:SymbolIcon
+                                    x:Name="IncompatibleVersion"
+                                    Width="36"
+                                    Cursor="Hand"
+                                    FontSize="36"
+                                    Foreground="{DynamicResource PaletteRedBrush}"
+                                    Symbol="BoxDismiss24"
+                                    ToolTipService.ToolTip="{DynamicResource Portal.StoreCard.VersionTip}"
+                                    Visibility="Collapsed" />
+                                <ui:SymbolIcon
+                                    x:Name="DownloadSymbol"
+                                    Width="36"
+                                    Cursor="Hand"
+                                    FontSize="36"
+                                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                                    Symbol="CloudArrowDown24" />
+                                <ui:ProgressRing
+                                    x:Name="DownloadRing"
+                                    Width="36"
+                                    Height="36"
+                                    Progress="0"
+                                    Visibility="Collapsed" />
+                                <!--<Image Source="pack://application:,,,/Assets/Icon/DownloadFromCloud.png"/>-->
+                            </Grid>
+                        </ui:Button>
+                    </Grid>
+                </Border>
             </Grid>
         </Grid>
     </Border>
