@@ -79,18 +79,24 @@
                     IsIndeterminate="True" />
             </Border>
 
-            <Grid x:Name="Warn" Visibility="Hidden">
-                <Grid.Background>
+            <Border
+                x:Name="Warn"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                ClipToBounds="True"
+                CornerRadius="10"
+                Visibility="Hidden">
+                <Border.Background>
                     <SolidColorBrush Opacity="0.5" Color="{DynamicResource ApplicationBackgroundColor}" />
-                </Grid.Background>
+                </Border.Background>
 
                 <ui:ProgressRing
-                    Width="160"
-                    Height="160"
+                    Width="120"
+                    Height="120"
                     Foreground="Crimson"
                     IsIndeterminate="False"
                     Progress="100" />
-            </Grid>
+            </Border>
 
             <Grid x:Name="Card" Visibility="Hidden">
                 <Rectangle RadiusX="10" RadiusY="10">
@@ -125,7 +131,7 @@
                     ClipToBounds="True"
                     CornerRadius="0,0,10,10">
                     <Border.Background>
-                        <SolidColorBrush Opacity="0.75" Color="{DynamicResource ApplicationBackgroundColor}" />
+                        <SolidColorBrush Opacity="0.75" Color="{DynamicResource SolidBackgroundFillColorQuarternary}" />
                     </Border.Background>
                     <Grid
                         x:Name="Preview"

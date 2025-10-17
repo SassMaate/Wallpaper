@@ -151,7 +151,7 @@
                     ClipToBounds="True"
                     CornerRadius="0,0,10,10">
                     <Border.Background>
-                        <SolidColorBrush Opacity="0.75" Color="{DynamicResource ApplicationBackgroundColor}" />
+                        <SolidColorBrush Opacity="0.75" Color="{DynamicResource SolidBackgroundFillColorQuarternary}" />
                     </Border.Background>
                     <Grid x:Name="Preview">
                         <Grid.RowDefinitions>
