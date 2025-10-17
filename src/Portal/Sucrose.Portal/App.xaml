@@ -20,7 +20,7 @@
                 <ResourceDictionary Source="/Sucrose.Portal;component/Styles/CustomGroupBox.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-            <system:Double x:Key="NormalScaleFactor">1.05</system:Double>
+            <system:Double x:Key="NormalScaleFactor">1.025</system:Double>
 
             <xf:AnimationSettings
                 x:Key="Entered"
