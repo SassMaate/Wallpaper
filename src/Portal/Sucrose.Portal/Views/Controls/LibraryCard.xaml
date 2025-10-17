@@ -146,6 +146,7 @@
                 </Rectangle>
 
                 <Border
+                    x:Name="Preview"
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Bottom"
                     ClipToBounds="True"
@@ -153,7 +154,7 @@
                     <Border.Background>
                         <SolidColorBrush Opacity="0.75" Color="{DynamicResource SolidBackgroundFillColorQuarternary}" />
                     </Border.Background>
-                    <Grid x:Name="Preview">
+                    <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
