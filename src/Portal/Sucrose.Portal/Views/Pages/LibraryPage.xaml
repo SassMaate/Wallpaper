@@ -21,8 +21,8 @@
         <Frame x:Name="FrameLibrary" Visibility="Collapsed" />
         <ui:ProgressRing
             x:Name="ProgressLibrary"
-            Width="100"
-            Height="100"
+            Width="140"
+            Height="140"
             IsIndeterminate="True" />
         <Rectangle
             Name="DropRectangle"

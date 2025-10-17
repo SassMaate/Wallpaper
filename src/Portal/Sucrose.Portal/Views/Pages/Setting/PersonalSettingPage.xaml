@@ -23,8 +23,8 @@
             Visibility="Collapsed" />
         <ui:ProgressRing
             x:Name="ProgressSetting"
-            Width="100"
-            Height="100"
+            Width="140"
+            Height="140"
             IsIndeterminate="True" />
     </Grid>
 </Page>
