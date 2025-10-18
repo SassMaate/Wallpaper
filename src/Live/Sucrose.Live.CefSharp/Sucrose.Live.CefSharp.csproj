@@ -21,6 +21,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Watson.Lite" />
         <PackageReference Include="Skylark.Wing" />
         <PackageReference Include="RawInput.Sharp" />
         <PackageReference Include="Skylark.Standard" />

@@ -37,6 +37,7 @@ using SSDHG = Sucrose.Shared.Dependency.Helper.Graphic;
 using SSDHR = Sucrose.Shared.Dependency.Helper.Runtime;
 using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
+using SSECSEWWS = Sucrose.Shared.Engine.CefSharp.Extension.WatsonWebServer;
 using SSECSHP = Sucrose.Shared.Engine.CefSharp.Helper.Properties;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
 using SSECSVG = Sucrose.Shared.Engine.CefSharp.View.Gif;
@@ -44,7 +45,6 @@ using SSECSVU = Sucrose.Shared.Engine.CefSharp.View.Url;
 using SSECSVV = Sucrose.Shared.Engine.CefSharp.View.Video;
 using SSECSVW = Sucrose.Shared.Engine.CefSharp.View.Web;
 using SSECSVYT = Sucrose.Shared.Engine.CefSharp.View.YouTube;
-using SSEELHS = Sucrose.Shared.Engine.Extension.LocalHttpServer;
 using SSEHA = Sucrose.Shared.Engine.Helper.Awakening;
 using SSEHCR = Sucrose.Shared.Engine.Helper.Crashing;
 using SSEHCY = Sucrose.Shared.Engine.Helper.Cycyling;
@@ -76,7 +76,7 @@ namespace Sucrose.Live.CefSharp
     public partial class App : Application
     {
         private static bool HasError { get; set; } = true;
-        private static SSEELHS LocalServer { get; set; }
+        private static SSECSEWWS LocalServer { get; set; }
 
         public App()
         {

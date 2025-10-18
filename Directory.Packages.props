@@ -6,6 +6,7 @@
     <PackageVersion Include="Skylark" Version="3.1.5.7" />
     <PackageVersion Include="CsvHelper" Version="33.1.0" />
     <PackageVersion Include="Downloader" Version="4.0.3" />
+    <PackageVersion Include="Watson.Lite" Version="6.4.0" />
     <PackageVersion Include="Costura.Fody" Version="6.0.0" />
     <PackageVersion Include="HandyControls" Version="3.6.0" />
     <PackageVersion Include="RawInput.Sharp" Version="0.1.3" />
