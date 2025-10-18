@@ -125,9 +125,7 @@ namespace Sucrose.Shared.Engine.Extension
 
         private string GetContentType(string filename)
         {
-            string extension = Path.GetExtension(filename).ToLower();
-
-            return extension switch
+            return Path.GetExtension(filename).ToLowerInvariant() switch
             {
                 ".rar" => "application/x-rar-compressed",
                 ".js" => "application/javascript",

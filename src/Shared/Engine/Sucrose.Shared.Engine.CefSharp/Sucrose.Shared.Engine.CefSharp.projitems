@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Event\YouTube.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Interaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extension\WatsonWebServer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Screenshot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Handler\CustomDownload.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Handler\CustomKeyboard.cs" />

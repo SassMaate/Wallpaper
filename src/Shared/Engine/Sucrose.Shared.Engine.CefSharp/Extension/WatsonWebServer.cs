@@ -50,6 +50,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                 {
                     _server.Stop();
                     _server.Dispose();
+
                     _server = null;
                 }
             }
@@ -68,6 +69,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
             try
             {
                 _cancellationTokenSource?.Dispose();
+
                 _cancellationTokenSource = null;
             }
             catch { }
@@ -117,9 +119,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
 
         private string GetContentType(string filename)
         {
-            string extension = Path.GetExtension(filename).ToLower();
-
-            return extension switch
+            return Path.GetExtension(filename).ToLowerInvariant() switch
             {
                 ".rar" => "application/x-rar-compressed",
                 ".js" => "application/javascript",
