@@ -8,7 +8,7 @@ namespace Sucrose.Pipe.Helper
         private bool _isRunning;
         private StreamReader _reader;
         private NamedPipeServerStream _pipeServer;
-        private readonly SemaphoreSlim _clientLock = new(1, 1);
+        private SemaphoreSlim _clientLock = new(1, 1);
         private CancellationTokenSource _cancellationTokenSource;
 
         public bool IsConnected => _pipeServer?.IsConnected ?? false;
@@ -204,6 +204,8 @@ namespace Sucrose.Pipe.Helper
             _ = Stop();
 
             _clientLock?.Dispose();
+
+            _clientLock = new(1, 1);
         }
     }
 }

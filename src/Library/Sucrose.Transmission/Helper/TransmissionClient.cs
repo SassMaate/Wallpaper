@@ -8,7 +8,7 @@ namespace Sucrose.Transmission.Helper
         private bool _isConnected;
         private TcpClient _tcpClient;
         private StreamWriter _writer;
-        private readonly SemaphoreSlim _sendSemaphore = new(1, 1);
+        private SemaphoreSlim _sendSemaphore = new(1, 1);
 
         public bool IsConnected => _tcpClient?.Connected ?? false;
 
@@ -149,6 +149,8 @@ namespace Sucrose.Transmission.Helper
             _ = Stop();
 
             _sendSemaphore?.Dispose();
+
+            _sendSemaphore = new(1, 1);
         }
     }
 }

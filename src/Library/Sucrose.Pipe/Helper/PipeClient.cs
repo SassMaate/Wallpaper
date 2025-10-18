@@ -8,7 +8,7 @@ namespace Sucrose.Pipe.Helper
         private bool _isConnected;
         private StreamWriter _writer;
         private NamedPipeClientStream _pipeClient;
-        private readonly SemaphoreSlim _sendSemaphore = new(1, 1);
+        private SemaphoreSlim _sendSemaphore = new(1, 1);
 
         public bool IsConnected => _pipeClient?.IsConnected ?? false;
 
@@ -138,6 +138,8 @@ namespace Sucrose.Pipe.Helper
             _ = Stop();
 
             _sendSemaphore?.Dispose();
+
+            _sendSemaphore = new(1, 1);
         }
     }
 }

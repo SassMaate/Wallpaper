@@ -10,7 +10,7 @@ namespace Sucrose.Transmission.Helper
         private TcpClient _client;
         private StreamReader _reader;
         private TcpListener _tcpListener;
-        private readonly SemaphoreSlim _clientLock = new(1, 1);
+        private SemaphoreSlim _clientLock = new(1, 1);
         private CancellationTokenSource _cancellationTokenSource;
 
         public bool IsConnected => _client?.Connected ?? false;
@@ -228,6 +228,8 @@ namespace Sucrose.Transmission.Helper
             _ = Stop();
 
             _clientLock?.Dispose();
+
+            _clientLock = new(1, 1);
         }
     }
 }
