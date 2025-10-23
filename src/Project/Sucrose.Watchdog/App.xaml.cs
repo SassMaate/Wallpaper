@@ -167,7 +167,7 @@ namespace Sucrose.Watchdog
                 string Decode = SSECCE.BaseToText(Args.First());
                 string[] Arguments = Decode.Split(SMMRG.ValueSeparatorChar);
 
-                if (Arguments.Any() && Arguments.Count() == 3)
+                if (Arguments.Any() && Arguments.Count() == 4)
                 {
                     Guid Id = Guid.NewGuid();
                     string Log = Arguments[3];
