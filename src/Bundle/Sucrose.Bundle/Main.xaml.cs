@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Newtonsoft.Json;
 using SharpCompress.Archives;
 using SharpCompress.Common;
 using System.Diagnostics;
@@ -8,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 using Path = System.IO.Path;
 using SEAT = Skylark.Enum.AssemblyType;
 using SECNT = Skylark.Enum.ClearNumericType;
@@ -16,6 +18,7 @@ using SEST = Skylark.Enum.StorageType;
 using SHA = Skylark.Helper.Assemblies;
 using SHN = Skylark.Helper.Numeric;
 using SHV = Skylark.Helper.Versionly;
+using SSEHHE = Skylark.Standard.Extension.Hash.HashExtension;
 using SSESSE = Skylark.Standard.Extension.Storage.StorageExtension;
 using SWHSB = Skylark.Wing.Helper.ShortcutBasic;
 using SWHSD = Skylark.Wing.Helper.ShortcutDefault;
@@ -48,6 +51,8 @@ namespace Sucrose.Bundle
 
         private static string PackagesFilePath => Path.Combine(PackagesPath, $"{Application}.7z");
 
+        private static string TemplateFilePath => Path.Combine(Path.GetTempPath(), TemplateFile);
+
         private static string InstallPath => Path.Combine(LocalApplicationData, Application);
 
         private static string Launcher => Path.Combine(InstallPath, Department, Executable);
@@ -76,6 +81,10 @@ namespace Sucrose.Bundle
 
         private static string Contact => "taiizor@vegalya.com";
 
+        private static string TemplateFile => "Template.html";
+
+        private static string HashesFile => "Hashes.json";
+
         private static string Shortcut => $"{Text}.lnk";
 
         private static string Application => "Sucrose";
@@ -89,6 +98,8 @@ namespace Sucrose.Bundle
         private static string Publisher => "Taiizor";
 
         private static string Packages => "Packages";
+
+        private static string Checksum => "Checksum";
 
         private static Random Randomise => new();
 
@@ -434,6 +445,79 @@ namespace Sucrose.Bundle
             }
         }
 
+        private static async Task HashesResources(string SourcePath, string DestinationPath)
+        {
+            bool Result = true;
+
+            Assembly Entry = SHA.Assemble(SEAT.Entry);
+
+            string[] Resources = Entry.GetManifestResourceNames();
+
+            foreach (string Resource in Resources)
+            {
+                if (Resource.StartsWith($"{SourcePath}\\"))
+                {
+                    string Resourcer = Resource.Substring($"{SourcePath}\\".Length);
+
+                    using Stream ResourceStream = Entry.GetManifestResourceStream(Resource);
+                    using StreamReader ResourceReader = new(ResourceStream);
+
+                    string ResourceFile = await ResourceReader.ReadToEndAsync();
+
+                    if (Resourcer == TemplateFile)
+                    {
+                        if (File.Exists(TemplateFilePath))
+                        {
+                            try
+                            {
+                                File.Delete(TemplateFilePath);
+                            }
+                            catch { }
+                        }
+
+                        File.WriteAllText(TemplateFilePath, ResourceFile);
+                    }
+                    else if (Resourcer == HashesFile)
+                    {
+                        Dictionary<string, string> Hashes = JsonConvert.DeserializeObject<Dictionary<string, string>>(ResourceFile);
+
+                        SemaphoreSlim Throttler = new(50);
+
+                        IEnumerable<Task<bool>> Tasks = Hashes.Select(async Record =>
+                        {
+                            await Throttler.WaitAsync();
+
+                            try
+                            {
+                                string FilePath = Path.Combine(DestinationPath, Record.Key);
+
+                                if (!File.Exists(FilePath))
+                                {
+                                    return false;
+                                }
+
+                                string HashResult = await SSEHHE.FileToMD5Async(FilePath);
+
+                                return HashResult.Equals(Record.Value, StringComparison.OrdinalIgnoreCase);
+                            }
+                            finally
+                            {
+                                Throttler.Release();
+                            }
+                        });
+
+                        bool[] Results = await Task.WhenAll(Tasks);
+                        Result = Results.All(Result => Result);
+                    }
+                }
+            }
+
+            if (!Result && File.Exists(TemplateFilePath))
+            {
+                Process.Start(TemplateFilePath);
+            }
+        }
+
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
@@ -492,6 +576,10 @@ namespace Sucrose.Bundle
             await Task.Delay(MinDelay);
 
             await SetUninstall();
+
+            await Task.Delay(MinDelay);
+
+            await HashesResources(Checksum, InstallPath);
 
             await Task.Delay(MinDelay);
 

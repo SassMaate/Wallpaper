@@ -32,11 +32,17 @@
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="SevenZip\7z-$(Platform)\**">
-            <LogicalName>SevenZip\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
-        </EmbeddedResource>
         <EmbeddedResource Include="Showcase\**">
             <LogicalName>Showcase\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Checksum\*.html">
+            <LogicalName>Checksum\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Checksum\$(Platform)\**">
+            <LogicalName>Checksum\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
+        </EmbeddedResource>
+        <EmbeddedResource Include="SevenZip\7z-$(Platform)\**">
+            <LogicalName>SevenZip\%(RecursiveDir)%(FileName)%(Extension)</LogicalName>
         </EmbeddedResource>
         <EmbeddedResource Include="$(BaseOutputPath)\Package\Compressed\net9.0-windows\Sucrose-$(Platform).7z">
             <LogicalName>Packages\%(RecursiveDir)Sucrose%(Extension)</LogicalName>
