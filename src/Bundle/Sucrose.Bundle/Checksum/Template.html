@@ -353,11 +353,41 @@
         <script>
             // Language translations
             const translations = {
+                ar: {
+                    'title': 'خطأ في التثبيت',
+                    'description': 'ملفات التثبيت تالفة أو غير مكتملة. فشل ملف واحد أو أكثر في فحص التكامل. يرجى إعادة تثبيت التطبيق من مصدر رسمي.',
+                    'download-title': 'تنزيل من المصادر الرسمية',
+                    'official-website': 'الموقع الرسمي'
+                },
+                bg: {
+                    'title': 'Грешка при инсталиране',
+                    'description': 'Инсталационните файлове са повредени или непълни. Един или повече файла не преминаха проверката за цялостност. Моля, опитайте да преинсталирате приложението от официален източник.',
+                    'download-title': 'Изтегляне от официални източници',
+                    'official-website': 'Официален уебсайт'
+                },
+                cs: {
+                    'title': 'Chyba instalace',
+                    'description': 'Instalační soubory jsou poškozené nebo neúplné. Jeden nebo více souborů selhalo při kontrole integrity. Prosím zkuste přeinstalovat aplikaci z oficiálního zdroje.',
+                    'download-title': 'Stáhnout z oficiálních zdrojů',
+                    'official-website': 'Oficiální webová stránka'
+                },
+                da: {
+                    'title': 'Installationsfejl',
+                    'description': 'Installationsfilerne er beskadigede eller ufuldstændige. En eller flere filer fejlede integritetstjekket. Prøv venligst at geninstallere programmet fra en officiel kilde.',
+                    'download-title': 'Download fra officielle kilder',
+                    'official-website': 'Officiel hjemmeside'
+                },
                 de: {
                     'title': 'Installationsfehler',
                     'description': 'Die Installationsdateien sind beschädigt oder unvollständig. Eine oder mehrere Dateien haben die Integritätsprüfung nicht bestanden. Bitte versuchen Sie, die Anwendung aus einer offiziellen Quelle neu zu installieren.',
                     'download-title': 'Von offiziellen Quellen herunterladen',
                     'official-website': 'Offizielle Website'
+                },
+                el: {
+                    'title': 'Σφάλμα εγκατάστασης',
+                    'description': 'Τα αρχεία εγκατάστασης είναι κατεστραμμένα ή ελλιπή. Ένα ή περισσότερα αρχεία απέτυχαν στον έλεγχο ακεραιότητας. Παρακαλούμε επανεγκαταστήστε την εφαρμογή από επίσημη πηγή.',
+                    'download-title': 'Λήψη από επίσημες πηγές',
+                    'official-website': 'Επίσημη ιστοσελίδα'
                 },
                 en: {
                     'title': 'Installation Error',
@@ -371,11 +401,47 @@
                     'download-title': 'Descargar de Fuentes Oficiales',
                     'official-website': 'Sitio Web Oficial'
                 },
+                fi: {
+                    'title': 'Asennusvirhe',
+                    'description': 'Asennustiedostot ovat vioittuneita tai puutteellisia. Yksi tai useampi tiedosto ei läpäissyt eheystarkistusta. Yritä asentaa sovellus uudelleen virallisesta lähteestä.',
+                    'download-title': 'Lataa virallisilta lähteiltä',
+                    'official-website': 'Virallinen verkkosivusto'
+                },
                 fr: {
                     'title': 'Erreur d\'Installation',
                     'description': 'Les fichiers d\'installation sont corrompus ou incomplets. Un ou plusieurs fichiers ont échoué à la vérification d\'intégrité. Veuillez réinstaller l\'application depuis une source officielle.',
                     'download-title': 'Télécharger depuis les Sources Officielles',
                     'official-website': 'Site Web Officiel'
+                },
+                he: {
+                    'title': 'שגיאת התקנה',
+                    'description': 'קבצי ההתקנה פגומים או חלקיים. קובץ אחד או יותר נכשל בבדיקת התקינות. אנא נסה להתקין מחדש את האפליקציה ממקור רשמי.',
+                    'download-title': 'הורד ממקורות רשמיים',
+                    'official-website': 'אתר רשמי'
+                },
+                hi: {
+                    'title': 'स्थापना त्रुटि',
+                    'description': 'स्थापना फ़ाइलें दूषित या अधूरी हैं। एक या अधिक फ़ाइलें अखंडता जांच में विफल रहीं। कृपया आधिकारिक स्रोत से एप्लिकेशन को पुनः स्थापित करने का प्रयास करें।',
+                    'download-title': 'आधिकारिक स्रोतों से डाउनलोड करें',
+                    'official-website': 'आधिकारिक वेबसाइट'
+                },
+                hu: {
+                    'title': 'Telepítési hiba',
+                    'description': 'A telepítési fájlok sérültek vagy hiányosak. Egy vagy több fájl nem ment át az integritás ellenőrzésen. Kérjük, próbálja újratelepíteni az alkalmazást hivatalos forrásból.',
+                    'download-title': 'Letöltés hivatalos forrásokból',
+                    'official-website': 'Hivatalos weboldal'
+                },
+                id: {
+                    'title': 'Kesalahan Instalasi',
+                    'description': 'File instalasi rusak atau tidak lengkap. Satu atau lebih file gagal dalam pemeriksaan integritas. Silakan coba instal ulang aplikasi dari sumber resmi.',
+                    'download-title': 'Unduh dari Sumber Resmi',
+                    'official-website': 'Situs Web Resmi'
+                },
+                it: {
+                    'title': 'Errore di Installazione',
+                    'description': 'I file di installazione sono corrotti o incompleti. Uno o più file hanno fallito il controllo di integrità. Si prega di reinstallare l\'applicazione da una fonte ufficiale.',
+                    'download-title': 'Scarica da Fonti Ufficiali',
+                    'official-website': 'Sito Web Ufficiale'
                 },
                 ja: {
                     'title': 'インストールエラー',
@@ -383,11 +449,83 @@
                     'download-title': '公式ソースからダウンロード',
                     'official-website': '公式ウェブサイト'
                 },
+                ko: {
+                    'title': '설치 오류',
+                    'description': '설치 파일이 손상되었거나 불완전합니다. 하나 이상의 파일이 무결성 검사에 실패했습니다. 공식 소스에서 애플리케이션을 다시 설치해 주세요.',
+                    'download-title': '공식 소스에서 다운로드',
+                    'official-website': '공식 웹사이트'
+                },
+                ms: {
+                    'title': 'Ralat Pemasangan',
+                    'description': 'Fail pemasangan rosak atau tidak lengkap. Satu atau lebih fail gagal semakan integriti. Sila cuba pasang semula aplikasi dari sumber rasmi.',
+                    'download-title': 'Muat turun dari Sumber Rasmi',
+                    'official-website': 'Laman Web Rasmi'
+                },
+                nl: {
+                    'title': 'Installatiefout',
+                    'description': 'De installatiebestanden zijn beschadigd of onvolledig. Een of meer bestanden zijn niet geslaagd voor de integriteitscontrole. Probeer de toepassing opnieuw te installeren vanaf een officiële bron.',
+                    'download-title': 'Download van officiële bronnen',
+                    'official-website': 'Officiële website'
+                },
+                no: {
+                    'title': 'Installasjonsfeil',
+                    'description': 'Installasjonsfilene er skadet eller ufullstendige. En eller flere filer feilet integritetskontrollen. Vennligst prøv å reinstallere applikasjonen fra en offisiell kilde.',
+                    'download-title': 'Last ned fra offisielle kilder',
+                    'official-website': 'Offisiell nettside'
+                },
+                pl: {
+                    'title': 'Błąd instalacji',
+                    'description': 'Pliki instalacyjne są uszkodzone lub niekompletne. Jeden lub więcej plików nie przeszło sprawdzenia integralności. Proszę spróbować ponownie zainstalować aplikację z oficjalnego źródła.',
+                    'download-title': 'Pobierz z oficjalnych źródeł',
+                    'official-website': 'Oficjalna strona internetowa'
+                },
+                pt: {
+                    'title': 'Erro de Instalação',
+                    'description': 'Os arquivos de instalação estão corrompidos ou incompletos. Um ou mais arquivos falharam na verificação de integridade. Por favor, tente reinstalar o aplicativo de uma fonte oficial.',
+                    'download-title': 'Baixar de Fontes Oficiais',
+                    'official-website': 'Site Oficial'
+                },
+                ro: {
+                    'title': 'Eroare de instalare',
+                    'description': 'Fișierele de instalare sunt corupte sau incomplete. Unul sau mai multe fișiere au eșuat verificarea integrității. Vă rugăm să încercați să reinstalați aplicația dintr-o sursă oficială.',
+                    'download-title': 'Descărcați din surse oficiale',
+                    'official-website': 'Site-ul oficial'
+                },
+                ru: {
+                    'title': 'Ошибка установки',
+                    'description': 'Файлы установки повреждены или неполны. Один или несколько файлов не прошли проверку целостности. Пожалуйста, попробуйте переустановить приложение из официального источника.',
+                    'download-title': 'Скачать из официальных источников',
+                    'official-website': 'Официальный сайт'
+                },
+                sv: {
+                    'title': 'Installationsfel',
+                    'description': 'Installationsfilerna är skadade eller ofullständiga. En eller flera filer misslyckades med integritetskontrollen. Försök att installera om applikationen från en officiell källa.',
+                    'download-title': 'Ladda ner från officiella källor',
+                    'official-website': 'Officiell webbplats'
+                },
+                th: {
+                    'title': 'ข้อผิดพลาดในการติดตั้ง',
+                    'description': 'ไฟล์ติดตั้งเสียหายหรือไม่สมบูรณ์ ไฟล์หนึ่งหรือมากกว่าล้มเหลวในการตรวจสอบความสมบูรณ์ กรุณาลองติดตั้งแอปพลิเคชันใหม่จากแหล่งที่เป็นทางการ',
+                    'download-title': 'ดาวน์โหลดจากแหล่งที่เป็นทางการ',
+                    'official-website': 'เว็บไซต์ทางการ'
+                },
                 tr: {
                     'title': 'Kurulum Hatası',
                     'description': 'Kurulum dosyaları bozuk veya eksik. Bir veya daha fazla dosya bütünlük kontrolünden geçemedi. Lütfen uygulamayı resmi bir kaynaktan yeniden yüklemeyi deneyin.',
                     'download-title': 'Resmi Kaynaklardan İndir',
                     'official-website': 'Resmi Web Sitesi'
+                },
+                uk: {
+                    'title': 'Помилка встановлення',
+                    'description': 'Файли встановлення пошкоджені або неповні. Один або кілька файлів не пройшли перевірку цілісності. Будь ласка, спробуйте перевстановити програму з офіційного джерела.',
+                    'download-title': 'Завантажити з офіційних джерел',
+                    'official-website': 'Офіційний веб-сайт'
+                },
+                vi: {
+                    'title': 'Lỗi cài đặt',
+                    'description': 'Các tập tin cài đặt bị hỏng hoặc không đầy đủ. Một hoặc nhiều tệp không vượt qua kiểm tra tính toàn vẹn. Vui lòng thử cài đặt lại ứng dụng từ nguồn chính thức.',
+                    'download-title': 'Tải xuống từ các nguồn chính thức',
+                    'official-website': 'Trang web chính thức'
                 },
                 zh: {
                     'title': '安装错误',
