@@ -9,7 +9,6 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
-using System.Windows.Media.Media3D;
 using Path = System.IO.Path;
 using SEAT = Skylark.Enum.AssemblyType;
 using SECNT = Skylark.Enum.ClearNumericType;
@@ -102,6 +101,8 @@ namespace Sucrose.Bundle
         private static string Checksum => "Checksum";
 
         private static Random Randomise => new();
+
+        private static int ThrottlerCount => 85;
 
         private static int MaxDelay => 3000;
 
@@ -481,7 +482,7 @@ namespace Sucrose.Bundle
                     {
                         Dictionary<string, string> Hashes = JsonConvert.DeserializeObject<Dictionary<string, string>>(ResourceFile);
 
-                        SemaphoreSlim Throttler = new(50);
+                        SemaphoreSlim Throttler = new(ThrottlerCount);
 
                         IEnumerable<Task<bool>> Tasks = Hashes.Select(async Record =>
                         {
