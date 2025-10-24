@@ -18,6 +18,7 @@ using SSSHI = Sucrose.Shared.Space.Helper.Instance;
 using SSSHW = Sucrose.Shared.Space.Helper.Watchdog;
 using SSSSLSS = Sucrose.Shared.Signal.Services.LauncherSignalService;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
 
 namespace Sucrose.Launcher
 {
@@ -40,6 +41,8 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_ThreadException(Exception);
 
+                SSWHD.Add("Exception Type", "Thread Exception");
+
                 Message(Exception, true);
                 //Close();
             };
@@ -50,6 +53,8 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
+                SSWHD.Add("Exception Type", "First Chance Exception");
+
                 //Message(Exception, false);
                 //Close();
             };
@@ -59,6 +64,8 @@ namespace Sucrose.Launcher
                 Exception Exception = (Exception)e.ExceptionObject;
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
+
+                SSWHD.Add("Exception Type", "Global Unhand Exception");
 
                 Message(Exception, true);
                 //Close();
@@ -72,6 +79,8 @@ namespace Sucrose.Launcher
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
+                SSWHD.Add("Exception Type", "Unobserved Task Exception");
+
                 Message(Exception, false);
                 //Close();
             };
@@ -83,6 +92,8 @@ namespace Sucrose.Launcher
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
+
+                SSWHD.Add("Exception Type", "Dispatcher Unhandled Exception");
 
                 Message(Exception, true);
                 //Close();

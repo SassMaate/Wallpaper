@@ -88,6 +88,8 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_ThreadException(Exception);
 
+                SSWHD.Add("Exception Type", "Thread Exception");
+
                 Message(Exception, true);
                 //Close();
             };
@@ -98,6 +100,8 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_FirstChanceException(Exception);
 
+                SSWHD.Add("Exception Type", "First Chance Exception");
+
                 //Message(Exception, false);
                 //Close();
             };
@@ -107,6 +111,8 @@ namespace Sucrose.Live.CefSharp
                 Exception Exception = (Exception)e.ExceptionObject;
 
                 await SSWEW.Watch_GlobalUnhandledException(Exception);
+
+                SSWHD.Add("Exception Type", "Global Unhand Exception");
 
                 Message(Exception, true);
                 //Close();
@@ -120,6 +126,8 @@ namespace Sucrose.Live.CefSharp
 
                 await SSWEW.Watch_UnobservedTaskException(Exception);
 
+                SSWHD.Add("Exception Type", "Unobserved Task Exception");
+
                 Message(Exception, false);
                 //Close();
             };
@@ -131,6 +139,8 @@ namespace Sucrose.Live.CefSharp
                 Exception Exception = e.Exception;
 
                 await SSWEW.Watch_DispatcherUnhandledException(Exception);
+
+                SSWHD.Add("Exception Type", "Dispatcher Unhandled Exception");
 
                 Message(Exception, true);
                 //Close();
