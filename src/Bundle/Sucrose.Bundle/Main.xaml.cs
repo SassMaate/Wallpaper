@@ -446,7 +446,7 @@ namespace Sucrose.Bundle
             }
         }
 
-        private static async Task HashesResources(string SourcePath, string DestinationPath)
+        private static async Task<bool> HashesResources(string SourcePath, string DestinationPath)
         {
             bool Result = true;
 
@@ -529,6 +529,8 @@ namespace Sucrose.Bundle
             {
                 Process.Start(TemplateFilePath);
             }
+
+            return Result;
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
@@ -592,11 +594,12 @@ namespace Sucrose.Bundle
 
             await Task.Delay(MinDelay);
 
-            await HashesResources(Checksum, InstallPath);
+            if (await HashesResources(Checksum, InstallPath))
+            {
+                await Task.Delay(MinDelay);
 
-            await Task.Delay(MinDelay);
-
-            Process.Start(Launcher);
+                Process.Start(Launcher);
+            }
 
             await Task.Delay(MinDelay);
 
