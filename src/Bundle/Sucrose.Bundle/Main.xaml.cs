@@ -465,6 +465,18 @@ namespace Sucrose.Bundle
 
                     string ResourceFile = await ResourceReader.ReadToEndAsync();
 
+                    ResourceFile = ResourceFile.Replace("{Version}", Version);
+
+#if X64
+                    ResourceFile = ResourceFile.Replace("{Architecture}", "x64");
+#elif X86
+                    ResourceFile = ResourceFile.Replace("{Architecture}", "x86");
+#elif ARM64
+                    ResourceFile = ResourceFile.Replace("{Architecture}", "ARM64");
+#else
+                    ResourceFile = ResourceFile.Replace("{Architecture}", "Unknown");
+#endif
+
                     if (Resourcer == TemplateFile)
                     {
                         if (File.Exists(TemplateFilePath))
