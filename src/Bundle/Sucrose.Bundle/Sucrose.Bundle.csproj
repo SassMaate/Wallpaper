@@ -18,6 +18,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Skylark" />
         <PackageReference Include="Skylark.Wing" />
         <PackageReference Include="SharpCompress" />
         <PackageReference Include="Skylark.Standard" />
