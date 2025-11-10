@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">속도</system:String>
     <system:String x:Key="Property.Localization.Invert">반전</system:String>
     <system:String x:Key="Property.Localization.Mirror">미러링</system:String>
+    <system:String x:Key="Property.Localization.Caption">캡션</system:String>
     <system:String x:Key="Property.Localization.Contrast">대비</system:String>
     <system:String x:Key="Property.Localization.Animation">애니메이션</system:String>
     <system:String x:Key="Property.Localization.Grayscale">그레이스케일</system:String>

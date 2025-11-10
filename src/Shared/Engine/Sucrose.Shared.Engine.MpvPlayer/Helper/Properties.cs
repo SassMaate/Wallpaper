@@ -113,11 +113,27 @@ namespace Sucrose.Shared.Engine.MpvPlayer.Helper
                         }
                         else if (PropertyType.Equals("checkbox", StringComparison.OrdinalIgnoreCase))
                         {
-                            SSEMPMI.MediaEngine.API.SetPropertyString(PropertyName, ParsedScript.Value<bool>("value") ? "yes" : "no");
+                            if (PropertyName == "sid")
+                            {
+                                SSEMPMI.MediaEngine.API.SetPropertyString(PropertyName, ParsedScript.Value<bool>("value") ? "auto" : "no");
+                            }
+                            else
+                            {
+                                SSEMPMI.MediaEngine.API.SetPropertyString(PropertyName, ParsedScript.Value<bool>("value") ? "yes" : "no");
+                            }
                         }
                         else if (PropertyType.Equals("dropdown", StringComparison.OrdinalIgnoreCase))
                         {
-                            SSEMPMI.MediaEngine.API.SetPropertyLong(PropertyName, ParsedScript.Value<long>("value"));
+                            try
+                            {
+                                _ = Convert.ToInt64(ParsedScript.Value<string>("valuetext"));
+
+                                SSEMPMI.MediaEngine.API.SetPropertyLong(PropertyName, ParsedScript.Value<long>("value"));
+                            }
+                            catch
+                            {
+                                SSEMPMI.MediaEngine.API.SetPropertyString(PropertyName, ParsedScript.Value<string>("valuetext").ToLowerInvariant());
+                            }
                         }
                         else if (PropertyType.Equals("numberbox", StringComparison.OrdinalIgnoreCase))
                         {

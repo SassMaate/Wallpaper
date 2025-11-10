@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">速度</system:String>
     <system:String x:Key="Property.Localization.Invert">反转</system:String>
     <system:String x:Key="Property.Localization.Mirror">镜像</system:String>
+    <system:String x:Key="Property.Localization.Caption">字幕</system:String>
     <system:String x:Key="Property.Localization.Contrast">对比度</system:String>
     <system:String x:Key="Property.Localization.Animation">动画</system:String>
     <system:String x:Key="Property.Localization.Grayscale">灰度</system:String>

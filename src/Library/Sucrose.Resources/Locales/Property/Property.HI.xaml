@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">गति</system:String>
     <system:String x:Key="Property.Localization.Invert">नकारात्मक</system:String>
     <system:String x:Key="Property.Localization.Mirror">दर्पण</system:String>
+    <system:String x:Key="Property.Localization.Caption">उपशीर्षक</system:String>
     <system:String x:Key="Property.Localization.Contrast">कंट्रास्ट</system:String>
     <system:String x:Key="Property.Localization.Animation">एनीमेशन</system:String>
     <system:String x:Key="Property.Localization.Grayscale">ग्रे स्केल</system:String>

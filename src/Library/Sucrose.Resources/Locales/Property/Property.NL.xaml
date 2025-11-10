@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">Snelheid</system:String>
     <system:String x:Key="Property.Localization.Invert">Inverteren</system:String>
     <system:String x:Key="Property.Localization.Mirror">Spiegelen</system:String>
+    <system:String x:Key="Property.Localization.Caption">Ondertiteling</system:String>
     <system:String x:Key="Property.Localization.Contrast">Contrasteren</system:String>
     <system:String x:Key="Property.Localization.Animation">Animatie</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Grijstinten</system:String>

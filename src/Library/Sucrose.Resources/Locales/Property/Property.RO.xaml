@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">Viteză</system:String>
     <system:String x:Key="Property.Localization.Invert">Inversare</system:String>
     <system:String x:Key="Property.Localization.Mirror">Oglindire</system:String>
+    <system:String x:Key="Property.Localization.Caption">Subtitrare</system:String>
     <system:String x:Key="Property.Localization.Contrast">Contrast</system:String>
     <system:String x:Key="Property.Localization.Animation">Animatie</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Scara de Gri</system:String>

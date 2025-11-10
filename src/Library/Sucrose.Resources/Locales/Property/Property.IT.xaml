@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">Velocità</system:String>
     <system:String x:Key="Property.Localization.Invert">Inversione</system:String>
     <system:String x:Key="Property.Localization.Mirror">Specchiatura</system:String>
+    <system:String x:Key="Property.Localization.Caption">Didascalia</system:String>
     <system:String x:Key="Property.Localization.Contrast">Contrasto</system:String>
     <system:String x:Key="Property.Localization.Animation">Animazione</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Scala di Grigi</system:String>

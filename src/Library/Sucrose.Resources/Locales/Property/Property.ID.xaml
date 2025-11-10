@@ -41,6 +41,7 @@
     <system:String x:Key="Property.Localization.Speed">Kecepatan</system:String>
     <system:String x:Key="Property.Localization.Invert">Balikkan</system:String>
     <system:String x:Key="Property.Localization.Mirror">Pencerminan</system:String>
+    <system:String x:Key="Property.Localization.Caption">Keterangan</system:String>
     <system:String x:Key="Property.Localization.Contrast">Kontras</system:String>
     <system:String x:Key="Property.Localization.Animation">Animasi</system:String>
     <system:String x:Key="Property.Localization.Grayscale">Skala Abu-Abu</system:String>
