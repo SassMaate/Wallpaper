@@ -28,7 +28,7 @@ namespace Sucrose.Localizer.Helper
             {
                 Console.WriteLine($"-- Reindexing {Path.GetFileName(csvFile)} with {Path.GetFileName(reindexerSource)} --");
 
-                Dictionary<int, string> newLines = new();
+                Dictionary<int, string> newLines = [];
                 Dictionary<int, string> csvLines = FileReadWithLines(csvFile);
 
                 foreach (KeyValuePair<int, string> pair in csvLines)
@@ -144,7 +144,7 @@ namespace Sucrose.Localizer.Helper
 
         private static List<CsvRecord> ReadCsvRecords(string filePath)
         {
-            List<CsvRecord> records = new();
+            List<CsvRecord> records = [];
 
             using StreamReader reader = new(filePath);
             using CsvReader csv = new(reader, CultureInfo.InvariantCulture);
@@ -168,7 +168,7 @@ namespace Sucrose.Localizer.Helper
 
         private static List<CsvRecord> ProcessRecordsForSorting(List<CsvRecord> records)
         {
-            List<CsvRecord> processedRecords = new(records);
+            List<CsvRecord> processedRecords = [.. records];
             List<SortGroup> groups = IdentifySortGroups(processedRecords);
 
             Console.WriteLine($"Found {groups.Count} groups to process.");
@@ -205,9 +205,7 @@ namespace Sucrose.Localizer.Helper
                     }
 
                     // Combine excluded records first, then sorted records
-                    List<CsvRecord> sortedGroup = new();
-                    sortedGroup.AddRange(excludedRecords);
-                    sortedGroup.AddRange(sortableRecords);
+                    List<CsvRecord> sortedGroup = [.. excludedRecords, .. sortableRecords];
 
                     // Replace the group records in processed records
                     for (int i = 0; i < sortedGroup.Count && group.StartIndex + i < processedRecords.Count; i++)
@@ -231,7 +229,7 @@ namespace Sucrose.Localizer.Helper
 
         private static List<SortGroup> IdentifySortGroups(List<CsvRecord> records)
         {
-            List<SortGroup> groups = new();
+            List<SortGroup> groups = [];
             int currentGroupStart = -1;
             string currentFile = null;
 
@@ -288,7 +286,7 @@ namespace Sucrose.Localizer.Helper
         private class SortGroup
         {
             public int StartIndex { get; set; }
-            public List<CsvRecord> Records { get; set; } = new();
+            public List<CsvRecord> Records { get; set; } = [];
         }
 
         private static void WriteCsvRecords(string filePath, List<CsvRecord> records)
@@ -431,7 +429,7 @@ namespace Sucrose.Localizer.Helper
 
         private static Dictionary<int, string> FileReadWithLines(string filePath)
         {
-            Dictionary<int, string> lines = new();
+            Dictionary<int, string> lines = [];
 
             try
             {

@@ -94,7 +94,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                List<string> Names = new();
+                List<string> Names = [];
 
                 ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_VideoController");
 
@@ -115,7 +115,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                List<string> Names = new();
+                List<string> Names = [];
 
                 ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_NetworkAdapter");
 
@@ -188,7 +188,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                List<string> Names = new();
+                List<string> Names = [];
 
                 ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
 

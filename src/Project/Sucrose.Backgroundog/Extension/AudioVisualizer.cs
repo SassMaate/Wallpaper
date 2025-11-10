@@ -15,7 +15,7 @@ namespace Sucrose.Backgroundog.Extension
         private WasapiLoopbackCapture Capture;
         private readonly int VerticalSmoothness = 2;
         private readonly int HorizontalSmoothness = 1;
-        private readonly List<Complex[]> Smooth = new();
+        private readonly List<Complex[]> Smooth = [];
         private readonly MMDeviceEnumerator DeviceEnum = new();
 
         public AudioVisualizer()

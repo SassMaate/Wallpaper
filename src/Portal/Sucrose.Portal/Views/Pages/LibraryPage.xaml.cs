@@ -36,13 +36,13 @@ namespace Sucrose.Portal.Views.Pages
     /// </summary>
     public partial class LibraryPage : INavigableView<SPVMPLVM>, IDisposable
     {
-        private Dictionary<string, string> Searches = new();
+        private Dictionary<string, string> Searches = [];
 
         private SPVPLELP EmptyLibraryPage { get; set; }
 
         private SPVPLFLP FullLibraryPage { get; set; }
 
-        private static List<string> Themes = new();
+        private static List<string> Themes = [];
 
         public SPVMPLVM ViewModel { get; }
 
@@ -245,8 +245,8 @@ namespace Sucrose.Portal.Views.Pages
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 bool State = false;
-                List<SSDECT> Types = new();
-                List<string> Messages = new();
+                List<SSDECT> Types = [];
+                List<string> Messages = [];
 
                 string[] Files = (string[])e.Data.GetData(DataFormats.FileDrop);
 

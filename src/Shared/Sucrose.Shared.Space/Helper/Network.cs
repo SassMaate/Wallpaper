@@ -41,8 +41,8 @@ namespace Sucrose.Shared.Space.Helper
 
         public static List<SSDSH> GetHost()
         {
-            return new()
-            {
+            return
+            [
                 new()
                 {
                     Name = "Bing",
@@ -83,7 +83,7 @@ namespace Sucrose.Shared.Space.Helper
                     Name = "DuckDuckGo",
                     Address = "www.duckduckgo.com"
                 }
-            };
+            ];
         }
 
         public static bool IsInternetAvailable()

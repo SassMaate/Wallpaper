@@ -28,7 +28,7 @@ namespace Sucrose.Portal.ViewModels.Pages
     public partial class PerformanceSettingViewModel : ViewModel, IDisposable
     {
         [ObservableProperty]
-        private List<UIElement> _Contents = new();
+        private List<UIElement> _Contents = [];
 
         private bool _isInitialized;
 

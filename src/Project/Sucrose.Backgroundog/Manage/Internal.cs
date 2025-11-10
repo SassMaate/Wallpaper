@@ -261,12 +261,12 @@ namespace Sucrose.Backgroundog.Manage
             Download = 0f,
             State = false,
             Online = false,
-            PingData = new(),
-            TotalData = new(),
-            UploadData = new(),
+            PingData = [],
+            TotalData = [],
+            UploadData = [],
             Host = string.Empty,
             Name = string.Empty,
-            DownloadData = new(),
+            DownloadData = [],
             PingAddress = string.Empty,
             FormatTotalData = string.Empty,
             FormatUploadData = string.Empty,
@@ -276,9 +276,9 @@ namespace Sucrose.Backgroundog.Manage
         public static SBSDS StorageData = new()
         {
             State = false,
-            Drivers = new(),
-            LogicalDrivers = new(),
-            PhysicalDrivers = new()
+            Drivers = [],
+            LogicalDrivers = [],
+            PhysicalDrivers = []
         };
 
         public static SBSDBY BatteryData = new()
@@ -314,7 +314,7 @@ namespace Sucrose.Backgroundog.Manage
             Core = 0,
             Min = 100f,
             Thread = 0,
-            Cores = new(),
+            Cores = [],
             CoresMax = 0f,
             CoresNow = 0f,
             State = false,

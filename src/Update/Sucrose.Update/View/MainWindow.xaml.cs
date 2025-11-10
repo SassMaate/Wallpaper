@@ -67,11 +67,11 @@ namespace Sucrose.Update.View
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static List<SSIIR> Releases { get; set; } = new();
+        private static List<SSIIR> Releases { get; set; } = [];
 
         private static string Bundle { get; set; } = string.Empty;
 
-        private static List<SSIIA> Assets { get; set; } = new();
+        private static List<SSIIA> Assets { get; set; } = [];
 
         private static Version Latest { get; set; } = new();
 
@@ -448,7 +448,7 @@ namespace Sucrose.Update.View
                 {
                     SSDEUST.GitHub => SSHG.ReleasesList(SMMRGH.Owner, SMMRGH.SucroseRepository, SMMG.UserAgent, SMMO.PersonalAccessToken),
                     SSDEUST.Soferity => SUHU.ReleasesList($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Kernel}/{SMMRS.Release}", SMMG.UserAgent),
-                    _ => new(),
+                    _ => [],
                 };
 
                 if (Releases.Any())
@@ -677,7 +677,7 @@ namespace Sucrose.Update.View
             Bundle = string.Empty;
 
             Release = null;
-            Releases = new();
+            Releases = [];
 
             Message.Text = SRER.GetValue("Update", "MessageText", "Preparing");
 

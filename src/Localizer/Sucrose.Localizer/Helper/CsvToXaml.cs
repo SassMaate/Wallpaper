@@ -14,7 +14,7 @@ namespace Sucrose.Localizer.Helper
                 Directory.CreateDirectory(xamlDirectory);
             }
 
-            Dictionary<string, StringBuilder> xamlContents = new();
+            Dictionary<string, StringBuilder> xamlContents = [];
 
             ProcessCsvFiles(xamlContents, csvDirectory, xamlDirectory);
 

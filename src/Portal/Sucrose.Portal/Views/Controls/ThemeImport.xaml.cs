@@ -12,8 +12,8 @@ namespace Sucrose.Portal.Views.Controls
     /// </summary>
     public partial class ThemeImport : ContentDialog, IDisposable
     {
-        internal List<SSDECT> Types = new();
-        internal List<string> Messages = new();
+        internal List<SSDECT> Types = [];
+        internal List<string> Messages = [];
 
         public ThemeImport() : base(SPMI.ContentDialogService.GetDialogHost())
         {

@@ -28,13 +28,13 @@ namespace Sucrose.Localizer.Helper
                 using CsvReader csv = new(reader, CultureInfo.InvariantCulture);
                 IEnumerable<dynamic> records = csv.GetRecords<dynamic>();
 
-                Dictionary<string, List<string>> localizationData = new();
+                Dictionary<string, List<string>> localizationData = [];
 
                 string languageCode = Path.GetFileNameWithoutExtension(poeFilePath)?.Split('.').LastOrDefault();
 
                 if (!localizationData.ContainsKey(languageCode))
                 {
-                    localizationData[languageCode] = new List<string>();
+                    localizationData[languageCode] = [];
                 }
 
                 foreach (dynamic record in records)

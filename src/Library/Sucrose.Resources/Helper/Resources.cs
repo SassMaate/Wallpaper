@@ -44,8 +44,8 @@ namespace Sucrose.Resources.Helper
 
         public static List<string> ListLanguage()
         {
-            return new()
-            {
+            return
+            [
                 "CS",
                 "DA",
                 "DE",
@@ -69,7 +69,7 @@ namespace Sucrose.Resources.Helper
                 "TR",
                 "UK",
                 "ZH"
-            };
+            ];
         }
 
         public static List<string> ListLanguages()

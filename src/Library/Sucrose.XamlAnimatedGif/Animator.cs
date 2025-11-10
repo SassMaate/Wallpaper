@@ -311,7 +311,7 @@ namespace Sucrose.XamlAnimatedGif
 
         private static Dictionary<int, GifPalette> CreatePalettes(GifDataStream metadata)
         {
-            Dictionary<int, GifPalette> palettes = new();
+            Dictionary<int, GifPalette> palettes = [];
             Color[] globalColorTable = null;
             if (metadata.Header.LogicalScreenDescriptor.HasGlobalColorTable)
             {

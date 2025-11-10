@@ -29,7 +29,7 @@ namespace Sucrose.Portal.ViewModels.Pages
     public partial class WallpaperSettingViewModel : ViewModel, IDisposable
     {
         [ObservableProperty]
-        private List<UIElement> _Contents = new();
+        private List<UIElement> _Contents = [];
 
         private bool _isInitialized;
 

@@ -64,7 +64,7 @@ namespace Sucrose.Localizer.Helper
             string fileName = "Locale";
             string localeFile = Path.Combine(csvDirectory, $"{fileName}.csv");
 
-            List<string[]> data = new();
+            List<string[]> data = [];
 
             using (StreamReader reader = new(localeFile))
             using (CsvReader csv = new(reader, new CsvConfiguration(CultureInfo.InvariantCulture)))

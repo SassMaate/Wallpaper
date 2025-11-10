@@ -27,7 +27,7 @@ namespace Sucrose.Mpv.NET.API.Interop
                 throw new ArgumentException("Cannot get string from invalid pointer.");
             }
 
-            List<byte> stringBytes = new();
+            List<byte> stringBytes = [];
             int offset = 0;
 
             // Just to be safe!

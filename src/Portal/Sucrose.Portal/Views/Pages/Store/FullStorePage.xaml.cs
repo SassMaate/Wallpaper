@@ -38,7 +38,7 @@ namespace Sucrose.Portal.Views.Pages.Store
                 Content = SRER.GetValue("Portal", "Category", "All")
             };
 
-            ObservableCollection<NavigationViewItem> Categories = new();
+            ObservableCollection<NavigationViewItem> Categories = [];
 
             NavigationViewItem AllMenu = new(SRER.GetValue("Portal", "Category", "All"), SPMI.AllIcon, null)
             {

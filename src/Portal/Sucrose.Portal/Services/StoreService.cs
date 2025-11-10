@@ -22,7 +22,7 @@ namespace Sucrose.Portal.Services
                     field.OnDictionaryChanged();
                 }
             }
-        } = new();
+        } = [];
 
         public void ProgressPercentage(string Key, double ProgressPercentage)
         {

@@ -15,7 +15,7 @@ namespace Sucrose.Localizer.Helper
                 Directory.CreateDirectory(csvDirectory);
             }
 
-            Dictionary<string, List<string>> localizationData = new();
+            Dictionary<string, List<string>> localizationData = [];
 
             string[] xamlFiles = Directory.GetFiles(xamlDirectory, "*.xaml", SearchOption.AllDirectories);
 
@@ -35,7 +35,7 @@ namespace Sucrose.Localizer.Helper
 
                     if (!localizationData.ContainsKey(languageCode))
                     {
-                        localizationData[languageCode] = new List<string>();
+                        localizationData[languageCode] = [];
                     }
 
                     bool isInMergedDictionaries = false;

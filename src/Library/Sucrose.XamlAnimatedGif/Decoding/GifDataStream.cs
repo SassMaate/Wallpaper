@@ -43,9 +43,9 @@ namespace Sucrose.XamlAnimatedGif.Decoding
 
         private async Task ReadFramesAsync(Stream stream)
         {
-            List<GifFrame> frames = new();
-            List<GifExtension> controlExtensions = new();
-            List<GifExtension> specialExtensions = new();
+            List<GifFrame> frames = [];
+            List<GifExtension> controlExtensions = [];
+            List<GifExtension> specialExtensions = [];
             while (true)
             {
                 try
@@ -54,7 +54,7 @@ namespace Sucrose.XamlAnimatedGif.Decoding
 
                     if (block.Kind == GifBlockKind.GraphicRendering)
                     {
-                        controlExtensions = new List<GifExtension>();
+                        controlExtensions = [];
                     }
 
                     if (block is GifFrame frame)

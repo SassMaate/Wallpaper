@@ -50,7 +50,7 @@ namespace Sucrose.Portal.ViewModels.Pages
         private TextBlock LogTemporaryHint = new();
 
         [ObservableProperty]
-        private List<UIElement> _Contents = new();
+        private List<UIElement> _Contents = [];
 
         private bool _isInitialized;
 

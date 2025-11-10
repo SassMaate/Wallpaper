@@ -4,8 +4,8 @@
     {
         public static List<string> GetApp()
         {
-            return new()
-            {
+            return
+            [
                 "nox.exe", "noxplayer.exe", "noxvmhandle.exe",
                 "memu.exe", "MEmuPlayer.exe", "ldplayer.exe", "ldplayer7.exe", "ldconsole.exe",
                 "bluestacks.exe", "hd-player.exe", "HD-Player.exe", "HD-Agent.exe",
@@ -20,7 +20,7 @@
 
                 "windowssandbox.exe", "WindowsSandbox.exe", "WindowsSandboxClient.exe",
                 "sandboxie.exe", "SbieSvc.exe"
-            };
+            ];
         }
     }
 }

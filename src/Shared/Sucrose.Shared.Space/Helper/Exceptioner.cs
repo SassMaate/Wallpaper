@@ -11,7 +11,7 @@
                     return Empty;
                 }
 
-                List<string> Messages = new();
+                List<string> Messages = [];
                 Exception CurrentException = Error;
 
                 while (CurrentException != null)

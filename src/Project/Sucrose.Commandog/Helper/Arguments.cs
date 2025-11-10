@@ -36,7 +36,7 @@ namespace Sucrose.Commandog.Helper
                     {
                         string Name = ArgumentParts[0];
 
-                        List<string> Values = new(ArgumentParts[1..]);
+                        List<string> Values = [.. ArgumentParts[1..]];
 
                         if (Enum.TryParse(Name, true, out SSDECT Command))
                         {

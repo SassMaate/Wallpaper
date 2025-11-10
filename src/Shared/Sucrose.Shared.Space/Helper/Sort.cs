@@ -14,7 +14,7 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static List<string> Theme(List<string> Themes)
         {
-            Dictionary<string, object> SortThemes = new();
+            Dictionary<string, object> SortThemes = [];
 
             foreach (string Theme in Themes.ToList())
             {
@@ -60,7 +60,7 @@ namespace Sucrose.Shared.Space.Helper
 
         public static (List<string>, Dictionary<string, string>) Theme(List<string> Themes, Dictionary<string, string> Searches)
         {
-            Dictionary<string, object> SortThemes = new();
+            Dictionary<string, object> SortThemes = [];
 
             foreach (string Theme in Themes.ToList())
             {

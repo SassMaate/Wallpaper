@@ -19,7 +19,7 @@ namespace Sucrose.Shared.Engine.Vexana.Manage
             Min = 100,
             Max = 100,
             Total = 0,
-            List = new()
+            List = []
         };
 
         public static ImageEngine ImageEngine = new()

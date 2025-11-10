@@ -15,9 +15,9 @@ namespace Sucrose.Portal.Views.Pages.Library
     /// </summary>
     public partial class FullLibraryPage : Page, IDisposable
     {
-        private readonly Dictionary<string, string> Searches = new();
+        private readonly Dictionary<string, string> Searches = [];
 
-        private readonly List<string> Themes = new();
+        private readonly List<string> Themes = [];
 
         public FullLibraryPage(Dictionary<string, string> Searches, List<string> Themes)
         {

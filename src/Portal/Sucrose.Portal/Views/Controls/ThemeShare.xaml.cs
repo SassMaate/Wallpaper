@@ -140,7 +140,7 @@ namespace Sucrose.Portal.Views.Controls
 
                             SSSIS Store = SSSHS.ReadJson(StoreFile);
 
-                            List<ComboBoxItem> Categories = new();
+                            List<ComboBoxItem> Categories = [];
 
                             foreach (string Key in Store.Categories.Keys)
                             {
@@ -275,7 +275,7 @@ namespace Sucrose.Portal.Views.Controls
 
                                     Progress.IsIndeterminate = false;
 
-                                    using MultipartFormDataContent Content = new();
+                                    using MultipartFormDataContent Content = [];
                                     using FileStream FileStream = new(TempFile, FileMode.Open, FileAccess.Read);
                                     using StreamContent FileContent = new(new SSSEPS(FileStream, TempSize, ReportProgress));
 

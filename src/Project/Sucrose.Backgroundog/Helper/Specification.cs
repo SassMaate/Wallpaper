@@ -161,7 +161,7 @@ namespace Sucrose.Backgroundog.Helper
                                             {
                                                 SBMI.NetworkData.Ping = 0;
                                                 SBMI.PingAddress = string.Empty;
-                                                SBMI.NetworkData.PingData = new();
+                                                SBMI.NetworkData.PingData = [];
                                                 await SSWEW.Watch_CatchException(Exception);
                                             }
                                         }
@@ -181,7 +181,7 @@ namespace Sucrose.Backgroundog.Helper
                                         {
                                             SBMI.NetworkData.Ping = 0;
                                             SBMI.PingAddress = string.Empty;
-                                            SBMI.NetworkData.PingData = new();
+                                            SBMI.NetworkData.PingData = [];
                                             await SSWEW.Watch_CatchException(Exception);
                                         }
                                     }
@@ -191,7 +191,7 @@ namespace Sucrose.Backgroundog.Helper
                             {
                                 SBMI.NetworkData.Ping = 0;
                                 SBMI.NetworkData.Online = false;
-                                SBMI.NetworkData.PingData = new();
+                                SBMI.NetworkData.PingData = [];
                             }
 
                             await Task.Delay(SBMI.SpecificationLessTime);
@@ -418,7 +418,7 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            List<SBSSS> Sensors = new();
+                            List<SBSSS> Sensors = [];
 
                             ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_LogicalDisk");
 
@@ -548,7 +548,7 @@ namespace Sucrose.Backgroundog.Helper
                             }
                             else
                             {
-                                List<SBSDS> Sensors = new();
+                                List<SBSDS> Sensors = [];
 
                                 foreach ((string Instance, float Read, float Write) in SBES.GetValues(SBMI.LogicalsCounter))
                                 {
@@ -581,7 +581,7 @@ namespace Sucrose.Backgroundog.Helper
                             }
                             else
                             {
-                                List<SBSDS> Sensors = new();
+                                List<SBSDS> Sensors = [];
 
                                 foreach ((string Instance, float Read, float Write) in SBES.GetValues(SBMI.PhysicalsCounter))
                                 {
@@ -685,7 +685,7 @@ namespace Sucrose.Backgroundog.Helper
                             }
                             else
                             {
-                                List<SBSCS> Sensors = new();
+                                List<SBSCS> Sensors = [];
 
                                 SBMI.ProcessorData.CoresNow = 0f;
 

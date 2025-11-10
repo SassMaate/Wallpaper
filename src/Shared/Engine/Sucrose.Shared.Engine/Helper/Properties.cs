@@ -51,11 +51,12 @@ namespace Sucrose.Shared.Engine.Helper
         {
             WatcherCheck(Source);
 
-            FileWatcher = new(Path.GetDirectoryName(Source));
+            FileWatcher = new(Path.GetDirectoryName(Source))
+            {
+                Filter = Path.GetFileName(Source),
 
-            FileWatcher.Filter = Path.GetFileName(Source);
-
-            FileWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName | NotifyFilters.CreationTime;
+                NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName | NotifyFilters.CreationTime
+            };
         }
 
         private static void WatcherTimer(string Source)

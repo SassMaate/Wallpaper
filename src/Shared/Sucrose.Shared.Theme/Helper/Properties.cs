@@ -14,7 +14,7 @@ namespace Sucrose.Shared.Theme.Helper
         public string PropertyListener { get; set; } = string.Empty;
 
         [JsonProperty("PropertyList", Required = Required.Always)]
-        public Dictionary<string, SSTMCM> PropertyList { get; set; } = new();
+        public Dictionary<string, SSTMCM> PropertyList { get; set; } = [];
 
         [JsonProperty("PropertyLocalization", Required = Required.Default)]
         public Dictionary<string, Dictionary<string, string>> PropertyLocalization { get; set; } = null;

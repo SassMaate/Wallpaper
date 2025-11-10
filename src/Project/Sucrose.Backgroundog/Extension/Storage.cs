@@ -20,7 +20,7 @@ namespace Sucrose.Backgroundog.Extension
 
         public static void InstanceValues(List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> Counters)
         {
-            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = new();
+            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = [];
 
             foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in Counters)
             {
@@ -49,7 +49,7 @@ namespace Sucrose.Backgroundog.Extension
 
         public static List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> CreateCounters(string CategoryName)
         {
-            List<(string, PerformanceCounter, PerformanceCounter)> Counters = new();
+            List<(string, PerformanceCounter, PerformanceCounter)> Counters = [];
 
             foreach (string Instance in GetInstances(CategoryName))
             {
@@ -68,8 +68,8 @@ namespace Sucrose.Backgroundog.Extension
 
         public static List<(string Instance, float Write, float Read)> GetValues(List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> Counters)
         {
-            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = new();
-            List<(string Instance, float Write, float Read)> Values = new();
+            List<(string Instance, PerformanceCounter Write, PerformanceCounter Read)> InvalidCounters = [];
+            List<(string Instance, float Write, float Read)> Values = [];
 
             foreach ((string Instance, PerformanceCounter Write, PerformanceCounter Read) in Counters)
             {

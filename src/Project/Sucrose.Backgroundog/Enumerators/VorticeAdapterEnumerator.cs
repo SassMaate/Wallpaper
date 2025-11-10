@@ -24,7 +24,7 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public static List<VorticeAdapterInfo> EnumerateAdapters()
         {
-            List<VorticeAdapterInfo> adapters = new();
+            List<VorticeAdapterInfo> adapters = [];
 
             try
             {
@@ -59,7 +59,7 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public static Dictionary<string, string> GetLuidToNameMapping()
         {
-            Dictionary<string, string> mapping = new();
+            Dictionary<string, string> mapping = [];
 
             try
             {
@@ -81,7 +81,7 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public static Dictionary<string, string> GetNameToLuidMapping()
         {
-            Dictionary<string, string> mapping = new();
+            Dictionary<string, string> mapping = [];
 
             try
             {
@@ -103,7 +103,7 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public static Dictionary<string, VorticeAdapterInfo> GetLuidToAdapterMapping()
         {
-            Dictionary<string, VorticeAdapterInfo> mapping = new();
+            Dictionary<string, VorticeAdapterInfo> mapping = [];
 
             try
             {
@@ -124,7 +124,7 @@ namespace Sucrose.Backgroundog.Enumerators
 
         public static Dictionary<string, VorticeAdapterInfo> GetNameToAdapterMapping()
         {
-            Dictionary<string, VorticeAdapterInfo> mapping = new();
+            Dictionary<string, VorticeAdapterInfo> mapping = [];
 
             try
             {

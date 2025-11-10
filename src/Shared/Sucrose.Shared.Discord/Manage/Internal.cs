@@ -15,10 +15,10 @@ namespace Sucrose.Shared.Discord.Manage
 
         public static DispatcherTimer InitializeTimer = new();
 
-        public static readonly List<string> ApplicationNames = new()
-        {
+        public static readonly List<string> ApplicationNames =
+        [
             "Discord.exe",
             "DiscordPTB.exe"
-        };
+        ];
     }
 }

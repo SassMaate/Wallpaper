@@ -21,7 +21,7 @@ namespace Sucrose.Backgroundog.Extension
         public static float GetValue(List<PerformanceCounter> Counters)
         {
             float Value = 0f;
-            List<PerformanceCounter> InvalidCounters = new();
+            List<PerformanceCounter> InvalidCounters = [];
 
             foreach (PerformanceCounter Counter in Counters)
             {
@@ -50,7 +50,7 @@ namespace Sucrose.Backgroundog.Extension
 
         public static void InstanceValues(List<PerformanceCounter> Counters)
         {
-            List<PerformanceCounter> InvalidCounters = new();
+            List<PerformanceCounter> InvalidCounters = [];
 
             foreach (PerformanceCounter Counter in Counters)
             {
@@ -77,7 +77,7 @@ namespace Sucrose.Backgroundog.Extension
 
         public static List<PerformanceCounter> CreateCounters(string CategoryName, string Luid)
         {
-            List<PerformanceCounter> Counters = new();
+            List<PerformanceCounter> Counters = [];
 
             foreach (string Instance in GetInstances(CategoryName))
             {
@@ -112,7 +112,7 @@ namespace Sucrose.Backgroundog.Extension
 
                 if (RemovedInstances.Any())
                 {
-                    List<PerformanceCounter> InvalidCounters = new();
+                    List<PerformanceCounter> InvalidCounters = [];
                     foreach (PerformanceCounter Counter in Counters)
                     {
                         try

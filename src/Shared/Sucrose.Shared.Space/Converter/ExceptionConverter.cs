@@ -36,7 +36,7 @@ namespace Sucrose.Shared.Space.Converter
                 return null;
             }
 
-            List<SSSISFD> frameList = new();
+            List<SSSISFD> frameList = [];
 
             if (frames.Any())
             {

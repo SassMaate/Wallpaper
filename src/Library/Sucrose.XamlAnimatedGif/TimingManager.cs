@@ -4,7 +4,7 @@ namespace Sucrose.XamlAnimatedGif
 {
     class TimingManager
     {
-        private readonly List<TimeSpan> _timeSpans = new();
+        private readonly List<TimeSpan> _timeSpans = [];
         private int _current;
         private int _count;
         private TimeSpan _elapsed;

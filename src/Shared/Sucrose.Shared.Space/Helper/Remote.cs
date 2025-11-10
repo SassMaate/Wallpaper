@@ -4,8 +4,8 @@
     {
         public static List<string> GetApp()
         {
-            return new()
-            {
+            return
+            [
                 "rdp.exe", "rdpv.exe", "mstsc.exe", "rdpclip.exe", "rdpinit.exe",
                 "rdpshell.exe", "rdpviewer.exe", "shadow.exe", "msra.exe", "quickassist.exe",
 
@@ -23,7 +23,7 @@
                 "ivycontrol.exe", "helpdesk.exe", "vncagent.exe", "remoteassist.exe",
 
                 "xfreerdp.exe", "remmina.exe", "vinagre.exe"
-            };
+            ];
         }
     }
 }

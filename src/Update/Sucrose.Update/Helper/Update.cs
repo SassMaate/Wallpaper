@@ -10,7 +10,7 @@ namespace Sucrose.Update.Helper
     {
         private static readonly TimeSpan Time = TimeSpan.FromMinutes(5);
 
-        private static readonly Dictionary<string, CachedData> Cache = new();
+        private static readonly Dictionary<string, CachedData> Cache = [];
 
         public static string Releases(string Uri, string UserAgent)
         {

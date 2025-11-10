@@ -28,7 +28,7 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static string Host = string.Empty;
 
-        public static List<int> Processes = new();
+        public static List<int> Processes = [];
 
         public static IntPtr Progman = IntPtr.Zero;
 
@@ -46,7 +46,7 @@ namespace Sucrose.Shared.Engine.Manage
 
         public static string AudioData = string.Empty;
 
-        public static List<SSDSH> Applications = new();
+        public static List<SSDSH> Applications = [];
 
         public static string MemoryData = string.Empty;
 
@@ -96,8 +96,8 @@ namespace Sucrose.Shared.Engine.Manage
             CefSharp = CefArguments
         };
 
-        public static List<string> MpvConfig = new()
-        {
+        public static List<string> MpvConfig =
+        [
             "# Audio Settings #",
             "volume-min=0",
             "volume-max=100",
@@ -143,10 +143,10 @@ namespace Sucrose.Shared.Engine.Manage
             "video-sync=display-desync",
             "demuxer-seekable-cache=yes",
             "# General Performance Settings #"
-        };
+        ];
 
-        public static List<string> WebArguments = new()
-        {
+        public static List<string> WebArguments =
+        [
             //"--enable-gpu",
             //"--enable-gpu-vsync",
             "--disable-gpu-compositing",
@@ -198,7 +198,7 @@ namespace Sucrose.Shared.Engine.Manage
             "--enable-features=ThirdPartyStoragePartitioning,PartitionedCookies",
 
             "--disable-features=MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
-        };
+        ];
 
         public static Dictionary<string, string> CefArguments = new()
         {

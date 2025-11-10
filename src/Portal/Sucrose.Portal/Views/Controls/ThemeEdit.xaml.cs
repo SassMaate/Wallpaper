@@ -186,7 +186,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
                 else
                 {
-                    Info.Localization ??= new Dictionary<string, SSTHL>();
+                    Info.Localization ??= [];
 
                     if (!Info.Localization.ContainsKey(Language))
                     {
@@ -223,7 +223,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
                 else
                 {
-                    Info.Localization ??= new Dictionary<string, SSTHL>();
+                    Info.Localization ??= [];
 
                     if (!Info.Localization.ContainsKey(Language))
                     {
