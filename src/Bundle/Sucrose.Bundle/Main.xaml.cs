@@ -600,20 +600,13 @@ namespace Sucrose.Bundle
                 await Task.Delay(MinDelay);
 
                 Process.Start(Launcher);
+
+                await Task.Delay(MinDelay);
             }
             else
             {
-                try
-                {
-                    await ControlDirectory(PackagesPath);
-                    await ControlDirectory(SevenZipPath);
-                    await ControlDirectory(ShowcasePath);
-                    await ControlDirectoryStable(InstallPath);
-                }
-                catch { }
+                await ControlDirectoryStable(InstallPath);
             }
-
-            await Task.Delay(MinDelay);
 
             Close();
         }
