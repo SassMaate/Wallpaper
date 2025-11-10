@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
@@ -488,7 +489,7 @@ namespace Sucrose.Bundle
                             catch { }
                         }
 
-                        File.WriteAllText(TemplateFilePath, ResourceFile);
+                        File.WriteAllText(TemplateFilePath, ResourceFile, Encoding.UTF8);
                     }
                     else if (Resourcer == HashesFile)
                     {
@@ -586,19 +587,30 @@ namespace Sucrose.Bundle
 
             await Task.Delay(MinDelay);
 
-            await CreateShortcuts();
-
-            await Task.Delay(MinDelay);
-
-            await SetUninstall();
-
-            await Task.Delay(MinDelay);
-
             if (await HashesResources(Checksum, InstallPath))
             {
                 await Task.Delay(MinDelay);
 
+                await CreateShortcuts();
+
+                await Task.Delay(MinDelay);
+
+                await SetUninstall();
+
+                await Task.Delay(MinDelay);
+
                 Process.Start(Launcher);
+            }
+            else
+            {
+                try
+                {
+                    await ControlDirectory(PackagesPath);
+                    await ControlDirectory(SevenZipPath);
+                    await ControlDirectory(ShowcasePath);
+                    await ControlDirectoryStable(InstallPath);
+                }
+                catch { }
             }
 
             await Task.Delay(MinDelay);
