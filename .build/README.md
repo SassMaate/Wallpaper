@@ -37,7 +37,7 @@
 | `RetryDelay` | integer `1-60` | `2` | Seconds between retries. |
 | `InstallRuntime` | `true`, `false` | `true` | Installs the .NET runtime bundle when `true`. |
 | `CompressPackage` | `true`, `false` | `true` | Compresses the published output via SevenZip. |
-| `DotNetVersion` | string | `9.0.306` | .NET runtime version passed to `dotnet-install.ps1`. |
+| `DotNetVersion` | string | `10.0.100-rc.2.25502.107` | .NET runtime version passed to `dotnet-install.ps1`. |
 
 ## Usage
 1. Open a PowerShell session at the repository root.

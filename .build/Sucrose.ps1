@@ -46,7 +46,7 @@
     If true, compresses the published package using 7zip. Default: true
 
 .PARAMETER DotNetVersion
-    Version of .NET to install. Default: 9.0.306
+    Version of .NET to install. Default: 10.0.100-rc.2.25502.107
 
 .EXAMPLE
     .\Sucrose.ps1
@@ -108,7 +108,7 @@ param (
     [string]$CompressPackage = "true",
 
     [Parameter(HelpMessage = ".NET version to install")]
-    [string]$DotNetVersion = "9.0.306"
+    [string]$DotNetVersion = "10.0.100-rc.2.25502.107"
 )
 
 #region Initialization
@@ -233,7 +233,7 @@ if (-not $TargetFramework) {
         $TargetFramework = $detectedFramework
     } catch {
         Write-Warning "$(Get-Date -Format 'HH:mm:ss') [WARNING] Could not auto-detect TargetFramework: $($_.Exception.Message)"
-        $TargetFramework = "net9.0-windows"
+        $TargetFramework = "net10.0-windows"
     }
 }
 Write-Host "$(Get-Date -Format 'HH:mm:ss') [CONFIG] TargetFramework: $TargetFramework" -ForegroundColor Cyan
@@ -415,10 +415,10 @@ function Configure-CefSharpSubprocess {
     $runtimeConfigPath = Join-Path $OutputPath "CefSharp.BrowserSubprocess.runtimeconfig.json"
 
     if (Test-Path $cefSharpExe) {
-        # Extract framework version from TargetFramework (e.g., net9.0 or net9.0-windows)
+        # Extract framework version from TargetFramework (e.g., net10.0 or net10.0-windows)
         $tfmValue = $TargetFramework -replace '-windows$', ''
         
-        # Extract version number (e.g., 9.0 from net9.0)
+        # Extract version number (e.g., 10.0 from net10.0)
         if ($tfmValue -match '^net(\d+)\.(\d+)$') {
             $majorVersion = [int]$matches[1]
             $minorVersion = [int]$matches[2]
@@ -426,7 +426,7 @@ function Configure-CefSharpSubprocess {
             $majorVersion = [int]$matches[1]
             $minorVersion = 0
         } else {
-            Write-StatusMessage "Could not parse TargetFramework '$TargetFramework', defaulting to net9.0" -Type "Warning"
+            Write-StatusMessage "Could not parse TargetFramework '$TargetFramework', defaulting to net10.0" -Type "Warning"
             $majorVersion = 9
             $minorVersion = 0
         }
@@ -490,6 +490,8 @@ function Remove-UnnecessaryRuntimeFiles {
 
     # Files to remove
     $filesToRemove = @(
+        "dnx.cmd",
+        "dnx.ps1",
         "dotnet.exe",
         "LICENSE.txt",
         "ThirdPartyNotices.txt"
