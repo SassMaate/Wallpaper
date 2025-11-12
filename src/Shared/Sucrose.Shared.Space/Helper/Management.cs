@@ -1,18 +1,52 @@
 ﻿using System.Diagnostics;
 using System.Management;
+using System.Text;
 
 namespace Sucrose.Shared.Space.Helper
 {
     internal static class Management
     {
-        public static string GetCommandLine(Process Process)
+        public static string GetCommandLine(int PID)
         {
             try
             {
-                using ManagementObjectSearcher Searcher = new("SELECT CommandLine FROM Win32_Process WHERE ProcessId = " + Process.Id);
-                using ManagementObjectCollection Collection = Searcher.Get();
+                using ManagementClass Class = new("Win32_Process");
+                using ManagementObjectCollection Collection = Class.GetInstances();
 
-                return Collection.Cast<ManagementBaseObject>().SingleOrDefault()?["CommandLine"]?.ToString();
+                return Collection.Cast<ManagementObject>().SingleOrDefault(Object => Check(Object, "ProcessId", 0) == PID)?["CommandLine"]?.ToString()?.Trim() ?? string.Empty;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public static string GetCommandLine2(int PID)
+        {
+            try
+            {
+                string Command = $@"Get-CimInstance Win32_Process -Filter ""ProcessId={PID}"" | Select-Object -ExpandProperty CommandLine";
+
+                ProcessStartInfo ProcessInfo = new()
+                {
+                    CreateNoWindow = true,
+                    UseShellExecute = false,
+                    FileName = "powershell.exe",
+                    RedirectStandardError = true,
+                    RedirectStandardOutput = true,
+                    StandardErrorEncoding = Encoding.UTF8,
+                    StandardOutputEncoding = Encoding.UTF8,
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    Arguments = $"-NoProfile -Command \"{Command}\"",
+                };
+
+                using Process Process = Process.Start(ProcessInfo);
+
+                string Result = Process.StandardOutput.ReadToEnd();
+
+                Process.WaitForExit();
+
+                return string.IsNullOrWhiteSpace(Result) ? string.Empty : Result?.Trim();
             }
             catch
             {
@@ -24,16 +58,38 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                string Value = $"{Object[Title]}";
+                string Value = Object[Title]?.ToString()?.Trim();
 
-                if (string.IsNullOrEmpty(Value) || string.IsNullOrWhiteSpace(Value))
+                return int.TryParse(Value, out int Result) ? Result : Back;
+            }
+            catch
+            {
+                return Back;
+            }
+        }
+
+        public static bool Check(ManagementObject Object, string Title, bool Back)
+        {
+            try
+            {
+                string Value = Object[Title]?.ToString()?.Trim()?.ToLowerInvariant();
+
+                if (string.IsNullOrEmpty(Value))
                 {
                     return Back;
                 }
-                else
+
+                if (Value is "true" or "1" or "yes" or "on")
                 {
-                    return Convert.ToInt32(Value.TrimStart().TrimEnd());
+                    return true;
                 }
+
+                if (Value is "false" or "0" or "no" or "off")
+                {
+                    return false;
+                }
+
+                return Back;
             }
             catch
             {
@@ -45,16 +101,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                string Value = $"{Object[Title]}";
+                string Value = Object[Title]?.ToString()?.Trim();
 
-                if (string.IsNullOrEmpty(Value) || string.IsNullOrWhiteSpace(Value))
-                {
-                    return Back;
-                }
-                else
-                {
-                    return Convert.ToInt64(Value.TrimStart().TrimEnd());
-                }
+                return long.TryParse(Value, out long Result) ? Result : Back;
             }
             catch
             {
@@ -66,16 +115,23 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                string Value = $"{Object[Title]}";
+                string Value = Object[Title]?.ToString()?.Trim();
 
-                if (string.IsNullOrEmpty(Value) || string.IsNullOrWhiteSpace(Value))
-                {
-                    return Back;
-                }
-                else
-                {
-                    return Value.TrimStart().TrimEnd();
-                }
+                return string.IsNullOrWhiteSpace(Value) ? Back : Value;
+            }
+            catch
+            {
+                return Back;
+            }
+        }
+
+        public static Version Check(ManagementObject Object, string Title, Version Back)
+        {
+            try
+            {
+                string Value = Object[Title]?.ToString()?.Trim();
+
+                return System.Version.TryParse(Value, out Version Version) ? Version : Back;
             }
             catch
             {

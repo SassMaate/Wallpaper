@@ -602,8 +602,8 @@ namespace Sucrose.Live.CefSharp
             {
                 StartInfo = new ProcessStartInfo()
                 {
-                    FileName = File,
-                    UseShellExecute = true
+                    UseShellExecute = true,
+                    FileName = File
                 }
             };
 

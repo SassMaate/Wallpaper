@@ -36,7 +36,7 @@ namespace Sucrose.Shared.Live.Helper
             try
             {
                 Process.GetProcesses()
-                    ?.Where(Process => (Process.ProcessName.Contains(SMMRP.WebViewName) || Process.ProcessName.Contains(SMMRP.CefSharpName)) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName))
+                    ?.Where(Process => (Process.ProcessName.Contains(SMMRP.WebViewName) || Process.ProcessName.Contains(SMMRP.CefSharpName)) && SSSHM.GetCommandLine(Process.Id).Contains(SMMRG.AppName))
                     ?.ToList()
                     ?.ForEach(Process =>
                     {

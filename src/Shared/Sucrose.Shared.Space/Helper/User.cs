@@ -37,9 +37,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_ComputerSystemProduct");
+                ManagementClass Class = new("Win32_ComputerSystemProduct");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "UUID", SMMRG.Default);
                 }
@@ -56,9 +56,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_OperatingSystem");
+                ManagementClass Class = new("Win32_OperatingSystem");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "OSLanguage", 0);
                 }
@@ -75,9 +75,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_ComputerSystem");
+                ManagementClass Class = new("Win32_ComputerSystem");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "Model", SMMRG.Default);
                 }
@@ -96,9 +96,9 @@ namespace Sucrose.Shared.Space.Helper
             {
                 List<string> Names = [];
 
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_VideoController");
+                ManagementClass Class = new("Win32_VideoController");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     Names.Add(SSSHM.Check(Object, "Name", SMMRG.Default));
                 }
@@ -117,9 +117,9 @@ namespace Sucrose.Shared.Space.Helper
             {
                 List<string> Names = [];
 
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_NetworkAdapter");
+                ManagementClass Class = new("Win32_NetworkAdapter");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     Names.Add(SSSHM.Check(Object, "Name", SMMRG.Default));
                 }
@@ -150,9 +150,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
+                ManagementClass Class = new("Win32_Processor");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "NumberOfCores", 0);
                 }
@@ -169,9 +169,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_ComputerSystemProduct");
+                ManagementClass Class = new("Win32_ComputerSystemProduct");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "IdentifyingNumber", SMMRG.Default);
                 }
@@ -190,9 +190,9 @@ namespace Sucrose.Shared.Space.Helper
             {
                 List<string> Names = [];
 
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
+                ManagementClass Class = new("Win32_Processor");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     Names.Add(SSSHM.Check(Object, "Name", SMMRG.Default));
                 }
@@ -221,9 +221,9 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_ComputerSystem");
+                ManagementClass Class = new("Win32_ComputerSystem");
 
-                foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                 {
                     return SSSHM.Check(Object, "Manufacturer", SMMRG.Default);
                 }

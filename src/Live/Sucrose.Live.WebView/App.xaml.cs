@@ -516,8 +516,8 @@ namespace Sucrose.Live.WebView
             {
                 StartInfo = new ProcessStartInfo()
                 {
-                    FileName = File,
-                    UseShellExecute = true
+                    UseShellExecute = true,
+                    FileName = File
                 }
             };
 

@@ -96,9 +96,9 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_BIOS");
+                            ManagementClass Class = new("Win32_BIOS");
 
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                             {
                                 SBMI.BiosData.State = true;
                                 SBMI.BiosData.Name = SSSHM.Check(Object, "Name", string.Empty);
@@ -314,19 +314,19 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Battery");
+                            ManagementClass Class = new("Win32_Battery");
 
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                             {
                                 SBMI.BatteryData.State = true;
 
+                                SBMI.BatteryData.Chemistry = SSSHM.Check(Object, "Chemistry", 0);
                                 SBMI.BatteryData.Name = SSSHM.Check(Object, "Name", string.Empty);
                                 SBMI.BatteryData.Status = SSSHM.Check(Object, "Status", string.Empty);
+                                SBMI.BatteryData.DesignVoltage = SSSHM.Check(Object, "DesignVoltage", 0);
+                                SBMI.BatteryData.EstimatedRunTime = SSSHM.Check(Object, "EstimatedRunTime", 0);
                                 SBMI.BatteryData.Description = SSSHM.Check(Object, "Description", string.Empty);
-                                SBMI.BatteryData.Chemistry = Convert.ToInt32(SSSHM.Check(Object, "Chemistry", "0"));
-                                SBMI.BatteryData.DesignVoltage = Convert.ToInt32(SSSHM.Check(Object, "DesignVoltage", "0"));
-                                SBMI.BatteryData.EstimatedRunTime = Convert.ToInt32(SSSHM.Check(Object, "EstimatedRunTime", "0"));
-                                SBMI.BatteryData.EstimatedChargeRemaining = Convert.ToInt32(SSSHM.Check(Object, "EstimatedChargeRemaining", "0"));
+                                SBMI.BatteryData.EstimatedChargeRemaining = SSSHM.Check(Object, "EstimatedChargeRemaining", 0);
 
                                 break;
                             }
@@ -420,27 +420,27 @@ namespace Sucrose.Backgroundog.Helper
                         {
                             List<SBSSS> Sensors = [];
 
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_LogicalDisk");
+                            ManagementClass Class = new("Win32_LogicalDisk");
 
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                             {
                                 SBMI.StorageData.State = true;
 
                                 SBSSS Sensor = new()
                                 {
+                                    Size = SSSHM.Check(Object, "Size", 0L),
+                                    DriveType = SSSHM.Check(Object, "DriveType", 0),
+                                    MediaType = SSSHM.Check(Object, "MediaType", 0),
+                                    FreeSpace = SSSHM.Check(Object, "FreeSpace", 0L),
                                     Name = SSSHM.Check(Object, "Name", string.Empty),
                                     Caption = SSSHM.Check(Object, "Caption", string.Empty),
-                                    Size = Convert.ToInt64(SSSHM.Check(Object, "Size", "0")),
                                     FileSystem = SSSHM.Check(Object, "FileSystem", string.Empty),
                                     VolumeName = SSSHM.Check(Object, "VolumeName", string.Empty),
                                     Description = SSSHM.Check(Object, "Description", string.Empty),
-                                    DriveType = Convert.ToInt32(SSSHM.Check(Object, "DriveType", "0")),
-                                    FreeSpace = Convert.ToInt64(SSSHM.Check(Object, "FreeSpace", "0")),
-                                    MediaType = Convert.ToInt32(SSSHM.Check(Object, "MediaType", "0")),
+                                    MaximumComponentLength = SSSHM.Check(Object, "MaximumComponentLength", 0),
                                     Compressed = Convert.ToBoolean(SSSHM.Check(Object, "Compressed", "False")),
                                     VolumeSerialNumber = SSSHM.Check(Object, "VolumeSerialNumber", string.Empty),
                                     SupportsDiskQuotas = Convert.ToBoolean(SSSHM.Check(Object, "SupportsDiskQuotas", "False")),
-                                    MaximumComponentLength = Convert.ToInt32(SSSHM.Check(Object, "MaximumComponentLength", "0")),
                                     SupportsFileBasedCompression = Convert.ToBoolean(SSSHM.Check(Object, "SupportsFileBasedCompression", "False"))
                                 };
 
@@ -625,15 +625,15 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_Processor");
+                            ManagementClass Class = new("Win32_Processor");
 
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                             {
                                 SBMI.ProcessorData.State = true;
                                 SBMI.ProcessorData.ProcessorCount = Environment.ProcessorCount;
+                                SBMI.ProcessorData.Core = SSSHM.Check(Object, "NumberOfCores", 0);
                                 SBMI.ProcessorData.Name = SSSHM.Check(Object, "Name", string.Empty);
-                                SBMI.ProcessorData.Core = Convert.ToInt32(SSSHM.Check(Object, "NumberOfCores", "0"));
-                                SBMI.ProcessorData.Thread = Convert.ToInt32(SSSHM.Check(Object, "NumberOfLogicalProcessors", "0"));
+                                SBMI.ProcessorData.Thread = SSSHM.Check(Object, "NumberOfLogicalProcessors", 0);
 
                                 break;
                             }
@@ -737,9 +737,9 @@ namespace Sucrose.Backgroundog.Helper
                     {
                         try
                         {
-                            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_BaseBoard");
+                            ManagementClass Class = new("Win32_BaseBoard");
 
-                            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+                            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
                             {
                                 SBMI.MotherboardData.State = true;
                                 SBMI.MotherboardData.Product = SSSHM.Check(Object, "Product", string.Empty);

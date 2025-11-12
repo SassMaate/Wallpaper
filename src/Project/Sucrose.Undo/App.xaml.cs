@@ -118,12 +118,12 @@ namespace Sucrose.Undo
 
                 Process.Start(new ProcessStartInfo
                 {
-                    FileName = "cmd.exe",
-                    CreateNoWindow = true,
-                    UseShellExecute = true,
-                    WorkingDirectory = SMMRP.Temp,
+                    Arguments = $"/c start /B \"\" \"{SUMI.BatchFile}\"",
                     WindowStyle = ProcessWindowStyle.Hidden,
-                    Arguments = $"/c start /B \"\" \"{SUMI.BatchFile}\""
+                    WorkingDirectory = SMMRP.Temp,
+                    UseShellExecute = true,
+                    CreateNoWindow = true,
+                    FileName = "cmd.exe"
                 });
             }
             catch { }

@@ -31,9 +31,9 @@ namespace Sucrose.Shared.Core.Helper
         {
             long TotalMemory = 0;
 
-            ManagementObjectSearcher Searcher = new("SELECT * FROM Win32_OperatingSystem");
+            ManagementClass Class = new("Win32_OperatingSystem");
 
-            foreach (ManagementObject Object in Searcher.Get().Cast<ManagementObject>())
+            foreach (ManagementObject Object in Class.GetInstances().Cast<ManagementObject>())
             {
                 TotalMemory = SSSHM.Check(Object, "TotalVisibleMemorySize", 0L);
 

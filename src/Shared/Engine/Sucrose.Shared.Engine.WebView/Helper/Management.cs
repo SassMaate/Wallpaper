@@ -14,7 +14,7 @@ namespace Sucrose.Shared.Engine.WebView.Helper
             try
             {
                 Process.GetProcesses()
-                    ?.Where(Process => Process.ProcessName.Contains(SMMRP.WebViewName) && SSSHM.GetCommandLine(Process).Contains(SMMRG.AppName) && !SSEMI.Processes.Contains(Process.Id))
+                    ?.Where(Process => Process.ProcessName.Contains(SMMRP.WebViewName) && SSSHM.GetCommandLine(Process.Id).Contains(SMMRG.AppName) && !SSEMI.Processes.Contains(Process.Id))
                     ?.ToList()
                     ?.ForEach(Process =>
                     {

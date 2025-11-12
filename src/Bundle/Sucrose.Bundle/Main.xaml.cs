@@ -215,13 +215,13 @@ namespace Sucrose.Bundle
 
             ProcessStartInfo Starter = new()
             {
-                Arguments = Command,
-                CreateNoWindow = true,
-                FileName = Executable,
-                UseShellExecute = false,
-                RedirectStandardError = false,
+                WindowStyle = ProcessWindowStyle.Hidden,
                 RedirectStandardOutput = false,
-                WindowStyle = ProcessWindowStyle.Hidden
+                RedirectStandardError = false,
+                UseShellExecute = false,
+                FileName = Executable,
+                CreateNoWindow = true,
+                Arguments = Command
             };
 
             using Process Extactor = new()
