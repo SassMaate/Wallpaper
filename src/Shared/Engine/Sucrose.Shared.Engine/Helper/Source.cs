@@ -224,7 +224,7 @@ namespace Sucrose.Shared.Engine.Helper
 
                 if (File.Exists(LocalSource))
                 {
-                    return new Uri(LocalSource, Kind);
+                    return new Uri(Path.GetFullPath(LocalSource), UriKind.Absolute);
                 }
                 else
                 {
@@ -237,12 +237,23 @@ namespace Sucrose.Shared.Engine.Helper
                     Content.Dispose();
                     Stream.Dispose();
 
-                    return new Uri(Path.GetFullPath(LocalSource), Kind);
+                    return new Uri(Path.GetFullPath(LocalSource), UriKind.Absolute);
                 }
             }
             else
             {
-                return new Uri(Source, Kind);
+                // For local file paths, ensure they are absolute and properly formatted for URI creation
+                // This handles paths with non-ASCII characters (e.g., Chinese, Japanese, etc.)
+                try
+                {
+                    string absolutePath = Path.GetFullPath(Source);
+                    return new Uri(absolutePath, UriKind.Absolute);
+                }
+                catch
+                {
+                    // Fallback to original behavior if path conversion fails
+                    return new Uri(Source, Kind);
+                }
             }
         }
 
@@ -254,6 +265,22 @@ namespace Sucrose.Shared.Engine.Helper
             }
             else
             {
+                // Check if Source is an absolute file path (e.g., C:\path\to\file or D:\壁纸\file.jpg)
+                // If it is, treat it as a local file and use GetSource(string) instead
+                try
+                {
+                    if (Path.IsPathRooted(Source) && (File.Exists(Source) || Directory.Exists(Source)))
+                    {
+                        // This is a local file path, use the single-parameter version
+                        return GetSource(Source, Kind);
+                    }
+                }
+                catch
+                {
+                    // If path checking fails, continue with the original logic
+                }
+
+                // Otherwise, treat as relative path and combine with Host
                 return new Uri($"{Host}{Source}", Kind);
             }
         }

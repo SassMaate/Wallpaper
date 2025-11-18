@@ -50,7 +50,21 @@ namespace Sucrose.Backgroundog.Extension
         {
             try
             {
-                SWNM.GetWindowThreadProcessId(SWNM.GetForegroundWindow(), out int PID);
+                IntPtr foregroundWindow = SWNM.GetForegroundWindow();
+                
+                // Check if the window handle is valid
+                if (foregroundWindow == IntPtr.Zero)
+                {
+                    return false;
+                }
+
+                uint threadId = SWNM.GetWindowThreadProcessId(foregroundWindow, out int PID);
+                
+                // Check if we got a valid PID
+                if (PID <= 0)
+                {
+                    return false;
+                }
 
                 Process Process = Process.GetProcessById(PID);
 
