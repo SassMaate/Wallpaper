@@ -890,13 +890,17 @@ namespace Sucrose.Backgroundog.Helper
 
                                 IntPtr Foreground = SWNM.GetForegroundWindow();
 
-                                foreach (SSMMS Screen in SWUS.Screens)
+                                // Validate window handle before using it
+                                if (Foreground != IntPtr.Zero)
                                 {
-                                    if (SWHFS.IsFullScreen(Foreground, Screen.rcMonitor))
+                                    foreach (SSMMS Screen in SWUS.Screens)
                                     {
-                                        SBMI.FullScreen = true;
+                                        if (SWHFS.IsFullScreen(Foreground, Screen.rcMonitor))
+                                        {
+                                            SBMI.FullScreen = true;
 
-                                        break;
+                                            break;
+                                        }
                                     }
                                 }
                             }
