@@ -80,8 +80,8 @@ _Take a moment, preview GIF clips may take some time to load._
  * Some bugs have been fixed.
  * **Management** usages have been revised.
  * The download link for VC Redist has been updated.
- * A `Caption` property has been added to the **MpvPlayer** engine customization for video-type wallpapers.
- * A `Caption` property has been added to the **CefSharp** and **WebView** engine customization for YouTube-type wallpapers.
+ * A `Caption` property has been added to the **MpvPlayer** engine customization for Video type wallpapers.
+ * A `Caption` property has been added to the **CefSharp** and **WebView** engine customization for YouTube type wallpapers.
  * After an incorrect or incomplete installation, a page providing information is now opened in the user's browser, and the installed files are reverted.
 
 ## Translations:
