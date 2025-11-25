@@ -1,7 +1,7 @@
 <Project>
     <ItemGroup>
         <PackageVersion Include="NAudio" Version="2.2.1" />
-        <PackageVersion Include="WPF-UI" Version="4.0.3" />
+        <PackageVersion Include="WPF-UI" Version="4.1.0" />
         <PackageVersion Include="NPSMLib" Version="0.9.14" />
         <PackageVersion Include="Skylark" Version="3.1.5.8" />
         <PackageVersion Include="CsvHelper" Version="33.1.0" />
@@ -23,7 +23,7 @@
         <PackageVersion Include="MathNet.Numerics" Version="6.0.0-beta2" />
         <PackageVersion Include="WindowsAPICodePackShell" Version="8.0.12" />
         <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="141.0.110" />
-        <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.0.3" />
+        <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.1.0" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
         <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.3650-prerelease" />
     </ItemGroup>
