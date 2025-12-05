@@ -575,17 +575,24 @@ function Compress-SucrosePackage {
 
     # Build 7zip arguments
     $excludeFolders = @("Sucrose.Bundle", "Sucrose.Localizer")
-    $excludeArgs = $excludeFolders | ForEach-Object { "-x!$sourceDir\$_" }
+    $excludeArgs = $excludeFolders | ForEach-Object { "-xr!$_" }
+
+    # Resolve paths to full absolute paths
+    $resolvedSourceDir = (Resolve-Path $sourceDir -ErrorAction Stop).Path
+    $resolvedArchiveFile = [System.IO.Path]::GetFullPath($archiveFile)
+
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') [DEBUG] Resolved Source: $resolvedSourceDir" -ForegroundColor Gray
+    Write-Host "$(Get-Date -Format 'HH:mm:ss') [DEBUG] Resolved Archive: $resolvedArchiveFile" -ForegroundColor Gray
 
     $arguments = @(
-        "a",                   # Add to archive
-        "-t7z",                # 7z format
-        "-m0=lzma2",           # Compression method
-        "-mx=9",               # Maximum compression
-        "-mfb=64",             # Fast bytes
-        "-ms=64m",             # Solid block size
-        "`"$archiveFile`"",    # Output archive
-        "`"$sourceDir\*`""     # Source files
+        "a",                           # Add to archive
+        "-t7z",                        # 7z format
+        "-m0=lzma2",                   # Compression method
+        "-mx=9",                       # Maximum compression
+        "-mfb=64",                     # Fast bytes
+        "-ms=64m",                     # Solid block size
+        $resolvedArchiveFile,          # Output archive (absolute path)
+        "$resolvedSourceDir\*"         # Source files (absolute path with wildcard)
     ) + $excludeArgs
 
     Write-StatusMessage "Compressing package..." -Type "Info"
