@@ -29,20 +29,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: '24'
-          cache: 'npm'
-          cache-dependency-path: '.pages/package-lock.json'
+          bun-version: latest
         
       - name: Install Dependencies
         working-directory: .pages
-        run: npm ci
+        run: bun install
       
       - name: Build Static Site
         working-directory: .pages
-        run: npm run generate
+        run: bun run generate
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
