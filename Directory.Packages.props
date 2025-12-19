@@ -11,7 +11,7 @@
         <PackageVersion Include="Vortice.DXGI" Version="3.8.1" />
         <PackageVersion Include="HandyControls" Version="3.6.0" />
         <PackageVersion Include="RawInput.Sharp" Version="0.1.3" />
-        <PackageVersion Include="SharpCompress" Version="0.42.0" />
+        <PackageVersion Include="SharpCompress" Version="0.42.1" />
         <PackageVersion Include="Skylark.Wing" Version="3.1.9.6" />
         <PackageVersion Include="TaskScheduler" Version="2.12.2" />
         <PackageVersion Include="XamlFlair.WPF" Version="1.2.13" />
