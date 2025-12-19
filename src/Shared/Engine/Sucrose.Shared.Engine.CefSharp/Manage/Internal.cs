@@ -19,7 +19,12 @@ namespace Sucrose.Shared.Engine.CefSharp.Manage
 
         public static BrowserSettings CefSettings => new()
         {
+            WebGl = CefState.Enabled,
             WindowlessFrameRate = 60,
+            DefaultEncoding = "UTF-8",
+            Databases = CefState.Enabled,
+            ImageLoading = CefState.Enabled,
+            LocalStorage = CefState.Enabled,
             BackgroundColor = Cef.ColorSetARGB(255, 0, 0, 0)
         };
     }
