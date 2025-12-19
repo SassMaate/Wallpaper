@@ -431,14 +431,14 @@ function Configure-CefSharpSubprocess {
             $minorVersion = 0
         }
         
-        # Clamp to valid range: minimum net6.0, maximum net9.0
+        # Clamp to valid range: minimum net6.0, maximum net10.0
         if ($majorVersion -lt 6) {
             Write-StatusMessage "Framework version too low ($majorVersion.$minorVersion), clamping to net6.0" -Type "Warning"
             $majorVersion = 6
             $minorVersion = 0
-        } elseif ($majorVersion -gt 9) {
-            Write-StatusMessage "Framework version too high ($majorVersion.$minorVersion), clamping to net9.0" -Type "Warning"
-            $majorVersion = 9
+        } elseif ($majorVersion -gt 10) {
+            Write-StatusMessage "Framework version too high ($majorVersion.$minorVersion), clamping to net10.0" -Type "Warning"
+            $majorVersion = 10
             $minorVersion = 0
         }
         
