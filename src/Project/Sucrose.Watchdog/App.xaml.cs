@@ -34,6 +34,7 @@ using SSSMTED = Sucrose.Shared.Space.Model.ThrowExceptionData;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
 using SWHSI = Skylark.Wing.Helper.SystemInfo;
+using SWMI = Sucrose.Watchdog.Manage.Internal;
 using SWNM = Skylark.Wing.Native.Methods;
 using SWVDEMB = Sucrose.Watchdog.View.DarkErrorMessageBox;
 using SWVLEMB = Sucrose.Watchdog.View.LightErrorMessageBox;
@@ -170,6 +171,18 @@ namespace Sucrose.Watchdog
             }
         }
 
+        protected void ShowFallbackMessage(string Application, string Message, Exception FallbackException)
+        {
+            string DiagnosticInfo = $"Application: {Application}\n\n" +
+                                   $"Error: {Message}\n\n" +
+                                   $"WPF UI Error: {FallbackException.GetType().Name}\n" +
+                                   $"{FallbackException.Message}\n\n" +
+                                   "This may indicate missing Visual C++ Redistributable or .NET Desktop Runtime.\n" +
+                                   "Please reinstall the application or contact support.";
+
+            _ = SWNM.MessageBox(IntPtr.Zero, DiagnosticInfo, "Sucrose Watchdog - Critical Error", SWMI.MB_OK | SWMI.MB_ICONERROR | SWMI.MB_SYSTEMMODAL);
+        }
+
         protected void Configure(string[] Args)
         {
             if (Args.Any())
@@ -244,16 +257,27 @@ namespace Sucrose.Watchdog
 
                     if (Show)
                     {
-                        switch (SSDMMG.ThemeType)
+                        try
                         {
-                            case SEWTT.Dark:
-                                SWVDEMB DarkMessageBox = new(RawException, Message, Log, Source, Text);
-                                DarkMessageBox.ShowDialog();
-                                break;
-                            default:
-                                SWVLEMB LightMessageBox = new(RawException, Message, Log, Source, Text);
-                                LightMessageBox.ShowDialog();
-                                break;
+                            switch (SSDMMG.ThemeType)
+                            {
+                                case SEWTT.Dark:
+                                    SWVDEMB DarkMessageBox = new(RawException, Message, Log, Source, Text);
+                                    DarkMessageBox.ShowDialog();
+                                    break;
+                                default:
+                                    SWVLEMB LightMessageBox = new(RawException, Message, Log, Source, Text);
+                                    LightMessageBox.ShowDialog();
+                                    break;
+                            }
+                        }
+                        catch (Exception FallbackException)
+                        {
+                            SSWHD.Add("Exception Type", "Fallback Exception");
+
+                            this.Message(FallbackException, false);
+
+                            ShowFallbackMessage(Application, Message, FallbackException);
                         }
                     }
 
