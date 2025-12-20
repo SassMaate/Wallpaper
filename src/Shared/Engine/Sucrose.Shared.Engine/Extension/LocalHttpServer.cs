@@ -5,6 +5,7 @@ using SHE = Skylark.Helper.Encode;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHP = Sucrose.Shared.Space.Helper.Port;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 
@@ -324,7 +325,7 @@ namespace Sucrose.Shared.Engine.Extension
                     return;
                 }
 
-                using FileStream fs = File.OpenRead(path);
+                using FileStream fs = SSSHF.OpenRead(path);
 
                 string filename = Path.GetFileName(path);
 

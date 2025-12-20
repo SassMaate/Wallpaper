@@ -89,6 +89,26 @@ namespace Sucrose.Shared.Space.Helper
             }
         }
 
+        public static FileStream OpenRead(string Source)
+        {
+            using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+
+            try
+            {
+                try
+                {
+                    Mutex.WaitOne();
+                }
+                catch { }
+
+                return new(Source, FileMode.Open, FileAccess.Read, FileShare.None);
+            }
+            finally
+            {
+                Mutex.ReleaseMutex();
+            }
+        }
+
         public static void Write(string Source, string Content)
         {
             using Mutex Mutex = new(false, SSSHU.GenerateText(Source));

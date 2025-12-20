@@ -59,7 +59,7 @@ namespace Sucrose.Shared.Zip.Extension
                         ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.SmallestSize);
 
                         using Stream EntryStream = Entry.Open();
-                        using FileStream FileStream = File.OpenRead(Record);
+                        using FileStream FileStream = SSSHF.OpenRead(Record);
 
                         FileStream.CopyTo(EntryStream);
                     }
@@ -98,7 +98,7 @@ namespace Sucrose.Shared.Zip.Extension
                             ZipArchiveEntry Entry = Archive.CreateEntry(EntryName, CompressionLevel.SmallestSize);
 
                             using Stream EntryStream = Entry.Open();
-                            using FileStream FileStream = File.OpenRead(Record);
+                            using FileStream FileStream = SSSHF.OpenRead(Record);
 
                             FileStream.CopyTo(EntryStream);
                         }

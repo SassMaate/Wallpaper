@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
+using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 
 namespace Sucrose.Portal.Controls
 {
@@ -19,7 +20,7 @@ namespace Sucrose.Portal.Controls
         {
             Source = await Task.Run(() =>
             {
-                using FileStream stream = File.OpenRead(imagePath);
+                using FileStream stream = SSSHF.OpenRead(imagePath);
 
                 BitmapImage bitmap = new();
 
