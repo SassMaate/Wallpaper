@@ -4,6 +4,7 @@ using WatsonWebserver.Lite;
 using SMMRF = Sucrose.Memory.Manage.Readonly.Folder;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
+using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHP = Sucrose.Shared.Space.Helper.Port;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 
@@ -234,7 +235,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
 
                 // Read file content
                 string filename = Path.GetFileName(path);
-                byte[] fileContent = await File.ReadAllBytesAsync(path);
+                byte[] fileContent = await SSSHF.ReadAllBytesAsync(path);
 
                 // Set response headers
                 ctx.Response.StatusCode = 200;
