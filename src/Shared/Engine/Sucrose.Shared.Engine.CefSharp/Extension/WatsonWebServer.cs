@@ -173,7 +173,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                 ctx.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
 
                 // Get the requested file path
-                string relativePath = ctx.Request.Url.RawWithQuery.TrimStart('/');
+                string relativePath = Uri.UnescapeDataString(ctx.Request.Url.RawWithQuery.TrimStart('/'));
 
                 string themePath = Path.Combine(themeFolder, relativePath);
                 string customPath = Path.Combine(customFolder, relativePath);

@@ -109,6 +109,26 @@ namespace Sucrose.Shared.Space.Helper
             }
         }
 
+        public static byte[] ReadAllBytes(string Source)
+        {
+            using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+
+            try
+            {
+                try
+                {
+                    Mutex.WaitOne();
+                }
+                catch { }
+
+                return File.ReadAllBytes(Source);
+            }
+            finally
+            {
+                Mutex.ReleaseMutex();
+            }
+        }
+
         public static void Write(string Source, string Content)
         {
             using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
@@ -171,6 +191,26 @@ namespace Sucrose.Shared.Space.Helper
                 using StreamWriter Writer = new(Stream);
 
                 Writer.Write(Content);
+            }
+            finally
+            {
+                Mutex.ReleaseMutex();
+            }
+        }
+
+        public static void WriteAllBytes(string Source, byte[] Content)
+        {
+            using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+
+            try
+            {
+                try
+                {
+                    Mutex.WaitOne();
+                }
+                catch { }
+
+                File.WriteAllBytes(Source, Content);
             }
             finally
             {
@@ -313,6 +353,45 @@ namespace Sucrose.Shared.Space.Helper
             {
                 SourceMutex.ReleaseMutex();
                 DestinationMutex.ReleaseMutex();
+            }
+        }
+
+        public static async Task<byte[]> ReadAllBytesAsync(string Source, CancellationToken Token = default)
+        {
+            using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+            try
+            {
+                try
+                {
+                    Mutex.WaitOne();
+                }
+                catch { }
+
+                return await File.ReadAllBytesAsync(Source, Token);
+            }
+            finally
+            {
+                Mutex.ReleaseMutex();
+            }
+        }
+
+        public static async Task WriteAllBytesAsync(string Source, byte[] Content, CancellationToken Token = default)
+        {
+            using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+
+            try
+            {
+                try
+                {
+                    Mutex.WaitOne();
+                }
+                catch { }
+
+                await File.WriteAllBytesAsync(Source, Content, Token);
+            }
+            finally
+            {
+                Mutex.ReleaseMutex();
             }
         }
     }

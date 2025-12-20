@@ -180,8 +180,8 @@ namespace Sucrose.Shared.Engine.Extension
                 response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
                 response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH");
 
-                string themePath = Path.Combine(themeFolder, context.Request.Url.LocalPath.TrimStart('/'));
-                string customPath = Path.Combine(customFolder, context.Request.Url.LocalPath.TrimStart('/'));
+                string themePath = Path.Combine(themeFolder, Uri.UnescapeDataString(context.Request.Url.LocalPath.TrimStart('/')));
+                string customPath = Path.Combine(customFolder, Uri.UnescapeDataString(context.Request.Url.LocalPath.TrimStart('/')));
 
                 if (File.Exists(themePath) || File.Exists(customPath))
                 {
@@ -199,7 +199,7 @@ namespace Sucrose.Shared.Engine.Extension
                     await WriteFile(context, path);
 
                     //string filename = Path.GetFileName(path);
-                    //byte[] content = File.ReadAllBytes(path);
+                    //byte[] content = await SSSHF.ReadAllBytesAsync(path);
 
                     //response.ContentLength64 = content.Length;
                     //response.StatusCode = (int)HttpStatusCode.NotModified;
