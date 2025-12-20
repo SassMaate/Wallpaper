@@ -106,6 +106,13 @@ namespace Sucrose.Shared.Engine.MpvPlayer.Helper
                         if (PropertyType.Equals("slider", StringComparison.OrdinalIgnoreCase))
                         {
                             SSEMPMI.MediaEngine.API.SetPropertyDouble(PropertyName, ParsedScript.Value<double>("value"));
+
+                            if (PropertyName == "scale-blur")
+                            {
+                                SSEMPMI.MediaEngine.API.SetPropertyDouble("cscale-blur", ParsedScript.Value<double>("value"));
+                                SSEMPMI.MediaEngine.API.SetPropertyDouble("dscale-blur", ParsedScript.Value<double>("value"));
+                                SSEMPMI.MediaEngine.API.SetPropertyDouble("tscale-blur", ParsedScript.Value<double>("value"));
+                            }
                         }
                         else if (PropertyType.Equals("textbox", StringComparison.OrdinalIgnoreCase))
                         {

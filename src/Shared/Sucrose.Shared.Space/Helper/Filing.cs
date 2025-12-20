@@ -359,6 +359,7 @@ namespace Sucrose.Shared.Space.Helper
         public static async Task<byte[]> ReadAllBytesAsync(string Source, CancellationToken Token = default)
         {
             using Mutex Mutex = new(false, SSSHU.GenerateText(Source));
+
             try
             {
                 try

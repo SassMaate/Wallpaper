@@ -235,7 +235,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
 
                 // Read file content
                 string filename = Path.GetFileName(path);
-                byte[] fileContent = await SSSHF.ReadAllBytesAsync(path);
+                byte[] fileContent = SSSHF.ReadAllBytes(path);
 
                 // Set response headers
                 ctx.Response.StatusCode = 200;

@@ -199,7 +199,7 @@ namespace Sucrose.Shared.Engine.Extension
                     await WriteFile(context, path);
 
                     //string filename = Path.GetFileName(path);
-                    //byte[] content = await SSSHF.ReadAllBytesAsync(path);
+                    //byte[] content = SSSHF.ReadAllBytes(path);
 
                     //response.ContentLength64 = content.Length;
                     //response.StatusCode = (int)HttpStatusCode.NotModified;
