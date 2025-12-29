@@ -1,0 +1,173 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Launcher/">
+    <Project Path="Launcher/Sucrose.Launcher/Sucrose.Launcher.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Library/">
+    <Project Path="Library/Sucrose.Manager/Sucrose.Manager.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Memory/Sucrose.Memory.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Mpv.NET/Sucrose.Mpv.NET.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Pipe/Sucrose.Pipe.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Resources/Sucrose.Resources.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Signal/Sucrose.Signal.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.Transmission/Sucrose.Transmission.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Library/Sucrose.XamlAnimatedGif/Sucrose.XamlAnimatedGif.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Live/">
+    <Project Path="Live/Sucrose.Live.Aurora/Sucrose.Live.Aurora.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.CefSharp/Sucrose.Live.CefSharp.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.MpvPlayer/Sucrose.Live.MpvPlayer.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.Nebula/Sucrose.Live.Nebula.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.Vexana/Sucrose.Live.Vexana.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.WebView/Sucrose.Live.WebView.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Live/Sucrose.Live.Xavier/Sucrose.Live.Xavier.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Portal/">
+    <Project Path="Portal/Sucrose.Portal/Sucrose.Portal.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Project/">
+    <Project Path="Project/Sucrose.Backgroundog/Sucrose.Backgroundog.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Project/Sucrose.Commandog/Sucrose.Commandog.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Project/Sucrose.Property/Sucrose.Property.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Project/Sucrose.Reportdog/Sucrose.Reportdog.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Project/Sucrose.Undo/Sucrose.Undo.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+    <Project Path="Project/Sucrose.Watchdog/Sucrose.Watchdog.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/Sucrose.Shared.Core/Sucrose.Shared.Core.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Dependency/Sucrose.Shared.Dependency.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Discord/Sucrose.Shared.Discord.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Launcher/Sucrose.Shared.Launcher.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Live/Sucrose.Shared.Live.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Pipe/Sucrose.Shared.Pipe.shproj" />
+    <Project Path="Shared/Sucrose.Shared.SevenZip/Sucrose.Shared.SevenZip.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Signal/Sucrose.Shared.Signal.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Space/Sucrose.Shared.Space.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Store/Sucrose.Shared.Store.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Theme/Sucrose.Shared.Theme.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Transmission/Sucrose.Shared.Transmission.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Watchdog/Sucrose.Shared.Watchdog.shproj" />
+    <Project Path="Shared/Sucrose.Shared.Zip/Sucrose.Shared.Zip.shproj" />
+  </Folder>
+  <Folder Name="/Shared/Engine/">
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.Aurora/Sucrose.Shared.Engine.Aurora.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.CefSharp/Sucrose.Shared.Engine.CefSharp.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.MpvPlayer/Sucrose.Shared.Engine.MpvPlayer.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.Nebula/Sucrose.Shared.Engine.Nebula.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.Vexana/Sucrose.Shared.Engine.Vexana.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.WebView/Sucrose.Shared.Engine.WebView.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.Xavier/Sucrose.Shared.Engine.Xavier.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine/Sucrose.Shared.Engine.shproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="../.editorconfig" />
+    <File Path="../Directory.Build.props" />
+    <File Path="../Directory.Build.targets" />
+    <File Path="../Directory.Packages.props" />
+    <File Path="../global.json" />
+    <File Path="../NuGet.Config" />
+  </Folder>
+  <Folder Name="/Update/">
+    <Project Path="Update/Sucrose.Update/Sucrose.Update.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+</Solution>
