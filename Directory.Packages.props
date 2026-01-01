@@ -15,12 +15,12 @@
         <PackageVersion Include="Skylark.Wing" Version="3.1.9.6" />
         <PackageVersion Include="TaskScheduler" Version="2.12.2" />
         <PackageVersion Include="XamlFlair.WPF" Version="1.2.13" />
-        <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
         <PackageVersion Include="Skylark.Standard" Version="3.1.7.8" />
         <PackageVersion Include="Skylark.Clipboard" Version="3.1.5.2" />
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.0" />
         <PackageVersion Include="DiscordRichPresence" Version="1.6.1.70" />
         <PackageVersion Include="MathNet.Numerics" Version="6.0.0-beta2" />
+        <PackageVersion Include="Newtonsoft.Json" Version="13.0.5-beta1" />
         <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="143.0.90" />
         <PackageVersion Include="WindowsAPICodePackShell" Version="8.0.14" />
         <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.1.0" />
