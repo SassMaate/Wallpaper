@@ -293,6 +293,7 @@ namespace Sucrose.Portal.Views.Controls
                     PageNumber.Minimum = MinPage;
                     PageNumber.Maximum = MaxPage;
                     PageNumber.Value = SelectPage;
+                    PageNumber.MaxLength = MaxPage.ToString().Length;
 
                     PageJump.Visibility = Visibility.Visible;
                     PageNumber.Visibility = Visibility.Visible;
