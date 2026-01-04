@@ -50,9 +50,36 @@ namespace Sucrose.Shared.Launcher.Manager
             Visible = true
         };
 
+        public bool Hide()
+        {
+            return TrayIcon.Visible = false;
+        }
+
+        public Icon Icon()
+        {
+            if (SSSHL.Run() && SMMB.PausePerformance && SSSHP.Work(SSSMI.Backgroundog))
+            {
+                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon", "Grayscale")));
+            }
+            else if (!SSSHL.Run() && SMMB.ClosePerformance && SSSHP.Work(SSSMI.Backgroundog))
+            {
+                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon", "Grayscale")));
+            }
+            else
+            {
+                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon")));
+            }
+
+            return TrayIcon.Icon;
+        }
+
+        public bool Show()
+        {
+            return TrayIcon.Visible = true;
+        }
+
         public void Start()
         {
-            TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon")));
             TrayIcon.Text = SRER.GetValue("Launcher", "TrayText");
 
             TrayIcon.MouseDoubleClick += MouseDoubleClick;
@@ -62,6 +89,8 @@ namespace Sucrose.Shared.Launcher.Manager
 
             ContextMenuAdjustment();
 
+            TrayIcon.Icon = Icon();
+
             SSLCE.Command(false);
 
             SSLCRG.Command();
@@ -70,6 +99,15 @@ namespace Sucrose.Shared.Launcher.Manager
             {
                 SSLCU.Command(false);
             }
+        }
+
+        public bool Release()
+        {
+            TrayIcon.Visible = false;
+            TrayIcon.Dispose();
+            Dispose();
+
+            return true;
         }
 
         public void Initialize()
@@ -317,25 +355,6 @@ namespace Sucrose.Shared.Launcher.Manager
             ContextMenu.Items.Add(SRER.GetValue("Launcher", SMMG.AppExit ? "CloseText" : "ExitText"), Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "ExitIcon"))), CommandClose);
         }
 
-        public bool Release()
-        {
-            TrayIcon.Visible = false;
-            TrayIcon.Dispose();
-            Dispose();
-
-            return true;
-        }
-
-        public bool Show()
-        {
-            return TrayIcon.Visible = true;
-        }
-
-        public bool Hide()
-        {
-            return TrayIcon.Visible = false;
-        }
-
         private void ContextMenuAdjustment()
         {
             ContextMenu.Closed += (s, e) =>
@@ -344,18 +363,6 @@ namespace Sucrose.Shared.Launcher.Manager
                 ContextMenu.Items.Clear();
                 ContextMenu.Visible = false;
             };
-        }
-
-        private void MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                ContextMenu.Hide();
-
-                Initialize();
-
-                ContextMenu.Show(SSLHC.MenuPosition(ContextMenu));
-            }
         }
 
         private void MouseDoubleClick(object sender, MouseEventArgs e)
@@ -369,6 +376,18 @@ namespace Sucrose.Shared.Launcher.Manager
         private void CommandInterface(object sender, EventArgs e)
         {
             SSLCI.Command();
+        }
+
+        private void MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                ContextMenu.Hide();
+
+                Initialize();
+
+                ContextMenu.Show(SSLHC.MenuPosition(ContextMenu));
+            }
         }
 
         private void CommandProperty(object sender, EventArgs e)
@@ -386,6 +405,11 @@ namespace Sucrose.Shared.Launcher.Manager
             SSLCS.Command();
         }
 
+        private void CommandUpdate(object sender, EventArgs e)
+        {
+            SSLCU.Command();
+        }
+
         private void CommandReport(object sender, EventArgs e)
         {
             SSLCRT.Command();
@@ -394,11 +418,6 @@ namespace Sucrose.Shared.Launcher.Manager
         private void CommandReload(object sender, EventArgs e)
         {
             SSLCR.Command();
-        }
-
-        private void CommandUpdate(object sender, EventArgs e)
-        {
-            SSLCU.Command();
         }
 
         private void CommandEngine(object sender, EventArgs e)

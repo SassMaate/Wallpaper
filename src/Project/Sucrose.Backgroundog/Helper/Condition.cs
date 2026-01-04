@@ -15,7 +15,9 @@ using SSDENPT = Sucrose.Shared.Dependency.Enum.NetworkPerformanceType;
 using SSDEPPT = Sucrose.Shared.Dependency.Enum.PausePerformanceType;
 using SSDEPT = Sucrose.Shared.Dependency.Enum.PerformanceType;
 using SSDMMB = Sucrose.Shared.Dependency.Manage.Manager.Backgroundog;
+using SSIL = Sucrose.Signal.Interface.Launcher;
 using SSLHR = Sucrose.Shared.Live.Helper.Run;
+using SSMI = Sucrose.Signal.Manage.Internal;
 using SSSEL = Sucrose.Shared.Space.Extension.Lifecycle;
 using SSSHL = Sucrose.Shared.Space.Helper.Live;
 using SSSHM = Sucrose.Shared.Space.Helper.Management;
@@ -183,6 +185,11 @@ namespace Sucrose.Backgroundog.Helper
                         }
                     }
                 }
+            }
+
+            if (SSSHP.Work(SMMRA.Launcher))
+            {
+                SSMI.LauncherManager.FileSave<SSIL>(new() { Icon = true });
             }
         }
 

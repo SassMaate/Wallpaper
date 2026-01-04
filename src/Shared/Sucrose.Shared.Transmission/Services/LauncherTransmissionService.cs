@@ -22,6 +22,11 @@ namespace Sucrose.Shared.Transmission.Services
                         SSLMI.TrayIconManager.Hide();
                     }
 
+                    if (Data.Icon)
+                    {
+                        SSLMI.TrayIconManager.Icon();
+                    }
+
                     if (Data.Show)
                     {
                         SSLMI.TrayIconManager.Show();

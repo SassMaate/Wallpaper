@@ -14,4 +14,5 @@
     <system:String x:Key="Launcher.SettingIcon">Engineering.ico</system:String>
     <system:String x:Key="Launcher.OpenIcon">DashboardLayout.ico</system:String>
     <system:String x:Key="Launcher.WallCustomizeIcon">ColorPalette.ico</system:String>
+    <system:String x:Key="Launcher.TrayIcon.Grayscale">TrayIcon.Grayscale.ico</system:String>
 </ResourceDictionary>

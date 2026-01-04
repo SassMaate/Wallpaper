@@ -4,6 +4,8 @@ namespace Sucrose.Transmission.Interface
     {
         public bool Hide { get; set; } = false;
 
+        public bool Icon { get; set; } = false;
+
         public bool Show { get; set; } = false;
 
         public bool Release { get; set; } = false;
