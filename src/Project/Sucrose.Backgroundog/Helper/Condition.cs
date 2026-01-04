@@ -189,7 +189,7 @@ namespace Sucrose.Backgroundog.Helper
 
             if (SSSHP.Work(SMMRA.Launcher))
             {
-                SSMI.LauncherManager.FileSave<SSIL>(new() { Icon = true });
+                SSMI.LauncherManager.FileSave<SSIL>(new() { Icon = false });
             }
         }
 

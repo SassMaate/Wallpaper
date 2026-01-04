@@ -55,24 +55,6 @@ namespace Sucrose.Shared.Launcher.Manager
             return TrayIcon.Visible = false;
         }
 
-        public Icon Icon()
-        {
-            if (SSSHL.Run() && SMMB.PausePerformance && SSSHP.Work(SSSMI.Backgroundog))
-            {
-                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon", "Grayscale")));
-            }
-            else if (!SSSHL.Run() && SMMB.ClosePerformance && SSSHP.Work(SSSMI.Backgroundog))
-            {
-                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon", "Grayscale")));
-            }
-            else
-            {
-                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon")));
-            }
-
-            return TrayIcon.Icon;
-        }
-
         public bool Show()
         {
             return TrayIcon.Visible = true;
@@ -353,6 +335,20 @@ namespace Sucrose.Shared.Launcher.Manager
             ContextMenu.Items.Add(Separator3.Strip);
 
             ContextMenu.Items.Add(SRER.GetValue("Launcher", SMMG.AppExit ? "CloseText" : "ExitText"), Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "ExitIcon"))), CommandClose);
+        }
+
+        public Icon Icon(bool State = false)
+        {
+            if (State)
+            {
+                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon", "Grayscale")));
+            }
+            else
+            {
+                TrayIcon.Icon = new Icon(SSSHA.Get(SRER.GetValue("Launcher", "TrayIcon")));
+            }
+
+            return TrayIcon.Icon;
         }
 
         private void ContextMenuAdjustment()
