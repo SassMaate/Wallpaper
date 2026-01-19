@@ -297,7 +297,7 @@ namespace Sucrose.Bundle
         {
             await Task.Factory.StartNew(() =>
             {
-                using IArchive Archiver = ArchiveFactory.Open(PackagesFilePath);
+                using IArchive Archiver = ArchiveFactory.OpenArchive(PackagesFilePath);
 
                 foreach (IArchiveEntry Record in Archiver.Entries)
                 {
@@ -395,7 +395,7 @@ namespace Sucrose.Bundle
 
                 Assembly Entry = SHA.Assemble(SEAT.Entry);
 
-                using IArchive Archive = ArchiveFactory.Open(Entry.GetManifestResourceStream(SourcePath));
+                using IArchive Archive = ArchiveFactory.OpenArchive(Entry.GetManifestResourceStream(SourcePath));
 
                 foreach (IArchiveEntry Record in Archive.Entries)
                 {

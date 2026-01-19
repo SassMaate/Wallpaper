@@ -12,7 +12,7 @@ namespace Sucrose.Shared.SevenZip.Extension
         {
             try
             {
-                using IArchive Archiver = ArchiveFactory.Open(Archive);
+                using IArchive Archiver = ArchiveFactory.OpenArchive(Archive);
 
                 foreach (IArchiveEntry Entry in Archiver.Entries)
                 {
@@ -43,7 +43,7 @@ namespace Sucrose.Shared.SevenZip.Extension
                     SSSHF.Delete(Destination);
                 }
 
-                using IWritableArchive Archiver = ArchiveFactory.Create(ArchiveType.SevenZip);
+                using IWritableArchive Archiver = ArchiveFactory.CreateArchive(ArchiveType.SevenZip);
 
                 foreach (string Record in Directory.GetFiles(Source))
                 {
