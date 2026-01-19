@@ -42,7 +42,7 @@ namespace Sucrose.Shared.Watchdog.Helper
 
         public static void Add(string Key, object Value)
         {
-            if (ContainsKey(Key))
+            if (Contains(Key) || ContainsKey(Key))
             {
                 Set(Key, Value);
             }
@@ -54,7 +54,7 @@ namespace Sucrose.Shared.Watchdog.Helper
 
         public static void Set(string Key, object Value)
         {
-            if (ContainsKey(Key))
+            if (Contains(Key) || ContainsKey(Key))
             {
                 SSWMI.Dataset[Key] = Value;
             }
