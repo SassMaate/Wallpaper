@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Ray Music Visualizer",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -32,7 +32,7 @@
       "Description": "Spectre audio qui réagit au son du système."
     },
     "HI": {
-      "Title": "रे म्यूजिक विज़ुअलाइज़र",
+      "Title": "Ray म्यूजिक विज़ुअलाइज़र",
       "Description": "सिस्टम ध्वनि के साथ प्रतिक्रिया करने वाला ऑडियो स्पेक्ट्रम।"
     },
     "PL": {

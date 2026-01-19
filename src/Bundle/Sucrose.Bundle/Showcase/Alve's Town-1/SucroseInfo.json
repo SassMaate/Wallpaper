@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.1.0",
+  "Version": "1.0.1.1",
   "Title": "Alve's Town",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -29,24 +29,24 @@
       "Description": "La Ville d'Alve : Vue de ville en pixel art avec cycle jour-nuit en temps réel."
     },
     "HI": {
-      "Title": "अल्व का शहर",
-      "Description": "अल्व का शहर: वास्तविक समय दिन-रात चक्र के साथ पिक्सेल आर्ट शहर दृश्य।"
+      "Title": "Alve का शहर",
+      "Description": "Alve का शहर: वास्तविक समय दिन-रात चक्र के साथ पिक्सेल आर्ट शहर दृश्य।"
     },
     "PL": {
       "Title": "Miasto Alve",
       "Description": "Miasto Alve: Widok miasta w stylu pixelart z rzeczywistym cyklem dnia i nocy."
     },
     "RU": {
-      "Title": "Город Алве",
-      "Description": "Город Алве: Пиксельный вид города с циклом дня и ночи в реальном времени."
+      "Title": "Город Alve",
+      "Description": "Город Alve: Пиксельный вид города с циклом дня и ночи в реальном времени."
     },
     "TR": {
       "Title": "Alve'nin Kasabası",
       "Description": "Alve'nin Kasabası: Gerçek zamanlı gün-gece döngüsüne sahip piksel sanat şehir manzarası."
     },
     "ZH": {
-      "Title": "阿尔夫的城镇",
-      "Description": "阿尔夫的城镇：具有实时昼夜循环的像素艺术城市风景。"
+      "Title": "Alve的城镇",
+      "Description": "Alve的城镇镇：具有实时昼夜循环的像素艺术城市风景。"
     }
   }
 }

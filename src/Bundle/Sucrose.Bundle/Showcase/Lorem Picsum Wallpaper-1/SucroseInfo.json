@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.5",
+  "Version": "1.0.0.6",
   "Title": "Lorem Picsum Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -26,7 +26,7 @@
       "Description": "Ce thème affiche des images aléatoires de haute qualité de Lorem Picsum comme fond d'écran."
     },
     "HI": {
-      "Title": "लोरेम पिक्सम वॉलपेपर",
+      "Title": "Lorem Picsum वॉलपेपर",
       "Description": "यह थीम Lorem Picsum से उच्च गुणवत्ता वाली यादृच्छिक छवियों को आपके वॉलपेपर के रूप में प्रदर्शित करती है।"
     },
     "PL": {
