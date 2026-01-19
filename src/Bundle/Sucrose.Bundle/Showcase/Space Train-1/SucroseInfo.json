@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.5",
+  "Version": "1.0.0.6",
   "Title": "Space Train",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -25,13 +25,25 @@
       "Title": "Train Spatial",
       "Description": "Train Spatial - 12 heures - 4K Ultra HD 60fps"
     },
+    "HI": {
+      "Title": "स्पेस ट्रेन",
+      "Description": "स्पेस ट्रेन - 12 घंटे - 4K अल्ट्रा HD 60fps"
+    },
     "PL": {
       "Title": "Kosmiczny Pociąg",
       "Description": "Kosmiczny Pociąg - 12 godzin - 4K Ultra HD 60fps"
     },
+    "RU": {
+      "Title": "Космический поезд",
+      "Description": "Космический поезд - 12 часов - 4K Ultra HD 60fps"
+    },
     "TR": {
       "Title": "Uzay Treni",
       "Description": "Uzay Treni - 12 Saat - 4K Ultra HD 60fps"
+    },
+    "ZH": {
+      "Title": "太空列车",
+      "Description": "太空列车 - 12小时 - 4K超高清60帧"
     }
   }
 }

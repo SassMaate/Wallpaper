@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Rainy",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -28,13 +28,25 @@
       "Title": "Pluvieux",
       "Description": "Particules de pluie personnalisables."
     },
+    "HI": {
+      "Title": "बारिश",
+      "Description": "अनुकूलन योग्य बारिश के कण।"
+    },
     "PL": {
       "Title": "Deszczowy",
       "Description": "Konfigurowalne cząsteczki deszczu."
     },
+    "RU": {
+      "Title": "Дождливый",
+      "Description": "Настраиваемые частицы дождя."
+    },
     "TR": {
       "Title": "Yağmurlu",
       "Description": "Özelleştirilebilir yağmur parçacıkları."
+    },
+    "ZH": {
+      "Title": "下雨天",
+      "Description": "可自定义的雨滴粒子。"
     }
   }
 }

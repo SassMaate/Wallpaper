@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Simple System",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -29,13 +29,25 @@
       "Title": "Système Simple",
       "Description": "Fond d'écran minimaliste qui affiche les mesures matérielles sous forme de graphique."
     },
+    "HI": {
+      "Title": "सिंपल सिस्टम",
+      "Description": "न्यूनतम वॉलपेपर जो ग्राफ में हार्डवेयर रीडिंग दिखाता है।"
+    },
     "PL": {
       "Title": "Prosty System",
       "Description": "Minimalistyczna tapeta pokazująca odczyty sprzętowe na wykresie."
     },
+    "RU": {
+      "Title": "Простая система",
+      "Description": "Минималистичные обои, показывающие показатели оборудования в виде графика."
+    },
     "TR": {
       "Title": "Basit Sistem",
       "Description": "Donanım okumalarını grafik olarak gösteren minimalist duvar kağıdı."
+    },
+    "ZH": {
+      "Title": "简约系统",
+      "Description": "以图表形式显示硬件读数的极简壁纸。"
     }
   }
 }

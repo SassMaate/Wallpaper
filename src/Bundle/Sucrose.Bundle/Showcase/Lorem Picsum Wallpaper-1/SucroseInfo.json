@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.4",
+  "Version": "1.0.0.5",
   "Title": "Lorem Picsum Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -25,13 +25,25 @@
       "Title": "Fond d'écran Lorem Picsum",
       "Description": "Ce thème affiche des images aléatoires de haute qualité de Lorem Picsum comme fond d'écran."
     },
+    "HI": {
+      "Title": "लोरेम पिक्सम वॉलपेपर",
+      "Description": "यह थीम Lorem Picsum से उच्च गुणवत्ता वाली यादृच्छिक छवियों को आपके वॉलपेपर के रूप में प्रदर्शित करती है।"
+    },
     "PL": {
       "Title": "Tapeta Lorem Picsum",
       "Description": "Ten motyw wyświetla losowe, wysokiej jakości obrazy z Lorem Picsum jako tapetę."
     },
+    "RU": {
+      "Title": "Обои Lorem Picsum",
+      "Description": "Эта тема отображает случайные высококачественные изображения из Lorem Picsum в качестве обоев."
+    },
     "TR": {
       "Title": "Lorem Picsum Duvar Kağıdı",
       "Description": "Bu tema, Lorem Picsum’dan rastgele yüksek kaliteli görselleri duvar kağıdı olarak gösterir."
+    },
+    "ZH": {
+      "Title": "Lorem Picsum壁纸",
+      "Description": "此主题将Lorem Picsum的随机高质量图像显示为您的壁纸。"
     }
   }
 }

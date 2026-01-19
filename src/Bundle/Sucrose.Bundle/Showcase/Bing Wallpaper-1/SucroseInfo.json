@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Bing Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -25,13 +25,25 @@
       "Title": "Fond d'écran Bing",
       "Description": "Vous pouvez l'utiliser pour commencer chaque journée avec un beau fond d'écran. Dans ce thème, vous pouvez voir le fond d'écran quotidien de Bing."
     },
+    "HI": {
+      "Title": "बिंग वॉलपेपर",
+      "Description": "आप इसका उपयोग हर दिन एक सुंदर वॉलपेपर के साथ अभिवादन करने के लिए कर सकते हैं। इस थीम में, आप बिंग की दैनिक वॉलपेपर देख सकते हैं।"
+    },
     "PL": {
       "Title": "Tapeta Bing",
       "Description": "Możesz jej używać, aby każdego dnia witać się z piękną tapetą. W tym motywie możesz zobaczyć codzienną tapetę Bing."
     },
+    "RU": {
+      "Title": "Обои Bing",
+      "Description": "Вы можете использовать его, чтобы встречать каждый день красивыми обоями. В этой теме вы можете просматривать ежедневные обои Bing."
+    },
     "TR": {
       "Title": "Bing Duvar Kağıdı",
       "Description": "Bunu her günü güzel bir duvar kağıdı ile karşılamak için kullanabilirsin. Bu temada Bing'in günlük duvar kağıdını görüntüleyebilirsin."
+    },
+    "ZH": {
+      "Title": "必应壁纸",
+      "Description": "你可以用它每天迎接一张美丽的壁纸。在这个主题中，你可以查看必应的每日壁纸。"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Music Tunnel",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -27,13 +27,25 @@
       "Title": "Tunnel Musical",
       "Description": "Tunnel musical infini et envoûtant."
     },
+    "HI": {
+      "Title": "म्यूजिक टनल",
+      "Description": "मंत्रमुग्ध करने वाली अनंत संगीत सुरंग।"
+    },
     "PL": {
       "Title": "Tunel Muzyczny",
       "Description": "Hipnotyzujący, nieskończony tunel muzyczny."
     },
+    "RU": {
+      "Title": "Музыкальный туннель",
+      "Description": "Завораживающий бесконечный музыкальный туннель."
+    },
     "TR": {
       "Title": "Müzik Tüneli",
       "Description": "Büyüleyici sonsuz müzik tüneli."
+    },
+    "ZH": {
+      "Title": "音乐隧道",
+      "Description": "令人着迷的无尽音乐隧道。"
     }
   }
 }

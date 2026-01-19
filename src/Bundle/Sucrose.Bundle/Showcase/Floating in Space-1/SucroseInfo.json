@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Floating in Space",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -25,13 +25,25 @@
       "Title": "Flottant dans l'espace",
       "Description": "Flottant dans l'espace - 12 heures - 4K Ultra HD 60FPS"
     },
+    "HI": {
+      "Title": "अंतरिक्ष में तैरना",
+      "Description": "अंतरिक्ष में तैरना - 12 घंटे - 4K अल्ट्रा HD 60FPS"
+    },
     "PL": {
       "Title": "Unosząc się w kosmosie",
       "Description": "Unosząc się w kosmosie - 12 godzin - 4K Ultra HD 60FPS"
     },
+    "RU": {
+      "Title": "Плывущий в космосе",
+      "Description": "Плывущий в космосе - 12 часов - 4K Ultra HD 60FPS"
+    },
     "TR": {
       "Title": "Uzayda Süzülmek",
       "Description": "Uzayda Süzülmek - 12 Saat - 4K Ultra HD 60FPS"
+    },
+    "ZH": {
+      "Title": "漂浮在太空中",
+      "Description": "漂浮在太空中 - 12小时 - 4K超高清60帧"
     }
   }
 }

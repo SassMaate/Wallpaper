@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Fluid Simulation",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -27,13 +27,25 @@
       "Title": "Simulation de Fluide",
       "Description": "Simulation de fluides avec WebGL, réagit à l'audio du système et au curseur."
     },
+    "HI": {
+      "Title": "तरल सिमुलेशन",
+      "Description": "WebGL का उपयोग करके तरल सिमुलेशन, सिस्टम ऑडियो और कर्सर के साथ प्रतिक्रिया करता है।"
+    },
     "PL": {
       "Title": "Symulacja Cieczy",
       "Description": "Symulacja cieczy przy użyciu WebGL, reaguje na dźwięk systemowy i kursor."
     },
+    "RU": {
+      "Title": "Симуляция жидкости",
+      "Description": "Симуляция жидкости с использованием WebGL, реагирует на системный звук и курсор."
+    },
     "TR": {
       "Title": "Sıvı Simülasyonu",
       "Description": "WebGL kullanarak sıvı simülasyonu, sistem sesi ve imleç ile etkileşir."
+    },
+    "ZH": {
+      "Title": "流体模拟",
+      "Description": "使用WebGL的流体模拟，可与系统音频和光标交互。"
     }
   }
 }

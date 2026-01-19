@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Periodic Table",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -27,13 +27,25 @@
       "Title": "Tableau Périodique",
       "Description": "Tableau périodique interactif des éléments."
     },
+    "HI": {
+      "Title": "आवर्त सारणी",
+      "Description": "तत्वों की इंटरैक्टिव आवर्त सारणी।"
+    },
     "PL": {
       "Title": "Układ Okresowy",
       "Description": "Interaktywna tabela okresowa pierwiastków."
     },
+    "RU": {
+      "Title": "Периодическая таблица",
+      "Description": "Интерактивная периодическая таблица элементов."
+    },
     "TR": {
       "Title": "Periyodik Tablo",
       "Description": "Etkileşimli elementler periyodik tablosu."
+    },
+    "ZH": {
+      "Title": "元素周期表",
+      "Description": "交互式元素周期表。"
     }
   }
 }

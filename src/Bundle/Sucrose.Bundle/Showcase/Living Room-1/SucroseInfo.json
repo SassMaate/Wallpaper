@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Living Room",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -27,13 +27,25 @@
       "Title": "Salon",
       "Description": "Un salon avec musique, visualiseur et plus encore !"
     },
+    "HI": {
+      "Title": "लिविंग रूम",
+      "Description": "संगीत, विज़ुअलाइज़र और बहुत कुछ के साथ एक लिविंग रूम!"
+    },
     "PL": {
       "Title": "Salon",
       "Description": "Salon z muzyką, wizualizerem i nie tylko!"
     },
+    "RU": {
+      "Title": "Гостиная",
+      "Description": "Гостиная с музыкой, визуализатором и многим другим!"
+    },
     "TR": {
       "Title": "Oturma Odası",
       "Description": "Müzik, görselleştirici ve daha fazlasıyla bir oturma odası!"
+    },
+    "ZH": {
+      "Title": "客厅",
+      "Description": "一个拥有音乐、可视化器等功能的客厅！"
     }
   }
 }

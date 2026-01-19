@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.4",
+  "Version": "1.0.0.5",
   "Title": "Sky Series",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -29,13 +29,25 @@
       "Title": "Série Céleste",
       "Description": "Laissez-vous dériver dans la paisible 'Série Céleste', où une horloge réaliste se synchronise avec les teintes changeantes du ciel du jour à la nuit. Les étoiles scintillent tandis que les nuages du coucher du soleil s'effacent dans le crépuscule, créant un havre de paix sur votre écran."
     },
+    "HI": {
+      "Title": "स्काई सीरीज़",
+      "Description": "शांत 'स्काई सीरीज़' में तैरें जहां एक यथार्थवादी घड़ी दिन से रात तक आकाश के बदलते रंगों के साथ सिंक होती है। सूर्यास्त के बादल गोधूलि में घुलते हुए तारे टिमटिमाते हैं, आपकी स्क्रीन पर एक शांतिपूर्ण माहौल बनाते हैं।"
+    },
     "PL": {
       "Title": "Seria Niebo",
       "Description": "Unos się przez spokojną 'Serię Niebo', w której realistyczny zegar synchronizuje się ze zmieniającymi się barwami nieba od dnia do nocy. Gwiazdy migoczą, gdy chmury zachodu słońca znikają w zmierzchu, tworząc spokojne schronienie na ekranie."
     },
+    "RU": {
+      "Title": "Небесная серия",
+      "Description": "Плывите сквозь спокойную 'Небесную серию', где реалистичные часы синхронизируются с меняющимися оттенками неба от дня к ночи. Звезды мерцают, пока облака заката растворяются в сумерках, создавая мирное убежище на вашем экране."
+    },
     "TR": {
       "Title": "Gökyüzü Serisi",
       "Description": "Gerçekçi bir saatin gün boyu gökyüzünün değişen tonlarıyla senkronize olduğu huzurlu 'Gökyüzü Serisi'nde süzülün. Güneş batarken bulutlar alaca karanlığa karışırken yıldızlar parıldar, ekranınızda huzurlu bir atmosfer oluşturur."
+    },
+    "ZH": {
+      "Title": "天空系列",
+      "Description": "漂浮在宁静的'天空系列'中，逼真的时钟与天空从白天到黑夜变化的色调同步。星星闪烁，夕阳的云彩融入暮色，在您的屏幕上营造宁静的氛围。"
     }
   }
 }
