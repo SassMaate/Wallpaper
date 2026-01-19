@@ -40,7 +40,7 @@ namespace Sucrose.Portal.Views.Controls
     {
         private readonly SPETL Loader = new();
 
-        public ThemeCreate(ContentPresenter? contentPresenter) : base(contentPresenter)
+        public ThemeCreate(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
             InitializeComponent();
         }

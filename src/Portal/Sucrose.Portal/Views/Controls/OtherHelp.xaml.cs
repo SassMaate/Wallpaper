@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using Wpf.Ui.Controls;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
@@ -15,7 +14,7 @@ namespace Sucrose.Portal.Views.Controls
     /// </summary>
     public partial class OtherHelp : ContentDialog, IDisposable
     {
-        public OtherHelp(ContentPresenter? contentPresenter) : base(contentPresenter)
+        public OtherHelp(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
             InitializeComponent();
         }

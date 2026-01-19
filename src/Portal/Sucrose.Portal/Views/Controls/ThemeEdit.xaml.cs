@@ -35,7 +35,7 @@ namespace Sucrose.Portal.Views.Controls
         private SSTHI InfoReserve = new();
         internal SSTHI Info = new();
 
-        public ThemeEdit() : base(SPMI.ContentDialogService.GetDialogHost())
+        public ThemeEdit() : base(SPMI.ContentDialogService.GetDialogHostEx())
         {
             InitializeComponent();
         }

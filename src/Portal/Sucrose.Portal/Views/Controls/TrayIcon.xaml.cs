@@ -14,7 +14,7 @@ namespace Sucrose.Portal.Views.Controls
     {
         private bool IsClose { get; set; } = true;
 
-        public TrayIcon() : base(SPMI.ContentDialogService.GetDialogHost())
+        public TrayIcon() : base(SPMI.ContentDialogService.GetDialogHostEx())
         {
             InitializeComponent();
 

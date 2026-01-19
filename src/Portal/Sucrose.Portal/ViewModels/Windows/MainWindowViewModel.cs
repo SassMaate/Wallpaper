@@ -223,7 +223,7 @@ namespace Sucrose.Portal.ViewModels.Windows
         [RelayCommand]
         private async Task OnOtherHelp()
         {
-            SPVCOH OtherHelp = new(_ContentDialogService.GetDialogHost());
+            SPVCOH OtherHelp = new(_ContentDialogService.GetDialogHostEx());
 
             await OtherHelp.ShowAsync();
 
@@ -233,7 +233,7 @@ namespace Sucrose.Portal.ViewModels.Windows
         [RelayCommand]
         private async Task OnOtherAbout()
         {
-            SPVCOA OtherAbout = new(_ContentDialogService.GetDialogHost());
+            SPVCOA OtherAbout = new(_ContentDialogService.GetDialogHostEx());
 
             await OtherAbout.ShowAsync();
 
@@ -243,7 +243,7 @@ namespace Sucrose.Portal.ViewModels.Windows
         [RelayCommand]
         private async Task OnCreateWallpaper()
         {
-            SPVCTC ThemeCreate = new(_ContentDialogService.GetDialogHost());
+            SPVCTC ThemeCreate = new(_ContentDialogService.GetDialogHostEx());
 
             ContentDialogResult Result = await ThemeCreate.ShowAsync();
 
@@ -273,7 +273,7 @@ namespace Sucrose.Portal.ViewModels.Windows
         [RelayCommand]
         private async Task OnWallpaperCycling()
         {
-            SPVCWC WallpaperCycling = new(_ContentDialogService.GetDialogHost());
+            SPVCWC WallpaperCycling = new(_ContentDialogService.GetDialogHostEx());
 
             await WallpaperCycling.ShowAsync();
 
@@ -283,7 +283,7 @@ namespace Sucrose.Portal.ViewModels.Windows
         [RelayCommand]
         private async Task OnDisplayPreferences()
         {
-            SPVCDP DisplayPreferences = new(_ContentDialogService.GetDialogHost());
+            SPVCDP DisplayPreferences = new(_ContentDialogService.GetDialogHostEx());
 
             await DisplayPreferences.ShowAsync();
 

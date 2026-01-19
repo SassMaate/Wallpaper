@@ -15,7 +15,7 @@ namespace Sucrose.Portal.Views.Controls
     /// </summary>
     public partial class WallpaperCycling : ContentDialog, IDisposable
     {
-        public WallpaperCycling(ContentPresenter? contentPresenter) : base(contentPresenter)
+        public WallpaperCycling(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
             InitializeComponent();
         }

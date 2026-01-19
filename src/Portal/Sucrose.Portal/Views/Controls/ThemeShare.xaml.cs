@@ -50,7 +50,7 @@ namespace Sucrose.Portal.Views.Controls
         internal string Theme = string.Empty;
         internal SSTHI Info = new();
 
-        public ThemeShare() : base(SPMI.ContentDialogService.GetDialogHost())
+        public ThemeShare() : base(SPMI.ContentDialogService.GetDialogHostEx())
         {
             InitializeComponent();
         }

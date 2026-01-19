@@ -19,7 +19,7 @@ namespace Sucrose.Shared.Watchdog.Extension
         {
             return;
 
-            await WatchLog(Exception, "FIRST CHANCE");
+            //await WatchLog(Exception, "FIRST CHANCE");
         }
 
         public static async Task Watch_UnobservedTaskException(Exception Exception)

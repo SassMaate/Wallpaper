@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using Wpf.Ui.Controls;
@@ -16,7 +15,7 @@ namespace Sucrose.Portal.Views.Controls
     /// </summary>
     public partial class OtherAbout : ContentDialog, IDisposable
     {
-        public OtherAbout(ContentPresenter? contentPresenter) : base(contentPresenter)
+        public OtherAbout(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
             InitializeComponent();
         }

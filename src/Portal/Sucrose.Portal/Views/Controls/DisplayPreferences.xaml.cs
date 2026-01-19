@@ -35,7 +35,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private StackPanel ExpanderCustomContent = new();
 
-        public DisplayPreferences(ContentPresenter? contentPresenter) : base(contentPresenter)
+        public DisplayPreferences(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
             InitializeComponent();
         }
