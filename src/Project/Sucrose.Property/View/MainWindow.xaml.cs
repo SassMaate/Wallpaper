@@ -103,27 +103,42 @@ namespace Sucrose.Property.View
 
         private async void MainWindow_Calculate()
         {
+            double DpiScaleX = 1.0;
+            double DpiScaleY = 1.0;
+
             double ScreenWidth = SystemParameters.PrimaryScreenWidth;
             double ScreenHeight = SystemParameters.PrimaryScreenHeight;
 
+            PresentationSource Source = PresentationSource.FromVisual(this);
+
+            if (Source?.CompositionTarget != null)
+            {
+                DpiScaleX = Source.CompositionTarget.TransformToDevice.M11;
+                DpiScaleY = Source.CompositionTarget.TransformToDevice.M22;
+            }
+
             AnchorStyles Anchor = SWHWTR.GetAnchorStyle(false);
             Rectangle TaskbarCoordinates = SWHWTR.GetCoordonates();
+
+            double TaskbarTop = TaskbarCoordinates.Top / DpiScaleY;
+            double TaskbarLeft = TaskbarCoordinates.Left / DpiScaleX;
+            double TaskbarHeight = TaskbarCoordinates.Height / DpiScaleY;
 
             try
             {
                 switch (Anchor)
                 {
                     case AnchorStyles.Top:
-                        MaxHeight = ScreenHeight - TaskbarCoordinates.Height - 20;
+                        MaxHeight = ScreenHeight - TaskbarHeight - 20;
 
                         Left = ScreenWidth - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                     case AnchorStyles.Bottom:
-                        MaxHeight = ScreenHeight - TaskbarCoordinates.Height - 20;
+                        MaxHeight = ScreenHeight - TaskbarHeight - 20;
 
                         Left = ScreenWidth - Width - 10;
-                        Top = TaskbarCoordinates.Top - Height - 10;
+                        Top = TaskbarTop - Height - 10;
                         break;
                     case AnchorStyles.Left:
                         MaxHeight = ScreenHeight - 20;
@@ -134,7 +149,7 @@ namespace Sucrose.Property.View
                     case AnchorStyles.Right:
                         MaxHeight = ScreenHeight - 20;
 
-                        Left = TaskbarCoordinates.Left - Width - 10;
+                        Left = TaskbarLeft - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                     default:
@@ -150,6 +165,8 @@ namespace Sucrose.Property.View
                 SMMI.PropertyLogManager.Log(SELLT.Debug, $"Calculate: {JsonConvert.SerializeObject(new Hashtable()
                 {
                     { "Anchor", $"{Anchor}" },
+                    { "DPI Scale X", DpiScaleX },
+                    { "DPI Scale Y", DpiScaleY },
                     { "Screen Width", ScreenWidth },
                     { "Screen Height", ScreenHeight },
                     { "Taskbar Coordinates", SWHWTR.GetCoordonates() }
