@@ -83,7 +83,7 @@ namespace Sucrose.Portal.Views.Pages.Store
                 }
             }
 
-            Categories = new(Categories.OrderBy(Menu => Menu.Content));
+            Categories = [with(Categories.OrderBy(Menu => Menu.Content))];
 
             Categories.Move(Categories.IndexOf(Categories.FirstOrDefault(Menu => Menu == AllMenu)), 0);
 

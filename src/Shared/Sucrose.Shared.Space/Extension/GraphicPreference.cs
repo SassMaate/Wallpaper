@@ -217,7 +217,7 @@ namespace Sucrose.Shared.Space.Extension
         /// </summary>
         private static Dictionary<string, string> ParseRegistryValue(string registryValue)
         {
-            Dictionary<string, string> settings = new(StringComparer.OrdinalIgnoreCase);
+            Dictionary<string, string> settings = [with(StringComparer.OrdinalIgnoreCase)];
 
             if (string.IsNullOrWhiteSpace(registryValue))
             {

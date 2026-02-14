@@ -10,7 +10,7 @@ namespace Sucrose.XamlAnimatedGif
         private BrushAnimator(Stream sourceStream, Uri sourceUri, GifDataStream metadata, RepeatBehavior repeatBehavior, bool cacheFrameDataInMemory) : base(sourceStream, sourceUri, metadata, repeatBehavior, cacheFrameDataInMemory)
         {
             Brush = new ImageBrush { ImageSource = Bitmap };
-            RepeatBehavior = _repeatBehavior;
+            RepeatBehavior = RepeatBehavior;
         }
 
         protected override RepeatBehavior GetSpecifiedRepeatBehavior()
@@ -22,13 +22,12 @@ namespace Sucrose.XamlAnimatedGif
 
         public ImageBrush Brush { get; }
 
-        private RepeatBehavior _repeatBehavior;
         public RepeatBehavior RepeatBehavior
         {
-            get => _repeatBehavior;
+            get;
             set
             {
-                _repeatBehavior = value;
+                field = value;
                 OnRepeatBehaviorChanged();
             }
         }

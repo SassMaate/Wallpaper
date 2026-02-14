@@ -1,5 +1,8 @@
 ﻿using SharpCompress.Archives;
+using SharpCompress.Archives.Zip;
 using SharpCompress.Common;
+using SharpCompress.Readers;
+using SharpCompress.Writers.Zip;
 using System.IO;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
@@ -12,17 +15,17 @@ namespace Sucrose.Shared.SevenZip.Extension
         {
             try
             {
-                using IArchive Archiver = ArchiveFactory.OpenArchive(Archive);
+                using IArchive Archiver = ArchiveFactory.OpenArchive(Archive, new ReaderOptions()
+                {
+                    ExtractFullPath = true,
+                    Overwrite = true
+                });
 
                 foreach (IArchiveEntry Entry in Archiver.Entries)
                 {
                     if (!Entry.IsDirectory)
                     {
-                        Entry.WriteToDirectory(Destination, new ExtractionOptions()
-                        {
-                            ExtractFullPath = true,
-                            Overwrite = true
-                        });
+                        Entry.WriteToDirectory(Destination);
                     }
                 }
 
@@ -43,14 +46,14 @@ namespace Sucrose.Shared.SevenZip.Extension
                     SSSHF.Delete(Destination);
                 }
 
-                using IWritableArchive Archiver = ArchiveFactory.CreateArchive(ArchiveType.SevenZip);
+                using IWritableArchive<ZipWriterOptions> Archiver = ZipArchive.CreateArchive();
 
                 foreach (string Record in Directory.GetFiles(Source))
                 {
                     Archiver.AddEntry(Path.GetFileName(Record), Record);
                 }
 
-                Archiver.SaveTo(Destination, CompressionType.LZMA);
+                Archiver.SaveTo(Destination, new ZipWriterOptions(CompressionType.LZMA));
 
                 return SSDECT.Pass;
             }
