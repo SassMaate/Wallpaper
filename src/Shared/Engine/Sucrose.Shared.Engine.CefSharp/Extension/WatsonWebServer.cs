@@ -123,6 +123,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
             return Path.GetExtension(filename).ToLowerInvariant() switch
             {
                 ".rar" => "application/x-rar-compressed",
+                ".xhtml" => "application/xhtml+xml",
                 ".js" => "application/javascript",
                 ".hdr" => "image/vnd.radiance",
                 ".tar" => "application/x-tar",
@@ -138,6 +139,7 @@ namespace Sucrose.Shared.Engine.CefSharp.Extension
                 ".webp" => "image/webp",
                 ".webm" => "video/webm",
                 ".tiff" => "image/tiff",
+                ".shtml" => "text/html",
                 ".jpeg" => "image/jpeg",
                 ".woff" => "font/woff",
                 ".txt" => "text/plain",
