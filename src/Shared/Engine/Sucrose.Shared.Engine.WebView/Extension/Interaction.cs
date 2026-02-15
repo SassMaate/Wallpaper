@@ -1,5 +1,6 @@
 ﻿using Linearstar.Windows.RawInput;
 using Linearstar.Windows.RawInput.Native;
+using System.Runtime.InteropServices;
 using System.Windows.Interop;
 using Point = System.Drawing.Point;
 using SEIT = Skylark.Enum.InputType;
@@ -73,6 +74,16 @@ namespace Sucrose.Shared.Engine.WebView.Extension
 
             Interactioner.Start();
         }
+
+        private static bool IsDeadKey(int VirtualKey)
+        {
+            uint Result = MapVirtualKeyW((uint)VirtualKey, 2); //MAPVK_VK_TO_CHAR
+
+            return (Result & 0x80000000) != 0;
+        }
+
+        [DllImport("user32.dll")]
+        private static extern uint MapVirtualKeyW(uint uCode, uint uMapType);
 
         private static void ForwardMessageMouse(int X, int Y, int Message, IntPtr wParam)
         {
@@ -199,6 +210,11 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                             }
                             break;
                         case RawInputKeyboardData Keyboard:
+                            if (IsDeadKey(Keyboard.Keyboard.VirutalKey))
+                            {
+                                break;
+                            }
+
                             if (FirstKey)
                             {
                                 FirstKey = false;
