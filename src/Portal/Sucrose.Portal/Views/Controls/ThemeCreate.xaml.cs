@@ -27,6 +27,7 @@ using SSSHA = Sucrose.Shared.Space.Helper.Access;
 using SSSHC = Sucrose.Shared.Space.Helper.Copy;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHL = Sucrose.Shared.Space.Helper.Lock;
+using SSTHF = Sucrose.Shared.Theme.Helper.Filter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -39,6 +40,10 @@ namespace Sucrose.Portal.Views.Controls
     public partial class ThemeCreate : ContentDialog, IDisposable
     {
         private readonly SPETL Loader = new();
+
+        public string InitialFilePath { get; set; }
+
+        public string InitialUrl { get; set; }
 
         public ThemeCreate(ContentDialogHost? contentDialogHost) : base(contentDialogHost)
         {
@@ -339,7 +344,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
                 else if (WebCard.Visibility == Visibility.Visible)
                 {
-                    if (Path.GetExtension($"{WebSource.Content}") != ".html")
+                    if (!SSTHF.WebExtension($"{WebSource.Content}"))
                     {
                         WebSource.BorderBrush = Brushes.Crimson;
                         FocusingControl = WebSource;
@@ -755,7 +760,7 @@ namespace Sucrose.Portal.Views.Controls
                 }
                 else if (ApplicationCard.Visibility == Visibility.Visible)
                 {
-                    if (Path.GetExtension($"{ApplicationSource.Content}") != ".exe")
+                    if (!SSTHF.AppExtension($"{ApplicationSource.Content}"))
                     {
                         ApplicationSource.BorderBrush = Brushes.Crimson;
                         FocusingControl = ApplicationSource;
@@ -917,6 +922,101 @@ namespace Sucrose.Portal.Views.Controls
             IsPrimaryButtonEnabled = true;
             IsSecondaryButtonEnabled = false;
             CloseButtonAppearance = ControlAppearance.Secondary;
+        }
+
+        private void ProcessInitialUrl()
+        {
+            if (SSTHV.IsYouTubeAll(InitialUrl))
+            {
+                YouTubeCreate_Click(null, null);
+
+                YouTubeUrl.Text = InitialUrl;
+            }
+            else if (SSTHV.IsUrl(InitialUrl))
+            {
+                UrlCreate_Click(null, null);
+
+                UrlUrl.Text = InitialUrl;
+            }
+        }
+
+        private async Task ProcessInitialFileAsync()
+        {
+            if (!File.Exists(InitialFilePath))
+            {
+                return;
+            }
+
+            if (!SSSHA.File(InitialFilePath))
+            {
+                return;
+            }
+
+            if (!SSSHL.File(InitialFilePath))
+            {
+                return;
+            }
+
+            if (SSTHF.GifExtension(InitialFilePath))
+            {
+                GifCreate_Click(null, null);
+
+                GifDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(InitialFilePath), SSDEWT.Gif);
+                GifTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(InitialFilePath));
+
+                try
+                {
+                    GifImagine.Source = await Loader.LoadAsync(InitialFilePath);
+                }
+                catch (Exception Exception)
+                {
+                    await SSWEW.Watch_CatchException(Exception);
+                }
+
+                GifDelete.Visibility = Visibility.Visible;
+                GifIcon.Visibility = Visibility.Collapsed;
+                GifText.Visibility = Visibility.Collapsed;
+                GifRectangle.Stroke = Brushes.SeaGreen;
+            }
+            else if (SSTHF.VideoExtension(InitialFilePath))
+            {
+                VideoCreate_Click(null, null);
+
+                VideoDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(InitialFilePath), SSDEWT.Video);
+                VideoTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(InitialFilePath));
+
+                try
+                {
+                    VideoImagine.Source = await Loader.LoadAsync(InitialFilePath);
+                }
+                catch (Exception Exception)
+                {
+                    await SSWEW.Watch_CatchException(Exception);
+                }
+
+                VideoDelete.Visibility = Visibility.Visible;
+                VideoIcon.Visibility = Visibility.Collapsed;
+                VideoText.Visibility = Visibility.Collapsed;
+                VideoRectangle.Stroke = Brushes.SeaGreen;
+            }
+            else if (SSTHF.WebExtension(InitialFilePath))
+            {
+                WebCreate_Click(null, null);
+
+                WebSource.Content = InitialFilePath;
+                WebSource.BorderBrush = WebThumbnail.BorderBrush;
+                WebTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(InitialFilePath));
+                WebDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(InitialFilePath), SSDEWT.Web);
+            }
+            else if (SSTHF.AppExtension(InitialFilePath))
+            {
+                ApplicationCreate_Click(null, null);
+
+                ApplicationSource.Content = InitialFilePath;
+                ApplicationSource.BorderBrush = ApplicationThumbnail.BorderBrush;
+                ApplicationTitle.Text = SPETC.GetTitle(Path.GetFileNameWithoutExtension(InitialFilePath));
+                ApplicationDescription.Text = SPETC.GetDescription(Path.GetFileNameWithoutExtension(InitialFilePath), SSDEWT.Application);
+            }
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
@@ -1196,7 +1296,7 @@ namespace Sucrose.Portal.Views.Controls
             YouTubeContact.Text = SPETC.GetContact();
         }
 
-        private void ContentDialog_Loaded(object sender, RoutedEventArgs e)
+        private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
             GifExpander.TitleText = SRER.GetValue("Portal", "ThemeCreate", "Gif");
             GifExpander.DescriptionText = SRER.GetValue("Portal", "ThemeCreate", "Gif", "Description");
@@ -1215,6 +1315,15 @@ namespace Sucrose.Portal.Views.Controls
 
             ApplicationExpander.TitleText = SRER.GetValue("Portal", "ThemeCreate", "Application");
             ApplicationExpander.DescriptionText = SRER.GetValue("Portal", "ThemeCreate", "Application", "Description");
+
+            if (!string.IsNullOrEmpty(InitialFilePath))
+            {
+                await ProcessInitialFileAsync();
+            }
+            else if (!string.IsNullOrEmpty(InitialUrl))
+            {
+                ProcessInitialUrl();
+            }
         }
 
         private void WebSourceClear_Click(object sender, RoutedEventArgs e)

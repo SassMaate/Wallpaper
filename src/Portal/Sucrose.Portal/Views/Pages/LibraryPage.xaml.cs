@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Windows;
 using Wpf.Ui.Abstractions.Controls;
+using Wpf.Ui.Controls;
 using SHG = Skylark.Helper.Generator;
 using SMMCW = Sucrose.Memory.Manage.Constant.Warehouse;
 using SMMI = Sucrose.Manager.Manage.Internal;
@@ -12,6 +13,7 @@ using SMMRP = Sucrose.Memory.Manage.Readonly.Path;
 using SMMVA = Sucrose.Memory.Manage.Valuable.App;
 using SMMW = Sucrose.Manager.Manage.Warehouse;
 using SPMI = Sucrose.Portal.Manage.Internal;
+using SPVCTC = Sucrose.Portal.Views.Controls.ThemeCreate;
 using SPVCTI = Sucrose.Portal.Views.Controls.ThemeImport;
 using SPVMPLVM = Sucrose.Portal.ViewModels.Pages.LibraryViewModel;
 using SPVPLELP = Sucrose.Portal.Views.Pages.Library.EmptyLibraryPage;
@@ -23,6 +25,7 @@ using SSSHC = Sucrose.Shared.Space.Helper.Copy;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHL = Sucrose.Shared.Space.Helper.Lock;
 using SSSHS = Sucrose.Shared.Space.Helper.Sort;
+using SSTHF = Sucrose.Shared.Theme.Helper.Filter;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -220,9 +223,52 @@ namespace Sucrose.Portal.Views.Pages
             }
         }
 
+        private async Task OpenThemeCreateWithUrl(string Url)
+        {
+            SPVCTC ThemeCreate = new(SPMI.ContentDialogService.GetDialogHostEx())
+            {
+                InitialUrl = Url
+            };
+
+            ContentDialogResult Result = await ThemeCreate.ShowAsync();
+
+            if (Result == ContentDialogResult.Primary)
+            {
+                Dispose();
+
+                InitializeThemes();
+
+                await Start(true);
+            }
+
+            ThemeCreate.Dispose();
+        }
+
+        private static string ParseUrlShortcut(string FilePath)
+        {
+            try
+            {
+                string[] Lines = File.ReadAllLines(FilePath);
+
+                foreach (string Line in Lines)
+                {
+                    if (Line.StartsWith("URL=", StringComparison.OrdinalIgnoreCase))
+                    {
+                        return Line[4..].Trim();
+                    }
+                }
+            }
+            catch
+            {
+                //
+            }
+
+            return null;
+        }
+
         private void GridLibrary_DragOver(object sender, DragEventArgs e)
         {
-            if (!e.Data.GetDataPresent(DataFormats.FileDrop) || e.AllowedEffects.HasFlag(DragDropEffects.Copy) == false)
+            if ((!e.Data.GetDataPresent(DataFormats.FileDrop) && !e.Data.GetDataPresent(DataFormats.Text)) || e.AllowedEffects.HasFlag(DragDropEffects.Copy) == false)
             {
                 e.Effects = DragDropEffects.None;
             }
@@ -244,11 +290,50 @@ namespace Sucrose.Portal.Views.Pages
 
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
+                string[] Files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+                if (Files != null && Files.Length == 1 && !Path.GetExtension(Files[0]).Equals(".zip", StringComparison.OrdinalIgnoreCase))
+                {
+                    string FilePath = Files[0];
+
+                    if (Path.GetExtension(FilePath).Equals(".url", StringComparison.OrdinalIgnoreCase))
+                    {
+                        string Url = ParseUrlShortcut(FilePath);
+
+                        if (!string.IsNullOrEmpty(Url))
+                        {
+                            await OpenThemeCreateWithUrl(Url);
+
+                            return;
+                        }
+                    }
+                    else if (SSTHF.GifExtension(FilePath) || SSTHF.VideoExtension(FilePath) || SSTHF.WebExtension(FilePath) || SSTHF.AppExtension(FilePath))
+                    {
+                        SPVCTC ThemeCreate = new(SPMI.ContentDialogService.GetDialogHostEx())
+                        {
+                            InitialFilePath = FilePath
+                        };
+
+                        ContentDialogResult Result = await ThemeCreate.ShowAsync();
+
+                        if (Result == ContentDialogResult.Primary)
+                        {
+                            Dispose();
+
+                            InitializeThemes();
+
+                            await Start(true);
+                        }
+
+                        ThemeCreate.Dispose();
+
+                        return;
+                    }
+                }
+
                 bool State = false;
                 List<SSDECT> Types = [];
                 List<string> Messages = [];
-
-                string[] Files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
                 if (Files != null && Files.Any())
                 {
@@ -314,6 +399,15 @@ namespace Sucrose.Portal.Views.Pages
                     InitializeThemes();
 
                     await Start(true);
+                }
+            }
+            else if (e.Data.GetDataPresent(DataFormats.Text))
+            {
+                string Text = (string)e.Data.GetData(DataFormats.Text);
+
+                if (!string.IsNullOrEmpty(Text) && SSTHV.IsUrl(Text.Trim()))
+                {
+                    await OpenThemeCreateWithUrl(Text.Trim());
                 }
             }
         }
