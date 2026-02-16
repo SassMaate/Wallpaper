@@ -11,7 +11,7 @@
         <PackageVersion Include="Vortice.DXGI" Version="3.8.2" />
         <PackageVersion Include="HandyControls" Version="3.6.0" />
         <PackageVersion Include="RawInput.Sharp" Version="0.1.3" />
-        <PackageVersion Include="SharpCompress" Version="0.46.0" />
+        <PackageVersion Include="SharpCompress" Version="0.46.1" />
         <PackageVersion Include="Skylark.Wing" Version="3.1.9.7" />
         <PackageVersion Include="TaskScheduler" Version="2.12.2" />
         <PackageVersion Include="XamlFlair.WPF" Version="1.2.13" />
@@ -25,6 +25,6 @@
         <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="144.0.120" />
         <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.2.0" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
-        <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.3796-prerelease" />
+        <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.3848-prerelease" />
     </ItemGroup>
 </Project>
