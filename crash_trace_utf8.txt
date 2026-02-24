@@ -1,0 +1,72 @@
+﻿[14:48:07] ~ [SucroseWatchdog Thread-8216/Error] ~ [CATCH EXCEPTION START]
+[14:48:07] ~ [SucroseWatchdog Thread-8216/Error] ~ [Application crashed: An error occurred trying to start process 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\Sucrose.Commandog\Sucrose.Commandog.exe' with working directory 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\net10.0-windows'. The system cannot find the file specified..]
+[14:48:07] ~ [SucroseWatchdog Thread-8216/Error] ~ [Inner exception: .]
+[14:48:07] ~ [SucroseWatchdog Thread-8216/Error] ~ [Stack trace:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style, Boolean Window) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 78
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 56
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 46
+   at Sucrose.Shared.Live.Helper.Run.Start() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Live\Helper\Run.cs:line 42
+   at Sucrose.Portal.Views.Controls.StoreCard.DownloadTheme() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\StoreCard.xaml.cs:line 195.]
+[14:48:07] ~ [SucroseWatchdog Thread-8216/Error] ~ [CATCH EXCEPTION FINISH]
+[14:48:11] ~ [SucroseWatchdog Thread-8216/Error] ~ [DISPATCHER UNHANDLED EXCEPTION START]
+[14:48:11] ~ [SucroseWatchdog Thread-8216/Error] ~ [Application crashed: An error occurred trying to start process 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\Sucrose.Commandog\Sucrose.Commandog.exe' with working directory 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\net10.0-windows'. The system cannot find the file specified..]
+[14:48:11] ~ [SucroseWatchdog Thread-8216/Error] ~ [Inner exception: .]
+[14:48:11] ~ [SucroseWatchdog Thread-8216/Error] ~ [Stack trace:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style, Boolean Window) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 78
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 56
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 46
+   at Sucrose.Shared.Live.Helper.Run.Start() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Live\Helper\Run.cs:line 42
+   at Sucrose.Portal.Views.Controls.LibraryCard.Use() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\LibraryCard.xaml.cs:line 74
+   at Sucrose.Portal.Views.Controls.LibraryCard.LibraryCard_MouseLeftButtonUp(Object sender, MouseButtonEventArgs e) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\LibraryCard.xaml.cs:line 528
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler).]
+[14:48:11] ~ [SucroseWatchdog Thread-8216/Error] ~ [DISPATCHER UNHANDLED EXCEPTION FINISH]
+[14:49:02] ~ [SucroseWatchdog Thread-7123/Error] ~ [DISPATCHER UNHANDLED EXCEPTION START]
+[14:49:02] ~ [SucroseWatchdog Thread-7123/Error] ~ [Application crashed: An error occurred trying to start process 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\Sucrose.Commandog\Sucrose.Commandog.exe' with working directory 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\net10.0-windows'. The system cannot find the file specified..]
+[14:49:02] ~ [SucroseWatchdog Thread-7123/Error] ~ [Inner exception: .]
+[14:49:02] ~ [SucroseWatchdog Thread-7123/Error] ~ [Stack trace:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style, Boolean Window) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 78
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 56
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 46
+   at Sucrose.Shared.Live.Helper.Run.Start() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Live\Helper\Run.cs:line 42
+   at Sucrose.Portal.Views.Controls.LibraryCard.Use() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\LibraryCard.xaml.cs:line 74
+   at Sucrose.Portal.Views.Controls.LibraryCard.LibraryCard_MouseLeftButtonUp(Object sender, MouseButtonEventArgs e) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\LibraryCard.xaml.cs:line 528
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler).]
+[14:49:02] ~ [SucroseWatchdog Thread-7123/Error] ~ [DISPATCHER UNHANDLED EXCEPTION FINISH]
+[14:49:10] ~ [SucroseWatchdog Thread-6353/Error] ~ [DISPATCHER UNHANDLED EXCEPTION START]
+[14:49:10] ~ [SucroseWatchdog Thread-6353/Error] ~ [Application crashed: An error occurred trying to start process 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\Sucrose.Commandog\Sucrose.Commandog.exe' with working directory 'E:\REPOSITORIOS PROYECTOS\Sucrose\src\Sucrose\Debug\net10.0-windows'. The system cannot find the file specified..]
+[14:49:10] ~ [SucroseWatchdog Thread-6353/Error] ~ [Inner exception: .]
+[14:49:10] ~ [SucroseWatchdog Thread-6353/Error] ~ [Stack trace:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style, Boolean Window) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 78
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments, ProcessWindowStyle Style) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 56
+   at Sucrose.Shared.Space.Helper.Processor.Run(String Application, String Arguments) in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Space\Helper\Processor.cs:line 46
+   at Sucrose.Shared.Live.Helper.Run.Start() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Shared\Sucrose.Shared.Live\Helper\Run.cs:line 42
+   at Sucrose.Portal.Views.Controls.DisplayPreferences.Restart() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\DisplayPreferences.xaml.cs:line 52
+   at Sucrose.Portal.Views.Controls.DisplayPreferences.DuplicateChecked() in E:\REPOSITORIOS PROYECTOS\Sucrose\src\Portal\Sucrose.Portal\Views\Controls\DisplayPreferences.xaml.cs:line 192
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__124_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler).]
+[14:49:10] ~ [SucroseWatchdog Thread-6353/Error] ~ [DISPATCHER UNHANDLED EXCEPTION FINISH]

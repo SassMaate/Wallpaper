@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using SEDST = Skylark.Enum.DisplayScreenType;
 using SHV = Skylark.Helper.Versionly;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SMME = Sucrose.Manager.Manage.Engine;
@@ -8,16 +9,41 @@ using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDEWT = Sucrose.Shared.Dependency.Enum.WallpaperType;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
+using SSEHDC = Sucrose.Shared.Space.Helper.DuplicateCounter;
 using SSSHB = Sucrose.Shared.Space.Helper.Background;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 using SWUD = Skylark.Wing.Utility.Desktop;
+using SWUS = Skylark.Wing.Utility.Screene;
 
 namespace Sucrose.Shared.Live.Helper
 {
     internal static class Run
     {
+        private static void LaunchLiveEngine(SSDECT CommandType, string EnginePath)
+        {
+            string command = $"{SMMRG.StartCommand}{CommandType}{SMMRG.ValueSeparator}{EnginePath}";
+
+            if (SMME.DisplayScreenType == SEDST.SameDuplicate)
+            {
+                SWUS.Initialize();
+
+                int screenCount = SWUS.Screens.Count();
+
+                SSEHDC.Reset();
+
+                for (int i = 0; i < screenCount; i++)
+                {
+                    SSSHP.Run(SSSMI.Commandog, command);
+                }
+            }
+            else
+            {
+                SSSHP.Run(SSSMI.Commandog, command);
+            }
+        }
+
         public static void Start()
         {
             if ((!SMMB.ClosePerformance && !SMMB.PausePerformance) || !SSSHP.Work(SSSMI.Backgroundog))
@@ -45,19 +71,19 @@ namespace Sucrose.Shared.Live.Helper
                         switch (Info.Type)
                         {
                             case SSDEWT.Gif:
-                                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.Gif]}");
+                                LaunchLiveEngine(SSDECT.Live, SSSMI.EngineLive[SSDMME.Gif]);
                                 break;
                             case SSDEWT.Url:
-                                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.Url]}");
+                                LaunchLiveEngine(SSDECT.Live, SSSMI.EngineLive[SSDMME.Url]);
                                 break;
                             case SSDEWT.Web:
-                                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.Web]}");
+                                LaunchLiveEngine(SSDECT.Live, SSSMI.EngineLive[SSDMME.Web]);
                                 break;
                             case SSDEWT.Video:
-                                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.Video]}");
+                                LaunchLiveEngine(SSDECT.Live, SSSMI.EngineLive[SSDMME.Video]);
                                 break;
                             case SSDEWT.YouTube:
-                                SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.YouTube]}");
+                                LaunchLiveEngine(SSDECT.Live, SSSMI.EngineLive[SSDMME.YouTube]);
                                 break;
                             case SSDEWT.Application:
                                 SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Live}{SMMRG.ValueSeparator}{SSSMI.EngineLive[SSDMME.Application]}");

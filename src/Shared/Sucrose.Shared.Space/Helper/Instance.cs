@@ -1,5 +1,8 @@
-﻿using SSSHP = Sucrose.Shared.Space.Helper.Processor;
+﻿using SEDST = Skylark.Enum.DisplayScreenType;
+using SMME = Sucrose.Manager.Manage.Engine;
+using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SWUSI = Skylark.Wing.Utility.SingleInstance;
+using SWUS = Skylark.Wing.Utility.Screene;
 
 namespace Sucrose.Shared.Space.Helper
 {
@@ -11,9 +14,24 @@ namespace Sucrose.Shared.Space.Helper
         {
             try
             {
-                _Mutex = new Mutex(true, Name, out bool createdNew);
+                // In SameDuplicate mode, allow multiple Live engine instances
+                if (SMME.DisplayScreenType == SEDST.SameDuplicate)
+                {
+                    SWUS.Initialize();
 
-                return createdNew && SSSHP.WorkCount(Application) <= 1;
+                    int screenCount = SWUS.Screens.Count();
+
+                    // Use a unique Mutex name per instance so each process can acquire its own
+                    string uniqueName = $"{Name}-{Guid.NewGuid()}";
+
+                    _Mutex = new Mutex(true, uniqueName, out bool createdNew);
+
+                    return createdNew && SSSHP.WorkCount(Application) <= screenCount;
+                }
+
+                _Mutex = new Mutex(true, Name, out bool created);
+
+                return created && SSSHP.WorkCount(Application) <= 1;
             }
             catch
             {

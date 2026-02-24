@@ -5,6 +5,7 @@ using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDSH = Sucrose.Shared.Dependency.Struct.Handle;
 using SSEHD = Sucrose.Shared.Engine.Helper.Data;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
+using SSEHDC = Sucrose.Shared.Space.Helper.DuplicateCounter;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSSMI = Sucrose.Shared.Space.Manage.Internal;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
@@ -71,7 +72,8 @@ namespace Sucrose.Shared.Engine.Event
                         SWE.WallpaperHandle(Handle, SSEHD.GetExpandScreenType(), SSEHD.GetScreenType());
                         break;
                     case SEDST.SameDuplicate:
-                        SSEMI.Applications.ForEach(Application => SWE.WallpaperProcess(Application.Process, SSEMI.Applications.IndexOf(Application), SSEHD.GetScreenType()));
+                        int handleScreenIndex = SSEHDC.ClaimNextScreenIndex();
+                        SWE.WallpaperHandle(Handle, handleScreenIndex, SSEHD.GetScreenType());
                         break;
                     default:
                         SWE.WallpaperHandle(Handle, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
@@ -98,7 +100,8 @@ namespace Sucrose.Shared.Engine.Event
                         SWE.WallpaperWindow(Window, SSEHD.GetExpandScreenType(), SSEHD.GetScreenType());
                         break;
                     case SEDST.SameDuplicate:
-                        SWE.WallpaperWindow(Window, SSEHD.GetDuplicateScreenType(), SSEHD.GetScreenType());
+                        int windowScreenIndex = SSEHDC.ClaimNextScreenIndex();
+                        SWE.WallpaperWindow(Window, windowScreenIndex, SSEHD.GetScreenType());
                         break;
                     default:
                         SWE.WallpaperWindow(Window, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
@@ -183,7 +186,8 @@ namespace Sucrose.Shared.Engine.Event
                         SWE.WallpaperProcess(Application.Process, SSEHD.GetExpandScreenType(), SSEHD.GetScreenType());
                         break;
                     case SEDST.SameDuplicate:
-                        SSEMI.Applications.ForEach(Application => SWE.WallpaperProcess(Application.Process, SSEMI.Applications.IndexOf(Application), SSEHD.GetScreenType()));
+                        int appScreenIndex = SSEHDC.ClaimNextScreenIndex();
+                        SWE.WallpaperProcess(Application.Process, appScreenIndex, SSEHD.GetScreenType());
                         break;
                     default:
                         SWE.WallpaperProcess(Application.Process, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
