@@ -1,7 +1,6 @@
 ﻿using SharpCompress.Archives;
 using SharpCompress.Archives.Zip;
 using SharpCompress.Common;
-using SharpCompress.Readers;
 using SharpCompress.Writers.Zip;
 using System.IO;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CompatibilityType;
@@ -15,17 +14,19 @@ namespace Sucrose.Shared.SevenZip.Extension
         {
             try
             {
-                using IArchive Archiver = ArchiveFactory.OpenArchive(Archive, new ReaderOptions()
+                using IArchive Archiver = ArchiveFactory.OpenArchive(Archive);
+
+                ExtractionOptions Options = new()
                 {
                     ExtractFullPath = true,
                     Overwrite = true
-                });
+                };
 
                 foreach (IArchiveEntry Entry in Archiver.Entries)
                 {
                     if (!Entry.IsDirectory)
                     {
-                        Entry.WriteToDirectory(Destination);
+                        Entry.WriteToDirectory(Destination, Options);
                     }
                 }
 
