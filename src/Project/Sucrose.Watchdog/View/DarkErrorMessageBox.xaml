@@ -10,9 +10,13 @@
     Height="300"
     MinWidth="600"
     MinHeight="300"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
     Loaded="DarkErrorMessageBox_Loaded"
     ResizeMode="CanResizeWithGrip"
     ShowInTaskbar="False"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
 

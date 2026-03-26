@@ -14,6 +14,8 @@
     Height="600"
     MinWidth="900"
     MinHeight="600"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
     d:DataContext="{d:DesignInstance local:MainWindow,
                                      IsDesignTimeCreatable=False}"
     d:DesignHeight="600"
@@ -26,7 +28,9 @@
     PreviewKeyDown="MainWindow_PreviewKeyDown"
     ShowInTaskbar="False"
     SizeChanged="MainWindow_SizeChanged"
+    SnapsToDevicePixels="True"
     Topmost="True"
+    UseLayoutRounding="True"
     WindowBackdropType="{Binding ViewModel.WindowBackdropType, Mode=OneWay}"
     WindowCornerPreference="Default"
     WindowStartupLocation="CenterScreen"

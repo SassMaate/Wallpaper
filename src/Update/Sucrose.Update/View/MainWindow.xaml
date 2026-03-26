@@ -9,6 +9,8 @@
     Title="{DynamicResource Update.WindowTitle}"
     Width="350"
     Height="350"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
     AllowsTransparency="True"
     Background="Transparent"
     ContentRendered="Window_ContentRendered"
@@ -17,7 +19,9 @@
     MouseDown="Window_MouseDown"
     ResizeMode="NoResize"
     ShowInTaskbar="True"
+    SnapsToDevicePixels="True"
     Topmost="True"
+    UseLayoutRounding="True"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">

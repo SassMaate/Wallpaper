@@ -61,6 +61,8 @@ using SSTHP = Sucrose.Shared.Theme.Helper.Properties;
 using SSTHV = Sucrose.Shared.Theme.Helper.Various;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
 using SSWHD = Sucrose.Shared.Watchdog.Helper.Dataset;
+using SWHA = System.Windows.HorizontalAlignment;
+using SWVA = System.Windows.VerticalAlignment;
 
 namespace Sucrose.Live.WebView
 {
@@ -365,6 +367,10 @@ namespace Sucrose.Live.WebView
 
                         SSEWVMI.WebEngine = new()
                         {
+                            UseLayoutRounding = true,
+                            SnapsToDevicePixels = true,
+                            VerticalAlignment = SWVA.Stretch,
+                            HorizontalAlignment = SWHA.Stretch,
                             DefaultBackgroundColor = Color.Black
                         };
 

@@ -3,6 +3,8 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using ImageEngine = System.Windows.Controls.Image;
 using SSEVSG = Sucrose.Shared.Engine.Vexana.Struct.Gif;
+using SWHA = System.Windows.HorizontalAlignment;
+using SWVA = System.Windows.VerticalAlignment;
 
 namespace Sucrose.Shared.Engine.Vexana.Manage
 {
@@ -25,6 +27,10 @@ namespace Sucrose.Shared.Engine.Vexana.Manage
         public static ImageEngine ImageEngine = new()
         {
             Stretch = Stretch.Fill,
+            UseLayoutRounding = true,
+            SnapsToDevicePixels = true,
+            VerticalAlignment = SWVA.Stretch,
+            HorizontalAlignment = SWHA.Stretch,
             StretchDirection = StretchDirection.Both
         };
 

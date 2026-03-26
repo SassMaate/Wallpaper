@@ -6,10 +6,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
     Title="Gif"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch"
     AllowsTransparency="False"
     Background="Black"
     Left="-99999"
     ResizeMode="NoResize"
+    SnapsToDevicePixels="True"
+    UseLayoutRounding="True"
     WindowStyle="None"
     mc:Ignorable="d">
     <WindowsFormsHost>
