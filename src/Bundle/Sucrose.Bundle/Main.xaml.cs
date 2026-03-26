@@ -1,7 +1,7 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using Newtonsoft.Json;
 using SharpCompress.Archives;
-using SharpCompress.Readers;
+using SharpCompress.Common;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -297,13 +297,15 @@ namespace Sucrose.Bundle
         {
             await Task.Factory.StartNew(() =>
             {
-                using IArchive Archiver = ArchiveFactory.OpenArchive(PackagesFilePath, new ReaderOptions()
+                ExtractionOptions Options = new()
                 {
                     PreserveAttributes = true,
                     PreserveFileTime = true,
                     ExtractFullPath = true,
                     Overwrite = true
-                });
+                };
+
+                using IArchive Archiver = ArchiveFactory.OpenArchive(PackagesFilePath);
 
                 foreach (IArchiveEntry Record in Archiver.Entries)
                 {
@@ -315,7 +317,7 @@ namespace Sucrose.Bundle
                         }
                     }
 
-                    Record.WriteToDirectory(InstallPath);
+                    Record.WriteToDirectory(InstallPath, Options);
                 }
             });
         }
@@ -393,15 +395,17 @@ namespace Sucrose.Bundle
                     Directory.CreateDirectory(ExtractPath);
                 }
 
-                Assembly Entry = SHA.Assemble(SEAT.Entry);
-
-                using IArchive Archive = ArchiveFactory.OpenArchive(Entry.GetManifestResourceStream(SourcePath), new ReaderOptions()
+                ExtractionOptions Options = new()
                 {
                     PreserveAttributes = true,
                     PreserveFileTime = true,
                     ExtractFullPath = true,
                     Overwrite = true
-                });
+                };
+
+                Assembly Entry = SHA.Assemble(SEAT.Entry);
+
+                using IArchive Archive = ArchiveFactory.OpenArchive(Entry.GetManifestResourceStream(SourcePath));
 
                 foreach (IArchiveEntry Record in Archive.Entries)
                 {
@@ -413,7 +417,7 @@ namespace Sucrose.Bundle
                         }
                     }
 
-                    Record.WriteToDirectory(ExtractPath);
+                    Record.WriteToDirectory(ExtractPath, Options);
                 }
             });
         }
