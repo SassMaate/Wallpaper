@@ -1,5 +1,6 @@
 ﻿using CefSharp;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
+using SSECSS = Sucrose.Shared.Engine.CefSharp.Helper.Surface;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SWNM = Skylark.Wing.Native.Methods;
 
@@ -21,6 +22,8 @@ namespace Sucrose.Shared.Engine.CefSharp.Helper
             }
 
             SSECSMI.CefHandle = InputHandle;
+
+            SSECSS.Start();
         }
 
         public static void GetIntermediateHandle()

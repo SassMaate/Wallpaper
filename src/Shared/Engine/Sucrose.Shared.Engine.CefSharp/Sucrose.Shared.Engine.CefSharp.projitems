@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Handle.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Management.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Properties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Surface.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Web.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Video.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Url.cs" />
