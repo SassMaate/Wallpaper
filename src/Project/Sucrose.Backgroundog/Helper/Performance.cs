@@ -23,6 +23,7 @@ using SSSHL = Sucrose.Shared.Space.Helper.Live;
 using SSSHM = Sucrose.Shared.Space.Helper.Management;
 using SSSHP = Sucrose.Shared.Space.Helper.Processor;
 using SSWEW = Sucrose.Shared.Watchdog.Extension.Watch;
+using SWHSS = Skylark.Wing.Helper.ScreenSaver;
 
 namespace Sucrose.Backgroundog.Helper
 {
@@ -636,7 +637,7 @@ namespace Sucrose.Backgroundog.Helper
                 int MaxCount = 0;
                 SSDEPT Performance = SSDMMB.ScreenSaverPerformance;
 
-                while (SBMI.WindowsScreenSaver && SSDMMB.ScreenSaverPerformance == Performance)
+                while ((SWHSS.IsRunning() || SBMI.WindowsScreenSaver) && SSDMMB.ScreenSaverPerformance == Performance)
                 {
                     if (Count >= MaxCount)
                     {
