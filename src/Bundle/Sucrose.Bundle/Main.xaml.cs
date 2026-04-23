@@ -69,7 +69,9 @@ namespace Sucrose.Bundle
 
         private static string Url => "https://github.com/Taiizor/Sucrose";
 
-        private static string QuietUninstall => $"\"{Uninstall}\" -s";
+        private static string UninstallCommand => $"\"{Uninstall}\"";
+
+        private static string QuietUninstall => $"{UninstallCommand} -s";
 
         private static string Version => $"{SHV.Auto(SEAT.Entry)}";
 
@@ -200,7 +202,7 @@ namespace Sucrose.Bundle
             AppKey.SetValue("BundleVersion", Version, RegistryValueKind.String);
             AppKey.SetValue("DisplayVersion", Version, RegistryValueKind.String);
             AppKey.SetValue("PublisherName", Publisher, RegistryValueKind.String);
-            AppKey.SetValue("UninstallString", Uninstall, RegistryValueKind.String);
+            AppKey.SetValue("UninstallString", UninstallCommand, RegistryValueKind.String);
             AppKey.SetValue("InstallLocation", InstallPath, RegistryValueKind.String);
             AppKey.SetValue("QuietUninstallString", QuietUninstall, RegistryValueKind.String);
 

@@ -144,7 +144,7 @@ namespace Sucrose.Undo
 
             SRHR.SetLanguage(SMMG.Culture);
 
-            MessageBoxResult Result = MessageBoxResult.Cancel;
+            MessageBoxResult Result = e.Args.Any() ? MessageBoxResult.No : MessageBoxResult.Cancel;
 
             if (!e.Args.Any())
             {
