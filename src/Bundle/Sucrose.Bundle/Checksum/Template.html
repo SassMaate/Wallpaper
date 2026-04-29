@@ -272,37 +272,121 @@
             }
 
             .lang-dropdown {
+                position: relative;
+                min-width: 120px;
+            }
+
+            .lang-dropdown-toggle {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 8px;
                 background: rgba(30, 41, 59, 0.95);
                 border: 1px solid rgba(99, 102, 241, 0.3);
                 border-radius: 8px;
                 padding: 8px 14px;
                 font-size: 14px;
+                font-family: inherit;
                 color: var(--text-primary);
                 cursor: pointer;
-                min-width: 120px;
                 outline: none;
                 transition: all 0.3s ease;
-                appearance: none;
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L2 4h8L6 8z'/%3E%3C/svg%3E");
-                background-position: right 12px center;
-                background-repeat: no-repeat;
-                padding-right: 36px;
+                text-align: left;
             }
 
-            .lang-dropdown:hover {
+            .lang-dropdown-toggle:hover {
                 background-color: rgba(30, 41, 59, 1);
                 border-color: var(--primary-color);
             }
 
-            .lang-dropdown:focus {
+            .lang-dropdown.open .lang-dropdown-toggle {
                 border-color: var(--primary-color);
                 box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
             }
 
-            .lang-dropdown option {
-                background: var(--bg-gradient-end);
+            .lang-dropdown-arrow {
+                width: 12px;
+                height: 12px;
+                flex-shrink: 0;
+                fill: var(--text-secondary);
+                transition: transform 0.3s ease;
+            }
+
+            .lang-dropdown.open .lang-dropdown-arrow {
+                transform: rotate(180deg);
+            }
+
+            .lang-dropdown-menu {
+                position: absolute;
+                top: calc(100% + 6px);
+                right: 0;
+                min-width: 100%;
+                max-height: 280px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(99, 102, 241, 0.3);
+                border-radius: 8px;
+                padding: 4px;
+                margin: 0;
+                list-style: none;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-8px);
+                transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(99, 102, 241, 0.5) transparent;
+            }
+
+            .lang-dropdown.open .lang-dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .lang-dropdown-menu::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .lang-dropdown-menu::-webkit-scrollbar-track {
+                background: transparent;
+                margin: 4px 0;
+            }
+
+            .lang-dropdown-menu::-webkit-scrollbar-thumb {
+                background: rgba(99, 102, 241, 0.4);
+                border-radius: 4px;
+                border: 2px solid transparent;
+                background-clip: padding-box;
+            }
+
+            .lang-dropdown-menu::-webkit-scrollbar-thumb:hover {
+                background: rgba(99, 102, 241, 0.7);
+                background-clip: padding-box;
+            }
+
+            .lang-dropdown-item {
+                padding: 8px 12px;
                 color: var(--text-primary);
-                padding: 8px;
+                cursor: pointer;
+                border-radius: 6px;
+                font-size: 14px;
+                transition: background 0.15s ease, color 0.15s ease;
+                user-select: none;
+                white-space: nowrap;
+            }
+
+            .lang-dropdown-item:hover {
+                background: rgba(99, 102, 241, 0.2);
+            }
+
+            .lang-dropdown-item.selected {
+                background: rgba(99, 102, 241, 0.25);
+                color: var(--primary-color);
+                font-weight: 500;
             }
 
             @media (max-width: 640px) {
@@ -326,6 +410,9 @@
 
                 .lang-dropdown {
                     min-width: 100px;
+                }
+
+                .lang-dropdown-toggle {
                     font-size: 13px;
                 }
             }
@@ -339,38 +426,46 @@
         <div class="particles" id="particles"></div>
         <div class="container">
             <div class="lang-selector">
-                <select class="lang-dropdown" id="languageSelector" onchange="setLanguage(this.value)">
-                    <option value="ar">العربية</option>
-                    <option value="bg">Български</option>
-                    <option value="cs">Čeština</option>
-                    <option value="da">Dansk</option>
-                    <option value="de">Deutsch</option>
-                    <option value="el">Ελληνικά</option>
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fi">Suomi</option>
-                    <option value="fr">Français</option>
-                    <option value="he">עברית</option>
-                    <option value="hi">हिन्दी</option>
-                    <option value="hu">Magyar</option>
-                    <option value="id">Indonesia</option>
-                    <option value="it">Italiano</option>
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                    <option value="ms">Bahasa Melayu</option>
-                    <option value="nl">Nederlands</option>
-                    <option value="no">Norsk</option>
-                    <option value="pl">Polski</option>
-                    <option value="pt">Português</option>
-                    <option value="ro">Română</option>
-                    <option value="ru">Русский</option>
-                    <option value="sv">Svenska</option>
-                    <option value="th">ไทย</option>
-                    <option value="tr">Türkçe</option>
-                    <option value="uk">Українська</option>
-                    <option value="vi">Tiếng Việt</option>
-                    <option value="zh">中文</option>
-                </select>
+                <div class="lang-dropdown" id="languageDropdown">
+                    <button type="button" class="lang-dropdown-toggle" id="languageToggle" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="lang-dropdown-current">English</span>
+                        <svg class="lang-dropdown-arrow" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 8L2 4h8L6 8z" />
+                        </svg>
+                    </button>
+                    <ul class="lang-dropdown-menu" id="languageMenu" role="listbox">
+                        <li class="lang-dropdown-item" data-value="ar" role="option">العربية</li>
+                        <li class="lang-dropdown-item" data-value="bg" role="option">Български</li>
+                        <li class="lang-dropdown-item" data-value="cs" role="option">Čeština</li>
+                        <li class="lang-dropdown-item" data-value="da" role="option">Dansk</li>
+                        <li class="lang-dropdown-item" data-value="de" role="option">Deutsch</li>
+                        <li class="lang-dropdown-item" data-value="el" role="option">Ελληνικά</li>
+                        <li class="lang-dropdown-item" data-value="en" role="option">English</li>
+                        <li class="lang-dropdown-item" data-value="es" role="option">Español</li>
+                        <li class="lang-dropdown-item" data-value="fi" role="option">Suomi</li>
+                        <li class="lang-dropdown-item" data-value="fr" role="option">Français</li>
+                        <li class="lang-dropdown-item" data-value="he" role="option">עברית</li>
+                        <li class="lang-dropdown-item" data-value="hi" role="option">हिन्दी</li>
+                        <li class="lang-dropdown-item" data-value="hu" role="option">Magyar</li>
+                        <li class="lang-dropdown-item" data-value="id" role="option">Indonesia</li>
+                        <li class="lang-dropdown-item" data-value="it" role="option">Italiano</li>
+                        <li class="lang-dropdown-item" data-value="ja" role="option">日本語</li>
+                        <li class="lang-dropdown-item" data-value="ko" role="option">한국어</li>
+                        <li class="lang-dropdown-item" data-value="ms" role="option">Bahasa Melayu</li>
+                        <li class="lang-dropdown-item" data-value="nl" role="option">Nederlands</li>
+                        <li class="lang-dropdown-item" data-value="no" role="option">Norsk</li>
+                        <li class="lang-dropdown-item" data-value="pl" role="option">Polski</li>
+                        <li class="lang-dropdown-item" data-value="pt" role="option">Português</li>
+                        <li class="lang-dropdown-item" data-value="ro" role="option">Română</li>
+                        <li class="lang-dropdown-item" data-value="ru" role="option">Русский</li>
+                        <li class="lang-dropdown-item" data-value="sv" role="option">Svenska</li>
+                        <li class="lang-dropdown-item" data-value="th" role="option">ไทย</li>
+                        <li class="lang-dropdown-item" data-value="tr" role="option">Türkçe</li>
+                        <li class="lang-dropdown-item" data-value="uk" role="option">Українська</li>
+                        <li class="lang-dropdown-item" data-value="vi" role="option">Tiếng Việt</li>
+                        <li class="lang-dropdown-item" data-value="zh" role="option">中文</li>
+                    </ul>
+                </div>
             </div>
             <div class="error-icon">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -601,10 +696,21 @@
             // Set language
             function setLanguage(lang) {
                 currentLang = lang;
-                // Update dropdown selection
-                const selector = document.getElementById('languageSelector');
-                if (selector && selector.value !== lang) {
-                    selector.value = lang;
+                // Update custom dropdown selection
+                const dropdown = document.getElementById('languageDropdown');
+                if (dropdown) {
+                    const currentLabel = dropdown.querySelector('.lang-dropdown-current');
+                    const items = dropdown.querySelectorAll('.lang-dropdown-item');
+                    items.forEach(item => {
+                        if (item.getAttribute('data-value') === lang) {
+                            item.classList.add('selected');
+                            if (currentLabel) {
+                                currentLabel.textContent = item.textContent;
+                            }
+                        } else {
+                            item.classList.remove('selected');
+                        }
+                    });
                 }
                 // Update text content
                 document.querySelectorAll('[data-lang]').forEach(element => {
@@ -624,6 +730,45 @@
                 // Save language preference
                 localStorage.setItem('preferredLanguage', lang);
             }
+            // Setup custom language dropdown
+            function initLanguageDropdown() {
+                const dropdown = document.getElementById('languageDropdown');
+                const toggle = document.getElementById('languageToggle');
+                const menu = document.getElementById('languageMenu');
+                if (!dropdown || !toggle || !menu) return;
+                toggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isOpen = dropdown.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', isOpen);
+                    if (isOpen) {
+                        const selected = menu.querySelector('.lang-dropdown-item.selected');
+                        if (selected) {
+                            selected.scrollIntoView({ block: 'nearest' });
+                        }
+                    }
+                });
+                menu.addEventListener('click', (e) => {
+                    const item = e.target.closest('.lang-dropdown-item');
+                    if (!item) return;
+                    const lang = item.getAttribute('data-value');
+                    setLanguage(lang);
+                    dropdown.classList.remove('open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                });
+                document.addEventListener('click', (e) => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && dropdown.classList.contains('open')) {
+                        dropdown.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                        toggle.focus();
+                    }
+                });
+            }
             // Create animated particles
             function createParticles() {
                 const particlesContainer = document.getElementById('particles');
@@ -639,6 +784,8 @@
             }
             // Initialize particles on page load
             createParticles();
+            // Initialize language dropdown
+            initLanguageDropdown();
             // Detect browser language and set initial language
             window.addEventListener('DOMContentLoaded', () => {
                 // First check localStorage for saved preference
