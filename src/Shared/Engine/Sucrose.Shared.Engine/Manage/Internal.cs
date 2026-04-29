@@ -197,7 +197,7 @@ namespace Sucrose.Shared.Engine.Manage
 
             "--enable-features=ThirdPartyStoragePartitioning,PartitionedCookies",
 
-            "--disable-features=MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
+            "--disable-features=MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,HardwareMediaKeyHandling,OutOfBlinkCors,IsolateOrigins"
         ];
 
         public static Dictionary<string, string> CefArguments = new()
@@ -253,7 +253,7 @@ namespace Sucrose.Shared.Engine.Manage
 
             ["enable-features"] = "ThirdPartyStoragePartitioning,PartitionedCookies",
 
-            ["disable-features"] = "MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,OutOfBlinkCors,IsolateOrigins"
+            ["disable-features"] = "MediaEngagementBypassAutoplayPolicies,CrossSiteDocumentBlockingIfIsolating,BlockInsecurePrivateNetworkRequests,CrossSiteDocumentBlockingAlways,PreloadMediaEngagementData,HardwareMediaKeyHandling,OutOfBlinkCors,IsolateOrigins"
         };
     }
 }
