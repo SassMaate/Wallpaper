@@ -165,6 +165,11 @@ namespace Sucrose.Undo
 
                 await Task.Delay(SUMI.Delay);
 
+                if (!SWUD.GetDesktopIconVisibility())
+                {
+                    SWUD.SetDesktopIconVisibility(true);
+                }
+
                 SWUD.RefreshDesktop();
 
                 await Task.Delay(SUMI.Delay);
