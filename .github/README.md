@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img alt="Sucrose Logo" height="150" src=".images/Logo.png" />
+  <img alt="Sucrose Logo" height="150" src="../.images/Logo.png" />
   <h2>Sucrose Wallpaper Engine</h2>
 </div>
 
@@ -48,7 +48,7 @@
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=skjSyV7cLEI">
-    <img alt="Sucrose Wallpaper Engine - Preview" src=".screenshots/Preview.png" />
+    <img alt="Sucrose Wallpaper Engine - Preview" src="../.screenshots/Preview.png" />
   </a>
 </div>
 
@@ -97,7 +97,7 @@
     <tr align="center">
       <td>Gif</td>
       <td>
-        <img src=".screenshots/Gif.gif" width="256" height="144" />
+        <img src="../.screenshots/Gif.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Colorful/Asus ROG-1">Asus ROG</a> Wallpaper
       </td>
       <td>No</td>
@@ -107,7 +107,7 @@
     <tr align="center">
       <td>Url</td>
       <td>
-        <img src=".screenshots/Url.gif" width="256" height="144" />
+        <img src="../.screenshots/Url.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Dynamic/The 25th Hour-1">The 25th Hour</a> Wallpaper
       </td>
       <td>Yes</td>
@@ -117,7 +117,7 @@
     <tr align="center">
       <td>Web</td>
       <td>
-        <img src=".screenshots/Web.gif" width="256" height="144" />
+        <img src="../.screenshots/Web.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Animals/Cat vs Ball of Wool-1">Cat vs Ball of Wool</a> Wallpaper
       </td>
       <td>Yes</td>
@@ -127,7 +127,7 @@
     <tr align="center">
       <td>Video</td>
       <td>
-        <img src=".screenshots/Video.gif" width="256" height="144" />
+        <img src="../.screenshots/Video.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Vehicles/Batmobile Pursuit-1">Batmobile Pursuit</a> Wallpaper
       </td>
       <td>No</td>
@@ -137,7 +137,7 @@
     <tr align="center">
       <td>YouTube</td>
       <td>
-	    <img src=".screenshots/YouTube.gif" width="256" height="144" />
+	    <img src="../.screenshots/YouTube.gif" width="256" height="144" />
         <br><a href="https://github.com/Taiizor/Store/blob/develop/src/Space/Floating in Space-1">Floating in Space</a> Wallpaper
       </td>
       <td>No</td>
@@ -147,7 +147,7 @@
     <tr align="center">
       <td>Application</td>
       <td>
-        <img src=".screenshots/Application.gif" width="256" height="144" />
+        <img src="../.screenshots/Application.gif" width="256" height="144" />
         <br><a href="https://github.com/BayatGames/RedRunner">Red Runner</a> Wallpaper
       </td>
       <td>Yes</td>
@@ -202,17 +202,17 @@
       <td><a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48">.NET Framework 4.8</a></td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
+          <img src='../.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
         </a>
       </td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
+          <img src='../.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
         </a>
       </td>
       <td>
         <a href='https://apps.microsoft.com/detail/XP8JGPBHTJGLCQ?launch=true&mode=full'>
-          <img src='.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
+          <img src='../.images/Badges/Microsoft/English_get it from MS_864X312.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
         </a>
       </td>
     </tr>
@@ -233,17 +233,17 @@
       <td><a href="https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48">.NET Framework 4.8</a></td>
       <td>
         <a href='https://github.com/Taiizor/Sucrose/releases/download/v26.2.17.0/Sucrose_Bundle_.NET_Framework_4.8_x64_26.2.17.0.exe'>
-          <img src='.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
+          <img src='../.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 x64' width='160' />
         </a>
       </td>
       <td>
         <a href='https://github.com/Taiizor/Sucrose/releases/download/v26.2.17.0/Sucrose_Bundle_.NET_Framework_4.8_x86_26.2.17.0.exe'>
-          <img src='.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
+          <img src='../.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 x86' width='160' />
         </a>
       </td>
       <td>
         <a href='https://github.com/Taiizor/Sucrose/releases/download/v26.2.17.0/Sucrose_Bundle_.NET_Framework_4.8_ARM64_26.2.17.0.exe'>
-          <img src='.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
+          <img src='../.images/Badges/GitHub/English_get_it_from_GH_228X86.png' alt='Sucrose .NET Framework 4.8 ARM64' width='160' />
         </a>
       </td>
     </tr>
