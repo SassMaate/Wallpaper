@@ -24,7 +24,11 @@ powershell -File .build/Sucrose.ps1 -Configuration Debug -PlatformTarget x86
 powershell -File .build/Sucrose.ps1 -SelfContained "true" -CompressPackage "false"
 ```
 
-Build output goes to `src/Sucrose/` (defined via `BaseOutputPath` in `Directory.Build.props`).
+There are three solutions: `src/Sucrose.slnx` (main app), `src/Sucrose.Bundle.slnx` (`Sucrose.Bundle` installer/packager), and `src/Sucrose.Localizer.slnx` (`Sucrose.Localizer` translation tool). CI builds a matrix across them.
+
+Build output goes to `src/Sucrose/` (defined via `BaseOutputPath` in `Directory.Build.props`); the publish script writes packages to `src/Sucrose/Package`. `EnforceCodeStyleInBuild=true`, so `.editorconfig` style violations fail the build. CI builds with `-p:UseSharedCompilation=false`.
+
+**There is no automated test suite** — no test projects exist in the solution, so there are no test commands to run.
 
 ### Suppressed Warnings
 
@@ -32,14 +36,32 @@ The CI pipeline suppresses these warnings: `CS0067, CS0108, CS0109, CS0114, CS01
 
 ## Framework & Tooling
 
-- **.NET 10.0-windows** (preview SDK, `global.json` specifies `10.0.0`)
+- **.NET 10.0-windows** target framework (`TargetFrameworks` in `Directory.Build.props`), built with the **.NET 11 preview SDK** — `global.json` pins `11.0.0` with `rollForward: latestMajor` and `allowPrerelease: true`; CI uses `dotnet-version: 11.0.x` / `dotnet-quality: preview`. The publish script installs runtime `10.0.108` by default (`-DotNetVersion`)
 - **C# preview** language version with implicit usings enabled, nullable disabled
-- **WPF** for all UI (no WinUI/MAUI — there is an experimental WinUI folder under `exp/` but it's not part of the main solution)
+- **WPF** for all UI (no WinUI/MAUI — `exp/` holds experimental Avalonia/Uno/WinUI ports that are not part of the main solution)
 - **Platforms**: x86, x64, ARM64 (conditional compilation symbols: `X86`, `X64`, `ARM64`)
 - **Centralized package management** via `Directory.Packages.props` with transitive pinning
 - **Solution format**: `.slnx` (new XML-based solution format)
 
 ## Architecture
+
+### Repository Layout
+
+The physical `src/` folder names do **not** match the logical layer names below — map them when navigating:
+
+| Folder | Contains |
+|--------|----------|
+| `src/Launcher/` | `Sucrose.Launcher` |
+| `src/Portal/` | `Sucrose.Portal` |
+| `src/Live/` | Live rendering engines |
+| `src/Project/` | The **Services** (`Backgroundog`, `Commandog`, `Watchdog`, `Reportdog`, `Property`, `Undo`) |
+| `src/Library/` | Shared **class libraries** (`Manager`, `Memory`, `Mpv.NET`, `Pipe`, `Resources`, `Signal`, `Transmission`, `XamlAnimatedGif`) |
+| `src/Shared/` | Shared Item Projects (`.shproj`), with engine-specific ones under `src/Shared/Engine/` |
+| `src/Update/` | `Sucrose.Update` |
+| `src/Bundle/` | `Sucrose.Bundle` (installer/packager) |
+| `src/Localizer/` | `Sucrose.Localizer` (translation tool) |
+| `src/Sucrose/` | Build output (generated; `BaseOutputPath`) |
+| `exp/` | Experimental ports (Avalonia, Uno, WinUI, Services) — **not** part of the main solution |
 
 ### Multi-Process Design
 
@@ -127,7 +149,7 @@ Files in shared projects follow a consistent directory structure:
 | `Directory.Build.props` | Central build properties, version (auto-generated from date: `yy.MM.dd`), framework, platforms |
 | `Directory.Build.targets` | Runtime config (thread pool, GC, platform symbols), app manifest |
 | `Directory.Packages.props` | All NuGet package versions (centralized) |
-| `global.json` | SDK version constraint (10.0.0 preview) |
+| `global.json` | SDK version (`11.0.0` preview, `rollForward: latestMajor`) |
 | `.editorconfig` | Code style enforcement |
 | `NuGet.Config` | Package source (nuget.org only) |
 
