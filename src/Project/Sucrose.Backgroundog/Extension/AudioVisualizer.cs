@@ -55,6 +55,8 @@ namespace Sucrose.Backgroundog.Extension
 
             TempCapture.RecordingStopped += (s, a) =>
             {
+                TempCapture.DataAvailable -= ProcessAudioData;
+
                 TempCapture?.Dispose();
             };
 
@@ -87,11 +89,13 @@ namespace Sucrose.Backgroundog.Extension
                     Smooth.RemoveAt(0);
                 }
 
+                Complex[][] Snapshot = Smooth.ToArray();
+
                 double[] AudioData = new double[MaxSample];
 
                 for (int i = 0; i < MaxSample; i++)
                 {
-                    AudioData[i] = BothSmooth(i);
+                    AudioData[i] = BothSmooth(i, Snapshot);
                 }
 
                 AudioDataAvailable?.Invoke(this, AudioData);
@@ -102,10 +106,8 @@ namespace Sucrose.Backgroundog.Extension
             }
         }
 
-        private double BothSmooth(int C)
+        private double BothSmooth(int C, Complex[][] S)
         {
-            Complex[][] S = Smooth.ToArray();
-
             double Value = 0;
 
             for (int H = Math.Max(C - HorizontalSmoothness, 0); H < Math.Min(C + HorizontalSmoothness, MaxSample); H++)
