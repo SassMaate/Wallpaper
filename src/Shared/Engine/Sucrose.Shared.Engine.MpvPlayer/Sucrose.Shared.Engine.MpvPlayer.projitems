@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Properties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Gif.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Video.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Surface.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Manage\Internal.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\Gif.xaml.cs">
       <DependentUpon>Gif.xaml</DependentUpon>

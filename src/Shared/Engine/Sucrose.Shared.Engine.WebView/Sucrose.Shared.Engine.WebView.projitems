@@ -39,6 +39,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Interaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extension\Screenshot.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Handle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Surface.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Management.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Properties.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Url.cs" />

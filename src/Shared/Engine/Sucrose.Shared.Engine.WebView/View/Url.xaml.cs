@@ -7,6 +7,7 @@ using SSEHR = Sucrose.Shared.Engine.Helper.Run;
 using SSEHV = Sucrose.Shared.Engine.Helper.Volume;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEWVEU = Sucrose.Shared.Engine.WebView.Event.Url;
+using SSEWVHS = Sucrose.Shared.Engine.WebView.Helper.Surface;
 using SSEWVHU = Sucrose.Shared.Engine.WebView.Helper.Url;
 using SSEWVMI = Sucrose.Shared.Engine.WebView.Manage.Internal;
 
@@ -32,6 +33,7 @@ namespace Sucrose.Shared.Engine.WebView.View
             SSEMI.GeneralTimer.Start();
 
             SSEWVMI.WebEngine.CoreWebView2InitializationCompleted += SSEWVEU.WebEngineInitializationCompleted;
+            SSEWVMI.WebEngine.SizeChanged += SSEWVHS.Correct;
 
             Closing += (s, e) => SSEWVMI.WebEngine.Dispose();
             Loaded += (s, e) => SSEEH.WindowLoaded(this);

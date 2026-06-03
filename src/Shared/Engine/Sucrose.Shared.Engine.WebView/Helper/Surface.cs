@@ -1,10 +1,10 @@
 using System.Windows;
-using SSECSHH = Sucrose.Shared.Engine.CefSharp.Helper.Handle;
-using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
+using SSEWVHH = Sucrose.Shared.Engine.WebView.Helper.Handle;
+using SSEWVMI = Sucrose.Shared.Engine.WebView.Manage.Internal;
 using SWNM = Skylark.Wing.Native.Methods;
 
-namespace Sucrose.Shared.Engine.CefSharp.Helper
+namespace Sucrose.Shared.Engine.WebView.Helper
 {
     internal static class Surface
     {
@@ -12,14 +12,14 @@ namespace Sucrose.Shared.Engine.CefSharp.Helper
         {
             try
             {
-                if (SSECSMI.CefEngine == null || SSEMI.WindowHandle == IntPtr.Zero)
+                if (SSEWVMI.WebEngine == null || SSEMI.WindowHandle == IntPtr.Zero)
                 {
                     return;
                 }
 
-                SSECSHH.GetInputHandle();
+                SSEWVHH.GetInputHandle();
 
-                IntPtr BrowserHandle = SSECSMI.CefHandle;
+                IntPtr BrowserHandle = SSEWVMI.WebHandle;
 
                 if (BrowserHandle == IntPtr.Zero)
                 {

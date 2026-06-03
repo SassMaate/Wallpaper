@@ -9,6 +9,7 @@ using SSEHS = Sucrose.Shared.Engine.Helper.Source;
 using SSEMI = Sucrose.Shared.Engine.Manage.Internal;
 using SSEMPEG = Sucrose.Shared.Engine.MpvPlayer.Event.Gif;
 using SSEMPHG = Sucrose.Shared.Engine.MpvPlayer.Helper.Gif;
+using SSEMPHS = Sucrose.Shared.Engine.MpvPlayer.Helper.Surface;
 using SSEMPMI = Sucrose.Shared.Engine.MpvPlayer.Manage.Internal;
 
 namespace Sucrose.Shared.Engine.MpvPlayer.View
@@ -28,7 +29,9 @@ namespace Sucrose.Shared.Engine.MpvPlayer.View
 
             ContentRendered += (s, e) => SSEEH.ContentRendered(this);
 
-            SSEMPMI.MediaEngine = new(PlayerHost.Handle, SSEMPMI.MediaPath)
+            SSEMPMI.MediaHandle = PlayerHost.Handle;
+
+            SSEMPMI.MediaEngine = new(SSEMPMI.MediaHandle, SSEMPMI.MediaPath)
             {
                 AutoPlay = true,
                 Loop = SSEHD.GetLoop()
@@ -46,6 +49,7 @@ namespace Sucrose.Shared.Engine.MpvPlayer.View
 
             Closing += (s, e) => SSEMPMI.MediaEngine.Dispose();
             Loaded += (s, e) => SSEEH.WindowLoaded(this);
+            SizeChanged += (s, e) => SSEMPHS.Correct();
         }
 
         private void GeneralTimer_Tick(object sender, EventArgs e)

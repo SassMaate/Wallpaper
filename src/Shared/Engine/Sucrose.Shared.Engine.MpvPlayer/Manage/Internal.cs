@@ -14,6 +14,8 @@ namespace Sucrose.Shared.Engine.MpvPlayer.Manage
 
         public static MediaEngine MediaEngine;
 
+        public static IntPtr MediaHandle = IntPtr.Zero;
+
 #if X86
         public static readonly string MediaPath = Path.Combine(SSSMI.Requirements, "libmpv-x86.dll");
 #elif X64

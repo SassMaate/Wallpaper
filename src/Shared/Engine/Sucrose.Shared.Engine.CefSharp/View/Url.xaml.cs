@@ -3,6 +3,7 @@ using System.Windows;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
 using SSECSEU = Sucrose.Shared.Engine.CefSharp.Event.Url;
 using SSECSHCD = Sucrose.Shared.Engine.CefSharp.Handler.CustomDownload;
+using SSECSHS = Sucrose.Shared.Engine.CefSharp.Helper.Surface;
 using SSECSHU = Sucrose.Shared.Engine.CefSharp.Helper.Url;
 using SSECSMI = Sucrose.Shared.Engine.CefSharp.Manage.Internal;
 using SSEEH = Sucrose.Shared.Engine.Event.Handler;
@@ -40,6 +41,7 @@ namespace Sucrose.Shared.Engine.CefSharp.View
             SSECSMI.CefEngine.FrameLoadEnd += SSECSEU.CefEngineFrameLoadEnd;
             SSECSMI.CefEngine.Initialized += SSECSEU.CefEngineInitialized;
             SSECSMI.CefEngine.Loaded += SSECSEU.CefEngineLoaded;
+            SSECSMI.CefEngine.SizeChanged += SSECSHS.Correct;
 
             Closing += (s, e) => SSECSMI.CefEngine.Dispose();
             Loaded += (s, e) => SSEEH.WindowLoaded(this);
