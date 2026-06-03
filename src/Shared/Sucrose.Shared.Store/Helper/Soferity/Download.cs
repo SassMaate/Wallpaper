@@ -8,6 +8,7 @@ using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
 using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
+using SSSHC = Sucrose.Shared.Store.Helper.Counter;
 using SSSHF = Sucrose.Shared.Space.Helper.Filing;
 using SSSHS = Sucrose.Shared.Store.Helper.Store;
 using SSSIC = Sucrose.Shared.Store.Interface.Contents;
@@ -219,11 +220,11 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             }
         }
 
-        public static async Task<bool> Theme(string Source, string Output, string Guid, string Keys, bool Sub = true)
+        public static async Task<bool> Theme(string Source, string Output, string Guid, string Keys, long Size = 0, bool Sub = true)
         {
             SSSMI.StoreService.Info[Keys] = new SSSID(0, 0, 0, "0%", "0/0", Guid);
 
-            return await DownloadFolder(Source, Output, Keys, Sub);
+            return await DownloadFolder(Source, Output, Keys, Size, Sub);
         }
 
         private static string EncodeSpacesOnly(string Source)
@@ -290,14 +291,25 @@ namespace Sucrose.Shared.Store.Helper.Soferity
             return Count;
         }
 
-        private static async Task<bool> DownloadFolder(string Source, string Output, string Keys, bool Sub)
+        private static async Task<bool> DownloadFolder(string Source, string Output, string Keys, long Size, bool Sub)
         {
             SSSMI.StoreService.TotalFileCount(Keys, await GetTotalFileCount(Source, Sub));
 
-            return await DownloadFilesRecursively(Source, Output, Keys, Sub);
+            SSSHC Tracker = new();
+
+            bool Result = await DownloadFilesRecursively(Source, Output, Keys, Size, Tracker, Sub);
+
+            if (Result)
+            {
+                SSSMI.StoreService.ProgressPercentage(Keys, 100);
+
+                SSSMI.StoreService.Percentage(Keys, $"{SSSMI.StoreService.Info[Keys].ProgressPercentage:F2}%");
+            }
+
+            return Result;
         }
 
-        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Keys, bool Sub)
+        private static async Task<bool> DownloadFilesRecursively(string Source, string Output, string Keys, long Size, SSSHC Tracker, bool Sub)
         {
             List<SSSIC> Contents = ContentsList(SMMRS.StoreDirectory, Source);
 
@@ -312,28 +324,63 @@ namespace Sucrose.Shared.Store.Helper.Soferity
                         Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
                     }
 
-                    using HttpResponseMessage Response = await SSDMI.Client.GetAsync(Content.DownloadUrl);
-
-                    Response.EnsureSuccessStatusCode();
-
-                    using (Stream Stream = await Response.Content.ReadAsStreamAsync())
-                    using (FileStream FStream = new(FilePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                    if (Size > 0)
                     {
-                        await Stream.CopyToAsync(FStream);
+                        using HttpResponseMessage Response = await SSDMI.Client.GetAsync(Content.DownloadUrl, HttpCompletionOption.ResponseHeadersRead);
+
+                        Response.EnsureSuccessStatusCode();
+
+                        using (Stream Stream = await Response.Content.ReadAsStreamAsync())
+                        using (FileStream FStream = new(FilePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                        {
+                            byte[] Buffer = new byte[81920];
+                            int Read;
+
+                            while ((Read = await Stream.ReadAsync(Buffer)) > 0)
+                            {
+                                await FStream.WriteAsync(Buffer.AsMemory(0, Read));
+
+                                Tracker.DownloadedSize += Read;
+
+                                double Percentage = Math.Min((double)Tracker.DownloadedSize / Size * 100, 99.99);
+
+                                if (Percentage - Tracker.ReportedPercentage >= 0.1)
+                                {
+                                    Tracker.ReportedPercentage = Percentage;
+
+                                    SSSMI.StoreService.ProgressPercentage(Keys, Percentage);
+                                    SSSMI.StoreService.Percentage(Keys, $"{SSSMI.StoreService.Info[Keys].ProgressPercentage:F2}%"); //F2 - F0
+                                }
+                            }
+                        }
+
+                        SSSMI.StoreService.DownloadedFileCount(Keys, SSSMI.StoreService.Info[Keys].DownloadedFileCount + 1);
+                        SSSMI.StoreService.State(Keys, $"{SSSMI.StoreService.Info[Keys].DownloadedFileCount}/{SSSMI.StoreService.Info[Keys].TotalFileCount}");
                     }
+                    else
+                    {
+                        using HttpResponseMessage Response = await SSDMI.Client.GetAsync(Content.DownloadUrl);
 
-                    SSSMI.StoreService.DownloadedFileCount(Keys, SSSMI.StoreService.Info[Keys].DownloadedFileCount + 1);
-                    SSSMI.StoreService.ProgressPercentage(Keys, (double)SSSMI.StoreService.Info[Keys].DownloadedFileCount / SSSMI.StoreService.Info[Keys].TotalFileCount * 100);
+                        Response.EnsureSuccessStatusCode();
 
-                    SSSMI.StoreService.Percentage(Keys, $"{SSSMI.StoreService.Info[Keys].ProgressPercentage:F2}%"); //F2 - F0
-                    SSSMI.StoreService.State(Keys, $"{SSSMI.StoreService.Info[Keys].DownloadedFileCount}/{SSSMI.StoreService.Info[Keys].TotalFileCount}");
+                        using (Stream Stream = await Response.Content.ReadAsStreamAsync())
+                        using (FileStream FStream = new(FilePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                        {
+                            await Stream.CopyToAsync(FStream);
+                        }
+
+                        SSSMI.StoreService.DownloadedFileCount(Keys, SSSMI.StoreService.Info[Keys].DownloadedFileCount + 1);
+                        SSSMI.StoreService.ProgressPercentage(Keys, (double)SSSMI.StoreService.Info[Keys].DownloadedFileCount / Math.Max(SSSMI.StoreService.Info[Keys].TotalFileCount, 1) * 100);
+
+                        SSSMI.StoreService.Percentage(Keys, $"{SSSMI.StoreService.Info[Keys].ProgressPercentage:F2}%"); //F2 - F0
+                        SSSMI.StoreService.State(Keys, $"{SSSMI.StoreService.Info[Keys].DownloadedFileCount}/{SSSMI.StoreService.Info[Keys].TotalFileCount}");
+                    }
                 }
                 else if (Content.Type == "dir" && Sub)
                 {
-                    Source = Content.Path;
                     string SubOutput = Path.Combine(Output, Content.Name);
 
-                    await DownloadFilesRecursively(Source, SubOutput, Keys, Sub);
+                    await DownloadFilesRecursively(Content.Path, SubOutput, Keys, Size, Tracker, Sub);
                 }
             }
 

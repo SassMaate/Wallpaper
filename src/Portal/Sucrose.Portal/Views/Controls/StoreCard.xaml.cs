@@ -169,7 +169,7 @@ namespace Sucrose.Portal.Views.Controls
                         await SSSHGHD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Guid, Keys);
                         break;
                     default:
-                        await SSSHSD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Guid, Keys);
+                        await SSSHSD.Theme(Path.Combine(Wallpaper.Value.Source, Wallpaper.Key), TemporaryPath, Guid, Keys, Wallpaper.Value.Size);
                         break;
                 }
 
