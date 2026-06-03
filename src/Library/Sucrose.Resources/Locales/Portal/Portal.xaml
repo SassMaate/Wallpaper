@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="Portal.Release">Pre-Release</system:String>
-    <system:String x:Key="Portal.Copyright">Sucrose is copyright © 2025 Sucrose Contributors</system:String>
+    <system:String x:Key="Portal.Copyright">Sucrose is copyright © 2026 Sucrose Contributors</system:String>
 
     <system:String x:Key="Portal.Quoting0">Love conquers all</system:String>
     <system:String x:Key="Portal.Quoting1">La vida es bella</system:String>
