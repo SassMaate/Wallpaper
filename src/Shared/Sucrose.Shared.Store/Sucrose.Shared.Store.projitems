@@ -10,6 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Converter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Counter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\GitHub\Download.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Serialize.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Soferity\Download.cs" />
