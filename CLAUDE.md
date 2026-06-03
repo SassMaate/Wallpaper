@@ -24,7 +24,7 @@ powershell -File .build/Sucrose.ps1 -Configuration Debug -PlatformTarget x86
 powershell -File .build/Sucrose.ps1 -SelfContained "true" -CompressPackage "false"
 ```
 
-There are three solutions: `src/Sucrose.slnx` (main app), `src/Sucrose.Bundle.slnx` (`Sucrose.Bundle` installer/packager), and `src/Sucrose.Localizer.slnx` (`Sucrose.Localizer` translation tool). CI builds a matrix across them.
+There are three solutions: `src/Sucrose.slnx` (main app), `src/Sucrose.Bundle.slnx` (`Sucrose.Bundle` installer/packager), and `src/Sucrose.Localizer.slnx` (`Sucrose.Localizer` translation tool). Note that **no CI job builds the full solution** — full builds happen only locally or via the publish script (see Git Workflow for what CI actually compiles).
 
 Build output goes to `src/Sucrose/` (defined via `BaseOutputPath` in `Directory.Build.props`); the publish script writes packages to `src/Sucrose/Package`. `EnforceCodeStyleInBuild=true`, so `.editorconfig` style violations fail the build. CI builds with `-p:UseSharedCompilation=false`.
 
@@ -157,4 +157,6 @@ Files in shared projects follow a consistent directory structure:
 
 - **Main branch**: `develop`
 - Version is auto-derived from build date (`yy.MM.dd.0` format)
-- CI runs CodeQL analysis on `develop` (push/PR/schedule)
+- CI runs CodeQL analysis on `develop` (push/PR/nightly schedule). The CodeQL job builds a matrix of only **seven `src/Library/` projects** (`Pipe, Memory, Signal, Manager, Resources, Transmission, XamlAnimatedGif`; `Mpv.NET` is excluded) with `-p:UseSharedCompilation=false` — it does **not** build the executables, engines, or full solution.
+- `congratulations.yml` posts a welcome comment on first-time issues/PRs; `nuxt-deploy.yml` deploys the website (next item). These are the only other workflows — there is no automated app-build or release CI.
+- `.pages/` holds the project website (**Nuxt + Tailwind**, package-managed with **bun**, deployed to GitHub Pages by `nuxt-deploy.yml` via `bun run generate` on every push to `develop`). It is independent of the .NET app.
