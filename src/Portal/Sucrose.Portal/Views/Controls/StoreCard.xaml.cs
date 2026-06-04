@@ -305,6 +305,11 @@ namespace Sucrose.Portal.Views.Controls
 
                                 DownloadSymbol.Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush");
                                 DownloadSymbol.Symbol = SymbolRegular.CloudArrowDown24;
+
+                                if (SSSTMI.StoreService.Info.ContainsKey(Keys))
+                                {
+                                    SSSTMI.StoreService.Info.Remove(Keys);
+                                }
                             }
                         }
                     }
@@ -475,25 +480,22 @@ namespace Sucrose.Portal.Views.Controls
                         IncompatibleVersion.Visibility = Visibility.Visible;
                     }
 
-                    KeyValuePair<string, SSSID> Matching = SSSTMI.StoreService.Info.FirstOrDefault(Pair => Pair.Value.Guid == Guid);
+                    KeyValuePair<string, SSSID> Matching = SSSTMI.StoreService.Info.FirstOrDefault(Pair => Pair.Value.Guid == Guid && Pair.Value.ProgressPercentage < 100);
 
                     if (!Matching.Equals(default(KeyValuePair<string, SSSID>)))
                     {
                         Keys = Matching.Key;
 
-                        if (Matching.Value.ProgressPercentage < 100)
-                        {
-                            State = true;
+                        State = true;
 
-                            StoreService_InfoChanged(Keys);
+                        StoreService_InfoChanged(Keys);
 
-                            DownloadSymbol.Symbol = SymbolRegular.Empty;
+                        DownloadSymbol.Symbol = SymbolRegular.Empty;
 
-                            DownloadRing.Visibility = Visibility.Visible;
-                            DownloadSymbol.Visibility = Visibility.Collapsed;
+                        DownloadRing.Visibility = Visibility.Visible;
+                        DownloadSymbol.Visibility = Visibility.Collapsed;
 
-                            SSSTMI.StoreService.InfoChanged += (s, e) => StoreService_InfoChanged(Keys);
-                        }
+                        SSSTMI.StoreService.InfoChanged += (s, e) => StoreService_InfoChanged(Keys);
                     }
 
                     await Task.Delay(100);
