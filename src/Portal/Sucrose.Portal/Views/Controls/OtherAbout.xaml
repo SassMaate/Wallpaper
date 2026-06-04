@@ -220,7 +220,7 @@
             Cursor="Hand"
             FontSize="14"
             Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"
-            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/TERMS_OF_SERVICE.md" />
+            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/.github/TERMS_OF_SERVICE.md" />
 
         <ui:HyperlinkButton
             Margin="0,3,0,0"
@@ -230,7 +230,7 @@
             Cursor="Hand"
             FontSize="14"
             Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"
-            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/PRIVACY_POLICY.md" />
+            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/.github/PRIVACY_POLICY.md" />
 
         <ui:HyperlinkButton
             Margin="0,3,0,0"
@@ -240,6 +240,6 @@
             Cursor="Hand"
             FontSize="14"
             Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"
-            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/CODE_OF_CONDUCT.md" />
+            NavigateUri="https://github.com/Taiizor/Sucrose/blob/develop/.github/CODE_OF_CONDUCT.md" />
     </StackPanel>
 </ui:ContentDialog>
