@@ -20,6 +20,7 @@
     MouseEnter="StoreCard_MouseEnter"
     MouseLeave="StoreCard_MouseLeave"
     MouseLeftButtonUp="StoreCard_MouseLeftButtonUp"
+    Unloaded="StoreCard_Unloaded"
     mc:Ignorable="d">
 
     <UserControl.ContextMenu>

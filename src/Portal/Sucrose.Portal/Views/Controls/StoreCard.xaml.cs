@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel;
 using System.IO;
 using System.Net.Http;
 using System.Windows;
@@ -59,11 +60,14 @@ namespace Sucrose.Portal.Views.Controls
     /// </summary>
     public partial class StoreCard : UserControl, IDisposable
     {
+        private readonly PropertyChangedEventHandler InfoChangedHandler;
         private readonly KeyValuePair<string, SSSIW> Wallpaper = new();
+        private readonly object SubscribeLock = new();
         private readonly string Theme = string.Empty;
         private readonly SPEIL Loader = new();
         private string Keys = string.Empty;
         private readonly string Guid;
+        private bool Subscribed;
         private bool State;
         private SSTHI Info;
         private bool Error;
@@ -73,6 +77,8 @@ namespace Sucrose.Portal.Views.Controls
             this.Theme = Theme;
             this.Wallpaper = Wallpaper;
             Guid = Path.Combine(Wallpaper.Value.Source, Wallpaper.Key);
+
+            InfoChangedHandler = (s, e) => StoreService_InfoChanged(Keys);
 
             InitializeComponent();
         }
@@ -121,6 +127,32 @@ namespace Sucrose.Portal.Views.Controls
             }
         }
 
+        private async void Subscribe()
+        {
+            lock (SubscribeLock)
+            {
+                if (!Subscribed)
+                {
+                    Subscribed = true;
+
+                    SSSTMI.StoreService.InfoChanged += InfoChangedHandler;
+                }
+            }
+        }
+
+        private async void Unsubscribe()
+        {
+            lock (SubscribeLock)
+            {
+                if (Subscribed)
+                {
+                    Subscribed = false;
+
+                    SSSTMI.StoreService.InfoChanged -= InfoChangedHandler;
+                }
+            }
+        }
+
         private async void SendDownload()
         {
             try
@@ -158,7 +190,7 @@ namespace Sucrose.Portal.Views.Controls
                     Keys = SHG.GenerateString(SMMVA.Chars, 25, SMMRG.Randomise);
                 } while (Directory.Exists(Path.Combine(SMML.Location, Keys)));
 
-                SSSTMI.StoreService.InfoChanged += (s, e) => StoreService_InfoChanged(Keys);
+                Subscribe();
 
                 string LibraryPath = Path.Combine(SMML.Location, Keys);
                 string TemporaryPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, SMMRF.Temporary, Keys);
@@ -211,6 +243,8 @@ namespace Sucrose.Portal.Views.Controls
                     }
 
                     State = false;
+
+                    Unsubscribe();
 
                     Download.ToolTip = null;
 
@@ -271,20 +305,20 @@ namespace Sucrose.Portal.Views.Controls
 
         private async void StoreService_InfoChanged(string Keys)
         {
-            if (this.Keys == Keys && SSSTMI.StoreService.Info.ContainsKey(Keys))
+            if (this.Keys == Keys && SSSTMI.StoreService.Info.TryGetValue(Keys, out SSSID Key))
             {
                 await Application.Current.Dispatcher.InvokeAsync(async () =>
                 {
-                    DownloadRing.Progress = SSSTMI.StoreService.Info[Keys].ProgressPercentage;
+                    DownloadRing.Progress = Key.ProgressPercentage;
 
                     ToolTip RingTip = new()
                     {
-                        Content = SSSTMI.StoreService.Info[Keys].Percentage
+                        Content = Key.Percentage
                     };
 
                     Download.ToolTip = RingTip;
 
-                    if (SSSTMI.StoreService.Info[Keys].ProgressPercentage >= 100)
+                    if (Key.ProgressPercentage >= 100)
                     {
                         if (State)
                         {
@@ -294,6 +328,8 @@ namespace Sucrose.Portal.Views.Controls
 
                             if (!Error)
                             {
+                                Unsubscribe();
+
                                 Download.ToolTip = null;
                                 DownloadRing.Visibility = Visibility.Collapsed;
                                 DownloadSymbol.Visibility = Visibility.Visible;
@@ -378,6 +414,11 @@ namespace Sucrose.Portal.Views.Controls
                     MenuInstall.Header += $" ({SRER.GetValue("Portal", "StoreCard", "Incompatible")})";
                 }
             }
+        }
+
+        private void StoreCard_Unloaded(object sender, RoutedEventArgs e)
+        {
+            Unsubscribe();
         }
 
         private void StoreCard_MouseEnter(object sender, MouseEventArgs e)
@@ -488,14 +529,14 @@ namespace Sucrose.Portal.Views.Controls
 
                         State = true;
 
+                        Subscribe();
+
                         StoreService_InfoChanged(Keys);
 
                         DownloadSymbol.Symbol = SymbolRegular.Empty;
 
                         DownloadRing.Visibility = Visibility.Visible;
                         DownloadSymbol.Visibility = Visibility.Collapsed;
-
-                        SSSTMI.StoreService.InfoChanged += (s, e) => StoreService_InfoChanged(Keys);
                     }
 
                     await Task.Delay(100);
