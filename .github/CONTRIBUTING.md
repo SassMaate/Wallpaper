@@ -20,7 +20,7 @@ git commit -m "Descriptive title: Change explanation."</code></pre>
 	<li>Push your changes to your forked copy on GitHub:</li>
 </ol>
 
-<pre><code>git push origin main</code></pre>
+<pre><code>git push origin develop</code></pre>
 
 <ol start="5">
 	<li>Go to your forked copy on GitHub and create a "Pull Request" to the main repository.</li>
