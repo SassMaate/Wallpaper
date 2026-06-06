@@ -271,7 +271,6 @@ namespace Sucrose.Portal.Controls
             {
                 case NotifyCollectionChangedAction.Remove:
                 case NotifyCollectionChangedAction.Replace:
-                case NotifyCollectionChangedAction.Move:
                     if (args.ItemUICount > 0)
                     {
                         RemoveInternalChildRange(args.Position.Index, args.ItemUICount);
@@ -279,9 +278,12 @@ namespace Sucrose.Portal.Controls
                     break;
             }
 
-            // Reset is handled implicitly: the generator clears its realized containers and a
-            // fresh measure re-realizes the visible window. Add/Insert are picked up on the
-            // next measure pass. In all cases, force a relayout.
+            // Move is treated like Reset: args.Position semantics (old vs new index) are
+            // ambiguous, so removing the UI child there while the generator still maps it
+            // elsewhere can corrupt the child<->item map. Instead, let the next measure
+            // re-realize the visible window. Reset is likewise handled implicitly (the
+            // generator clears its realized containers and a fresh measure rebuilds them).
+            // Add/Insert are picked up on the next measure pass. In all cases, force a relayout.
             InvalidateMeasure();
         }
 
