@@ -32,12 +32,20 @@ namespace Sucrose.Portal.ViewModels
         {
             IsLoading = true;
 
-            ImageSource Image = await SPEIC.GetAsync(ThumbnailPath, 360, Token);
-
-            if (!Token.IsCancellationRequested)
+            try
             {
-                Thumbnail = Image;
-                IsLoading = false;
+                ImageSource Image = await SPEIC.GetAsync(ThumbnailPath, 360, Token);
+
+                if (!Token.IsCancellationRequested)
+                {
+                    Thumbnail = Image;
+                    IsLoading = false;
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                // Cancellation is expected when a recycled container rebinds;
+                // the next LoadThumbnailAsync call resets IsLoading.
             }
         }
     }
