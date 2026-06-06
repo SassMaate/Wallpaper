@@ -33,7 +33,7 @@ namespace Sucrose.Portal.Extension
                 }
             }
 
-            Task<ImageSource> Load = InFlight.GetOrAdd(Key, _ => Task.Run(() => Decode(Path, DecodeWidth), Token));
+            Task<ImageSource> Load = InFlight.GetOrAdd(Key, _ => Task.Run(() => Decode(Path, DecodeWidth)));
 
             try
             {
@@ -43,28 +43,35 @@ namespace Sucrose.Portal.Extension
             }
             finally
             {
-                InFlight.TryRemove(Key, out _);
+                InFlight.TryRemove(new KeyValuePair<string, Task<ImageSource>>(Key, Load));
             }
         }
 
         private static ImageSource Decode(string Path, int DecodeWidth)
         {
-            using FileStream Stream = new(Path, FileMode.Open, FileAccess.Read, FileShare.Read);
-
-            BitmapImage Image = new();
-            Image.BeginInit();
-            Image.CacheOption = BitmapCacheOption.OnLoad;
-            Image.CreateOptions = BitmapCreateOptions.IgnoreColorProfile;
-            Image.DecodePixelWidth = DecodeWidth;
-            Image.StreamSource = Stream;
-            Image.EndInit();
-
-            if (Image.CanFreeze)
+            try
             {
-                Image.Freeze();
-            }
+                using FileStream Stream = new(Path, FileMode.Open, FileAccess.Read, FileShare.Read);
 
-            return Image;
+                BitmapImage Image = new();
+                Image.BeginInit();
+                Image.CacheOption = BitmapCacheOption.OnLoad;
+                Image.CreateOptions = BitmapCreateOptions.IgnoreColorProfile;
+                Image.DecodePixelWidth = DecodeWidth;
+                Image.StreamSource = Stream;
+                Image.EndInit();
+
+                if (Image.CanFreeze)
+                {
+                    Image.Freeze();
+                }
+
+                return Image;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         private static void Store(string Key, ImageSource Image)
