@@ -6,6 +6,7 @@ using SMMP = Sucrose.Manager.Manage.Portal;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPVCLC = Sucrose.Portal.Views.Controls.LibraryCard;
+using SPVMLC = Sucrose.Portal.ViewModels.LibraryCardViewModel;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 
 namespace Sucrose.Portal.Views.Pages.Library
@@ -55,7 +56,7 @@ namespace Sucrose.Portal.Views.Pages.Library
 
                         SSTHI Info = SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo));
 
-                        SPVCLC LibraryCard = new(ThemePath, Info);
+                        SPVCLC LibraryCard = new();
 
                         LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Pair.Key);
 
@@ -77,7 +78,7 @@ namespace Sucrose.Portal.Views.Pages.Library
                     {
                         string ThemePath = Path.Combine(SMML.Location, Theme);
 
-                        SPVCLC LibraryCard = new(ThemePath, SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo)));
+                        SPVCLC LibraryCard = new();
 
                         LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Theme);
 
@@ -125,7 +126,7 @@ namespace Sucrose.Portal.Views.Pages.Library
         {
             if ((bool)e.NewValue == false)
             {
-                if ((sender as SPVCLC).Delete)
+                if (((sender as SPVCLC)?.DataContext as SPVMLC)?.Delete == true)
                 {
                     Themes.Remove(Theme);
                     Searches.Remove(Theme, out _);

@@ -39,6 +39,8 @@
             <helpers:NameToPageTypeConverter x:Key="NameToPageTypeConverter" />
             <helpers:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
             <helpers:PaneDisplayModeToIndexConverter x:Key="PaneDisplayModeToIndexConverter" />
+            <helpers:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+            <helpers:InverseBoolToVisibilityConverter x:Key="InverseBoolToVisibility" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -152,11 +152,6 @@ namespace Sucrose.Portal.Controls
         {
             if (InternalChildren.Count >= 0)
             {
-                InternalChildren
-                    .OfType<SPVCLC>()
-                    .ToList()
-                    .ForEach(Card => Card.Dispose());
-
                 InternalChildren.Clear();
             }
 

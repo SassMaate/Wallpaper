@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:vm="clr-namespace:Sucrose.Portal.ViewModels"
     xmlns:xag="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
     xmlns:xf="clr-namespace:XamlFlair;assembly=XamlFlair.WPF"
     MinWidth="260"
@@ -15,7 +16,8 @@
                                        Event=MouseEnter}"
     xf:Animations.Secondary="{xf:Animate BasedOn={StaticResource Leaved},
                                          Event=MouseLeave}"
-    Loaded="LibraryCard_Loaded"
+    d:DataContext="{d:DesignInstance vm:LibraryCardViewModel}"
+    DataContextChanged="LibraryCard_DataContextChanged"
     MouseEnter="LibraryCard_MouseEnter"
     MouseLeave="LibraryCard_MouseLeave"
     MouseLeftButtonUp="LibraryCard_MouseLeftButtonUp"
@@ -27,61 +29,52 @@
             Opacity="0.9"
             Opened="ContextMenu_Opened">
             <ui:MenuItem
-                Click="MenuReview_Click"
+                Command="{Binding ReviewCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuReview}"
                 Icon="{ui:SymbolIcon Info24}" />
             <ui:MenuItem
-                x:Name="MenuUse"
-                Click="MenuUse_Click"
+                Command="{Binding UseEntryCommand}"
                 Cursor="Hand"
-                Header="{DynamicResource Portal.LibraryCard.MenuUse}"
-                Icon="{ui:SymbolIcon Checkmark24}" />
+                Header="{Binding UseHeader}"
+                Icon="{ui:SymbolIcon Checkmark24}"
+                IsEnabled="{Binding CanUse}" />
             <ui:MenuItem
-                x:Name="MenuPreview"
-                Click="MenuPreview_Click"
+                Command="{Binding CustomizeCommand}"
                 Cursor="Hand"
-                Header="{DynamicResource Portal.LibraryCard.MenuPreview}"
-                Icon="{ui:SymbolIcon Eye24}"
-                IsEnabled="False" />
-            <ui:MenuItem
-                x:Name="MenuCustomize"
-                Click="MenuCustomize_Click"
-                Cursor="Hand"
-                Header="{DynamicResource Portal.LibraryCard.MenuCustomize}"
+                Header="{Binding CustomizeHeader}"
                 Icon="{ui:SymbolIcon Color24}"
-                IsEnabled="False" />
+                IsEnabled="{Binding CanCustomize}" />
             <ui:MenuItem
-                x:Name="MenuCyclingAdd"
-                Click="MenuCyclingAdd_Click"
+                Command="{Binding CyclingAddCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuCyclingAdd}"
-                Icon="{ui:SymbolIcon AddCircle24}" />
+                Icon="{ui:SymbolIcon AddCircle24}"
+                Visibility="{Binding CyclingAddVisible, Converter={StaticResource BoolToVisibility}}" />
             <ui:MenuItem
-                x:Name="MenuCyclingRemove"
-                Click="MenuCyclingRemove_Click"
+                Command="{Binding CyclingRemoveCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuCyclingRemove}"
-                Icon="{ui:SymbolIcon SubtractCircle24}" />
+                Icon="{ui:SymbolIcon SubtractCircle24}"
+                Visibility="{Binding CyclingRemoveVisible, Converter={StaticResource BoolToVisibility}}" />
             <ui:MenuItem
-                Click="MenuFind_Click"
+                Command="{Binding FindCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuFind}"
                 Icon="{ui:SymbolIcon Folder24}" />
             <ui:MenuItem
-                Click="MenuShare_Click"
+                Command="{Binding ShareCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuShare}"
                 Icon="{ui:SymbolIcon Share24}" />
             <ui:MenuItem
-                x:Name="MenuDelete"
-                Click="MenuDelete_Click"
+                Command="{Binding DeleteEntryCommand}"
                 Cursor="Hand"
-                Header="{DynamicResource Portal.LibraryCard.MenuDelete}"
-                Icon="{ui:SymbolIcon Delete24}" />
+                Header="{Binding DeleteHeader}"
+                Icon="{ui:SymbolIcon Delete24}"
+                IsEnabled="{Binding CanDelete}" />
             <ui:MenuItem
-                x:Name="MenuEdit"
-                Click="MenuEdit_Click"
+                Command="{Binding EditCommand}"
                 Cursor="Hand"
                 Header="{DynamicResource Portal.LibraryCard.MenuEdit}"
                 Icon="{ui:SymbolIcon Pen24}" />
@@ -93,14 +86,6 @@
         VerticalAlignment="Stretch"
         ClipToBounds="True"
         CornerRadius="10">
-        <!--<Border.Effect>
-            <DropShadowEffect
-                BlurRadius="10"
-                Direction="300"
-                Opacity="0.25"
-                ShadowDepth="12"
-                Color="{DynamicResource SolidBackgroundFillColorBaseAlt}" />
-        </Border.Effect>-->
 
         <Grid>
             <Border
@@ -108,7 +93,8 @@
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
                 ClipToBounds="True"
-                CornerRadius="10">
+                CornerRadius="10"
+                Visibility="{Binding IsLoading, Converter={StaticResource BoolToVisibility}}">
                 <Border.Background>
                     <SolidColorBrush Opacity="0.5" Color="{DynamicResource ApplicationBackgroundColor}" />
                 </Border.Background>
@@ -118,32 +104,25 @@
                     IsIndeterminate="True" />
             </Border>
 
-            <Grid x:Name="Card" Visibility="Hidden">
-                <Rectangle RadiusX="10" RadiusY="10">
-                    <Rectangle.Fill>
-                        <VisualBrush Stretch="UniformToFill">
-                            <VisualBrush.Visual>
-                                <Grid>
-                                    <Image
-                                        x:Name="Imagine"
-                                        Source="{x:Null}"
-                                        Stretch="UniformToFill" />
-                                    <Image
-                                        x:Name="Imaginer"
-                                        HorizontalAlignment="Stretch"
-                                        VerticalAlignment="Center"
-                                        xag:AnimationBehavior.AnimateInDesignMode="False"
-                                        xag:AnimationBehavior.AutoStart="True"
-                                        xag:AnimationBehavior.CacheFramesInMemory="False"
-                                        xag:AnimationBehavior.RepeatBehavior="Forever"
-                                        xag:AnimationBehavior.SourceUri="{x:Null}"
-                                        Stretch="UniformToFill"
-                                        StretchDirection="Both" />
-                                </Grid>
-                            </VisualBrush.Visual>
-                        </VisualBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
+            <Grid>
+                <Image
+                    x:Name="Imagine"
+                    RenderOptions.BitmapScalingMode="LowQuality"
+                    Source="{Binding Thumbnail}"
+                    Stretch="UniformToFill" />
+                <Image
+                    x:Name="Imaginer"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Center"
+                    xag:AnimationBehavior.AnimateInDesignMode="False"
+                    xag:AnimationBehavior.AutoStart="True"
+                    xag:AnimationBehavior.CacheFramesInMemory="False"
+                    xag:AnimationBehavior.RepeatBehavior="Forever"
+                    xag:AnimationBehavior.SourceUri="{x:Null}"
+                    RenderOptions.BitmapScalingMode="LowQuality"
+                    Stretch="UniformToFill"
+                    StretchDirection="Both"
+                    Visibility="Hidden" />
 
                 <Border
                     x:Name="Preview"
@@ -164,34 +143,28 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
 
-                        <Canvas
-                            x:Name="Titler"
+                        <ui:TextBlock
+                            x:Name="ThemeTitle"
                             Grid.Row="0"
-                            Margin="5,5,5,25">
-                            <ui:TextBlock
-                                x:Name="ThemeTitle"
-                                Width="{Binding ActualWidth, ElementName=Titler}"
-                                FontSize="16"
-                                FontWeight="Bold"
-                                Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                                Text="{DynamicResource Portal.LibraryCard.TitleText}"
-                                TextTrimming="CharacterEllipsis"
-                                TextWrapping="NoWrap" />
-                        </Canvas>
-                        <Canvas
-                            x:Name="Descriptioner"
+                            Margin="5,5,5,0"
+                            FontSize="16"
+                            FontWeight="Bold"
+                            Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+                            Text="{Binding Title}"
+                            TextTrimming="CharacterEllipsis"
+                            TextWrapping="NoWrap"
+                            ToolTip="{Binding Title}" />
+                        <ui:TextBlock
+                            x:Name="ThemeDescription"
                             Grid.Row="1"
-                            Margin="5,0,5,20">
-                            <ui:TextBlock
-                                x:Name="ThemeDescription"
-                                Width="{Binding ActualWidth, ElementName=Descriptioner}"
-                                FontSize="12"
-                                FontWeight="SemiBold"
-                                Foreground="{DynamicResource TextPlaceholderColorBrush}"
-                                Text="{DynamicResource Portal.LibraryCard.DescriptionText}"
-                                TextTrimming="CharacterEllipsis"
-                                TextWrapping="NoWrap" />
-                        </Canvas>
+                            Margin="5,0,5,5"
+                            FontSize="12"
+                            FontWeight="SemiBold"
+                            Foreground="{DynamicResource TextPlaceholderColorBrush}"
+                            Text="{Binding Description}"
+                            TextTrimming="CharacterEllipsis"
+                            TextWrapping="NoWrap"
+                            ToolTip="{Binding Description}" />
 
                         <ui:Button
                             x:Name="ThemeMore"
@@ -206,9 +179,9 @@
                             Content="{ui:SymbolIcon MoreHorizontal24}"
                             Cursor="Hand"
                             FontSize="25"
-                            ToolTipService.ToolTip="{DynamicResource Portal.LibraryCard.MoreTip}" />
+                            ToolTipService.ToolTip="{DynamicResource Portal.LibraryCard.MoreTip}"
+                            Visibility="{Binding IsIncompatible, Converter={StaticResource InverseBoolToVisibility}}" />
                         <ui:Button
-                            x:Name="IncompatibleVersion"
                             Grid.Row="0"
                             Grid.RowSpan="2"
                             Grid.Column="1"
@@ -216,13 +189,13 @@
                             VerticalAlignment="Stretch"
                             Appearance="Transparent"
                             BorderBrush="Transparent"
-                            Click="IncompatibleVersion_Click"
+                            Command="{Binding UpdateCommand}"
                             Content="{ui:SymbolIcon BoxDismiss24}"
                             Cursor="Hand"
                             FontSize="17"
                             Foreground="{DynamicResource PaletteRedBrush}"
                             ToolTipService.ToolTip="{DynamicResource Portal.LibraryCard.VersionTip}"
-                            Visibility="Collapsed" />
+                            Visibility="{Binding IsIncompatible, Converter={StaticResource BoolToVisibility}}" />
                     </Grid>
                 </Border>
             </Grid>
