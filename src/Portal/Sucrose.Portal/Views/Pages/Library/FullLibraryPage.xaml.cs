@@ -29,6 +29,8 @@ namespace Sucrose.Portal.Views.Pages.Library
 
         private readonly ICollectionView View;
 
+        private CancellationTokenSource _loadCts;
+
         private string[] _search = [];
 
         public FullLibraryPage(Dictionary<string, string> Searches, List<string> Themes)
@@ -83,6 +85,13 @@ namespace Sucrose.Portal.Views.Pages.Library
 
         private async Task LoadCardsAsync()
         {
+            // Cancel any in-flight load: the parent LibraryPage disposes and rebuilds this
+            // page on every search-text change, so a stale load must stop adding cards.
+            _loadCts?.Cancel();
+            _loadCts?.Dispose();
+            _loadCts = new CancellationTokenSource();
+            CancellationToken Token = _loadCts.Token;
+
             Cards.Clear();
 
             List<string> Valid = Themes.Where(Theme => Directory.Exists(Path.Combine(SMML.Location, Theme))).ToList();
@@ -93,10 +102,20 @@ namespace Sucrose.Portal.Views.Pages.Library
 
             foreach (string Theme in Valid)
             {
+                if (Token.IsCancellationRequested)
+                {
+                    return;
+                }
+
                 string ThemePath = Path.Combine(SMML.Location, Theme);
 
                 // SSTHI.ReadJson is pure file IO + JSON parsing, safe off the UI thread.
                 SSTHI Info = await Task.Run(() => SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo)));
+
+                if (Token.IsCancellationRequested)
+                {
+                    return;
+                }
 
                 Pending.Add(new SPVMLC(ThemePath, Info, this));
 
@@ -111,6 +130,11 @@ namespace Sucrose.Portal.Views.Pages.Library
 
                     await Task.Yield();
                 }
+            }
+
+            if (Token.IsCancellationRequested)
+            {
+                return;
             }
 
             foreach (SPVMLC Card in Pending)
@@ -186,6 +210,9 @@ namespace Sucrose.Portal.Views.Pages.Library
 
         public void Dispose()
         {
+            _loadCts?.Cancel();
+            _loadCts?.Dispose();
+
             Cards.Clear();
 
             GC.SuppressFinalize(this);
