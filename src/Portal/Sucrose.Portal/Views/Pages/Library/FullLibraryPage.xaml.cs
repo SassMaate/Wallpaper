@@ -56,7 +56,7 @@ namespace Sucrose.Portal.Views.Pages.Library
 
                         SSTHI Info = SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo));
 
-                        SPVCLC LibraryCard = new();
+                        SPVCLC LibraryCard = new(); // TODO(Task 6): construct LibraryCardViewModel and bind via ObservableCollection; this new() is a temporary compile stopgap
 
                         LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Pair.Key);
 
@@ -78,7 +78,7 @@ namespace Sucrose.Portal.Views.Pages.Library
                     {
                         string ThemePath = Path.Combine(SMML.Location, Theme);
 
-                        SPVCLC LibraryCard = new();
+                        SPVCLC LibraryCard = new(); // TODO(Task 6): construct LibraryCardViewModel and bind via ObservableCollection; this new() is a temporary compile stopgap
 
                         LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Theme);
 

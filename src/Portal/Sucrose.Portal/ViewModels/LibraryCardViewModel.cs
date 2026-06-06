@@ -81,6 +81,11 @@ namespace Sucrose.Portal.ViewModels
 
         public override string PreviewPath => Path.Combine(Theme, Info.Preview);
 
+        public bool IsSelectedAndRunning()
+        {
+            return SMML.Selected == Path.GetFileName(Theme) && SSSHL.Run();
+        }
+
         private void Use()
         {
             if (Directory.Exists(Theme))

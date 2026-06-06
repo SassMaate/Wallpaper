@@ -56,13 +56,18 @@ namespace Sucrose.Portal.Views.Controls
                 return;
             }
 
-            Cursor = ViewModel.IsIncompatible ? Cursors.Arrow : Cursors.Hand;
+            Cursor = (ViewModel.IsIncompatible || ViewModel.IsSelectedAndRunning()) ? Cursors.Arrow : Cursors.Hand;
 
             if (SMMP.LibraryPreview && File.Exists(ViewModel.PreviewPath))
             {
                 SXAGAB.SetSourceUri(Imaginer, new Uri(ViewModel.PreviewPath));
                 Imaginer.Visibility = Visibility.Visible;
                 Imagine.Visibility = Visibility.Hidden;
+
+                if (SMMP.LibraryPreviewHide)
+                {
+                    Preview.Visibility = Visibility.Hidden;
+                }
             }
         }
 
@@ -80,6 +85,7 @@ namespace Sucrose.Portal.Views.Controls
             SXAGAB.SetSourceUri(Imaginer, null);
             Imaginer.Visibility = Visibility.Hidden;
             Imagine.Visibility = Visibility.Visible;
+            Preview.Visibility = Visibility.Visible;
         }
 
         private void LibraryCard_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -103,6 +109,8 @@ namespace Sucrose.Portal.Views.Controls
         private void LibraryCard_Unloaded(object sender, RoutedEventArgs e)
         {
             _cts?.Cancel();
+            _cts?.Dispose();
+            _cts = null;
             ClearPreview();
         }
     }
