@@ -1,4 +1,4 @@
-﻿<Page
+<Page
     x:Class="Sucrose.Portal.Views.Pages.Library.FullLibraryPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Sucrose.Portal.Views.Pages.Library"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:vcontrols="clr-namespace:Sucrose.Portal.Views.Controls"
+    xmlns:vm="clr-namespace:Sucrose.Portal.ViewModels"
     Title="{DynamicResource Portal.FullLibraryPage.Title}"
     d:DataContext="{d:DesignInstance local:FullLibraryPage,
                                      IsDesignTimeCreatable=False}"
@@ -24,19 +24,51 @@
             </Frame.Content>
         </Frame>
 
-        <controls:SizeConstrainingContainer>
-            <ui:DynamicScrollViewer x:Name="PageScroll" VerticalScrollBarVisibility="Auto">
-                <StackPanel Margin="10,0,10,0">
-                    <controls:LibraryStackPanel
-                        x:Name="ThemeLibrary"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top" />
-                    <vcontrols:Pagination
-                        x:Name="ThemePagination"
-                        Margin="0,10,0,10"
-                        HorizontalAlignment="Center" />
-                </StackPanel>
-            </ui:DynamicScrollViewer>
-        </controls:SizeConstrainingContainer>
+        <ItemsControl
+            x:Name="ThemeLibrary"
+            Margin="10,0,10,0"
+            ScrollViewer.CanContentScroll="True"
+            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            VirtualizingPanel.IsVirtualizing="True"
+            VirtualizingPanel.ScrollUnit="Pixel"
+            VirtualizingPanel.VirtualizationMode="Recycling">
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                    <!--
+                        Style="{x:Null}" opts this ScrollViewer OUT of wpfui's implicit
+                        ScrollViewer style (Scroll.xaml). That implicit style retemplates the
+                        ScrollViewer into a smooth pixel-scroller which forces
+                        CanContentScroll=False and thereby DISABLES item virtualization. By
+                        nulling the style we keep CanContentScroll=True so the panel's
+                        IScrollInfo drives scrolling and UI virtualization stays engaged.
+                    -->
+                    <ScrollViewer
+                        x:Name="PageScroll"
+                        CanContentScroll="True"
+                        Focusable="False"
+                        HorizontalScrollBarVisibility="Disabled"
+                        Style="{x:Null}"
+                        VerticalScrollBarVisibility="Auto">
+                        <ItemsPresenter />
+                    </ScrollViewer>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <controls:JustifiedVirtualizingWrapPanel
+                        ItemHeight="160"
+                        ItemMargin="{Binding CardMargin, RelativeSource={RelativeSource AncestorType={x:Type Page}}}"
+                        ItemMaxWidth="400"
+                        ItemMinWidth="260"
+                        MaxItemsPerRow="{Binding CardsPerRow, RelativeSource={RelativeSource AncestorType={x:Type Page}}}" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate DataType="{x:Type vm:LibraryCardViewModel}">
+                    <vcontrols:LibraryCard />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
     </Grid>
 </Page>

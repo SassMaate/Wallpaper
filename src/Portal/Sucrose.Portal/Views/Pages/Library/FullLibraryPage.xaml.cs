@@ -1,11 +1,16 @@
-﻿using System.IO;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Media;
 using SMML = Sucrose.Manager.Manage.Library;
 using SMMP = Sucrose.Manager.Manage.Portal;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
+using SPCJVWP = Sucrose.Portal.Controls.JustifiedVirtualizingWrapPanel;
 using SPMI = Sucrose.Portal.Manage.Internal;
-using SPVCLC = Sucrose.Portal.Views.Controls.LibraryCard;
+using SPVMIH = Sucrose.Portal.ViewModels.ILibraryCardHost;
 using SPVMLC = Sucrose.Portal.ViewModels.LibraryCardViewModel;
 using SSTHI = Sucrose.Shared.Theme.Helper.Info;
 
@@ -14,148 +19,174 @@ namespace Sucrose.Portal.Views.Pages.Library
     /// <summary>
     /// FullLibraryPage.xaml etkileşim mantığı
     /// </summary>
-    public partial class FullLibraryPage : Page, IDisposable
+    public partial class FullLibraryPage : Page, SPVMIH, IDisposable
     {
         private readonly Dictionary<string, string> Searches = [];
 
         private readonly List<string> Themes = [];
 
+        private readonly ObservableCollection<SPVMLC> Cards = [];
+
+        private readonly ICollectionView View;
+
+        private string[] _search = [];
+
         public FullLibraryPage(Dictionary<string, string> Searches, List<string> Themes)
         {
             this.Themes.AddRange(Themes);
             this.Searches = Searches;
-            DataContext = this;
 
             InitializeComponent();
 
-            Pagination();
+            View = CollectionViewSource.GetDefaultView(Cards);
+            View.Filter = FilterCard;
+            ThemeLibrary.ItemsSource = View;
         }
 
-        private void Pagination()
+        /// <summary>
+        /// Read by the panel's ItemMargin binding (RelativeSource AncestorType=Page) and by
+        /// the post-Loaded fallback in case that binding does not resolve across the
+        /// ItemsPanelTemplate namescope.
+        /// </summary>
+        public Thickness CardMargin => new(SMMP.AdaptiveMargin);
+
+        /// <summary>
+        /// Read by the panel's MaxItemsPerRow binding (RelativeSource AncestorType=Page) and
+        /// by the post-Loaded fallback.
+        /// </summary>
+        public int CardsPerRow => SMMP.AdaptiveLayout;
+
+        private bool FilterCard(object Item)
         {
-            ThemePagination.SelectPageChanged += ThemePagination_SelectPageChanged;
-        }
-
-        private async Task AddThemes(string[] Search, int Page)
-        {
-            Dispose();
-
-            int Count = 0;
-
-            PageScroll.ScrollToVerticalOffset(0);
-
-            ThemePagination.Visibility = Visibility.Collapsed;
-
-            if (Search.Any())
+            if (_search.Length == 0)
             {
-                foreach (KeyValuePair<string, string> Pair in Searches.Where(Theme => Directory.Exists(Path.Combine(SMML.Location, Theme.Key))).ToDictionary(Theme => Theme.Key, Theme => Theme.Value).ToArray().Select(Pair => new { Pair.Key, Pair.Value, MatchCount = CountMatchingWords(Pair.Value, Search) }).Where(Pair => Pair.MatchCount > 0).OrderByDescending(Pair => Pair.MatchCount).ToDictionary(Pair => Pair.Key, Pair => Pair.Value))
-                {
-                    if (SMMP.LibraryPagination * Page > Count && SMMP.LibraryPagination * Page <= Count + SMMP.LibraryPagination)
-                    {
-                        string ThemePath = Path.Combine(SMML.Location, Pair.Key);
-
-                        SSTHI Info = SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo));
-
-                        SPVCLC LibraryCard = new(); // TODO(Task 6): construct LibraryCardViewModel and bind via ObservableCollection; this new() is a temporary compile stopgap
-
-                        LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Pair.Key);
-
-                        ThemeLibrary.Children.Add(LibraryCard);
-
-                        Empty.Visibility = Visibility.Collapsed;
-
-                        await Task.Delay(50);
-                    }
-
-                    Count++;
-                }
-            }
-            else
-            {
-                foreach (string Theme in Themes.Where(Theme => Directory.Exists(Path.Combine(SMML.Location, Theme))).ToList())
-                {
-                    if (SMMP.LibraryPagination * Page > Count && SMMP.LibraryPagination * Page <= Count + SMMP.LibraryPagination)
-                    {
-                        string ThemePath = Path.Combine(SMML.Location, Theme);
-
-                        SPVCLC LibraryCard = new(); // TODO(Task 6): construct LibraryCardViewModel and bind via ObservableCollection; this new() is a temporary compile stopgap
-
-                        LibraryCard.IsVisibleChanged += (s, e) => ThemeCard_IsVisibleChanged(s, e, Theme);
-
-                        ThemeLibrary.Children.Add(LibraryCard);
-
-                        Empty.Visibility = Visibility.Collapsed;
-
-                        await Task.Delay(50);
-                    }
-
-                    Count++;
-                }
+                return true;
             }
 
-            if (ThemeLibrary.Children.Count <= 0)
+            if (Item is SPVMLC Card)
             {
-                Empty.Visibility = Visibility.Visible;
+                string Name = Path.GetFileName(Card.Theme);
+                string Haystack = Searches.TryGetValue(Name, out string Value) ? Value : $"{Card.Title} {Card.Description}";
+
+                return _search.All(Word => Haystack.Split(' ').Any(Part => Part.Contains(Word)));
             }
 
-            ThemePagination.MaxPage = (int)Math.Ceiling((double)Count / SMMP.LibraryPagination);
-        }
-
-        private static int CountMatchingWords(string Text, string[] Pattern)
-        {
-            //return Text.Split(' ').Count(Word => Pattern.Any(Words => Word.Contains(Words)));
-            return Pattern.Count(Word => Text.Split(' ').Any(TextWord => TextWord.Contains(Word)));
+            return false;
         }
 
         private async void FullLibraryPage_Loaded(object sender, RoutedEventArgs e)
         {
-            ThemeLibrary.ItemMargin = new Thickness(SMMP.AdaptiveMargin);
-            ThemeLibrary.MaxItemsPerRow = SMMP.AdaptiveLayout;
+            _search = SPMI.SearchService.SearchList;
 
-            await AddThemes(SPMI.SearchService.SearchList, ThemePagination.SelectPage);
+            await LoadCardsAsync();
         }
 
-        private async void ThemePagination_SelectPageChanged(object sender, EventArgs e)
+        private async Task LoadCardsAsync()
         {
-            Dispose();
+            Cards.Clear();
 
-            await AddThemes(SPMI.SearchService.SearchList, ThemePagination.SelectPage);
-        }
+            List<string> Valid = Themes.Where(Theme => Directory.Exists(Path.Combine(SMML.Location, Theme))).ToList();
 
-        private async void ThemeCard_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e, string Theme)
-        {
-            if ((bool)e.NewValue == false)
+            const int Batch = 12;
+
+            List<SPVMLC> Pending = [];
+
+            foreach (string Theme in Valid)
             {
-                if (((sender as SPVCLC)?.DataContext as SPVMLC)?.Delete == true)
-                {
-                    Themes.Remove(Theme);
-                    Searches.Remove(Theme, out _);
-                }
+                string ThemePath = Path.Combine(SMML.Location, Theme);
 
-                await Task.Delay(250);
+                // SSTHI.ReadJson is pure file IO + JSON parsing, safe off the UI thread.
+                SSTHI Info = await Task.Run(() => SSTHI.ReadJson(Path.Combine(ThemePath, SMMRC.SucroseInfo)));
 
-                if (ThemeLibrary.Children.Count <= 0)
+                Pending.Add(new SPVMLC(ThemePath, Info, this));
+
+                if (Pending.Count >= Batch)
                 {
-                    if (ThemePagination.MaxPage > ThemePagination.SelectPage)
+                    foreach (SPVMLC Card in Pending)
                     {
-                        await AddThemes(SPMI.SearchService.SearchList, ThemePagination.SelectPage);
+                        Cards.Add(Card);
                     }
-                    else if (ThemePagination.SelectPage > 0)
-                    {
-                        ThemePagination.SelectPage--;
-                    }
-                    else
-                    {
-                        Empty.Visibility = Visibility.Visible;
-                        ThemePagination.Visibility = Visibility.Collapsed;
-                    }
+
+                    Pending.Clear();
+
+                    await Task.Yield();
                 }
             }
+
+            foreach (SPVMLC Card in Pending)
+            {
+                Cards.Add(Card);
+            }
+
+            // The panel DPs are normally supplied via the RelativeSource bindings in XAML, but
+            // RelativeSource AncestorType=Page can fail to resolve inside an ItemsPanelTemplate
+            // namescope. Apply the values directly once the panel is realized as a guarantee.
+            ApplyPanelLayout();
+
+            UpdateEmptyState();
+        }
+
+        private void ApplyPanelLayout()
+        {
+            SPCJVWP Panel = FindPanel(ThemeLibrary);
+
+            if (Panel != null)
+            {
+                Panel.ItemMargin = CardMargin;
+                Panel.MaxItemsPerRow = CardsPerRow;
+            }
+        }
+
+        private static SPCJVWP FindPanel(DependencyObject Root)
+        {
+            if (Root is SPCJVWP Found)
+            {
+                return Found;
+            }
+
+            int Count = VisualTreeHelper.GetChildrenCount(Root);
+
+            for (int Index = 0; Index < Count; Index++)
+            {
+                SPCJVWP Result = FindPanel(VisualTreeHelper.GetChild(Root, Index));
+
+                if (Result != null)
+                {
+                    return Result;
+                }
+            }
+
+            return null;
+        }
+
+        private void UpdateEmptyState()
+        {
+            Empty.Visibility = View.Cast<object>().Any() ? Visibility.Collapsed : Visibility.Visible;
+        }
+
+        public void Remove(SPVMLC ViewModel)
+        {
+            string Name = Path.GetFileName(ViewModel.Theme);
+
+            Cards.Remove(ViewModel);
+            Themes.Remove(Name);
+            Searches.Remove(Name);
+
+            UpdateEmptyState();
+        }
+
+        public void Refresh()
+        {
+            _search = SPMI.SearchService.SearchList;
+
+            View.Refresh();
+
+            UpdateEmptyState();
         }
 
         public void Dispose()
         {
-            ThemeLibrary.Children.Clear();
+            Cards.Clear();
 
             GC.SuppressFinalize(this);
         }
