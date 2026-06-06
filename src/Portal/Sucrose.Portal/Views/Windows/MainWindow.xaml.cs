@@ -347,7 +347,6 @@ namespace Sucrose.Portal.Views.Windows
 
             ViewModel?.Dispose();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

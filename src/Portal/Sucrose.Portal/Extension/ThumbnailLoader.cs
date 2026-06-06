@@ -113,7 +113,6 @@ namespace Sucrose.Portal.Extension
 
         public void Dispose()
         {
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

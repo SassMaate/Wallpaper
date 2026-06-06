@@ -120,7 +120,6 @@ namespace Sucrose.Portal.Views.Pages
         {
             FullStorePage?.Dispose();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

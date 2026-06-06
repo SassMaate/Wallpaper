@@ -44,7 +44,6 @@ namespace Sucrose.Portal.Views.Pages.Setting
             FrameSetting.Children.Clear();
             ViewModel.Dispose();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

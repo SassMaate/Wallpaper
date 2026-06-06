@@ -160,7 +160,6 @@ namespace Sucrose.Portal.Controls
                 InternalChildren.Clear();
             }
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

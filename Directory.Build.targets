@@ -8,9 +8,9 @@
         <ThreadPoolMinThreads>10</ThreadPoolMinThreads>
         <ThreadPoolMaxThreads>500</ThreadPoolMaxThreads>
         <UseWindowsThreadPool>true</UseWindowsThreadPool>
-        <ServerGarbageCollection>true</ServerGarbageCollection>
+        <ServerGarbageCollection Condition="'$(ServerGarbageCollection)' == ''">true</ServerGarbageCollection>
         <RetainVMGarbageCollection>false</RetainVMGarbageCollection>
-        <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+        <ConcurrentGarbageCollection Condition="'$(ConcurrentGarbageCollection)' == ''">true</ConcurrentGarbageCollection>
         <!-- Supported as of .NET Core SDK 3.0 Preview 1 -->
         <TieredCompilation>true</TieredCompilation>
         <InvariantGlobalization>false</InvariantGlobalization>

@@ -572,7 +572,6 @@ namespace Sucrose.Portal.Views.Controls
         {
             Loader.Dispose();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

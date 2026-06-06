@@ -11,6 +11,8 @@
         <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Portal\x86</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Portal\x64</OutputPath>
         <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Portal\ARM64</OutputPath>
+        <ServerGarbageCollection>false</ServerGarbageCollection>
+        <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Release'">

@@ -580,7 +580,6 @@ namespace Sucrose.Portal.ViewModels.Pages
         {
             Contents.Clear();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

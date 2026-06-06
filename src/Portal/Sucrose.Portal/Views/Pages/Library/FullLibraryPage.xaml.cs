@@ -156,7 +156,6 @@ namespace Sucrose.Portal.Views.Pages.Library
         {
             ThemeLibrary.Children.Clear();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

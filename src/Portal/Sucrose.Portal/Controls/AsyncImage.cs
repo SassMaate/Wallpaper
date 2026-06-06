@@ -43,7 +43,6 @@ namespace Sucrose.Portal.Controls
 
         public void Dispose()
         {
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

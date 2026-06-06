@@ -441,7 +441,6 @@ namespace Sucrose.Portal.Views.Pages
             FullLibraryPage?.Dispose();
             EmptyLibraryPage?.Dispose();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

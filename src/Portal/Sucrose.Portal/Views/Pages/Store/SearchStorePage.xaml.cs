@@ -14,7 +14,6 @@ namespace Sucrose.Portal.Views.Pages.Store
 
         public void Dispose()
         {
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

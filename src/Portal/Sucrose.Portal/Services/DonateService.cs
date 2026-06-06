@@ -21,7 +21,6 @@ namespace Sucrose.Portal.Services
 
         public void Dispose()
         {
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }

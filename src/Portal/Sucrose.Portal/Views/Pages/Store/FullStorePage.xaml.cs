@@ -308,7 +308,6 @@ namespace Sucrose.Portal.Views.Pages.Store
         {
             ThemeStore.Children.Clear();
 
-            GC.Collect();
             GC.SuppressFinalize(this);
         }
     }
