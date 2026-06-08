@@ -37,24 +37,31 @@ namespace Sucrose.Portal.Views.Controls
                 oldVm.UnsubscribeInfoChanged();
             }
 
-            if (ViewModel == null)
+            if (ViewModel is not SPVMSCVM viewModel)
             {
                 return;
             }
 
             _cts = new CancellationTokenSource();
 
+            // Capture the VM and token as LOCALS. This is an async handler and the card
+            // recycles fast: a newer DataContextChanged can null/replace the `_cts` field
+            // (and the DataContext) while we are awaiting, so reading the field after an
+            // await would throw NullReference. The captured token still lets a stale
+            // invocation detect cancellation and bail out.
+            CancellationToken token = _cts.Token;
+
             try
             {
-                bool result = await ViewModel.EnsureDownloadedAsync(_cts.Token);
+                bool result = await viewModel.EnsureDownloadedAsync(token);
 
-                if (!_cts.Token.IsCancellationRequested && result)
+                if (!token.IsCancellationRequested && result)
                 {
-                    ViewModel.SubscribeInfoChanged();
+                    viewModel.SubscribeInfoChanged();
 
                     // Thumbnail is now valid (EnsureDownloadedAsync populated Info +
                     // ThumbnailPath), so kick off the image load.
-                    await ViewModel.LoadThumbnailAsync(_cts.Token);
+                    await viewModel.LoadThumbnailAsync(token);
                 }
             }
             catch (OperationCanceledException)

@@ -64,6 +64,7 @@
             <!-- Loading spinner (shown while cover/metadata is being fetched) -->
             <Border
                 x:Name="Progress"
+                Panel.ZIndex="1"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
                 ClipToBounds="True"
@@ -81,6 +82,7 @@
             <!-- Error overlay (shown when cover/metadata cache download failed) -->
             <Border
                 x:Name="Warn"
+                Panel.ZIndex="1"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Stretch"
                 ClipToBounds="True"
@@ -97,8 +99,10 @@
                     Progress="100" />
             </Border>
 
-            <!-- Card content (thumbnail + info + download button) -->
-            <Grid>
+            <!-- Card content (thumbnail + info + download button) — hidden while loading
+                 so the empty thumbnail/title/desc don't show; the ZIndex'd Progress/Warn
+                 overlays sit on top. -->
+            <Grid Visibility="{Binding IsLoading, Converter={StaticResource InverseBoolToVisibility}}">
                 <!-- Static thumbnail — binding-driven (Rule 1) -->
                 <Image
                     x:Name="Imagine"
