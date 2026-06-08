@@ -58,9 +58,6 @@ namespace Sucrose.Portal.ViewModels
         // Unique identifier used to correlate in-flight downloads.
         private readonly string _guid;
 
-        // On-disk cache directory for this wallpaper's metadata/cover.
-        private readonly string _theme;
-
         // Random key assigned when a download is started; used to look up
         // progress in StoreService.Info.
         private string _keys = string.Empty;
@@ -134,7 +131,7 @@ namespace Sucrose.Portal.ViewModels
         internal StoreCardViewModel(string Theme, KeyValuePair<string, SSSIW> Wallpaper, IStoreCardHost Host)
         {
             _host = Host;
-            _theme = Theme;
+            this.Theme = Theme;
             this.Wallpaper = Wallpaper;
             _guid = Path.Combine(Wallpaper.Value.Source, Wallpaper.Key);
 
@@ -148,7 +145,7 @@ namespace Sucrose.Portal.ViewModels
         // has been populated; the base LoadThumbnailAsync should be called
         // after that point.
         public override string ThumbnailPath => Info != null
-            ? Path.Combine(_theme, Info.Thumbnail)
+            ? Path.Combine(Theme, Info.Thumbnail)
             : string.Empty;
 
         // PreviewPath is the remote GIF URL built the same way StoreCard does
@@ -196,9 +193,10 @@ namespace Sucrose.Portal.ViewModels
 
             try
             {
-                // DownloadCache() is blocking I/O — run on a background thread,
-                // matching the original Task.Run(DownloadCache) call site.
-                bool Result = await Task.Run(() => DownloadCache(), Token);
+                // DownloadCache is async (cover/info HTTP cache + spin-wait on
+                // StoreDownloading); awaited directly so cancellation can
+                // interrupt the wait loops instead of leaking a threadpool thread.
+                bool Result = await DownloadCache(Token);
 
                 if (Token.IsCancellationRequested)
                 {
@@ -256,38 +254,52 @@ namespace Sucrose.Portal.ViewModels
             }
         }
 
-        // Mirrors StoreCard.DownloadCache — synchronous, intended for Task.Run.
-        private bool DownloadCache()
+        // Mirrors StoreCard.DownloadCache — async (the original spin-waited with
+        // await Task.Delay(100)); each wait is cancellation-aware so a recycled
+        // card's load can be interrupted without leaking a thread.
+        private async Task<bool> DownloadCache(CancellationToken Token)
         {
-            if (SPMI.StoreDownloader.ContainsKey(_theme))
+            if (SPMI.StoreDownloader.ContainsKey(Theme))
             {
-                while (!SPMI.StoreDownloading.ContainsKey(_theme) || !SPMI.StoreDownloading[_theme])
+                while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
                 {
-                    System.Threading.Thread.Sleep(100);
+                    if (Token.IsCancellationRequested)
+                    {
+                        return false;
+                    }
+
+                    await Task.Delay(100, Token);
                 }
 
-                Info = SSTHI.ReadJson(Path.Combine(_theme, SMMRC.SucroseInfo));
+                Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
 
                 return true;
             }
             else
             {
-                SPMI.StoreDownloader[_theme] = false;
+                SPMI.StoreDownloader[Theme] = false;
 
-                SPMI.StoreDownloader[_theme] = SSDMMP.StoreServerType switch
+                // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep
+                // it off the caller's thread without blocking via Task.Run.
+                SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
                 {
-                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, _theme),
-                    _ => SSSHSD.Cache(Wallpaper, _theme),
-                };
+                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
+                    _ => SSSHSD.Cache(Wallpaper, Theme),
+                }, Token);
 
-                if (SPMI.StoreDownloader[_theme])
+                if (SPMI.StoreDownloader[Theme])
                 {
-                    while (!SPMI.StoreDownloading.ContainsKey(_theme) || !SPMI.StoreDownloading[_theme])
+                    while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
                     {
-                        System.Threading.Thread.Sleep(100);
+                        if (Token.IsCancellationRequested)
+                        {
+                            return false;
+                        }
+
+                        await Task.Delay(100, Token);
                     }
 
-                    Info = SSTHI.ReadJson(Path.Combine(_theme, SMMRC.SucroseInfo));
+                    Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
 
                     return true;
                 }
@@ -388,13 +400,18 @@ namespace Sucrose.Portal.ViewModels
             IsDownloadError = false;
             IsReady = false;
 
-            await Task.Run(SendDownload);
+            // Fire-and-forget on the threadpool, matching the original Start()'s
+            // non-blocking offload: StartDownloadAsync must NOT block until the
+            // whole download finishes — InfoChanged drives progress. Task.Run on a
+            // Func<Task> tracks the full async work (unlike the prior async void),
+            // and both methods carry their own try/catch so faults stay handled.
+            _ = Task.Run(() => SendDownload());
 
-            await Task.Run(DownloadTheme);
+            _ = Task.Run(() => DownloadTheme());
         }
 
         // Mirrors StoreCard.SendDownload — fire-and-forget telemetry.
-        private async void SendDownload()
+        private async Task SendDownload()
         {
             try
             {
@@ -423,7 +440,7 @@ namespace Sucrose.Portal.ViewModels
         }
 
         // Mirrors StoreCard.DownloadTheme.
-        private async void DownloadTheme()
+        private async Task DownloadTheme()
         {
             try
             {
@@ -521,7 +538,7 @@ namespace Sucrose.Portal.ViewModels
             SPVCTR ThemeReport = new()
             {
                 Info = Info,
-                Theme = _theme,
+                Theme = Theme,
                 Wallpaper = Wallpaper
             };
 
