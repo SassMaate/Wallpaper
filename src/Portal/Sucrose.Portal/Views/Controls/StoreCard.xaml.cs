@@ -50,30 +50,20 @@ namespace Sucrose.Portal.Views.Controls
 
             _cts = new CancellationTokenSource();
 
-            // Capture the VM and token as LOCALS. This is an async handler and the card
-            // recycles fast: a newer DataContextChanged can null/replace the `_cts` field
-            // (and the DataContext) while we are awaiting, so reading the field after an
-            // await would throw NullReference. The captured token still lets a stale
-            // invocation detect cancellation and bail out.
+            // Capture the VM and token as LOCALS: this is an async handler and the card
+            // recycles fast, so a newer DataContextChanged can null/replace the _cts field
+            // (and the DataContext) while we await. Reading the field after an await would
+            // throw NullReference; the captured token still lets a stale invocation bail out.
             CancellationToken token = _cts.Token;
 
             try
             {
-                // Debounce: only fetch/download for cards the user actually lingers on.
-                // Fast scrolling recycles the card within this window, cancelling the token
-                // so we never flood thousands of cover downloads/decodes (RAM + stutter).
+                // Debounce: only load for cards the user actually lingers on, so fast scrolling
+                // (which recycles the card within this window and cancels the token) never floods
+                // thousands of cover downloads/decodes.
                 await Task.Delay(200, token);
 
-                bool result = await viewModel.EnsureDownloadedAsync(token);
-
-                if (!token.IsCancellationRequested && result)
-                {
-                    viewModel.SubscribeInfoChanged();
-
-                    // Thumbnail is now valid (EnsureDownloadedAsync populated Info +
-                    // ThumbnailPath), so kick off the image load.
-                    await viewModel.LoadThumbnailAsync(token);
-                }
+                await viewModel.LoadAsync(token);
             }
             catch (OperationCanceledException)
             {

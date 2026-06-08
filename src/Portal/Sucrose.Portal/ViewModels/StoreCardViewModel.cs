@@ -78,7 +78,7 @@ namespace Sucrose.Portal.ViewModels
 
         private readonly PropertyChangedEventHandler _infoChangedHandler;
 
-        // Populated after EnsureDownloadedAsync succeeds.
+        // Populated after LoadAsync succeeds (first bind only).
         internal SSTHI Info { get; private set; }
 
         // ── Observable state exposed to the card ──────────────────────────
@@ -143,9 +143,8 @@ namespace Sucrose.Portal.ViewModels
         // ── CardViewModelBase abstract overrides ──────────────────────────
 
         // ThumbnailPath is the on-disk cached cover image path.
-        // It is only valid after EnsureDownloadedAsync has succeeded and Info
-        // has been populated; the base LoadThumbnailAsync should be called
-        // after that point.
+        // It is only valid after LoadAsync has succeeded and Info has been
+        // populated; the base LoadThumbnailAsync is called from LoadAsync.
         public override string ThumbnailPath => Info != null
             ? Path.Combine(Theme, Info.Thumbnail)
             : string.Empty;
@@ -183,38 +182,73 @@ namespace Sucrose.Portal.ViewModels
             }
         }
 
-        // ── Cover/metadata cache download ─────────────────────────────────
-        // Mirrors StoreCard.DownloadCache + StoreCard_Loaded logic.
-        // Called by the card code-behind on Loaded; cancellable for recycling.
-        //
-        // Returns true when Info was populated successfully and the card can
-        // be shown; returns false when the cache download failed (show Warn).
-        public async Task<bool> EnsureDownloadedAsync(CancellationToken Token)
+        // ── Cover/metadata load ───────────────────────────────────────────
+        // Replaces the old EnsureDownloadedAsync/DownloadCache/WaitForCache spin-wait.
+        // Each card loads independently and cancellably:
+        //   * first bind (Info == null): download info.json + cover to disk via the existing
+        //     Cache() helper behind the 4-permit gate, then read Info and set localized
+        //     title/description + version-compat;
+        //   * every bind: re-detect an install download already in flight for this wallpaper;
+        //   * always: decode the cover from disk (ImageCache) -> IsLoading flips false and the
+        //     placeholder is replaced by the cover.
+        // No shared StoreDownloader/StoreDownloading coordination, so no cross-card race and no
+        // 30s timeout: a genuine download failure shows the red overlay immediately and retries
+        // fast on the next realize.
+        public async Task LoadAsync(CancellationToken Token)
         {
             IsLoading = true;
+            IsLoadFailed = false;
 
             try
             {
-                // DownloadCache is async (cover/info HTTP cache + spin-wait on
-                // StoreDownloading); awaited directly so cancellation can
-                // interrupt the wait loops instead of leaking a threadpool thread.
-                bool Result = await DownloadCache(Token);
-
-                if (Token.IsCancellationRequested)
+                if (Info == null)
                 {
-                    return false;
-                }
+                    await _downloadGate.WaitAsync(Token);
 
-                if (Result)
-                {
+                    bool Result;
+
+                    try
+                    {
+                        // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep it off
+                        // the UI thread. It downloads info.json + cover to the Theme folder and
+                        // returns true when both are on disk.
+                        Result = await Task.Run(() => SSDMMP.StoreServerType switch
+                        {
+                            SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
+                            _ => SSSHSD.Cache(Wallpaper, Theme),
+                        }, Token);
+                    }
+                    finally
+                    {
+                        _downloadGate.Release();
+                    }
+
+                    if (Token.IsCancellationRequested)
+                    {
+                        return;
+                    }
+
+                    if (!Result)
+                    {
+                        IsLoadFailed = true;
+                        IsLoading = false;
+
+                        return;
+                    }
+
+                    Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
+
                     (string TitleText, string DescriptionText) = SSTCLC.Convert(Info);
+
                     Title = TitleText;
                     Description = DescriptionText;
                     IsIncompatible = Info.AppVersion.CompareTo(SHV.Entry()) > 0;
+                }
 
-                    // Check whether an in-flight download for this wallpaper was
-                    // already started before the card was loaded (e.g. user
-                    // scrolled away and back during a download).
+                // Pick up an install download that was already in flight for this wallpaper
+                // (the user may have started it, scrolled away — unsubscribing — and scrolled back).
+                if (!IsDownloading)
+                {
                     KeyValuePair<string, SSSID> Matching = SSSTMI.StoreService.Info.FirstOrDefault(Pair => Pair.Value.Guid == _guid && Pair.Value.ProgressPercentage < 100);
 
                     if (!Matching.Equals(default(KeyValuePair<string, SSSID>)))
@@ -232,100 +266,23 @@ namespace Sucrose.Portal.ViewModels
                     {
                         IsReady = true;
                     }
-
-                    IsLoading = false;
-                    IsLoadFailed = false;
-                }
-                else
-                {
-                    IsLoadFailed = true;
-                    IsLoading = false;
                 }
 
-                return Result;
+                // Cover is on disk now (Info populated => ThumbnailPath valid); decode it.
+                // LoadThumbnailAsync sets IsLoading = false on success.
+                await LoadThumbnailAsync(Token);
+
+                IsLoadFailed = false;
             }
             catch (OperationCanceledException)
             {
-                return false;
+                // expected on recycle
             }
             catch
             {
                 IsLoadFailed = true;
                 IsLoading = false;
-                return false;
             }
-        }
-
-        // Mirrors StoreCard.DownloadCache — async (the original spin-waited with
-        // await Task.Delay(100)); each wait is cancellation-aware so a recycled
-        // card's load can be interrupted without leaking a thread.
-        private async Task<bool> DownloadCache(CancellationToken Token)
-        {
-            // Already requested this session: just wait (bounded) for the writer to finish.
-            if (SPMI.StoreDownloader.ContainsKey(Theme))
-            {
-                return await WaitForCache(Token);
-            }
-
-            // First request: mark in-progress (so concurrent cards for the same Theme take the
-            // wait branch above instead of re-downloading), then fetch behind the concurrency
-            // gate so a fast scroll can't hold many full-res covers in memory at once.
-            SPMI.StoreDownloader[Theme] = false;
-
-            await _downloadGate.WaitAsync(Token);
-
-            try
-            {
-                // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep it off the
-                // caller's thread via Task.Run.
-                SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
-                {
-                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
-                    _ => SSSHSD.Cache(Wallpaper, Theme),
-                }, Token);
-            }
-            finally
-            {
-                _downloadGate.Release();
-            }
-
-            if (SPMI.StoreDownloader[Theme])
-            {
-                return await WaitForCache(Token);
-            }
-
-            // Genuine failure — drop the entry so the next bind retries cleanly.
-            SPMI.StoreDownloader.Remove(Theme);
-
-            return false;
-        }
-
-        // Bounded spin-wait for the cover/info writer to flag completion. The timeout prevents
-        // the "stuck on load" hang when StoreDownloading never flips true for an abandoned theme.
-        private async Task<bool> WaitForCache(CancellationToken Token)
-        {
-            int Waited = 0;
-
-            while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
-            {
-                if (Token.IsCancellationRequested)
-                {
-                    return false;
-                }
-
-                if (Waited++ > 300)
-                {
-                    SPMI.StoreDownloader.Remove(Theme);
-
-                    return false;
-                }
-
-                await Task.Delay(100, Token);
-            }
-
-            Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
-
-            return true;
         }
 
         // ── InfoChanged handler (mirrors StoreCard.StoreService_InfoChanged) ──
