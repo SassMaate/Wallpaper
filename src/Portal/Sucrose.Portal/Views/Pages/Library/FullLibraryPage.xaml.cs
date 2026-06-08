@@ -31,6 +31,8 @@ namespace Sucrose.Portal.Views.Pages.Library
 
         private CancellationTokenSource _loadCts;
 
+        private ScrollViewer _outerScroll;
+
         private string[] _search = [];
 
         public FullLibraryPage(Dictionary<string, string> Searches, List<string> Themes)
@@ -80,7 +82,59 @@ namespace Sucrose.Portal.Views.Pages.Library
         {
             _search = SPMI.SearchService.SearchList;
 
+            HookViewportConstraint();
+
             await LoadCardsAsync();
+        }
+
+        // The wpfui NavigationView hosts pages inside an infinite-height scroll surface, which both
+        // defeats virtualization (the panel would be measured unbounded) and adds a second scrollbar.
+        // Cap the ItemsControl to the OUTERMOST ancestor ScrollViewer's viewport so the panel is
+        // measured with a finite height and the content stays within the visible area.
+        private void HookViewportConstraint()
+        {
+            _outerScroll = FindOutermostScrollViewer(ThemeLibrary);
+
+            if (_outerScroll != null)
+            {
+                _outerScroll.ScrollChanged += OuterScroll_ScrollChanged;
+            }
+
+            Dispatcher.BeginInvoke(new Action(ApplyViewportConstraint), System.Windows.Threading.DispatcherPriority.Loaded);
+        }
+
+        private void OuterScroll_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+            if (e.ViewportHeightChange != 0)
+            {
+                ApplyViewportConstraint();
+            }
+        }
+
+        private void ApplyViewportConstraint()
+        {
+            if (_outerScroll != null && _outerScroll.ViewportHeight > 0)
+            {
+                ThemeLibrary.MaxHeight = _outerScroll.ViewportHeight;
+            }
+        }
+
+        private static ScrollViewer FindOutermostScrollViewer(DependencyObject Start)
+        {
+            ScrollViewer Found = null;
+            DependencyObject Current = VisualTreeHelper.GetParent(Start);
+
+            while (Current != null)
+            {
+                if (Current is ScrollViewer Scroll)
+                {
+                    Found = Scroll;
+                }
+
+                Current = VisualTreeHelper.GetParent(Current);
+            }
+
+            return Found;
         }
 
         private async Task LoadCardsAsync()
@@ -210,6 +264,12 @@ namespace Sucrose.Portal.Views.Pages.Library
 
         public void Dispose()
         {
+            if (_outerScroll != null)
+            {
+                _outerScroll.ScrollChanged -= OuterScroll_ScrollChanged;
+                _outerScroll = null;
+            }
+
             _loadCts?.Cancel();
             _loadCts?.Dispose();
 

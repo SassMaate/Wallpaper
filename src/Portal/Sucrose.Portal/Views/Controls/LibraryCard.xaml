@@ -85,10 +85,9 @@
     <Border
         HorizontalAlignment="Stretch"
         VerticalAlignment="Stretch"
-        ClipToBounds="True"
         CornerRadius="10">
 
-        <Grid>
+        <Grid x:Name="CardClip" SizeChanged="CardClip_SizeChanged">
             <Border
                 x:Name="Progress"
                 HorizontalAlignment="Stretch"

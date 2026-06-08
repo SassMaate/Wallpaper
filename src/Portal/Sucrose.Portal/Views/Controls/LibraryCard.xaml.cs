@@ -2,6 +2,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using SMMP = Sucrose.Manager.Manage.Portal;
 using SPVMLC = Sucrose.Portal.ViewModels.LibraryCardViewModel;
 using SXAGAB = Sucrose.XamlAnimatedGif.AnimationBehavior;
@@ -95,8 +96,20 @@ namespace Sucrose.Portal.Views.Controls
             }
         }
 
+        // A Border's CornerRadius does NOT clip its children to rounded corners (ClipToBounds clips
+        // to the rectangular bounds only). Apply a rounded RectangleGeometry clip to the content
+        // grid so the thumbnail, hover GIF, and overlay are all rounded — without a VisualBrush.
+        private void CardClip_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            CardClip.Clip = new RectangleGeometry(new Rect(0, 0, e.NewSize.Width, e.NewSize.Height), 10, 10);
+        }
+
         private void ThemeMore_Click(object sender, RoutedEventArgs e)
         {
+            // Opening via IsOpen does not set PlacementTarget (unlike right-click), so the menu's
+            // DataContext binding (PlacementTarget.DataContext) would resolve to null and every
+            // command/header/visibility binding would fail. Set it explicitly.
+            ContextMenu.PlacementTarget = this;
             ContextMenu.IsOpen = true;
         }
 
