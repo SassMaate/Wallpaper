@@ -1,4 +1,5 @@
-﻿using Wpf.Ui;
+﻿using System.Collections.Concurrent;
+using Wpf.Ui;
 using Wpf.Ui.Controls;
 using SPSBS = Sucrose.Portal.Services.BackdropService;
 using SPSCES = Sucrose.Portal.Services.CultureService;
@@ -31,9 +32,18 @@ namespace Sucrose.Portal.Manage
 
         public static IContentDialogService ContentDialogService;
 
+        // StoreDownloader is only ever touched on the UI thread (the synchronous parts of
+        // StoreCardViewModel.DownloadCache/WaitForCache and their await continuations), so a
+        // plain Dictionary is safe here.
         public static Dictionary<string, bool> StoreDownloader = [];
 
-        public static Dictionary<string, bool> StoreDownloading = [];
+        // StoreDownloading is written from up to 4 concurrent threadpool threads inside the
+        // Cache(...) helpers (Shared.Store GitHub/Soferity Download.Cache, invoked via Task.Run
+        // behind a 4-permit gate) AND read from the UI thread in WaitForCache. A plain Dictionary
+        // under concurrent writers corrupts its internal buckets -> lost "=true" writes -> cards
+        // hang in the spin-wait until the 30s timeout and show the red error overlay (recovering
+        // only on re-realize). ConcurrentDictionary makes every per-key read/write atomic.
+        public static ConcurrentDictionary<string, bool> StoreDownloading = [];
 
         public static readonly SymbolRegular AllIcon = SymbolRegular.Home24;
 
