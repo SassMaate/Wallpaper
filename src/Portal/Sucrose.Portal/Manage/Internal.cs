@@ -34,10 +34,10 @@ namespace Sucrose.Portal.Manage
 
         // StoreDownloading is written from up to 4 concurrent threadpool threads inside the
         // Cache(...) helpers (Shared.Store GitHub/Soferity Download.Cache, invoked via Task.Run
-        // behind a 4-permit gate) AND read from the UI thread in WaitForCache. A plain Dictionary
-        // under concurrent writers corrupts its internal buckets -> lost "=true" writes -> cards
-        // hang in the spin-wait until the 30s timeout and show the red error overlay (recovering
-        // only on re-realize). ConcurrentDictionary makes every per-key read/write atomic.
+        // behind a 4-permit gate). Nothing reads it any more — the StoreCard spin-wait that used
+        // to poll it was removed — so it is harmless vestigial state kept only to avoid editing the
+        // shared Cache() helpers. ConcurrentDictionary keeps the concurrent writers from corrupting
+        // a plain Dictionary's internal buckets.
         public static ConcurrentDictionary<string, bool> StoreDownloading = [];
 
         public static readonly SymbolRegular AllIcon = SymbolRegular.Home24;
