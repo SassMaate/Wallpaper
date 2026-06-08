@@ -32,11 +32,6 @@ namespace Sucrose.Portal.Manage
 
         public static IContentDialogService ContentDialogService;
 
-        // StoreDownloader is only ever touched on the UI thread (the synchronous parts of
-        // StoreCardViewModel.DownloadCache/WaitForCache and their await continuations), so a
-        // plain Dictionary is safe here.
-        public static Dictionary<string, bool> StoreDownloader = [];
-
         // StoreDownloading is written from up to 4 concurrent threadpool threads inside the
         // Cache(...) helpers (Shared.Store GitHub/Soferity Download.Cache, invoked via Task.Run
         // behind a 4-permit gate) AND read from the UI thread in WaitForCache. A plain Dictionary
