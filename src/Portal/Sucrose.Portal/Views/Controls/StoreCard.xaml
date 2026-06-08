@@ -73,10 +73,20 @@
                 <Border.Background>
                     <SolidColorBrush Opacity="0.5" Color="{DynamicResource ApplicationBackgroundColor}" />
                 </Border.Background>
-                <ui:ProgressRing
-                    Width="120"
-                    Height="120"
-                    IsIndeterminate="True" />
+                <!--
+                    Static (non-animated) loading placeholder. An indeterminate ui:ProgressRing runs a
+                    perpetual per-frame Storyboard; during scroll a whole viewport of Store cards stays
+                    IsLoading=true (cover download + cache spin-wait + 200ms debounce), so N rings would
+                    animate simultaneously and saturate the UI thread -> stutter. A static SymbolIcon gives
+                    the same "not ready yet" cue with zero per-frame cost. (Library stays smooth because its
+                    cards load from local disk and leave IsLoading almost instantly.)
+                -->
+                <ui:SymbolIcon
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="56"
+                    Foreground="{DynamicResource TextPlaceholderColorBrush}"
+                    Symbol="Image24" />
             </Border>
 
             <!-- Error overlay (shown when cover/metadata cache download failed) -->
