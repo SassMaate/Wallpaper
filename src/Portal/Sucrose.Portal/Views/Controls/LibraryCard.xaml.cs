@@ -30,7 +30,6 @@ namespace Sucrose.Portal.Views.Controls
             _cts = null;
 
             ClearPreview();
-            Imagine.Source = null;
 
             if (ViewModel == null)
             {

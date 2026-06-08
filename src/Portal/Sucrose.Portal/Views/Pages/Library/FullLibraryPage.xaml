@@ -27,6 +27,7 @@
         <ItemsControl
             x:Name="ThemeLibrary"
             Margin="10,0,10,0"
+            MaxHeight="{Binding ViewportHeight, RelativeSource={RelativeSource AncestorType={x:Type ScrollViewer}}}"
             ScrollViewer.CanContentScroll="True"
             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
             ScrollViewer.VerticalScrollBarVisibility="Auto"
