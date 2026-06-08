@@ -172,9 +172,9 @@ namespace Sucrose.Portal.Views.Pages.Store
                                 {
                                     if (SMMP.StorePagination * Page > Count && SMMP.StorePagination * Page <= Count + SMMP.StorePagination)
                                     {
-                                        string Theme = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, CategoryKey, SSSHC.FileName(WallpaperKey));
-
-                                        SPVCSC StoreCard = new(Theme, new(WallpaperKey, Wallpaper));
+                                        // TODO(Task 10): replace with StoreCardViewModel-wired construction (Theme + Wallpaper args)
+                                        // string Theme = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, CategoryKey, SSSHC.FileName(WallpaperKey));
+                                        SPVCSC StoreCard = new();
 
                                         ThemeStore.Children.Add(StoreCard);
 
@@ -207,9 +207,9 @@ namespace Sucrose.Portal.Views.Pages.Store
                                     {
                                         if (SMMP.StorePagination * Page > Count && SMMP.StorePagination * Page <= Count + SMMP.StorePagination)
                                         {
-                                            string Theme = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, Category.Key, SSSHC.FileName(Wallpaper.Key));
-
-                                            SPVCSC StoreCard = new(Theme, Wallpaper);
+                                            // TODO(Task 10): replace with StoreCardViewModel-wired construction (Theme + Wallpaper args)
+                                            // string Theme = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.Store, Category.Key, SSSHC.FileName(Wallpaper.Key));
+                                            SPVCSC StoreCard = new();
 
                                             ThemeStore.Children.Add(StoreCard);
 

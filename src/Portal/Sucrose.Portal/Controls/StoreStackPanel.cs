@@ -1,6 +1,5 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
-using SPVCSC = Sucrose.Portal.Views.Controls.StoreCard;
 
 namespace Sucrose.Portal.Controls
 {
@@ -152,11 +151,6 @@ namespace Sucrose.Portal.Controls
         {
             if (InternalChildren.Count >= 0)
             {
-                InternalChildren
-                    .OfType<SPVCSC>()
-                    .ToList()
-                    .ForEach(Card => Card.Dispose());
-
                 InternalChildren.Clear();
             }
 
