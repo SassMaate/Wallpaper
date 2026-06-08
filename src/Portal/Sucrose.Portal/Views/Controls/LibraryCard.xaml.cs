@@ -60,14 +60,22 @@ namespace Sucrose.Portal.Views.Controls
 
             if (SMMP.LibraryPreview && File.Exists(ViewModel.PreviewPath))
             {
+                // Defer the swap until the GIF has actually loaded (MediaOpened) so the thumbnail
+                // stays visible — and hit-testable — meanwhile. Hiding it immediately would expose a
+                // transparent, non-hit-testable gap that makes MouseEnter/MouseLeave oscillate.
                 SXAGAB.SetSourceUri(Imaginer, new Uri(ViewModel.PreviewPath));
-                Imaginer.Visibility = Visibility.Visible;
-                Imagine.Visibility = Visibility.Hidden;
+                SXAGAB.AddLoadedHandler(Imaginer, Imaginer_MediaOpened);
+            }
+        }
 
-                if (SMMP.LibraryPreviewHide)
-                {
-                    Preview.Visibility = Visibility.Hidden;
-                }
+        private void Imaginer_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            Imaginer.Visibility = Visibility.Visible;
+            Imagine.Visibility = Visibility.Hidden;
+
+            if (SMMP.LibraryPreviewHide)
+            {
+                Preview.Visibility = Visibility.Hidden;
             }
         }
 
