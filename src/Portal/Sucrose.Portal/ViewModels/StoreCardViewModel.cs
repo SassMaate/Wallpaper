@@ -67,6 +67,10 @@ namespace Sucrose.Portal.ViewModels
         // Whether the last download attempt faulted.
         private bool _error;
 
+        // Caps concurrent cover-cache downloads across all cards so scrolling a large
+        // catalog can't hold dozens of full-resolution covers in memory at once.
+        private static readonly SemaphoreSlim _downloadGate = new(4, 4);
+
         // Guard for subscribe/unsubscribe against the StoreService.
         private readonly object _subscribeLock = new();
 
@@ -257,55 +261,61 @@ namespace Sucrose.Portal.ViewModels
         // card's load can be interrupted without leaking a thread.
         private async Task<bool> DownloadCache(CancellationToken Token)
         {
-            if (SPMI.StoreDownloader.ContainsKey(Theme))
+            // Kick off the cover/info cache fetch once per Theme. A concurrency gate caps
+            // how many run at the same time so a fast scroll can't spike memory.
+            if (!SPMI.StoreDownloader.ContainsKey(Theme))
             {
-                while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
+                await _downloadGate.WaitAsync(Token);
+
+                try
                 {
-                    if (Token.IsCancellationRequested)
+                    // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep
+                    // it off the caller's thread via Task.Run.
+                    SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
                     {
-                        return false;
-                    }
-
-                    await Task.Delay(100, Token);
+                        SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
+                        _ => SSSHSD.Cache(Wallpaper, Theme),
+                    }, Token);
                 }
-
-                Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
-
-                return true;
+                finally
+                {
+                    _downloadGate.Release();
+                }
             }
-            else
+
+            // A previous attempt may have failed or been abandoned mid-flight, leaving the
+            // entry false. Drop it so the next bind retries cleanly instead of waiting forever.
+            if (!SPMI.StoreDownloader.TryGetValue(Theme, out bool Cached) || !Cached)
             {
-                SPMI.StoreDownloader[Theme] = false;
+                SPMI.StoreDownloader.Remove(Theme);
 
-                // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep
-                // it off the caller's thread without blocking via Task.Run.
-                SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
-                {
-                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
-                    _ => SSSHSD.Cache(Wallpaper, Theme),
-                }, Token);
+                return false;
+            }
 
-                if (SPMI.StoreDownloader[Theme])
-                {
-                    while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
-                    {
-                        if (Token.IsCancellationRequested)
-                        {
-                            return false;
-                        }
+            // Wait (bounded) for the file writer to flag completion. The timeout prevents the
+            // "stuck on load" hang when StoreDownloading never flips true for an abandoned theme.
+            int Waited = 0;
 
-                        await Task.Delay(100, Token);
-                    }
-
-                    Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
-
-                    return true;
-                }
-                else
+            while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
+            {
+                if (Token.IsCancellationRequested)
                 {
                     return false;
                 }
+
+                if (Waited++ > 300)
+                {
+                    SPMI.StoreDownloader.Remove(Theme);
+
+                    return false;
+                }
+
+                await Task.Delay(100, Token);
             }
+
+            Info = SSTHI.ReadJson(Path.Combine(Theme, SMMRC.SucroseInfo));
+
+            return true;
         }
 
         // ── InfoChanged handler (mirrors StoreCard.StoreService_InfoChanged) ──
