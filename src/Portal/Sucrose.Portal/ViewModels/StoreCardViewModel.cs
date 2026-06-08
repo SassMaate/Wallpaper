@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.IO;
+using System.Windows;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Wpf.Ui.Controls;
@@ -50,8 +51,6 @@ namespace Sucrose.Portal.ViewModels
 {
     public partial class StoreCardViewModel : CardViewModelBase
     {
-        private readonly IStoreCardHost _host;
-
         // Wallpaper entry from the store catalogue.
         internal KeyValuePair<string, SSSIW> Wallpaper { get; private set; }
 
@@ -128,9 +127,8 @@ namespace Sucrose.Portal.ViewModels
         [ObservableProperty]
         private string _updateHeader = string.Empty;
 
-        internal StoreCardViewModel(string Theme, KeyValuePair<string, SSSIW> Wallpaper, IStoreCardHost Host)
+        internal StoreCardViewModel(string Theme, KeyValuePair<string, SSSIW> Wallpaper)
         {
-            _host = Host;
             this.Theme = Theme;
             this.Wallpaper = Wallpaper;
             _guid = Path.Combine(Wallpaper.Value.Source, Wallpaper.Key);
@@ -326,29 +324,34 @@ namespace Sucrose.Portal.ViewModels
                 return;
             }
 
-            DownloadProgress = Key.ProgressPercentage;
-            DownloadPercentage = Key.Percentage;
-
-            if (Key.ProgressPercentage >= 100 && _state)
+            // InfoChanged fires off the UI thread; the original wrapped these
+            // bindable mutations in Application.Current.Dispatcher.InvokeAsync.
+            Application.Current.Dispatcher.Invoke(() =>
             {
-                _state = false;
+                DownloadProgress = Key.ProgressPercentage;
+                DownloadPercentage = Key.Percentage;
 
-                // Notify the card that the download finished so it can animate
-                // the completion icon.  The card code-behind watches
-                // IsDownloadComplete and IsDownloadError to drive visual state.
-                if (!_error)
+                if (Key.ProgressPercentage >= 100 && _state)
                 {
-                    UnsubscribeInfoChanged();
+                    _state = false;
 
-                    IsDownloading = false;
-                    IsDownloadComplete = true;
-
-                    if (SSSTMI.StoreService.Info.ContainsKey(Keys))
+                    // Notify the card that the download finished so it can animate
+                    // the completion icon.  The card code-behind watches
+                    // IsDownloadComplete and IsDownloadError to drive visual state.
+                    if (!_error)
                     {
-                        SSSTMI.StoreService.Info.Remove(Keys);
+                        UnsubscribeInfoChanged();
+
+                        IsDownloading = false;
+                        IsDownloadComplete = true;
+
+                        if (SSSTMI.StoreService.Info.ContainsKey(Keys))
+                        {
+                            SSSTMI.StoreService.Info.Remove(Keys);
+                        }
                     }
                 }
-            }
+            });
         }
 
         // ── Install download (mirrors StoreCard.Start + DownloadTheme + SendDownload) ──
@@ -494,23 +497,29 @@ namespace Sucrose.Portal.ViewModels
 
                 await SSWEW.Watch_CatchException(Exception);
 
-                if (!string.IsNullOrEmpty(_keys) && SSSTMI.StoreService.Info.ContainsKey(_keys))
+                // DownloadTheme runs on the threadpool; the original dispatched
+                // this whole error reset (incl. the delayed icon reset) onto the
+                // UI thread via Application.Current.Dispatcher.InvokeAsync.
+                await Application.Current.Dispatcher.InvokeAsync(async () =>
                 {
-                    SSSTMI.StoreService.Info.Remove(_keys);
-                }
+                    if (!string.IsNullOrEmpty(_keys) && SSSTMI.StoreService.Info.ContainsKey(_keys))
+                    {
+                        SSSTMI.StoreService.Info.Remove(_keys);
+                    }
 
-                _state = false;
+                    _state = false;
 
-                UnsubscribeInfoChanged();
+                    UnsubscribeInfoChanged();
 
-                IsDownloading = false;
-                IsDownloadError = true;
-                IsReady = false;
+                    IsDownloading = false;
+                    IsDownloadError = true;
+                    IsReady = false;
 
-                await Task.Delay(3000);
+                    await Task.Delay(3000);
 
-                IsDownloadError = false;
-                IsReady = true;
+                    IsDownloadError = false;
+                    IsReady = true;
+                });
             }
         }
 
