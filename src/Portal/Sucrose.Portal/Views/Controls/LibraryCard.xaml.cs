@@ -32,16 +32,25 @@ namespace Sucrose.Portal.Views.Controls
 
             ClearPreview();
 
-            if (ViewModel == null)
+            if (e.OldValue is SPVMLC oldVm)
+            {
+                // Release the scrolled-away card's bitmap so memory stays bounded for
+                // large libraries (the bounded ImageCache re-serves recent thumbnails).
+                oldVm.Thumbnail = null;
+            }
+
+            if (ViewModel is not SPVMLC viewModel)
             {
                 return;
             }
 
             _cts = new CancellationTokenSource();
 
+            CancellationToken token = _cts.Token;
+
             try
             {
-                await ViewModel.LoadThumbnailAsync(_cts.Token);
+                await viewModel.LoadThumbnailAsync(token);
             }
             catch (OperationCanceledException)
             {

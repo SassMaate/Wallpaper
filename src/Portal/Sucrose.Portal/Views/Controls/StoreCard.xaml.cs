@@ -35,6 +35,12 @@ namespace Sucrose.Portal.Views.Controls
             if (e.OldValue is SPVMSCVM oldVm)
             {
                 oldVm.UnsubscribeInfoChanged();
+
+                // Release the scrolled-away card's bitmap. The VM stays alive in the
+                // (3000+) collection, so without this every cover ever shown would stay
+                // resident -> GBs of RAM. The bounded ImageCache still re-serves recent
+                // covers instantly on scroll-back.
+                oldVm.Thumbnail = null;
             }
 
             if (ViewModel is not SPVMSCVM viewModel)
@@ -53,6 +59,11 @@ namespace Sucrose.Portal.Views.Controls
 
             try
             {
+                // Debounce: only fetch/download for cards the user actually lingers on.
+                // Fast scrolling recycles the card within this window, cancelling the token
+                // so we never flood thousands of cover downloads/decodes (RAM + stutter).
+                await Task.Delay(200, token);
+
                 bool result = await viewModel.EnsureDownloadedAsync(token);
 
                 if (!token.IsCancellationRequested && result)
