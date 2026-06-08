@@ -261,39 +261,49 @@ namespace Sucrose.Portal.ViewModels
         // card's load can be interrupted without leaking a thread.
         private async Task<bool> DownloadCache(CancellationToken Token)
         {
-            // Kick off the cover/info cache fetch once per Theme. A concurrency gate caps
-            // how many run at the same time so a fast scroll can't spike memory.
-            if (!SPMI.StoreDownloader.ContainsKey(Theme))
+            // Already requested this session: just wait (bounded) for the writer to finish.
+            if (SPMI.StoreDownloader.ContainsKey(Theme))
             {
-                await _downloadGate.WaitAsync(Token);
-
-                try
-                {
-                    // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep
-                    // it off the caller's thread via Task.Run.
-                    SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
-                    {
-                        SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
-                        _ => SSSHSD.Cache(Wallpaper, Theme),
-                    }, Token);
-                }
-                finally
-                {
-                    _downloadGate.Release();
-                }
+                return await WaitForCache(Token);
             }
 
-            // A previous attempt may have failed or been abandoned mid-flight, leaving the
-            // entry false. Drop it so the next bind retries cleanly instead of waiting forever.
-            if (!SPMI.StoreDownloader.TryGetValue(Theme, out bool Cached) || !Cached)
-            {
-                SPMI.StoreDownloader.Remove(Theme);
+            // First request: mark in-progress (so concurrent cards for the same Theme take the
+            // wait branch above instead of re-downloading), then fetch behind the concurrency
+            // gate so a fast scroll can't hold many full-res covers in memory at once.
+            SPMI.StoreDownloader[Theme] = false;
 
-                return false;
+            await _downloadGate.WaitAsync(Token);
+
+            try
+            {
+                // Cache(...) is synchronous blocking I/O (HTTP via .Result); keep it off the
+                // caller's thread via Task.Run.
+                SPMI.StoreDownloader[Theme] = await Task.Run(() => SSDMMP.StoreServerType switch
+                {
+                    SSDESST.GitHub => SSSHGHD.Cache(Wallpaper, Theme),
+                    _ => SSSHSD.Cache(Wallpaper, Theme),
+                }, Token);
+            }
+            finally
+            {
+                _downloadGate.Release();
             }
 
-            // Wait (bounded) for the file writer to flag completion. The timeout prevents the
-            // "stuck on load" hang when StoreDownloading never flips true for an abandoned theme.
+            if (SPMI.StoreDownloader[Theme])
+            {
+                return await WaitForCache(Token);
+            }
+
+            // Genuine failure — drop the entry so the next bind retries cleanly.
+            SPMI.StoreDownloader.Remove(Theme);
+
+            return false;
+        }
+
+        // Bounded spin-wait for the cover/info writer to flag completion. The timeout prevents
+        // the "stuck on load" hang when StoreDownloading never flips true for an abandoned theme.
+        private async Task<bool> WaitForCache(CancellationToken Token)
+        {
             int Waited = 0;
 
             while (!SPMI.StoreDownloading.ContainsKey(Theme) || !SPMI.StoreDownloading[Theme])
