@@ -245,27 +245,27 @@ namespace Sucrose.Portal.ViewModels
                     IsIncompatible = Info.AppVersion.CompareTo(SHV.Entry()) > 0;
                 }
 
-                // Pick up an install download that was already in flight for this wallpaper
-                // (the user may have started it, scrolled away — unsubscribing — and scrolled back).
-                if (!IsDownloading)
+                // Pick up an install download already in flight for this wallpaper (the user may
+                // have started it, scrolled away — unsubscribing — and scrolled back). Run on every
+                // bind so the InfoChanged subscription is restored; the base did this unconditionally.
+                KeyValuePair<string, SSSID> Matching = SSSTMI.StoreService.Info.FirstOrDefault(Pair => Pair.Value.Guid == _guid && Pair.Value.ProgressPercentage < 100);
+
+                if (!Matching.Equals(default(KeyValuePair<string, SSSID>)))
                 {
-                    KeyValuePair<string, SSSID> Matching = SSSTMI.StoreService.Info.FirstOrDefault(Pair => Pair.Value.Guid == _guid && Pair.Value.ProgressPercentage < 100);
+                    _keys = Matching.Key;
+                    _state = true;
 
-                    if (!Matching.Equals(default(KeyValuePair<string, SSSID>)))
-                    {
-                        _keys = Matching.Key;
-                        _state = true;
+                    SubscribeInfoChanged();
+                    HandleInfoChanged(_keys);
 
-                        SubscribeInfoChanged();
-                        HandleInfoChanged(_keys);
-
-                        IsDownloading = true;
-                        IsReady = false;
-                    }
-                    else
-                    {
-                        IsReady = true;
-                    }
+                    IsDownloading = true;
+                    IsReady = false;
+                }
+                else if (!IsDownloading)
+                {
+                    // Only mark ready when nothing is in flight, so an active download isn't
+                    // clobbered to the ready state in the brief window its Info entry is absent.
+                    IsReady = true;
                 }
 
                 // Cover is on disk now (Info populated => ThumbnailPath valid); decode it.
