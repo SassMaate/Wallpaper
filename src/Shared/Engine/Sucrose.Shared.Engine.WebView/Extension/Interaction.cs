@@ -2,6 +2,7 @@
 using Linearstar.Windows.RawInput.Native;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
+using System.Windows.Media;
 using Point = System.Drawing.Point;
 using SEIT = Skylark.Enum.InputType;
 using SMME = Sucrose.Manager.Manage.Engine;
@@ -185,8 +186,18 @@ namespace Sucrose.Shared.Engine.WebView.Extension
 
                                     //SSEWVMI.WebEngine.ExecuteScriptAsync($"scrollBy(0, {NewMouseData}, 'smooth');");
 
-                                    //Unlike CefSharp's SendMouseWheelEvent, scrollBy bypasses overflow: hidden, so scrolling must be limited to user-scrollable targets. (#125)
-                                    //Invariant culture is required: some locales render the negative sign as U+2212, which breaks the generated script.
+                                    //CDP expects CSS pixels, so the physical position must be divided by the DPI scale and zoom factor.
+                                    double Scale = VisualTreeHelper.GetDpi(SSEWVMI.WebEngine).DpiScaleX * SSEWVMI.WebEngine.ZoomFactor;
+
+                                    int WheelX = (int)Math.Round(Position.X / Scale);
+                                    int WheelY = (int)Math.Round(Position.Y / Scale);
+
+                                    //Equivalent of CefSharp's SendMouseWheelEvent: a trusted wheel event through Chromium's input pipeline, which respects overflow: hidden. (#125)
+                                    //Invariant culture is required: some locales render the negative sign as U+2212, which breaks the generated JSON.
+                                    SSEWVMI.WebEngine.CoreWebView2.CallDevToolsProtocolMethodAsync("Input.dispatchMouseEvent", FormattableString.Invariant($$"""{"type":"mouseWheel","x":{{WheelX}},"y":{{WheelY}},"deltaX":0,"deltaY":{{NewMouseData}},"modifiers":0,"pointerType":"mouse"}"""));
+
+                                    /*
+                                    //Script-injection alternative: emulates real wheel semantics with untrusted events, scrolling only user-scrollable targets.
                                     SSEWVMI.WebEngine.ExecuteScriptAsync
                                     (FormattableString.Invariant($@"
                                         (function() {{
@@ -217,6 +228,7 @@ namespace Sucrose.Shared.Engine.WebView.Extension
                                                 window.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
                                         }})();")
                                     );
+                                    */
 
                                     //SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
                                     break;
