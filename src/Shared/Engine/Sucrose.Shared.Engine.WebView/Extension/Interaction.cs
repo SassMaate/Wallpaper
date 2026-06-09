@@ -185,24 +185,37 @@ namespace Sucrose.Shared.Engine.WebView.Extension
 
                                     //SSEWVMI.WebEngine.ExecuteScriptAsync($"scrollBy(0, {NewMouseData}, 'smooth');");
 
+                                    //Unlike CefSharp's SendMouseWheelEvent, scrollBy bypasses overflow: hidden, so scrolling must be limited to user-scrollable targets. (#125)
+                                    //Invariant culture is required: some locales render the negative sign as U+2212, which breaks the generated script.
                                     SSEWVMI.WebEngine.ExecuteScriptAsync
-                                    ($@"
+                                    (FormattableString.Invariant($@"
                                         (function() {{
-                                            const el = document.elementFromPoint({Position.X}, {Position.Y});
-                                            if (!el) return;
+                                            const el = document.elementFromPoint({Position.X}, {Position.Y}) || document.documentElement;
+                                            const event = new WheelEvent('wheel', {{ bubbles: true, cancelable: true, composed: true, view: window, clientX: {Position.X}, clientY: {Position.Y}, deltaY: {NewMouseData}, deltaMode: 0 }});
+                                            if (!el.dispatchEvent(event)) return;
                                             let target = el;
-                                            while (target && target !== document.body) {{
+                                            while (target && target !== document.body && target !== document.documentElement) {{
                                                 const style = window.getComputedStyle(target);
                                                 const overflowY = style.getPropertyValue('overflow-y');
                                                 const canScroll = (overflowY === 'auto' || overflowY === 'scroll');
-                                                if (canScroll && target.scrollHeight > target.clientHeight) break;
+                                                if (canScroll && target.scrollHeight > target.clientHeight) {{
+                                                    target.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
+                                                    return;
+                                                }}
                                                 target = target.parentElement;
                                             }}
-                                            if (target && target !== document.body)
-                                                target.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
-                                            else
+                                            const html = window.getComputedStyle(document.documentElement).getPropertyValue('overflow-y');
+                                            const body = document.body ? window.getComputedStyle(document.body).getPropertyValue('overflow-y') : 'visible';
+                                            if (html !== 'visible' && document.body && (body === 'auto' || body === 'scroll') && document.body.scrollHeight > document.body.clientHeight) {{
+                                                document.body.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
+                                                return;
+                                            }}
+                                            const overflowY = html === 'visible' ? (body === 'visible' ? 'auto' : body) : html;
+                                            const canScroll = (overflowY === 'auto' || overflowY === 'scroll');
+                                            const root = document.scrollingElement || document.documentElement;
+                                            if (canScroll && root.scrollHeight > root.clientHeight)
                                                 window.scrollBy({{ top: {NewMouseData}, behavior: 'smooth' }});
-                                        }})();"
+                                        }})();")
                                     );
 
                                     //SWNM.PostMessageW(SSEWVMI.WebHandle, (int)SWNM.WM.MOUSEWHEEL, IntPtr.Zero, (IntPtr)MouseData);
