@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Media;
 using System.Windows;
 using System.Windows.Threading;
@@ -57,7 +58,10 @@ namespace Sucrose.Bundle
 
             base.OnStartup(e);
 
-            SBM Main = new(Silent);
+            SBM Main = new(Silent)
+            {
+                FlowDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight
+            };
 
             if (Silent)
             {
@@ -77,6 +81,18 @@ namespace Sucrose.Bundle
             try
             {
                 return LoadComponent(new Uri($"/Sucrose.Bundle;component/Properties/Resources_{Lang}.xaml", UriKind.Relative)) is ResourceDictionary;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private static bool IsRightToLeft(string Lang)
+        {
+            try
+            {
+                return CultureInfo.GetCultureInfo(Lang).TextInfo.IsRightToLeft;
             }
             catch
             {
