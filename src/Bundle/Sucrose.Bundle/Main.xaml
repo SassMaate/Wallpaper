@@ -12,6 +12,7 @@
     AllowsTransparency="True"
     Background="#FF29373B"
     ContentRendered="Window_ContentRendered"
+    FlowDirection="LeftToRight"
     Icon="\Sucrose.Bundle;component\Assets\ICO.ico"
     MouseDown="Window_MouseDown"
     ResizeMode="NoResize"
