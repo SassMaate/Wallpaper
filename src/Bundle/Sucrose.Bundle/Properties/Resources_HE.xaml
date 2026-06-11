@@ -4,6 +4,6 @@
     xmlns:system="clr-namespace:System;assembly=mscorlib">
     <system:String x:Key="Title">Sucrose Bundle</system:String>
     <system:String x:Key="Subtitle">Sucrose Bundle</system:String>
-    <system:String x:Key="Done">זה יופעל ברגע שהוא יסתיים.</system:String>
-    <system:String x:Key="Install">Sucrose Wallpaper Engine מותקן כעת.</system:String>
+    <system:String x:Key="Done">האפליקציה תופעל בסיום ההתקנה.</system:String>
+    <system:String x:Key="Install">מתבצעת כעת התקנה של Sucrose Wallpaper Engine.</system:String>
 </ResourceDictionary>
