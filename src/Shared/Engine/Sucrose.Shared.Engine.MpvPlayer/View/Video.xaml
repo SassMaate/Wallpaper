@@ -10,6 +10,7 @@
     VerticalAlignment="Stretch"
     AllowsTransparency="False"
     Background="Black"
+    FlowDirection="LeftToRight"
     Left="-99999"
     ResizeMode="NoResize"
     SnapsToDevicePixels="True"

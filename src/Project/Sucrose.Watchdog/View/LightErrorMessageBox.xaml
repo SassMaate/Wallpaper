@@ -12,6 +12,7 @@
     MinHeight="300"
     HorizontalAlignment="Stretch"
     VerticalAlignment="Stretch"
+    FlowDirection="LeftToRight"
     Loaded="LightErrorMessageBox_Loaded"
     ResizeMode="CanResizeWithGrip"
     ShowInTaskbar="False"

@@ -14,6 +14,7 @@
     AllowsTransparency="True"
     Background="Transparent"
     ContentRendered="Window_ContentRendered"
+    FlowDirection="LeftToRight"
     Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     Icon="\Sucrose.Update;component\Assets\ICO.ico"
     MouseDown="Window_MouseDown"

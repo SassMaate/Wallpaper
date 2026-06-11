@@ -12,6 +12,7 @@
     MinHeight="200"
     HorizontalAlignment="Stretch"
     VerticalAlignment="Stretch"
+    FlowDirection="LeftToRight"
     ResizeMode="NoResize"
     SnapsToDevicePixels="True"
     UseLayoutRounding="True"

@@ -25,6 +25,7 @@
     Closing="MainWindow_Closing"
     ContentRendered="MainWindow_ContentRendered"
     ExtendsContentIntoTitleBar="True"
+    FlowDirection="LeftToRight"
     PreviewKeyDown="MainWindow_PreviewKeyDown"
     ShowInTaskbar="False"
     SizeChanged="MainWindow_SizeChanged"

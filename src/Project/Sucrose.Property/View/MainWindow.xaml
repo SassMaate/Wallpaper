@@ -18,6 +18,7 @@
     ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
     ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
     ExtendsContentIntoTitleBar="True"
+    FlowDirection="LeftToRight"
     Icon="\Sucrose.Property;component\Assets\ICO.ico"
     Left="-99999"
     Loaded="MainWindow_Loaded"
