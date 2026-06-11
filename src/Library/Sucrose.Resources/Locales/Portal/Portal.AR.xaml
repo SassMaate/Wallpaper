@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Area/Portal.Area.AR.xaml" />
+        <ResourceDictionary Source="Enum/Portal.Enum.AR.xaml" />
+        <ResourceDictionary Source="Category/Portal.Category.AR.xaml" />
+        <ResourceDictionary Source="Controls/Portal.Controls.AR.xaml" />
+        <ResourceDictionary Source="StorePage/Portal.StorePage.AR.xaml" />
+        <ResourceDictionary Source="MainWindow/Portal.MainWindow.AR.xaml" />
+        <ResourceDictionary Source="LibraryPage/Portal.LibraryPage.AR.xaml" />
+        <ResourceDictionary Source="SettingPage/Portal.SettingPage.AR.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

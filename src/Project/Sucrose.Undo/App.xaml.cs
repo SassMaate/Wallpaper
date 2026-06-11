@@ -150,7 +150,7 @@ namespace Sucrose.Undo
             {
                 SystemSounds.Asterisk.Play();
 
-                Result = MessageBox.Show(SUMI.Message, SUMI.Title, MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+                Result = MessageBox.Show(SUMI.Message, SUMI.Title, MessageBoxButton.YesNoCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
             }
 
             if (Result is MessageBoxResult.Yes or MessageBoxResult.No)

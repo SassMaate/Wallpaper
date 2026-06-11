@@ -1,0 +1,19 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Live.Title">إشعار {0}</system:String>
+
+    <system:String x:Key="Live.Close">إغلاق</system:String>
+    <system:String x:Key="Live.Continue">متابعة</system:String>
+    <system:String x:Key="Live.Download">تنزيل</system:String>
+    <system:String x:Key="Live.Remember">تذكُّر</system:String>
+
+    <system:String x:Key="Live.Info.WebView">متطلّب WebView</system:String>
+    <system:String x:Key="Live.Info.CefSharp">متطلّب CefSharp</system:String>
+    <system:String x:Key="Live.Info.MpvPlayer">متطلّب MpvPlayer</system:String>
+
+    <system:String x:Key="Live.Message.WebView">WebView2 Runtime غير مثبَّت. إنّ WebView2 Runtime مكوّن يتيح استخدام تقنيات الويب الحديثة في التطبيقات. لذلك يلزم WebView2 Runtime لتعيين خلفية الشاشة المحدّدة.</system:String>
+    <system:String x:Key="Live.Message.CefSharp">VC++ Redistributable غير مثبَّت. يوفّر VC++ Redistributable بعض مكوّنات النظام اللازمة لعمل CefSharp بشكل صحيح. وCefSharp إطار عمل يتيح استخدام تقنيات الويب الحديثة في التطبيقات. لذلك يلزم VC++ Redistributable لتعيين خلفية الشاشة المحدّدة.</system:String>
+    <system:String x:Key="Live.Message.MpvPlayer">لا يُستوفى الحد الأدنى من متطلّب إصدار Windows لاستخدام MpvPlayer. إنّ MpvPlayer مشغّل وسائط قادر على تشغيل ملفّات الوسائط بجودة عالية وزمن استجابة منخفض. وهو يدعم صيغ الفيديو والصوت الحديثة ويوفّر خيارات تهيئة قوية. لذلك، لتعيين خلفية الشاشة المحدّدة، يلزم ترقية نظامك إلى Windows 10 (Redstone) أو إصدار أحدث.</system:String>
+</ResourceDictionary>

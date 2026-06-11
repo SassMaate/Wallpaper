@@ -1,0 +1,16 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.StoreCard.TitleText">العنوان</system:String>
+    <system:String x:Key="Portal.StoreCard.DescriptionText">الوصف</system:String>
+
+    <system:String x:Key="Portal.StoreCard.VersionTip">حدِّث Sucrose لاستخدام هذه السِمة</system:String>
+
+    <system:String x:Key="Portal.StoreCard.MenuReport">الإبلاغ</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdate">التحقّق من التحديثات</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuInstall">تثبيت</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">جارٍ التحقّق من التحديثات</system:String>
+
+    <system:String x:Key="Portal.StoreCard.Incompatible">غير متوافق</system:String>
+</ResourceDictionary>

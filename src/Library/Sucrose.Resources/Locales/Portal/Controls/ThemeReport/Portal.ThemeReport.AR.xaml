@@ -1,0 +1,34 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeReport.Close">إغلاق</system:String>
+    <system:String x:Key="Portal.ThemeReport.Title">الإبلاغ عن السِمة</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.ThemeTitle">العنوان</system:String>
+    <system:String x:Key="Portal.ThemeReport.ThemeDescription">الوصف</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter">الإبلاغ</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Description">حدِّد أسباب الإبلاغ عن السِمة.</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Contact.Placeholder">يُرجى إدخال عنوان بريد إلكتروني صالح</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Description.Text">ملاحظات إضافية:</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Description.Placeholder">يُرجى وصف سبب الإبلاغ بالتفصيل.</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Preparing">ستبدأ التحضيرات للإبلاغ بعد قليل..</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Checking">تُجرى عمليات التحقّق اللازمة للإبلاغ..</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Checking.Error">حدث خطأ غير معروف أثناء إجراء عمليات التحقّق اللازمة للإبلاغ.</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Checking.Status">تعذّر توفير الشروط المناسبة للإبلاغ في الوقت الحالي، يُرجى المحاولة مرة أخرى لاحقًا..</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Sending">يجري إرسال المعلومات اللازمة للإبلاغ..</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Sending.Error">حدث خطأ أثناء إرسال التقرير.</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Sending.Errored">حدث خطأ غير متوقّع أثناء إرسال التقرير: {0}.</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Sending.Succeded">تم إرسال التقرير بنجاح، شكرًا لك.</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.Network">يلزم وجود اتصال بالإنترنت للإبلاغ.</system:String>
+
+    <system:String x:Key="Portal.ThemeReport.Reporter.GitHub">الإبلاغ من GitHub</system:String>
+    <system:String x:Key="Portal.ThemeReport.Reporter.Report">إبلاغ</system:String>
+</ResourceDictionary>

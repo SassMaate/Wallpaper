@@ -1,0 +1,25 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeEdit.Save">حفظ</system:String>
+    <system:String x:Key="Portal.ThemeEdit.Close">إغلاق</system:String>
+    <system:String x:Key="Portal.ThemeEdit.Title">تحرير السِمة</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.Localization">افتراضي</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.ThemeTags">الوسوم</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeTitle">العنوان</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">المؤلّف</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeContact">جهة الاتصال</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeArguments">الوسائط</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeDescription">الوصف</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">الترجمة</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">يُرجى إدخال وسوم سِمة صالحة</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">يُرجى إدخال عنوان صالح</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeAuthor.Hint">يُرجى إدخال اسم مؤلّف صالح</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeContact.Hint">يُرجى إدخال عنوان اتصال صالح</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeArguments.Hint">يُرجى إدخال وسائط تطبيق صالحة</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeDescription.Hint">يُرجى إدخال وصف صالح</system:String>
+</ResourceDictionary>

@@ -1,0 +1,25 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeDelete.Close">إغلاق</system:String>
+    <system:String x:Key="Portal.ThemeDelete.Title">حذف السِمة</system:String>
+    <system:String x:Key="Portal.ThemeDelete.Delete">حذف</system:String>
+
+    <system:String x:Key="Portal.ThemeDelete.ThemeSize">الحجم</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeTags">الوسوم</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeType">النوع</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeTitle">العنوان</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeAuthor">المؤلّف</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeCreate">الإنشاء</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeModify">التعديل</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeVersion">الإصدار</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeTagsText">بلا</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeTypeName">Gif</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeSizeTotal">0 b</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeAuthorName">Taiizor</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeCreateDate">غير معروف</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeModifyDate">غير معروف</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeDescription">الوصف</system:String>
+    <system:String x:Key="Portal.ThemeDelete.ThemeVersionText">0.0.0.0 (0.0.0.0)</system:String>
+</ResourceDictionary>

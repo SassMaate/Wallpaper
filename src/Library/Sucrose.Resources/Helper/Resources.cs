@@ -30,6 +30,20 @@ namespace Sucrose.Resources.Helper
             Application.Current.Resources.MergedDictionaries.Add(Resource);
         }
 
+        public static bool IsRightToLeft(string Lang)
+        {
+            try
+            {
+                CultureInfo Culture = new(Lang);
+
+                return Culture.TextInfo.IsRightToLeft;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         private static bool CheckLanguage(string Lang)
         {
             try
@@ -46,6 +60,7 @@ namespace Sucrose.Resources.Helper
         {
             return
             [
+                "AR",
                 "CS",
                 "DA",
                 "DE",

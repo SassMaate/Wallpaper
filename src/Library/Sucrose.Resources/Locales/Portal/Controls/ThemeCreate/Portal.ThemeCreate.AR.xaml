@@ -1,0 +1,87 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeCreate.Title">إنشاء سِمة</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Close">إغلاق</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Create">إنشاء</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Creating">جارٍ الإنشاء</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Gif">سِمة GIF</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif.Description">أنشئ سِمتك الخاصة بتنسيق GIF.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Url">سِمة URL</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url.Description">أنشئ سِمتك الخاصة بتنسيق URL.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Web">سِمة Web</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Web.Description">أنشئ سِمتك الخاصة بتنسيق Web.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Video">سِمة فيديو</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video.Description">أنشئ سِمتك الخاصة بتنسيق الفيديو.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.YouTube">سِمة YouTube</system:String>
+    <system:String x:Key="Portal.ThemeCreate.YouTube.Description">أنشئ سِمتك الخاصة بتنسيق YouTube.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Application">سِمة Application</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Application.Description">أنشئ سِمتك الخاصة بتنسيق Application.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl">URL</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags">الوسوم</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTitle">العنوان</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeAuthor">المؤلّف</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeContact">جهة الاتصال</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview">معاينة</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeArguments">الوسائط</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail">صورة الغلاف</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication">تطبيق</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription">الوصف</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">يُرجى إدخال عنوان URL صالح</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">حدِّد صفحة ويب</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">يُرجى إدخال وسوم سِمة صالحة</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">يُرجى إدخال عنوان صالح</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">يُرجى إدخال اسم مؤلّف صالح</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">يُرجى إدخال عنوان جهة اتصال صالح</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">حدِّد ملف معاينة</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">يُرجى إدخال وسائط تطبيق صالحة</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">حدِّد صورة غلاف</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">حدِّد ملف تطبيق</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeDescription.Hint">يُرجى إدخال وصف صالح</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">تراجع</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Title">تحديد ملف GIF</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Filter">ملفّات GIF (*.gif)|*.gif</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">تحديد ملف فيديو</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">ملفّات الفيديو (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">اسحب ملف GIF وأفلِته هنا</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">اسحب ملف الفيديو وأفلِته هنا</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">تحديد صورة الغلاف</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">ملفّات الصور (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">تحديد ملف المعاينة</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">ملفّات GIF (*.gif)|*.gif</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.WebSource.Title">تحديد صفحة الويب</system:String>
+    <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">صفحات الويب (*.html)|*.html</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.ApplicationSource.Title">تحديد ملف التطبيق</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ApplicationSource.Filter">ملفّات التطبيقات (*.exe)|*.exe</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Copy.Close">حسنًا</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Copy.Title">إشعار مهم</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Copy.Message">سيتم تضمين الملف المحدّد في السِمة مع جميع الملفّات والمجلّدات الأخرى الموجودة في الدليل.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Lock.Close">حسنًا</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Title">الملف قيد الاستخدام</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Lock.Message">الملف المحدّد قيد الاستخدام من قِبل عملية أخرى.</system:String>
+
+    <system:String x:Key="Portal.ThemeCreate.Access.Close">حسنًا</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Access.Title">تحذير الوصول</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Access.Message">ليس لديك إذن للوصول إلى الملف المحدّد.</system:String>
+</ResourceDictionary>

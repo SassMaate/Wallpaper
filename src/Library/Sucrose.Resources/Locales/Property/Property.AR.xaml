@@ -1,0 +1,63 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Property.WindowTitle">Sucrose Property</system:String>
+
+    <system:String x:Key="Property.DeleteTip">حذف النسخة</system:String>
+    <system:String x:Key="Property.RefreshTip">تحديث الواجهة</system:String>
+    <system:String x:Key="Property.RestoreTip">استعادة الافتراضي</system:String>
+
+    <system:String x:Key="Property.Type.NotSupport">نوع عنصر التحكم '{0}' غير مدعوم.</system:String>
+
+    <system:String x:Key="Property.ColorPicker.Color">اللون</system:String>
+    <system:String x:Key="Property.ColorPicker.Cancel">إلغاء</system:String>
+    <system:String x:Key="Property.ColorPicker.Confirm">تأكيد</system:String>
+    <system:String x:Key="Property.ColorPicker.EyeDropper">القطّارة</system:String>
+    <system:String x:Key="Property.ColorPicker.Popup.Title">Sucrose Property Color Picker</system:String>
+
+    <system:String x:Key="Property.FileDropDown.Filter">كل الملفّات (*.*)|*.*</system:String>
+    <system:String x:Key="Property.FileDropDown.OpenTip">حدِّد ملفًا</system:String>
+    <system:String x:Key="Property.FileDropDown.DeleteTip">احذف هذا الملف</system:String>
+
+    <system:String x:Key="Property.FileDropDown.Lock.Close">حسنًا</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Title">الملف قيد الاستخدام</system:String>
+    <system:String x:Key="Property.FileDropDown.Lock.Message">الملف المحدّد قيد الاستخدام من قِبَل عملية أخرى.</system:String>
+
+    <system:String x:Key="Property.FileDropDown.Access.Close">حسنًا</system:String>
+    <system:String x:Key="Property.FileDropDown.Access.Title">تحذير الوصول</system:String>
+    <system:String x:Key="Property.FileDropDown.Access.Message">ليس لديك إذن للوصول إلى الملف المحدّد.</system:String>
+
+    <system:String x:Key="Property.Localization.WebView">لـ WebView فقط</system:String>
+    <system:String x:Key="Property.Localization.CefSharp">لـ CefSharp فقط</system:String>
+    <system:String x:Key="Property.Localization.MpvPlayer">لـ MpvPlayer فقط</system:String>
+
+    <system:String x:Key="Property.Localization.Hue">تدرّج اللون</system:String>
+    <system:String x:Key="Property.Localization.Blur">التمويه</system:String>
+    <system:String x:Key="Property.Localization.Mute">كتم الصوت</system:String>
+    <system:String x:Key="Property.Localization.Zoom">التكبير</system:String>
+    <system:String x:Key="Property.Localization.Gamma">جاما</system:String>
+    <system:String x:Key="Property.Localization.Sepia">بنّي داكن (سيبيا)</system:String>
+    <system:String x:Key="Property.Localization.Speed">السرعة</system:String>
+    <system:String x:Key="Property.Localization.Invert">عكس الألوان</system:String>
+    <system:String x:Key="Property.Localization.Mirror">الانعكاس</system:String>
+    <system:String x:Key="Property.Localization.Caption">التسمية التوضيحية</system:String>
+    <system:String x:Key="Property.Localization.Contrast">التباين</system:String>
+    <system:String x:Key="Property.Localization.Animation">الحركة</system:String>
+    <system:String x:Key="Property.Localization.Grayscale">التدرّج الرمادي</system:String>
+    <system:String x:Key="Property.Localization.Sharpness">الحِدّة</system:String>
+    <system:String x:Key="Property.Localization.Brightness">السطوع</system:String>
+    <system:String x:Key="Property.Localization.Saturation">التشبُّع</system:String>
+
+    <system:String x:Key="Property.Localization.Mirror.Flat">مسطّح</system:String>
+    <system:String x:Key="Property.Localization.Mirror.Vertical">عمودي</system:String>
+    <system:String x:Key="Property.Localization.Mirror.Horizontal">أفقي</system:String>
+    <system:String x:Key="Property.Localization.Mirror.VerticalHorizontal">عمودي وأفقي</system:String>
+
+    <system:String x:Key="Property.Localization.Animation.Flat">مسطّح</system:String>
+    <system:String x:Key="Property.Localization.Animation.Flip">قلب</system:String>
+    <system:String x:Key="Property.Localization.Animation.Pulse">نبض</system:String>
+    <system:String x:Key="Property.Localization.Animation.Shake">اهتزاز</system:String>
+    <system:String x:Key="Property.Localization.Animation.Bounce">ارتداد</system:String>
+    <system:String x:Key="Property.Localization.Animation.Wiggle">تمايل</system:String>
+</ResourceDictionary>

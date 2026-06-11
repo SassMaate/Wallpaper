@@ -1,0 +1,142 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.Enum.Stretch.Fill">ملء</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.None">بلا</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.Uniform">موحَّد</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.UniformToFill">موحَّد إلى ملء</system:String>
+
+    <system:String x:Key="Portal.Enum.SortModeType.Name">الاسم</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">بلا</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.Creation">الإنشاء</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.Modification">التعديل</system:String>
+
+    <system:String x:Key="Portal.Enum.InputType.Close">مُغلَق</system:String>
+    <system:String x:Key="Portal.Enum.InputType.OnlyMouse">الفأرة فقط</system:String>
+    <system:String x:Key="Portal.Enum.InputType.OnlyKeyboard">لوحة المفاتيح فقط</system:String>
+    <system:String x:Key="Portal.Enum.InputType.MouseKeyboard">الفأرة ولوحة المفاتيح</system:String>
+
+    <system:String x:Key="Portal.Enum.StretchType.Fill">ملء</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.None">بلا</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.Uniform">موحَّد</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.UniformToFill">موحَّد إلى ملء</system:String>
+
+    <system:String x:Key="Portal.Enum.ReportThemeType.Spam">بريد مزعج</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Other">أخرى</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Nudity">عُري</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Harmful">ضار</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Violence">عنف</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Malicious">خبيث</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.CopyrightViolation">انتهاك حقوق النشر</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.MisleadingInformation">معلومات مضلِّلة</system:String>
+
+    <system:String x:Key="Portal.Enum.CommunicationType.Pipe">Pipe</system:String>
+    <system:String x:Key="Portal.Enum.CommunicationType.Signal">Signal</system:String>
+    <system:String x:Key="Portal.Enum.CommunicationType.Transmission">Transmission</system:String>
+
+    <system:String x:Key="Portal.Enum.PerformanceType.Close">إغلاق</system:String>
+    <system:String x:Key="Portal.Enum.PerformanceType.Pause">إيقاف مؤقّت</system:String>
+    <system:String x:Key="Portal.Enum.PerformanceType.Resume">استئناف</system:String>
+
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">تلقائي</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">Mica</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.None">بلا</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">مبوَّب</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">Acrylic</system:String>
+
+    <system:String x:Key="Portal.Enum.InputModuleType.Native">Native</system:String>
+    <system:String x:Key="Portal.Enum.InputModuleType.RawInput">RawInput</system:String>
+
+    <system:String x:Key="Portal.Enum.StoreServerType.GitHub">GitHub</system:String>
+    <system:String x:Key="Portal.Enum.StoreServerType.Soferity">Soferity</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateAutoType.Visible">مرئي</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.SemiSilent">مرئي أحيانًا</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.UpdateSilent">التحديث غير مرئي</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.CompleteSilent">غير مرئي تمامًا</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateModuleType.Native">Native</system:String>
+    <system:String x:Key="Portal.Enum.UpdateModuleType.Downloader">Downloader</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateServerType.GitHub">GitHub</system:String>
+    <system:String x:Key="Portal.Enum.UpdateServerType.Soferity">Soferity</system:String>
+
+    <system:String x:Key="Portal.Enum.PausePerformanceType.Heavy">ثقيل</system:String>
+    <system:String x:Key="Portal.Enum.PausePerformanceType.Light">خفيف</system:String>
+
+    <system:String x:Key="Portal.Enum.SortKindType.Ascending">تصاعدي [A-Z]</system:String>
+    <system:String x:Key="Portal.Enum.SortKindType.Descending">تنازلي [Z-A]</system:String>
+
+    <system:String x:Key="Portal.Enum.ExpandScreenType.Default">افتراضي</system:String>
+    <system:String x:Key="Portal.Enum.ExpandScreenType.Advanced">متقدّم</system:String>
+
+    <system:String x:Key="Portal.Enum.TransitionCycleType.Random">عشوائي</system:String>
+    <system:String x:Key="Portal.Enum.TransitionCycleType.Sequential">متسلسل</system:String>
+
+    <system:String x:Key="Portal.Enum.ScreenType.WorkingArea">منطقة العمل</system:String>
+    <system:String x:Key="Portal.Enum.ScreenType.DisplayBound">حدود الشاشة</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateChannelType.Release">افتراضي</system:String>
+    <system:String x:Key="Portal.Enum.UpdateChannelType.PreRelease">المطوّر</system:String>
+
+    <system:String x:Key="Portal.Enum.DuplicateScreenType.Default">افتراضي</system:String>
+    <system:String x:Key="Portal.Enum.DuplicateScreenType.Advanced">متقدّم</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateExtensionType.Compressed">مضغوط</system:String>
+    <system:String x:Key="Portal.Enum.UpdateExtensionType.Executable">قابل للتنفيذ</system:String>
+
+    <system:String x:Key="Portal.Enum.CompatibilityType.Pass">نتيجة ناجحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Tags">'Tags' يحتوي على قيم كثيرة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Type">أُنشئت السِمة لنوع غير مدعوم</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Title">قيمة 'Title' فارغة أو طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Access">ليس لديك إذن للوصول إلى الملف المعني</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Author">قيمة 'Author' فارغة أو طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Folder">ملفّات السِمة ليست في الدليل الجذري للأرشيف</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">الملف المعني قيد الاستخدام من قِبل عملية أخرى</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Source">لم يُعثر على ملف 'Source'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Contact">قيمة 'Contact' فارغة أو طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Encrypt">الملف المعني مشفَّر</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Preview">لم يُعثر على ملف 'Preview'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ZipType">الملف المعني ليس ملف '.zip' حقيقيًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InfoFile">لم يُعثر على ملف 'SucroseInfo.json'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.LoopMode">قيمة 'LoopMode' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.NotFound">لم يُعثر على الملف المعني</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">قيمة 'Arguments' طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">ملف 'SucroseInfo.json' فارغ</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Extension">الملف المعني ليس بامتداد '.zip'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">قيمة 'ThemeType' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">لم يُعثر على ملف 'Thumbnail'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">أُنشئت السِمة لإصدار أعلى من التطبيق</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidUrl">تحتوي 'Source' على قيمة غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemBios">قيمة 'SystemBios' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemDate">قيمة 'SystemDate' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Description">قيمة 'Description' فارغة أو طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidFile">ملف غير صالح</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidInfo">ملف 'SucroseInfo.json' غير صالح</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidTags">قيم 'Tags' قصيرة جدًا أو طويلة جدًا</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ShuffleMode">قيمة 'ShuffleMode' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.StretchMode">قيمة 'StretchMode' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemAudio">قيمة 'SystemAudio' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">قيمة 'SystemTheme' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">قيمة 'TriggerTime' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">قيمة 'VolumeLevel' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">قيمة 'Localization' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">قيمة 'PropertyList' فارغة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">قيمة 'SystemMemory' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">قيمة 'SystemBattery' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">قيمة 'SystemGraphic' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">قيمة 'SystemNetwork' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">قيمة 'SystemStorage' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">قيمة 'Contact' ليست 'URL' أو 'Email Address'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">ملف 'SucroseCompatible.json' فارغ</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">ملف 'SucroseProperties.json' فارغ</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">قيمة 'SystemProcessor' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidExtension">امتداد ملف غير صالح</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyListener">قيمة 'PropertyListener' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidCompatible">ملف 'SucroseCompatible.json' غير صالح</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">ملف 'SucroseProperties.json' غير صالح</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">قيمة 'SystemMotherboard' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">قيمة 'PropertyLocalization' غير صالحة</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">عواقب غير متوقّعة</system:String>
+</ResourceDictionary>

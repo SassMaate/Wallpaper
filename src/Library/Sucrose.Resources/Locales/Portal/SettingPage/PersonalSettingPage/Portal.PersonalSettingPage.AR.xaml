@@ -1,0 +1,60 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.PersonalSettingPage.Title">PersonalSettingPage</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Server">خادم المتجر</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Server.Description">يحدِّد الخادم الذي سيُستخدَم لعرض السِمات المدرَجة في المتجر.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Server.ServerHint">ملاحظة: إذا تم تحديد {0} كخادم، فمن الضروري إدخال {2} لتجنُّب حدود الطلبات. وإلا فقد تواجه مشكلات في الوصول إلى السِمات في المتجر. وإذا تم تحديد {1}، فستحصل على تجربة أكثر سلاسة في المتجر.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Duration">تحديث المتجر</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Duration.Description">عدد مرات تحديث السِمات المدرَجة في المتجر.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.StoreStart">بدء تلقائي</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.StoreStart.Description">ما إذا كان ينبغي تعيين السِمات المنزَّلة من المتجر كخلفيات شاشة تلقائيًا.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adult">محتوى غير آمن</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Adult.Description">ما إذا كان سيتم عرض المحتوى المُعلَّم على أنه غير آمن للعمل (NSFW) في المتجر.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Confirm">تأكيد الحذف</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Confirm.Description">ما إذا كان سيُطلب التأكيد عند حذف السِمات من المكتبة.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Delete">السِمات التالفة</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Delete.Description">ما إذا كان سيتم حذف السِمات التالفة أو المفقودة من المكتبة تلقائيًا.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Delete.DeleteHint">ملاحظة: يُنصح بالحذر، فقد يؤدي ذلك إلى فقدان البيانات.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.LibraryStart">بدء تلقائي</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.LibraryStart.Description">ما إذا كان ينبغي تعيين السِمة المُنشأة كخلفية شاشة تلقائيًا.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview">معاينة السِمة</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.Description">ما إذا كان ينبغي معاينة السِمات عند تمرير المؤشر فوقها.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.StorePreview">معاينة المتجر:</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.StorePreviewHide">إخفاء التفاصيل:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.LibraryPreview">معاينة المكتبة:</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.LibraryPreviewHide">إخفاء التفاصيل:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive">التخطيط التكيُّفي</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.Description">خصِّص تخطيط السِمات المعروضة أو التباعد بينها.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.AdaptiveMargin">مسافة التباعد (بكسل):</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.AdaptiveLayout">ترتيب التخطيط (العدد):</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort">فرز المكتبة</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.Description">حدِّد كيفية فرز السِمات في مكتبتك والترتيب الذي ستُفرز به.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.SortMode">وضع الفرز:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.SortKind">نوع الفرز:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Store">ترقيم صفحات المتجر</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Store.Description">حدِّد عدد السِمات التي ستظهر في كل صفحة في المتجر.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Library">ترقيم صفحات المكتبة</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Library.Description">حدِّد عدد السِمات التي ستظهر في كل صفحة في مكتبتك.</system:String>
+</ResourceDictionary>
