@@ -9,6 +9,10 @@ namespace Sucrose.Resources.Helper
 {
     public static class Resources
     {
+        private static bool FlowDirectionRegistered;
+
+        private static FlowDirection CurrentFlowDirection = FlowDirection.LeftToRight;
+
         public static void SetLanguage(string Lang)
         {
             Lang = Lang.ToUpperInvariant();
@@ -28,6 +32,8 @@ namespace Sucrose.Resources.Helper
             SHC.All = new CultureInfo(Lang, true);
 
             Application.Current.Resources.MergedDictionaries.Add(Resource);
+
+            SetFlowDirection(Lang);
         }
 
         public static bool IsRightToLeft(string Lang)
@@ -42,6 +48,66 @@ namespace Sucrose.Resources.Helper
             {
                 return false;
             }
+        }
+
+        /// <summary>
+        /// Applies the correct layout direction (RTL for languages such as Arabic/Hebrew, LTR otherwise)
+        /// to every Sucrose UI window of the current process, now and for any window opened later.
+        /// Registered once via a Window class handler so no individual window needs to opt in.
+        /// </summary>
+        public static void SetFlowDirection(string Lang)
+        {
+            CurrentFlowDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+
+            RegisterFlowDirection();
+
+            if (Application.Current is null)
+            {
+                return;
+            }
+
+            foreach (Window Window in Application.Current.Windows)
+            {
+                ApplyFlowDirection(Window);
+            }
+        }
+
+        private static void RegisterFlowDirection()
+        {
+            if (FlowDirectionRegistered)
+            {
+                return;
+            }
+
+            FlowDirectionRegistered = true;
+
+            EventManager.RegisterClassHandler(typeof(Window), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
+            {
+                if (Sender is Window Window)
+                {
+                    ApplyFlowDirection(Window);
+                }
+            }));
+        }
+
+        private static void ApplyFlowDirection(Window Window)
+        {
+            if (FlowableWindow(Window))
+            {
+                Window.FlowDirection = CurrentFlowDirection;
+            }
+        }
+
+        private static bool FlowableWindow(Window Window)
+        {
+            // Engine render surfaces host user content (web/video/gif/image) and must never be mirrored
+            // by an RTL FlowDirection. They all live in "Sucrose.Shared.Engine.<Engine>.View", whereas the
+            // shared localized dialogs live in "Sucrose.Shared.Engine.View" (no engine segment).
+            string Namespace = Window.GetType().Namespace ?? string.Empty;
+
+            return !(Namespace.StartsWith("Sucrose.Shared.Engine.", StringComparison.Ordinal)
+                && Namespace.EndsWith(".View", StringComparison.Ordinal)
+                && Namespace != "Sucrose.Shared.Engine.View");
         }
 
         private static bool CheckLanguage(string Lang)
