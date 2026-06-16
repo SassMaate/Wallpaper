@@ -39,6 +39,16 @@ namespace Sucrose.Shared.Engine.VlcPlayer.View
             SSEVPMI.MediaEngine = new MediaEngine(SSEVPMI.MediaLibrary);
             SSEVPMI.MediaBase = new(SSEVPMI.MediaLibrary, new Uri(SSEVPMI.Source));
 
+            // VLC's native image demuxer (priority 10) outranks the FFmpeg/avformat demuxer (priority 2)
+            // and opens an animated GIF as a single still image, freezing it on the first frame. Forcing
+            // the avformat demuxer routes the GIF through FFmpeg, which decodes every frame. The avformat
+            // module ships compiled inside libavcodec_plugin.dll, so no extra plugin is required.
+            SSEVPMI.MediaBase.AddOption(":demux=avformat");
+
+            // GIF is a software-only codec; hardware decoding offers nothing for it and can produce
+            // corrupt frames, so force software decoding for the GIF media specifically.
+            SSEVPMI.MediaBase.AddOption(":avcodec-hw=none");
+
             SSEVPMI.MediaHandle = SSEVPMI.MediaEngine.Hwnd;
             SSEVPMI.MediaEngine.SetAdjustInt(VideoAdjustOption.Enable, 1);
             SSEVPMI.MediaEngine.EnableHardwareDecoding = SMME.HardwareAcceleration;
