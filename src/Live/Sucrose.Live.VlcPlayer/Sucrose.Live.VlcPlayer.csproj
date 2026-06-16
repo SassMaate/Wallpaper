@@ -22,9 +22,9 @@
 
     <ItemGroup>
         <PackageReference Include="Skylark.Wing" />
-		<PackageReference Include="LibVLCSharp.WPF" />
+        <PackageReference Include="LibVLCSharp.WPF" />
         <PackageReference Include="Skylark.Standard" />
-		<PackageReference Include="VideoLAN.LibVLC.Windows" />
+        <PackageReference Include="VideoLAN.LibVLC.Windows" />
     </ItemGroup>
 
     <ItemGroup>
@@ -40,5 +40,15 @@
     <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine\Sucrose.Shared.Engine.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Sucrose.Shared.Dependency\Sucrose.Shared.Dependency.projitems" Label="Shared" />
     <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine.VlcPlayer\Sucrose.Shared.Engine.VlcPlayer.projitems" Label="Shared" />
+
+    <!-- VideoLAN.LibVLC.Windows bundles native libvlc for x86, x64 and ARM64 and, by default, copies
+         every architecture to the output because its targets gate on $(Platform) (which stays AnyCPU
+         here) instead of $(PlatformTarget). Keep only the architecture this build targets - mirroring
+         how MpvPlayer ships a single libmpv. When PlatformTarget is unset we defer to the package default. -->
+    <PropertyGroup>
+        <VlcWindowsX86Enabled Condition="'$(PlatformTarget)' != '' AND '$(PlatformTarget)' != 'x86'">false</VlcWindowsX86Enabled>
+        <VlcWindowsX64Enabled Condition="'$(PlatformTarget)' != '' AND '$(PlatformTarget)' != 'x64'">false</VlcWindowsX64Enabled>
+        <VlcWindowsArm64Enabled Condition="'$(PlatformTarget)' != '' AND '$(PlatformTarget)' != 'arm64'">false</VlcWindowsArm64Enabled>
+    </PropertyGroup>
 
 </Project>
