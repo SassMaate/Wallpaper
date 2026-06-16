@@ -5,7 +5,7 @@
         <PackageVersion Include="NPSMLib" Version="0.9.14" />
         <PackageVersion Include="Skylark" Version="3.1.6.3" />
         <PackageVersion Include="CsvHelper" Version="33.1.0" />
-        <PackageVersion Include="Downloader" Version="5.8.0" />
+        <PackageVersion Include="Downloader" Version="5.8.1" />
         <PackageVersion Include="Watson.Lite" Version="6.6.0" />
         <PackageVersion Include="Costura.Fody" Version="6.2.0" />
         <PackageVersion Include="Vortice.DXGI" Version="3.8.3" />
