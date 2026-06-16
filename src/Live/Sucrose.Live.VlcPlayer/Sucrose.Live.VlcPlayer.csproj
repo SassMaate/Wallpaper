@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <UseWPF>true</UseWPF>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <StartupObject>$(AssemblyName).App</StartupObject>
+        <AssemblyName>Sucrose.Live.VlcPlayer</AssemblyName>
+        <DefineConstants>$(DefineConstants);ENGINE;LIVE_VLCPLAYER</DefineConstants>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x86'">$(BaseOutputPath)\Live\VlcPlayer\x86</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'x64'">$(BaseOutputPath)\Live\VlcPlayer\x64</OutputPath>
+        <OutputPath Condition="'$(PlatformTarget)' == 'arm64'">$(BaseOutputPath)\Live\VlcPlayer\ARM64</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+        <AppHostDotnetRoot>..\Sucrose.Runtime</AppHostDotnetRoot>
+        <AppHostRelativeDotNet>..\Sucrose.Runtime</AppHostRelativeDotNet>
+        <InterceptorsNamespaces>$(InterceptorsNamespaces);Microsoft.Extensions.Configuration.Binder.SourceGeneration</InterceptorsNamespaces>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Skylark.Wing" />
+		<PackageReference Include="LibVLCSharp.WPF" />
+        <PackageReference Include="Skylark.Standard" />
+		<PackageReference Include="VideoLAN.LibVLC.Windows" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Library\Sucrose.Manager\Sucrose.Manager.csproj" />
+        <ProjectReference Include="..\..\Library\Sucrose.Resources\Sucrose.Resources.csproj" />
+    </ItemGroup>
+
+    <Import Project="..\..\Shared\Sucrose.Shared.Zip\Sucrose.Shared.Zip.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Sucrose.Shared.Live\Sucrose.Shared.Live.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Sucrose.Shared.Space\Sucrose.Shared.Space.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Sucrose.Shared.Theme\Sucrose.Shared.Theme.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Sucrose.Shared.Watchdog\Sucrose.Shared.Watchdog.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine\Sucrose.Shared.Engine.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Sucrose.Shared.Dependency\Sucrose.Shared.Dependency.projitems" Label="Shared" />
+    <Import Project="..\..\Shared\Engine\Sucrose.Shared.Engine.VlcPlayer\Sucrose.Shared.Engine.VlcPlayer.projitems" Label="Shared" />
+
+</Project>

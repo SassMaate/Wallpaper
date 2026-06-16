@@ -290,7 +290,11 @@ namespace Sucrose.Portal.Views.Controls
                 {
                     if (Info.Type == SSDEWT.Gif)
                     {
-                        if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                        if (SSDMME.Gif == SSDEET.VlcPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                        {
+                            MenuCustomize.IsEnabled = true;
+                        }
+                        else if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                         {
                             MenuCustomize.IsEnabled = true;
                         }
@@ -309,7 +313,11 @@ namespace Sucrose.Portal.Views.Controls
                     }
                     else if (Info.Type == SSDEWT.Video)
                     {
-                        if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                        if (SSDMME.Video == SSDEET.VlcPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                        {
+                            MenuCustomize.IsEnabled = true;
+                        }
+                        else if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                         {
                             MenuCustomize.IsEnabled = true;
                         }

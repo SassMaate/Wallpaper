@@ -80,6 +80,8 @@ namespace Sucrose.Shared.Watchdog.Extension
             SMMI.CefSharpLiveLogManager.Log(SELLT.Error, Text);
 #elif LIVE_MPVPLAYER
             SMMI.MpvPlayerLiveLogManager.Log(SELLT.Error, Text);
+#elif LIVE_VLCPLAYER
+            SMMI.VlcPlayerLiveLogManager.Log(SELLT.Error, Text);
 #endif
 
             return Task.CompletedTask;

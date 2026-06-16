@@ -63,6 +63,8 @@ namespace Sucrose.Manager.Manage
 
         public static readonly SMLM MpvPlayerLiveLogManager = new("MpvPlayerLive-{0}.log");
 
+        public static readonly SMLM VlcPlayerLiveLogManager = new("VlcPlayerLive-{0}.log");
+
         public static readonly SMSM ObjectionableSettingManager = new("Objectionable.json");
     }
 }
