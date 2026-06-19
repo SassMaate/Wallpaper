@@ -64,7 +64,7 @@ namespace Sucrose.Backgroundog.Extension
         private double Reference; // bin magnitude of a full-scale tone (the 0 dBFS anchor)
         private bool RingFilled;
         private int RingWritePos;
-        private long LastEmitMs = long.MinValue;
+        private long LastEmitMs; // 0; first frame emits once the ring fills (~85 ms)
         private readonly Stopwatch Clock = Stopwatch.StartNew();
 
         // Pre-allocated and reused every update to avoid per-callback GC churn.
