@@ -38,12 +38,15 @@ namespace Sucrose.Shared.Engine.VlcPlayer.View
 
             SSEVPMI.MediaLibrary = new
             (
+                "no-lua",
                 "no-osd",
                 "no-spu",
                 "no-stats",
+                "no-drop-late-frames",
                 "no-snapshot-preview",
                 "no-disable-screensaver",
-                "no-sub-autodetect-file"
+                "no-sub-autodetect-file",
+                "no-metadata-network-access"
             );
 
             SSEVPMI.MediaEngine = new MediaEngine(SSEVPMI.MediaLibrary)
