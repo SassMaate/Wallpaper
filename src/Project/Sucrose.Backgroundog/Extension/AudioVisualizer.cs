@@ -37,10 +37,14 @@ namespace Sucrose.Backgroundog.Extension
         private const double MinFrequency = 20.0;
         private const double MaxFrequency = 16000.0;
 
-        // Output is mapped to dBFS: 0 dBFS (full scale) -> 1.0, -DynamicRangeDb -> 0.0.
-        // Anything quieter than -DynamicRangeDb is clamped to 0, which doubles as a
-        // noise gate so silence / paused audio stays flat instead of flickering.
-        private const double DynamicRangeDb = 55.0;
+        // Output is LINEAR magnitude (not dBFS): magnitude / full-scale * Gain, clamped to
+        // [0, 1]. Linear preserves the natural dynamic range — bass towering over treble —
+        // so spectrum visuals keep their punchy, peaked shape. (dBFS log-compressed that
+        // into a flat, lifeless band.) Gain pushes typical loud content up toward full scale.
+        private const double LinearGain = 3.0;
+
+        // Subtracted before clamping to gate residual hiss so silence / paused audio stays flat.
+        private const double NoiseFloor = 0.01;
 
         // Asymmetric (attack/decay) smoothing applied per bin, per emitted frame:
         // fast rise so bars snap to the beat, slow fall so they ease back down.
@@ -300,9 +304,7 @@ namespace Sucrose.Backgroundog.Extension
                 }
                 else
                 {
-                    double Decibel = 20.0 * Math.Log10(Magnitude / Reference);
-
-                    Normalized = 1.0 + (Decibel / DynamicRangeDb);
+                    Normalized = ((Magnitude / Reference) * LinearGain) - NoiseFloor;
 
                     if (Normalized < 0)
                     {
