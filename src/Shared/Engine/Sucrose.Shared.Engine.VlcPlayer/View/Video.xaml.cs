@@ -35,13 +35,30 @@ namespace Sucrose.Shared.Engine.VlcPlayer.View
 
             SSEVPMI.MediaView = new();
             Content = SSEVPMI.MediaView;
-            SSEVPMI.MediaLibrary = new();
-            SSEVPMI.MediaEngine = new MediaEngine(SSEVPMI.MediaLibrary);
+
+            SSEVPMI.MediaLibrary = new
+            (
+                "no-osd",
+                "no-spu",
+                "no-stats",
+                "no-snapshot-preview",
+                "no-disable-screensaver",
+                "no-sub-autodetect-file"
+            );
+
+            SSEVPMI.MediaEngine = new MediaEngine(SSEVPMI.MediaLibrary)
+            {
+                Fullscreen = true,
+                EnableKeyInput = false,
+                EnableMouseInput = false,
+                Volume = SSEHD.GetVolume(),
+                EnableHardwareDecoding = SMME.HardwareAcceleration
+            };
+
             SSEVPMI.MediaBase = new(SSEVPMI.MediaLibrary, new Uri(SSEVPMI.Source));
 
             SSEVPMI.MediaHandle = SSEVPMI.MediaEngine.Hwnd;
             SSEVPMI.MediaEngine.SetAdjustInt(VideoAdjustOption.Enable, 1);
-            SSEVPMI.MediaEngine.EnableHardwareDecoding = SMME.HardwareAcceleration;
 
             SSEVPMI.MediaEngine.EndReached += SSEVPEV.MediaEngineEndReached;
 
