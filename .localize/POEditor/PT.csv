@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.PT.xaml,Please don't touch the
 Property.Localization.WebView,Apenas para WebView,,Property\Property.PT.xaml,
 Property.Localization.CefSharp,Apenas para CefSharp,,Property\Property.PT.xaml,
 Property.Localization.MpvPlayer,Apenas para MpvPlayer,,Property\Property.PT.xaml,
+Property.Localization.VlcPlayer,Apenas para VlcPlayer,,Property\Property.PT.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.PT.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Matiz,,Property\Property.PT.xaml,
 Property.Localization.Blur,Desfoque,,Property\Property.PT.xaml,

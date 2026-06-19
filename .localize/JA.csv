@@ -188,6 +188,7 @@ cbeb29d15d810260f58c85f7b37f2aef,Property\Property.JA.xaml,Property.FileDropDown
 5c134db93dc04d4c82b1d8279f9aec72,Property\Property.JA.xaml,Property.Localization.WebView,WebView専用
 9c30da530230d8726f9f10960ff6b44d,Property\Property.JA.xaml,Property.Localization.CefSharp,CefSharp専用
 5325a75f55f7302072816938d8aa4abc,Property\Property.JA.xaml,Property.Localization.MpvPlayer,MpvPlayer専用
+592b2ccbbe51837579f7c112926f8fea,Property\Property.JA.xaml,Property.Localization.VlcPlayer,VlcPlayer専用
 06b8a11af61806ac5d0f3bc11f8996b4,Property\Property.JA.xaml,,
 16a9dbc00fa2b359d556244668fd8344,Property\Property.JA.xaml,Property.Localization.Hue,色合い
 057607b8e3b6be4885a9bf0613fd5511,Property\Property.JA.xaml,Property.Localization.Blur,ぼやけ

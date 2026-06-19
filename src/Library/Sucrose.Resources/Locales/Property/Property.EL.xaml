@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Μόνο για WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Μόνο για CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Μόνο για MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Μόνο για VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Απόχρωση</system:String>
     <system:String x:Key="Property.Localization.Blur">Θολούρα</system:String>

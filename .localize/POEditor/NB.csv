@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.NB.xaml,Please don't touch the
 Property.Localization.WebView,Kun for WebView,,Property\Property.NB.xaml,
 Property.Localization.CefSharp,Kun for CefSharp,,Property\Property.NB.xaml,
 Property.Localization.MpvPlayer,Kun for MpvPlayer,,Property\Property.NB.xaml,
+Property.Localization.VlcPlayer,Kun for VlcPlayer,,Property\Property.NB.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.NB.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Fargetone,,Property\Property.NB.xaml,
 Property.Localization.Blur,Uskarphet,,Property\Property.NB.xaml,

@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.TR.xaml,Please don't touch the
 Property.Localization.WebView,Sadece WebView İçin,,Property\Property.TR.xaml,
 Property.Localization.CefSharp,Sadece CefSharp İçin,,Property\Property.TR.xaml,
 Property.Localization.MpvPlayer,Sadece MpvPlayer İçin,,Property\Property.TR.xaml,
+Property.Localization.VlcPlayer,Sadece VlcPlayer İçin,,Property\Property.TR.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.TR.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Renk Tonu,,Property\Property.TR.xaml,
 Property.Localization.Blur,Bulanıklık,,Property\Property.TR.xaml,

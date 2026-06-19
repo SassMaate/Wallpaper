@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">केवल WebView के लिए</system:String>
     <system:String x:Key="Property.Localization.CefSharp">केवल CefSharp के लिए</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">केवल MpvPlayer के लिए</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">केवल VlcPlayer के लिए</system:String>
 
     <system:String x:Key="Property.Localization.Hue">रंग</system:String>
     <system:String x:Key="Property.Localization.Blur">धुंधलापन</system:String>

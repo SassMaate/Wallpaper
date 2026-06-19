@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.UK.xaml,Please don't touch the
 Property.Localization.WebView,Тільки для WebView,,Property\Property.UK.xaml,
 Property.Localization.CefSharp,Тільки для CefSharp,,Property\Property.UK.xaml,
 Property.Localization.MpvPlayer,Тільки для MpvPlayer,,Property\Property.UK.xaml,
+Property.Localization.VlcPlayer,Тільки для VlcPlayer,,Property\Property.UK.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.UK.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Відтінок,,Property\Property.UK.xaml,
 Property.Localization.Blur,Розмиття,,Property\Property.UK.xaml,

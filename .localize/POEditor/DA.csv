@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.DA.xaml,Please don't touch the
 Property.Localization.WebView,Kun til WebView,,Property\Property.DA.xaml,
 Property.Localization.CefSharp,Kun til CefSharp,,Property\Property.DA.xaml,
 Property.Localization.MpvPlayer,Kun til MpvPlayer,,Property\Property.DA.xaml,
+Property.Localization.VlcPlayer,Kun til VlcPlayer,,Property\Property.DA.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.DA.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Farvetone,,Property\Property.DA.xaml,
 Property.Localization.Blur,Sløring,,Property\Property.DA.xaml,

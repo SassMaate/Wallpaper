@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">WebView 전용</system:String>
     <system:String x:Key="Property.Localization.CefSharp">CefSharp 전용</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">MpvPlayer 전용</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">VlcPlayer 전용</system:String>
 
     <system:String x:Key="Property.Localization.Hue">색조</system:String>
     <system:String x:Key="Property.Localization.Blur">흐림</system:String>

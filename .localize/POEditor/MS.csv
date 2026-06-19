@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.MS.xaml,Please don't touch the
 Property.Localization.WebView,Hanya untuk WebView,,Property\Property.MS.xaml,
 Property.Localization.CefSharp,Hanya untuk CefSharp,,Property\Property.MS.xaml,
 Property.Localization.MpvPlayer,Hanya untuk MpvPlayer,,Property\Property.MS.xaml,
+Property.Localization.VlcPlayer,Hanya untuk VlcPlayer,,Property\Property.MS.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.MS.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Warna,,Property\Property.MS.xaml,
 Property.Localization.Blur,Kabur,,Property\Property.MS.xaml,

@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.AR.xaml,Please don't touch the
 Property.Localization.WebView,لـ WebView فقط,,Property\Property.AR.xaml,
 Property.Localization.CefSharp,لـ CefSharp فقط,,Property\Property.AR.xaml,
 Property.Localization.MpvPlayer,لـ MpvPlayer فقط,,Property\Property.AR.xaml,
+Property.Localization.VlcPlayer,لـ VlcPlayer فقط,,Property\Property.AR.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.AR.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,تدرّج اللون,,Property\Property.AR.xaml,
 Property.Localization.Blur,التمويه,,Property\Property.AR.xaml,

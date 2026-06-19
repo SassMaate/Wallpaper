@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.NL.xaml,Please don't touch the
 Property.Localization.WebView,Alleen voor WebView,,Property\Property.NL.xaml,
 Property.Localization.CefSharp,Alleen voor CefSharp,,Property\Property.NL.xaml,
 Property.Localization.MpvPlayer,Alleen voor MpvPlayer,,Property\Property.NL.xaml,
+Property.Localization.VlcPlayer,Alleen voor VlcPlayer,,Property\Property.NL.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.NL.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Tint,,Property\Property.NL.xaml,
 Property.Localization.Blur,Vervaging,,Property\Property.NL.xaml,

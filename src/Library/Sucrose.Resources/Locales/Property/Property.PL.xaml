@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Tylko dla WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Tylko dla CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Tylko dla MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Tylko dla VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Odcień</system:String>
     <system:String x:Key="Property.Localization.Blur">Rozmycie</system:String>

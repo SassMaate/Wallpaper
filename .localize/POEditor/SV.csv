@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.SV.xaml,Please don't touch the
 Property.Localization.WebView,Endast för WebView,,Property\Property.SV.xaml,
 Property.Localization.CefSharp,Endast för CefSharp,,Property\Property.SV.xaml,
 Property.Localization.MpvPlayer,Endast för MpvPlayer,,Property\Property.SV.xaml,
+Property.Localization.VlcPlayer,Endast för VlcPlayer,,Property\Property.SV.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.SV.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Färgtone,,Property\Property.SV.xaml,
 Property.Localization.Blur,Suddighet,,Property\Property.SV.xaml,

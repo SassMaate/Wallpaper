@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.EL.xaml,Please don't touch the
 Property.Localization.WebView,Μόνο για WebView,,Property\Property.EL.xaml,
 Property.Localization.CefSharp,Μόνο για CefSharp,,Property\Property.EL.xaml,
 Property.Localization.MpvPlayer,Μόνο για MpvPlayer,,Property\Property.EL.xaml,
+Property.Localization.VlcPlayer,Μόνο για VlcPlayer,,Property\Property.EL.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.EL.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Απόχρωση,,Property\Property.EL.xaml,
 Property.Localization.Blur,Θολούρα,,Property\Property.EL.xaml,

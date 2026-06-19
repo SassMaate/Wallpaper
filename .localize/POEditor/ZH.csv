@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.ZH.xaml,Please don't touch the
 Property.Localization.WebView,仅限WebView,,Property\Property.ZH.xaml,
 Property.Localization.CefSharp,仅限CefSharp,,Property\Property.ZH.xaml,
 Property.Localization.MpvPlayer,仅限MpvPlayer,,Property\Property.ZH.xaml,
+Property.Localization.VlcPlayer,仅限VlcPlayer,,Property\Property.ZH.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.ZH.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,色调,,Property\Property.ZH.xaml,
 Property.Localization.Blur,模糊,,Property\Property.ZH.xaml,

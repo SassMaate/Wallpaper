@@ -188,6 +188,7 @@ cbeb29d15d810260f58c85f7b37f2aef,Property\Property.ID.xaml,Property.FileDropDown
 5c134db93dc04d4c82b1d8279f9aec72,Property\Property.ID.xaml,Property.Localization.WebView,Hanya untuk WebView
 9c30da530230d8726f9f10960ff6b44d,Property\Property.ID.xaml,Property.Localization.CefSharp,Hanya untuk CefSharp
 5325a75f55f7302072816938d8aa4abc,Property\Property.ID.xaml,Property.Localization.MpvPlayer,Hanya untuk MpvPlayer
+592b2ccbbe51837579f7c112926f8fea,Property\Property.ID.xaml,Property.Localization.VlcPlayer,Hanya untuk VlcPlayer
 06b8a11af61806ac5d0f3bc11f8996b4,Property\Property.ID.xaml,,
 16a9dbc00fa2b359d556244668fd8344,Property\Property.ID.xaml,Property.Localization.Hue,Rona
 057607b8e3b6be4885a9bf0613fd5511,Property\Property.ID.xaml,Property.Localization.Blur,Kabur

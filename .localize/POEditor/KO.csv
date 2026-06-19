@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.KO.xaml,Please don't touch the
 Property.Localization.WebView,WebView 전용,,Property\Property.KO.xaml,
 Property.Localization.CefSharp,CefSharp 전용,,Property\Property.KO.xaml,
 Property.Localization.MpvPlayer,MpvPlayer 전용,,Property\Property.KO.xaml,
+Property.Localization.VlcPlayer,VlcPlayer 전용,,Property\Property.KO.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.KO.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,색조,,Property\Property.KO.xaml,
 Property.Localization.Blur,흐림,,Property\Property.KO.xaml,

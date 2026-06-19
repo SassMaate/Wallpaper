@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Doar pentru WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Doar pentru CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Doar pentru MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Doar pentru VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Nuanta</system:String>
     <system:String x:Key="Property.Localization.Blur">Neclaritate</system:String>

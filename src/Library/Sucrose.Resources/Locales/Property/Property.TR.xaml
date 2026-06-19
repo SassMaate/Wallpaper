@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Sadece WebView İçin</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Sadece CefSharp İçin</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Sadece MpvPlayer İçin</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Sadece VlcPlayer İçin</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Renk Tonu</system:String>
     <system:String x:Key="Property.Localization.Blur">Bulanıklık</system:String>

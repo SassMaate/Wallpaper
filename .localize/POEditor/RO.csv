@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.RO.xaml,Please don't touch the
 Property.Localization.WebView,Doar pentru WebView,,Property\Property.RO.xaml,
 Property.Localization.CefSharp,Doar pentru CefSharp,,Property\Property.RO.xaml,
 Property.Localization.MpvPlayer,Doar pentru MpvPlayer,,Property\Property.RO.xaml,
+Property.Localization.VlcPlayer,Doar pentru VlcPlayer,,Property\Property.RO.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.RO.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,Nuanta,,Property\Property.RO.xaml,
 Property.Localization.Blur,Neclaritate,,Property\Property.RO.xaml,

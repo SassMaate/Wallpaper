@@ -188,6 +188,7 @@ PASS⦙27,PASS⦙27,Don't Touch,Property\Property.HI.xaml,Please don't touch the
 Property.Localization.WebView,केवल WebView के लिए,,Property\Property.HI.xaml,
 Property.Localization.CefSharp,केवल CefSharp के लिए,,Property\Property.HI.xaml,
 Property.Localization.MpvPlayer,केवल MpvPlayer के लिए,,Property\Property.HI.xaml,
+Property.Localization.VlcPlayer,केवल VlcPlayer के लिए,,Property\Property.HI.xaml,
 PASS⦙28,PASS⦙28,Don't Touch,Property\Property.HI.xaml,Please don't touch the translation in this line.
 Property.Localization.Hue,रंग,,Property\Property.HI.xaml,
 Property.Localization.Blur,धुंधलापन,,Property\Property.HI.xaml,
