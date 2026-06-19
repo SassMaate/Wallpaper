@@ -9,7 +9,18 @@ namespace Sucrose.Backgroundog.Extension
 {
     internal class AudioVisualizer : IMMNotificationClient
     {
-        public event EventHandler<double[]> AudioDataAvailable;
+        /// <summary>
+        /// One spectrum snapshot: Mono (back-compat), plus per-channel Left/Right.
+        /// Each is 128 values normalised to [0, 1].
+        /// </summary>
+        public sealed class Spectrum
+        {
+            public double[] Mono;
+            public double[] Left;
+            public double[] Right;
+        }
+
+        public event EventHandler<Spectrum> AudioDataAvailable;
 
         // Output contract: 128 bins, each normalised to [0, 1] (wallpapers index Data[0..127]).
         private const int MaxSample = 128;
@@ -31,15 +42,19 @@ namespace Sucrose.Backgroundog.Extension
         // noise gate so silence / paused audio stays flat instead of flickering.
         private const double DynamicRangeDb = 55.0;
 
-        // Asymmetric (attack/decay) smoothing applied per bin, per FFT update:
+        // Asymmetric (attack/decay) smoothing applied per bin, per emitted frame:
         // fast rise so bars snap to the beat, slow fall so they ease back down.
-        // These assume the current per-callback update rate; retune if FFT updates
-        // are ever throttled to a fixed rate.
+        // Tuned for the throttled ~EmitIntervalMs cadence below.
         private const double AttackSpeed = 0.35;
         private const double ReleaseSpeed = 0.06;
 
         // Neighbour-bin averaging to take the edge off jagged bars.
         private const int HorizontalSmoothness = 1;
+
+        // FFT/emit throttle: the ring is fed on every WASAPI callback (cheap), but the
+        // FFT + event only run this often. WASAPI fires far faster than any wallpaper
+        // can render, so this caps CPU without losing visual smoothness.
+        private const int EmitIntervalMs = 16; // ~60 Hz
         // --------------------------------------------------------------------
 
         private int SampleRate;
@@ -49,12 +64,20 @@ namespace Sucrose.Backgroundog.Extension
         private double Reference; // bin magnitude of a full-scale tone (the 0 dBFS anchor)
         private bool RingFilled;
         private int RingWritePos;
+        private long LastEmitMs = long.MinValue;
+        private readonly Stopwatch Clock = Stopwatch.StartNew();
 
         // Pre-allocated and reused every update to avoid per-callback GC churn.
-        private readonly float[] MonoRing = new float[FftSize];
-        private readonly Complex[] Values = new Complex[FftSize];
-        private readonly double[] Bands = new double[MaxSample];
-        private readonly double[] Envelope = new double[MaxSample];
+        private readonly float[] LeftRing = new float[FftSize];
+        private readonly float[] RightRing = new float[FftSize];
+        private readonly Complex[] ValuesLeft = new Complex[FftSize];
+        private readonly Complex[] ValuesRight = new Complex[FftSize];
+        private readonly double[] BandsMono = new double[MaxSample];
+        private readonly double[] BandsLeft = new double[MaxSample];
+        private readonly double[] BandsRight = new double[MaxSample];
+        private readonly double[] EnvelopeMono = new double[MaxSample];
+        private readonly double[] EnvelopeLeft = new double[MaxSample];
+        private readonly double[] EnvelopeRight = new double[MaxSample];
 
         private WasapiLoopbackCapture Capture;
         private readonly MMDeviceEnumerator DeviceEnum = new();
@@ -143,26 +166,28 @@ namespace Sucrose.Backgroundog.Extension
 
                 WaveBuffer Buffer = new(e.Buffer);
 
+                float Read(int Sample)
+                {
+                    return IsFloat32 ? Buffer.FloatBuffer[Sample]
+                        : IsPcm16 ? Buffer.ShortBuffer[Sample] / 32768f
+                        : Buffer.IntBuffer[Sample] / 2147483648f;
+                }
+
                 // Only the recorded region is valid; the WaveBuffer is over-allocated.
                 int SampleCount = e.BytesRecorded / BytesPerSample;
                 int Frames = SampleCount / Channels;
 
-                // De-interleave to mono and append into the ring buffer.
+                // De-interleave into per-channel ring buffers (channel 0 = left, 1 = right;
+                // mono devices mirror the single channel to both).
                 for (int F = 0; F < Frames; F++)
                 {
-                    double Sum = 0;
                     int Base = F * Channels;
 
-                    for (int C = 0; C < Channels; C++)
-                    {
-                        int S = Base + C;
+                    float Left = Read(Base);
+                    float Right = Channels >= 2 ? Read(Base + 1) : Left;
 
-                        Sum += IsFloat32 ? Buffer.FloatBuffer[S]
-                            : IsPcm16 ? Buffer.ShortBuffer[S] / 32768.0
-                            : Buffer.IntBuffer[S] / 2147483648.0;
-                    }
-
-                    MonoRing[RingWritePos] = (float)(Sum / Channels);
+                    LeftRing[RingWritePos] = Left;
+                    RightRing[RingWritePos] = Right;
                     RingWritePos++;
 
                     if (RingWritePos >= FftSize)
@@ -177,14 +202,25 @@ namespace Sucrose.Backgroundog.Extension
                     return;
                 }
 
-                // Windowed FFT over the latest FftSize mono samples (oldest -> newest).
-                // NoScaling keeps the magnitude scale deterministic, so Reference (the
-                // 0 dBFS anchor) is exact regardless of the FFT library's conventions.
+                // Throttle the expensive FFT + emit to ~EmitIntervalMs.
+                long Now = Clock.ElapsedMilliseconds;
+
+                if (Now - LastEmitMs < EmitIntervalMs)
+                {
+                    return;
+                }
+
+                LastEmitMs = Now;
+
+                // Windowed FFT of each channel over the latest FftSize samples.
+                // NoScaling keeps the magnitude scale deterministic, so Reference
+                // (the 0 dBFS anchor) is exact regardless of the FFT conventions.
                 int Index = RingWritePos;
 
                 for (int N = 0; N < FftSize; N++)
                 {
-                    Values[N] = new Complex(MonoRing[Index] * Window[N], 0.0);
+                    ValuesLeft[N] = new Complex(LeftRing[Index] * Window[N], 0.0);
+                    ValuesRight[N] = new Complex(RightRing[Index] * Window[N], 0.0);
                     Index++;
 
                     if (Index >= FftSize)
@@ -193,82 +229,114 @@ namespace Sucrose.Backgroundog.Extension
                     }
                 }
 
-                Fourier.Forward(Values, FourierOptions.NoScaling);
+                Fourier.Forward(ValuesLeft, FourierOptions.NoScaling);
+                Fourier.Forward(ValuesRight, FourierOptions.NoScaling);
 
-                // Peak magnitude per log-spaced band (peak keeps a tone from being
-                // diluted to nothing inside the wide high-frequency bands).
+                // Peak magnitude per log-spaced band, for mono / left / right.
+                // Mono spectrum = |(L + R) / 2| (exact: the FFT of the mixed signal).
                 for (int I = 0; I < MaxSample; I++)
                 {
-                    double Peak = 0;
+                    double PeakMono = 0;
+                    double PeakLeft = 0;
+                    double PeakRight = 0;
 
                     for (int B = BandStart[I]; B < BandEnd[I]; B++)
                     {
-                        double Magnitude = Values[B].Magnitude;
+                        Complex L = ValuesLeft[B];
+                        Complex R = ValuesRight[B];
 
-                        if (Magnitude > Peak)
+                        double Mono = ((L + R) * 0.5).Magnitude;
+                        double Left = L.Magnitude;
+                        double Right = R.Magnitude;
+
+                        if (Mono > PeakMono)
                         {
-                            Peak = Magnitude;
+                            PeakMono = Mono;
+                        }
+
+                        if (Left > PeakLeft)
+                        {
+                            PeakLeft = Left;
+                        }
+
+                        if (Right > PeakRight)
+                        {
+                            PeakRight = Right;
                         }
                     }
 
-                    Bands[I] = Peak;
+                    BandsMono[I] = PeakMono;
+                    BandsLeft[I] = PeakLeft;
+                    BandsRight[I] = PeakRight;
                 }
 
-                // Map to dBFS [0, 1] and apply attack/decay smoothing.
-                for (int I = 0; I < MaxSample; I++)
+                AudioDataAvailable?.Invoke(this, new Spectrum
                 {
-                    double Magnitude = Bands[I];
-                    double Normalized;
-
-                    if (Magnitude <= 0)
-                    {
-                        Normalized = 0;
-                    }
-                    else
-                    {
-                        double Decibel = 20.0 * Math.Log10(Magnitude / Reference);
-
-                        Normalized = 1.0 + Decibel / DynamicRangeDb;
-
-                        if (Normalized < 0)
-                        {
-                            Normalized = 0;
-                        }
-                        else if (Normalized > 1)
-                        {
-                            Normalized = 1;
-                        }
-                    }
-
-                    double Previous = Envelope[I];
-                    double Coefficient = Normalized > Previous ? AttackSpeed : ReleaseSpeed;
-
-                    Envelope[I] = Previous + (Normalized - Previous) * Coefficient;
-                }
-
-                // Neighbour-bin smoothing into a fresh array (consumers keep this reference).
-                double[] AudioData = new double[MaxSample];
-
-                for (int I = 0; I < MaxSample; I++)
-                {
-                    double Value = 0;
-                    int Count = 0;
-
-                    for (int H = Math.Max(I - HorizontalSmoothness, 0); H <= Math.Min(I + HorizontalSmoothness, MaxSample - 1); H++)
-                    {
-                        Value += Envelope[H];
-                        Count++;
-                    }
-
-                    AudioData[I] = Value / Count;
-                }
-
-                AudioDataAvailable?.Invoke(this, AudioData);
+                    Mono = Finalize(BandsMono, EnvelopeMono),
+                    Left = Finalize(BandsLeft, EnvelopeLeft),
+                    Right = Finalize(BandsRight, EnvelopeRight)
+                });
             }
             catch (Exception Exception)
             {
                 Debug.WriteLine($"Failed to process audio data: {Exception.Message}");
             }
+        }
+
+        /// <summary>
+        /// Maps band magnitudes to dBFS [0, 1], applies attack/decay into the persistent
+        /// envelope, then neighbour-bin smoothing into a fresh output array.
+        /// </summary>
+        private double[] Finalize(double[] Bands, double[] Envelope)
+        {
+            for (int I = 0; I < MaxSample; I++)
+            {
+                double Magnitude = Bands[I];
+                double Normalized;
+
+                if (Magnitude <= 0)
+                {
+                    Normalized = 0;
+                }
+                else
+                {
+                    double Decibel = 20.0 * Math.Log10(Magnitude / Reference);
+
+                    Normalized = 1.0 + (Decibel / DynamicRangeDb);
+
+                    if (Normalized < 0)
+                    {
+                        Normalized = 0;
+                    }
+                    else if (Normalized > 1)
+                    {
+                        Normalized = 1;
+                    }
+                }
+
+                double Previous = Envelope[I];
+                double Coefficient = Normalized > Previous ? AttackSpeed : ReleaseSpeed;
+
+                Envelope[I] = Previous + ((Normalized - Previous) * Coefficient);
+            }
+
+            double[] Output = new double[MaxSample];
+
+            for (int I = 0; I < MaxSample; I++)
+            {
+                double Value = 0;
+                int Count = 0;
+
+                for (int H = Math.Max(I - HorizontalSmoothness, 0); H <= Math.Min(I + HorizontalSmoothness, MaxSample - 1); H++)
+                {
+                    Value += Envelope[H];
+                    Count++;
+                }
+
+                Output[I] = Value / Count;
+            }
+
+            return Output;
         }
 
         private void BuildWindow()
@@ -296,7 +364,9 @@ namespace Sucrose.Backgroundog.Extension
             // Reset state so stale samples from the previous device/rate are dropped.
             RingFilled = false;
             RingWritePos = 0;
-            Array.Clear(Envelope, 0, Envelope.Length);
+            Array.Clear(EnvelopeMono, 0, EnvelopeMono.Length);
+            Array.Clear(EnvelopeLeft, 0, EnvelopeLeft.Length);
+            Array.Clear(EnvelopeRight, 0, EnvelopeRight.Length);
 
             double BinHz = (double)Rate / FftSize;
             double LogMin = Math.Log(MinFrequency);
@@ -304,8 +374,8 @@ namespace Sucrose.Backgroundog.Extension
 
             for (int I = 0; I < MaxSample; I++)
             {
-                double F0 = Math.Exp(LogMin + (LogMax - LogMin) * I / MaxSample);
-                double F1 = Math.Exp(LogMin + (LogMax - LogMin) * (I + 1) / MaxSample);
+                double F0 = Math.Exp(LogMin + ((LogMax - LogMin) * I / MaxSample));
+                double F1 = Math.Exp(LogMin + ((LogMax - LogMin) * (I + 1) / MaxSample));
 
                 int StartBin = (int)Math.Floor(F0 / BinHz);
                 int EndBin = (int)Math.Floor(F1 / BinHz);

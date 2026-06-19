@@ -228,7 +228,9 @@ namespace Sucrose.Backgroundog.Helper
                                     {
                                         try
                                         {
-                                            SBMI.AudioData.Data = e;
+                                            SBMI.AudioData.Data = e.Mono;
+                                            SBMI.AudioData.DataLeft = e.Left;
+                                            SBMI.AudioData.DataRight = e.Right;
                                         }
                                         catch { }
                                     };
