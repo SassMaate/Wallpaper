@@ -45,12 +45,57 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
             }
         }
 
+        // Rebuilds MediaBase for the animated GIF. The avformat demuxer + software decoding are
+        // always required for GIF (see comments below). When Loop is enabled it also adds libVLC's
+        // ":input-repeat" option so the input is repeated INTERNALLY (a seek-to-start that keeps the
+        // decoder and video output alive) instead of cold-restarting the pipeline via Play() on
+        // EndReached. The cold restart left the VideoView's native HWND blank while the (always
+        // software) GIF decoder re-initialized, exposing the desktop behind the wallpaper window.
+        // 65535 is the VLC maximum (range 0..65535); negative/zero values disable looping.
+        public static void BuildMedia(bool Loop)
+        {
+            SSEVPMI.MediaBase = new(SSEVPMI.MediaLibrary, new Uri(SSEVPMI.Source));
+
+            // VLC's native image demuxer (priority 10) outranks the FFmpeg/avformat demuxer (priority 2)
+            // and opens an animated GIF as a single still image, freezing it on the first frame. Forcing
+            // the avformat demuxer routes the GIF through FFmpeg, which decodes every frame. The avformat
+            // module ships compiled inside libavcodec_plugin.dll, so no extra plugin is required.
+            SSEVPMI.MediaBase.AddOption(":demux=avformat");
+
+            // GIF is a software-only codec; hardware decoding offers nothing for it and can produce
+            // corrupt frames, so force software decoding for the GIF media specifically.
+            SSEVPMI.MediaBase.AddOption(":avcodec-hw=none");
+
+            if (Loop)
+            {
+                SSEVPMI.MediaBase.AddOption(":input-repeat=65535");
+            }
+
+            SSEVPMI.LoopApplied = Loop;
+        }
+
         public static async void SetLoop(bool State)
         {
             try
             {
-                if (State && SSEVPMI.MediaEngine.State != VLCState.Playing)
+                if (State != SSEVPMI.LoopApplied)
                 {
+                    // Loop toggled at runtime. ":input-repeat" is fixed when the Media is created
+                    // and cannot be changed on a live Media, so rebuild MediaBase to match the new
+                    // intent and restart playback once (only on the explicit toggle, never per loop).
+                    App.Current.Dispatcher.Invoke(() =>
+                    {
+                        ThreadPool.QueueUserWorkItem(_ =>
+                        {
+                            BuildMedia(State);
+                            SSEVPMI.MediaEngine.Play(SSEVPMI.MediaBase);
+                        });
+                    });
+                }
+                else if (State && SSEVPMI.MediaEngine.State != VLCState.Playing)
+                {
+                    // Loop wanted but playback stopped (startup, or the practically-never repeat
+                    // exhaustion): replay the already-configured media.
                     App.Current.Dispatcher.Invoke(() =>
                     {
                         ThreadPool.QueueUserWorkItem(_ => SSEVPMI.MediaEngine.Play(SSEVPMI.MediaBase));

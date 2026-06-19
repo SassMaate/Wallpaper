@@ -45,12 +45,46 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
             }
         }
 
+        // Rebuilds MediaBase from the current source. When Loop is enabled it adds libVLC's
+        // ":input-repeat" option so the input is repeated INTERNALLY (a seek-to-start that keeps
+        // the decoder and video output alive) instead of cold-restarting the pipeline via Play()
+        // on EndReached. That cold restart left the VideoView's native HWND blank while software
+        // decoding re-initialized, exposing the desktop behind the wallpaper window for seconds.
+        // 65535 is the VLC maximum (range 0..65535); negative/zero values disable looping.
+        public static void BuildMedia(bool Loop)
+        {
+            SSEVPMI.MediaBase = new(SSEVPMI.MediaLibrary, new Uri(SSEVPMI.Source));
+
+            if (Loop)
+            {
+                SSEVPMI.MediaBase.AddOption(":input-repeat=65535");
+            }
+
+            SSEVPMI.LoopApplied = Loop;
+        }
+
         public static async void SetLoop(bool State)
         {
             try
             {
-                if (State && SSEVPMI.MediaEngine.State != VLCState.Playing)
+                if (State != SSEVPMI.LoopApplied)
                 {
+                    // Loop toggled at runtime. ":input-repeat" is fixed when the Media is created
+                    // and cannot be changed on a live Media, so rebuild MediaBase to match the new
+                    // intent and restart playback once (only on the explicit toggle, never per loop).
+                    App.Current.Dispatcher.Invoke(() =>
+                    {
+                        ThreadPool.QueueUserWorkItem(_ =>
+                        {
+                            BuildMedia(State);
+                            SSEVPMI.MediaEngine.Play(SSEVPMI.MediaBase);
+                        });
+                    });
+                }
+                else if (State && SSEVPMI.MediaEngine.State != VLCState.Playing)
+                {
+                    // Loop wanted but playback stopped (startup, or the practically-never repeat
+                    // exhaustion): replay the already-configured media.
                     App.Current.Dispatcher.Invoke(() =>
                     {
                         ThreadPool.QueueUserWorkItem(_ => SSEVPMI.MediaEngine.Play(SSEVPMI.MediaBase));

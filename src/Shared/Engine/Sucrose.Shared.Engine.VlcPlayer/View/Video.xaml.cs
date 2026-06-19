@@ -58,7 +58,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.View
                 EnableHardwareDecoding = SMME.HardwareAcceleration
             };
 
-            SSEVPMI.MediaBase = new(SSEVPMI.MediaLibrary, new Uri(SSEVPMI.Source));
+            SSEVPHV.BuildMedia(SSEHD.GetLoop());
 
             SSEVPMI.MediaHandle = SSEVPMI.MediaEngine.Hwnd;
             SSEVPMI.MediaEngine.SetAdjustInt(VideoAdjustOption.Enable, 1);

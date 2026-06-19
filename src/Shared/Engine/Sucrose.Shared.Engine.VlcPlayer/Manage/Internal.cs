@@ -11,6 +11,8 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Manage
 
         public static string VlcPath;
 
+        public static bool LoopApplied;
+
         public static MediaBase MediaBase;
 
         public static MediaView MediaView;
