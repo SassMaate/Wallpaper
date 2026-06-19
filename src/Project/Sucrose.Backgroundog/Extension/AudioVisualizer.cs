@@ -1,4 +1,4 @@
-﻿using MathNet.Numerics.IntegralTransforms;
+using MathNet.Numerics.IntegralTransforms;
 using NAudio.CoreAudioApi;
 using NAudio.CoreAudioApi.Interfaces;
 using NAudio.Wave;
@@ -11,17 +11,47 @@ namespace Sucrose.Backgroundog.Extension
     {
         public event EventHandler<double[]> AudioDataAvailable;
 
+        // Output contract: 128 magnitudes (wallpapers index Data[0..127]); keep this count.
         private readonly int MaxSample = 128;
+
+        // Fixed power-of-two FFT size (decoupled from the WASAPI callback buffer size,
+        // which used to vary and shift the bin -> frequency mapping per callback).
+        private const int FftSize = 4096;
+        private const int HalfFft = FftSize / 2;
+
+        // Frequency range mapped across the 128 output bins, on a logarithmic
+        // (octave/perceptual) scale instead of the old "first 128 linear bins".
+        // This raises the visualised ceiling from ~a couple of kHz to the full audible range.
+        private const double MinFrequency = 20.0;
+        private const double MaxFrequency = 16000.0;
+
+        // Output scaling. The old code emitted raw, un-normalised single-bin
+        // magnitudes; with the Hann window (coherent gain ~0.5) and per-band
+        // averaging the natural scale is a bit lower, so compensate here.
+        // Tune this if your wallpapers look flatter/spikier than before.
+        private const double Gain = 2.0;
+
+        private readonly int VerticalSmoothness = 2;   // temporal frames to average
+        private readonly int HorizontalSmoothness = 1; // neighbour bins to average
+
+        private int SampleRate;
+        private int[] BandStart;
+        private int[] BandEnd;
+        private double[] Window;
+        private bool RingFilled;
+        private int RingWritePos;
+        private readonly float[] MonoRing = new float[FftSize];
+        private readonly List<double[]> Smooth = [];
+
         private WasapiLoopbackCapture Capture;
-        private readonly int VerticalSmoothness = 2;
-        private readonly int HorizontalSmoothness = 1;
-        private readonly List<Complex[]> Smooth = [];
         private readonly MMDeviceEnumerator DeviceEnum = new();
 
         public AudioVisualizer()
         {
             try
             {
+                BuildWindow();
+
                 int HRESULT = DeviceEnum.RegisterEndpointNotificationCallback(this);
 
                 if (HRESULT != 0)
@@ -67,35 +97,109 @@ namespace Sucrose.Backgroundog.Extension
         {
             try
             {
+                WaveFormat Format = Capture?.WaveFormat;
+
+                if (Format == null)
+                {
+                    return;
+                }
+
+                int Channels = Format.Channels <= 0 ? 2 : Format.Channels;
+
+                if (BandStart == null || Format.SampleRate != SampleRate)
+                {
+                    BuildBands(Format.SampleRate);
+                }
+
                 WaveBuffer Buffer = new(e.Buffer);
 
-                int Length = Buffer.FloatBuffer.Length / 8;
+                // Only the recorded region is valid; the WaveBuffer is over-allocated.
+                int ValidFloats = e.BytesRecorded / 4;
+                int Frames = ValidFloats / Channels;
 
-                // FFT
-                Complex[] Values = new Complex[Length];
-
-                for (int C = 0; C < Length; C++)
+                // De-interleave to mono and append into the ring buffer.
+                for (int F = 0; F < Frames; F++)
                 {
-                    Values[C] = new Complex(Buffer.FloatBuffer[C], 0.0);
+                    double Sum = 0;
+                    int Base = F * Channels;
+
+                    for (int C = 0; C < Channels; C++)
+                    {
+                        Sum += Buffer.FloatBuffer[Base + C];
+                    }
+
+                    MonoRing[RingWritePos] = (float)(Sum / Channels);
+                    RingWritePos++;
+
+                    if (RingWritePos >= FftSize)
+                    {
+                        RingWritePos = 0;
+                        RingFilled = true;
+                    }
+                }
+
+                if (!RingFilled)
+                {
+                    return;
+                }
+
+                // Windowed FFT over the latest FftSize mono samples (oldest -> newest).
+                Complex[] Values = new Complex[FftSize];
+                int Index = RingWritePos;
+
+                for (int N = 0; N < FftSize; N++)
+                {
+                    Values[N] = new Complex(MonoRing[Index] * Window[N], 0.0);
+                    Index++;
+
+                    if (Index >= FftSize)
+                    {
+                        Index = 0;
+                    }
                 }
 
                 Fourier.Forward(Values, FourierOptions.Default);
 
-                // Shift Array
-                Smooth.Add(Values);
+                // Aggregate magnitudes into 128 log-spaced bands.
+                double[] Frame = new double[MaxSample];
+
+                for (int I = 0; I < MaxSample; I++)
+                {
+                    double Accumulator = 0;
+                    int Count = 0;
+
+                    for (int B = BandStart[I]; B < BandEnd[I]; B++)
+                    {
+                        Accumulator += Values[B].Magnitude;
+                        Count++;
+                    }
+
+                    Frame[I] = Count > 0 ? Accumulator / Count * Gain : 0.0;
+                }
+
+                // Temporal smoothing across the last VerticalSmoothness frames.
+                Smooth.Add(Frame);
 
                 if (Smooth.Count > VerticalSmoothness)
                 {
                     Smooth.RemoveAt(0);
                 }
 
-                Complex[][] Snapshot = Smooth.ToArray();
-
+                // Combine temporal and horizontal (neighbour-bin) smoothing.
                 double[] AudioData = new double[MaxSample];
 
-                for (int i = 0; i < MaxSample; i++)
+                for (int I = 0; I < MaxSample; I++)
                 {
-                    AudioData[i] = BothSmooth(i, Snapshot);
+                    double Value = 0;
+                    int Count = 0;
+
+                    for (int H = Math.Max(I - HorizontalSmoothness, 0); H <= Math.Min(I + HorizontalSmoothness, MaxSample - 1); H++)
+                    {
+                        Value += VSmooth(H);
+                        Count++;
+                    }
+
+                    AudioData[I] = Value / Count;
                 }
 
                 AudioDataAvailable?.Invoke(this, AudioData);
@@ -106,28 +210,69 @@ namespace Sucrose.Backgroundog.Extension
             }
         }
 
-        private double BothSmooth(int C, Complex[][] S)
+        private double VSmooth(int Bin)
         {
             double Value = 0;
 
-            for (int H = Math.Max(C - HorizontalSmoothness, 0); H < Math.Min(C + HorizontalSmoothness, MaxSample); H++)
+            for (int V = 0; V < Smooth.Count; V++)
             {
-                Value += VSmooth(H, S);
+                Value += Smooth[V] != null ? Smooth[V][Bin] : 0.0;
             }
 
-            return Value / ((HorizontalSmoothness + 1) * 2);
+            return Smooth.Count > 0 ? Value / Smooth.Count : 0.0;
         }
 
-        private double VSmooth(int C, Complex[][] S)
+        private void BuildWindow()
         {
-            double Value = 0;
+            Window = new double[FftSize];
 
-            for (int V = 0; V < S.Length; V++)
+            for (int N = 0; N < FftSize; N++)
             {
-                Value += Math.Abs(S[V] != null ? S[V][C].Magnitude : 0.0);
+                Window[N] = 0.5 * (1.0 - Math.Cos(2.0 * Math.PI * N / (FftSize - 1))); // Hann
             }
+        }
 
-            return Value / S.Length;
+        private void BuildBands(int Rate)
+        {
+            SampleRate = Rate;
+            BandStart = new int[MaxSample];
+            BandEnd = new int[MaxSample];
+
+            // Reset the ring so stale samples from the previous device/rate are dropped.
+            RingFilled = false;
+            RingWritePos = 0;
+            Smooth.Clear();
+
+            double BinHz = (double)Rate / FftSize;
+            double LogMin = Math.Log(MinFrequency);
+            double LogMax = Math.Log(Math.Min(MaxFrequency, Rate / 2.0));
+
+            for (int I = 0; I < MaxSample; I++)
+            {
+                double F0 = Math.Exp(LogMin + ((LogMax - LogMin) * I / MaxSample));
+                double F1 = Math.Exp(LogMin + ((LogMax - LogMin) * (I + 1) / MaxSample));
+
+                int StartBin = (int)Math.Floor(F0 / BinHz);
+                int EndBin = (int)Math.Floor(F1 / BinHz);
+
+                if (StartBin < 1)
+                {
+                    StartBin = 1; // skip DC
+                }
+
+                if (EndBin <= StartBin)
+                {
+                    EndBin = StartBin + 1; // guarantee at least one bin per band
+                }
+
+                if (EndBin > HalfFft)
+                {
+                    EndBin = HalfFft;
+                }
+
+                BandStart[I] = StartBin;
+                BandEnd[I] = EndBin;
+            }
         }
 
         public void OnDefaultDeviceChanged(DataFlow Flow, Role Role, string DefaultDeviceId)
