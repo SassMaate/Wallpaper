@@ -41,10 +41,17 @@ namespace Sucrose.Backgroundog.Extension
         // [0, 1]. Linear preserves the natural dynamic range — bass towering over treble —
         // so spectrum visuals keep their punchy, peaked shape. (dBFS log-compressed that
         // into a flat, lifeless band.) Gain pushes typical loud content up toward full scale.
-        private const double LinearGain = 3.0;
+        private const double LinearGain = 2.5;
 
         // Subtracted before clamping to gate residual hiss so silence / paused audio stays flat.
         private const double NoiseFloor = 0.01;
+
+        // High-frequency tilt (dB/octave), applied per band, anchored at MinFrequency.
+        // Music rolls off (~-4.5 dB/oct), so without compensation the upper half of the
+        // 16 kHz log spectrum sits near 0 and the right side of every visualiser looks dead.
+        // This boost makes the full spectrum register (like a spectrum analyser's "slope"),
+        // without flattening the bass-vs-treble dynamics the way a gamma curve would. 0 = off.
+        private const double TiltDbPerOctave = 2.0;
 
         // Asymmetric (attack/decay) smoothing applied per bin, per emitted frame:
         // fast rise so bars snap to the beat, slow fall so they ease back down.
@@ -64,6 +71,7 @@ namespace Sucrose.Backgroundog.Extension
         private int SampleRate;
         private int[] BandStart;
         private int[] BandEnd;
+        private double[] TiltGain;
         private double[] Window;
         private double Reference; // bin magnitude of a full-scale tone (the 0 dBFS anchor)
         private bool RingFilled;
@@ -304,7 +312,7 @@ namespace Sucrose.Backgroundog.Extension
                 }
                 else
                 {
-                    Normalized = ((Magnitude / Reference) * LinearGain) - NoiseFloor;
+                    Normalized = ((Magnitude * TiltGain[I] / Reference) * LinearGain) - NoiseFloor;
 
                     if (Normalized < 0)
                     {
@@ -362,6 +370,7 @@ namespace Sucrose.Backgroundog.Extension
             SampleRate = Rate;
             BandStart = new int[MaxSample];
             BandEnd = new int[MaxSample];
+            TiltGain = new double[MaxSample];
 
             // Reset state so stale samples from the previous device/rate are dropped.
             RingFilled = false;
@@ -399,6 +408,9 @@ namespace Sucrose.Backgroundog.Extension
 
                 BandStart[I] = StartBin;
                 BandEnd[I] = EndBin;
+
+                double Center = Math.Exp(LogMin + ((LogMax - LogMin) * (I + 0.5) / MaxSample));
+                TiltGain[I] = Math.Pow(Center / MinFrequency, TiltDbPerOctave / (20.0 * Math.Log10(2.0)));
             }
         }
 
