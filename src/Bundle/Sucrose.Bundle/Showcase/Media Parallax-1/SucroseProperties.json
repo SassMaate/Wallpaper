@@ -28,7 +28,15 @@
       "step": 0.1,
       "text": "Amplitude",
       "type": "slider",
-      "value": 8
+      "value": 18
+    },
+    "contrast": {
+      "max": 5,
+      "min": 1,
+      "step": 0.1,
+      "text": "Contrast",
+      "type": "slider",
+      "value": 2.5
     },
     "dotScale": {
       "max": 5,

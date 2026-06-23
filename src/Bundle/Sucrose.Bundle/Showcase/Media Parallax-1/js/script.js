@@ -36,7 +36,8 @@ let foregroundColor = "rgb(255,255,255)";
 let rainbow = false;
 
 let ctx = canvas.getContext("2d");
-let verticalScale = 8;
+let verticalScale = 18;
+let spectrumContrast = 2.5;
 let sortSoundArray = null;
 
 function hexToRgb(hex) {
@@ -82,7 +83,9 @@ function renderAnimation(audioArray) {
 	ctx.fillStyle = foregroundColor;
 
 	for (let x = 0; x < audioArray.length; x++) {
-		const soundVal = audioArray[x];
+		// Expand the [0,1] dynamic range (Contrast) so the sorted spectrum peaks
+		// instead of flattening at the clamp ceiling.
+		const soundVal = Math.pow(Math.max(0, audioArray[x]), spectrumContrast);
 
 		if (rainbow) ctx.fillStyle = rainbowColors[x % rainbowColors.length] || foregroundColor;
 
@@ -113,27 +116,40 @@ let defaultBackground = "res/background.jpg",
 document.getElementById("albumart").src = defaultAlbumArt;
 backgroundImage.src = defaultBackground;
 
+let currentArt = null,
+	currentTitle = null;
+
 function SucroseAudioData(obj) {
 	if (obj != null && obj.State) {
-		document.querySelector("h2").innerText = obj.AlbumArtist;
-		document.querySelector("h2").innerText = obj.Artist;
-		document.querySelector("h1").innerText = obj.Title;
-		$("#backgroundImageFade").css("opacity", 1.0);
-		backgroundImageFade.src = backgroundImage.src;
-		if (obj.ThumbnailString != null) {
-			document.getElementById("albumart").src = "data:image/png;base64," + obj.ThumbnailString;
-			backgroundImage.src = "data:image/png;base64," + obj.ThumbnailString;
-		} else {
-			document.getElementById("albumart").src = defaultAlbumArt;
-			backgroundImage.src = defaultBackground;
+		if (obj.Title !== currentTitle) {
+			document.querySelector("h1").innerText = obj.Title;
+			document.querySelector("h2").innerText = obj.Artist || "";
+			currentTitle = obj.Title;
 		}
-	} else if (document.querySelector("h1").innerText != "Waiting for media...") {
+
+		// Only touch the image src when the art actually changes; otherwise the album
+		// GIF (record.gif for cover-less media) gets reassigned every audio frame and
+		// restarts, so it never animates.
+		const hasThumb = obj.ThumbnailString != null && obj.ThumbnailString !== "";
+		const art = hasThumb ? "data:image/png;base64," + obj.ThumbnailString : defaultAlbumArt;
+		const bg = hasThumb ? "data:image/png;base64," + obj.ThumbnailString : defaultBackground;
+
+		if (art !== currentArt) {
+			$("#backgroundImageFade").css("opacity", 1.0);
+			backgroundImageFade.src = backgroundImage.src;
+			document.getElementById("albumart").src = art;
+			backgroundImage.src = bg;
+			currentArt = art;
+		}
+	} else if (currentArt !== "__waiting__") {
 		document.querySelector("h2").innerText = "";
 		document.querySelector("h1").innerText = "Waiting for media...";
 		document.getElementById("albumart").src = defaultAlbumArt;
 		$("#backgroundImageFade").css("opacity", 1.0);
 		backgroundImageFade.src = backgroundImage.src;
 		backgroundImage.src = defaultBackground;
+		currentArt = "__waiting__";
+		currentTitle = null;
 	}
 
 	if (sortSoundArray)
@@ -236,6 +252,9 @@ function SucrosePropertyListener(name, val) {
 			break;
 		case "verticalScale":
 			verticalScale = val.value;
+			break;
+		case "contrast":
+			spectrumContrast = val.value;
 			break;
 		case "dotScale":
 			dotScale = val.value;
