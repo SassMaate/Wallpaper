@@ -44,6 +44,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.View
                 "no-stats",
                 "no-drop-late-frames",
                 "no-snapshot-preview",
+                "video-filter=adjust",
                 "no-sub-autodetect-file",
                 "no-metadata-network-access",
                 SMME.StayAwake ? "disable-screensaver" : "no-disable-screensaver"

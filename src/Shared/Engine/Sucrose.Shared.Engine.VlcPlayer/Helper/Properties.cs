@@ -113,7 +113,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
                                     // Map -100..100 to VLC range 0.0..3.0 (default 1.0)
                                     float Saturation = MapWithPivot(InputValue, -100f, 100f, 0f, 0f, 3f, 1f);
 
-                                    SetImageOption(VideoAdjustOption.Saturation, Saturation);
+                                    SSEVPMI.MediaEngine.SetAdjustFloat(VideoAdjustOption.Saturation, Saturation);
                                 }
                                 break;
                             case "hue":
@@ -123,7 +123,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
                                     // Map -100..100 to VLC range -180..180 (default 0)
                                     float hue = MapWithPivot(InputValue, -100f, 100f, 0f, -180f, 180f, 0f);
 
-                                    SetImageOption(VideoAdjustOption.Hue, hue);
+                                    SSEVPMI.MediaEngine.SetAdjustFloat(VideoAdjustOption.Hue, hue);
                                 }
                                 break;
                             case "brightness":
@@ -133,7 +133,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
                                     // Map -100..100 to VLC range 0.0..2.0 (default 1.0)
                                     float Brightness = MapWithPivot(InputValue, -100f, 100f, 0f, 0f, 2f, 1f);
 
-                                    SetImageOption(VideoAdjustOption.Brightness, Brightness);
+                                    SSEVPMI.MediaEngine.SetAdjustFloat(VideoAdjustOption.Brightness, Brightness);
                                 }
                                 break;
                             case "contrast":
@@ -143,7 +143,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
                                     // Map -100..100 to VLC range 0.0..2.0 (default 1.0)
                                     float Contrast = MapWithPivot(InputValue, -100f, 100f, 0f, 0f, 2f, 1f);
 
-                                    SetImageOption(VideoAdjustOption.Contrast, Contrast);
+                                    SSEVPMI.MediaEngine.SetAdjustFloat(VideoAdjustOption.Contrast, Contrast);
                                 }
                                 break;
                             // This filter is not working?
@@ -154,7 +154,7 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
                                     // Map -100..100 to VLC range 0.01..10.0 (default 1.0)
                                     float Gamma = MapWithPivot(InputValue, -100f, 100f, 0f, 0.01f, 10f, 1f);
 
-                                    SetImageOption(VideoAdjustOption.Gamma, Gamma);
+                                    SSEVPMI.MediaEngine.SetAdjustFloat(VideoAdjustOption.Gamma, Gamma);
                                 }
                                 break;
                             case "speed":
@@ -180,17 +180,6 @@ namespace Sucrose.Shared.Engine.VlcPlayer.Helper
             {
                 await SSWEW.Watch_CatchException(Exception);
             }
-        }
-
-        private static void SetImageOption(VideoAdjustOption Option, float Value)
-        {
-            // Crash with post-processing with disabled.
-            if (!SSEVPMI.MediaEngine.EnableHardwareDecoding)
-            {
-                return;
-            }
-
-            SSEVPMI.MediaEngine.SetAdjustFloat(Option, Value);
         }
 
         private static float MapWithPivot(float Value, float SourceMin, float SourceMax, float SourcePivot, float TargetMin, float TargetMax, float TargetPivot)
