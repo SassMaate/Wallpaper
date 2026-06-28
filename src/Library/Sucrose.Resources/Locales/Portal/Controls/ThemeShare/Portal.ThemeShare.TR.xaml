@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Anladım</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Yayınlama Uyarısı</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Seçtiğiniz tema zaten hâli hazırda mağazadan yüklenmiş.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Anladım</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Yayınlama Uyarısı</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Seçtiğiniz tema zaten hâli hazırda premium mağazadan yüklenmiş.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Anladım</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Dışarı Aktarma Uyarısı</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Seçtiğiniz tema premium mağazadan yüklendiği için dışarı aktarılamaz.</system:String>
 </ResourceDictionary>

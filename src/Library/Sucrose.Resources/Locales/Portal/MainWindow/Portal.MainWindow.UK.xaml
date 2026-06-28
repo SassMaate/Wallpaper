@@ -20,7 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Пожертвування</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Система</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Загальні</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Магазин</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Преміум магазин</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Особисті</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Шпалери</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Продуктивність</system:String>
@@ -44,7 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Світла тема</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Інші параметри</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Магазин тем</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Преміум магазин тем</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Параметри пожертвувань</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Створити шпалери</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Цикління шпалер</system:String>

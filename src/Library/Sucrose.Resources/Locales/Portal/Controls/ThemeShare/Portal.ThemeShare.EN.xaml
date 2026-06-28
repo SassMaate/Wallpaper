@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Got It</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Publishing Warning</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">The selected theme is already installed from the store.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Got It</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Publishing Warning</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">The selected theme is already installed from the premium store.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Got It</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Export Warning</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">The selected theme cannot be exported because it was installed from the premium store.</system:String>
 </ResourceDictionary>

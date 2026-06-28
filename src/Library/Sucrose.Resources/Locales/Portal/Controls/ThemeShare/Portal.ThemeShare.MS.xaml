@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Faham</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Amaran Penerbitan</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Tema yang dipilih sudah dimuat turun dari kedai.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Faham</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Amaran Penerbitan</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Tema yang dipilih sudah dimuat turun dari kedai premium.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Faham</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Amaran Eksport</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Tema yang dipilih tidak dapat dieksport kerana ia dimuat turun dari kedai premium.</system:String>
 </ResourceDictionary>

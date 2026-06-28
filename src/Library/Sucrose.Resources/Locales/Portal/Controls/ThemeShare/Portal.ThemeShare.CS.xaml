@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Rozumím</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Upozornění na Publikování</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Vybrané téma je již nainstalováno z obchodu.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Rozumím</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Upozornění na Publikování</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Vybrané téma je již nainstalováno z prémiového obchodu.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Rozumím</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Upozornění na Exportování</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Vybrané téma nelze exportovat, protože bylo nainstalováno z prémiového obchodu.</system:String>
 </ResourceDictionary>

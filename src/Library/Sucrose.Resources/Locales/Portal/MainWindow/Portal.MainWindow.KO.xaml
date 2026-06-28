@@ -20,7 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">기부</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">시스템</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">일반</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium 상점</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">프리미엄 상점</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">개인</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">배경화면</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">성능</system:String>
@@ -44,7 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">밝은 테마</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">기타 옵션</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium 테마 상점</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">프리미엄 테마 상점</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">기부 옵션</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">배경화면 생성</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">배경 화면 순환</system:String>

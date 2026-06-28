@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Зрозуміло</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Попередження про Публікацію</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Вибрана тема вже завантажена з магазину.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Зрозуміло</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Попередження про Публікацію</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Вибрана тема вже завантажена з преміум магазину.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Зрозуміло</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Попередження про Експортування</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Вибрану тему не можна експортувати, оскільки вона завантажена з преміум магазину.</system:String>
 </ResourceDictionary>

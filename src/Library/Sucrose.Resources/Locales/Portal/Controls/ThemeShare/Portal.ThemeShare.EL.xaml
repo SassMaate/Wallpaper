@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Κατάλαβα</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Προειδοποίηση Δημοσίευσης</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Το επιλεγμένο θέμα έχει ήδη ληφθεί από το κατάστημα.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Κατάλαβα</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Προειδοποίηση Δημοσίευσης</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Το επιλεγμένο θέμα έχει ήδη ληφθεί από το πρίμιουμ κατάστημα.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Κατάλαβα</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Προειδοποίηση Εξαγωγής</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Το επιλεγμένο θέμα δεν μπορεί να εξαχθεί επειδή έχει ληφθεί από το πρίμιουμ κατάστημα.</system:String>
 </ResourceDictionary>

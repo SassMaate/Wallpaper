@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Zrozumiałem</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Ostrzeżenie o Publikacji</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Wybrany motyw został już pobrany ze sklepu.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Zrozumiałem</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Ostrzeżenie o Publikacji</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Wybrany motyw został już pobrany ze sklepu premium.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Zrozumiałem</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Ostrzeżenie o Eksporcie</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Wybrany motyw nie może zostać wyeksportowany, ponieważ został pobrany ze sklepu premium.</system:String>
 </ResourceDictionary>

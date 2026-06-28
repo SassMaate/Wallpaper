@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Capito</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Avviso di Pubblicazione</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Il tema selezionato è già stato scaricato dal negozio.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Capito</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Avviso di Pubblicazione</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Il tema selezionato è già stato scaricato dal negozio premium.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Capito</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Avviso di Esportazione</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Il tema selezionato non può essere esportato perché è stato scaricato dal negozio premium.</system:String>
 </ResourceDictionary>

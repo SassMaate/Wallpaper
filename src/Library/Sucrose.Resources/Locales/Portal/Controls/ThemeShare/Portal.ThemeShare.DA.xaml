@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Forstået</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Udgivelsesadvarsel</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Det valgte tema er allerede downloadet fra butikken.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Forstået</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Udgivelsesadvarsel</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Det valgte tema er allerede downloadet fra premiumbutikken.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Forstået</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Eksportadvarsel</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Det valgte tema kan ikke eksporteres, da det er downloadet fra premiumbutikken.</system:String>
 </ResourceDictionary>
