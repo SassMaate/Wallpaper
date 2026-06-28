@@ -74,8 +74,6 @@ namespace Sucrose.Portal.Views.Controls
 
             if (File.Exists(Path.Combine(Theme, SMMRC.SucrosePremium)))
             {
-                Image.Source = LoadImage("ShoppingBasket");
-
                 MessageBox Warning = new()
                 {
                     Title = SRER.GetValue("Portal", "ThemeShare", "ThemeExport", "Premium", "Title"),
@@ -84,8 +82,6 @@ namespace Sucrose.Portal.Views.Controls
                 };
 
                 await Warning.ShowDialogAsync();
-
-                Image.Source = LoadImage("Basket");
             }
             else
             {
