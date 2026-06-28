@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Інше,,Portal\MainWindow\Portal.MainWindow.UK.xam
 Portal.MainWindow.MenuDonate,Пожертвування,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuSystem,Система,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuGeneral,Загальні,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
+Portal.MainWindow.MenuPremium,Premium Магазин,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuPersonal,Особисті,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuWallpaper,Шпалери,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuPerformance,Продуктивність,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Темна тема,,Portal\MainWindow\Portal.Main
 Portal.MainWindow.MenuLightTip,Світла тема,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.UK.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Інші параметри,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium Магазин тем,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Параметри пожертвувань,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Створити шпалери,,Portal\MainWindow\Portal.MainWindow.UK.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Цикління шпалер,,Portal\MainWindow\Portal.MainWindow.UK.xaml,

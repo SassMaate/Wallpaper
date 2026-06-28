@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Lain-lain,,Portal\MainWindow\Portal.MainWindow.MS.xa
 Portal.MainWindow.MenuDonate,Sumbangan,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuSystem,Sistem,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuGeneral,Umum,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
+Portal.MainWindow.MenuPremium,Kedai Premium,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuPersonal,Peribadi,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuWallpaper,Kertas Dinding,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuPerformance,Prestasi,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Tema Gelap,,Portal\MainWindow\Portal.MainWindow.MS
 Portal.MainWindow.MenuLightTip,Tema Terang,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.MS.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Pilihan Lain-lain,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Kedai Tema Premium,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Pilihan Sumbangan,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Buat Kertas Dinding,,Portal\MainWindow\Portal.MainWindow.MS.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Kitaran Kertas Dinding,,Portal\MainWindow\Portal.MainWindow.MS.xaml,

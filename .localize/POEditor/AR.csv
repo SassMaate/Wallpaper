@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,أخرى,,Portal\MainWindow\Portal.MainWindow.AR.xam
 Portal.MainWindow.MenuDonate,التبرّع,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuSystem,النظام,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuGeneral,عام,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
+Portal.MainWindow.MenuPremium,المتجر Premium,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuPersonal,شخصي,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuWallpaper,خلفية الشاشة,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuPerformance,الأداء,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,السِمة الداكنة,,Portal\MainWindow\Por
 Portal.MainWindow.MenuLightTip,السِمة الفاتحة,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.AR.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,خيارات أخرى,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,متجر السِمات Premium,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,خيارات التبرّع,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,إنشاء خلفية شاشة,,Portal\MainWindow\Portal.MainWindow.AR.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,تدوير خلفيات الشاشة,,Portal\MainWindow\Portal.MainWindow.AR.xaml,

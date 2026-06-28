@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Άλλες,,Portal\MainWindow\Portal.MainWindow.EL.x
 Portal.MainWindow.MenuDonate,Δωρεά,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuSystem,Σύστημα,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuGeneral,Γενικές,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
+Portal.MainWindow.MenuPremium,Premium Κατάστημα,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuPersonal,Προσωπικές,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuWallpaper,Ταπετσαρία,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuPerformance,Απόδοση,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Σκοτεινό Θέμα,,Portal\MainWindow\Porta
 Portal.MainWindow.MenuLightTip,Φωτεινό Θέμα,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.EL.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Άλλες Επιλογές,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium Κατάστημα Θεμάτων,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Επιλογές Δωρεάς,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Δημιουργία Ταπετσαρίας,,Portal\MainWindow\Portal.MainWindow.EL.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Αλλαγή Ταπετσαρίας,,Portal\MainWindow\Portal.MainWindow.EL.xaml,

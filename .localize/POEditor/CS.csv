@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Ostatní,,Portal\MainWindow\Portal.MainWindow.CS.xam
 Portal.MainWindow.MenuDonate,Přispět,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuSystem,Systém,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuGeneral,Obecné,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
+Portal.MainWindow.MenuPremium,Premium Obchod,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuPersonal,Osobní,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuWallpaper,Tapeta,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuPerformance,Výkon,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Tmavý režim,,Portal\MainWindow\Portal.MainWindow
 Portal.MainWindow.MenuLightTip,Světlý režim,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.CS.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Další možnosti,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium Obchod s tématy,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Možnosti příspěvků,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Vytvořit tapetu,,Portal\MainWindow\Portal.MainWindow.CS.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Cyklování tapet,,Portal\MainWindow\Portal.MainWindow.CS.xaml,

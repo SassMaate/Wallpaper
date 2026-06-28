@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,その他,,Portal\MainWindow\Portal.MainWindow.JA.xa
 Portal.MainWindow.MenuDonate,寄付,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuSystem,システム,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuGeneral,一般,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
+Portal.MainWindow.MenuPremium,プレミアムストア,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuPersonal,個人的な,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuWallpaper,壁紙,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuPerformance,パフォーマンス,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,ダーク テーマ,,Portal\MainWindow\Portal.Main
 Portal.MainWindow.MenuLightTip,ライト テーマ,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.JA.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,その他のオプション,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,プレミアムテーマストア,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,寄付オプション,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,壁紙を作成,,Portal\MainWindow\Portal.MainWindow.JA.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,壁紙のサイクリング,,Portal\MainWindow\Portal.MainWindow.JA.xaml,

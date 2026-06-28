@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Прочее,,Portal\MainWindow\Portal.MainWindow.RU
 Portal.MainWindow.MenuDonate,Пожертвование,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuSystem,Система,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuGeneral,Общие,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
+Portal.MainWindow.MenuPremium,Premium Магазин,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuPersonal,Личные,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuWallpaper,Обои,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuPerformance,Производительность,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Тёмная тема,,Portal\MainWindow\Portal.Ma
 Portal.MainWindow.MenuLightTip,Светлая тема,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.RU.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Другие параметры,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium Магазин тем,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Параметры пожертвования,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Создать обои,,Portal\MainWindow\Portal.MainWindow.RU.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Циклическая смена обоев,,Portal\MainWindow\Portal.MainWindow.RU.xaml,

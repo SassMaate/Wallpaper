@@ -538,8 +538,9 @@ Portal.MainWindow.MenuOther,Autre,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuDonate,Faire un Don,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuSystem,Système,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuGeneral,Général,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
+Portal.MainWindow.MenuPremium,Magasin Premium,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuPersonal,Personnel,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
-Portal.MainWindow.MenuWallpaper,Fond d'Ècran,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
+Portal.MainWindow.MenuWallpaper,Fond d'Écran,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuPerformance,Performance,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 PASS⦙75,PASS⦙75,Don't Touch,Portal\MainWindow\Portal.MainWindow.FR.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuBackTip,Retour,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Thème sombre,,Portal\MainWindow\Portal.MainWindow
 Portal.MainWindow.MenuLightTip,Thème clair,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.FR.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Autres Options,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Magasin de thèmes Premium,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Options de Don,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Créer un Fond d'Écran,,Portal\MainWindow\Portal.MainWindow.FR.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Changement de Fond d'Écran,,Portal\MainWindow\Portal.MainWindow.FR.xaml,

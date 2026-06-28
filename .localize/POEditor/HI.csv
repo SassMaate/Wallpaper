@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,अन्य,,Portal\MainWindow\Portal.MainWindow.HI
 Portal.MainWindow.MenuDonate,दान करें,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuSystem,सिस्टम,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuGeneral,सामान्य,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
+Portal.MainWindow.MenuPremium,Premium स्टोर,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuPersonal,व्यक्तिगत,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuWallpaper,वॉलपेपर,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuPerformance,प्रदर्शन,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,डार्क थीम,,Portal\MainWindow\Porta
 Portal.MainWindow.MenuLightTip,प्रकाशमान थीम,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.HI.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,अन्य विकल्प,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium थीम स्टोर,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,दान विकल्प,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,वॉलपेपर बनाएं,,Portal\MainWindow\Portal.MainWindow.HI.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,वॉलपेपर साइक्लिंग,,Portal\MainWindow\Portal.MainWindow.HI.xaml,

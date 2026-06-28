@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Overige,,Portal\MainWindow\Portal.MainWindow.NL.xaml
 Portal.MainWindow.MenuDonate,Doneren,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuSystem,Systeem,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuGeneral,Algemeen,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
+Portal.MainWindow.MenuPremium,Premium Winkel,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuPersonal,Persoonlijk,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuWallpaper,Achtergrond,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuPerformance,Prestaties,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Donkere modus,,Portal\MainWindow\Portal.MainWindow
 Portal.MainWindow.MenuLightTip,Lichte modus,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.NL.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Andere opties,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Premium Themawinkel,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Donatieopties,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Achtergrond maken,,Portal\MainWindow\Portal.MainWindow.NL.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Achtergrondafbeeldingen Fietsen,,Portal\MainWindow\Portal.MainWindow.NL.xaml,

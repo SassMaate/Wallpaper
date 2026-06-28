@@ -538,6 +538,7 @@ Portal.MainWindow.MenuOther,Lainnya,,Portal\MainWindow\Portal.MainWindow.ID.xaml
 Portal.MainWindow.MenuDonate,Donasi,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuSystem,Sistem,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuGeneral,Umum,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
+Portal.MainWindow.MenuPremium,Toko Premium,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuPersonal,Pribadi,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuWallpaper,Wallpaper,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuPerformance,Kinerja,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
@@ -561,6 +562,7 @@ Portal.MainWindow.MenuDarkTip,Tema Gelap,,Portal\MainWindow\Portal.MainWindow.ID
 Portal.MainWindow.MenuLightTip,Tema Terang,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.ID.xaml,Please don't touch the translation in this line.
 Portal.MainWindow.MenuOtherOptionsTip,Opsi Lainnya,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,Toko Tema Premium,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuDonateOptionsTip,Opsi Donasi,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuCreateWallpaperTip,Buat Wallpaper,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
 Portal.MainWindow.MenuWallpaperCyclingTip,Siklus Wallpaper,,Portal\MainWindow\Portal.MainWindow.ID.xaml,
