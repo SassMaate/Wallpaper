@@ -538,6 +538,7 @@ ef1265175a3be592cfb4332181fb645f,Portal\MainWindow\Portal.MainWindow.RO.xaml,,
 e4fda8ad876795e10cadc0bae895d31a,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuDonate,Donare
 fe2c98f55807ab119071a1271c43f717,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuSystem,Sistem
 da14f5db16a0bd73b28f93f9aa59e9ea,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuGeneral,General
+f891d5ae85f2634a5e07d0d8b3ac3223,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuPremium,Magazin Premium
 871011e8f608227c5271b71b1bd79294,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuPersonal,Personal
 1ccb226bec3fe0a7bfb8a7562d27deba,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuWallpaper,Tapet
 eba95645341d9ab01e631848f64768df,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuPerformance,Performanță
@@ -561,6 +562,7 @@ e01f3167b60b534a99ca44cf563f3b7e,Portal\MainWindow\Portal.MainWindow.RO.xaml,Por
 618a49c02c868707c447e6609a4a9576,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuLightTip,Tema Luminoasă
 1312bca6b781f86a57f3f3eb4b797437,Portal\MainWindow\Portal.MainWindow.RO.xaml,,
 06b75557d80bb66cf4ecff35b98f39a8,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuOtherOptionsTip,Alte Opțiuni
+399dbbae345b717f6387e0d408085cdf,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuPremiumStoreTip,Magazin de Tema Premium
 1a8a054352b83280d1240cc56d4e694f,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuDonateOptionsTip,Opțiuni de Donare
 7ea71a467256474db585fef084f39d88,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuCreateWallpaperTip,Crează Tapet
 c6bdd00773f7d362b899a0b297045767,Portal\MainWindow\Portal.MainWindow.RO.xaml,Portal.MainWindow.MenuWallpaperCyclingTip,Ciclare Tapet
