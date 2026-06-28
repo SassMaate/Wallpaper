@@ -145,11 +145,11 @@ namespace Sucrose.Portal.Views.Windows
         {
             if (ViewModel.Donater == Visibility.Visible)
             {
-                SearchBox.Margin = new Thickness(0, 0, ((Width - SearchBox.MaxWidth) / 2) - 250, 0);
+                SearchBox.Margin = new Thickness(0, 0, ((Width - SearchBox.MaxWidth) / 2) - 270, 0);
             }
             else
             {
-                SearchBox.Margin = new Thickness(0, 0, ((Width - SearchBox.MaxWidth) / 2) - 230, 0);
+                SearchBox.Margin = new Thickness(0, 0, ((Width - SearchBox.MaxWidth) / 2) - 250, 0);
             }
         }
 

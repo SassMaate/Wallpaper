@@ -197,6 +197,15 @@
                         Icon="{ui:SymbolIcon WeatherMoon16}"
                         ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuDarkTip}" />
                     <ui:Button
+                        x:Name="Premium"
+                        Margin="0,0,5,0"
+                        Appearance="Transparent"
+                        BorderBrush="Transparent"
+                        Command="{Binding ViewModel.PremiumStoreCommand, Mode=OneWay}"
+                        Cursor="Hand"
+                        Icon="{ui:SymbolIcon Premium16}"
+                        ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuPremiumStoreTip}" />
+                    <ui:Button
                         x:Name="Wallpaper"
                         Margin="0,0,5,0"
                         Appearance="Transparent"

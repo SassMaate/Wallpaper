@@ -14,6 +14,7 @@
         Import,
         Export,
         Report,
+        Premium,
         Publish,
         Startup,
         Cycyling,
