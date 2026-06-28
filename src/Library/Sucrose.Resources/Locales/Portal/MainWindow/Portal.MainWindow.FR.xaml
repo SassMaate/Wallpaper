@@ -20,8 +20,9 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Faire un Don</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Système</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Général</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Magasin Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Personnel</system:String>
-    <system:String x:Key="Portal.MainWindow.MenuWallpaper">Fond d'Ècran</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuWallpaper">Fond d'Écran</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Performance</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuBackTip">Retour</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Thème clair</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Autres Options</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Magasin de thèmes Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Options de Don</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Créer un Fond d'Écran</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Changement de Fond d'Écran</system:String>

@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">捐赠</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">系统</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">常规</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium 商店</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">个人</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">壁纸</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">性能</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">明亮主题</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">其他选项</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium 主题商店</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">捐赠选项</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">创建壁纸</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">壁纸循环</system:String>

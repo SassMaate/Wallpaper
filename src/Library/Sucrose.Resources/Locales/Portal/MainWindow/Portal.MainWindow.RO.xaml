@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Donare</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">General</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Magazin Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Personal</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Tapet</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Performanță</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Luminoasă</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Alte Opțiuni</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Magazin de Tema Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opțiuni de Donare</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Crează Tapet</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Ciclare Tapet</system:String>

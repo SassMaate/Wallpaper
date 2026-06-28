@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Bağış</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Genel</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Mağaza</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Kişisel</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Duvar Kağıdı</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Performans</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Aydınlık Tema</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Diğer Seçenekler</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Tema Mağazası</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Bağış Seçenekleri</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Duvar Kağıdı Oluştur</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Duvar Kağıdı Döngüsü</system:String>

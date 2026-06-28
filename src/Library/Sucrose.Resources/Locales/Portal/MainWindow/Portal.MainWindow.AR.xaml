@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">التبرّع</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">النظام</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">عام</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">المتجر Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">شخصي</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">خلفية الشاشة</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">الأداء</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">السِمة الفاتحة</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">خيارات أخرى</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">متجر السِمات Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">خيارات التبرّع</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">إنشاء خلفية شاشة</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">تدوير خلفيات الشاشة</system:String>

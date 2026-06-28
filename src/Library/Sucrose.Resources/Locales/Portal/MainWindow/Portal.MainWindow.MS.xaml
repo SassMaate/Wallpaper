@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Sumbangan</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Umum</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Kedai Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Peribadi</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Kertas Dinding</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Prestasi</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Terang</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Pilihan Lain-lain</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Kedai Tema Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Pilihan Sumbangan</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Buat Kertas Dinding</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Kitaran Kertas Dinding</system:String>

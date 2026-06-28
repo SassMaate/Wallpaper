@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Doner</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Generelt</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Butikk</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Personlig</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Bakgrunn</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Ytelse</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Lyst tema</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Andre alternativer</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Tema butikk</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Donasjonsalternativer</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Opprett bakgrunn</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Bakgrunnsbilder Sykling</system:String>

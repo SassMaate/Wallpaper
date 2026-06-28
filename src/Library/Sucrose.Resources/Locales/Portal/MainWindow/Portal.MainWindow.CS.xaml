@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Přispět</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Systém</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Obecné</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Obchod</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Osobní</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Tapeta</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Výkon</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Světlý režim</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Další možnosti</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Obchod s tématy</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Možnosti příspěvků</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Vytvořit tapetu</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Cyklování tapet</system:String>

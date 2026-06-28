@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Doneren</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Systeem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Algemeen</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Winkel</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Persoonlijk</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Achtergrond</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Prestaties</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Lichte modus</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Andere opties</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Themawinkel</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Donatieopties</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Achtergrond maken</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Achtergrondafbeeldingen Fietsen</system:String>

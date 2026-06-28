@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Doação</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Sistema</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Geral</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Loja Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Pessoal</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Papel de Parede</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Desempenho</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Claro</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Outras Opções</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Loja de Temas Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opções de Doação</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Criar Papel de Parede</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Ciclagem de Papel de Parede</system:String>
