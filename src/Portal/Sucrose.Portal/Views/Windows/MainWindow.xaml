@@ -203,7 +203,7 @@
                         BorderBrush="Transparent"
                         Command="{Binding ViewModel.PremiumStoreCommand, Mode=OneWay}"
                         Cursor="Hand"
-                        Icon="{ui:SymbolIcon Premium16}"
+                        Icon="{ui:SymbolIcon ShoppingBagTag24}"
                         ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuPremiumStoreTip}" />
                     <ui:Button
                         x:Name="Wallpaper"
