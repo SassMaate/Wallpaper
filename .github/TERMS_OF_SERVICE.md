@@ -162,5 +162,5 @@ We may update these Terms from time to time as the project evolves or as legal r
 If you have questions about these Terms, please contact us:
 
 - Email: taiizor@vegalya.com
-- Website: https://taiizor.github.io/Sucrose
+- Website: https://sucrose.dev
 - Project: https://github.com/Taiizor/Sucrose

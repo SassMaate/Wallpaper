@@ -143,5 +143,5 @@ We may update this Privacy Policy from time to time as the App evolves or as leg
 If you have any questions or concerns about this Privacy Policy, please contact us at:
 
 - Email: taiizor@vegalya.com
-- Website: https://taiizor.github.io/Sucrose
+- Website: https://sucrose.dev
 - Project: https://github.com/Taiizor/Sucrose
