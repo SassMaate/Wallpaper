@@ -16,7 +16,7 @@ namespace Sucrose.Shared.Space.Helper
         {
             byte[] Bytes = new byte[16];
 
-            Array.Copy(SHA512.HashData(SHE.GetBytes(Value, SEET.UTF8)), Bytes, 16);
+            Array.Copy(SHA256.HashData(SHE.GetBytes(Value, SEET.UTF8)), Bytes, 16);
 
             return SHG.ByteToGuid(Bytes);
         }
