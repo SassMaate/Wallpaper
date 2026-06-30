@@ -11,22 +11,13 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static Guid GetGuid()
         {
-            string Value = $"{GetName()}-{GetModel()}-{GetIdentifier()}";
-
             try
             {
-                return SSSHU.Generate(Value);
+                return SSSHU.Generate($"{GetName()}-{GetModel()}-{GetIdentifier()}");
             }
             catch
             {
-                try
-                {
-                    return SSSHU.GenerateFips(Value);
-                }
-                catch
-                {
-                    return SHG.TextToGuid("00000000-0000-0000-0000-000000000000");
-                }
+                return SHG.TextToGuid("00000000-0000-0000-0000-000000000000");
             }
         }
 
