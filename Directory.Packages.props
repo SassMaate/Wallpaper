@@ -22,7 +22,7 @@
         <PackageVersion Include="DiscordRichPresence" Version="1.6.1.70" />
         <PackageVersion Include="MathNet.Numerics" Version="6.0.0-beta2" />
         <PackageVersion Include="Newtonsoft.Json" Version="13.0.5-beta1" />
-        <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="149.0.40" />
+        <PackageVersion Include="CefSharp.Wpf.HwndHost" Version="149.0.60" />
         <PackageVersion Include="VideoLAN.LibVLC.Windows" Version="3.0.23.1" />
         <PackageVersion Include="WindowsAPICodePackShell" Version="8.0.15.2" />
         <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.3.0" />
