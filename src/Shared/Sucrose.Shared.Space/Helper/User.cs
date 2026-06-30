@@ -1,4 +1,4 @@
-﻿using System.Management;
+using System.Management;
 using System.Security.Principal;
 using SHG = Skylark.Helper.Guidly;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
@@ -11,13 +11,22 @@ namespace Sucrose.Shared.Space.Helper
     {
         public static Guid GetGuid()
         {
+            string Value = $"{GetName()}-{GetModel()}-{GetIdentifier()}";
+
             try
             {
-                return SSSHU.Generate($"{GetName()}-{GetModel()}-{GetIdentifier()}");
+                return SSSHU.Generate(Value);
             }
             catch
             {
-                return SHG.TextToGuid("00000000-0000-0000-0000-000000000000");
+                try
+                {
+                    return SSSHU.GenerateFips(Value);
+                }
+                catch
+                {
+                    return SHG.TextToGuid("00000000-0000-0000-0000-000000000000");
+                }
             }
         }
 
