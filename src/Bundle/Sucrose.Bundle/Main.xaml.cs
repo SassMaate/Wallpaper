@@ -368,7 +368,7 @@ namespace Sucrose.Bundle
                     }
                 }
 
-                string[] Folders = Directory.GetDirectories(Location);
+                string[] Folders = Directory.GetDirectories(Location, "*", SearchOption.AllDirectories).OrderByDescending(Folder => Folder.Length).ToArray();
 
                 if (Folders.Any())
                 {
@@ -380,6 +380,19 @@ namespace Sucrose.Bundle
                         }
                         catch { }
                     }
+                }
+
+                try
+                {
+                    Directory.Delete(Location, true);
+                }
+                catch
+                {
+                    try
+                    {
+                        Directory.Delete(Location);
+                    }
+                    catch { }
                 }
             }
 
