@@ -514,7 +514,7 @@ namespace Sucrose.Bundle
                                     return false;
                                 }
 
-                                string HashResult = await SSEHHE.FileToMD5Async(FilePath);
+                                string HashResult = await SSEHHE.FileToSHA512Async(FilePath);
 
                                 return HashResult.Equals(Record.Value, StringComparison.OrdinalIgnoreCase);
                             }
