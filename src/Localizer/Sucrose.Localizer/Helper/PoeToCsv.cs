@@ -85,7 +85,7 @@ namespace Sucrose.Localizer.Helper
 
                         string[] parts = entry.Split('⁞');
 
-                        csv.WriteField(SSECCE.TextToMD5($"{parts[0].Replace(languageCode, "")}.{(string.IsNullOrWhiteSpace(parts[1]) ? count++ : parts[1])}"));
+                        csv.WriteField(SSECCE.TextToSHA512($"{parts[0].Replace(languageCode, "")}.{(string.IsNullOrWhiteSpace(parts[1]) ? count++ : parts[1])}"));
                         csv.WriteField(parts[0]);
                         csv.WriteField(parts[1]);
                         csv.WriteField(parts[2]);
