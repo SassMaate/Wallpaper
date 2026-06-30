@@ -73,11 +73,21 @@ namespace Sucrose.Undo
                     }
                 }
 
-                try
+                if (Location != SUMI.UninstallPath)
                 {
-                    Directory.Delete(Location);
+                    try
+                    {
+                        Directory.Delete(Location, true);
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            Directory.Delete(Location);
+                        }
+                        catch { }
+                    }
                 }
-                catch { }
             }
         }
 
