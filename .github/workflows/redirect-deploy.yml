@@ -14,7 +14,7 @@ name: Deploy redirect to sucrose.dev
 on:
   # Redeploy the stub only when the stub or this workflow changes.
   push:
-    branches: ["develop"]
+    branches: ["gh-pages"]
     paths:
       - ".pages/**"
       - ".github/workflows/redirect-deploy.yml"
