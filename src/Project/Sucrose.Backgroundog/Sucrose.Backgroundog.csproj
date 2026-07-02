@@ -22,7 +22,7 @@
 
     <ItemGroup>
         <PackageReference Include="NAudio" />
-        <PackageReference Include="NPSMLib" />
+        <PackageReference Include="Playhead" />
         <PackageReference Include="Skylark.Wing" />
         <PackageReference Include="Vortice.DXGI" />
         <PackageReference Include="MathNet.Numerics" />

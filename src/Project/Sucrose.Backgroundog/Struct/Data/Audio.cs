@@ -1,4 +1,4 @@
-﻿using NPSMLib;
+﻿using Playhead.Enums;
 using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data

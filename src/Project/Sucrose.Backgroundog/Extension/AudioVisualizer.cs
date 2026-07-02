@@ -312,7 +312,7 @@ namespace Sucrose.Backgroundog.Extension
                 }
                 else
                 {
-                    Normalized = ((Magnitude * TiltGain[I] / Reference) * LinearGain) - NoiseFloor;
+                    Normalized = (Magnitude * TiltGain[I] / Reference * LinearGain) - NoiseFloor;
 
                     if (Normalized < 0)
                     {

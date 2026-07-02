@@ -1,4 +1,7 @@
-﻿using NPSMLib;
+﻿using Playhead.Data;
+using Playhead.Enums;
+using Playhead.Managers;
+using Playhead.Sessions;
 using System.Diagnostics;
 using SBEAV = Sucrose.Backgroundog.Extension.AudioVisualizer;
 using SBEWL = Sucrose.Backgroundog.Extension.WindowsListener;
