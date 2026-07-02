@@ -1,9 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Portal.BrokenStorePage.Title">BrokenStorePage</system:String>
-
-    <system:String x:Key="Portal.BrokenStorePage.TitleText">Момент, когда затух свет интернета</system:String>
-    <system:String x:Key="Portal.BrokenStorePage.DescriptionText">Как небо без звёзд, здесь нет блеска интернета</system:String>
-</ResourceDictionary>

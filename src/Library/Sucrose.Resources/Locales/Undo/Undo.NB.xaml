@@ -1,9 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Undo.QuestionTitle">Sucrose Undo</system:String>
-
-    <system:String x:Key="Undo.QuestionMessage">Ønsker du virkelig å avinstallere Sucrose Wallpaper Engine?</system:String>
-    <system:String x:Key="Undo.QuestionDescription">For å fjerne med alle innstillinger, velg Ja; for å beholde innstillingene og bare fjerne, velg Nei; og for å avbryte fjerningsprosessen, velg Avbryt.</system:String>
-</ResourceDictionary>

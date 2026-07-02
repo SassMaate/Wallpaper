@@ -1,9 +1,0 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Undo.QuestionTitle">Sucrose Undo</system:String>
-
-    <system:String x:Key="Undo.QuestionMessage">هل تريد حقًا إلغاء تثبيت Sucrose Wallpaper Engine؟</system:String>
-    <system:String x:Key="Undo.QuestionDescription">للإزالة مع جميع الإعدادات، اختر نعم؛ وللاحتفاظ بالإعدادات والإزالة فقط، اختر لا؛ ولإلغاء عملية الإزالة، اختر إلغاء.</system:String>
-</ResourceDictionary>
