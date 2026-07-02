@@ -1,0 +1,52 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.MainWindow.Title">Sucrose Wallpaper Engine</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuHelp">עֶזרָה</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuAbout">אוֹדוֹת</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuHelpTip">הצג עזרה</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuAboutTip">על צפייה</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuStore">מרכז קניות</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibrary">סִפְרִיָה</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuStoreTip">חנות נושא</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLibraryTip">ספריית נושאים</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuOther">אַחֵר</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonate">תְרוּמָה</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystem">מַעֲרֶכֶת</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuGeneral">כְּלָלִי</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">חנות פרימיום</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPersonal">אִישִׁי</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuWallpaper">טָפֵּט</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformance">ביצועים</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuBackTip">לַחֲזוֹר</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuOtherTip">הגדרות אחרות</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateTip">הגדרות תרומה</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuSystemTip">הגדרות מערכת</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuGeneralTip">הגדרות כלליות</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPersonalTip">הגדרות אישיות</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuWallpaperTip">הגדרות טפט</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPerformanceTip">הגדרות ביצועים</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuSettingTip">הגדרות</system:String>
+
+    <system:String x:Key="Portal.MainWindow.SearchBoxHint">חפש טפט</system:String>
+
+    <system:String x:Key="Portal.MainWindow.SearchBoxTip">מתקשים למצוא את מה שאתם צריכים?</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuDarkTip">נושא אפל</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuLightTip">נושא זוהר</system:String>
+
+    <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">אפשרויות אחרות</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">חנות נושאים פרימיום</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">אפשרויות תרומה</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">צור טפט</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">מחזור טפטים</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuDisplayPreferencesTip">העדפות תצוגה</system:String>
+</ResourceDictionary>

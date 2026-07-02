@@ -1,0 +1,57 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.WallpaperSettingPage.Title">WallpaperSettingPage</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.InputMode">שיטת אינטראקציה</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.InputMode.Description">קובע את השיטות שאיתן ניתן ליצור אינטראקציה בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.InputMode.InputModule">מודול אינטראקציה:</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.InputMode.InputDesktop">עבד אינטראקציה רק ​​כאשר שולחן העבודה יש ​​מיקוד</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.InputMode.DesktopIcon">הסתר את סמלי שולחן העבודה כדי להימנע מבחירה בהם בטעות</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.ScreenLayout">פריסת מסך</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.ScreenLayout.Description">משנה את פריסת הטפטים שלך על המסך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.StretchMode">שיטת התאמה</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.StretchMode.Description">שינוי קנה המידה בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.StayAwake">הישאר ער</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.StayAwake.Description">מחליף את מצב הערות בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode">סטטוס התרסקות</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.CrashMode.Description">משנה את מצב רענון הטפט כאשר שולחן העבודה קורס או נכבה.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.LoopMode">מצב הישנות</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.LoopMode.Description">מחליף את מצב החזרה בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.ShuffleMode">סטטוס ערבוב</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.ShuffleMode.Description">מחליף את מצב המיזוג בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.BackgroundImage">תמונת רקע</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.BackgroundImage.Description">משנה את הטפט המונפש לתמונת הרקע של שולחן העבודה.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration">האצת חומרה</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration.Description">החלפת האצת חומרה בטפטים נתמכים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer">תוסף GIF</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer.Description">בחר את הפלאגין שינגן את ערכות הנושא מסוג Gif בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer">תוסף וידאו</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer.Description">בחר את הפלאגין שינגן את ערכות הנושא של סוג וידאו בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer">מנוע כתובת אתר</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג כתובת האתר בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer">מנוע אינטרנט</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג האינטרנט בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.YouTubePlayer">מנוע YouTube</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.YouTubePlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של YouTube בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer">מנוע יישומים</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג היישום בספרייה שלך.</system:String>
+</ResourceDictionary>

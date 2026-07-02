@@ -1,0 +1,46 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Launcher.WallCustomizeText">התאמה אישית של טפט</system:String>
+
+    <system:String x:Key="Launcher.CreateLogText">צור קובץ יומן</system:String>
+
+    <system:String x:Key="Launcher.CloseText">סגור אפליקציות</system:String>
+
+    <system:String x:Key="Launcher.ExitText">יְצִיאָה</system:String>
+
+    <system:String x:Key="Launcher.OpenReportText">דווח על בעיה</system:String>
+
+    <system:String x:Key="Launcher.OpenText">פתח Sucrose</system:String>
+
+    <system:String x:Key="Launcher.ReportText">דווח על שגיאה</system:String>
+
+    <system:String x:Key="Launcher.ReportWindowTitle">אבחון Sucrose</system:String>
+
+    <system:String x:Key="Launcher.SaveDialogTitle">שמור קובץ יומן</system:String>
+    <system:String x:Key="Launcher.SaveDialogFilter">קבצי ZIP (*.zip)|*.zip|כל הקבצים (*.*)|*.*</system:String>
+
+    <system:String x:Key="Launcher.FeedbackText">שלח משוב</system:String>
+    <system:String x:Key="Launcher.RequestFeedbackText">בקשה ומשוב</system:String>
+
+    <system:String x:Key="Launcher.SettingText">הגדרות</system:String>
+
+    <system:String x:Key="Launcher.TrayText">Sucrose Wallpaper Engine</system:String>
+
+    <system:String x:Key="Launcher.WallOpenText">פתח טפט</system:String>
+    <system:String x:Key="Launcher.WallStopText">עצור טפט</system:String>
+    <system:String x:Key="Launcher.WallCloseText">כבה את הטפט</system:String>
+    <system:String x:Key="Launcher.WallStartText">התחל טפט</system:String>
+    <system:String x:Key="Launcher.WallChangeText">שנה טפט</system:String>
+    <system:String x:Key="Launcher.WallReloadText">רענן טפט</system:String>
+
+    <system:String x:Key="Launcher.ClosedText">סָגוּר</system:String>
+    <system:String x:Key="Launcher.PausedText">נֶעצָר</system:String>
+
+    <system:String x:Key="Launcher.UpdateText">בדוק אם קיימים עדכונים</system:String>
+
+    <system:String x:Key="Launcher.UpdateText.Done">העדכון נמצא בהכנה</system:String>
+    <system:String x:Key="Launcher.UpdateText.Check">מחפש עדכונים</system:String>
+    <system:String x:Key="Launcher.UpdateText.Progress">עדכון התקדמות {0}</system:String>
+</ResourceDictionary>

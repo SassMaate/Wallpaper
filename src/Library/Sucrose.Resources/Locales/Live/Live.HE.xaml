@@ -1,0 +1,19 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Live.Title">{0} מידע</system:String>
+
+    <system:String x:Key="Live.Close">לִסְגוֹר</system:String>
+    <system:String x:Key="Live.Continue">לְהַמשִׁיך</system:String>
+    <system:String x:Key="Live.Download">הורד</system:String>
+    <system:String x:Key="Live.Remember">לִזכּוֹר</system:String>
+
+    <system:String x:Key="Live.Info.WebView">WebView נדרש</system:String>
+    <system:String x:Key="Live.Info.CefSharp">CefSharp נדרש</system:String>
+    <system:String x:Key="Live.Info.MpvPlayer">דרוש MpvPlayer</system:String>
+
+    <system:String x:Key="Live.Message.WebView">WebView2 Runtime אינו מותקן. WebView2 Runtime הוא רכיב המאפשר לך להשתמש בטכנולוגיות אינטרנט מודרניות ביישומים. לכן נדרש WebView2 Runtime כדי להגדיר את הטפט שנבחר.</system:String>
+    <system:String x:Key="Live.Message.CefSharp">VC++ Redistributable אינו מותקן. VC++ Redistributable מספק כמה רכיבי מערכת הדרושים לתפקוד תקין של CefSharp. CefSharp היא מסגרת המאפשרת לך להשתמש בטכנולוגיות אינטרנט מודרניות ביישומים. לכן נדרש VC++ Redistributable כדי להגדיר את הטפט שנבחר.</system:String>
+    <system:String x:Key="Live.Message.MpvPlayer">דרישת גרסת Windows המינימלית לשימוש ב-MpvPlayer אינה מתקיימת. MpvPlayer הוא נגן מדיה שיכול לנגן קבצי מדיה באיכות גבוהה והשהייה נמוכה. הוא תומך בפורמטי וידאו ואודיו מודרניים ומציע אפשרויות תצורה חזקות. לכן, כדי להגדיר את הטפט שנבחר, עליך לעדכן את המערכת שלך ל-Windows 10 (Redstone) או לגרסה עדכנית יותר.</system:String>
+</ResourceDictionary>

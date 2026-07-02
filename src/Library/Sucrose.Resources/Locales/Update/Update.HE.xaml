@@ -1,0 +1,60 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Update.WindowTitle">Sucrose Update</system:String>
+
+    <system:String x:Key="Update.HelpText">פתור את הבעיה</system:String>
+
+    <system:String x:Key="Update.ReloadText">נסה שוב</system:String>
+
+    <system:String x:Key="Update.ReloadText.Check.Again">בדוק מחדש</system:String>
+
+    <system:String x:Key="Update.ReloadText.Browser.Opened">נפתח בדפדפן</system:String>
+    <system:String x:Key="Update.ReloadText.Browser.Opening">זה נפתח בדפדפן</system:String>
+
+    <system:String x:Key="Update.MessageText.Preparing">מתבצעות הכנות הכרחיות</system:String>
+
+    <system:String x:Key="Update.MessageText.Temporary">מיקומים זמניים נשלטים</system:String>
+    <system:String x:Key="Update.MessageText.Temporary.Error">לא ניתן היה לשלוט על מיקומים זמניים</system:String>
+
+    <system:String x:Key="Update.MessageText.Connection">חיבור לאינטרנט נבדק</system:String>
+    <system:String x:Key="Update.MessageText.Connection.None">אין חיבור לאינטרנט</system:String>
+    <system:String x:Key="Update.MessageText.Connection.Error">לא ניתן היה לבדוק את חיבור האינטרנט</system:String>
+
+    <system:String x:Key="Update.MessageText.Listing">רשימות נדרשות נלקחות</system:String>
+    <system:String x:Key="Update.MessageText.Listing.Empty">רשימות החובה ריקות</system:String>
+    <system:String x:Key="Update.MessageText.Listing.Error">לא ניתן היה לקבל רשימות נדרשות</system:String>
+
+    <system:String x:Key="Update.MessageText.Filtering">הרשימות ממוינות</system:String>
+    <system:String x:Key="Update.MessageText.Filtering.Not">לא ניתן לסנן רשימות</system:String>
+    <system:String x:Key="Update.MessageText.Filtering.Error">לא ניתן היה לחלץ רשימות</system:String>
+
+    <system:String x:Key="Update.MessageText.Comparing">הרשימות מושוות</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Error">לא ניתן היה להשוות בין רשימות</system:String>
+    <system:String x:Key="Update.MessageText.Comparing.Update">האפליקציה כבר מעודכנת</system:String>
+
+    <system:String x:Key="Update.MessageText.Searching">מחפש קבצים נדרשים</system:String>
+    <system:String x:Key="Update.MessageText.Searching.Not">לא נמצאו קבצים נדרשים</system:String>
+    <system:String x:Key="Update.MessageText.Searching.Error">לא ניתן היה לחפש קבצים נדרשים</system:String>
+    <system:String x:Key="Update.MessageText.Searching.Condition">לא נמצאו קבצים נדרשים</system:String>
+
+    <system:String x:Key="Update.MessageText.Downloading">הקבצים הנדרשים נמצאים בהורדה</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Error">לא ניתן היה להוריד קבצים נדרשים</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Error">אירעה שגיאה בעת הורדת הקובץ הדרוש</system:String>
+    <system:String x:Key="Update.MessageText.Downloading.Complete.Cancel">הקובץ הנדרש בוטל בזמן ההורדה</system:String>
+
+    <system:String x:Key="Update.MessageText.Running">הקובץ שהוורד בהכנה</system:String>
+    <system:String x:Key="Update.MessageText.Running.Not">לא ניתן להשתמש בקובץ שהוורד</system:String>
+    <system:String x:Key="Update.MessageText.Running.Error">לא ניתן היה להכין את הקובץ שהוורד</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executed">הפעלת קובץ שהורד</system:String>
+    <system:String x:Key="Update.MessageText.Running.Executing">הפעלת הקובץ שהוורד</system:String>
+
+    <system:String x:Key="Update.MessageText.Extracting">הקובץ שהורד נחלץ</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Not">לא ניתן להשתמש בקובץ שהוורד</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Error">לא ניתן היה לחלץ את הקובץ שהוורד</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Failed">הקובץ שהורד נכשל</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Corrupt">הקובץ שהורד פגום</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executed">הקובץ שחולץ הוצא לפועל</system:String>
+    <system:String x:Key="Update.MessageText.Extracting.Executing">הקובץ שחולץ מבוצע</system:String>
+</ResourceDictionary>

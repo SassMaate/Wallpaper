@@ -1,0 +1,25 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeReview.Close">לִסְגוֹר</system:String>
+    <system:String x:Key="Portal.ThemeReview.Title">סקירת נושא</system:String>
+
+    <system:String x:Key="Portal.ThemeReview.ThemeSize">מֵמַד</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTags">תגים</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeType">סוּג</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTitle">כּוֹתֶרֶת</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeAuthor">סוֹפֵר</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeCreate">יְצִירָה</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeModify">תַחֲלִיף</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeContact">כתובת ליצירת קשר בנושא נושא</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeVersion">גִרְסָה</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTagsText">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeTypeName">Gif</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeSizeTotal">0 b</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeAuthorName">Taiizor</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeCreateDate">לֹא יְדוּעַ</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeModifyDate">לֹא יְדוּעַ</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeDescription">הֶסבֵּר</system:String>
+    <system:String x:Key="Portal.ThemeReview.ThemeVersionText">0.0.0.0 (0.0.0.0)</system:String>
+</ResourceDictionary>

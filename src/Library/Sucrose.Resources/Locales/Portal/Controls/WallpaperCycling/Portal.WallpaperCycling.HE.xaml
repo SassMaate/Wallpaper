@@ -1,0 +1,21 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.WallpaperCycling.Close">לִסְגוֹר</system:String>
+    <system:String x:Key="Portal.WallpaperCycling.Title">מחזור טפטים</system:String>
+
+    <system:String x:Key="Portal.WallpaperCycling.Cycling">מחזור טפט אוטומטי</system:String>
+    <system:String x:Key="Portal.WallpaperCycling.Cycling.Description">האם הטפט ישתנה אוטומטית.</system:String>
+
+    <system:String x:Key="Portal.WallpaperCycling.Time">טווח זמן</system:String>
+    <system:String x:Key="Portal.WallpaperCycling.Time.Description">הטפט משתנה לאחר הדקה שצוינה.</system:String>
+
+    <system:String x:Key="Portal.WallpaperCycling.Transition">מצב מעבר</system:String>
+    <system:String x:Key="Portal.WallpaperCycling.Transition.Description">מגדיר את מצב המעבר בין טפטים.</system:String>
+
+    <system:String x:Key="Portal.WallpaperCycling.List">רשימת מחזורים</system:String>
+    <system:String x:Key="Portal.WallpaperCycling.List.Description">מאפס את רשימת הלולאות לברירת המחדל.</system:String>
+
+    <system:String x:Key="Portal.WallpaperCycling.List.Reset">אִתחוּל</system:String>
+</ResourceDictionary>

@@ -1,0 +1,60 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.OtherSettingPage.Title">OtherSettingPage</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.ReportData">דיווח שגיאות אוטומטי</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.ReportData.Description">כאשר Sucrose נתקל בשגיאה, הוא נוקט פעולה כדי לדווח עליה במהירות.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.StatisticsData">שתף סטטיסטיקות שימוש</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.StatisticsData.Description">Sucrose מאפשר לאפליקציה להשתפר על ידי איסוף סטטיסטיקות השימוש שלך.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook">Discord</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.Description">Sucrose מספק תקשורת עם Discord.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordDelay">זמן רענון (שניות):</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.DiscordHook.DiscordRefresh">רענון חיבור:</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Agent">נציג אינטרנט</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Agent.Description">מזהה הנציג שלך במצבים הדורשים חיבור לאינטרנט.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Key">אסימון גישה אישי</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Key.Description">נדרש להשתמש בחנות ובעדכוני האפליקציה ללא בעיות.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Key.HintKey">אם אינך יודע כיצד להשיג אסימון גישה אישי, לחץ כאן.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Key.PersonalKey">נא להזין אסימון גישה אישי</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Key.PersonalKey.Valid">אנא הזן אסימון גישה אישי חוקי</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Server">עדכן שרת</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Server.Description">השרת שדרכו יבוצעו העדכונים.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Server.ServerHint">הערה: אם {0} נבחר כשרת, יש להזין {2} כדי להימנע ממגבלות בקשות. אחרת, אתה עלול להיתקל בבעיות בתהליך העדכון. אם נבחר {1}, תהיה לך חוויית עדכון חלקה יותר יחסית.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Module">עדכון מודול</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Module.Description">באיזה מודול יבוצע העדכון?</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Channel">עדכן ערוץ</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Channel.Description">האם העדכון יתבצע דרך איזה ערוץ או לא.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Update">שיטת עדכון</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Update.Description">השיטה שבה העדכון יתבצע או לא.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Update.Limit">מגבלת רוחב פס להורדה:</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Auto">עדכון אוטומטי</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Auto.Description">האם לבצע בדיקה אוטומטית של עדכונים.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Auto.Update">כיצד לבדוק:</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Developer">כלים למפתחים</system:String>
+    <system:String x:Key="Portal.OtherSettingPage.Developer.Description">נהל כלים למפתחים עבור WebView ומנוע CefSharp.</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Developer.DeveloperMode">כלי ברירת מחדל למפתחים:</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Developer.DeveloperPort">יציאת ניפוי באגים:</system:String>
+
+    <system:String x:Key="Portal.OtherSettingPage.Developer.DeveloperHint">טיפ: ברירת המחדל של האינטראקטיביות של כלי המפתחים אינה פועלת כראוי בעיצובים נתמכים. יציאת ניפוי הבאגים עובדת בצורה חלקה יותר. כשתהיה מוכן, תוכל להשתמש ב-'http://localhost:{0}' או 'chrome://inspect' עבור דפדפן Chrome, 'opera://inspect' עבור דפדפן Opera, 'edge://inspect' עבור דפדפן Edge.</system:String>
+</ResourceDictionary>
+
