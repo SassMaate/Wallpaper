@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.9",
+  "Version": "1.0.1.0",
   "Title": "Bing Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,9 +13,25 @@
   "Tags": null,
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "خلفيات بنج",
+      "Description": "يمكنك استخدامه لتحية كل يوم بخلفية جميلة. في هذا المظهر، يمكنك عرض خلفية شاشة Bing اليومية."
+    },
+    "CS": {
+      "Title": "Tapeta na Bing",
+      "Description": "Můžete jej použít k pozdravu každý den s krásnou tapetou. V tomto motivu si můžete prohlédnout denní tapetu Bingu."
+    },
+    "DA": {
+      "Title": "Bing tapet",
+      "Description": "Du kan bruge den til at hilse hver dag med et smukt tapet. I dette tema kan du se Bings daglige tapet."
+    },
     "DE": {
       "Title": "Bing Hintergrundbild",
       "Description": "Du kannst es nutzen, um jeden Tag mit einem schönen Hintergrundbild zu begrüßen. In diesem Thema kannst du Bing's tägliches Hintergrundbild sehen."
+    },
+    "EL": {
+      "Title": "Ταπετσαρία Bing",
+      "Description": "You can use it to greet every day with a beautiful wallpaper. In this theme, you can view Bing's daily wallpaper."
     },
     "ES": {
       "Title": "Fondo de Bing",
@@ -25,21 +41,69 @@
       "Title": "Fond d'écran Bing",
       "Description": "Vous pouvez l'utiliser pour commencer chaque journée avec un beau fond d'écran. Dans ce thème, vous pouvez voir le fond d'écran quotidien de Bing."
     },
+    "HE": {
+      "Title": "טפט בינג",
+      "Description": "אתה יכול להשתמש בו כדי לברך כל יום עם טפט יפהפה. בנושא זה, אתה יכול לראות את הטפט היומי של Bing."
+    },
     "HI": {
       "Title": "Bing वॉलपेपर",
       "Description": "आप इसका उपयोग हर दिन एक सुंदर वॉलपेपर के साथ अभिवादन करने के लिए कर सकते हैं। इस थीम में, आप Bing की दैनिक वॉलपेपर देख सकते हैं।"
+    },
+    "ID": {
+      "Title": "Wallpaper Bing",
+      "Description": "Anda dapat menggunakannya untuk menyambut setiap hari dengan wallpaper yang indah. Dalam tema ini, Anda dapat melihat wallpaper harian Bing."
+    },
+    "IT": {
+      "Title": "Sfondo di Bing",
+      "Description": "Puoi usarlo per salutare ogni giorno con un bellissimo sfondo. In questo tema puoi visualizzare lo sfondo quotidiano di Bing."
+    },
+    "JA": {
+      "Title": "Bing Wallpaper",
+      "Description": "You can use it to greet every day with a beautiful wallpaper. In this theme, you can view Bing's daily wallpaper."
+    },
+    "KO": {
+      "Title": "빙 배경화면",
+      "Description": "You can use it to greet every day with a beautiful wallpaper. In this theme, you can view Bing's daily wallpaper."
+    },
+    "MS": {
+      "Title": "Kertas Dinding Bing",
+      "Description": "Anda boleh menggunakannya untuk menyambut setiap hari dengan kertas dinding yang cantik. Dalam tema ini, anda boleh melihat kertas dinding harian Bing."
+    },
+    "NB": {
+      "Title": "Bing Bakgrunn",
+      "Description": "You can use it to greet every day with a beautiful wallpaper. I dette temaet kan du se Bings daglige bakgrunnsbilde."
+    },
+    "NL": {
+      "Title": "Bing Wallpaper",
+      "Description": "Je kunt het gebruiken om elke dag te begroeten met een prachtig behang. In dit thema kun je de dagelijkse achtergrond van Bing bekijken."
     },
     "PL": {
       "Title": "Tapeta Bing",
       "Description": "Możesz jej używać, aby każdego dnia witać się z piękną tapetą. W tym motywie możesz zobaczyć codzienną tapetę Bing."
     },
+    "PT": {
+      "Title": "Bing Papel de parede",
+      "Description": "Você pode usá-lo para cumprimentar todos os dias com um lindo papel de parede. Neste tema, você pode visualizar o papel de parede diário do Bing."
+    },
+    "RO": {
+      "Title": "Bing Wallpaper",
+      "Description": "You can use it to greet every day with a beautiful wallpaper. In this theme, you can view Bing's daily wallpaper."
+    },
     "RU": {
       "Title": "Обои Bing",
       "Description": "Вы можете использовать его, чтобы встречать каждый день красивыми обоями. В этой теме вы можете просматривать ежедневные обои Bing."
     },
+    "SV": {
+      "Title": "Bing Bakgrund",
+      "Description": "Du kan använda den för att hälsa varje dag med en vacker tapet. I det här temat kan du se Bings dagliga bakgrundsbild."
+    },
     "TR": {
       "Title": "Bing Duvar Kağıdı",
       "Description": "Bunu her günü güzel bir duvar kağıdı ile karşılamak için kullanabilirsin. Bu temada Bing'in günlük duvar kağıdını görüntüleyebilirsin."
+    },
+    "UK": {
+      "Title": "Bing Wallpaper",
+      "Description": "Ви можете використовувати його, щоб вітати кожен день красивими шпалерами. In this theme, you can view Bing's daily wallpaper."
     },
     "ZH": {
       "Title": "Bing 壁纸",

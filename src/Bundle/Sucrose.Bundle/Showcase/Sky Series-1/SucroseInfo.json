@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.5",
+  "Version": "1.0.0.6",
   "Title": "Sky Series",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -17,9 +17,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "سلسلة السماء",
+      "Description": "انجرف عبر 'Sky Series' الهادئة حيث تتزامن الساعة الواقعية مع ألوان السماء المتغيرة من النهار إلى الليل. تتلألأ النجوم بينما تتلاشى سحب غروب الشمس إلى الشفق، مما يخلق ملاذًا هادئًا على شاشتك."
+    },
+    "CS": {
+      "Title": "Série Sky",
+      "Description": "Nechte se unášet poklidnou „Sérií oblohy“, kde se realistické hodiny synchronizují s měnícími se odstíny oblohy ze dne na noc. Hvězdy se třpytí, jak se zapadající mraky ztrácejí v soumraku a vytvářejí na vaší obrazovce poklidné útočiště."
+    },
+    "DA": {
+      "Title": "Sky-Serien",
+      "Description": "Kør gennem den rolige 'Sky Series', hvor et realistisk ur synkroniserer med himlens skiftende nuancer fra dag til nat. Stjerner blinker, mens solnedgangsskyer forsvinder i tusmørke og skaber et fredeligt tilflugtssted på din skærm."
+    },
     "DE": {
       "Title": "Himmel-Serie",
       "Description": "Treibe durch die friedliche „Himmel-Serie“, in der eine realistische Uhr mit den wechselnden Farben des Himmels von Tag zu Nacht synchronisiert. Sterne funkeln, während die Wolken des Sonnenuntergangs in die Dämmerung übergehen und eine friedliche Atmosphäre auf deinem Bildschirm schaffen."
+    },
+    "EL": {
+      "Title": "Σειρά Sky",
+      "Description": "Περιηγηθείτε στην ήρεμη «Σειρά Sky», όπου ένα ρεαλιστικό ρολόι συγχρονίζεται με τις μεταβαλλόμενες αποχρώσεις του ουρανού από τη μέρα στη νύχτα. Τα αστέρια λάμπουν καθώς τα σύννεφα του ηλιοβασιλέματος ξεθωριάζουν στο λυκόφως, δημιουργώντας ένα γαλήνιο καταφύγιο στην οθόνη σας."
     },
     "ES": {
       "Title": "Serie del Cielo",
@@ -29,21 +45,69 @@
       "Title": "Série Céleste",
       "Description": "Laissez-vous dériver dans la paisible 'Série Céleste', où une horloge réaliste se synchronise avec les teintes changeantes du ciel du jour à la nuit. Les étoiles scintillent tandis que les nuages du coucher du soleil s'effacent dans le crépuscule, créant un havre de paix sur votre écran."
     },
+    "HE": {
+      "Title": "סדרת שמיים",
+      "Description": "סחף דרך 'סדרת שמיים' השלווה שבה שעון ריאליסטי מסתנכרן עם הגוונים המשתנים של השמיים מיום ללילה. כוכבים מנצנצים כשענני שקיעה נמוגים לדמדומים, ויוצרים נסיגה שלווה על המסך שלך."
+    },
     "HI": {
       "Title": "स्काई सीरीज़",
       "Description": "शांत 'स्काई सीरीज़' में तैरें जहां एक यथार्थवादी घड़ी दिन से रात तक आकाश के बदलते रंगों के साथ सिंक होती है। सूर्यास्त के बादल गोधूलि में घुलते हुए तारे टिमटिमाते हैं, आपकी स्क्रीन पर एक शांतिपूर्ण माहौल बनाते हैं।"
+    },
+    "ID": {
+      "Title": "Seri Langit",
+      "Description": "Melayang melalui 'Sky Series' yang tenang di mana jam realistis disinkronkan dengan perubahan warna langit dari siang ke malam. Bintang berkelap-kelip saat awan matahari terbenam memudar hingga senja, menciptakan suasana damai di layar Anda."
+    },
+    "IT": {
+      "Title": "Serie Cielo",
+      "Description": "Esplora la tranquilla 'Serie Cielo', in cui un orologio realistico si sincronizza con le mutevoli tonalità del cielo dal giorno alla notte. Le stelle brillano mentre le nuvole del tramonto sfumano nel crepuscolo, creando un rifugio tranquillo sul tuo schermo."
+    },
+    "JA": {
+      "Title": "スカイシリーズ",
+      "Description": "現実的な時計が昼から夜に移り変わる空の色合いと同期する、静かな「スカイ シリーズ」を漂います。夕焼け雲が夕闇に消えていくにつれて星がきらめき、画面上に静かな静寂を作り出します。"
+    },
+    "KO": {
+      "Title": "스카이 시리즈",
+      "Description": "사실적인 시계가 낮부터 밤까지 변화하는 하늘의 색조와 동기화되는 고요한 '스카이 시리즈'를 통해 표류하세요. 일몰 구름이 황혼으로 사라지면서 별들이 반짝거리며 화면에 평화로운 안식처를 만들어줍니다."
+    },
+    "MS": {
+      "Title": "Siri Langit",
+      "Description": "Hanyut melalui 'Siri Langit' yang tenang di mana jam yang realistik disegerakkan dengan warna langit yang berubah-ubah dari siang ke malam. Bintang berkelip-kelip apabila awan matahari terbenam memudar menjadi senja, mencipta pengunduran yang aman pada skrin anda."
+    },
+    "NB": {
+      "Title": "Sky-Serien",
+      "Description": "Gå gjennom den rolige 'Sky Series' der en realistisk klokke synkroniserer med himmelens skiftende fargetoner fra dag til natt. Stjerner glimter mens solnedgangsskyer forsvinner til skumring, og skaper et fredelig tilfluktssted på skjermen."
+    },
+    "NL": {
+      "Title": "Sky-Serie",
+      "Description": "Dwaal door de rustige 'Sky Series' waar een realistische klok synchroniseert met de veranderende tinten van de lucht van dag naar nacht. Sterren fonkelen terwijl zonsondergangwolken vervagen in de schemering, waardoor een vredig toevluchtsoord op je scherm ontstaat."
     },
     "PL": {
       "Title": "Seria Niebo",
       "Description": "Unos się przez spokojną 'Serię Niebo', w której realistyczny zegar synchronizuje się ze zmieniającymi się barwami nieba od dnia do nocy. Gwiazdy migoczą, gdy chmury zachodu słońca znikają w zmierzchu, tworząc spokojne schronienie na ekranie."
     },
+    "PT": {
+      "Title": "Série Céu",
+      "Description": "Navegue pela tranquila 'Sky Series', onde um relógio realista sincroniza com as mudanças de tonalidade do céu do dia para a noite. As estrelas brilham enquanto as nuvens do pôr do sol desaparecem no crepúsculo, criando um retiro tranquilo na sua tela."
+    },
+    "RO": {
+      "Title": "Seria Sky",
+      "Description": "Deplasați-vă prin liniștita „Seria Sky”, unde un ceas realist se sincronizează cu nuanțele schimbătoare ale cerului de la zi la noapte. Stelele sclipesc pe măsură ce norii apusului se estompează în amurg, creând o retragere liniștită pe ecran."
+    },
     "RU": {
-      "Title": "Небесная серия",
+      "Title": "Небесная Cерия",
       "Description": "Плывите сквозь спокойную 'Небесную серию', где реалистичные часы синхронизируются с меняющимися оттенками неба от дня к ночи. Звезды мерцают, пока облака заката растворяются в сумерках, создавая мирное убежище на вашем экране."
+    },
+    "SV": {
+      "Title": "Sky-Serien",
+      "Description": "Gå genom den lugna 'Sky Series' där en realistisk klocka synkroniserar med himlens skiftande nyanser från dag till natt. Stjärnor blinkar när solnedgångsmoln bleknar till skymning och skapar en fridfull tillflyktsort på din skärm."
     },
     "TR": {
       "Title": "Gökyüzü Serisi",
       "Description": "Gerçekçi bir saatin gün boyu gökyüzünün değişen tonlarıyla senkronize olduğu huzurlu 'Gökyüzü Serisi'nde süzülün. Güneş batarken bulutlar alaca karanlığa karışırken yıldızlar parıldar, ekranınızda huzurlu bir atmosfer oluşturur."
+    },
+    "UK": {
+      "Title": "Небесна Cерія",
+      "Description": "Дрейфуйте крізь спокійну «серію неба», де реалістичний годинник синхронізує відтінки неба, що змінюються від дня до ночі. Зірки мерехтять, коли хмари на заході сонця зникають у сутінках, створюючи спокійний куточок на вашому екрані."
     },
     "ZH": {
       "Title": "天空系列",

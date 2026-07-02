@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.5",
+  "Version": "1.0.0.6",
   "Title": "Spirit Tree",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,9 +13,25 @@
   "Tags": null,
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "شجرة الروح",
+      "Description": "مشهد هادئ لزهرة الكرز مدته 12 ساعة بدقة 4K، استمتع به! قم بتشغيلها في الخلفية أثناء الاسترخاء أو الدراسة أو التأمل أو النوم."
+    },
+    "CS": {
+      "Title": "Strom duchů",
+      "Description": "Poklidná 12hodinová scéna s třešňovým květem ve 4K, užijte si ji! Přehrajte si ji na pozadí, zatímco relaxujete, studujete, meditujete nebo spíte."
+    },
+    "DA": {
+      "Title": "Åndetræ",
+      "Description": "En rolig 12-timers kirsebærblomst-loop-scene i 4K, nyd det! Spil det i baggrunden, mens du slapper af, studerer, mediterer eller sover."
+    },
     "DE": {
       "Title": "Geistbaum",
       "Description": "Eine ruhige 12-stündige Kirschblüten-Schleifen-Szene in 4K. Genieße sie! Spiele sie im Hintergrund, während du entspannst, lernst, meditierst oder schläfst."
+    },
+    "EL": {
+      "Title": "Πνευματικό Δέντρο",
+      "Description": "Μια ήρεμη 12ωρη σκηνή από άνθη κερασιάς, σε 4K, απολαύστε! Παίξτε το στο παρασκήνιο ενώ χαλαρώνετε, μελετάτε, διαλογίζεστε ή κοιμάστε."
     },
     "ES": {
       "Title": "Árbol Espíritu",
@@ -25,21 +41,69 @@
       "Title": "Arbre Esprit",
       "Description": "Une scène de boucle de fleurs de cerisier tranquille de 12 heures, en 4K. Profitez-en ! Jouez-la en arrière-plan pendant que vous vous détendez, étudiez, méditez ou dormez."
     },
+    "HE": {
+      "Title": "עץ רוח",
+      "Description": "סצנת לולאה שלווה של 12 שעות של פריחת הדובדבן, ב-4K, תהנו! שחק אותו ברקע בזמן שאתה נרגע, לומד, עושה מדיטציה או ישן."
+    },
     "HI": {
       "Title": "स्पिरिट ट्री",
       "Description": "4K में एक शांत 12 घंटे का चेरी ब्लॉसम लूप दृश्य, आनंद लें! आराम करते, पढ़ाई करते, ध्यान करते या सोते समय इसे पृष्ठभूमि में चलाएं।"
+    },
+    "ID": {
+      "Title": "Pohon Roh",
+      "Description": "Pemandangan bunga sakura berdurasi 12 jam yang tenang, dalam 4K, selamat menikmati! Putar di latar belakang saat Anda bersantai, belajar, bermeditasi, atau tidur."
+    },
+    "IT": {
+      "Title": "Albero dello Spirito",
+      "Description": "Una tranquilla scena in loop di 12 ore di fiori di ciliegio, in 4K, buon divertimento! Riproducilo in sottofondo mentre ti rilassi, studi, mediti o dormi."
+    },
+    "JA": {
+      "Title": "精霊の木",
+      "Description": "静かな12時間の桜のループシーンを4Kでお楽しみください。リラックス、勉強、瞑想、睡眠中にバックグラウンドで再生してください。"
+    },
+    "KO": {
+      "Title": "영혼의 나무",
+      "Description": "12시간 동안의 고요한 벚꽃 루프 장면을 4K로 즐겨보세요! 휴식을 취하거나, 공부하거나, 명상하거나, 잠을 자는 동안 백그라운드에서 재생해 보세요."
+    },
+    "MS": {
+      "Title": "Pokok Roh",
+      "Description": "Pemandangan gelung bunga sakura 12 jam yang tenang, dalam 4K, nikmatilah! Mainkannya di latar belakang semasa anda berehat, belajar, bermeditasi atau tidur."
+    },
+    "NB": {
+      "Title": "Åndetre",
+      "Description": "En rolig 12-timers kirsebærblomst-loopscene, i 4K, nyt! Spill det i bakgrunnen mens du slapper av, studerer, mediterer eller sover."
+    },
+    "NL": {
+      "Title": "Geest boom",
+      "Description": "Een rustige 12-uur durende lusscène met kersenbloesem, in 4K, geniet ervan! Speel het op de achtergrond terwijl je ontspant, studeert, mediteert of slaapt."
     },
     "PL": {
       "Title": "Drzewo Ducha",
       "Description": "Spokojna, 12-godzinna scena pętli kwitnącej wiśni w 4K. Ciesz się nią! Odtwarzaj ją w tle podczas relaksu, nauki, medytacji lub snu."
     },
+    "PT": {
+      "Title": "Árvore Espiritual",
+      "Description": "Uma cena tranquila de 12 horas em flor de cerejeira, em 4K, divirta-se! Toque em segundo plano enquanto relaxa, estuda, medita ou dorme."
+    },
+    "RO": {
+      "Title": "Arborele Spiritului",
+      "Description": "O scenă liniștită de 12 ore în buclă cu flori de cireș, în 4K, bucurați-vă! Redă-l în fundal în timp ce te relaxezi, studiezi, meditezi sau dormi."
+    },
     "RU": {
       "Title": "Духовное дерево",
       "Description": "Спокойная 12-часовая зацикленная сцена цветения вишни в 4K. Наслаждайтесь! Воспроизводите на фоне, пока отдыхаете, учитесь, медитируете или спите."
     },
+    "SV": {
+      "Title": "Ande träd",
+      "Description": "En lugn 12-timmars körsbärsblomsslinga, i 4K, njut! Spela det i bakgrunden medan du kopplar av, studerar, mediterar eller sover."
+    },
     "TR": {
       "Title": "Ruh Ağacı",
       "Description": "Sakin bir 12 saatlik kiraz çiçeği döngüsü sahnesi, 4K çözünürlükte, keyfini çıkar! Rahatlayın, çalışın, meditasyon yapın veya uyurken arka planda oynatın."
+    },
+    "UK": {
+      "Title": "Духове дерево",
+      "Description": "Спокійна 12-годинна сцена циклу цвітіння сакури в 4K, насолоджуйтесь! Грайте у фоновому режимі, поки ви відпочиваєте, навчаєтеся, медитуєте або спите."
     },
     "ZH": {
       "Title": "灵魂之树",

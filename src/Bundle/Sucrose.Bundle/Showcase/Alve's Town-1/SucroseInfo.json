@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.1.1",
+  "Version": "1.0.1.2",
   "Title": "Alve's Town",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -16,9 +16,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "مدينة آلفي",
+      "Description": "Alve's Town: منظر مدينة Pixelart مع دورة ليلية ونهارية في الوقت الفعلي."
+    },
+    "CS": {
+      "Title": "Alve's Town",
+      "Description": "Alve's Town: Pohled na město Pixelart s cyklem den-noc v reálném čase."
+    },
+    "DA": {
+      "Title": "Alves By",
+      "Description": "Alve's Town: Pixelart-byudsigt med dag-nat-cyklus i realtid."
+    },
     "DE": {
       "Title": "Alves Stadt",
       "Description": "Alves Stadt: Pixelart-Stadtansicht mit Echtzeit-Tag-Nacht-Zyklus."
+    },
+    "EL": {
+      "Title": "Alve's Town",
+      "Description": "Alve's Town: Θέα στην πόλη Pixelart με κύκλο ημέρας-νύχτας σε πραγματικό χρόνο."
     },
     "ES": {
       "Title": "La Ciudad de Alve",
@@ -28,21 +44,69 @@
       "Title": "La Ville d'Alve",
       "Description": "La Ville d'Alve : Vue de ville en pixel art avec cycle jour-nuit en temps réel."
     },
+    "HE": {
+      "Title": "העיירה של אלווה",
+      "Description": "Alve's Town: נוף לעיר Pixelart עם מחזור יום-לילה בזמן אמת."
+    },
     "HI": {
       "Title": "Alve का शहर",
       "Description": "Alve का शहर: वास्तविक समय दिन-रात चक्र के साथ पिक्सेल आर्ट शहर दृश्य।"
+    },
+    "ID": {
+      "Title": "Kota Alve",
+      "Description": "Kota Alve: Pemandangan kota Pixelart dengan siklus siang-malam waktu nyata."
+    },
+    "IT": {
+      "Title": "La città di Alve",
+      "Description": "Alve's Town: vista della città in Pixelart con ciclo giorno-notte in tempo reale."
+    },
+    "JA": {
+      "Title": "アルヴェの街",
+      "Description": "Alve's Town: リアルタイムの昼夜サイクルを備えた Pixelart のシティ ビュー。"
+    },
+    "KO": {
+      "Title": "알베의 마을",
+      "Description": "Alve's Town: 실시간 낮-밤 주기를 갖춘 Pixelart 도시 전망."
+    },
+    "MS": {
+      "Title": "Pekan Alve",
+      "Description": "Bandar Alve: Pemandangan bandar Pixelart dengan kitaran siang-malam masa nyata."
+    },
+    "NB": {
+      "Title": "Alves by",
+      "Description": "Alves by: Pixelart byutsikt med sanntids dag-natt-syklus."
+    },
+    "NL": {
+      "Title": "De Stad van Alvé",
+      "Description": "Alve's Town: Pixelart stadsbeeld met realtime dag-nachtcyclus."
     },
     "PL": {
       "Title": "Miasto Alve",
       "Description": "Miasto Alve: Widok miasta w stylu pixelart z rzeczywistym cyklem dnia i nocy."
     },
+    "PT": {
+      "Title": "Cidade de Alve",
+      "Description": "Alve's Town: vista da cidade em pixelart com ciclo dia-noite em tempo real."
+    },
+    "RO": {
+      "Title": "Alve's Town",
+      "Description": "Alve's Town: Pixelart city view with realtime day-night cycle."
+    },
     "RU": {
       "Title": "Город Alve",
       "Description": "Город Alve: Пиксельный вид города с циклом дня и ночи в реальном времени."
     },
+    "SV": {
+      "Title": "Alves Stad",
+      "Description": "Alves stad: Pixelart stadsvy med dag-natt-cykel i realtid."
+    },
     "TR": {
       "Title": "Alve'nin Kasabası",
       "Description": "Alve'nin Kasabası: Gerçek zamanlı gün-gece döngüsüne sahip piksel sanat şehir manzarası."
+    },
+    "UK": {
+      "Title": "Місто Альве",
+      "Description": "Alve's Town: вид на місто Pixelart зі зміною дня та ночі в реальному часі."
     },
     "ZH": {
       "Title": "Alve的城镇",

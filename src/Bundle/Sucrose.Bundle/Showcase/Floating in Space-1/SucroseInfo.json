@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Floating in Space",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,9 +13,25 @@
   "Tags": null,
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "تطفو في الفضاء",
+      "Description": "تطفو في الفضاء - 12 ساعة - بدقة 4K Ultra HD بمعدل 60 إطارًا في الثانية"
+    },
+    "CS": {
+      "Title": "Plovoucí ve vesmíru",
+      "Description": "Plovoucí ve vesmíru - 12 hodin - 4K Ultra HD 60FPS"
+    },
+    "DA": {
+      "Title": "Flydende i rummet",
+      "Description": "Flydende i rummet - 12 timer - 4K Ultra HD 60FPS"
+    },
     "DE": {
       "Title": "Im Weltraum schweben",
       "Description": "Im Weltraum schweben - 12 Stunden - 4K Ultra HD 60FPS"
+    },
+    "EL": {
+      "Title": "Floating in Space",
+      "Description": "Floating In Space - 12 Hours - 4K Ultra HD 60FPS"
     },
     "ES": {
       "Title": "Flotando en el espacio",
@@ -25,21 +41,69 @@
       "Title": "Flottant dans l'espace",
       "Description": "Flottant dans l'espace - 12 heures - 4K Ultra HD 60FPS"
     },
+    "HE": {
+      "Title": "צף בחלל",
+      "Description": "צף בחלל - 12 שעות - 4K Ultra HD 60FPS"
+    },
     "HI": {
       "Title": "अंतरिक्ष में तैरना",
       "Description": "अंतरिक्ष में तैरना - 12 घंटे - 4K अल्ट्रा HD 60FPS"
+    },
+    "ID": {
+      "Title": "Mengambang di Luar Angkasa",
+      "Description": "Mengambang Di Luar Angkasa - 12 Jam - 4K Ultra HD 60FPS"
+    },
+    "IT": {
+      "Title": "Galleggiante nello spazio",
+      "Description": "Galleggianti nello spazio - 12 ore - 4K Ultra HD 60FPS"
+    },
+    "JA": {
+      "Title": "宇宙に浮かぶ",
+      "Description": "宇宙に浮かぶ - 12 時間 - 4K Ultra HD 60FPS"
+    },
+    "KO": {
+      "Title": "우주에 떠 있는",
+      "Description": "Floating In Space - 12 Hours - 4K Ultra HD 60FPS"
+    },
+    "MS": {
+      "Title": "Terapung di Angkasa",
+      "Description": "Terapung Di Angkasa - 12 Jam - 4K Ultra HD 60FPS"
+    },
+    "NB": {
+      "Title": "Flyter i verdensrommet",
+      "Description": "Flytende i verdensrommet - 12 timer - 4K Ultra HD 60FPS"
+    },
+    "NL": {
+      "Title": "Zwevend in de ruimte",
+      "Description": "Zwevend in de ruimte - 12 uur - 4K Ultra HD 60FPS"
     },
     "PL": {
       "Title": "Unosząc się w kosmosie",
       "Description": "Unosząc się w kosmosie - 12 godzin - 4K Ultra HD 60FPS"
     },
+    "PT": {
+      "Title": "Flutuando no espaço",
+      "Description": "Flutuando no espaço - 12 horas - 4K Ultra HD 60FPS"
+    },
+    "RO": {
+      "Title": "Floating in Space",
+      "Description": "Floating In Space - 12 Hours - 4K Ultra HD 60FPS"
+    },
     "RU": {
       "Title": "Плывущий в космосе",
       "Description": "Плывущий в космосе - 12 часов - 4K Ultra HD 60FPS"
     },
+    "SV": {
+      "Title": "Flytande i rymden",
+      "Description": "Flytande i rymden - 12 timmar - 4K Ultra HD 60FPS"
+    },
     "TR": {
       "Title": "Uzayda Süzülmek",
       "Description": "Uzayda Süzülmek - 12 Saat - 4K Ultra HD 60FPS"
+    },
+    "UK": {
+      "Title": "Плавання в космосі",
+      "Description": "Політ у космосі – 12 годин – 4K Ultra HD 60 кадрів/с"
     },
     "ZH": {
       "Title": "漂浮在太空中",

@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Particulate Medusae",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -16,9 +16,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "ميدوسا الجسيمات",
+      "Description": "محاكاة قنديل البحر ذات الجسم الناعم. تم تصميمه باستخدام Particulate.js وThree.js"
+    },
+    "CS": {
+      "Title": "Částicové medúzy",
+      "Description": "Simulace medúzy měkkého těla. Vytvořeno pomocí Particulate.js a Three.js"
+    },
+    "DA": {
+      "Title": "Partikulære Medusae",
+      "Description": "Blød krop vandmænd simulering. Bygget med Particulate.js og Three.js"
+    },
     "DE": {
       "Title": "Partikuläre Quallen",
       "Description": "Simulation von Weichkörper-Quallen. Erstellt mit Particulate.js und Three.js"
+    },
+    "EL": {
+      "Title": "Σωματίδια Medusae",
+      "Description": "Προσομοίωση μέδουσας μαλακού σώματος. Κατασκευάστηκε με Particulate.js και Three.js"
     },
     "ES": {
       "Title": "Medusas Particuladas",
@@ -28,21 +44,69 @@
       "Title": "Méduse Particulaire",
       "Description": "Simulation de méduses à corps mou. Construit avec Particulate.js et Three.js"
     },
+    "HE": {
+      "Title": "מדוזה חלקיקית",
+      "Description": "הדמיית מדוזה גוף רכה. נבנה עם Particulate.js ו-Three.js"
+    },
     "HI": {
       "Title": "पार्टिकुलेट मेडुसा",
       "Description": "नरम शरीर वाली जेलीफ़िश सिमुलेशन। Particulate.js और Three.js के साथ निर्मित"
+    },
+    "ID": {
+      "Title": "Medusa partikulat",
+      "Description": "Simulasi ubur-ubur tubuh lunak. Dibangun dengan Particulate.js dan Three.js"
+    },
+    "IT": {
+      "Title": "Meduse particellari",
+      "Description": "Simulazione di meduse dal corpo morbido. Costruito con Particulate.js e Three.js"
+    },
+    "JA": {
+      "Title": "粒子状クラゲ",
+      "Description": "柔らかい体のクラゲのシミュレーション。 Particulate.js と Three.js で構築"
+    },
+    "KO": {
+      "Title": "미립자 메두사",
+      "Description": "연체 해파리 시뮬레이션. Particulate.js 및 Three.js로 구축"
+    },
+    "MS": {
+      "Title": "Medusae zarah",
+      "Description": "Simulasi obor-obor badan lembut. Dibina dengan Particulate.js dan Three.js"
+    },
+    "NB": {
+      "Title": "Partikulær Medusae",
+      "Description": "Simulering av myk kroppsmaneter. Bygget med Particulate.js og Three.js"
+    },
+    "NL": {
+      "Title": "Deeltjes Medusae",
+      "Description": "Simulatie van zachte kwallen. Gebouwd met Particulate.js en Three.js"
     },
     "PL": {
       "Title": "Cząsteczkowe Meduzy",
       "Description": "Symulacja meduz o miękkim ciele. Zbudowane przy użyciu Particulate.js i Three.js"
     },
+    "PT": {
+      "Title": "Medusas Particuladas",
+      "Description": "Simulação de água-viva de corpo mole. Construído com Particle.js e Three.js"
+    },
+    "RO": {
+      "Title": "Meduse cu particule",
+      "Description": "Simulare de meduză cu corp moale. Construit cu Particulate.js și Three.js"
+    },
     "RU": {
       "Title": "Частицовые медузы",
       "Description": "Симуляция мягкотелых медуз. Создано с помощью Particulate.js и Three.js"
     },
+    "SV": {
+      "Title": "Partikelformig Medusae",
+      "Description": "Simulering av mjuka maneter. Byggd med Particulate.js och Three.js"
+    },
     "TR": {
       "Title": "Parçacıklı Denizanası",
       "Description": "Yumuşak gövdeli denizanası simülasyonu. Particulate.js ve Three.js ile yapılmıştır"
+    },
+    "UK": {
+      "Title": "Часткові медузи",
+      "Description": "Симуляція медузи з м’яким тілом. Створено з Particulate.js і Three.js"
     },
     "ZH": {
       "Title": "粒子水母",

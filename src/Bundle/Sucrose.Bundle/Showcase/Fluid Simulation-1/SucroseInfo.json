@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.9",
+  "Version": "1.0.1.0",
   "Title": "Fluid Simulation",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "محاكاة السوائل",
+      "Description": "محاكاة السوائل باستخدام WebGL، تتفاعل مع صوت النظام والمؤشر."
+    },
+    "CS": {
+      "Title": "Simulace kapalin",
+      "Description": "Simulace tekutin pomocí WebGL, reaguje se zvukem systému a kurzorem."
+    },
+    "DA": {
+      "Title": "Væskesimulering",
+      "Description": "Væskesimulering ved hjælp af WebGL, reagerer med systemlyd og markør."
+    },
     "DE": {
       "Title": "Flüssigkeitssimulation",
       "Description": "Flüssigkeitssimulation mit WebGL, reagiert auf Systemaudio und Mauszeiger."
+    },
+    "EL": {
+      "Title": "Προσομοίωση Ρευστών",
+      "Description": "Προσομοίωση ρευστού με χρήση WebGL, αντιδρά με ήχο συστήματος και δρομέα."
     },
     "ES": {
       "Title": "Simulación de Fluido",
@@ -27,21 +43,69 @@
       "Title": "Simulation de Fluide",
       "Description": "Simulation de fluides avec WebGL, réagit à l'audio du système et au curseur."
     },
+    "HE": {
+      "Title": "הדמיית נוזלים",
+      "Description": "הדמיית נוזלים באמצעות WebGL, מגיבה עם אודיו וסמן של המערכת."
+    },
     "HI": {
       "Title": "तरल सिमुलेशन",
       "Description": "WebGL का उपयोग करके तरल सिमुलेशन, सिस्टम ऑडियो और कर्सर के साथ प्रतिक्रिया करता है।"
+    },
+    "ID": {
+      "Title": "Simulasi Fluida",
+      "Description": "Simulasi fluida menggunakan WebGL, bereaksi dengan audio & kursor sistem."
+    },
+    "IT": {
+      "Title": "Simulazione fluida",
+      "Description": "Simulazione dei fluidi tramite WebGL, reagisce con l'audio e il cursore del sistema."
+    },
+    "JA": {
+      "Title": "流体シミュレーション",
+      "Description": "WebGLを使用した流体シミュレーションは、システムオーディオとカーソルに反応します。"
+    },
+    "KO": {
+      "Title": "Fluid Simulation",
+      "Description": "Fluid simulation using WebGL, reacts with system audio & cursor."
+    },
+    "MS": {
+      "Title": "Simulasi Bendalir",
+      "Description": "Simulasi cecair menggunakan WebGL, bertindak balas dengan audio & kursor sistem."
+    },
+    "NB": {
+      "Title": "Væskesimulering",
+      "Description": "Væskesimulering ved hjelp av WebGL, reagerer med systemlyd og markør."
+    },
+    "NL": {
+      "Title": "Vloeiende simulatie",
+      "Description": "Vloeiende simulatie met WebGL, reageert met systeemaudio en cursor."
     },
     "PL": {
       "Title": "Symulacja Cieczy",
       "Description": "Symulacja cieczy przy użyciu WebGL, reaguje na dźwięk systemowy i kursor."
     },
+    "PT": {
+      "Title": "Simulação de Fluidos",
+      "Description": "Simulação de fluidos usando WebGL, reage com áudio e cursor do sistema."
+    },
+    "RO": {
+      "Title": "Fluid Simulation",
+      "Description": "Fluid simulation using WebGL, reacts with system audio & cursor."
+    },
     "RU": {
       "Title": "Симуляция жидкости",
       "Description": "Симуляция жидкости с использованием WebGL, реагирует на системный звук и курсор."
     },
+    "SV": {
+      "Title": "Vätskesimulering",
+      "Description": "Vätskesimulering med WebGL, reagerar med systemljud och markör."
+    },
     "TR": {
       "Title": "Sıvı Simülasyonu",
       "Description": "WebGL kullanarak sıvı simülasyonu, sistem sesi ve imleç ile etkileşir."
+    },
+    "UK": {
+      "Title": "Симуляція рідини",
+      "Description": "Симуляція рідини за допомогою WebGL, реагує на системний звук і курсор."
     },
     "ZH": {
       "Title": "流体模拟",

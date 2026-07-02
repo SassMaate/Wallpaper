@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.9",
+  "Version": "1.0.1.0",
   "Title": "Simple System",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -17,9 +17,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "نظام بسيط",
+      "Description": "الحد الأدنى من ورق الحائط الذي يظهر قراءات الأجهزة في الرسم البياني."
+    },
+    "CS": {
+      "Title": "Jednoduchý systém",
+      "Description": "Minimální tapeta, která zobrazuje hodnoty hardwaru v grafu."
+    },
+    "DA": {
+      "Title": "Simpelt system",
+      "Description": "Minimal tapet, der viser hardwareaflæsninger i graf."
+    },
     "DE": {
       "Title": "Einfaches System",
       "Description": "Minimalistisches Hintergrundbild, das Hardwarewerte als Diagramm anzeigt."
+    },
+    "EL": {
+      "Title": "Απλό σύστημα",
+      "Description": "Ελάχιστη ταπετσαρία που δείχνει μετρήσεις υλικού σε γράφημα."
     },
     "ES": {
       "Title": "Sistema Simple",
@@ -29,21 +45,69 @@
       "Title": "Système Simple",
       "Description": "Fond d'écran minimaliste qui affiche les mesures matérielles sous forme de graphique."
     },
+    "HE": {
+      "Title": "מערכת פשוטה",
+      "Description": "טפט מינימלי המציג קריאות חומרה בגרף."
+    },
     "HI": {
       "Title": "सिंपल सिस्टम",
       "Description": "न्यूनतम वॉलपेपर जो ग्राफ में हार्डवेयर रीडिंग दिखाता है।"
+    },
+    "ID": {
+      "Title": "Sistem Sederhana",
+      "Description": "Wallpaper minimal yang menampilkan pembacaan perangkat keras dalam grafik."
+    },
+    "IT": {
+      "Title": "Sistema semplice",
+      "Description": "Sfondo minimale che mostra le letture dell'hardware nel grafico."
+    },
+    "JA": {
+      "Title": "シンプルなシステム",
+      "Description": "ハードウェアの測定値をグラフで表示する最小限の壁紙。"
+    },
+    "KO": {
+      "Title": "간단한 시스템",
+      "Description": "그래프로 하드웨어 판독값을 표시하는 최소한의 배경화면입니다."
+    },
+    "MS": {
+      "Title": "Sistem Mudah",
+      "Description": "Kertas dinding minimum yang menunjukkan bacaan perkakasan dalam graf."
+    },
+    "NB": {
+      "Title": "Enkelt system",
+      "Description": "Minimal bakgrunn som viser maskinvareavlesninger i graf."
+    },
+    "NL": {
+      "Title": "Eenvoudig systeem",
+      "Description": "Minimale achtergrond die hardwaremetingen in de grafiek toont."
     },
     "PL": {
       "Title": "Prosty System",
       "Description": "Minimalistyczna tapeta pokazująca odczyty sprzętowe na wykresie."
     },
+    "PT": {
+      "Title": "Sistema Simples",
+      "Description": "Papel de parede mínimo que mostra leituras de hardware em gráfico."
+    },
+    "RO": {
+      "Title": "Sistem simplu",
+      "Description": "Imagine de fundal minimă care arată citirile hardware în grafic."
+    },
     "RU": {
       "Title": "Простая система",
       "Description": "Минималистичные обои, показывающие показатели оборудования в виде графика."
     },
+    "SV": {
+      "Title": "Enkelt system",
+      "Description": "Minimal tapet som visar hårdvaruavläsningar i graf."
+    },
     "TR": {
       "Title": "Basit Sistem",
       "Description": "Donanım okumalarını grafik olarak gösteren minimalist duvar kağıdı."
+    },
+    "UK": {
+      "Title": "Проста система",
+      "Description": "Мінімальний фоновий малюнок, який показує показники обладнання на графіку."
     },
     "ZH": {
       "Title": "简约系统",
