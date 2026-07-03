@@ -133,7 +133,7 @@ namespace Sucrose.Resources.Helper
                 return true;
             }
 
-            if (FE.ReadLocalValue(FrameworkElement.FlowDirectionProperty) is FlowDirection LocalDirection && LocalDirection == FlowDirection.LeftToRight)
+            if (FE.Tag is string Tag && Tag is "LeftToRight" or "NonFlowable")
             {
                 return true;
             }
