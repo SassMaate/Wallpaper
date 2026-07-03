@@ -67,7 +67,8 @@ namespace Sucrose.Property.Controls
             MediaColor UndoColor = Component.Color;
 
             Picker.SelectedBrush = new(UndoColor);
-            Picker.UseLayoutRounding = false;
+            Picker.FlowDirection = FlowDirection;
+            Picker.UseLayoutRounding = true;
 
             PopupWindow PopupWindow = new()
             {
@@ -76,6 +77,7 @@ namespace Sucrose.Property.Controls
                 WindowState = WindowState.Normal,
                 ResizeMode = ResizeMode.NoResize,
                 WindowStyle = WindowStyle.None,
+                FlowDirection = FlowDirection,
                 AllowsTransparency = true,
                 UseLayoutRounding = true,
                 PopupElement = Picker,
