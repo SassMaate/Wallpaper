@@ -120,6 +120,27 @@ namespace Sucrose.Resources.Helper
             }));
         }
 
+        private static bool IsNonFlowableElement(FrameworkElement FE)
+        {
+            if (FE is Image)
+            {
+                return true;
+            }
+
+            string TypeName = FE.GetType().Name;
+            if (TypeName is "Image" or "ImageIcon" or "AsyncImage")
+            {
+                return true;
+            }
+
+            if (FE.ReadLocalValue(FrameworkElement.FlowDirectionProperty) is FlowDirection LocalDirection && LocalDirection == FlowDirection.LeftToRight)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
         private static void RegisterFlowDirection()
         {
             if (SRMI.FlowDirectionRegistered)
@@ -131,11 +152,6 @@ namespace Sucrose.Resources.Helper
 
             EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
             {
-                if (SRMI.CurrentFlowDirection == FlowDirection.LeftToRight)
-                {
-                    return;
-                }
-
                 if (Sender is FrameworkElement Element)
                 {
                     Window Window = Element is Window W ? W : Window.GetWindow(Element);
@@ -145,7 +161,16 @@ namespace Sucrose.Resources.Helper
                         return;
                     }
 
-                    Element.FlowDirection = SRMI.CurrentFlowDirection;
+                    if (IsNonFlowableElement(Element))
+                    {
+                        Element.FlowDirection = FlowDirection.LeftToRight;
+                        return;
+                    }
+
+                    if (SRMI.CurrentFlowDirection != FlowDirection.LeftToRight)
+                    {
+                        Element.FlowDirection = SRMI.CurrentFlowDirection;
+                    }
                 }
             }));
         }
@@ -176,16 +201,37 @@ namespace Sucrose.Resources.Helper
 
             if (Element is FrameworkElement FE)
             {
-                FE.FlowDirection = SRMI.CurrentFlowDirection;
+                if (IsNonFlowableElement(FE))
+                {
+                    FE.FlowDirection = FlowDirection.LeftToRight;
+                }
+                else
+                {
+                    FE.FlowDirection = SRMI.CurrentFlowDirection;
+                }
 
                 if (FE.ContextMenu is not null)
                 {
-                    FE.ContextMenu.FlowDirection = SRMI.CurrentFlowDirection;
+                    if (IsNonFlowableElement(FE.ContextMenu))
+                    {
+                        FE.ContextMenu.FlowDirection = FlowDirection.LeftToRight;
+                    }
+                    else
+                    {
+                        FE.ContextMenu.FlowDirection = SRMI.CurrentFlowDirection;
+                    }
                 }
 
                 if (FE.ToolTip is FrameworkElement ToolTipFE)
                 {
-                    ToolTipFE.FlowDirection = SRMI.CurrentFlowDirection;
+                    if (IsNonFlowableElement(ToolTipFE))
+                    {
+                        ToolTipFE.FlowDirection = FlowDirection.LeftToRight;
+                    }
+                    else
+                    {
+                        ToolTipFE.FlowDirection = SRMI.CurrentFlowDirection;
+                    }
                 }
             }
 
