@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Sucrose is an open-source wallpaper engine for Windows. It supports GIF, URL, Web, Video, YouTube, and Application wallpaper types with audio-reactive and system-status APIs. The application is built as a multi-process architecture where separate executables handle rendering, UI, background services, and system monitoring.
+Sucrose is an open-source wallpaper engine for Windows. It supports Gif, Url, Web, Video, YouTube, and Application wallpaper types with audio-reactive and system-status APIs. The application is built as a multi-process architecture where separate executables handle rendering, UI, background services, and system monitoring.
 
 ## Build Commands
 

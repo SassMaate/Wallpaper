@@ -7,13 +7,13 @@
     <system:String x:Key="Portal.PerformanceSettingPage.Counter">מוני ביצועים</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Counter.Description">האם כל מוני הביצועים יפעלו ברקע.</system:String>
 
-    <system:String x:Key="Portal.PerformanceSettingPage.Counter.CounterHint">הערה: ייתכן שחלק מהערכות נושא מסוג אינטרנט לא יפעלו כראוי ואף אחת מהגדרות הביצועים שלהלן לא תעבוד.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Counter.CounterHint">הערה: ייתכן שחלק מהערכות נושא מסוג Web לא יפעלו כראוי ואף אחת מהגדרות הביצועים שלהלן לא תעבוד.</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Pause">כלל עצירה</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Pause.Description">קובע את הכלל להפסקת הטפט בהתבסס על הגדרות הביצועים שלך.</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Communication">סוג איש קשר</system:String>
-    <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">זה קובע את סוג השליחה של הודעות שישודרו לנושאים מסוג אינטרנט.</system:String>
+    <system:String x:Key="Portal.PerformanceSettingPage.Communication.Description">זה קובע את סוג השליחה של הודעות שישודרו לנושאים מסוג Web.</system:String>
 
     <system:String x:Key="Portal.PerformanceSettingPage.Processor">שימוש במעבד</system:String>
     <system:String x:Key="Portal.PerformanceSettingPage.Processor.Description">מה יקרה לטפט כתוצאה מהגדרות השימוש במעבד שלך.</system:String>

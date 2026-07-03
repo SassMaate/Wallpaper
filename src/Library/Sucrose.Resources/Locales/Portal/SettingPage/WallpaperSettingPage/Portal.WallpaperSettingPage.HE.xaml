@@ -37,21 +37,21 @@
     <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration">האצת חומרה</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration.Description">החלפת האצת חומרה בטפטים נתמכים.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer">תוסף GIF</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer">תוסף Gif</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer.Description">בחר את הפלאגין שינגן את ערכות הנושא מסוג Gif בספרייה שלך.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer">תוסף וידאו</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer.Description">בחר את הפלאגין שינגן את ערכות הנושא של סוג וידאו בספרייה שלך.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer">תוסף Video</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer.Description">בחר את הפלאגין שינגן את ערכות הנושא של סוג Video בספרייה שלך.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer">מנוע כתובת אתר</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג כתובת האתר בספרייה שלך.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer">מנוע Url</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג Url בספרייה שלך.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer">מנוע אינטרנט</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג האינטרנט בספרייה שלך.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer">מנוע Web</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג Web בספרייה שלך.</system:String>
 
     <system:String x:Key="Portal.WallpaperSettingPage.YouTubePlayer">מנוע YouTube</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.YouTubePlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של YouTube בספרייה שלך.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer">מנוע יישומים</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג היישום בספרייה שלך.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer">מנוע Application</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.ApplicationPlayer.Description">בחר את המנוע שיפעיל את ערכות הנושא של סוג Application בספרייה שלך.</system:String>
 </ResourceDictionary>
