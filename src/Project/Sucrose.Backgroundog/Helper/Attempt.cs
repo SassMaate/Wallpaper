@@ -25,7 +25,10 @@ namespace Sucrose.Backgroundog.Helper
             }
 
             SBMI.Exit = false;
+            SBMI.DataSource?.Dispose();
             await SBMI.Initialize.Stop();
+            SBMI.PlayingSession?.Dispose();
+            SBMI.SessionManager?.Dispose();
 
             SMMI.BackgroundogSettingManager.SetSetting(new KeyValuePair<string, bool>[]
             {
