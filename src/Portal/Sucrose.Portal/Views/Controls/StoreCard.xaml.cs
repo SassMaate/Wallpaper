@@ -27,6 +27,7 @@ using SPEIL = Sucrose.Portal.Extension.ImageLoader;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPVCTR = Sucrose.Portal.Views.Controls.ThemeReport;
 using SRER = Sucrose.Resources.Extension.Resources;
+using SRHR = Sucrose.Resources.Helper.Resources;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDESST = Sucrose.Shared.Dependency.Enum.StoreServerType;
@@ -500,6 +501,9 @@ namespace Sucrose.Portal.Views.Controls
 
                     ThemeTitle.ToolTip = TitleTip;
                     ThemeDescription.ToolTip = DescriptionTip;
+
+                    ThemeTitle.FlowDirection = SRHR.IsRightToLeftText(ThemeTitle.Text) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+                    ThemeDescription.FlowDirection = SRHR.IsRightToLeftText(ThemeDescription.Text) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
                     string ImagePath = Path.Combine(Theme, Info.Thumbnail);
 

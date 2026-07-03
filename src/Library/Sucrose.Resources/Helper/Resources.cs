@@ -74,6 +74,36 @@ namespace Sucrose.Resources.Helper
             }
         }
 
+        public static bool IsRightToLeftText(string Text)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(Text))
+                {
+                    return false;
+                }
+
+                foreach (char Char in Text)
+                {
+                    if (Char is >= (char)0x0590 and <= (char)0x08FF)
+                    {
+                        return true;
+                    }
+
+                    if (char.IsLetter(Char))
+                    {
+                        return false;
+                    }
+                }
+
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         private static void RegisterFlowDirection()
         {
             if (FlowDirectionRegistered)
@@ -98,6 +128,18 @@ namespace Sucrose.Resources.Helper
                 }
             }));
 
+        }
+
+        private static bool FlowableWindow(Window Window)
+        {
+            // Engine render surfaces host user content (web/video/gif/image) and must never be mirrored
+            // by an RTL FlowDirection. They all live in "Sucrose.Shared.Engine.<Engine>.View", whereas the
+            // shared localized dialogs live in "Sucrose.Shared.Engine.View" (no engine segment).
+            string Namespace = Window.GetType().Namespace ?? string.Empty;
+
+            return !(Namespace.StartsWith("Sucrose.Shared.Engine.", StringComparison.Ordinal)
+                && Namespace.EndsWith(".View", StringComparison.Ordinal)
+                && Namespace != "Sucrose.Shared.Engine.View");
         }
 
         private static void ApplyFlowDirection(Window Window)
@@ -136,18 +178,6 @@ namespace Sucrose.Resources.Helper
                     ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, i));
                 }
             }
-        }
-
-        private static bool FlowableWindow(Window Window)
-        {
-            // Engine render surfaces host user content (web/video/gif/image) and must never be mirrored
-            // by an RTL FlowDirection. They all live in "Sucrose.Shared.Engine.<Engine>.View", whereas the
-            // shared localized dialogs live in "Sucrose.Shared.Engine.View" (no engine segment).
-            string Namespace = Window.GetType().Namespace ?? string.Empty;
-
-            return !(Namespace.StartsWith("Sucrose.Shared.Engine.", StringComparison.Ordinal)
-                && Namespace.EndsWith(".View", StringComparison.Ordinal)
-                && Namespace != "Sucrose.Shared.Engine.View");
         }
 
         private static bool CheckLanguage(string Lang)
