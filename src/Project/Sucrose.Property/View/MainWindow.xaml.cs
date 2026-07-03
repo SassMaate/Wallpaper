@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Collections;
 using System.IO;
 using System.Windows;
@@ -122,7 +122,10 @@ namespace Sucrose.Property.View
 
             double TaskbarTop = TaskbarCoordinates.Top / DpiScaleY;
             double TaskbarLeft = TaskbarCoordinates.Left / DpiScaleX;
+            double TaskbarWidth = TaskbarCoordinates.Width / DpiScaleX;
             double TaskbarHeight = TaskbarCoordinates.Height / DpiScaleY;
+
+            bool IsRTL = FlowDirection == System.Windows.FlowDirection.RightToLeft;
 
             try
             {
@@ -131,31 +134,31 @@ namespace Sucrose.Property.View
                     case AnchorStyles.Top:
                         MaxHeight = ScreenHeight - TaskbarHeight - 20;
 
-                        Left = ScreenWidth - Width - 10;
+                        Left = IsRTL ? 10 : ScreenWidth - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                     case AnchorStyles.Bottom:
                         MaxHeight = ScreenHeight - TaskbarHeight - 20;
 
-                        Left = ScreenWidth - Width - 10;
+                        Left = IsRTL ? 10 : ScreenWidth - Width - 10;
                         Top = TaskbarTop - Height - 10;
                         break;
                     case AnchorStyles.Left:
                         MaxHeight = ScreenHeight - 20;
 
-                        Left = ScreenWidth - Width - 10;
+                        Left = IsRTL ? TaskbarWidth + 10 : ScreenWidth - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                     case AnchorStyles.Right:
                         MaxHeight = ScreenHeight - 20;
 
-                        Left = TaskbarLeft - Width - 10;
+                        Left = IsRTL ? 10 : TaskbarLeft - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                     default:
                         MaxHeight = ScreenHeight - 20;
 
-                        Left = ScreenWidth - Width - 10;
+                        Left = IsRTL ? 10 : ScreenWidth - Width - 10;
                         Top = ScreenHeight - Height - 10;
                         break;
                 }
@@ -169,6 +172,7 @@ namespace Sucrose.Property.View
                     { "DPI Scale Y", DpiScaleY },
                     { "Screen Width", ScreenWidth },
                     { "Screen Height", ScreenHeight },
+                    { "Flow Direction", FlowDirection },
                     { "Taskbar Coordinates", SWHWTR.GetCoordonates() }
                 })}");
 
@@ -177,7 +181,7 @@ namespace Sucrose.Property.View
                 MaxHeight = ScreenHeight - 48 - 20;
 
                 Top = ScreenHeight - Height - 58;
-                Left = ScreenWidth - Width - 10;
+                Left = IsRTL ? 10 : ScreenWidth - Width - 10;
             }
         }
 

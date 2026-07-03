@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using SEWTT = Skylark.Enum.WindowsThemeType;
 using SHV = Skylark.Helper.Versionly;
 using SMMB = Sucrose.Manager.Manage.Backgroundog;
@@ -108,6 +108,8 @@ namespace Sucrose.Shared.Launcher.Manager
             {
                 ContextMenu.Renderer = new SSLRLR();
             }
+
+            ContextMenu.RightToLeft = SRHR.IsRightToLeft(SMMG.Culture) ? RightToLeft.Yes : RightToLeft.No;
 
             ContextMenu.Items.Add(new ToolStripMenuItem(SRER.GetValue("Launcher", "OpenText"), Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "OpenIcon"))), CommandInterface)
             {
