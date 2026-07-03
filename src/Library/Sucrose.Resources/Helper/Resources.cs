@@ -6,15 +6,12 @@ using SEAT = Skylark.Enum.AssemblyType;
 using SHA = Skylark.Helper.Assemblies;
 using SHC = Skylark.Helper.Culture;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SRMI = Sucrose.Resources.Manage.Internal;
 
 namespace Sucrose.Resources.Helper
 {
     public static class Resources
     {
-        private static bool FlowDirectionRegistered;
-
-        private static FlowDirection CurrentFlowDirection = FlowDirection.LeftToRight;
-
         public static void SetLanguage(string Lang)
         {
             Lang = Lang.ToUpperInvariant();
@@ -31,11 +28,11 @@ namespace Sucrose.Resources.Helper
 
             RemoveResource();
 
+            SetFlowDirection(Lang);
+
             SHC.All = new CultureInfo(Lang, true);
 
             Application.Current.Resources.MergedDictionaries.Add(Resource);
-
-            SetFlowDirection(Lang);
         }
 
         public static bool IsRightToLeft(string Lang)
@@ -59,7 +56,7 @@ namespace Sucrose.Resources.Helper
         /// </summary>
         public static void SetFlowDirection(string Lang)
         {
-            CurrentFlowDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+            SRMI.CurrentFlowDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
             RegisterFlowDirection();
 
@@ -76,42 +73,35 @@ namespace Sucrose.Resources.Helper
 
         public static bool IsRightToLeftText(string Text)
         {
-            try
+            if (string.IsNullOrEmpty(Text))
             {
-                if (string.IsNullOrEmpty(Text))
+                return false;
+            }
+
+            foreach (char Char in Text)
+            {
+                if (Char is >= (char)0x0590 and <= (char)0x08FF)
+                {
+                    return true;
+                }
+
+                if (char.IsLetter(Char))
                 {
                     return false;
                 }
-
-                foreach (char Char in Text)
-                {
-                    if (Char is >= (char)0x0590 and <= (char)0x08FF)
-                    {
-                        return true;
-                    }
-
-                    if (char.IsLetter(Char))
-                    {
-                        return false;
-                    }
-                }
-
-                return false;
             }
-            catch
-            {
-                return false;
-            }
+
+            return false;
         }
 
         private static void RegisterFlowDirection()
         {
-            if (FlowDirectionRegistered)
+            if (SRMI.FlowDirectionRegistered)
             {
                 return;
             }
 
-            FlowDirectionRegistered = true;
+            SRMI.FlowDirectionRegistered = true;
 
             EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
             {
@@ -119,15 +109,14 @@ namespace Sucrose.Resources.Helper
                 {
                     Window Window = Element is Window W ? W : Window.GetWindow(Element);
 
-                    if (Window != null && !FlowableWindow(Window))
+                    if (Window is not null && !FlowableWindow(Window))
                     {
                         return;
                     }
 
-                    Element.FlowDirection = CurrentFlowDirection;
+                    Element.FlowDirection = SRMI.CurrentFlowDirection;
                 }
             }));
-
         }
 
         private static bool FlowableWindow(Window Window)
@@ -156,16 +145,16 @@ namespace Sucrose.Resources.Helper
 
             if (Element is FrameworkElement FE)
             {
-                FE.FlowDirection = CurrentFlowDirection;
+                FE.FlowDirection = SRMI.CurrentFlowDirection;
 
-                if (FE.ContextMenu != null)
+                if (FE.ContextMenu is not null)
                 {
-                    FE.ContextMenu.FlowDirection = CurrentFlowDirection;
+                    FE.ContextMenu.FlowDirection = SRMI.CurrentFlowDirection;
                 }
 
                 if (FE.ToolTip is FrameworkElement ToolTipFE)
                 {
-                    ToolTipFE.FlowDirection = CurrentFlowDirection;
+                    ToolTipFE.FlowDirection = SRMI.CurrentFlowDirection;
                 }
             }
 
@@ -173,9 +162,9 @@ namespace Sucrose.Resources.Helper
             {
                 int ChildrenCount = VisualTreeHelper.GetChildrenCount(Element);
 
-                for (int i = 0; i < ChildrenCount; i++)
+                for (int Index = 0; Index < ChildrenCount; Index++)
                 {
-                    ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, i));
+                    ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, Index));
                 }
             }
         }
@@ -235,7 +224,7 @@ namespace Sucrose.Resources.Helper
 
                     return StartIndex < EndIndex ? Resource[StartIndex..EndIndex] : null;
                 })
-                .Where(LangCode => LangCode != null)
+                .Where(LangCode => LangCode is not null)
                 .ToList();
         }
 
