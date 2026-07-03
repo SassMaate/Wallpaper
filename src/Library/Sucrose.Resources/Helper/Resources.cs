@@ -58,29 +58,27 @@ namespace Sucrose.Resources.Helper
         {
             FlowDirection NewDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
-            if (NewDirection == FlowDirection.LeftToRight && !SRMI.FlowDirectionRegistered)
+            if (SRMI.CurrentFlowDirection == NewDirection)
             {
-                SRMI.CurrentFlowDirection = NewDirection;
+                return;
             }
-            else
+
+            SRMI.CurrentFlowDirection = NewDirection;
+
+            RegisterFlowDirection();
+
+            if (Application.Current is null)
             {
-                SRMI.CurrentFlowDirection = NewDirection;
+                return;
+            }
 
-                RegisterFlowDirection();
-
-                if (Application.Current is null)
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
                 {
-                    return;
+                    ApplyFlowDirection(Window);
                 }
-
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
-                    {
-                        ApplyFlowDirection(Window);
-                    }
-                });
-            }
+            });
         }
 
         public static bool IsRightToLeftText(string Text)
@@ -112,6 +110,11 @@ namespace Sucrose.Resources.Helper
 
             EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
             {
+                if (SRMI.CurrentFlowDirection == FlowDirection.LeftToRight)
+                {
+                    return;
+                }
+
                 if (Sender is FrameworkElement Element)
                 {
                     Window Window = Element is Window W ? W : Window.GetWindow(Element);
