@@ -1,6 +1,5 @@
 using System.Globalization;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
 using SEAT = Skylark.Enum.AssemblyType;
@@ -57,22 +56,31 @@ namespace Sucrose.Resources.Helper
         /// </summary>
         public static void SetFlowDirection(string Lang)
         {
-            SRMI.CurrentFlowDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+            FlowDirection NewDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
-            RegisterFlowDirection();
-
-            if (Application.Current is null)
+            if (NewDirection == FlowDirection.LeftToRight && !SRMI.FlowDirectionRegistered)
             {
-                return;
+                SRMI.CurrentFlowDirection = NewDirection;
             }
-
-            Application.Current.Dispatcher.Invoke(() =>
+            else
             {
-                foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+                SRMI.CurrentFlowDirection = NewDirection;
+
+                RegisterFlowDirection();
+
+                if (Application.Current is null)
                 {
-                    ApplyFlowDirection(Window);
+                    return;
                 }
-            });
+
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+                    {
+                        ApplyFlowDirection(Window);
+                    }
+                });
+            }
         }
 
         public static bool IsRightToLeftText(string Text)
