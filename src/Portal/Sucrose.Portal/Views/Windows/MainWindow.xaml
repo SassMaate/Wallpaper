@@ -48,6 +48,7 @@
                         xag:AnimationBehavior.CacheFramesInMemory="False"
                         xag:AnimationBehavior.RepeatBehavior="Forever"
                         xag:AnimationBehavior.SourceUri="{Binding ViewModel.Backgrounder, Mode=OneWay}"
+                        FlowDirection="LeftToRight"
                         Stretch="{Binding ViewModel.Stretch, Mode=OneWay}" />
                 </VisualBrush.Visual>
             </VisualBrush>

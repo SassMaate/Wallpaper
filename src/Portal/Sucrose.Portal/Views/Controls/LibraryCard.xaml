@@ -119,7 +119,10 @@
             </Border>
 
             <Grid x:Name="Card" Visibility="Hidden">
-                <Rectangle RadiusX="10" RadiusY="10">
+                <Rectangle
+                    FlowDirection="LeftToRight"
+                    RadiusX="10"
+                    RadiusY="10">
                     <Rectangle.Fill>
                         <VisualBrush Stretch="UniformToFill">
                             <VisualBrush.Visual>
