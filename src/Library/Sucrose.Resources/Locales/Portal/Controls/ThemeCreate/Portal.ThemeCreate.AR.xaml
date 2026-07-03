@@ -8,11 +8,11 @@
     <system:String x:Key="Portal.ThemeCreate.Create">إنشاء</system:String>
     <system:String x:Key="Portal.ThemeCreate.Creating">جارٍ الإنشاء</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Gif">سِمة GIF</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Gif.Description">أنشئ سِمتك الخاصة بتنسيق GIF.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif">سِمة Gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif.Description">أنشئ سِمتك الخاصة بتنسيق Gif.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Url">سِمة URL</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Url.Description">أنشئ سِمتك الخاصة بتنسيق URL.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url">سِمة Url</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url.Description">أنشئ سِمتك الخاصة بتنسيق Url.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.Web">سِمة Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.Web.Description">أنشئ سِمتك الخاصة بتنسيق Web.</system:String>
@@ -26,7 +26,7 @@
     <system:String x:Key="Portal.ThemeCreate.Application">سِمة Application</system:String>
     <system:String x:Key="Portal.ThemeCreate.Application.Description">أنشئ سِمتك الخاصة بتنسيق Application.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl">URL</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags">الوسوم</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">العنوان</system:String>
