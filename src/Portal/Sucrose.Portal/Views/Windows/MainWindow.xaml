@@ -313,10 +313,9 @@
                     Text="{DynamicResource Portal.Release}" />
             </StatusBarItem>
             <StatusBarItem Grid.Column="2" Margin="4,0,4,0">
-                <TextBlock
-                    FontSize="12"
-                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                    Text="{Binding ViewModel.Framework, Mode=OneWay}" />
+                <TextBlock FontSize="12" Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+                    <Run FlowDirection="LeftToRight" Text="{Binding ViewModel.Framework, Mode=OneWay}" />
+                </TextBlock>
             </StatusBarItem>
             <StatusBarItem Grid.Column="3" Margin="4,0,4,0">
                 <TextBlock
