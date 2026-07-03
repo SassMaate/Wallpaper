@@ -72,7 +72,8 @@ namespace Sucrose.Shared.Space.Manage
             [SSDEET.XavierLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.XavierLive), SMMRA.XavierLive),
             [SSDEET.WebViewLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.WebViewLive), SMMRA.WebViewLive),
             [SSDEET.CefSharpLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.CefSharpLive), SMMRA.CefSharpLive),
-            [SSDEET.MpvPlayerLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.MpvPlayerLive), SMMRA.MpvPlayerLive)
+            [SSDEET.MpvPlayerLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.MpvPlayerLive), SMMRA.MpvPlayerLive),
+            [SSDEET.VlcPlayerLive] = Path.Combine(Folder, Path.GetFileNameWithoutExtension(SMMRA.VlcPlayerLive), SMMRA.VlcPlayerLive)
         };
 
         public static Dictionary<string, string> TextEngineLive => new()
@@ -83,7 +84,8 @@ namespace Sucrose.Shared.Space.Manage
             [SMMRA.XavierLive] = EngineLive[SSDEET.XavierLive],
             [SMMRA.WebViewLive] = EngineLive[SSDEET.WebViewLive],
             [SMMRA.CefSharpLive] = EngineLive[SSDEET.CefSharpLive],
-            [SMMRA.MpvPlayerLive] = EngineLive[SSDEET.MpvPlayerLive]
+            [SMMRA.MpvPlayerLive] = EngineLive[SSDEET.MpvPlayerLive],
+            [SMMRA.VlcPlayerLive] = EngineLive[SSDEET.VlcPlayerLive]
         };
     }
 }

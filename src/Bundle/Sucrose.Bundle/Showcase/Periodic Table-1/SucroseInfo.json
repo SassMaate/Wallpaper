@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Periodic Table",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "الجدول الدوري",
+      "Description": "الجدول الدوري التفاعلي للعناصر."
+    },
+    "CS": {
+      "Title": "Periodická tabulka",
+      "Description": "Interaktivní periodická tabulka prvků."
+    },
+    "DA": {
+      "Title": "Det periodiske system",
+      "Description": "Interaktivt periodisk system af elementer."
+    },
     "DE": {
       "Title": "Periodensystem",
       "Description": "Interaktive Periodentabelle der Elemente."
+    },
+    "EL": {
+      "Title": "Περιοδικός Πίνακας",
+      "Description": "Διαδραστικός περιοδικός πίνακας στοιχείων."
     },
     "ES": {
       "Title": "Tabla Periódica",
@@ -27,21 +43,69 @@
       "Title": "Tableau Périodique",
       "Description": "Tableau périodique interactif des éléments."
     },
+    "HE": {
+      "Title": "הטבלה המחזורית",
+      "Description": "טבלה מחזורית אינטראקטיבית של יסודות."
+    },
     "HI": {
       "Title": "आवर्त सारणी",
       "Description": "तत्वों की इंटरैक्टिव आवर्त सारणी।"
+    },
+    "ID": {
+      "Title": "Tabel Periodik",
+      "Description": "Tabel periodik unsur interaktif."
+    },
+    "IT": {
+      "Title": "Tavola periodica",
+      "Description": "Tavola periodica interattiva degli elementi."
+    },
+    "JA": {
+      "Title": "周期表",
+      "Description": "元素のインタラクティブな周期表。"
+    },
+    "KO": {
+      "Title": "주기율표",
+      "Description": "대화형 원소 주기율표입니다."
+    },
+    "MS": {
+      "Title": "Jadual Berkala",
+      "Description": "Jadual berkala interaktif unsur."
+    },
+    "NB": {
+      "Title": "Periodesystemet",
+      "Description": "Interaktiv periodisk tabell over elementer."
+    },
+    "NL": {
+      "Title": "Periodiek Systeem",
+      "Description": "Interactief periodiek systeem der elementen."
     },
     "PL": {
       "Title": "Układ Okresowy",
       "Description": "Interaktywna tabela okresowa pierwiastków."
     },
+    "PT": {
+      "Title": "Tabela Periódica",
+      "Description": "Tabela periódica interativa de elementos."
+    },
+    "RO": {
+      "Title": "Tabel periodic",
+      "Description": "Tabel periodic interactiv al elementelor."
+    },
     "RU": {
       "Title": "Периодическая таблица",
       "Description": "Интерактивная периодическая таблица элементов."
     },
+    "SV": {
+      "Title": "Periodiska systemet",
+      "Description": "Interaktivt periodiskt system för element."
+    },
     "TR": {
       "Title": "Periyodik Tablo",
       "Description": "Etkileşimli elementler periyodik tablosu."
+    },
+    "UK": {
+      "Title": "Періодична таблиця",
+      "Description": "Інтерактивна періодична система елементів."
     },
     "ZH": {
       "Title": "元素周期表",

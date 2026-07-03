@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Spenden</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Allgemein</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium-Geschäft</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Persönlich</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Hintergrundbild</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Leistung</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Helle Thema</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Andere Optionen</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium-Themenladen</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Spendenoptionen</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Hintergrundbild Erstellen</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Hintergrundwechsel</system:String>

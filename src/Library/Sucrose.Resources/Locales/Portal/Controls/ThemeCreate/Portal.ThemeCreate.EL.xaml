@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Εφαρμογή</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Περιγραφή</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Παρακαλούμε εισάγετε μια έγκυρη διεύθυνση Url</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Παρακαλούμε εισάγετε μια έγκυρη διεύθυνση url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Επιλέξτε μια ιστοσελίδα</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Παρακαλούμε εισάγετε έγκυρες ετικέτες θέματος</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Παρακαλούμε εισάγετε έναν έγκυρο τίτλο</system:String>
@@ -58,14 +58,14 @@
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">Επιλέξτε Αρχείο Βίντεο</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">Αρχεία Βίντεο (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Σύρετε και αποθέστε το αρχείο GIF εδώ</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Σύρετε και αποθέστε το αρχείο Gif εδώ</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">Σύρετε και αποθέστε το αρχείο video εδώ</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">Επιλογή Εξωφύλλου</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">Αρχεία Εικόνας (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">Επιλογή Αρχείου Προεπισκόπησης</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">Αρχεία GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">Αρχεία Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.WebSource.Title">Επιλέξτε Ιστοσελίδα</system:String>
     <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">Ιστοσελίδες (*.html)|*.html</system:String>

@@ -1,0 +1,58 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.GeneralSettingPage.Title">GeneralSettingPage</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationLanguage">שפת יישום</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationLanguage.Description">בחר את השפה שבה ברצונך להציג את האפליקציה.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup">הפעל בעת ההפעלה</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Description">על מנת להפעיל את הטפט, Sucrose חייב לרוץ בהתחלה ברקע.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Startup.None">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Startup.Normal">Normal</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Startup.Priority">עֲדִיפוּת</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Startup.Scheduler">שָׁעוֹן עֶצֶר</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Warning.Close">אני מבין</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Warning.Title">אזהרת זכויות מנהל</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.ApplicationStartup.Warning.Message">אתה חייב להיות בעל זכויות מנהל כדי לשנות את סטטוס הריצה בעת האתחול.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon">סמל אזור הודעות</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Description">נראות מגש המערכת. Sucrose ימשיך לפעול בסתר.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Hide">בִּלתִי נִרְאֶה</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.Notify.Show">נִרְאֶה</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.NotifyIcon.NotifyExit">סגור את כל יישומי Sucrose כאשר מגש המערכת סגור</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop">רקע חלון</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.Description">הוא משמש להתאמה אישית של הרקע של חלון היישום.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock">למרבה הצער, קובץ התמונה שבחרת נמצא בשימוש בתהליך אחר</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title">בחר תמונת רקע</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access">למרבה הצער, אין לך הרשאה לגשת לקובץ התמונה שבחרת.</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter">קבצי תמונה (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select">בחר תמונת רקע</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch">גודל רקע:</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.WindowBackdrop.BackdropOpacity">אטימות רקע (%):</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume">רמת קול</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.Description">נפח תקף עבור כל הטפטים.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeActive">הפעל אודיו רק כאשר כל האפליקציות שקטות</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeDesktop">הפעל אודיו רק כאשר שולחן העבודה כולל מיקוד</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity">דיוק (שניות):</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary">מיקום הספרייה</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.Description">המיקום שבו יישמרו ערכות הנושא שהוספת לספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move">אנא המתן רגע בזמן שהמיקום משתנה</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty">אנא בחר תיקיה ריקה</system:String>
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access">מצטערים, אין לך גישה למיקום החדש</system:String>
+
+    <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">העבר את הספרייה הקיימת שלך למיקום החדש</system:String>
+</ResourceDictionary>

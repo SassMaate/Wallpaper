@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Mengerti</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Peringatan Publikasi</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Tema yang dipilih sudah diunduh dari toko.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Mengerti</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Peringatan Publikasi</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Tema yang dipilih sudah diunduh dari toko premium.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Mengerti</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Peringatan Ekspor</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Tema yang dipilih tidak dapat diekspor karena diunduh dari toko premium.</system:String>
 </ResourceDictionary>

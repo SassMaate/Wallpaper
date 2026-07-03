@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">حسنًا</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">تحذير النشر</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">السِمة المحدّدة مثبَّتة بالفعل من المتجر.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">حسنًا</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">تحذير النشر</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">السِمة المحدّدة مثبَّتة بالفعل من المتجر المميَّز.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">حسنًا</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">تحذير التصدير</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">لا يمكن تصدير السِمة المحدّدة لأنها مثبَّتة من المتجر المميَّز.</system:String>
 </ResourceDictionary>

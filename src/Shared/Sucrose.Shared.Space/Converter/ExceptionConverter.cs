@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Diagnostics;
 using System.Reflection;
@@ -45,8 +45,8 @@ namespace Sucrose.Shared.Space.Converter
                     frameList.Add(new SSSISFD
                     {
                         FileName = frame.GetFileName(),
-                        Method = frame.GetMethod().ToString(),
                         LineNumber = frame.GetFileLineNumber(),
+                        Method = frame.GetMethod()?.ToString(),
                         ColumnNumber = frame.GetFileColumnNumber()
                     });
                 }
@@ -66,10 +66,7 @@ namespace Sucrose.Shared.Space.Converter
 
             Exception exception = TryCreateInstance(exceptionType, serializableException.Message) ?? TryCreateInstanceWithReflection(exceptionType, serializableException.Message);
 
-            if (exception == null)
-            {
-                exception = TryCreateInstanceWithConstructor(exceptionType, serializableException.Message);
-            }
+            exception ??= TryCreateInstanceWithConstructor(exceptionType, serializableException.Message) ?? new Exception(serializableException.Message);
 
             exception.HelpLink = serializableException.HelpURL;
 
@@ -176,9 +173,9 @@ namespace Sucrose.Shared.Space.Converter
         {
             try
             {
-                ConstructorInfo constructor = exceptionType.GetConstructor(new[] { typeof(string), typeof(Exception) });
+                ConstructorInfo constructor = exceptionType.GetConstructor([typeof(string), typeof(Exception)]);
 
-                return (Exception)constructor?.Invoke(new object[] { message, null }) ?? (Exception)Activator.CreateInstance(exceptionType, message) ?? (Exception)Activator.CreateInstance(exceptionType);
+                return (Exception)constructor?.Invoke([message, null]) ?? (Exception)Activator.CreateInstance(exceptionType, message) ?? (Exception)Activator.CreateInstance(exceptionType);
             }
             catch
             {

@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.5",
+  "Version": "1.0.0.6",
   "Title": "Triangles and Light",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "المثلثات والضوء",
+      "Description": "مولد نمط المثلث مع الضوء الذي يتبع المؤشر."
+    },
+    "CS": {
+      "Title": "Trojúhelníky a světlo",
+      "Description": "Generátor trojúhelníkových vzorů se světlem, které sleduje kurzor."
+    },
+    "DA": {
+      "Title": "Trekanter og lys",
+      "Description": "Trekantmønstergenerator med lys, der følger markøren."
+    },
     "DE": {
       "Title": "Dreiecke und Licht",
       "Description": "Dreiecksmuster-Generator mit Licht, das dem Cursor folgt."
+    },
+    "EL": {
+      "Title": "Τρίγωνα και Φως",
+      "Description": "Τριγωνική γεννήτρια μοτίβων με φως που ακολουθεί τον κέρσορα."
     },
     "ES": {
       "Title": "Triángulos y Luz",
@@ -27,21 +43,69 @@
       "Title": "Triangles et Lumière",
       "Description": "Générateur de motifs triangulaires avec lumière suivant le curseur."
     },
+    "HE": {
+      "Title": "משולשים ואור",
+      "Description": "מחולל דפוסי משולשים עם אור העוקב אחר הסמן."
+    },
     "HI": {
       "Title": "त्रिकोण और प्रकाश",
       "Description": "कर्सर का अनुसरण करने वाले प्रकाश के साथ त्रिकोण पैटर्न जनरेटर।"
+    },
+    "ID": {
+      "Title": "Segitiga dan Cahaya",
+      "Description": "Generator pola segitiga dengan cahaya yang mengikuti kursor."
+    },
+    "IT": {
+      "Title": "Triangoli e Luce",
+      "Description": "Generatore di motivi triangolari con luce che segue il cursore."
+    },
+    "JA": {
+      "Title": "三角形と光",
+      "Description": "カーソルを追従するライトを備えた三角形のパターン ジェネレーター。"
+    },
+    "KO": {
+      "Title": "삼각형과 빛",
+      "Description": "커서를 따라가는 빛이 있는 삼각형 패턴 생성기입니다."
+    },
+    "MS": {
+      "Title": "Segitiga dan Cahaya",
+      "Description": "Penjana corak segi tiga dengan cahaya mengikut kursor."
+    },
+    "NB": {
+      "Title": "Trekanter og lys",
+      "Description": "Trekantmønstergenerator med lys som følger markøren."
+    },
+    "NL": {
+      "Title": "Driehoeken en licht",
+      "Description": "Driehoekspatroongenerator met licht dat de cursor volgt."
     },
     "PL": {
       "Title": "Trójkąty i Światło",
       "Description": "Generator wzorów trójkątów z światłem podążającym za kursorem."
     },
+    "PT": {
+      "Title": "Triângulos e Luz",
+      "Description": "Gerador de padrão triangular com luz que segue o cursor."
+    },
+    "RO": {
+      "Title": "Triunghiuri și Lumină",
+      "Description": "Generator de modele de triunghi cu lumină care urmează cursorul."
+    },
     "RU": {
       "Title": "Треугольники и свет",
       "Description": "Генератор треугольных узоров со светом, следующим за курсором."
     },
+    "SV": {
+      "Title": "Trianglar och ljus",
+      "Description": "Triangelmönstergenerator med ljus som följer markören."
+    },
     "TR": {
       "Title": "Üçgenler ve Işık",
       "Description": "İmleci takip eden ışık ile üçgen desen üreteci."
+    },
+    "UK": {
+      "Title": "Трикутники і світло",
+      "Description": "Генератор візерунка трикутника зі світлом, що слідує за курсором."
     },
     "ZH": {
       "Title": "三角形与光",

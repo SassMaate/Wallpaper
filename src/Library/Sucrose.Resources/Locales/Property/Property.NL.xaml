@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Alleen voor WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Alleen voor CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Alleen voor MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Alleen voor VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Tint</system:String>
     <system:String x:Key="Property.Localization.Blur">Vervaging</system:String>

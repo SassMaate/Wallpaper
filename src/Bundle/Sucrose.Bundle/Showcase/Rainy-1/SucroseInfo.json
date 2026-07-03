@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Rainy",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -16,9 +16,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "ممطر",
+      "Description": "جزيئات المطر قابلة للتخصيص."
+    },
+    "CS": {
+      "Title": "Deštivý",
+      "Description": "Přizpůsobitelné částice deště."
+    },
+    "DA": {
+      "Title": "Regnfuldt",
+      "Description": "Regnpartikler, der kan tilpasses."
+    },
     "DE": {
       "Title": "Regnerisch",
       "Description": "Anpassbare Regenpartikel."
+    },
+    "EL": {
+      "Title": "Βροχερό",
+      "Description": "Προσαρμόσιμα σωματίδια βροχής."
     },
     "ES": {
       "Title": "Lluvioso",
@@ -28,21 +44,69 @@
       "Title": "Pluvieux",
       "Description": "Particules de pluie personnalisables."
     },
+    "HE": {
+      "Title": "גָשׁוּם",
+      "Description": "חלקיקי גשם הניתנים להתאמה אישית."
+    },
     "HI": {
       "Title": "बारिश",
       "Description": "अनुकूलन योग्य बारिश के कण।"
+    },
+    "ID": {
+      "Title": "Hujan",
+      "Description": "Partikel hujan yang dapat disesuaikan."
+    },
+    "IT": {
+      "Title": "Piovoso",
+      "Description": "Particelle di pioggia personalizzabili."
+    },
+    "JA": {
+      "Title": "雨が降る",
+      "Description": "カスタマイズ可能な雨の粒子。"
+    },
+    "KO": {
+      "Title": "비오는 날",
+      "Description": "맞춤형 비 입자."
+    },
+    "MS": {
+      "Title": "Hujan",
+      "Description": "Zarah hujan yang boleh disesuaikan."
+    },
+    "NB": {
+      "Title": "Regnfullt",
+      "Description": "Tilpassbare regnpartikler."
+    },
+    "NL": {
+      "Title": "Regenachtig",
+      "Description": "Aanpasbare regendeeltjes."
     },
     "PL": {
       "Title": "Deszczowy",
       "Description": "Konfigurowalne cząsteczki deszczu."
     },
+    "PT": {
+      "Title": "Chuvoso",
+      "Description": "Partículas de chuva personalizáveis."
+    },
+    "RO": {
+      "Title": "ploios",
+      "Description": "Particule de ploaie personalizabile."
+    },
     "RU": {
       "Title": "Дождливый",
       "Description": "Настраиваемые частицы дождя."
     },
+    "SV": {
+      "Title": "Regnigt",
+      "Description": "Anpassningsbara regnpartiklar."
+    },
     "TR": {
       "Title": "Yağmurlu",
       "Description": "Özelleştirilebilir yağmur parçacıkları."
+    },
+    "UK": {
+      "Title": "Дощова",
+      "Description": "Настроювані частинки дощу."
     },
     "ZH": {
       "Title": "下雨天",

@@ -1,0 +1,27 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.Area.Log">יוֹמִי</system:String>
+    <system:String x:Key="Portal.Area.Data">נְתוּנִים</system:String>
+    <system:String x:Key="Portal.Area.Hook">וָו</system:String>
+    <system:String x:Key="Portal.Area.Cache">מטמון</system:String>
+    <system:String x:Key="Portal.Area.Reset">אִתחוּל</system:String>
+    <system:String x:Key="Portal.Area.Sound">קוֹל</system:String>
+    <system:String x:Key="Portal.Area.Store">מרכז קניות</system:String>
+    <system:String x:Key="Portal.Area.Backup">גיבוי</system:String>
+    <system:String x:Key="Portal.Area.Donate">תְרוּמָה</system:String>
+    <system:String x:Key="Portal.Area.Laptop">מחשב נייד</system:String>
+    <system:String x:Key="Portal.Area.System">מַעֲרֶכֶת</system:String>
+    <system:String x:Key="Portal.Area.Update">לְעַדְכֵּן</system:String>
+    <system:String x:Key="Portal.Area.Engines">מנועים</system:String>
+    <system:String x:Key="Portal.Area.Library">סִפְרִיָה</system:String>
+    <system:String x:Key="Portal.Area.Support">תְמִיכָה</system:String>
+    <system:String x:Key="Portal.Area.Windows">Windows</system:String>
+    <system:String x:Key="Portal.Area.Priority">עֲדִיפוּת</system:String>
+    <system:String x:Key="Portal.Area.Developer">מפתח</system:String>
+    <system:String x:Key="Portal.Area.Extensions">תוספים</system:String>
+    <system:String x:Key="Portal.Area.OperatingSystem">מַעֲרֶכֶת הַפעָלָה</system:String>
+    <system:String x:Key="Portal.Area.SystemResources">משאבי מערכת</system:String>
+    <system:String x:Key="Portal.Area.AppearanceBehavior">מראה והתנהגות</system:String>
+</ResourceDictionary>

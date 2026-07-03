@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">समझ गया</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">प्रकाशन चेतावनी</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">चयनित थीम पहले से ही स्टोर से डाउनलोड की जा चुकी है।</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">समझ गया</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">प्रकाशन चेतावनी</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">चयनित थीम पहले से ही प्रीमियम स्टोर से डाउनलोड की जा चुकी है।</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">समझ गया</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">निर्यात चेतावनी</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">चयनित थीम को निर्यात नहीं किया जा सकता क्योंकि यह प्रीमियम स्टोर से डाउनलोड की गई है।</system:String>
 </ResourceDictionary>

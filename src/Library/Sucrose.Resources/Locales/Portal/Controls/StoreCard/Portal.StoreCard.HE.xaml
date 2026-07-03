@@ -1,0 +1,16 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.StoreCard.TitleText">כּוֹתֶרֶת</system:String>
+    <system:String x:Key="Portal.StoreCard.DescriptionText">הֶסבֵּר</system:String>
+
+    <system:String x:Key="Portal.StoreCard.VersionTip">עדכן Sucrose כדי להשתמש בערכת נושא זה</system:String>
+
+    <system:String x:Key="Portal.StoreCard.MenuReport">דִוּוּחַ</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdate">בדוק אם קיימים עדכונים</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuInstall">העלה</system:String>
+    <system:String x:Key="Portal.StoreCard.MenuUpdating">מחפש עדכונים</system:String>
+
+    <system:String x:Key="Portal.StoreCard.Incompatible">מְנוּגָד</system:String>
+</ResourceDictionary>

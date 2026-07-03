@@ -1,0 +1,142 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.Enum.Stretch.Fill">לְמַלֵא</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.None">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.Uniform">יַחֲסִי</system:String>
+    <system:String x:Key="Portal.Enum.Stretch.UniformToFill">מלא באופן פרופורציונלי</system:String>
+
+    <system:String x:Key="Portal.Enum.SortModeType.Name">שֵׁם</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.None">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.Creation">יצירה</system:String>
+    <system:String x:Key="Portal.Enum.SortModeType.Modification">מִשְׁתַנֶה</system:String>
+
+    <system:String x:Key="Portal.Enum.InputType.Close">סָגוּר</system:String>
+    <system:String x:Key="Portal.Enum.InputType.OnlyMouse">עכבר בלבד</system:String>
+    <system:String x:Key="Portal.Enum.InputType.OnlyKeyboard">מקלדת בלבד</system:String>
+    <system:String x:Key="Portal.Enum.InputType.MouseKeyboard">עכבר ומקלדת</system:String>
+
+    <system:String x:Key="Portal.Enum.StretchType.Fill">לְמַלֵא</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.None">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.Uniform">יַחֲסִי</system:String>
+    <system:String x:Key="Portal.Enum.StretchType.UniformToFill">מלא באופן פרופורציונלי</system:String>
+
+    <system:String x:Key="Portal.Enum.ReportThemeType.Spam">Spam</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Other">אַחֵר</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Nudity">עֵירוֹם</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Harmful">מזיק</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Violence">אַלִימוּת</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.Malicious">זְדוֹנִי</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.CopyrightViolation">הפרת זכויות יוצרים</system:String>
+    <system:String x:Key="Portal.Enum.ReportThemeType.MisleadingInformation">מידע מטעה</system:String>
+
+    <system:String x:Key="Portal.Enum.CommunicationType.Pipe">Pipe</system:String>
+    <system:String x:Key="Portal.Enum.CommunicationType.Signal">Signal</system:String>
+    <system:String x:Key="Portal.Enum.CommunicationType.Transmission">Transmission</system:String>
+
+    <system:String x:Key="Portal.Enum.PerformanceType.Close">לִסְגוֹר</system:String>
+    <system:String x:Key="Portal.Enum.PerformanceType.Pause">לְהַפְסִיק</system:String>
+    <system:String x:Key="Portal.Enum.PerformanceType.Resume">לְתַחְזֵק</system:String>
+
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Auto">אוֹטוֹמָטִי</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Mica">נָצִיץ</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.None">אַף לֹא אֶחָד</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Tabbed">עם כרטיסיות</system:String>
+    <system:String x:Key="Portal.Enum.WindowBackdropType.Acrylic">אַקרִילִי</system:String>
+
+    <system:String x:Key="Portal.Enum.InputModuleType.Native">Native</system:String>
+    <system:String x:Key="Portal.Enum.InputModuleType.RawInput">RawInput</system:String>
+
+    <system:String x:Key="Portal.Enum.StoreServerType.GitHub">GitHub</system:String>
+    <system:String x:Key="Portal.Enum.StoreServerType.Soferity">Soferity</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateAutoType.Visible">נִרְאֶה</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.SemiSilent">לפעמים גלוי</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.UpdateSilent">עדכון בלתי נראה</system:String>
+    <system:String x:Key="Portal.Enum.UpdateAutoType.CompleteSilent">לגמרי בלתי נראה</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateModuleType.Native">Native</system:String>
+    <system:String x:Key="Portal.Enum.UpdateModuleType.Downloader">Downloader</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateServerType.GitHub">GitHub</system:String>
+    <system:String x:Key="Portal.Enum.UpdateServerType.Soferity">Soferity</system:String>
+
+    <system:String x:Key="Portal.Enum.PausePerformanceType.Heavy">כָּבֵד</system:String>
+    <system:String x:Key="Portal.Enum.PausePerformanceType.Light">אוֹר</system:String>
+
+    <system:String x:Key="Portal.Enum.SortKindType.Ascending">עולה [A-Z]</system:String>
+    <system:String x:Key="Portal.Enum.SortKindType.Descending">מופחת [Z-A]</system:String>
+
+    <system:String x:Key="Portal.Enum.ExpandScreenType.Default">בְּרִירַת מֶחדָל</system:String>
+    <system:String x:Key="Portal.Enum.ExpandScreenType.Advanced">מְפוּתָח</system:String>
+
+    <system:String x:Key="Portal.Enum.TransitionCycleType.Random">אַקרַאִי</system:String>
+    <system:String x:Key="Portal.Enum.TransitionCycleType.Sequential">עוֹקֵב</system:String>
+
+    <system:String x:Key="Portal.Enum.ScreenType.WorkingArea">סביבת עבודה</system:String>
+    <system:String x:Key="Portal.Enum.ScreenType.DisplayBound">מגבלות מסך</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateChannelType.Release">בְּרִירַת מֶחדָל</system:String>
+    <system:String x:Key="Portal.Enum.UpdateChannelType.PreRelease">מפתח</system:String>
+
+    <system:String x:Key="Portal.Enum.DuplicateScreenType.Default">בְּרִירַת מֶחדָל</system:String>
+    <system:String x:Key="Portal.Enum.DuplicateScreenType.Advanced">מְפוּתָח</system:String>
+
+    <system:String x:Key="Portal.Enum.UpdateExtensionType.Compressed">דָחוּס</system:String>
+    <system:String x:Key="Portal.Enum.UpdateExtensionType.Executable">בר הפעלה</system:String>
+
+    <system:String x:Key="Portal.Enum.CompatibilityType.Pass">תוצאה מוצלחת</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Tags">ל'Tags' יש יותר מדי ערכים</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Type">ערכת הנושא נוצרה עבור סוג שהאפליקציה אינה תומכת בו</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Title">ערך 'Title' ריק או ארוך מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Access">אין לך הרשאה לגשת לקובץ הרלוונטי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Author">ערך 'Author' ריק או ארוך מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Folder">קבצי ערכות נושא אינם נמצאים בספריה הראשית של הארכיון</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Locked">הקובץ הרלוונטי נמצא בשימוש בתהליך אחר</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Source">הקובץ 'Source' לא נמצא</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Contact">ערך 'Contact' ריק או ארוך מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Encrypt">הקובץ הרלוונטי מוצפן</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Preview">קובץ 'Preview' לא נמצא</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ZipType">הקובץ הרלוונטי אינו למעשה קובץ '.zip'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InfoFile">הקובץ 'SucroseInfo.json' לא נמצא</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.LoopMode">ערך 'LoopMode' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.NotFound">הקובץ הרלוונטי לא נמצא</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Arguments">ערך 'Arguments' ארוך מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyInfo">הקובץ 'SucroseInfo.json' ריק</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Extension">לקובץ הרלוונטי אין סיומת '.zip'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">ערך 'ThemeType' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">הקובץ 'Thumbnail' לא נמצא</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">ערכת הנושא נוצרה עבור גרסה גבוהה יותר של האפליקציה</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidUrl">'Source' מכיל ערך לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemBios">ערך 'SystemBios' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemDate">ערך 'SystemDate' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Description">ערך 'Description' ריק או ארוך מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidFile">קובץ לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidInfo">הקובץ 'SucroseInfo.json' אינו חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidTags">ערכי 'Tags' קצרים מדי או ארוכים מדי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.ShuffleMode">ערך 'ShuffleMode' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.StretchMode">ערך 'StretchMode' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemAudio">ערך 'SystemAudio' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemTheme">ערך 'SystemTheme' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.TriggerTime">ערך 'TriggerTime' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.VolumeLevel">ערך 'VolumeLevel' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.Localization">ערך 'Localization' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyList">ערך 'PropertyList' ריק</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemMemory">ערך לא חוקי 'SystemMemory'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemBattery">ערך 'SystemBattery' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">ערך 'SystemGraphic' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">ערך 'SystemNetwork' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">ערך 'SystemStorage' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">ערך 'Contact' אינו 'כתובת אתר' או 'כתובת דואר'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">הקובץ 'SucroseCompatible.json' ריק</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">הקובץ 'SucroseProperties.json' ריק</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">ערך לא חוקי 'SystemProcessor'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidExtension">סיומת קובץ לא חוקית</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyListener">ערך 'PropertyListener' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidCompatible">הקובץ 'SucroseCompatible.json' אינו חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidProperties">הקובץ 'SucroseProperties.json' אינו חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.SystemMotherboard">ערך 'SystemMotherboard' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.PropertyLocalization">ערך 'PropertyLocalization' לא חוקי</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.UnforeseenConsequences">השלכות בלתי צפויות</system:String>
+</ResourceDictionary>

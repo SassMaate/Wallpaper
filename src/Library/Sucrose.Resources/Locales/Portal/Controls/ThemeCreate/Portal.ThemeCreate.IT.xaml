@@ -44,7 +44,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Inserisci un titolo valido</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Inserisci un nome autore valido</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeContact.Hint">Inserisci un contatto valido</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Seleziona un file GIF per l'anteprima</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Hint">Seleziona un file Gif per l'anteprima</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeArguments.Hint">Inserisci argomenti validi per l'applicazione</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Hint">Seleziona un'immagine di copertina</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication.Hint">Seleziona un file di applicazione</system:String>
@@ -58,14 +58,14 @@
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">Seleziona File Video</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">File Video (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Trascina e rilascia il file GIF qui</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Trascina e rilascia il file Gif qui</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">Trascina e rilascia il file video qui</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">Seleziona Immagine di Copertina</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">File Immagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">Seleziona File GIF per l'Anteprima</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">File GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">Seleziona File Gif per l'Anteprima</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">File Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.WebSource.Title">Seleziona Pagina Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">Pagine Web (*.html)|*.html</system:String>

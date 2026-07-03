@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Kun for WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Kun for CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Kun for MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Kun for VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Fargetone</system:String>
     <system:String x:Key="Property.Localization.Blur">Uskarphet</system:String>

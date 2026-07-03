@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Δωρεά</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Σύστημα</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Γενικές</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Πρίμιουμ Κατάστημα</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Προσωπικές</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Ταπετσαρία</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Απόδοση</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Φωτεινό Θέμα</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Άλλες Επιλογές</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Πρίμιουμ Κατάστημα Θεμάτων</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Επιλογές Δωρεάς</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Δημιουργία Ταπετσαρίας</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Αλλαγή Ταπετσαρίας</system:String>

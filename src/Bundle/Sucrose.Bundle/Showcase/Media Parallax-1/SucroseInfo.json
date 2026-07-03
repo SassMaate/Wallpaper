@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.9",
+  "AppVersion": "26.6.19.0",
+  "Version": "1.0.1.1",
   "Title": "Media Parallax",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "المنظر الإعلامي",
+      "Description": "متخيل والموسيقى والماوس المنظر في واحد."
+    },
+    "CS": {
+      "Title": "Mediální paralaxa",
+      "Description": "Vizualizér, hudba a paralaxa myši v jednom."
+    },
+    "DA": {
+      "Title": "Medieparallakse",
+      "Description": "Visualizer, musik og museparallakse i ét."
+    },
     "DE": {
       "Title": "Medien-Parallax",
       "Description": "Visualizer, Musik- und Maus-Parallax in einem."
+    },
+    "EL": {
+      "Title": "Media Parallax",
+      "Description": "Οπτικοποιητής, μουσική και παράλλαξη ποντικιού σε ένα."
     },
     "ES": {
       "Title": "Paralaje de Medios",
@@ -27,21 +43,69 @@
       "Title": "Parallaxe Média",
       "Description": "Visualiseur, musique et parallaxe de souris en un."
     },
+    "HE": {
+      "Title": "פרלקס מדיה",
+      "Description": "Visualizer, מוזיקה ופרלקסה של עכבר באחד."
+    },
     "HI": {
       "Title": "मीडिया पैरालैक्स",
       "Description": "विज़ुअलाइज़र, संगीत और माउस पैरालैक्स एक में।"
+    },
+    "ID": {
+      "Title": "Paralaks Media",
+      "Description": "Visualizer, musik, dan paralaks mouse menjadi satu."
+    },
+    "IT": {
+      "Title": "Parallasse mediatica",
+      "Description": "Visualizzatore, musica e parallasse del mouse in uno."
+    },
+    "JA": {
+      "Title": "メディアパララックス",
+      "Description": "ビジュアライザー、音楽、マウスのパララックスを 1 つにまとめました。"
+    },
+    "KO": {
+      "Title": "미디어 시차",
+      "Description": "시각화 도구, 음악 및 마우스 시차가 하나로 통합되어 있습니다."
+    },
+    "MS": {
+      "Title": "Media Paralaks",
+      "Description": "Visualizer, muzik dan paralaks tetikus dalam satu."
+    },
+    "NB": {
+      "Title": "Medieparallakse",
+      "Description": "Visualizer, musikk og museparallakse i ett."
+    },
+    "NL": {
+      "Title": "Mediaparallax",
+      "Description": "Visualizer, muziek en muisparallax in één."
     },
     "PL": {
       "Title": "Paralaksa Mediów",
       "Description": "Wizualizer, muzyka i paralaksa myszy w jednym."
     },
+    "PT": {
+      "Title": "Paralaxe da mídia",
+      "Description": "Visualizador, música e paralaxe do mouse em um só."
+    },
+    "RO": {
+      "Title": "Media Parallax",
+      "Description": "Vizualizator, muzică și paralaxă a mouse-ului într-unul."
+    },
     "RU": {
       "Title": "Медиа параллакс",
       "Description": "Визуализатор, музыка и параллакс мыши в одном."
     },
+    "SV": {
+      "Title": "Media Parallax",
+      "Description": "Visualizer, musik och musparallax i ett."
+    },
     "TR": {
       "Title": "Medya Paralaks",
       "Description": "Görselleştirici, müzik ve fare paralaksı bir arada."
+    },
+    "UK": {
+      "Title": "Медіапаралакс",
+      "Description": "Візуалізатор, музика і паралакс миші в одному."
     },
     "ZH": {
       "Title": "媒体视差",

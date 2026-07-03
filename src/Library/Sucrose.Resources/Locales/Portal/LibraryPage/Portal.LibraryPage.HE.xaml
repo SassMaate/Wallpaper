@@ -1,0 +1,15 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="FullLibraryPage/Portal.FullLibraryPage.HE.xaml" />
+        <ResourceDictionary Source="EmptyLibraryPage/Portal.EmptyLibraryPage.HE.xaml" />
+        <ResourceDictionary Source="SearchLibraryPage/Portal.SearchLibraryPage.HE.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <system:String x:Key="Portal.LibraryPage.Title">LibraryPage</system:String>
+
+    <system:String x:Key="Portal.LibraryPage.Import.Successful">הנושא '{0}' נוסף בהצלחה לספרייה.</system:String>
+    <system:String x:Key="Portal.LibraryPage.Import.Unsuccessful">לא ניתן להוסיף את ערכת הנושא '{0}' לספרייה. סיבה: '{1}'.</system:String>
+</ResourceDictionary>

@@ -1,0 +1,60 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.PersonalSettingPage.Title">PersonalSettingPage</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Server">שרת חנות</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Server.Description">השרת שבו יוצגו הנושאים הרשומים בחנות.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Server.ServerHint">הערה: אם {0} נבחר כשרת, יש להזין {2} כדי להימנע ממגבלות בקשות. אחרת, ייתכן שתתקל בבעיות בגישה לנושאים בחנות. אם נבחר {1}, תהיה לך חוויית חנות חלקה יותר יחסית.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Duration">חידוש חנות</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Duration.Description">כמה זמן או לא יחודשו הנושאים הרשומים בחנות.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.StoreStart">הפעלה אוטומטית</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.StoreStart.Description">האם להגדיר אוטומטית את ערכת הנושא שהורדת מהחנות כטפט.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adult">תוכן לא בטוח</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Adult.Description">האם להציג תוכן המסומן כלא בטוח (NSFW) בחנות.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Confirm">אישור מחיקה</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Confirm.Description">האם לבקש אישור בעת מחיקת ערכות נושא מהספרייה.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Delete">נושאים שבורים</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Delete.Description">נושאים שבורים או חסרים בספרייה יימחקו אוטומטית.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Delete.DeleteHint">הערה: נדרשת זהירות. אחרת, זה עלול לגרום לאובדן נתונים.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.LibraryStart">הפעלה אוטומטית</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.LibraryStart.Description">האם להגדיר אוטומטית את הנושא שנוצר כטפט.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview">תצוגה מקדימה של ערכת נושא</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.Description">האם להציג תצוגה מקדימה של ערכות נושא המוצגות בריחוף.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.StorePreview">תצוגה מקדימה של החנות:</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.StorePreviewHide">הסתרת פרטים:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.LibraryPreview">תצוגה מקדימה של הספרייה:</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Preview.LibraryPreviewHide">הסתרת פרטים:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive">פריסה אדפטיבית</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.Description">התאם אישית את הפריסה או המרחק של הנושאים המוצגים.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.AdaptiveMargin">מרחק ריק (פיקסל):</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Adaptive.AdaptiveLayout">סדר פריסה (כמות):</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort">מיון ספרייה</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.Description">קבע באיזה פורמט וכיצד ימוינו הנושאים בספרייה שלך.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.SortMode">מצב מיון:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Sort.SortKind">סוג מיון:</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Store">עימוד בחנות</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Store.Description">קבע כמה ערכות נושא יהיו לכל עמוד בחנות.</system:String>
+
+    <system:String x:Key="Portal.PersonalSettingPage.Library">דפי ספרייה</system:String>
+    <system:String x:Key="Portal.PersonalSettingPage.Library.Description">קבע כמה ערכות נושא יהיו עבור כל עמוד בספרייה שלך.</system:String>
+</ResourceDictionary>

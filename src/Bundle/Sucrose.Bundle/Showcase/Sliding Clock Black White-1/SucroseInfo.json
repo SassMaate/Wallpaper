@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Sliding Clock Black & White",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -16,9 +16,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "انزلاق الساعة بالأبيض والأسود",
+      "Description": "توفر خلفية الشاشة المنزلقة تصميمًا بسيطًا لتتبع الوقت. اختر بين الأنماط باللون الأسود أو الأبيض، مع أرقام تنزلق بسلاسة، مما يضيف لمسة فنية حديثة إلى مساحة العمل الخاصة بك. إنها عملية ومهدئة بصريًا."
+    },
+    "CS": {
+      "Title": "Posuvné hodiny Black & White",
+      "Description": "Tapeta Sliding Clock nabízí minimalistický design pro sledování času. Vyberte si mezi černým nebo bílým stylem s čísly, která se hladce posouvají a dodávají vašemu pracovnímu prostoru moderní, umělecký nádech. Je funkční a vizuálně uklidňující."
+    },
+    "DA": {
+      "Title": "Skydeur sort/hvid",
+      "Description": "Sliding Clock-tapetet tilbyder et minimalistisk design til sporing af tid. Vælg mellem sorte eller hvide stilarter, med tal, der glider jævnt, og tilføjer et moderne, kunstnerisk touch til dit arbejdsområde. Det er både funktionelt og visuelt beroligende."
+    },
     "DE": {
       "Title": "Schiebende Uhr Schwarz & Weiß",
       "Description": "Das Sliding Clock Wallpaper bietet ein minimalistisches Design zur Zeiterfassung. Wähle zwischen schwarzen oder weißen Stilen, bei denen die Zahlen sanft gleiten, und füge deinem Arbeitsplatz einen modernen, künstlerischen Touch hinzu. Funktional und visuell beruhigend."
+    },
+    "EL": {
+      "Title": "Συρόμενο ρολόι Ασπρόμαυρο",
+      "Description": "Η ταπετσαρία Sliding Clock προσφέρει μινιμαλιστικό σχεδιασμό για παρακολούθηση χρόνου. Επιλέξτε ανάμεσα σε μαύρο ή λευκό στυλ, με αριθμούς που γλιστρούν ομαλά, προσθέτοντας μια μοντέρνα, καλλιτεχνική πινελιά στον χώρο εργασίας σας. Είναι τόσο λειτουργικό όσο και οπτικά καταπραϋντικό."
     },
     "ES": {
       "Title": "Reloj Deslizante Blanco y Negro",
@@ -28,21 +44,69 @@
       "Title": "Horloge Coulissante Noir & Blanc",
       "Description": "Le fond d'écran Sliding Clock propose un design minimaliste pour suivre le temps. Choisissez entre des styles noir ou blanc, avec des chiffres qui glissent doucement, ajoutant une touche moderne et artistique à votre espace de travail. À la fois fonctionnel et visuellement apaisant."
     },
+    "HE": {
+      "Title": "שעון הזזה שחור ולבן",
+      "Description": "טפט ה-Sliding Clock מציע עיצוב מינימליסטי למעקב אחר זמן. בחר בין סגנונות שחור או לבן, עם מספרים שמחליקים בצורה חלקה, ומוסיפים מגע מודרני ואמנותי לסביבת העבודה שלך. זה גם פונקציונלי וגם מרגיע מבחינה ויזואלית."
+    },
     "HI": {
       "Title": "स्लाइडिंग क्लॉक ब्लैक एंड व्हाइट",
       "Description": "स्लाइडिंग क्लॉक वॉलपेपर समय ट्रैक करने के लिए एक न्यूनतम डिज़ाइन प्रदान करता है। काले या सफेद शैलियों में से चुनें, संख्याएं सहजता से स्लाइड होती हैं, आपके कार्यक्षेत्र में आधुनिक, कलात्मक स्पर्श जोड़ती हैं। यह कार्यात्मक और दृश्य रूप से शांतिदायक है।"
+    },
+    "ID": {
+      "Title": "Jam Geser Hitam Putih",
+      "Description": "Wallpaper Jam Geser menawarkan desain minimalis untuk melacak waktu. Pilih antara gaya hitam atau putih, dengan angka yang meluncur mulus, menambahkan sentuhan modern dan artistik pada ruang kerja Anda. Ini fungsional dan menenangkan secara visual."
+    },
+    "IT": {
+      "Title": "Orologio scorrevole in bianco e nero",
+      "Description": "Lo sfondo Sliding Clock offre un design minimalista per tenere traccia del tempo. Scegli tra lo stile bianco o nero, con i numeri che scorrono dolcemente, aggiungendo un tocco moderno e artistico al tuo spazio di lavoro. È sia funzionale che visivamente rilassante."
+    },
+    "JA": {
+      "Title": "スライド時計 ブラック＆ホワイト",
+      "Description": "Sliding Clock の壁紙は、時間を追跡するためのシンプルなデザインを提供します。黒または白のスタイルを選択し、スムーズにスライドする数字を使用して、ワークスペースにモダンで芸術的な雰囲気を加えます。機能的でありながら見た目にも落ち着きます。"
+    },
+    "KO": {
+      "Title": "슬라이딩 시계 블랙 & 화이트",
+      "Description": "슬라이딩 시계 배경화면은 시간 추적을 위한 미니멀한 디자인을 제공합니다. 숫자가 부드럽게 미끄러지는 검은색 또는 흰색 스타일 중에서 선택하여 작업 공간에 현대적이고 예술적인 느낌을 더해보세요. 기능적일 뿐만 아니라 시각적으로도 안정감을 줍니다."
+    },
+    "MS": {
+      "Title": "Jam Gelongsor Hitam & Putih",
+      "Description": "Kertas dinding Jam Gelongsor menawarkan reka bentuk minimalis untuk menjejak masa. Pilih antara gaya hitam atau putih, dengan nombor yang meluncur dengan lancar, menambahkan sentuhan artistik moden pada ruang kerja anda. Ia berfungsi dan menenangkan secara visual."
+    },
+    "NB": {
+      "Title": "Skyve klokke svart og hvit",
+      "Description": "Sliding Clock-tapetet tilbyr en minimalistisk design for sporing av tid. Velg mellom svarte eller hvite stiler, med tall som glir jevnt og gir et moderne, kunstnerisk preg på arbeidsområdet ditt. Det er både funksjonelt og visuelt beroligende."
+    },
+    "NL": {
+      "Title": "Schuifklok Zwart & Wit",
+      "Description": "Het Sliding Clock-behang biedt een minimalistisch ontwerp voor het bijhouden van de tijd. Kies tussen zwarte of witte stijlen, met cijfers die soepel glijden, waardoor een modern, artistiek tintje aan uw werkruimte wordt toegevoegd. Het is zowel functioneel als visueel rustgevend."
     },
     "PL": {
       "Title": "Przesuwający Zegar Czarno-Biały",
       "Description": "Tapeta Sliding Clock oferuje minimalistyczny design do śledzenia czasu. Wybierz między czarnym a białym stylem, gdzie cyfry płynnie przesuwają się, dodając nowoczesny, artystyczny akcent do twojego miejsca pracy. Funkcjonalne i wizualnie uspokajające."
     },
+    "PT": {
+      "Title": "Relógio deslizante preto e branco",
+      "Description": "O papel de parede Sliding Clock oferece um design minimalista para monitorar o tempo. Escolha entre os estilos preto ou branco, com números que deslizam suavemente, adicionando um toque moderno e artístico ao seu espaço de trabalho. É funcional e visualmente relaxante."
+    },
+    "RO": {
+      "Title": "Ceas glisant alb-negru",
+      "Description": "Tapetul Sliding Clock oferă un design minimalist pentru urmărirea timpului. Alegeți între stiluri alb sau negru, cu numere care alunecă lin, adăugând o notă modernă și artistică spațiului dvs. de lucru. Este atât funcțional, cât și liniștitor vizual."
+    },
     "RU": {
       "Title": "Скользящие часы черно-белые",
       "Description": "Обои Sliding Clock предлагают минималистичный дизайн для отслеживания времени. Выбирайте между черным и белым стилями, цифры плавно скользят, добавляя современный художественный штрих вашему рабочему пространству. Функционально и визуально успокаивающе."
     },
+    "SV": {
+      "Title": "Skjutklocka Svart & Vit",
+      "Description": "Tapeten Sliding Clock erbjuder en minimalistisk design för att spåra tid. Välj mellan svarta eller vita stilar, med siffror som glider smidigt, vilket ger en modern, konstnärlig touch till din arbetsyta. Det är både funktionellt och visuellt lugnande."
+    },
     "TR": {
       "Title": "Kaydırmalı Saat Siyah & Beyaz",
       "Description": "Sliding Clock duvar kağıdı, zamanı takip etmek için minimalist bir tasarım sunar. Siyah veya beyaz stiller arasında seçim yapabilir, sayılar pürüzsüz kayarken çalışma alanınıza modern ve sanatsal bir dokunuş ekleyebilirsiniz. Hem işlevsel hem de görsel olarak rahatlatıcıdır."
+    },
+    "UK": {
+      "Title": "Розсувний годинник чорно-білий",
+      "Description": "Шпалери Sliding Clock пропонують мінімалістичний дизайн для відстеження часу. Вибирайте між чорним або білим стилями з цифрами, які плавно ковзають, додаючи сучасного, художнього відтінку вашому робочому простору. Це і функціонально, і візуально заспокоює."
     },
     "ZH": {
       "Title": "滑动时钟黑白款",

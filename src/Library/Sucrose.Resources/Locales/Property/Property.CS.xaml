@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Pouze pro WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Pouze pro CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Pouze pro MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Pouze pro VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Odstín</system:String>
     <system:String x:Key="Property.Localization.Blur">Rozmazání</system:String>

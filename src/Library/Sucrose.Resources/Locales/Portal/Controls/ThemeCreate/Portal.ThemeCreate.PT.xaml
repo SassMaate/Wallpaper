@@ -17,8 +17,8 @@
     <system:String x:Key="Portal.ThemeCreate.Web">Tema Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.Web.Description">Crie seu próprio tema no formato Web.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Video">Tema de Vídeo</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Video.Description">Crie seu próprio tema no formato de vídeo.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video">Tema de Video</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video.Description">Crie seu próprio tema no formato de Video.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.YouTube">Tema do YouTube</system:String>
     <system:String x:Key="Portal.ThemeCreate.YouTube.Description">Crie seu próprio tema no formato do YouTube.</system:String>
@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplicação</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Descrição</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Por favor, insira um Url válido</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Por favor, insira um url válido</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Selecionar uma página web</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Por favor, insira tags de tema válidas</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Por favor, insira um título válido</system:String>

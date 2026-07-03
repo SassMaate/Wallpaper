@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Applikasjon</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beskrivelse</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Vennligst oppgi en gyldig URL</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Vennligst oppgi en gyldig url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Velg en nettside</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Vennligst oppgi gyldige tema-merker</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Vennligst oppgi en gyldig tittel</system:String>

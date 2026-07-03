@@ -73,11 +73,21 @@ namespace Sucrose.Undo
                     }
                 }
 
-                try
+                if (Location != SUMI.UninstallPath)
                 {
-                    Directory.Delete(Location);
+                    try
+                    {
+                        Directory.Delete(Location, true);
+                    }
+                    catch
+                    {
+                        try
+                        {
+                            Directory.Delete(Location);
+                        }
+                        catch { }
+                    }
                 }
-                catch { }
             }
         }
 
@@ -103,7 +113,7 @@ namespace Sucrose.Undo
 
                 BatchContent.AppendLine("@echo off");
                 BatchContent.AppendLine("setlocal enabledelayedexpansion");
-                BatchContent.AppendLine($"taskkill /PID {Environment.ProcessId} /T /F > nul 2>&1");
+                BatchContent.AppendLine($"taskkill /PID {Environment.ProcessId} /F > nul 2>&1"); /* /T /F */
                 BatchContent.AppendLine("timeout /t 3 /nobreak > nul");
 
                 BatchContent.AppendLine($@"rd /s /q ""{SUMI.Undo}"" > nul 2>&1");

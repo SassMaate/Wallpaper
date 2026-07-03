@@ -108,7 +108,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.ThemeType">Valoare 'ThemeType' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Thumbnail">Fișierul 'Thumbnail' nu a fost găsit</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.AppVersion">Tema a fost creată pentru o versiune mai înaltă a aplicației</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidUrl">Valoarea 'Source' conține un URL nevalid</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidUrl">Valoarea 'Source' conține un Url nevalid</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemBios">Valoare 'SystemBios' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemDate">Valoare 'SystemDate' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.Description">Valoarea 'Description' este goală sau prea lungă</system:String>
@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Valoare 'SystemGraphic' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Valoare 'SystemNetwork' nevalidă</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Valoare 'SystemStorage' nevalidă</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Valoarea 'Contact' nu este nici un URL sau adresă de email</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Valoarea 'Contact' nu este nici un Url sau adresă de email</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Fișierul 'SucroseCompatible.json' este gol</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Fișierul 'SucroseProperties.json' este gol</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Valoare 'SystemProcessor' nevalidă</system:String>

@@ -79,6 +79,11 @@
       <Platform Solution="*|x64" Project="x64" />
       <Platform Solution="*|x86" Project="x86" />
     </Project>
+    <Project Path="Live/Sucrose.Live.VlcPlayer/Sucrose.Live.VlcPlayer.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
     <Project Path="Live/Sucrose.Live.WebView/Sucrose.Live.WebView.csproj">
       <Platform Solution="*|ARM64" Project="ARM64" />
       <Platform Solution="*|x64" Project="x64" />
@@ -151,6 +156,7 @@
     <Project Path="Shared/Engine/Sucrose.Shared.Engine.MpvPlayer/Sucrose.Shared.Engine.MpvPlayer.shproj" />
     <Project Path="Shared/Engine/Sucrose.Shared.Engine.Nebula/Sucrose.Shared.Engine.Nebula.shproj" />
     <Project Path="Shared/Engine/Sucrose.Shared.Engine.Vexana/Sucrose.Shared.Engine.Vexana.shproj" />
+    <Project Path="Shared/Engine/Sucrose.Shared.Engine.VlcPlayer/Sucrose.Shared.Engine.VlcPlayer.shproj" />
     <Project Path="Shared/Engine/Sucrose.Shared.Engine.WebView/Sucrose.Shared.Engine.WebView.shproj" />
     <Project Path="Shared/Engine/Sucrose.Shared.Engine.Xavier/Sucrose.Shared.Engine.Xavier.shproj" />
     <Project Path="Shared/Engine/Sucrose.Shared.Engine/Sucrose.Shared.Engine.shproj" />

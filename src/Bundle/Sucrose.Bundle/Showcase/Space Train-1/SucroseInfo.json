@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Space Train",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,9 +13,25 @@
   "Tags": null,
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "قطار الفضاء",
+      "Description": "قطار الفضاء - 12 ساعة - بدقة 4K Ultra HD بمعدل 60 إطارًا في الثانية"
+    },
+    "CS": {
+      "Title": "Vesmírný Vlak",
+      "Description": "Vesmírný vlak - 12 hodin - 4K Ultra HD 60 snímků za sekundu"
+    },
+    "DA": {
+      "Title": "Rumtog",
+      "Description": "Rumtog - 12 timer - 4K Ultra HD 60fps"
+    },
     "DE": {
       "Title": "Weltraumzug",
       "Description": "Weltraumzug - 12 Stunden - 4K Ultra HD 60fps"
+    },
+    "EL": {
+      "Title": "Διαστημικό Τρένο",
+      "Description": "Διαστημικό τρένο - 12 ώρες - 4K Ultra HD 60 fps"
     },
     "ES": {
       "Title": "Tren Espacial",
@@ -25,21 +41,69 @@
       "Title": "Train Spatial",
       "Description": "Train Spatial - 12 heures - 4K Ultra HD 60fps"
     },
+    "HE": {
+      "Title": "רכבת חלל",
+      "Description": "רכבת חלל - 12 שעות - 4K Ultra HD 60fps"
+    },
     "HI": {
       "Title": "स्पेस ट्रेन",
       "Description": "स्पेस ट्रेन - 12 घंटे - 4K अल्ट्रा HD 60fps"
+    },
+    "ID": {
+      "Title": "Kereta Luar Angkasa",
+      "Description": "Kereta Luar Angkasa - 12 Jam - 4K Ultra HD 60fps"
+    },
+    "IT": {
+      "Title": "Treno Spaziale",
+      "Description": "Treno spaziale - 12 ore - 4K Ultra HD 60fps"
+    },
+    "JA": {
+      "Title": "スペーストレイン",
+      "Description": "スペーストレイン - 12 時間 - 4K Ultra HD 60fps"
+    },
+    "KO": {
+      "Title": "우주열차",
+      "Description": "우주 열차 - 12시간 - 4K Ultra HD 60fps"
+    },
+    "MS": {
+      "Title": "Kereta Api Angkasa",
+      "Description": "Kereta Api Angkasa - 12 Jam - 4K Ultra HD 60fps"
+    },
+    "NB": {
+      "Title": "Romtog",
+      "Description": "Romtog - 12 timer - 4K Ultra HD 60fps"
+    },
+    "NL": {
+      "Title": "Ruimte Trein",
+      "Description": "Ruimtetrein - 12 uur - 4K Ultra HD 60 fps"
     },
     "PL": {
       "Title": "Kosmiczny Pociąg",
       "Description": "Kosmiczny Pociąg - 12 godzin - 4K Ultra HD 60fps"
     },
+    "PT": {
+      "Title": "Trem Espacial",
+      "Description": "Trem Espacial - 12 Horas - 4K Ultra HD 60fps"
+    },
+    "RO": {
+      "Title": "Trenul Spațial",
+      "Description": "Tren spațial - 12 ore - 4K Ultra HD 60fps"
+    },
     "RU": {
       "Title": "Космический поезд",
       "Description": "Космический поезд - 12 часов - 4K Ultra HD 60fps"
     },
+    "SV": {
+      "Title": "Rymdtåg",
+      "Description": "Rymdtåg - 12 timmar - 4K Ultra HD 60fps"
+    },
     "TR": {
       "Title": "Uzay Treni",
       "Description": "Uzay Treni - 12 Saat - 4K Ultra HD 60fps"
+    },
+    "UK": {
+      "Title": "Космічний поїзд",
+      "Description": "Космічний потяг – 12 годин – 4K Ultra HD 60 кадрів/с"
     },
     "ZH": {
       "Title": "太空列车",

@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Last updated: 3rd June 2026
+Last updated: 28th June 2026
 
 Welcome, and thank you for choosing Sucrose (hereinafter referred to as the "App"). Sucrose is a free and open-source wallpaper engine for Windows that supports Gif, Url, Web, Video, YouTube, and Application wallpapers, together with audio-reactive and system-status features. We care about your privacy, and this Privacy Policy explains what information the App handles, how it is used, where it is stored, and the choices you have. Please read it carefully. By continuing to use the App, you agree to the practices described here.
 
@@ -110,6 +110,7 @@ The App's multiple components communicate with each other entirely **on your loc
 We do not sell your personal information, and we do not share it except as described here:
 
 - **Soferity backend (`sucrose.soferity.com`)** — our first-party server that receives telemetry, error reports, online status, download events, update checks, and Store uploads/reports, as described above.
+- **Premium Store (`sucrose.dev/premium`)** — a separate web storefront operated by the Developer for purchasing premium themes. It is **not part of the desktop App's data processing**: the App only opens it in your web browser. Any account data (such as the email address used to sign in), payment data, and purchase records are collected and processed on that website under its **own separate Privacy Policy** — not by the desktop App. The App itself still has no accounts or logins (see Section 2.4).
 - **GitHub** (`github.com`, `api.github.com`, `raw.githubusercontent.com`) — used as an alternative Store/update source, for release downloads, and for issue reporting.
 - **Google / YouTube** — contacted only when you use a YouTube wallpaper, under Google's own privacy policy.
 - **Websites you choose** — contacted only when you use Web/URL wallpapers, under their own privacy policies.
@@ -143,5 +144,5 @@ We may update this Privacy Policy from time to time as the App evolves or as leg
 If you have any questions or concerns about this Privacy Policy, please contact us at:
 
 - Email: taiizor@vegalya.com
-- Website: https://taiizor.github.io/Sucrose
+- Website: https://sucrose.dev
 - Project: https://github.com/Taiizor/Sucrose

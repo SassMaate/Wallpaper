@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">了解しました</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">公開警告</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">選択したテーマはすでにストアからダウンロードされています。</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">了解しました</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">公開警告</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">選択したテーマはすでにプレミアムストアからダウンロードされています。</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">了解しました</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">エクスポート警告</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">選択したテーマはプレミアムストアからダウンロードされているため、エクスポートできません。</system:String>
 </ResourceDictionary>

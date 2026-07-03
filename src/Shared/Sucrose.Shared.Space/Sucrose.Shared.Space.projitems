@@ -48,6 +48,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Import.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Live.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Processor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helper\Power.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helper\Temporary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\ThrowExceptionData.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\AnalyticTemeletryData.cs" />

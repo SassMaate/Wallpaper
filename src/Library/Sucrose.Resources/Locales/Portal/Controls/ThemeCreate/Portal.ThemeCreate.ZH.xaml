@@ -17,7 +17,7 @@
     <system:String x:Key="Portal.ThemeCreate.Web">Web 主题</system:String>
     <system:String x:Key="Portal.ThemeCreate.Web.Description">创建您自己的 Web 主题。</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Video">视频主题</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video">Video主题</system:String>
     <system:String x:Key="Portal.ThemeCreate.Video.Description">创建您自己的 Video 主题。</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.YouTube">YouTube 主题</system:String>

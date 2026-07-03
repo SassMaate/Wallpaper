@@ -37,14 +37,14 @@
     <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration">تسريع الأجهزة</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.HardwareAcceleration.Description">تغيّر سلوك تسريع الأجهزة لخلفيات الشاشة المدعومة.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer">مشغّل GIF</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer.Description">حدّد الإضافة التي ستشغّل سِمات GIF في مكتبتك.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer">مشغّل Gif</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.GifPlayer.Description">حدّد الإضافة التي ستشغّل سِمات Gif في مكتبتك.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer">مشغّل الفيديو</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer.Description">حدّد الإضافة التي ستشغّل سِمات الفيديو في مكتبتك.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer">مشغّل Video</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.VideoPlayer.Description">حدّد الإضافة التي ستشغّل سِمات Video في مكتبتك.</system:String>
 
-    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer">محرّك URL</system:String>
-    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer.Description">حدّد المحرّك الذي سيشغّل سِمات URL في مكتبتك.</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer">محرّك Url</system:String>
+    <system:String x:Key="Portal.WallpaperSettingPage.UrlPlayer.Description">حدّد المحرّك الذي سيشغّل سِمات Url في مكتبتك.</system:String>
 
     <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer">محرّك Web</system:String>
     <system:String x:Key="Portal.WallpaperSettingPage.WebPlayer.Description">حدّد المحرّك الذي سيشغّل سِمات Web في مكتبتك.</system:String>

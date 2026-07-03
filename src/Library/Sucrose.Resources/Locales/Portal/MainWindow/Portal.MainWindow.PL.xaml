@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Podarować</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Ogólne</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Sklep Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Osobiste</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Tapeta</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Wydajność</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Jasny motyw</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Inne Opcje</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Sklep z motywami Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opcje Dotacji</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Utwórz Tapetę</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Cykliczna Zmiana Tapety</system:String>

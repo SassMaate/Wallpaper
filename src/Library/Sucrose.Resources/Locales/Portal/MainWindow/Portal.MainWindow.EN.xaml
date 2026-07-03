@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Donate</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">General</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premium Store</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Personal</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Performance</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Light Theme</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Other Options</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premium Theme Store</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Donation Options</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Create Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Wallpaper Cycling</system:String>

@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Donasi</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Sistem</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Umum</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Toko Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Pribadi</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Kinerja</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Tema Terang</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Opsi Lainnya</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Toko Tema Premium</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Opsi Donasi</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Buat Wallpaper</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Siklus Wallpaper</system:String>

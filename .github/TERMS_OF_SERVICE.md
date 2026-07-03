@@ -1,6 +1,6 @@
 # Sucrose Terms of Service
 
-Last updated: 3rd June 2026
+Last updated: 28th June 2026
 
 These Terms of Service ("Terms") govern your use of the Sucrose application and its related online services (together, the "Services"). Sucrose is a free, open-source wallpaper engine for Windows developed and maintained by **Taiizor** ("we", "us", or "the Developer"). Please read these Terms carefully. By downloading, installing, or using Sucrose, you agree to be bound by them. If you do not agree, do not use the Services.
 
@@ -10,7 +10,8 @@ These Terms are an agreement about your **use of the Services**. They do not ove
 
 - **"Software"** — the Sucrose desktop application and its source code, licensed under the GNU General Public License v3.0 (see Section 3).
 - **"Online Services"** — the first-party backend operated by the Developer (`sucrose.soferity.com`), which powers the community Store, software updates, and optional telemetry/error reporting.
-- **"Store"** — the community marketplace where users download and publish wallpapers.
+- **"Store"** — the community marketplace where users download and publish wallpapers, free of charge.
+- **"Premium Store"** — a separate, optional online storefront operated by the Developer at `https://sucrose.dev/premium`, where users may purchase premium themes and related digital content. The Premium Store is a web service governed by its **own** separate terms and privacy policy (see Section 9.3); it is distinct from the free community Store.
 - **"Wallpaper"** — content rendered by Sucrose, which may be of type Gif, Url, Web, Video, YouTube, or Application.
 - **"User Content"** — wallpapers and other materials you create, configure, upload, or publish.
 
@@ -101,11 +102,18 @@ These Terms are an agreement about your **use of the Services**. They do not ove
 
 8.2. Your rights to use, modify, and redistribute the **Software** under the GPL-3.0 are not restricted by this Section; it concerns use of the **Online Services and Store**.
 
-## 9. Fees and Donations
+## 9. Fees, the Premium Store, and Donations
 
-9.1. Sucrose is free of charge. The Developer does not sell the Software or any feature, and there are no in-app purchases.
+9.1. **The Software is free.** The Sucrose desktop application is free of charge and open-source (Section 3). The Software itself has no paid licenses, subscriptions, trials, activation keys, feature gates, or in-app purchases, and all of its functionality is available to everyone regardless of payment.
 
 9.2. The application includes an optional way to support development through voluntary donations. Donations are entirely optional and **do not unlock any features** — all functionality is available whether or not you donate. The in-app "Advertising" setting referred to in the donation area controls only whether Sucrose displays its own support/donation prompt; it is **not** third-party advertising.
+
+9.3. **The Premium Store (separate web service).** The Developer also operates an optional **Premium Store** at `https://sucrose.dev/premium`, where users may purchase premium themes and related digital content. The Premium Store is a **separate online service** with its **own Terms of Service / Terms of Sale and Privacy Policy**, which govern any account, payment, and purchase made there. In particular:
+
+   a) Purchasing premium content is **entirely optional** and does **not** change, unlock, or gate any functionality of the free Software described in Sections 3 and 9.1.
+   b) The desktop application may **link** to the Premium Store; when you open it, the Premium Store loads in your web browser. **Purchases are completed on the Premium Store website, not inside the desktop application** — there are no in-app purchases within the Software.
+   c) Payments are processed by a third-party payment provider on the Premium Store website, under that provider's and the Premium Store's own terms. The Developer does not receive or store your full payment-card details through the desktop application.
+   d) Refunds, delivery, and support for premium content are governed by the Premium Store's own terms, including any refund or right-of-withdrawal policy published there.
 
 ## 10. Privacy
 
@@ -162,5 +170,5 @@ We may update these Terms from time to time as the project evolves or as legal r
 If you have questions about these Terms, please contact us:
 
 - Email: taiizor@vegalya.com
-- Website: https://taiizor.github.io/Sucrose
+- Website: https://sucrose.dev
 - Project: https://github.com/Taiizor/Sucrose

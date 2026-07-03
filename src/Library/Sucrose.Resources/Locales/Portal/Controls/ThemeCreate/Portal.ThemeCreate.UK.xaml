@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Додаток</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Опис</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Будь ласка, введіть дійсну Url-адресу</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Виберіть Web-сторінку</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Будь ласка, введіть дійсну url-адресу</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Виберіть web-сторінку</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Будь ласка, введіть дійсні теги теми</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Будь ласка, введіть дійсний заголовок</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Будь ласка, введіть дійсне ім'я автора</system:String>
@@ -58,14 +58,14 @@
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">Виберіть Відеофайл</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">Відеофайли (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Перетягніть тут свій файл GIF і відпустіть</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">Перетягніть тут свій файл Gif і відпустіть</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">Перетягніть сюди свій файл відео і відпустіть</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">Виберіть обкладинку</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">Зображення (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">Виберіть файл попереднього перегляду</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">Файли GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">Файли Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.WebSource.Title">Виберіть Web-Сторінку</system:String>
     <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">Web-Сторінки (*.html)|*.html</system:String>

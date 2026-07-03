@@ -38,6 +38,8 @@
 
         public static readonly string Temporary = "Temporary";
 
+        public static readonly string VlcPlayer = "VlcPlayer";
+
         public static readonly string Properties = "Properties";
 
         public static readonly string Requirements = "Requirements";

@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">アプリケーション</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">説明</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">有効なUrlを入力してください</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Webページを選択</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">有効なurlを入力してください</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">webページを選択</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">有効なテーマタグを入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">有効なタイトルを入力してください</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">有効な著者名を入力してください</system:String>

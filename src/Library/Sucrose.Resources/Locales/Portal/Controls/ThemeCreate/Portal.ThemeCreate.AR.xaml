@@ -8,17 +8,17 @@
     <system:String x:Key="Portal.ThemeCreate.Create">إنشاء</system:String>
     <system:String x:Key="Portal.ThemeCreate.Creating">جارٍ الإنشاء</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Gif">سِمة GIF</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Gif.Description">أنشئ سِمتك الخاصة بتنسيق GIF.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif">سِمة Gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif.Description">أنشئ سِمتك الخاصة بتنسيق Gif.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Url">سِمة URL</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Url.Description">أنشئ سِمتك الخاصة بتنسيق URL.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url">سِمة Url</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url.Description">أنشئ سِمتك الخاصة بتنسيق Url.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.Web">سِمة Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.Web.Description">أنشئ سِمتك الخاصة بتنسيق Web.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Video">سِمة فيديو</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Video.Description">أنشئ سِمتك الخاصة بتنسيق الفيديو.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video">سِمة Video</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video.Description">أنشئ سِمتك الخاصة بتنسيق Video.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.YouTube">سِمة YouTube</system:String>
     <system:String x:Key="Portal.ThemeCreate.YouTube.Description">أنشئ سِمتك الخاصة بتنسيق YouTube.</system:String>
@@ -26,7 +26,7 @@
     <system:String x:Key="Portal.ThemeCreate.Application">سِمة Application</system:String>
     <system:String x:Key="Portal.ThemeCreate.Application.Description">أنشئ سِمتك الخاصة بتنسيق Application.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl">URL</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb">Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags">الوسوم</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle">العنوان</system:String>
@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">تطبيق</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">الوصف</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">يُرجى إدخال عنوان URL صالح</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">يُرجى إدخال عنوان url صالح</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">حدِّد صفحة ويب</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">يُرجى إدخال وسوم سِمة صالحة</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">يُرجى إدخال عنوان صالح</system:String>
@@ -52,20 +52,20 @@
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">تراجع</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Title">تحديد ملف GIF</system:String>
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Filter">ملفّات GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Title">تحديد ملف Gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Filter">ملفّات Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">تحديد ملف فيديو</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">ملفّات الفيديو (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">اسحب ملف GIF وأفلِته هنا</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">اسحب ملف Gif وأفلِته هنا</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">اسحب ملف الفيديو وأفلِته هنا</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">تحديد صورة الغلاف</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">ملفّات الصور (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">تحديد ملف المعاينة</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">ملفّات GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">ملفّات Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.WebSource.Title">تحديد صفحة الويب</system:String>
     <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">صفحات الويب (*.html)|*.html</system:String>

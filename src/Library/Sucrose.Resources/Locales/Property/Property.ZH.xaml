@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">仅限WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">仅限CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">仅限MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">仅限VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">色调</system:String>
     <system:String x:Key="Property.Localization.Blur">模糊</system:String>

@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">एप्लिकेशन</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">विवरण</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">कृपया एक मान्य Url पता लिखें</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">एक Web पृष्ठ चुनें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">कृपया एक मान्य url पता लिखें</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">एक web पृष्ठ चुनें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">कृपया मान्य थीम टैग्स लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">कृपया एक मान्य शीर्षक लिखें</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">कृपया एक मान्य लेखक नाम लिखें</system:String>

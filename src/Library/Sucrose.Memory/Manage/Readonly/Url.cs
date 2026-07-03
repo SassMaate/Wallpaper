@@ -10,7 +10,11 @@ namespace Sucrose.Memory.Manage.Readonly
 
         public static readonly string Local = $"https://{SMMRG.Local}/";
 
+        public static readonly string OfficialWebPage = "https://sucrose.dev";
+
         public static readonly string Soferity = "https://sucrose.soferity.com";
+
+        public static readonly string PremiumStore = $"{OfficialWebPage}/premium";
 
         public static readonly string RawGitHub = "https://raw.githubusercontent.com";
 
@@ -19,8 +23,6 @@ namespace Sucrose.Memory.Manage.Readonly
         public static readonly string GoogleSearch = "https://www.google.com/search?q={0}";
 
         public static readonly string SoferityStore = $"{Soferity}/{SMMRS.StoreDirectory}";
-
-        public static readonly string OfficialWebPage = "https://taiizor.github.io/Sucrose";
 
         public static readonly string WebView2 = "https://go.microsoft.com/fwlink/p/?LinkId=2124703";
 

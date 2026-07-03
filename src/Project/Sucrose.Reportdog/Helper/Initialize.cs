@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System.Globalization;
 using System.IO;
 using System.Net.Http;
@@ -70,9 +70,9 @@ namespace Sucrose.Reportdog.Helper
 
                     foreach (string Record in Files)
                     {
-                        await SendThrow(Record);
-
                         await Task.Delay(1000);
+
+                        await SendThrow(Record);
                     }
                 }
 
@@ -85,6 +85,8 @@ namespace Sucrose.Reportdog.Helper
 
                 SRMI.Watcher.Created += async (s, e) =>
                 {
+                    await Task.Delay(1000);
+
                     await SendThrow(e.FullPath);
                 };
 
@@ -267,23 +269,26 @@ namespace Sucrose.Reportdog.Helper
             {
                 if (SMMG.ExceptionData && await SSSHN.GetHostEntryAsync())
                 {
-                    await Task.Delay(50);
+                    await Task.Delay(100);
 
                     if (File.Exists(Path))
                     {
                         SSSMTED ThrowData = JsonConvert.DeserializeObject<SSSMTED>(SSSHW.Read(Path));
 
-                        StringContent Content = new(JsonConvert.SerializeObject(ThrowData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
-
-                        HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Exception}/{SMMRS.Throw}/{SSSHU.GetGuid()}", Content);
-
-                        Response.EnsureSuccessStatusCode();
-
-                        if (Response.IsSuccessStatusCode)
+                        if (ThrowData != null)
                         {
-                            await Task.Delay(50);
+                            StringContent Content = new(JsonConvert.SerializeObject(ThrowData, Formatting.Indented), SMMRS.Encoding, SMMRS.ApplicationJson);
 
-                            SSSHF.Delete(Path);
+                            HttpResponseMessage Response = await SSDMI.Client.PostAsync($"{SMMRU.Soferity}/{SMMRS.Version}/{SMMRS.Exception}/{SMMRS.Throw}/{SSSHU.GetGuid()}", Content);
+
+                            Response.EnsureSuccessStatusCode();
+
+                            if (Response.IsSuccessStatusCode)
+                            {
+                                await Task.Delay(100);
+
+                                SSSHF.Delete(Path);
+                            }
                         }
                     }
                 }

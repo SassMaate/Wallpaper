@@ -5,6 +5,7 @@
         Base,
         WebView,
         CefSharp,
-        MpvPlayer
+        MpvPlayer,
+        VlcPlayer
     }
 }

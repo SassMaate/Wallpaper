@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">寄付</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">システム</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">一般</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">プレミアムストア</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">個人的な</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">壁紙</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">パフォーマンス</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">ライト テーマ</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">その他のオプション</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">プレミアムテーマストア</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">寄付オプション</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">壁紙を作成</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">壁紙のサイクリング</system:String>

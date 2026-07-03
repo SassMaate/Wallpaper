@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Neomorphic Music Player",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "مشغل موسيقى نيومورفيك",
+      "Description": "مشغل موسيقى نيومورفيك"
+    },
+    "CS": {
+      "Title": "Neomorfní hudební přehrávač",
+      "Description": "Neomorfní hudební přehrávač"
+    },
+    "DA": {
+      "Title": "Neomorfisk musikafspiller",
+      "Description": "Neomorfisk musikafspiller"
+    },
     "DE": {
       "Title": "Neomorpher Musikplayer",
       "Description": "Neomorpher Musikplayer"
+    },
+    "EL": {
+      "Title": "Neomorphic Music Player",
+      "Description": "Neomorphic Music Player"
     },
     "ES": {
       "Title": "Reproductor de Música Neomórfico",
@@ -27,21 +43,69 @@
       "Title": "Lecteur de musique néomorphique",
       "Description": "Lecteur de musique néomorphique"
     },
+    "HE": {
+      "Title": "נגן מוזיקה ניאומורפי",
+      "Description": "נגן מוזיקה ניאומורפי"
+    },
     "HI": {
       "Title": "न्यूमॉर्फिक म्यूजिक प्लेयर",
       "Description": "न्यूमॉर्फिक म्यूजिक प्लेयर"
+    },
+    "ID": {
+      "Title": "Pemutar Musik Neomorfik",
+      "Description": "Pemutar Musik Neomorfik"
+    },
+    "IT": {
+      "Title": "Lettore musicale neomorfico",
+      "Description": "Lettore musicale neomorfico"
+    },
+    "JA": {
+      "Title": "ネオモーフィック ミュージック プレーヤー",
+      "Description": "ネオモーフィック ミュージック プレーヤー"
+    },
+    "KO": {
+      "Title": "신형 뮤직 플레이어",
+      "Description": "신형 뮤직 플레이어"
+    },
+    "MS": {
+      "Title": "Pemain Muzik Neomorphic",
+      "Description": "Pemain Muzik Neomorphic"
+    },
+    "NB": {
+      "Title": "Neomorfisk musikkspiller",
+      "Description": "Neomorfisk musikkspiller"
+    },
+    "NL": {
+      "Title": "Neomorfe muziekspeler",
+      "Description": "Neomorfe muziekspeler"
     },
     "PL": {
       "Title": "Neomorficzny Odtwarzacz Muzyki",
       "Description": "Neomorficzny Odtwarzacz Muzyki"
     },
+    "PT": {
+      "Title": "Leitor de música neomórfica",
+      "Description": "Leitor de música neomórfica"
+    },
+    "RO": {
+      "Title": "Player muzical neomorf",
+      "Description": "Player muzical neomorf"
+    },
     "RU": {
       "Title": "Неоморфный музыкальный плеер",
       "Description": "Неоморфный музыкальный плеер"
     },
+    "SV": {
+      "Title": "Neomorfisk musikspelare",
+      "Description": "Neomorfisk musikspelare"
+    },
     "TR": {
       "Title": "Neomorfik Müzik Çalar",
       "Description": "Neomorfik Müzik Çalar"
+    },
+    "UK": {
+      "Title": "Неоморфний музичний плеєр",
+      "Description": "Неоморфний музичний плеєр"
     },
     "ZH": {
       "Title": "新拟态音乐播放器",

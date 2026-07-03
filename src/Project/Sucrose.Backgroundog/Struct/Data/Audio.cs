@@ -1,4 +1,4 @@
-﻿using NPSMLib;
+﻿using Playhead.Enums;
 using System.Runtime.InteropServices;
 
 namespace Sucrose.Backgroundog.Struct.Data
@@ -26,11 +26,11 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// </summary>
         public string Artist;
         /// <summary>
-        /// 
+        /// Mono spectrum, 128 values in [0, 1].
         /// </summary>
         public double[] Data;
         /// <summary>
-        /// 
+        ///
         /// </summary>
         //private IntPtr? Hwnd;
         /// <summary>
@@ -46,6 +46,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// </summary>
         public string AlbumTitle;
         /// <summary>
+        /// Left-channel spectrum, 128 values in [0, 1].
+        /// </summary>
+        public double[] DataLeft;
+        /// <summary>
         /// 
         /// </summary>
         public TimeSpan Position;
@@ -57,6 +61,10 @@ namespace Sucrose.Backgroundog.Struct.Data
         /// 
         /// </summary>
         public string AlbumArtist;
+        /// <summary>
+        /// Right-channel spectrum, 128 values in [0, 1].
+        /// </summary>
+        public double[] DataRight;
         /// <summary>
         /// 
         /// </summary>

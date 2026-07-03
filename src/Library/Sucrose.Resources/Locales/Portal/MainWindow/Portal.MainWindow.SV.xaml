@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Donera</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">System</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Allmänt</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Premiumbutik</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Personlig</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Bakgrund</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Prestanda</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Ljust tema</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Andra alternativ</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Premiumtemabutik</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Donationsalternativ</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Skapa bakgrund</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Bakgrundsbilder Cykling</system:String>

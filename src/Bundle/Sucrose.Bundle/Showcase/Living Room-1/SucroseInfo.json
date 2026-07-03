@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.7",
+  "Version": "1.0.0.8",
   "Title": "Living Room",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,33 +15,97 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "غرفة الجلوس",
+      "Description": "غرفة معيشة بها موسيقى ومتخيل والمزيد!"
+    },
+    "CS": {
+      "Title": "Obývací Pokoj",
+      "Description": "Obývací pokoj s hudbou, vizualizérem a dalšími!"
+    },
+    "DA": {
+      "Title": "Stue",
+      "Description": "En stue med musik, visualizer og meget mere!"
+    },
     "DE": {
       "Title": "Wohnzimmer",
       "Description": "Ein Wohnzimmer mit Musik, Visualizer und mehr!"
     },
+    "EL": {
+      "Title": "Καθιστικό",
+      "Description": "Ένα σαλόνι με μουσική, οπτικοποιητή και πολλά άλλα!"
+    },
     "ES": {
-      "Title": "Sala de estar",
+      "Title": "Sala de Estar",
       "Description": "¡Una sala de estar con música, visualizador y más!"
     },
     "FR": {
       "Title": "Salon",
       "Description": "Un salon avec musique, visualiseur et plus encore !"
     },
+    "HE": {
+      "Title": "סָלוֹן",
+      "Description": "סלון עם מוזיקה, מכשיר חזותי ועוד!"
+    },
     "HI": {
       "Title": "लिविंग रूम",
       "Description": "संगीत, विज़ुअलाइज़र और बहुत कुछ के साथ एक लिविंग रूम!"
+    },
+    "ID": {
+      "Title": "Ruang Tamu",
+      "Description": "Ruang tamu dengan musik, visualisator, dan banyak lagi!"
+    },
+    "IT": {
+      "Title": "Soggiorno",
+      "Description": "Un soggiorno con musica, visualizzatore e altro ancora!"
+    },
+    "JA": {
+      "Title": "リビングルーム",
+      "Description": "音楽やビジュアライザーなどを備えたリビング ルーム!"
+    },
+    "KO": {
+      "Title": "거실",
+      "Description": "음악, 시각화 도구 등을 갖춘 거실!"
+    },
+    "MS": {
+      "Title": "Ruang Tamu",
+      "Description": "Ruang tamu dengan muzik, visualizer dan banyak lagi!"
+    },
+    "NB": {
+      "Title": "Stue",
+      "Description": "En stue med musikk, visualisering og mer!"
+    },
+    "NL": {
+      "Title": "Woonkamer",
+      "Description": "Een huiskamer met muziek, visualisatie en meer!"
     },
     "PL": {
       "Title": "Salon",
       "Description": "Salon z muzyką, wizualizerem i nie tylko!"
     },
+    "PT": {
+      "Title": "Sala de Estar",
+      "Description": "Uma sala com música, visualizador e muito mais!"
+    },
+    "RO": {
+      "Title": "Camera de Zi",
+      "Description": "A living room with music, visualizer and more!"
+    },
     "RU": {
       "Title": "Гостиная",
       "Description": "Гостиная с музыкой, визуализатором и многим другим!"
     },
+    "SV": {
+      "Title": "Vardagsrum",
+      "Description": "Ett vardagsrum med musik, visualisering och mer!"
+    },
     "TR": {
       "Title": "Oturma Odası",
       "Description": "Müzik, görselleştirici ve daha fazlasıyla bir oturma odası!"
+    },
+    "UK": {
+      "Title": "Вітальня",
+      "Description": "Вітальня з музикою, візуалізатором та іншим!"
     },
     "ZH": {
       "Title": "客厅",

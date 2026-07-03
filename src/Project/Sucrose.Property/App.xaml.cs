@@ -178,7 +178,16 @@ namespace Sucrose.Property
                             {
                                 if (SPMI.Info.Type == SSDEWT.Gif)
                                 {
-                                    if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                                    if (SSDMME.Gif == SSDEET.VlcPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                                    {
+                                        SPMI.PropertiesType = SSDEPT.VlcPlayer;
+
+                                        if (!File.Exists(SPMI.PropertiesPath))
+                                        {
+                                            SPMI.PropertiesPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties);
+                                        }
+                                    }
+                                    else if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                                     {
                                         SPMI.PropertiesType = SSDEPT.MpvPlayer;
 
@@ -202,7 +211,16 @@ namespace Sucrose.Property
                                 }
                                 else if (SPMI.Info.Type == SSDEWT.Video)
                                 {
-                                    if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                                    if (SSDMME.Video == SSDEET.VlcPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                                    {
+                                        SPMI.PropertiesType = SSDEPT.VlcPlayer;
+
+                                        if (!File.Exists(SPMI.PropertiesPath))
+                                        {
+                                            SPMI.PropertiesPath = Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties);
+                                        }
+                                    }
+                                    else if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(SPMI.PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                                     {
                                         SPMI.PropertiesType = SSDEPT.MpvPlayer;
 

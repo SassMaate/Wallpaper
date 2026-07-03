@@ -72,27 +72,41 @@ namespace Sucrose.Portal.Views.Controls
         {
             Export.IsEnabled = false;
 
-            await Task.Run(() =>
+            if (File.Exists(Path.Combine(Theme, SMMRC.SucrosePremium)))
             {
-                SaveFileDialog SaveDialog = new()
+                MessageBox Warning = new()
                 {
-                    FileName = SSSHC.FileName(Info.Title),
-
-                    Filter = SRER.GetValue("Portal", "ThemeShare", "SaveDialogFilter"),
-                    FilterIndex = 1,
-
-                    Title = SRER.GetValue("Portal", "ThemeShare", "SaveDialogTitle"),
-
-                    InitialDirectory = SMMRP.Desktop
+                    Title = SRER.GetValue("Portal", "ThemeShare", "ThemeExport", "Premium", "Title"),
+                    Content = SRER.GetValue("Portal", "ThemeShare", "ThemeExport", "Premium", "Message"),
+                    CloseButtonText = SRER.GetValue("Portal", "ThemeShare", "ThemeExport", "Premium", "Close")
                 };
 
-                if (SaveDialog.ShowDialog() == true)
+                await Warning.ShowDialogAsync();
+            }
+            else
+            {
+                await Task.Run(() =>
                 {
-                    string Destination = SaveDialog.FileName;
+                    SaveFileDialog SaveDialog = new()
+                    {
+                        FileName = SSSHC.FileName(Info.Title),
 
-                    SSZEZ.Compress(Theme, Destination);
-                }
-            });
+                        Filter = SRER.GetValue("Portal", "ThemeShare", "SaveDialogFilter"),
+                        FilterIndex = 1,
+
+                        Title = SRER.GetValue("Portal", "ThemeShare", "SaveDialogTitle"),
+
+                        InitialDirectory = SMMRP.Desktop
+                    };
+
+                    if (SaveDialog.ShowDialog() == true)
+                    {
+                        string Destination = SaveDialog.FileName;
+
+                        SSZEZ.Compress(Theme, Destination);
+                    }
+                });
+            }
 
             Export.IsEnabled = true;
         }
@@ -110,6 +124,21 @@ namespace Sucrose.Portal.Views.Controls
                     Title = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Already", "Title"),
                     Content = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Already", "Message"),
                     CloseButtonText = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Already", "Close")
+                };
+
+                await Warning.ShowDialogAsync();
+
+                Image.Source = LoadImage("Basket");
+            }
+            else if (File.Exists(Path.Combine(Theme, SMMRC.SucrosePremium)))
+            {
+                Image.Source = LoadImage("ShoppingBasket");
+
+                MessageBox Warning = new()
+                {
+                    Title = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Premium", "Title"),
+                    Content = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Premium", "Message"),
+                    CloseButtonText = SRER.GetValue("Portal", "ThemeShare", "ThemePublish", "Premium", "Close")
                 };
 
                 await Warning.ShowDialogAsync();

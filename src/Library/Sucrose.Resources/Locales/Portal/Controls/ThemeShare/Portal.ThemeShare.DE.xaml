@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Verstanden</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Veröffentlichungshinweis</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Das ausgewählte Thema ist bereits aus dem Store installiert.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Verstanden</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Veröffentlichungshinweis</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Das ausgewählte Thema ist bereits aus dem Premium-Store installiert.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Verstanden</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Exporthinweis</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Das ausgewählte Thema kann nicht exportiert werden, da es aus dem Premium-Store installiert wurde.</system:String>
 </ResourceDictionary>

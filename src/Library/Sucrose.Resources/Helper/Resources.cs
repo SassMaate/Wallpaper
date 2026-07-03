@@ -224,6 +224,7 @@ namespace Sucrose.Resources.Helper
                 "EN",
                 "ES",
                 "FR",
+                "HE",
                 "HI",
                 "ID",
                 "IT",

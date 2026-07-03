@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.6",
+  "Version": "1.0.0.7",
   "Title": "Lorem Picsum Wallpaper",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -13,9 +13,25 @@
   "Tags": null,
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "خلفيات لوريم بيكسوم",
+      "Description": "يعرض هذا المظهر صورًا عشوائية عالية الجودة من Lorem Picsum كخلفية للشاشة."
+    },
+    "CS": {
+      "Title": "Tapeta na plochu Lorem Picsum",
+      "Description": "Toto téma zobrazuje náhodné vysoce kvalitní obrázky z Lorem Picsum jako tapetu."
+    },
+    "DA": {
+      "Title": "Lorem Picsum Baggrund",
+      "Description": "Dette tema viser tilfældige billeder i høj kvalitet fra Lorem Picsum som dit tapet."
+    },
     "DE": {
       "Title": "Lorem Picsum Hintergrund",
       "Description": "Dieses Theme zeigt zufällige hochqualitative Bilder von Lorem Picsum als Hintergrund."
+    },
+    "EL": {
+      "Title": "Ταπετσαρία Lorem Picsum",
+      "Description": "Αυτό το θέμα εμφανίζει τυχαίες εικόνες υψηλής ποιότητας από το Lorem Picsum ως ταπετσαρία σας."
     },
     "ES": {
       "Title": "Fondo de Pantalla Lorem Picsum",
@@ -25,21 +41,69 @@
       "Title": "Fond d'écran Lorem Picsum",
       "Description": "Ce thème affiche des images aléatoires de haute qualité de Lorem Picsum comme fond d'écran."
     },
+    "HE": {
+      "Title": "טפט Lorem Picsum",
+      "Description": "ערכת נושא זה מציגה תמונות אקראיות באיכות גבוהה מ-Lorem Picsum כטפט שלך."
+    },
     "HI": {
       "Title": "Lorem Picsum वॉलपेपर",
       "Description": "यह थीम Lorem Picsum से उच्च गुणवत्ता वाली यादृच्छिक छवियों को आपके वॉलपेपर के रूप में प्रदर्शित करती है।"
+    },
+    "ID": {
+      "Title": "Wallpaper Lorem Picsum",
+      "Description": "Tema ini menampilkan gambar acak berkualitas tinggi dari Lorem Picsum sebagai wallpaper Anda."
+    },
+    "IT": {
+      "Title": "Sfondo di Lorem Picsum",
+      "Description": "Questo tema mostra immagini casuali di alta qualità da Lorem Picsum come sfondo."
+    },
+    "JA": {
+      "Title": "ロレム・ピクサムの壁紙",
+      "Description": "このテーマは、Lorem Picsum からのランダムな高品質画像を壁紙として表示します。"
+    },
+    "KO": {
+      "Title": "로렘 픽섬 배경화면",
+      "Description": "이 테마는 Lorem Picsum의 무작위 고품질 이미지를 배경화면으로 표시합니다."
+    },
+    "MS": {
+      "Title": "Kertas Dinding Lorem Picsum",
+      "Description": "Tema ini memaparkan imej rawak berkualiti tinggi daripada Lorem Picsum sebagai kertas dinding anda."
+    },
+    "NB": {
+      "Title": "Lorem Picsum Bakgrunn",
+      "Description": "Dette temaet viser tilfeldige bilder av høy kvalitet fra Lorem Picsum som bakgrunnsbilde."
+    },
+    "NL": {
+      "Title": "Lorem Picsum-achtergrond",
+      "Description": "Dit thema toont willekeurige afbeeldingen van hoge kwaliteit van Lorem Picsum als achtergrond."
     },
     "PL": {
       "Title": "Tapeta Lorem Picsum",
       "Description": "Ten motyw wyświetla losowe, wysokiej jakości obrazy z Lorem Picsum jako tapetę."
     },
+    "PT": {
+      "Title": "Lorem Picsum Papel de parede",
+      "Description": "Este tema exibe imagens aleatórias de alta qualidade de Lorem Picsum como papel de parede."
+    },
+    "RO": {
+      "Title": "Imagini de fundal Lorem Picsum",
+      "Description": "Această temă afișează imagini aleatorii de înaltă calitate de la Lorem Picsum ca tapet."
+    },
     "RU": {
       "Title": "Обои Lorem Picsum",
       "Description": "Эта тема отображает случайные высококачественные изображения из Lorem Picsum в качестве обоев."
     },
+    "SV": {
+      "Title": "Lorem Picsum Bakgrund",
+      "Description": "Detta tema visar slumpmässiga högkvalitativa bilder från Lorem Picsum som bakgrund."
+    },
     "TR": {
       "Title": "Lorem Picsum Duvar Kağıdı",
       "Description": "Bu tema, Lorem Picsum’dan rastgele yüksek kaliteli görselleri duvar kağıdı olarak gösterir."
+    },
+    "UK": {
+      "Title": "Шпалери Lorem Picsum",
+      "Description": "У цій темі як шпалери відображаються випадкові високоякісні зображення від Lorem Picsum."
     },
     "ZH": {
       "Title": "Lorem Picsum壁纸",

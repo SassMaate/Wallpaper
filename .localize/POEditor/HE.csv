@@ -1,0 +1,1291 @@
+Term,Translate,Context,Reference,Comment
+Base64⦙0,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTG9jYWxlLnhhbWwiIC8+DQoNCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIueGFtbCIgLz4NCg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGl2ZS9MaXZlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmRvL1VuZG8uSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlVwZGF0ZS9VcGRhdGUuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBvcnRhbC9Qb3J0YWwuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkRpc2NvcmQvRGlzY29yZC5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iTGF1bmNoZXIvTGF1bmNoZXIuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlByb3BlcnR5L1Byb3BlcnR5LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYXRjaGRvZy9XYXRjaGRvZy5IRS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=,Don't Touch,Locale.HE.xaml,Please don't touch the translation in this line.
+Discord.Details,מנוע טפטים,,Discord\Discord.HE.xaml,
+Discord.BrowseButton,לְדַפדֵף,,Discord\Discord.HE.xaml,
+Discord.DownloadButton,הורד,,Discord\Discord.HE.xaml,
+PASS⦙0,PASS⦙0,Don't Touch,Discord\Discord.HE.xaml,Please don't touch the translation in this line.
+Discord.LargestText0,כוח גלידת בננה,,Discord\Discord.HE.xaml,
+Discord.LargestText1,מפלצת כובע מחייך,,Discord\Discord.HE.xaml,
+Discord.LargestText2,דרורים צובעים את העננים,,Discord\Discord.HE.xaml,
+Discord.LargestText3,ההרפתקאות הסודיות של פינגווינים רצים,,Discord\Discord.HE.xaml,
+Discord.LargestText4,ארנבים אבודים בשדה דייזי,,Discord\Discord.HE.xaml,
+Discord.LargestText5,שרים שבבי רוח,,Discord\Discord.HE.xaml,
+Discord.LargestText6,דבורים מסתוריות של היער המסתורי,,Discord\Discord.HE.xaml,
+Discord.LargestText7,בית ספר לדגים חלומיים,,Discord\Discord.HE.xaml,
+Discord.LargestText8,ריקוד הדרקון קריסטל עיניים,,Discord\Discord.HE.xaml,
+Discord.LargestText9,שביל אגדות מכוסה פרחים,,Discord\Discord.HE.xaml,
+Discord.LargestText10,כוכבים נופלים מהשמיים,,Discord\Discord.HE.xaml,
+Discord.LargestText11,רוקדת באור הירח השבור,,Discord\Discord.HE.xaml,
+Discord.LargestText12,דרקוני קשת מסתוריים,,Discord\Discord.HE.xaml,
+Discord.LargestText13,סיפור היער הקסום,,Discord\Discord.HE.xaml,
+Discord.LargestText14,גשם פרחים בשמיים,,Discord\Discord.HE.xaml,
+Discord.LargestText15,המגע השקט של הזמן,,Discord\Discord.HE.xaml,
+Discord.LargestText16,ארץ החלומות הסוריאליסטיים,,Discord\Discord.HE.xaml,
+Discord.LargestText17,שירי מפל הזהב,,Discord\Discord.HE.xaml,
+Discord.LargestText18,ספינות אגדה צפות אל השמיים,,Discord\Discord.HE.xaml,
+Discord.LargestText19,יער עם בלונים צבעוניים,,Discord\Discord.HE.xaml,
+Discord.LargestText20,עיר תת-ימית מסתורית,,Discord\Discord.HE.xaml,
+Discord.LargestText21,Star Dusty Sky,,Discord\Discord.HE.xaml,
+Discord.LargestText22,רוחות רודפות אחרי הלא נודע,,Discord\Discord.HE.xaml,
+Discord.LargestText23,סיפורים סוחפים תחת אור הירח,,Discord\Discord.HE.xaml,
+PASS⦙1,PASS⦙1,Don't Touch,Discord\Discord.HE.xaml,Please don't touch the translation in this line.
+Discord.SmallestText0,עקבות מסתוריות,,Discord\Discord.HE.xaml,
+Discord.SmallestText1,דג בלון מעופף,,Discord\Discord.HE.xaml,
+Discord.SmallestText2,פרחים צוחקים,,Discord\Discord.HE.xaml,
+Discord.SmallestText3,ענני כותנה מסוכרים,,Discord\Discord.HE.xaml,
+Discord.SmallestText4,דרקוני פיצה קפואים,,Discord\Discord.HE.xaml,
+Discord.SmallestText5,שודדי פטריות נוצצות,,Discord\Discord.HE.xaml,
+Discord.SmallestText6,טביעת רגל חד קרן בלתי נראית,,Discord\Discord.HE.xaml,
+Discord.SmallestText7,ענני אבק צבעוניים,,Discord\Discord.HE.xaml,
+Discord.SmallestText8,פרפרי בלון זהב,,Discord\Discord.HE.xaml,
+Discord.SmallestText9,מסע מכתש סוכר,,Discord\Discord.HE.xaml,
+Discord.SmallestText10,פרוסות פיצה מעופפות רקטות,,Discord\Discord.HE.xaml,
+Discord.SmallestText11,צדפים רוקדים עם השמש,,Discord\Discord.HE.xaml,
+Discord.SmallestText12,אצבעות כוכב בלתי נראות,,Discord\Discord.HE.xaml,
+Discord.SmallestText13,ריקוד צוללת מעורפל,,Discord\Discord.HE.xaml,
+Discord.SmallestText14,נדידת ציפורי הקשת,,Discord\Discord.HE.xaml,
+Discord.SmallestText15,דרך סטורם סוכריות,,Discord\Discord.HE.xaml,
+Discord.SmallestText16,אינסוף פיצה גלקסי,,Discord\Discord.HE.xaml,
+Discord.SmallestText17,חיוך של השמש,,Discord\Discord.HE.xaml,
+Discord.SmallestText18,החיוך האבוד של הבריכה הנסתרת,,Discord\Discord.HE.xaml,
+Discord.SmallestText19,צל הציפורים החולמים,,Discord\Discord.HE.xaml,
+Discord.SmallestText20,פרפרים עולים לשמיים,,Discord\Discord.HE.xaml,
+Discord.SmallestText21,שירים מוסתרים מאחורי הכוכבים,,Discord\Discord.HE.xaml,
+Discord.SmallestText22,הרי הערפילים של האגדות,,Discord\Discord.HE.xaml,
+Discord.SmallestText23,פיית היער המסתורי,,Discord\Discord.HE.xaml,
+PASS⦙2,PASS⦙2,Don't Touch,Discord\Discord.HE.xaml,Please don't touch the translation in this line.
+Discord.StatementText0,יקום מלא כאוס,,Discord\Discord.HE.xaml,
+Discord.StatementText1,באמצע הרפתקאות אינסופיות,,Discord\Discord.HE.xaml,
+Discord.StatementText2,עולם מוזר וקסום,,Discord\Discord.HE.xaml,
+Discord.StatementText3,דוחף את גבולות הדמיון,,Discord\Discord.HE.xaml,
+Discord.StatementText4,מציאות יוצאת דופן,,Discord\Discord.HE.xaml,
+Discord.StatementText5,עמוק בדמיונך,,Discord\Discord.HE.xaml,
+Discord.StatementText6,מסע גילוי קסום,,Discord\Discord.HE.xaml,
+Discord.StatementText7,בשער הממלכות הלא ידועות,,Discord\Discord.HE.xaml,
+Discord.StatementText8,עולם חלומות מורכב,,Discord\Discord.HE.xaml,
+Discord.StatementText9,הרפתקה שפורצת את הגבולות,,Discord\Discord.HE.xaml,
+Discord.StatementText10,חוויה דינמית ומפתיעה,,Discord\Discord.HE.xaml,
+Discord.StatementText11,בתוך אגדה פנטסטית,,Discord\Discord.HE.xaml,
+Discord.StatementText12,בין הפורטלים הקסומים,,Discord\Discord.HE.xaml,
+Discord.StatementText13,מסע לשמי הלילה,,Discord\Discord.HE.xaml,
+Discord.StatementText14,בחיפוש אחר היבשת האבודה שלו,,Discord\Discord.HE.xaml,
+Discord.StatementText15,סיפורם של כוכבי לכת לא ידועים,,Discord\Discord.HE.xaml,
+Discord.StatementText16,גילוי יקומים מקבילים,,Discord\Discord.HE.xaml,
+Discord.StatementText17,כניסה לממלכות האגדות,,Discord\Discord.HE.xaml,
+Discord.StatementText18,מציאות ארוגה במרקם החלומות,,Discord\Discord.HE.xaml,
+Discord.StatementText19,חלום בין כוכבים,,Discord\Discord.HE.xaml,
+Discord.StatementText20,מאחורי שערי הזמן,,Discord\Discord.HE.xaml,
+Discord.StatementText21,צוות כוכבים זוהרים,,Discord\Discord.HE.xaml,
+Discord.StatementText22,הצעקה השקטה של ​​הלא נודע,,Discord\Discord.HE.xaml,
+Discord.StatementText23,עולם סוחף,,Discord\Discord.HE.xaml,
+Discord.StatementText24,בראש ההרים המיסטיים,,Discord\Discord.HE.xaml,
+Discord.StatementText25,בחיפוש אחר ממלכות אבודות,,Discord\Discord.HE.xaml,
+Discord.StatementText26,מסע חלומות בין כוכבי,,Discord\Discord.HE.xaml,
+Discord.StatementText27,יצורי לילה קסומים,,Discord\Discord.HE.xaml,
+Discord.StatementText28,תחילתה של האגדה האינסופית,,Discord\Discord.HE.xaml,
+Discord.StatementText29,בלונים צבעוניים עולים לשמיים,,Discord\Discord.HE.xaml,
+Discord.StatementText30,שמי לילה מסתוריים,,Discord\Discord.HE.xaml,
+Discord.StatementText31,נתיב החלומות הממלכה האבודה,,Discord\Discord.HE.xaml,
+Discord.StatementText32,הדלת לממלכות לא ידועות,,Discord\Discord.HE.xaml,
+Discord.StatementText33,רוקדים בחיק הזמן,,Discord\Discord.HE.xaml,
+Discord.StatementText34,סיפורים קבורים בלילה,,Discord\Discord.HE.xaml,
+Discord.StatementText35,עולם מראה קסום,,Discord\Discord.HE.xaml,
+Discord.StatementText36,מסע בשערי הנצח,,Discord\Discord.HE.xaml,
+Discord.StatementText37,מסע לילי לוכד החלומות,,Discord\Discord.HE.xaml,
+Discord.StatementText38,חלום עיר קריסטל,,Discord\Discord.HE.xaml,
+Discord.StatementText39,כוכבים זורחים בחושך,,Discord\Discord.HE.xaml,
+Discord.StatementText40,לילה מסתורי מאחורי הכוכבים,,Discord\Discord.HE.xaml,
+Discord.StatementText41,סיפורי אור ירח מסתוריים,,Discord\Discord.HE.xaml,
+Discord.StatementText42,שער הזהב נמצא על סף ארצות לא ידועות,,Discord\Discord.HE.xaml,
+Discord.StatementText43,הדרכים המסתוריות של הלילה הקסום,,Discord\Discord.HE.xaml,
+Discord.StatementText44,בלוני חלומות עולים לשמיים,,Discord\Discord.HE.xaml,
+Discord.StatementText45,שביל חלומות מתחת לכוכבים,,Discord\Discord.HE.xaml,
+Discord.StatementText46,Hidden World Star Coast Town,,Discord\Discord.HE.xaml,
+Discord.StatementText47,הסיפור מאחורי ההר הערפילי,,Discord\Discord.HE.xaml,
+Discord.StatementText48,לילה כוכבים זורח בחושך,,Discord\Discord.HE.xaml,
+Launcher.WallCustomizeText,התאמה אישית של טפט,,Launcher\Launcher.HE.xaml,
+PASS⦙3,PASS⦙3,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.CreateLogText,צור קובץ יומן,,Launcher\Launcher.HE.xaml,
+PASS⦙4,PASS⦙4,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.CloseText,סגור אפליקציות,,Launcher\Launcher.HE.xaml,
+PASS⦙5,PASS⦙5,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.ExitText,יְצִיאָה,,Launcher\Launcher.HE.xaml,
+PASS⦙6,PASS⦙6,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.OpenReportText,דווח על בעיה,,Launcher\Launcher.HE.xaml,
+PASS⦙7,PASS⦙7,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.OpenText,פתח Sucrose,,Launcher\Launcher.HE.xaml,
+PASS⦙8,PASS⦙8,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.ReportText,דווח על שגיאה,,Launcher\Launcher.HE.xaml,
+PASS⦙9,PASS⦙9,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.ReportWindowTitle,אבחון Sucrose,,Launcher\Launcher.HE.xaml,
+PASS⦙10,PASS⦙10,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.SaveDialogTitle,שמור קובץ יומן,,Launcher\Launcher.HE.xaml,
+Launcher.SaveDialogFilter,קבצי ZIP (*.zip)|*.zip|כל הקבצים (*.*)|*.*,,Launcher\Launcher.HE.xaml,
+PASS⦙11,PASS⦙11,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.FeedbackText,שלח משוב,,Launcher\Launcher.HE.xaml,
+Launcher.RequestFeedbackText,בקשה ומשוב,,Launcher\Launcher.HE.xaml,
+PASS⦙12,PASS⦙12,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.SettingText,הגדרות,,Launcher\Launcher.HE.xaml,
+PASS⦙13,PASS⦙13,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.TrayText,Sucrose Wallpaper Engine,,Launcher\Launcher.HE.xaml,
+PASS⦙14,PASS⦙14,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.WallOpenText,פתח טפט,,Launcher\Launcher.HE.xaml,
+Launcher.WallStopText,עצור טפט,,Launcher\Launcher.HE.xaml,
+Launcher.WallCloseText,כבה את הטפט,,Launcher\Launcher.HE.xaml,
+Launcher.WallStartText,התחל טפט,,Launcher\Launcher.HE.xaml,
+Launcher.WallChangeText,שנה טפט,,Launcher\Launcher.HE.xaml,
+Launcher.WallReloadText,רענן טפט,,Launcher\Launcher.HE.xaml,
+PASS⦙15,PASS⦙15,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.ClosedText,סָגוּר,,Launcher\Launcher.HE.xaml,
+Launcher.PausedText,נֶעצָר,,Launcher\Launcher.HE.xaml,
+PASS⦙16,PASS⦙16,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.UpdateText,בדוק אם קיימים עדכונים,,Launcher\Launcher.HE.xaml,
+PASS⦙17,PASS⦙17,Don't Touch,Launcher\Launcher.HE.xaml,Please don't touch the translation in this line.
+Launcher.UpdateText.Done,העדכון נמצא בהכנה,,Launcher\Launcher.HE.xaml,
+Launcher.UpdateText.Check,מחפש עדכונים,,Launcher\Launcher.HE.xaml,
+Launcher.UpdateText.Progress,עדכון התקדמות {0},,Launcher\Launcher.HE.xaml,
+Live.Title,{0} מידע,,Live\Live.HE.xaml,
+PASS⦙18,PASS⦙18,Don't Touch,Live\Live.HE.xaml,Please don't touch the translation in this line.
+Live.Close,לִסְגוֹר,,Live\Live.HE.xaml,
+Live.Continue,לְהַמשִׁיך,,Live\Live.HE.xaml,
+Live.Download,הורד,,Live\Live.HE.xaml,
+Live.Remember,לִזכּוֹר,,Live\Live.HE.xaml,
+PASS⦙19,PASS⦙19,Don't Touch,Live\Live.HE.xaml,Please don't touch the translation in this line.
+Live.Info.WebView,WebView נדרש,,Live\Live.HE.xaml,
+Live.Info.CefSharp,CefSharp נדרש,,Live\Live.HE.xaml,
+Live.Info.MpvPlayer,דרוש MpvPlayer,,Live\Live.HE.xaml,
+PASS⦙20,PASS⦙20,Don't Touch,Live\Live.HE.xaml,Please don't touch the translation in this line.
+Live.Message.WebView,WebView2 Runtime אינו מותקן. WebView2 Runtime הוא רכיב המאפשר לך להשתמש בטכנולוגיות אינטרנט מודרניות ביישומים. לכן נדרש WebView2 Runtime כדי להגדיר את הטפט שנבחר.,,Live\Live.HE.xaml,
+Live.Message.CefSharp,VC++ Redistributable אינו מותקן. VC++ Redistributable מספק כמה רכיבי מערכת הדרושים לתפקוד תקין של CefSharp. CefSharp היא מסגרת המאפשרת לך להשתמש בטכנולוגיות אינטרנט מודרניות ביישומים. לכן נדרש VC++ Redistributable כדי להגדיר את הטפט שנבחר.,,Live\Live.HE.xaml,
+Live.Message.MpvPlayer,"דרישת גרסת Windows המינימלית לשימוש ב-MpvPlayer אינה מתקיימת. MpvPlayer הוא נגן מדיה שיכול לנגן קבצי מדיה באיכות גבוהה והשהייה נמוכה. הוא תומך בפורמטי וידאו ואודיו מודרניים ומציע אפשרויות תצורה חזקות. לכן, כדי להגדיר את הטפט שנבחר, עליך לעדכן את המערכת שלך ל-Windows 10 (Redstone) או לגרסה עדכנית יותר.",,Live\Live.HE.xaml,
+Base64⦙1,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iQXJlYS9Qb3J0YWwuQXJlYS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRW51bS9Qb3J0YWwuRW51bS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iQ2F0ZWdvcnkvUG9ydGFsLkNhdGVnb3J5LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJDb250cm9scy9Qb3J0YWwuQ29udHJvbHMuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlN0b3JlUGFnZS9Qb3J0YWwuU3RvcmVQYWdlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJNYWluV2luZG93L1BvcnRhbC5NYWluV2luZG93LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJMaWJyYXJ5UGFnZS9Qb3J0YWwuTGlicmFyeVBhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNldHRpbmdQYWdlL1BvcnRhbC5TZXR0aW5nUGFnZS5IRS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=,Don't Touch,Portal\Portal.HE.xaml,Please don't touch the translation in this line.
+Property.WindowTitle,Sucrose Property,,Property\Property.HE.xaml,
+PASS⦙21,PASS⦙21,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.DeleteTip,מחק עותק,,Property\Property.HE.xaml,
+Property.RefreshTip,רענן ממשק,,Property\Property.HE.xaml,
+Property.RestoreTip,אפס לברירת מחדל,,Property\Property.HE.xaml,
+PASS⦙22,PASS⦙22,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.Type.NotSupport,סוג הבקרה '{0}' אינו נתמך.,,Property\Property.HE.xaml,
+PASS⦙23,PASS⦙23,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.ColorPicker.Color,צֶבַע,,Property\Property.HE.xaml,
+Property.ColorPicker.Cancel,לְבַטֵל,,Property\Property.HE.xaml,
+Property.ColorPicker.Confirm,לְאַשֵׁר,,Property\Property.HE.xaml,
+Property.ColorPicker.EyeDropper,טַפטֶפֶת,,Property\Property.HE.xaml,
+Property.ColorPicker.Popup.Title,Sucrose Property Color Picker,,Property\Property.HE.xaml,
+PASS⦙24,PASS⦙24,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.FileDropDown.Filter,כל הקבצים (*.*)|*.*,,Property\Property.HE.xaml,
+Property.FileDropDown.OpenTip,בחר קובץ,,Property\Property.HE.xaml,
+Property.FileDropDown.DeleteTip,למחוק את הקובץ הזה,,Property\Property.HE.xaml,
+PASS⦙25,PASS⦙25,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.FileDropDown.Lock.Close,אני מבין,,Property\Property.HE.xaml,
+Property.FileDropDown.Lock.Title,אזהרת שימוש,,Property\Property.HE.xaml,
+Property.FileDropDown.Lock.Message,הקובץ שבחרת נמצא בשימוש בתהליך אחר.,,Property\Property.HE.xaml,
+PASS⦙26,PASS⦙26,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.FileDropDown.Access.Close,אני מבין,,Property\Property.HE.xaml,
+Property.FileDropDown.Access.Title,התראת גישה,,Property\Property.HE.xaml,
+Property.FileDropDown.Access.Message,אין לך הרשאה לגשת לקובץ שבחרת.,,Property\Property.HE.xaml,
+PASS⦙27,PASS⦙27,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.Localization.WebView,עבור WebView בלבד,,Property\Property.HE.xaml,
+Property.Localization.CefSharp,רק עבור CefSharp,,Property\Property.HE.xaml,
+Property.Localization.MpvPlayer,רק עבור MpvPlayer,,Property\Property.HE.xaml,
+Property.Localization.VlcPlayer,רק עבור VlcPlayer,,Property\Property.HE.xaml,
+PASS⦙28,PASS⦙28,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.Localization.Hue,גוון צבע,,Property\Property.HE.xaml,
+Property.Localization.Blur,לְטַשׁטֵשׁ,,Property\Property.HE.xaml,
+Property.Localization.Mute,שָׁקֶט,,Property\Property.HE.xaml,
+Property.Localization.Zoom,זום,,Property\Property.HE.xaml,
+Property.Localization.Gamma,גמא,,Property\Property.HE.xaml,
+Property.Localization.Sepia,חוּם כֵּהֶה,,Property\Property.HE.xaml,
+Property.Localization.Speed,מְהִירוּת,,Property\Property.HE.xaml,
+Property.Localization.Invert,שליליות,,Property\Property.HE.xaml,
+Property.Localization.Mirror,שיקוף,,Property\Property.HE.xaml,
+Property.Localization.Caption,כְּתוּבִית,,Property\Property.HE.xaml,
+Property.Localization.Contrast,לְהַשְׁווֹת,,Property\Property.HE.xaml,
+Property.Localization.Animation,הַנפָּשָׁה,,Property\Property.HE.xaml,
+Property.Localization.Grayscale,גווני אפור,,Property\Property.HE.xaml,
+Property.Localization.Sharpness,חַדוּת,,Property\Property.HE.xaml,
+Property.Localization.Brightness,בְּהִירוּת,,Property\Property.HE.xaml,
+Property.Localization.Saturation,רִוּוּי,,Property\Property.HE.xaml,
+PASS⦙29,PASS⦙29,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.Localization.Mirror.Flat,יָשָׁר,,Property\Property.HE.xaml,
+Property.Localization.Mirror.Vertical,אֲנָכִי,,Property\Property.HE.xaml,
+Property.Localization.Mirror.Horizontal,אופקי,,Property\Property.HE.xaml,
+Property.Localization.Mirror.VerticalHorizontal,אנכי ואופקי,,Property\Property.HE.xaml,
+PASS⦙30,PASS⦙30,Don't Touch,Property\Property.HE.xaml,Please don't touch the translation in this line.
+Property.Localization.Animation.Flat,יָשָׁר,,Property\Property.HE.xaml,
+Property.Localization.Animation.Flip,רוֹטַציָה,,Property\Property.HE.xaml,
+Property.Localization.Animation.Pulse,נְשִׁימָה,,Property\Property.HE.xaml,
+Property.Localization.Animation.Shake,נַדְנֵדָה,,Property\Property.HE.xaml,
+Property.Localization.Animation.Bounce,לִקְפּוֹץ,,Property\Property.HE.xaml,
+Property.Localization.Animation.Wiggle,סווינג מהיר,,Property\Property.HE.xaml,
+Undo.QuestionTitle,Sucrose Undo,,Undo\Undo.HE.xaml,
+PASS⦙31,PASS⦙31,Don't Touch,Undo\Undo.HE.xaml,Please don't touch the translation in this line.
+Undo.QuestionMessage,האם אתה באמת רוצה להסיר את ההתקנה של Sucrose Wallpaper Engine?,,Undo\Undo.HE.xaml,
+Undo.QuestionDescription,"אם אתה רוצה להסיר אותו עם כל ההגדרות שלו, בחר כן, אם אתה רוצה להסיר אותו על ידי שמירת ההגדרות, בחר לא, ואם אתה רוצה לבטל את תהליך ההסרה, אנא בחר ביטול.",,Undo\Undo.HE.xaml,
+Update.WindowTitle,Sucrose Update,,Update\Update.HE.xaml,
+PASS⦙32,PASS⦙32,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.HelpText,פתור את הבעיה,,Update\Update.HE.xaml,
+PASS⦙33,PASS⦙33,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.ReloadText,נסה שוב,,Update\Update.HE.xaml,
+PASS⦙34,PASS⦙34,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.ReloadText.Check.Again,בדוק מחדש,,Update\Update.HE.xaml,
+PASS⦙35,PASS⦙35,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.ReloadText.Browser.Opened,נפתח בדפדפן,,Update\Update.HE.xaml,
+Update.ReloadText.Browser.Opening,זה נפתח בדפדפן,,Update\Update.HE.xaml,
+PASS⦙36,PASS⦙36,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Preparing,מתבצעות הכנות הכרחיות,,Update\Update.HE.xaml,
+PASS⦙37,PASS⦙37,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Temporary,מיקומים זמניים נשלטים,,Update\Update.HE.xaml,
+Update.MessageText.Temporary.Error,לא ניתן היה לשלוט על מיקומים זמניים,,Update\Update.HE.xaml,
+PASS⦙38,PASS⦙38,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Connection,חיבור לאינטרנט נבדק,,Update\Update.HE.xaml,
+Update.MessageText.Connection.None,אין חיבור לאינטרנט,,Update\Update.HE.xaml,
+Update.MessageText.Connection.Error,לא ניתן היה לבדוק את חיבור האינטרנט,,Update\Update.HE.xaml,
+PASS⦙39,PASS⦙39,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Listing,רשימות נדרשות נלקחות,,Update\Update.HE.xaml,
+Update.MessageText.Listing.Empty,רשימות החובה ריקות,,Update\Update.HE.xaml,
+Update.MessageText.Listing.Error,לא ניתן היה לקבל רשימות נדרשות,,Update\Update.HE.xaml,
+PASS⦙40,PASS⦙40,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Filtering,הרשימות ממוינות,,Update\Update.HE.xaml,
+Update.MessageText.Filtering.Not,לא ניתן לסנן רשימות,,Update\Update.HE.xaml,
+Update.MessageText.Filtering.Error,לא ניתן היה לחלץ רשימות,,Update\Update.HE.xaml,
+PASS⦙41,PASS⦙41,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Comparing,הרשימות מושוות,,Update\Update.HE.xaml,
+Update.MessageText.Comparing.Error,לא ניתן היה להשוות בין רשימות,,Update\Update.HE.xaml,
+Update.MessageText.Comparing.Update,האפליקציה כבר מעודכנת,,Update\Update.HE.xaml,
+PASS⦙42,PASS⦙42,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Searching,מחפש קבצים נדרשים,,Update\Update.HE.xaml,
+Update.MessageText.Searching.Not,לא נמצאו קבצים נדרשים,,Update\Update.HE.xaml,
+Update.MessageText.Searching.Error,לא ניתן היה לחפש קבצים נדרשים,,Update\Update.HE.xaml,
+Update.MessageText.Searching.Condition,לא נמצאו קבצים נדרשים,,Update\Update.HE.xaml,
+PASS⦙43,PASS⦙43,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Downloading,הקבצים הנדרשים נמצאים בהורדה,,Update\Update.HE.xaml,
+Update.MessageText.Downloading.Error,לא ניתן היה להוריד קבצים נדרשים,,Update\Update.HE.xaml,
+Update.MessageText.Downloading.Complete.Error,אירעה שגיאה בעת הורדת הקובץ הדרוש,,Update\Update.HE.xaml,
+Update.MessageText.Downloading.Complete.Cancel,הקובץ הנדרש בוטל בזמן ההורדה,,Update\Update.HE.xaml,
+PASS⦙44,PASS⦙44,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Running,הקובץ שהוורד בהכנה,,Update\Update.HE.xaml,
+Update.MessageText.Running.Not,לא ניתן להשתמש בקובץ שהוורד,,Update\Update.HE.xaml,
+Update.MessageText.Running.Error,לא ניתן היה להכין את הקובץ שהוורד,,Update\Update.HE.xaml,
+Update.MessageText.Running.Executed,הפעלת קובץ שהורד,,Update\Update.HE.xaml,
+Update.MessageText.Running.Executing,הפעלת הקובץ שהוורד,,Update\Update.HE.xaml,
+PASS⦙45,PASS⦙45,Don't Touch,Update\Update.HE.xaml,Please don't touch the translation in this line.
+Update.MessageText.Extracting,הקובץ שהורד נחלץ,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Not,לא ניתן להשתמש בקובץ שהוורד,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Error,לא ניתן היה לחלץ את הקובץ שהוורד,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Failed,הקובץ שהורד נכשל,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Corrupt,הקובץ שהורד פגום,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Executed,הקובץ שחולץ הוצא לפועל,,Update\Update.HE.xaml,
+Update.MessageText.Extracting.Executing,הקובץ שחולץ מבוצע,,Update\Update.HE.xaml,
+Watchdog.ErrorEmpty,"למרבה הצער, פרטי השגיאה לא נלכדו.",,Watchdog\Watchdog.HE.xaml,
+Watchdog.ErrorTitle,טָעוּת,,Watchdog\Watchdog.HE.xaml,
+Watchdog.HelpButton,עֶזרָה,,Watchdog\Watchdog.HE.xaml,
+Watchdog.HideButton,לשמור את זה,,Watchdog\Watchdog.HE.xaml,
+Watchdog.ShowButton,לְהַצִיג,,Watchdog\Watchdog.HE.xaml,
+Watchdog.StackTrace,עקבות מחסנית:,,Watchdog\Watchdog.HE.xaml,
+Watchdog.CloseButton,יְצִיאָה,,Watchdog\Watchdog.HE.xaml,
+Watchdog.WindowTitle,Sucrose Watchdog,,Watchdog\Watchdog.HE.xaml,
+Watchdog.ErrorMessage,אירעה שגיאה בלתי צפויה:,,Watchdog\Watchdog.HE.xaml,
+Portal.Area.Log,יוֹמִי,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Data,נְתוּנִים,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Hook,וָו,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Cache,מטמון,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Reset,אִתחוּל,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Sound,קוֹל,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Store,מרכז קניות,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Backup,גיבוי,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Donate,תְרוּמָה,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Laptop,מחשב נייד,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.System,מַעֲרֶכֶת,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Update,לְעַדְכֵּן,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Engines,מנועים,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Library,סִפְרִיָה,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Support,תְמִיכָה,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Windows,Windows,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Priority,עֲדִיפוּת,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Developer,מפתח,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.Extensions,תוספים,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.OperatingSystem,מַעֲרֶכֶת הַפעָלָה,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.SystemResources,משאבי מערכת,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Area.AppearanceBehavior,מראה והתנהגות,,Portal\Area\Portal.Area.HE.xaml,
+Portal.Category.All,כֹּל,,Portal\Category\Portal.Category.HE.xaml,
+PASS⦙46,PASS⦙46,Don't Touch,Portal\Category\Portal.Category.HE.xaml,Please don't touch the translation in this line.
+Portal.Category.Sky,שָׁמַיִם,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.War,מִלחָמָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Bard,Bard,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Cute,נָעִים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Game,מִשְׂחָק,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Love,אַהֲבָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Time,זְמַן,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Anime,Anime,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Music,מוּסִיקָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Retro,Retro,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Space,מֶרחָב,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Brands,מותגים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Galaxy,גָלַקסִיָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Horror,פַּחַד,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Nature,טֶבַע,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Sports,ספּוֹרט,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.System,מַעֲרֶכֶת,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Tavern,מִסְבָּאָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Temple,מִקדָשׁ,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Animals,בַּעֲלֵי חַיִים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Dynamic,דִינָמִי,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Fantasy,פַנטָזִיָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Fashion,לְעַצֵב,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.LineArt,קו אמנות,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Persons,אנשי קשר,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Science,מַדָע,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Seasons,עונות השנה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Vintage,נוֹסטָלגִיָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Abstract,תַקצִיר,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Ambience,סְבִיבָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Artworks,יצירות אמנות,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Colorful,צִבעוֹנִי,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Holidays,חגים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Medieval,ימי הביניים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.PixelArt,Pixel Art,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Software,תוֹכנָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Vehicles,כְּלֵי עֲבוֹדָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Workshop,סַדנָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Animation,הַנפָּשָׁה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Education,הַשׂכָּלָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.FilmandTV,סרטים וסדרות טלוויזיה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Halloween,ליל כל הקדושים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Landscape,נוֹף,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Lifestyle,סגנון חיים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ComicBooks,קומיקס,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.DigitalArt,אמנות דיגיטלית,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Minimalist,Minimalist,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Technology,טֶכנוֹלוֹגִיָה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Nightscapes,נופי לילה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.Superheroes,גיבורי על,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.BlackandWhite,שחור ולבן,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.FoodandDrinks,מזון ומשקאות,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ArtandAbstract,אמנות ומופשט,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.CloudsandSkies,עננים ושמים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.KidsandCartoon,ילדים וסרטים מצוירים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ScienceFiction,מַדָע בִּדיוֹנִי,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.CitiesandPlaces,ערים ומקומות,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.CartoonandComics,קריקטורות וקומיקס,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.EnchantedForests,יערות קסומים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ColorfulGradients,מעברי צבע צבעוניים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.GeometricPatterns,דפוסים גיאומטריים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.InspirationalQuotes,ציטוטים מעוררי השראה,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.PatternsandTextures,דפוסים ומרקמים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.UnderwaterandMarine,מתחת למים וים,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ArtificialIntelligence,בינה מלאכותית,,Portal\Category\Portal.Category.HE.xaml,
+Portal.Category.ArchitectureandBuildings,אדריכלות ומבנים,,Portal\Category\Portal.Category.HE.xaml,
+Base64⦙2,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVHJheUljb24vUG9ydGFsLlRyYXlJY29uLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckhlbHAvUG9ydGFsLk90aGVySGVscC5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVFZGl0L1BvcnRhbC5UaGVtZUVkaXQuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlN0b3JlQ2FyZC9Qb3J0YWwuU3RvcmVDYXJkLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJPdGhlckFib3V0L1BvcnRhbC5PdGhlckFib3V0LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQYWdpbmF0aW9uL1BvcnRhbC5QYWdpbmF0aW9uLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZVNoYXJlL1BvcnRhbC5UaGVtZVNoYXJlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJMaWJyYXJ5Q2FyZC9Qb3J0YWwuTGlicmFyeUNhcmQuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lRGVsZXRlL1BvcnRhbC5UaGVtZURlbGV0ZS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXZpZXcvUG9ydGFsLlRoZW1lUmV2aWV3LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJUaGVtZUltcG9ydC9Qb3J0YWwuVGhlbWVJbXBvcnQuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlRoZW1lQ3JlYXRlL1BvcnRhbC5UaGVtZUNyZWF0ZS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iVGhlbWVSZXBvcnQvUG9ydGFsLlRoZW1lUmVwb3J0LkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJFeHBhbmRlckNhcmQvUG9ydGFsLkV4cGFuZGVyQ2FyZC5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iV2FsbHBhcGVyQ3ljbGluZy9Qb3J0YWwuV2FsbHBhcGVyQ3ljbGluZy5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRGlzcGxheVByZWZlcmVuY2VzL1BvcnRhbC5EaXNwbGF5UHJlZmVyZW5jZXMuSEUueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+,Don't Touch,Portal\Controls\Portal.Controls.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.Stretch.Fill,לְמַלֵא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.Stretch.None,אַף לֹא אֶחָד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.Stretch.Uniform,יַחֲסִי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.Stretch.UniformToFill,מלא באופן פרופורציונלי,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙47,PASS⦙47,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.SortModeType.Name,שֵׁם,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.SortModeType.None,אַף לֹא אֶחָד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.SortModeType.Creation,יצירה,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.SortModeType.Modification,מִשְׁתַנֶה,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙48,PASS⦙48,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.InputType.Close,סָגוּר,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.InputType.OnlyMouse,עכבר בלבד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.InputType.OnlyKeyboard,מקלדת בלבד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.InputType.MouseKeyboard,עכבר ומקלדת,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙49,PASS⦙49,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.StretchType.Fill,לְמַלֵא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.StretchType.None,אַף לֹא אֶחָד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.StretchType.Uniform,יַחֲסִי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.StretchType.UniformToFill,מלא באופן פרופורציונלי,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙50,PASS⦙50,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.ReportThemeType.Spam,Spam,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.Other,אַחֵר,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.Nudity,עֵירוֹם,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.Harmful,מזיק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.Violence,אַלִימוּת,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.Malicious,זְדוֹנִי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.CopyrightViolation,הפרת זכויות יוצרים,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ReportThemeType.MisleadingInformation,מידע מטעה,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙51,PASS⦙51,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.CommunicationType.Pipe,Pipe,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CommunicationType.Signal,Signal,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CommunicationType.Transmission,Transmission,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙52,PASS⦙52,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.PerformanceType.Close,לִסְגוֹר,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.PerformanceType.Pause,לְהַפְסִיק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.PerformanceType.Resume,לְתַחְזֵק,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙53,PASS⦙53,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.WindowBackdropType.Auto,אוֹטוֹמָטִי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.WindowBackdropType.Mica,נָצִיץ,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.WindowBackdropType.None,אַף לֹא אֶחָד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.WindowBackdropType.Tabbed,עם כרטיסיות,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.WindowBackdropType.Acrylic,אַקרִילִי,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙54,PASS⦙54,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.InputModuleType.Native,Native,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.InputModuleType.RawInput,RawInput,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙55,PASS⦙55,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.StoreServerType.GitHub,GitHub,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.StoreServerType.Soferity,Soferity,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙56,PASS⦙56,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.UpdateAutoType.Visible,נִרְאֶה,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateAutoType.SemiSilent,לפעמים גלוי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateAutoType.UpdateSilent,עדכון בלתי נראה,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateAutoType.CompleteSilent,לגמרי בלתי נראה,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙57,PASS⦙57,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.UpdateModuleType.Native,Native,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateModuleType.Downloader,Downloader,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙58,PASS⦙58,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.UpdateServerType.GitHub,GitHub,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateServerType.Soferity,Soferity,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙59,PASS⦙59,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.PausePerformanceType.Heavy,כָּבֵד,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.PausePerformanceType.Light,אוֹר,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙60,PASS⦙60,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.SortKindType.Ascending,עולה [A-Z],,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.SortKindType.Descending,מופחת [Z-A],,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙61,PASS⦙61,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.ExpandScreenType.Default,בְּרִירַת מֶחדָל,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ExpandScreenType.Advanced,מְפוּתָח,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙62,PASS⦙62,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.TransitionCycleType.Random,אַקרַאִי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.TransitionCycleType.Sequential,עוֹקֵב,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙63,PASS⦙63,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.ScreenType.WorkingArea,סביבת עבודה,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.ScreenType.DisplayBound,מגבלות מסך,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙64,PASS⦙64,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.UpdateChannelType.Release,בְּרִירַת מֶחדָל,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateChannelType.PreRelease,מפתח,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙65,PASS⦙65,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.DuplicateScreenType.Default,בְּרִירַת מֶחדָל,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.DuplicateScreenType.Advanced,מְפוּתָח,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙66,PASS⦙66,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.UpdateExtensionType.Compressed,דָחוּס,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.UpdateExtensionType.Executable,בר הפעלה,,Portal\Enum\Portal.Enum.HE.xaml,
+PASS⦙67,PASS⦙67,Don't Touch,Portal\Enum\Portal.Enum.HE.xaml,Please don't touch the translation in this line.
+Portal.Enum.CompatibilityType.Pass,תוצאה מוצלחת,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Tags,ל'Tags' יש יותר מדי ערכים,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Type,ערכת הנושא נוצרה עבור סוג שהאפליקציה אינה תומכת בו,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Title,ערך 'Title' ריק או ארוך מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Access,אין לך הרשאה לגשת לקובץ הרלוונטי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Author,ערך 'Author' ריק או ארוך מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Folder,קבצי ערכות נושא אינם נמצאים בספריה הראשית של הארכיון,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Locked,הקובץ הרלוונטי נמצא בשימוש בתהליך אחר,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Source,הקובץ 'Source' לא נמצא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Contact,ערך 'Contact' ריק או ארוך מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Encrypt,הקובץ הרלוונטי מוצפן,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Preview,קובץ 'Preview' לא נמצא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.ZipType,הקובץ הרלוונטי אינו למעשה קובץ '.zip',,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InfoFile,הקובץ 'SucroseInfo.json' לא נמצא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.LoopMode,ערך 'LoopMode' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.NotFound,הקובץ הרלוונטי לא נמצא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Arguments,ערך 'Arguments' ארוך מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.EmptyInfo,הקובץ 'SucroseInfo.json' ריק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Extension,לקובץ הרלוונטי אין סיומת '.zip',,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.ThemeType,ערך 'ThemeType' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Thumbnail,הקובץ 'Thumbnail' לא נמצא,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.AppVersion,ערכת הנושא נוצרה עבור גרסה גבוהה יותר של האפליקציה,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidUrl,'Source' מכיל ערך לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemBios,ערך 'SystemBios' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemDate,ערך 'SystemDate' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Description,ערך 'Description' ריק או ארוך מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidFile,קובץ לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidInfo,הקובץ 'SucroseInfo.json' אינו חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidTags,ערכי 'Tags' קצרים מדי או ארוכים מדי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.ShuffleMode,ערך 'ShuffleMode' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.StretchMode,ערך 'StretchMode' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemAudio,ערך 'SystemAudio' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemTheme,ערך 'SystemTheme' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.TriggerTime,ערך 'TriggerTime' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.VolumeLevel,ערך 'VolumeLevel' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.Localization,ערך 'Localization' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.PropertyList,ערך 'PropertyList' ריק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemMemory,ערך לא חוקי 'SystemMemory',,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemBattery,ערך 'SystemBattery' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemGraphic,ערך 'SystemGraphic' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemNetwork,ערך 'SystemNetwork' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemStorage,ערך 'SystemStorage' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,ערך 'Contact' אינו 'כתובת אתר' או 'כתובת דואר',,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.EmptyCompatible,הקובץ 'SucroseCompatible.json' ריק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.EmptyProperties,הקובץ 'SucroseProperties.json' ריק,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemProcessor,ערך לא חוקי 'SystemProcessor',,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidExtension,סיומת קובץ לא חוקית,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.PropertyListener,ערך 'PropertyListener' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidCompatible,הקובץ 'SucroseCompatible.json' אינו חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.InvalidProperties,הקובץ 'SucroseProperties.json' אינו חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.SystemMotherboard,ערך 'SystemMotherboard' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.PropertyLocalization,ערך 'PropertyLocalization' לא חוקי,,Portal\Enum\Portal.Enum.HE.xaml,
+Portal.Enum.CompatibilityType.UnforeseenConsequences,השלכות בלתי צפויות,,Portal\Enum\Portal.Enum.HE.xaml,
+Base64⦙3,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbExpYnJhcnlQYWdlL1BvcnRhbC5GdWxsTGlicmFyeVBhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkVtcHR5TGlicmFyeVBhZ2UvUG9ydGFsLkVtcHR5TGlicmFyeVBhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaExpYnJhcnlQYWdlL1BvcnRhbC5TZWFyY2hMaWJyYXJ5UGFnZS5IRS54YW1sIiAvPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4=,Don't Touch,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,Please don't touch the translation in this line.
+PASS⦙68,PASS⦙68,Don't Touch,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryPage.Title,LibraryPage,,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,
+PASS⦙69,PASS⦙69,Don't Touch,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryPage.Import.Successful,הנושא '{0}' נוסף בהצלחה לספרייה.,,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,
+Portal.LibraryPage.Import.Unsuccessful,לא ניתן להוסיף את ערכת הנושא '{0}' לספרייה. סיבה: '{1}'.,,Portal\LibraryPage\Portal.LibraryPage.HE.xaml,
+Portal.MainWindow.Title,Sucrose Wallpaper Engine,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙70,PASS⦙70,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuHelp,עֶזרָה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuAbout,אוֹדוֹת,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙71,PASS⦙71,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuHelpTip,הצג עזרה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuAboutTip,על צפייה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙72,PASS⦙72,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuStore,מרכז קניות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuLibrary,סִפְרִיָה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙73,PASS⦙73,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuStoreTip,חנות נושא,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuLibraryTip,ספריית נושאים,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙74,PASS⦙74,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuOther,אַחֵר,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuDonate,תְרוּמָה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuSystem,מַעֲרֶכֶת,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuGeneral,כְּלָלִי,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPremium,חנות פרימיום,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPersonal,אִישִׁי,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuWallpaper,טָפֵּט,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPerformance,ביצועים,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙75,PASS⦙75,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuBackTip,לַחֲזוֹר,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuOtherTip,הגדרות אחרות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuDonateTip,הגדרות תרומה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuSystemTip,הגדרות מערכת,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuGeneralTip,הגדרות כלליות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPersonalTip,הגדרות אישיות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuWallpaperTip,הגדרות טפט,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPerformanceTip,הגדרות ביצועים,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙76,PASS⦙76,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuSettingTip,הגדרות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙77,PASS⦙77,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.SearchBoxHint,חפש טפט,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙78,PASS⦙78,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.SearchBoxTip,מתקשים למצוא את מה שאתם צריכים?,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙79,PASS⦙79,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuDarkTip,נושא אפל,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuLightTip,נושא זוהר,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+PASS⦙80,PASS⦙80,Don't Touch,Portal\MainWindow\Portal.MainWindow.HE.xaml,Please don't touch the translation in this line.
+Portal.MainWindow.MenuOtherOptionsTip,אפשרויות אחרות,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuPremiumStoreTip,חנות נושאים פרימיום,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuDonateOptionsTip,אפשרויות תרומה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuCreateWallpaperTip,צור טפט,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuWallpaperCyclingTip,מחזור טפטים,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Portal.MainWindow.MenuDisplayPreferencesTip,העדפות תצוגה,,Portal\MainWindow\Portal.MainWindow.HE.xaml,
+Base64⦙4,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iT3RoZXJTZXR0aW5nUGFnZS9Qb3J0YWwuT3RoZXJTZXR0aW5nUGFnZS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRG9uYXRlU2V0dGluZ1BhZ2UvUG9ydGFsLkRvbmF0ZVNldHRpbmdQYWdlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJTeXN0ZW1TZXR0aW5nUGFnZS9Qb3J0YWwuU3lzdGVtU2V0dGluZ1BhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IkdlbmVyYWxTZXR0aW5nUGFnZS9Qb3J0YWwuR2VuZXJhbFNldHRpbmdQYWdlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJQZXJzb25hbFNldHRpbmdQYWdlL1BvcnRhbC5QZXJzb25hbFNldHRpbmdQYWdlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJXYWxscGFwZXJTZXR0aW5nUGFnZS9Qb3J0YWwuV2FsbHBhcGVyU2V0dGluZ1BhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UvUG9ydGFsLlBlcmZvcm1hbmNlU2V0dGluZ1BhZ2UuSEUueGFtbCIgLz4NCiAgICA8L1Jlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+,Don't Touch,Portal\SettingPage\Portal.SettingPage.HE.xaml,Please don't touch the translation in this line.
+Base64⦙5,ICAgIDxSZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iRnVsbFN0b3JlUGFnZS9Qb3J0YWwuRnVsbFN0b3JlUGFnZS5IRS54YW1sIiAvPg0KICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iQnJva2VuU3RvcmVQYWdlL1BvcnRhbC5Ccm9rZW5TdG9yZVBhZ2UuSEUueGFtbCIgLz4NCiAgICAgICAgPFJlc291cmNlRGljdGlvbmFyeSBTb3VyY2U9IlNlYXJjaFN0b3JlUGFnZS9Qb3J0YWwuU2VhcmNoU3RvcmVQYWdlLkhFLnhhbWwiIC8+DQogICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnkgU291cmNlPSJVbmtub3duU3RvcmVQYWdlL1BvcnRhbC5Vbmtub3duU3RvcmVQYWdlLkhFLnhhbWwiIC8+DQogICAgPC9SZXNvdXJjZURpY3Rpb25hcnkuTWVyZ2VkRGljdGlvbmFyaWVzPg==,Don't Touch,Portal\StorePage\Portal.StorePage.HE.xaml,Please don't touch the translation in this line.
+PASS⦙81,PASS⦙81,Don't Touch,Portal\StorePage\Portal.StorePage.HE.xaml,Please don't touch the translation in this line.
+Portal.StorePage.Title,StorePage,,Portal\StorePage\Portal.StorePage.HE.xaml,
+Portal.DisplayPreferences.Close,לִסְגוֹר,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+Portal.DisplayPreferences.Title,העדפות תצוגה,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙82,PASS⦙82,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Expander,מצב מיקום,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+Portal.DisplayPreferences.Expander.Description,כיצד להחיל טפטים על מסכים פעילים.,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙83,PASS⦙83,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Screen,מסך נבחר בלבד,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙84,PASS⦙84,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Expand,הרחבה בין מסכים,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙85,PASS⦙85,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Expand.Monitor,כל המוניטורים,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙86,PASS⦙86,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Expand.Hint,בחר מצב מתיחה בין מסכים,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙87,PASS⦙87,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Duplicate,שכפל את אותו טפט,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+PASS⦙88,PASS⦙88,Don't Touch,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,Please don't touch the translation in this line.
+Portal.DisplayPreferences.Duplicate.Hint,בחר את אותו מצב שכפול טפטים,,Portal\Controls\DisplayPreferences\Portal.DisplayPreferences.HE.xaml,
+Portal.ExpanderCard.TitleText,כּוֹתֶרֶת,,Portal\Controls\ExpanderCard\Portal.ExpanderCard.HE.xaml,
+Portal.ExpanderCard.DescriptionText,הֶסבֵּר,,Portal\Controls\ExpanderCard\Portal.ExpanderCard.HE.xaml,
+PASS⦙89,PASS⦙89,Don't Touch,Portal\Controls\ExpanderCard\Portal.ExpanderCard.HE.xaml,Please don't touch the translation in this line.
+Portal.ExpanderCard.ExpandUpTip,הִתמוֹטְטוּת,,Portal\Controls\ExpanderCard\Portal.ExpanderCard.HE.xaml,
+Portal.ExpanderCard.ExpandDownTip,לְהַרְחִיב,,Portal\Controls\ExpanderCard\Portal.ExpanderCard.HE.xaml,
+Portal.LibraryCard.TitleText,כּוֹתֶרֶת,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.DescriptionText,הֶסבֵּר,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+PASS⦙90,PASS⦙90,Don't Touch,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryCard.MoreTip,יוֹתֵר,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.VersionTip,עדכן Sucrose כדי להשתמש בערכת נושא זה,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+PASS⦙91,PASS⦙91,Don't Touch,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryCard.MenuUse,לְהִשְׁתַמֵשׁ,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuEdit,לַעֲרוֹך,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuFind,לִמצוֹא,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuShare,לַחֲלוֹק,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuDelete,לִמְחוֹק,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuReview,סְקִירָה,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuPreview,תצוגה מקדימה,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuCustomize,להתאים אישית,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuCyclingAdd,הוסף ללולאה,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.MenuCyclingRemove,הסר מהלולאה,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+PASS⦙92,PASS⦙92,Don't Touch,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryCard.Closed,סָגוּר,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.LibraryCard.Paused,נֶעצָר,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+PASS⦙93,PASS⦙93,Don't Touch,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryCard.Selected,נִבחָר,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+PASS⦙94,PASS⦙94,Don't Touch,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,Please don't touch the translation in this line.
+Portal.LibraryCard.Incompatible,מְנוּגָד,,Portal\Controls\LibraryCard\Portal.LibraryCard.HE.xaml,
+Portal.OtherAbout.Close,לִסְגוֹר,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+Portal.OtherAbout.Title,אוֹדוֹת,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙95,PASS⦙95,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.About,"שלום, שמי Bayram Emekli, אני מוכר גם בשם המשתמש Taiizor. אני המפתח של אפליקציית Sucrose Wallpaper Engine החינמית והפתוחה. תודה על השימוש באפליקציה שפיתחתי.",,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙96,PASS⦙96,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.Update,גרסה: v{0},,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+Portal.OtherAbout.Update.Description,בדיקה אחרונה: {0},,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙97,PASS⦙97,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.Update.Notes,עדכן הערות,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙98,PASS⦙98,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.Partners,השותפים שלנו,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙99,PASS⦙99,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.Contributors,תורמים,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙100,PASS⦙100,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.TermsOfService,תנאים והגבלות,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙101,PASS⦙101,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.PrivacyPolicy,מדיניות פרטיות,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+PASS⦙102,PASS⦙102,Don't Touch,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherAbout.CodeOfConduct,הסכם קהילה של אמנת התורמים,,Portal\Controls\OtherAbout\Portal.OtherAbout.HE.xaml,
+Portal.OtherHelp.Close,לִסְגוֹר,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.Title,עֶזרָה,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+PASS⦙103,PASS⦙103,Don't Touch,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherHelp.WebPage,אֲתַר אִינטֶרנֶט,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.WebPage.Description,אתר האינטרנט הרשמי של Sucrose Wallpaper Engine,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+PASS⦙104,PASS⦙104,Don't Touch,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherHelp.Documentation,תיעוד,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.Documentation.Description,דף התיעוד הרשמי של Sucrose Wallpaper Engine,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+PASS⦙105,PASS⦙105,Don't Touch,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherHelp.Repository,קוד מקור,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.Repository.Description,דף קוד המקור הרשמי של Sucrose Wallpaper Engine,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+PASS⦙106,PASS⦙106,Don't Touch,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherHelp.Discussions,דיונים,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.Discussions.Description,דף הדיונים הרשמי של Sucrose Wallpaper Engine,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+PASS⦙107,PASS⦙107,Don't Touch,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherHelp.Report,דווח על שגיאה,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.OtherHelp.Report.Description,דף דיווח באגים רשמי של Sucrose Wallpaper Engine,,Portal\Controls\OtherHelp\Portal.OtherHelp.HE.xaml,
+Portal.Pagination.PageJump,לְדַלֵג,,Portal\Controls\Pagination\Portal.Pagination.HE.xaml,
+Portal.StoreCard.TitleText,כּוֹתֶרֶת,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+Portal.StoreCard.DescriptionText,הֶסבֵּר,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+PASS⦙108,PASS⦙108,Don't Touch,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,Please don't touch the translation in this line.
+Portal.StoreCard.VersionTip,עדכן Sucrose כדי להשתמש בערכת נושא זה,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+PASS⦙109,PASS⦙109,Don't Touch,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,Please don't touch the translation in this line.
+Portal.StoreCard.MenuReport,דִוּוּחַ,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+Portal.StoreCard.MenuUpdate,בדוק אם קיימים עדכונים,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+Portal.StoreCard.MenuInstall,העלה,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+Portal.StoreCard.MenuUpdating,מחפש עדכונים,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+PASS⦙110,PASS⦙110,Don't Touch,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,Please don't touch the translation in this line.
+Portal.StoreCard.Incompatible,מְנוּגָד,,Portal\Controls\StoreCard\Portal.StoreCard.HE.xaml,
+Portal.ThemeCreate.Title,יצירת ערכת נושא,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙111,PASS⦙111,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Close,לִסְגוֹר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Create,לִיצוֹר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Creating,נוצר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙112,PASS⦙112,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Gif,ערכת Gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Gif.Description,צור ערכת נושא משלך בסוג Gif.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙113,PASS⦙113,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Url,ערכת נושא של Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Url.Description,צור ערכת נושא משלך של סוג Url.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙114,PASS⦙114,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Web,ערכת נושא Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Web.Description,צור ערכת נושא משלך בז'אנר Web.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙115,PASS⦙115,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Video,ערכת נושא של Video,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Video.Description,צור ערכת נושא משלך בסוג Video.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙116,PASS⦙116,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.YouTube,ערכת נושא של YouTube,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.YouTube.Description,צור ערכת נושא משלך בז'אנר YouTube.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙117,PASS⦙117,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Application,נושא Application,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Application.Description,צור ערכת נושא משלך מסוג Application.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙118,PASS⦙118,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.ThemeUrl,Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeWeb,Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeTags,תגים,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeAuthor,סוֹפֵר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeContact,תִקשׁוֹרֶת,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemePreview,תצוגה מקדימה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeArguments,טיעונים,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeThumbnail,מִכסֶה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeApplication,בַּקָשָׁה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.ThemeUrl.Hint,אנא הקלד כתובת url חוקית,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeWeb.Hint,בחר דף אינטרנט,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeTags.Hint,נא לכתוב תגי נושא חוקיים,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeTitle.Hint,נא לכתוב כותרת חוקית,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeAuthor.Hint,נא להזין שם מחבר חוקי,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeContact.Hint,נא לכתוב כתובת תקפה ליצירת קשר,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemePreview.Hint,בחר קובץ תצוגה מקדימה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeArguments.Hint,נא לכתוב ארגומנטים תקפים ליישום,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeThumbnail.Hint,בחר תמונת שער,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeApplication.Hint,בחר קובץ יישום,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeDescription.Hint,נא לכתוב תיאור חוקי,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙120,PASS⦙120,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.DragDrop.Delete,לְבַטֵל,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙121,PASS⦙121,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.DragDrop.Gif.Title,בחר קובץ Gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.DragDrop.Gif.Filter,קבצי Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙122,PASS⦙122,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.DragDrop.Video.Title,בחר קובץ וידאו,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.DragDrop.Video.Filter,קבצי וידאו (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4 )|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙123,PASS⦙123,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.DragDrop.Gif,גרור ושחרר את קובץ ה-Gif שלך כאן,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.DragDrop.Video,גרור ושחרר את קובץ הווידאו שלך כאן,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙124,PASS⦙124,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.ThemeThumbnail.Title,בחר תמונת שער,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemeThumbnail.Filter,קבצי תמונה (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙125,PASS⦙125,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.ThemePreview.Title,בחר תצוגה מקדימה של קובץ,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ThemePreview.Filter,קבצי Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙126,PASS⦙126,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.WebSource.Title,בחר דף אינטרנט,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.WebSource.Filter,דפי אינטרנט (*.html)|*.html,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙127,PASS⦙127,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.ApplicationSource.Title,בחר קובץ יישום,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.ApplicationSource.Filter,קבצי יישומים (*.exe)|*.exe,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙128,PASS⦙128,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Copy.Close,אני מבין,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Copy.Title,הודעה חשובה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Copy.Message,הקובץ שתבחר ייכלל בערכת הנושא יחד עם כל שאר הקבצים והתיקיות בספריה שלו.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙129,PASS⦙129,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Lock.Close,אני מבין,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Lock.Title,שימוש בקובץ,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Lock.Message,הקובץ שבחרת נמצא בשימוש בתהליך אחר.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+PASS⦙130,PASS⦙130,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeCreate.Access.Close,אני מבין,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Access.Title,התראת גישה,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeCreate.Access.Message,אין לך הרשאה לגשת לקובץ שבחרת.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HE.xaml,
+Portal.ThemeDelete.Close,לִסְגוֹר,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.Title,מחק ערכת נושא,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.Delete,לִמְחוֹק,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+PASS⦙131,PASS⦙131,Don't Touch,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeDelete.ThemeSize,מֵמַד,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeTags,תגים,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeType,סוּג,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeAuthor,סוֹפֵר,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeCreate,יְצִירָה,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeModify,תַחֲלִיף,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeVersion,גִרְסָה,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeTagsText,אַף לֹא אֶחָד,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeTypeName,Gif,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeSizeTotal,0 b,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeAuthorName,Taiizor,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeCreateDate,לֹא יְדוּעַ,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeModifyDate,לֹא יְדוּעַ,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeDelete.ThemeVersionText,0.0.0.0 (0.0.0.0),,Portal\Controls\ThemeDelete\Portal.ThemeDelete.HE.xaml,
+Portal.ThemeEdit.Save,לְהַצִיל,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.Close,לִסְגוֹר,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.Title,עריכת נושא,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+PASS⦙132,PASS⦙132,Don't Touch,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeEdit.Localization,בְּרִירַת מֶחדָל,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+PASS⦙133,PASS⦙133,Don't Touch,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeEdit.ThemeTags,תגים,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeAuthor,סוֹפֵר,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeContact,תִקשׁוֹרֶת,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeArguments,טיעונים,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeLocalization,לוקליזציה,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+PASS⦙134,PASS⦙134,Don't Touch,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeEdit.ThemeTags.Hint,נא לכתוב תגי נושא חוקיים,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeTitle.Hint,נא לכתוב כותרת חוקית,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeAuthor.Hint,נא להזין שם מחבר חוקי,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeContact.Hint,נא לכתוב כתובת תקפה ליצירת קשר,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeArguments.Hint,נא לכתוב ארגומנטים תקפים ליישום,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeEdit.ThemeDescription.Hint,נא לכתוב תיאור חוקי,,Portal\Controls\ThemeEdit\Portal.ThemeEdit.HE.xaml,
+Portal.ThemeImport.Close,לִסְגוֹר,,Portal\Controls\ThemeImport\Portal.ThemeImport.HE.xaml,
+Portal.ThemeImport.Title,ייבוא ​​נושאים,,Portal\Controls\ThemeImport\Portal.ThemeImport.HE.xaml,
+PASS⦙135,PASS⦙135,Don't Touch,Portal\Controls\ThemeImport\Portal.ThemeImport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeImport.Info,מידע בנושא נושא,,Portal\Controls\ThemeImport\Portal.ThemeImport.HE.xaml,
+Portal.ThemeImport.Type,הסבר סיבה,,Portal\Controls\ThemeImport\Portal.ThemeImport.HE.xaml,
+Portal.ThemeReport.Close,לִסְגוֹר,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Title,דיווח נושאים,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙136,PASS⦙136,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙137,PASS⦙137,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter,דִוּוּחַ,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Description,ציין את הסיבות שלך לדיווח על הנושא.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙138,PASS⦙138,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Contact.Placeholder,נא להזין כתובת דואר אלקטרוני חוקית,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙139,PASS⦙139,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Description.Text,הערות נוספות:,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Description.Placeholder,אנא הסבר בפירוט את הסיבה לדיווח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙140,PASS⦙140,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Preparing,ההכנות הנדרשות לדיווח יחלו בקרוב..,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙141,PASS⦙141,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Checking,מתבצעות בדיקות הכרחיות לדיווח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Checking.Error,אירעה שגיאה לא ידועה במהלך ביצוע הבדיקות הדרושות לדיווח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Checking.Status,"לא ניתן היה ליצור את התנאים המתאימים לדיווח כרגע, אנא נסה שוב מאוחר יותר..",,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙142,PASS⦙142,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Sending,המידע נשלח לדיווח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Sending.Error,אירעה שגיאה בעת שליחת הדוח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Sending.Errored,אירעה שגיאה בלתי צפויה במהלך שליחת הדוח: {0}.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Sending.Succeded,"הדוח נשלח בהצלחה, תודה.",,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙143,PASS⦙143,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.Network,נדרש חיבור לאינטרנט לדיווח.,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+PASS⦙144,PASS⦙144,Don't Touch,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReport.Reporter.GitHub,דווח על GitHub,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReport.Reporter.Report,דִוּוּחַ,,Portal\Controls\ThemeReport\Portal.ThemeReport.HE.xaml,
+Portal.ThemeReview.Close,לִסְגוֹר,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.Title,סקירת נושא,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+PASS⦙145,PASS⦙145,Don't Touch,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeReview.ThemeSize,מֵמַד,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeTags,תגים,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeType,סוּג,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeAuthor,סוֹפֵר,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeCreate,יְצִירָה,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeModify,תַחֲלִיף,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeContact,כתובת ליצירת קשר בנושא נושא,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeVersion,גִרְסָה,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeTagsText,אַף לֹא אֶחָד,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeTypeName,Gif,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeSizeTotal,0 b,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeAuthorName,Taiizor,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeCreateDate,לֹא יְדוּעַ,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeModifyDate,לֹא יְדוּעַ,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeReview.ThemeVersionText,0.0.0.0 (0.0.0.0),,Portal\Controls\ThemeReview\Portal.ThemeReview.HE.xaml,
+Portal.ThemeShare.Close,לִסְגוֹר,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.Title,שיתוף ערכת נושא,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙146,PASS⦙146,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemeTitle,כּוֹתֶרֶת,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemeDescription,הֶסבֵּר,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙147,PASS⦙147,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemeCopy,העתק קישור,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemeExport,יְצוּא,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish,פרסם בחנות,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙148,PASS⦙148,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Publish,לְפַרְסֵם,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Preparing,בקרוב יחלו ההכנות לפרסום.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙149,PASS⦙149,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Limit,מגבלת העלאת הנושא היומית שלך נבדקת.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙150,PASS⦙150,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Limit.Error,אירעה שגיאה לא ידועה בעת בדיקת מגבלת העלאת הנושא היומית שלך.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Limit.Exceeded,"הגעת למגבלת העלאת הנושא היומית שלך, אנא נסה שוב בפעם אחרת.",,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙151,PASS⦙151,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Compress,ערכת הנושא נדחסת לפני ההעלאה.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Compress.Error,אירעה שגיאה במהלך דחיסת העיצוב.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙152,PASS⦙152,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Size,בדיקת גודל ערכת הנושא הדחוסה.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙153,PASS⦙153,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Size.Exceeded,לא ניתן להעלות את ערכת הנושא הדחוסה מכיוון שגודלו גדול מ-{0} MB.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙154,PASS⦙154,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Check,ערכת הנושא הדחוסה נבדקת עבור תקינות לפני ההעלאה.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Check.Error,אירעה שגיאה בעת בדיקת תקינות העיצוב הדחוס.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙155,PASS⦙155,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Upload,הכנת ערכת הנושא הדחוסה להעלאה.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙156,PASS⦙156,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Upload.Error,אירעה שגיאה לא ידועה בעת העלאת העיצוב הדחוס.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Upload.Start,מעלה את ערכת הנושא הדחוסה..,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Upload.Errored,אירעה שגיאה בלתי צפויה בעת העלאת העיצוב הדחוס: {0}.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Upload.Succeded,ערכת הנושא הדחוסה הועלתה בהצלחה והיא תפורסם לחנות לאחר בדיקה.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙157,PASS⦙157,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.SaveDialogTitle,שמור קובץ ערכת נושא,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.SaveDialogFilter,קבצי ZIP (*.zip)|*.zip|כל הקבצים (*.*)|*.*,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙158,PASS⦙158,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Already.Close,אני מבין,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Already.Title,אזהרת פרסום,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Already.Message,הנושא שבחרת כבר הותקן מהחנות.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙159,PASS⦙159,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemePublish.Premium.Close,אני מבין,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Premium.Title,אזהרת פרסום,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemePublish.Premium.Message,ערכת הנושא שבחרת כבר מותקנת מחנות הפרימיום.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+PASS⦙160,PASS⦙160,Don't Touch,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,Please don't touch the translation in this line.
+Portal.ThemeShare.ThemeExport.Premium.Close,אני מבין,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemeExport.Premium.Title,אזהרת ייצוא,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.ThemeShare.ThemeExport.Premium.Message,לא ניתן לייצא את העיצוב שבחרת מכיוון שהוא הותקן מחנות הפרימיום.,,Portal\Controls\ThemeShare\Portal.ThemeShare.HE.xaml,
+Portal.TrayIcon.Close,לִסְגוֹר,,Portal\Controls\TrayIcon\Portal.TrayIcon.HE.xaml,
+Portal.TrayIcon.Title,מגש מערכת,,Portal\Controls\TrayIcon\Portal.TrayIcon.HE.xaml,
+PASS⦙161,PASS⦙161,Don't Touch,Portal\Controls\TrayIcon\Portal.TrayIcon.HE.xaml,Please don't touch the translation in this line.
+Portal.TrayIcon.Message,Sucrose ממוזער למגש המערכת. אנא לחץ לחיצה ימנית על סמל Sucrose כדי להמשיך.,,Portal\Controls\TrayIcon\Portal.TrayIcon.HE.xaml,
+Portal.WallpaperCycling.Close,לִסְגוֹר,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.WallpaperCycling.Title,מחזור טפטים,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+PASS⦙162,PASS⦙162,Don't Touch,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperCycling.Cycling,מחזור טפט אוטומטי,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.WallpaperCycling.Cycling.Description,האם הטפט ישתנה אוטומטית.,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+PASS⦙163,PASS⦙163,Don't Touch,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperCycling.Time,טווח זמן,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.WallpaperCycling.Time.Description,הטפט משתנה לאחר הדקה שצוינה.,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+PASS⦙164,PASS⦙164,Don't Touch,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperCycling.Transition,מצב מעבר,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.WallpaperCycling.Transition.Description,מגדיר את מצב המעבר בין טפטים.,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+PASS⦙165,PASS⦙165,Don't Touch,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperCycling.List,רשימת מחזורים,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.WallpaperCycling.List.Description,מאפס את רשימת הלולאות לברירת המחדל.,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+PASS⦙166,PASS⦙166,Don't Touch,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperCycling.List.Reset,אִתחוּל,,Portal\Controls\WallpaperCycling\Portal.WallpaperCycling.HE.xaml,
+Portal.EmptyLibraryPage.Title,EmptyLibraryPage,,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.HE.xaml,
+PASS⦙167,PASS⦙167,Don't Touch,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.HE.xaml,Please don't touch the translation in this line.
+Portal.EmptyLibraryPage.TitleText,הספרייה שלך ארוגה על ידי קורי עכביש,,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.HE.xaml,
+Portal.EmptyLibraryPage.DescriptionText,יצירת אמנות מפוארת צצה עם קורי עכביש במקום טפטים,,Portal\LibraryPage\EmptyLibraryPage\Portal.EmptyLibraryPage.HE.xaml,
+Portal.FullLibraryPage.Title,FullLibraryPage,,Portal\LibraryPage\FullLibraryPage\Portal.FullLibraryPage.HE.xaml,
+Portal.SearchLibraryPage.Title,SearchLibraryPage,,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.HE.xaml,
+PASS⦙168,PASS⦙168,Don't Touch,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SearchLibraryPage.TitleText,הספרייה שלך מוקסמת עם קורי עכביש,,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.HE.xaml,
+Portal.SearchLibraryPage.DescriptionText,"בגלל ההקפדה שלך בבחירת הטפטים, לא נשאר מקום לטפטים.",,Portal\LibraryPage\SearchLibraryPage\Portal.SearchLibraryPage.HE.xaml,
+Portal.DonateSettingPage.Title,DonateSettingPage,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+PASS⦙169,PASS⦙169,Don't Touch,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.DonateSettingPage.DonateMenu,תפריט תרומות,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+Portal.DonateSettingPage.DonateMenu.Description,נראות תפריט התרומות בממשק.,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+PASS⦙170,PASS⦙170,Don't Touch,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.DonateSettingPage.DonateMenu.DonateVisible.Hide,בִּלתִי נִרְאֶה,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+Portal.DonateSettingPage.DonateMenu.DonateVisible.Show,נִרְאֶה,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+PASS⦙171,PASS⦙171,Don't Touch,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.DonateSettingPage.Advertising,תמיכת מודעות,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+Portal.DonateSettingPage.Advertising.Description,תרום לפיתוח האפליקציה על ידי צפייה בפרסומות.,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+PASS⦙172,PASS⦙172,Don't Touch,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.DonateSettingPage.Advertising.AdvertisingHint,טיפ: המודעות יוצגו באופן שיגרום לך אי נוחות מינימלית.,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+Portal.DonateSettingPage.Advertising.AdvertisingDelay,משך מודעה (דקה):,,Portal\SettingPage\DonateSettingPage\Portal.DonateSettingPage.HE.xaml,
+Portal.GeneralSettingPage.Title,GeneralSettingPage,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙173,PASS⦙173,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.ApplicationLanguage,שפת יישום,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationLanguage.Description,בחר את השפה שבה ברצונך להציג את האפליקציה.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙174,PASS⦙174,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.ApplicationStartup,הפעל בעת ההפעלה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Description,"על מנת להפעיל את הטפט, Sucrose חייב לרוץ בהתחלה ברקע.",,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙175,PASS⦙175,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.ApplicationStartup.Startup.None,אַף לֹא אֶחָד,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Startup.Normal,Normal,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Startup.Priority,עֲדִיפוּת,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Startup.Scheduler,שָׁעוֹן עֶצֶר,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙176,PASS⦙176,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.ApplicationStartup.Warning.Close,אני מבין,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Warning.Title,אזהרת זכויות מנהל,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.ApplicationStartup.Warning.Message,אתה חייב להיות בעל זכויות מנהל כדי לשנות את סטטוס הריצה בעת האתחול.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙177,PASS⦙177,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.NotifyIcon,סמל אזור הודעות,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.NotifyIcon.Description,נראות מגש המערכת. Sucrose ימשיך לפעול בסתר.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙178,PASS⦙178,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.NotifyIcon.Notify.Hide,בִּלתִי נִרְאֶה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.NotifyIcon.Notify.Show,נִרְאֶה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙179,PASS⦙179,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.NotifyIcon.NotifyExit,סגור את כל יישומי Sucrose כאשר מגש המערכת סגור,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙180,PASS⦙180,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.WindowBackdrop,רקע חלון,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.WindowBackdrop.Description,הוא משמש להתאמה אישית של הרקע של חלון היישום.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙181,PASS⦙181,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Lock,"למרבה הצער, קובץ התמונה שבחרת נמצא בשימוש בתהליך אחר",,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Title,בחר תמונת רקע,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Access,"למרבה הצער, אין לך הרשאה לגשת לקובץ התמונה שבחרת.",,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Filter,קבצי תמונה (*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif)|*.png;*.jpg;*.jpeg;*.tiff;*.webp;*.gif,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.WindowBackdrop.BackgroundImage.Select,בחר תמונת רקע,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙182,PASS⦙182,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.WindowBackdrop.BackdropStretch,גודל רקע:,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙183,PASS⦙183,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.WindowBackdrop.BackdropOpacity,אטימות רקע (%):,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙184,PASS⦙184,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.EngineVolume,רמת קול,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.EngineVolume.Description,נפח תקף עבור כל הטפטים.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙185,PASS⦙185,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.EngineVolume.VolumeActive,הפעל אודיו רק כאשר כל האפליקציות שקטות,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.EngineVolume.VolumeDesktop,הפעל אודיו רק כאשר שולחן העבודה כולל מיקוד,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.EngineVolume.VolumeSensitivity,דיוק (שניות):,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙186,PASS⦙186,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.PrivateLibrary,מיקום הספרייה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.PrivateLibrary.Description,המיקום שבו יישמרו ערכות הנושא שהוספת לספרייה שלך.,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙187,PASS⦙187,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Move,אנא המתן רגע בזמן שהמיקום משתנה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Empty,אנא בחר תיקיה ריקה,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.GeneralSettingPage.PrivateLibrary.LibraryLocation.Access,"מצטערים, אין לך גישה למיקום החדש",,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+PASS⦙188,PASS⦙188,Don't Touch,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.GeneralSettingPage.PrivateLibrary.LibraryMove,העבר את הספרייה הקיימת שלך למיקום החדש,,Portal\SettingPage\GeneralSettingPage\Portal.GeneralSettingPage.HE.xaml,
+Portal.OtherSettingPage.Title,OtherSettingPage,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙189,PASS⦙189,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.ReportData,דיווח שגיאות אוטומטי,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.ReportData.Description,"כאשר Sucrose נתקל בשגיאה, הוא נוקט פעולה כדי לדווח עליה במהירות.",,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙190,PASS⦙190,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.StatisticsData,שתף סטטיסטיקות שימוש,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.StatisticsData.Description,Sucrose מאפשר לאפליקציה להשתפר על ידי איסוף סטטיסטיקות השימוש שלך.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙191,PASS⦙191,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.DiscordHook,Discord,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.DiscordHook.Description,Sucrose מספק תקשורת עם Discord.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙192,PASS⦙192,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.DiscordHook.DiscordDelay,זמן רענון (שניות):,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.DiscordHook.DiscordRefresh,רענון חיבור:,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙193,PASS⦙193,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Agent,נציג אינטרנט,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Agent.Description,מזהה הנציג שלך במצבים הדורשים חיבור לאינטרנט.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙194,PASS⦙194,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Key,אסימון גישה אישי,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Key.Description,נדרש להשתמש בחנות ובעדכוני האפליקציה ללא בעיות.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙195,PASS⦙195,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Key.HintKey,"אם אינך יודע כיצד להשיג אסימון גישה אישי, לחץ כאן.",,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙196,PASS⦙196,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Key.PersonalKey,נא להזין אסימון גישה אישי,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Key.PersonalKey.Valid,אנא הזן אסימון גישה אישי חוקי,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙197,PASS⦙197,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Server,עדכן שרת,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Server.Description,השרת שדרכו יבוצעו העדכונים.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙198,PASS⦙198,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Server.ServerHint,"הערה: אם {0} נבחר כשרת, יש להזין {2} כדי להימנע ממגבלות בקשות. אחרת, אתה עלול להיתקל בבעיות בתהליך העדכון. אם נבחר {1}, תהיה לך חוויית עדכון חלקה יותר יחסית.",,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙199,PASS⦙199,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Module,עדכון מודול,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Module.Description,באיזה מודול יבוצע העדכון?,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙200,PASS⦙200,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Channel,עדכן ערוץ,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Channel.Description,האם העדכון יתבצע דרך איזה ערוץ או לא.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙201,PASS⦙201,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Update,שיטת עדכון,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Update.Description,השיטה שבה העדכון יתבצע או לא.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙202,PASS⦙202,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Update.Limit,מגבלת רוחב פס להורדה:,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙203,PASS⦙203,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Auto,עדכון אוטומטי,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Auto.Description,האם לבצע בדיקה אוטומטית של עדכונים.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙204,PASS⦙204,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Auto.Update,כיצד לבדוק:,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙205,PASS⦙205,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Developer,כלים למפתחים,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.OtherSettingPage.Developer.Description,נהל כלים למפתחים עבור WebView ומנוע CefSharp.,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙206,PASS⦙206,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Developer.DeveloperMode,כלי ברירת מחדל למפתחים:,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙207,PASS⦙207,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Developer.DeveloperPort,יציאת ניפוי באגים:,,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+PASS⦙208,PASS⦙208,Don't Touch,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.OtherSettingPage.Developer.DeveloperHint,"טיפ: ברירת המחדל של האינטראקטיביות של כלי המפתחים אינה פועלת כראוי בעיצובים נתמכים. יציאת ניפוי הבאגים עובדת בצורה חלקה יותר. כשתהיה מוכן, תוכל להשתמש ב-'http://localhost:{0}' או 'chrome://inspect' עבור דפדפן Chrome, 'opera://inspect' עבור דפדפן Opera, 'edge://inspect' עבור דפדפן Edge.",,Portal\SettingPage\OtherSettingPage\Portal.OtherSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Title,PerformanceSettingPage,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙209,PASS⦙209,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Counter,מוני ביצועים,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Counter.Description,האם כל מוני הביצועים יפעלו ברקע.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙210,PASS⦙210,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Counter.CounterHint,הערה: ייתכן שחלק מהערכות נושא מסוג Web לא יפעלו כראוי ואף אחת מהגדרות הביצועים שלהלן לא תעבוד.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙211,PASS⦙211,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Pause,כלל עצירה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Pause.Description,קובע את הכלל להפסקת הטפט בהתבסס על הגדרות הביצועים שלך.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙212,PASS⦙212,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Communication,סוג איש קשר,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Communication.Description,זה קובע את סוג השליחה של הודעות שישודרו לנושאים מסוג Web.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙213,PASS⦙213,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Processor,שימוש במעבד,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Processor.Description,מה יקרה לטפט כתוצאה מהגדרות השימוש במעבד שלך.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙214,PASS⦙214,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Processor.ProcessorUsage,שימוש במעבד (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙215,PASS⦙215,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Graphic,שימוש בכרטיס מסך,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Graphic.Description,מה יקרה לטפט כתוצאה מהגדרות השימוש בכרטיס המסך שלך.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙216,PASS⦙216,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter,כרטיס מסך:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Graphic.GraphicAdapter.Empty,רשימת הכרטיסים הגרפיים עדיין לא נוצרה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙217,PASS⦙217,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Graphic.GraphicUsage,שימוש בכרטיס מסך (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙218,PASS⦙218,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Memory,שימוש בזיכרון,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Memory.Description,מה קורה לטפט כתוצאה מהגדרות השימוש בזיכרון שלך.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙219,PASS⦙219,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Memory.MemoryUsage,שימוש בזיכרון (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙220,PASS⦙220,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Network,שימוש ברשת,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Network.Description,מה קורה לטפט כתוצאה מהגדרות השימוש ברשת שלך.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙221,PASS⦙221,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Network.NetworkAdapter,מתאם רשת:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Network.NetworkAdapter.Empty,רשימת מתאמי הרשת לא נוצרה עדיין,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙222,PASS⦙222,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Network.NetworkUpload,גודל הורדה:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙223,PASS⦙223,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Network.NetworkDownload,גודל הורדה:,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙224,PASS⦙224,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Network.NetworkPing,ערך פינג (MS):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙225,PASS⦙225,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Lock,נעילת הפעלה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Lock.Description,מה קורה לטפט כשההפעלה נעולה.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙226,PASS⦙226,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Sleep,מצב שינה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Sleep.Description,מה קורה לטפט כשהמערכת במצב שינה.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙227,PASS⦙227,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Console,החלפת משתמש,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Console.Description,מה קורה לטפט כאשר מחליפים את המשתמש.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙228,PASS⦙228,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Session,התנתק,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Session.Description,מה קורה לטפט כאשר מתנתקים.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙229,PASS⦙229,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.ScreenSaver,מגן מסך,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.ScreenSaver.Description,מה קורה לטפט כאשר שומר המסך מופעל.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙230,PASS⦙230,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Battery,כוח סוללה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Battery.Description,מה קורה לטפט כאשר המחשב הנייד פועל על סוללה.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙231,PASS⦙231,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Battery.BatteryUsage,מצב סוללה (%):,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙232,PASS⦙232,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.BatterySaver,חיסכון בסוללה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.BatterySaver.Description,מה קורה לטפט כאשר המחשב הנייד נמצא במצב חיסכון בסוללה.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙233,PASS⦙233,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Virtual,וירטואליזציה,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Virtual.Description,מה קורה לטפטים כאשר יישומי וירטואליזציה פועלים.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙234,PASS⦙234,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Remote,שולחן עבודה מרוחק,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Remote.Description,מה קורה לטפט כאשר יישומי שולחן עבודה מרוחק פועלים.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙235,PASS⦙235,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.FullScreen,מצב מסך מלא,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.FullScreen.Description,מה קורה לטפט כאשר כל אפליקציה פועלת במסך מלא.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+PASS⦙236,PASS⦙236,Don't Touch,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PerformanceSettingPage.Focus,מצב פוקוס,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PerformanceSettingPage.Focus.Description,מה קורה לטפט כשיש לך כל אפליקציה אחרת בפוקוס.,,Portal\SettingPage\PerformanceSettingPage\Portal.PerformanceSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Title,PersonalSettingPage,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙237,PASS⦙237,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Server,שרת חנות,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Server.Description,השרת שבו יוצגו הנושאים הרשומים בחנות.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙238,PASS⦙238,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Server.ServerHint,"הערה: אם {0} נבחר כשרת, יש להזין {2} כדי להימנע ממגבלות בקשות. אחרת, ייתכן שתתקל בבעיות בגישה לנושאים בחנות. אם נבחר {1}, תהיה לך חוויית חנות חלקה יותר יחסית.",,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙239,PASS⦙239,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Duration,חידוש חנות,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Duration.Description,כמה זמן או לא יחודשו הנושאים הרשומים בחנות.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙240,PASS⦙240,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.StoreStart,הפעלה אוטומטית,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.StoreStart.Description,האם להגדיר אוטומטית את ערכת הנושא שהורדת מהחנות כטפט.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙241,PASS⦙241,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Adult,תוכן לא בטוח,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Adult.Description,האם להציג תוכן המסומן כלא בטוח (NSFW) בחנות.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙242,PASS⦙242,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Confirm,אישור מחיקה,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Confirm.Description,האם לבקש אישור בעת מחיקת ערכות נושא מהספרייה.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙243,PASS⦙243,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Delete,נושאים שבורים,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Delete.Description,נושאים שבורים או חסרים בספרייה יימחקו אוטומטית.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙244,PASS⦙244,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Delete.DeleteHint,"הערה: נדרשת זהירות. אחרת, זה עלול לגרום לאובדן נתונים.",,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙245,PASS⦙245,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.LibraryStart,הפעלה אוטומטית,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.LibraryStart.Description,האם להגדיר אוטומטית את הנושא שנוצר כטפט.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙246,PASS⦙246,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Preview,תצוגה מקדימה של ערכת נושא,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Preview.Description,האם להציג תצוגה מקדימה של ערכות נושא המוצגות בריחוף.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙247,PASS⦙247,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Preview.StorePreview,תצוגה מקדימה של החנות:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Preview.StorePreviewHide,הסתרת פרטים:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙248,PASS⦙248,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Preview.LibraryPreview,תצוגה מקדימה של הספרייה:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Preview.LibraryPreviewHide,הסתרת פרטים:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙249,PASS⦙249,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Adaptive,פריסה אדפטיבית,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Adaptive.Description,התאם אישית את הפריסה או המרחק של הנושאים המוצגים.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙250,PASS⦙250,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Adaptive.AdaptiveMargin,מרחק ריק (פיקסל):,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙251,PASS⦙251,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Adaptive.AdaptiveLayout,סדר פריסה (כמות):,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙252,PASS⦙252,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Sort,מיון ספרייה,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Sort.Description,קבע באיזה פורמט וכיצד ימוינו הנושאים בספרייה שלך.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙253,PASS⦙253,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Sort.SortMode,מצב מיון:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙254,PASS⦙254,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Sort.SortKind,סוג מיון:,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙255,PASS⦙255,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Store,עימוד בחנות,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Store.Description,קבע כמה ערכות נושא יהיו לכל עמוד בחנות.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+PASS⦙256,PASS⦙256,Don't Touch,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.PersonalSettingPage.Library,דפי ספרייה,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.PersonalSettingPage.Library.Description,קבע כמה ערכות נושא יהיו עבור כל עמוד בספרייה שלך.,,Portal\SettingPage\PersonalSettingPage\Portal.PersonalSettingPage.HE.xaml,
+Portal.SystemSettingPage.Title,SystemSettingPage,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙257,PASS⦙257,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LogTemporary,קבצי יומן,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.LogTemporary.Description,נהל את כל קובצי היומן שנוצרו על ידי האפליקציה.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙258,PASS⦙258,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LogTemporary.Create,לִיצוֹר,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙259,PASS⦙259,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LogTemporary.Delete,בָּרוּר,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙260,PASS⦙260,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LogTemporary.Hint,הערה: השטח הכולל שתפוס על ידי קובצי יומן הוא {0}. רק עם תחילת הניקוי כל האפליקציות ייסגרו.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙261,PASS⦙261,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.CacheTemporary,ניקוי מטמון,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.CacheTemporary.Description,ניקוי כל קבצי המטמון שנוצרו על ידי האפליקציה.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙262,PASS⦙262,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.CacheTemporary.Start,התחל לנקות,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙263,PASS⦙263,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.CacheTemporary.Hint,"הערה: השטח הכולל שתפוס על ידי קבצי מטמון הוא {0}. כאשר הניקוי מתחיל, כל היישומים ייסגרו.",,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙264,PASS⦙264,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.StoreTemporary,ניקוי חנות,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.StoreTemporary.Description,ניקוי כל קבצי החנות שנוצרו על ידי האפליקציה.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙265,PASS⦙265,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.StoreTemporary.Start,התחל לנקות,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙266,PASS⦙266,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.StoreTemporary.Hint,"הערה: השטח הכולל שתפוס על ידי קבצי החנות הוא {0}. כאשר הניקוי מתחיל, כל היישומים ייסגרו.",,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙267,PASS⦙267,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LibraryTemporary,ניקוי ספרייה,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.LibraryTemporary.Description,ניקוי כל קבצי ערכת הנושא בספרייה שלך או שיצרת.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙268,PASS⦙268,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LibraryTemporary.Start,התחל לנקות,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙269,PASS⦙269,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.LibraryTemporary.Hint,"הערה: השטח הכולל שתופסים ערכות נושא בספרייה שלך הוא {0}. כאשר הניקוי מתחיל, כל היישומים ייסגרו.",,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙270,PASS⦙270,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingBackup,הגדרות קבצים,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.SettingBackup.Description,נהל את כל קבצי ההגדרות שנוצרו על ידי האפליקציה.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙271,PASS⦙271,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingBackup.Export,גיבוי,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙272,PASS⦙272,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingBackup.Import,לְשַׁחְזֵר,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙273,PASS⦙273,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingBackup.Hint,הערה: כל האפליקציות ייסגרו כשהתהליך שבחרת יתחיל.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙274,PASS⦙274,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingReset,הגדרה איפוס,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.SettingReset.Description,איפוס כל קבצי ההגדרות שנוצרו על ידי האפליקציה.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙275,PASS⦙275,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingReset.Start,התחל לאפס,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙276,PASS⦙276,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.SettingReset.Hint,הערה: כל היישומים ייסגרו עם תחילת תהליך האיפוס.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙277,PASS⦙277,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.Log.SaveDialogTitle,שמור קובץ יומן,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.Log.SaveDialogFilter,קבצי ZIP (*.zip)|*.zip|כל הקבצים (*.*)|*.*,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+PASS⦙278,PASS⦙278,Don't Touch,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.SystemSettingPage.Access.Close,אני מבין,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.Access.Title,התראת גישה,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.SystemSettingPage.Access.Message,אינך מורשה לגשת למיקום שבחרת.,,Portal\SettingPage\SystemSettingPage\Portal.SystemSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.Title,WallpaperSettingPage,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙279,PASS⦙279,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.InputMode,שיטת אינטראקציה,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.InputMode.Description,קובע את השיטות שאיתן ניתן ליצור אינטראקציה בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙280,PASS⦙280,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.InputMode.InputModule,מודול אינטראקציה:,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙281,PASS⦙281,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.InputMode.InputDesktop,עבד אינטראקציה רק ​​כאשר שולחן העבודה יש ​​מיקוד,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙282,PASS⦙282,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.InputMode.DesktopIcon,הסתר את סמלי שולחן העבודה כדי להימנע מבחירה בהם בטעות,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙283,PASS⦙283,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.ScreenLayout,פריסת מסך,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.ScreenLayout.Description,משנה את פריסת הטפטים שלך על המסך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙284,PASS⦙284,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.StretchMode,שיטת התאמה,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.StretchMode.Description,שינוי קנה המידה בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙285,PASS⦙285,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.StayAwake,הישאר ער,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.StayAwake.Description,מחליף את מצב הערות בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙286,PASS⦙286,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.CrashMode,סטטוס התרסקות,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.CrashMode.Description,משנה את מצב רענון הטפט כאשר שולחן העבודה קורס או נכבה.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙287,PASS⦙287,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.LoopMode,מצב הישנות,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.LoopMode.Description,מחליף את מצב החזרה בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙288,PASS⦙288,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.ShuffleMode,סטטוס ערבוב,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.ShuffleMode.Description,מחליף את מצב המיזוג בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙289,PASS⦙289,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.BackgroundImage,תמונת רקע,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.BackgroundImage.Description,משנה את הטפט המונפש לתמונת הרקע של שולחן העבודה.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.HardwareAcceleration,האצת חומרה,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.HardwareAcceleration.Description,החלפת האצת חומרה בטפטים נתמכים.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.GifPlayer,תוסף Gif,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.GifPlayer.Description,בחר את הפלאגין שינגן את ערכות הנושא מסוג Gif בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.VideoPlayer,תוסף Video,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.VideoPlayer.Description,בחר את הפלאגין שינגן את ערכות הנושא של סוג Video בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.UrlPlayer,מנוע Url,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.UrlPlayer.Description,בחר את המנוע שיפעיל את ערכות הנושא של סוג Url בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙294,PASS⦙294,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.WebPlayer,מנוע Web,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.WebPlayer.Description,בחר את המנוע שיפעיל את ערכות הנושא של סוג Web בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙295,PASS⦙295,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.YouTubePlayer,מנוע YouTube,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.YouTubePlayer.Description,בחר את המנוע שיפעיל את ערכות הנושא של YouTube בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+PASS⦙296,PASS⦙296,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,Please don't touch the translation in this line.
+Portal.WallpaperSettingPage.ApplicationPlayer,מנוע Application,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.WallpaperSettingPage.ApplicationPlayer.Description,בחר את המנוע שיפעיל את ערכות הנושא של סוג Application בספרייה שלך.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.HE.xaml,
+Portal.BrokenStorePage.Title,BrokenStorePage,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.HE.xaml,
+PASS⦙297,PASS⦙297,Don't Touch,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.HE.xaml,Please don't touch the translation in this line.
+Portal.BrokenStorePage.TitleText,רגע שבו אורות האינטרנט היו עמומים,,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.HE.xaml,
+Portal.BrokenStorePage.DescriptionText,"כמו שמיים ללא כוכבים, אין כאן זוהר אינטרנט",,Portal\StorePage\BrokenStorePage\Portal.BrokenStorePage.HE.xaml,
+Portal.FullStorePage.Title,FullStorePage,,Portal\StorePage\FullStorePage\Portal.FullStorePage.HE.xaml,
+Portal.SearchStorePage.Title,SearchStorePage,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.HE.xaml,
+PASS⦙298,PASS⦙298,Don't Touch,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.HE.xaml,Please don't touch the translation in this line.
+Portal.SearchStorePage.TitleText,התשובה למה שאתה מחפש עשויה להיות חבויה בשמים,,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.HE.xaml,
+Portal.SearchStorePage.DescriptionText,"אם התוצאות אינן מה שציפיתם, השמיים יכולים להציע לכם חוויה חדשה",,Portal\StorePage\SearchStorePage\Portal.SearchStorePage.HE.xaml,
+Portal.UnknownStorePage.Title,UnknownStorePage,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.HE.xaml,
+PASS⦙299,PASS⦙299,Don't Touch,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.HE.xaml,Please don't touch the translation in this line.
+Portal.UnknownStorePage.TitleText,גלה את המצב המסתורי שהתרחש בחנות,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.HE.xaml,
+Portal.UnknownStorePage.DescriptionText,רדף אחר הלא נודע וצא למסע כדי לפענח את המצב המסתורי המתרחש בחנות.,,Portal\StorePage\UnknownStorePage\Portal.UnknownStorePage.HE.xaml,

@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">Пожертвование</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">Система</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">Общие</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">Премиум Магазин</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">Личные</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">Обои</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">Производительность</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">Светлая тема</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">Другие параметры</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">Премиум Магазин тем</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">Параметры пожертвования</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">Создать обои</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">Циклическая смена обоев</system:String>

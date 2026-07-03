@@ -43,4 +43,12 @@
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Close">Am Înțeles</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Title">Avertisment de Publicare</system:String>
     <system:String x:Key="Portal.ThemeShare.ThemePublish.Already.Message">Tema selectată a fost deja descărcată din magazin.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Close">Am Înțeles</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Title">Avertisment de Publicare</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemePublish.Premium.Message">Tema selectată a fost deja descărcată din magazinul premium.</system:String>
+
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Close">Am Înțeles</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Title">Avertisment de Exportare</system:String>
+    <system:String x:Key="Portal.ThemeShare.ThemeExport.Premium.Message">Tema selectată nu poate fi exportată deoarece a fost descărcată din magazinul premium.</system:String>
 </ResourceDictionary>

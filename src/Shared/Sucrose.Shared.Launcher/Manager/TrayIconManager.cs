@@ -194,7 +194,11 @@ namespace Sucrose.Shared.Launcher.Manager
                             {
                                 if (Info.Type == SSDEWT.Gif)
                                 {
-                                    if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                                    if (SSDMME.Gif == SSDEET.VlcPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                                    {
+                                        Properties = true;
+                                    }
+                                    else if (SSDMME.Gif == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                                     {
                                         Properties = true;
                                     }
@@ -209,7 +213,11 @@ namespace Sucrose.Shared.Launcher.Manager
                                 }
                                 else if (Info.Type == SSDEWT.Video)
                                 {
-                                    if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
+                                    if (SSDMME.Video == SSDEET.VlcPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.VlcPlayer, SMMRC.SucroseProperties))))
+                                    {
+                                        Properties = true;
+                                    }
+                                    else if (SSDMME.Video == SSDEET.MpvPlayerLive && (File.Exists(PropertiesPath) || File.Exists(Path.Combine(SMMRP.ApplicationData, SMMRG.AppName, SMMRF.Cache, SMMRF.MpvPlayer, SMMRC.SucroseProperties))))
                                     {
                                         Properties = true;
                                     }

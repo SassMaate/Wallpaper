@@ -1,4 +1,4 @@
-﻿using System.Management;
+using System.Management;
 using System.Security.Principal;
 using SHG = Skylark.Helper.Guidly;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;

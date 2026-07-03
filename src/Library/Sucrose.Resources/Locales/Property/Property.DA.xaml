@@ -31,6 +31,7 @@
     <system:String x:Key="Property.Localization.WebView">Kun til WebView</system:String>
     <system:String x:Key="Property.Localization.CefSharp">Kun til CefSharp</system:String>
     <system:String x:Key="Property.Localization.MpvPlayer">Kun til MpvPlayer</system:String>
+    <system:String x:Key="Property.Localization.VlcPlayer">Kun til VlcPlayer</system:String>
 
     <system:String x:Key="Property.Localization.Hue">Farvetone</system:String>
     <system:String x:Key="Property.Localization.Blur">Sløring</system:String>

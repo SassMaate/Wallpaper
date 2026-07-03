@@ -16,6 +16,7 @@ using SMME = Sucrose.Manager.Manage.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SMMP = Sucrose.Manager.Manage.Portal;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
+using SMMRU = Sucrose.Memory.Manage.Readonly.Url;
 using SPMI = Sucrose.Portal.Manage.Internal;
 using SPMMP = Sucrose.Portal.Manage.Manager.Portal;
 using SPVCDP = Sucrose.Portal.Views.Controls.DisplayPreferences;
@@ -29,6 +30,7 @@ using SSCHF = Sucrose.Shared.Core.Helper.Framework;
 using SSCHM = Sucrose.Shared.Core.Helper.Memory;
 using SSCHOS = Sucrose.Shared.Core.Helper.OperatingSystem;
 using SSCHV = Sucrose.Shared.Core.Helper.Version;
+using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
 using SSDMI = Sucrose.Shared.Dependency.Manage.Internal;
 using SSDMMG = Sucrose.Shared.Dependency.Manage.Manager.General;
 using SSDMMP = Sucrose.Shared.Dependency.Manage.Manager.Portal;
@@ -218,6 +220,12 @@ namespace Sucrose.Portal.ViewModels.Windows
                 SMMI.GeneralSettingManager.SetSetting(SMMCG.ThemeType, SEWTT.Dark);
                 WUAT.Apply(WUAAT.Dark, GetWindowBackdropType(), true);
             }
+        }
+
+        [RelayCommand]
+        private void OnPremiumStore()
+        {
+            SSSHP.Run(SSSMI.Commandog, $"{SMMRG.StartCommand}{SSDECT.Premium}{SMMRG.ValueSeparator}{SMMRU.PremiumStore}");
         }
 
         [RelayCommand]

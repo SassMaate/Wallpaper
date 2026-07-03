@@ -2,7 +2,7 @@ let canvas = document.getElementById("canvas");
 let max_height, startPos, vizWidth, midY;
 
 let backgroundColor = "#000000"; //rgb(0,0,0)
-let maxVal = 3.5;
+let maxVal = 1.2;
 
 let view_spectrum = true;
 //let x_spectrum = 20;

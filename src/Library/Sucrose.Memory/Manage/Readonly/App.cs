@@ -33,5 +33,7 @@
         public static readonly string CefSharpLive = "Sucrose.Live.CefSharp.exe";
 
         public static readonly string MpvPlayerLive = "Sucrose.Live.MpvPlayer.exe";
+
+        public static readonly string VlcPlayerLive = "Sucrose.Live.VlcPlayer.exe";
     }
 }

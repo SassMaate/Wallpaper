@@ -1,0 +1,25 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Portal.ThemeEdit.Save">לְהַצִיל</system:String>
+    <system:String x:Key="Portal.ThemeEdit.Close">לִסְגוֹר</system:String>
+    <system:String x:Key="Portal.ThemeEdit.Title">עריכת נושא</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.Localization">בְּרִירַת מֶחדָל</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.ThemeTags">תגים</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeTitle">כּוֹתֶרֶת</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeAuthor">סוֹפֵר</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeContact">תִקשׁוֹרֶת</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeArguments">טיעונים</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeDescription">הֶסבֵּר</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeLocalization">לוקליזציה</system:String>
+
+    <system:String x:Key="Portal.ThemeEdit.ThemeTags.Hint">נא לכתוב תגי נושא חוקיים</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeTitle.Hint">נא לכתוב כותרת חוקית</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeAuthor.Hint">נא להזין שם מחבר חוקי</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeContact.Hint">נא לכתוב כתובת תקפה ליצירת קשר</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeArguments.Hint">נא לכתוב ארגומנטים תקפים ליישום</system:String>
+    <system:String x:Key="Portal.ThemeEdit.ThemeDescription.Hint">נא לכתוב תיאור חוקי</system:String>
+</ResourceDictionary>

@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Приложение</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Описание</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Пожалуйста, введите действительный Url-адрес</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Выберите Web-страницу</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Пожалуйста, введите действительный url-адрес</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Выберите web-страницу</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Пожалуйста, введите действительные теги темы</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Пожалуйста, введите действительное название</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Пожалуйста, введите действительное имя автора</system:String>

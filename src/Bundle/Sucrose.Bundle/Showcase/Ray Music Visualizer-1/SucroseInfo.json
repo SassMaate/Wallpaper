@@ -1,6 +1,6 @@
 {
-  "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.9",
+  "AppVersion": "26.6.19.0",
+  "Version": "1.0.1.1",
   "Title": "Ray Music Visualizer",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -19,9 +19,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "راي الموسيقى متخيل",
+      "Description": "الطيف الصوتي الذي يتفاعل مع صوت النظام."
+    },
+    "CS": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Zvukové spektrum, které reaguje se zvukem systému."
+    },
+    "DA": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Lydspektrum, der reagerer med systemlyd."
+    },
     "DE": {
       "Title": "Ray Musik-Visualizer",
       "Description": "Audienspektrum, das auf Systemklänge reagiert."
+    },
+    "EL": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Φάσμα ήχου που αντιδρά με τον ήχο του συστήματος."
     },
     "ES": {
       "Title": "Ray Visualizador de Música",
@@ -31,21 +47,69 @@
       "Title": "Ray Visualiseur Musical",
       "Description": "Spectre audio qui réagit au son du système."
     },
+    "HE": {
+      "Title": "Ray Music Visualizer",
+      "Description": "ספקטרום אודיו המגיב עם צליל המערכת."
+    },
     "HI": {
       "Title": "Ray म्यूजिक विज़ुअलाइज़र",
       "Description": "सिस्टम ध्वनि के साथ प्रतिक्रिया करने वाला ऑडियो स्पेक्ट्रम।"
+    },
+    "ID": {
+      "Title": "Visualisasi Musik Ray",
+      "Description": "Spektrum audio yang bereaksi dengan suara sistem."
+    },
+    "IT": {
+      "Title": "Visualizzatore musicale Ray",
+      "Description": "Spettro audio che reagisce con il suono del sistema."
+    },
+    "JA": {
+      "Title": "レイ ミュージック ビジュアライザー",
+      "Description": "システムサウンドに反応するオーディオスペクトル。"
+    },
+    "KO": {
+      "Title": "레이 뮤직 비주얼라이저",
+      "Description": "시스템 사운드에 반응하는 오디오 스펙트럼."
+    },
+    "MS": {
+      "Title": "Visualizer Muzik Ray",
+      "Description": "Spektrum audio yang bertindak balas dengan bunyi sistem."
+    },
+    "NB": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Lydspekter som reagerer med systemlyd."
+    },
+    "NL": {
+      "Title": "Ray Muziek-visualizer",
+      "Description": "Audiospectrum dat reageert met systeemgeluid."
     },
     "PL": {
       "Title": "Ray Wizualizator Muzyki",
       "Description": "Spektrum audio reagujące na dźwięki systemu."
     },
+    "PT": {
+      "Title": "Visualizador de música Ray",
+      "Description": "Espectro de áudio que reage com o som do sistema."
+    },
+    "RO": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Spectrul audio care reacționează cu sunetul sistemului."
+    },
     "RU": {
       "Title": "Ray музыкальный визуализатор",
       "Description": "Аудио спектр, реагирующий на системный звук."
     },
+    "SV": {
+      "Title": "Ray Music Visualizer",
+      "Description": "Ljudspektrum som reagerar med systemljud."
+    },
     "TR": {
       "Title": "Ray Müzik Görselleştirici",
       "Description": "Sistem sesi ile tepki veren ses spektrumu."
+    },
+    "UK": {
+      "Title": "Музичний візуалізатор Ray",
+      "Description": "Звуковий спектр, який реагує на системний звук."
     },
     "ZH": {
       "Title": "Ray音乐可视化器",

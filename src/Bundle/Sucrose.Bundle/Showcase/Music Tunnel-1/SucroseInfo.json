@@ -1,6 +1,6 @@
 {
   "AppVersion": "25.10.20.0",
-  "Version": "1.0.0.8",
+  "Version": "1.0.0.9",
   "Title": "Music Tunnel",
   "Thumbnail": "thumbnail.jpg",
   "Preview": "preview.gif",
@@ -15,9 +15,25 @@
   ],
   "Arguments": null,
   "Localization": {
+    "AR": {
+      "Title": "نفق الموسيقى",
+      "Description": "يفتن نفق الموسيقى لا نهاية لها."
+    },
+    "CS": {
+      "Title": "Hudební Tunel",
+      "Description": "Okouzlující nekonečný hudební tunel."
+    },
+    "DA": {
+      "Title": "Musik Tunnel",
+      "Description": "Hypnotiserende uendelig musiktunnel."
+    },
     "DE": {
       "Title": "Musiktunnel",
       "Description": "Faszinierender unendlicher Musiktunnel."
+    },
+    "EL": {
+      "Title": "Μουσική σήραγγα",
+      "Description": "Μαγευτικό άπειρο μουσικό τούνελ."
     },
     "ES": {
       "Title": "Túnel Musical",
@@ -27,21 +43,69 @@
       "Title": "Tunnel Musical",
       "Description": "Tunnel musical infini et envoûtant."
     },
+    "HE": {
+      "Title": "מנהרת מוזיקה",
+      "Description": "מנהרת מוזיקה אינסופית מהפנטת."
+    },
     "HI": {
       "Title": "म्यूजिक टनल",
       "Description": "मंत्रमुग्ध करने वाली अनंत संगीत सुरंग।"
+    },
+    "ID": {
+      "Title": "Terowongan Musik",
+      "Description": "Terowongan musik tanpa batas yang memukau."
+    },
+    "IT": {
+      "Title": "Tunnel della Musica",
+      "Description": "Affascinante tunnel musicale infinito."
+    },
+    "JA": {
+      "Title": "ミュージック トンネル",
+      "Description": "魅惑的な無限の音楽トンネル。"
+    },
+    "KO": {
+      "Title": "뮤직 터널",
+      "Description": "매혹적인 무한 음악 터널."
+    },
+    "MS": {
+      "Title": "Terowong Muzik",
+      "Description": "Terowong muzik tak terhingga yang memukau."
+    },
+    "NB": {
+      "Title": "Musikktunnel",
+      "Description": "Hypnotiserende uendelig musikktunnel."
+    },
+    "NL": {
+      "Title": "Muziektunnel",
+      "Description": "Betoverende oneindige muziektunnel."
     },
     "PL": {
       "Title": "Tunel Muzyczny",
       "Description": "Hipnotyzujący, nieskończony tunel muzyczny."
     },
+    "PT": {
+      "Title": "Túnel de Música",
+      "Description": "Hipnotizante túnel de música infinita."
+    },
+    "RO": {
+      "Title": "Music Tunnel",
+      "Description": "Mesmerizing infinite music tunnel."
+    },
     "RU": {
       "Title": "Музыкальный туннель",
       "Description": "Завораживающий бесконечный музыкальный туннель."
     },
+    "SV": {
+      "Title": "Musiktunnel",
+      "Description": "Hypnotiserande oändlig musiktunnel."
+    },
     "TR": {
       "Title": "Müzik Tüneli",
       "Description": "Büyüleyici sonsuz müzik tüneli."
+    },
+    "UK": {
+      "Title": "Музичний тунель",
+      "Description": "Захоплюючий нескінченний музичний тунель."
     },
     "ZH": {
       "Title": "音乐隧道",

@@ -21,6 +21,7 @@ using SSDEWET = Sucrose.Shared.Dependency.Enum.WebEngineType;
 using SSDEYTET = Sucrose.Shared.Dependency.Enum.YouTubeEngineType;
 using SSDMME = Sucrose.Shared.Dependency.Manage.Manager.Engine;
 using SSSHB = Sucrose.Shared.Space.Helper.Background;
+using SSSHP = Sucrose.Shared.Space.Helper.Power;
 using SWUD = Skylark.Wing.Utility.Desktop;
 using TextBlock = System.Windows.Controls.TextBlock;
 
@@ -584,6 +585,11 @@ namespace Sucrose.Portal.ViewModels.Pages
         private void StayAwakeStateChecked(bool State)
         {
             SMMI.EngineSettingManager.SetSetting(SMMCE.StayAwake, State);
+
+            // CefSharp/WebView2 hold a process-wide display wake lock while a video plays, which the
+            // per-thread Awakening helper cannot override. Neutralize it at the OS level so StayAwake
+            // stays authoritative: ON keeps the browser wake locks (screen on), OFF ignores them (sleep).
+            SSSHP.OverrideBrowserWakeLock(!State);
         }
 
         private void BackgroundStateChecked(bool State)

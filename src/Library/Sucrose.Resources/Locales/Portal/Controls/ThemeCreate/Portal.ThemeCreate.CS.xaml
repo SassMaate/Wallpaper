@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplikace</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Popis</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Zadejte platnou Url adresu</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Zadejte platnou url adresu</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Vyberte webovou stránku</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Zadejte platné štítky pro šablonu</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Zadejte platný název</system:String>

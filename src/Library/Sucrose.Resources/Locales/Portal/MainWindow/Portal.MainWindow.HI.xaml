@@ -20,6 +20,7 @@
     <system:String x:Key="Portal.MainWindow.MenuDonate">दान करें</system:String>
     <system:String x:Key="Portal.MainWindow.MenuSystem">सिस्टम</system:String>
     <system:String x:Key="Portal.MainWindow.MenuGeneral">सामान्य</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremium">प्रीमियम स्टोर</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPersonal">व्यक्तिगत</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaper">वॉलपेपर</system:String>
     <system:String x:Key="Portal.MainWindow.MenuPerformance">प्रदर्शन</system:String>
@@ -43,6 +44,7 @@
     <system:String x:Key="Portal.MainWindow.MenuLightTip">प्रकाशमान थीम</system:String>
 
     <system:String x:Key="Portal.MainWindow.MenuOtherOptionsTip">अन्य विकल्प</system:String>
+    <system:String x:Key="Portal.MainWindow.MenuPremiumStoreTip">प्रीमियम थीम स्टोर</system:String>
     <system:String x:Key="Portal.MainWindow.MenuDonateOptionsTip">दान विकल्प</system:String>
     <system:String x:Key="Portal.MainWindow.MenuCreateWallpaperTip">वॉलपेपर बनाएं</system:String>
     <system:String x:Key="Portal.MainWindow.MenuWallpaperCyclingTip">वॉलपेपर साइक्लिंग</system:String>

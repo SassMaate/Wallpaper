@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Anwendung</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Beschreibung</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Bitte geben Sie eine gültige Url-Adresse ein</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Wählen Sie eine Webseite aus</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Bitte geben Sie eine gültige url-Adresse ein</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Wählen Sie eine webseite aus</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Bitte geben Sie gültige Themen-Tags ein</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Bitte geben Sie einen gültigen Titel ein</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">Bitte geben Sie einen gültigen Autorennamen ein</system:String>

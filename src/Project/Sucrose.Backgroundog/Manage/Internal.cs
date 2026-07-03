@@ -1,4 +1,7 @@
-﻿using NPSMLib;
+﻿using Playhead.Data;
+using Playhead.Enums;
+using Playhead.Managers;
+using Playhead.Sessions;
 using System.Diagnostics;
 using SBEAV = Sucrose.Backgroundog.Extension.AudioVisualizer;
 using SBEWL = Sucrose.Backgroundog.Extension.WindowsListener;
@@ -220,6 +223,8 @@ namespace Sucrose.Backgroundog.Manage
             //SourceDeviceId = string.Empty,
             //RenderDeviceId = string.Empty,
             ThumbnailString = string.Empty,
+            DataLeft = Array.Empty<double>(),
+            DataRight = Array.Empty<double>(),
             MediaType = MediaPlaybackMode.Unknown,
             PlaybackMode = MediaPlaybackMode.Unknown,
             PlaybackState = MediaPlaybackState.Unknown,

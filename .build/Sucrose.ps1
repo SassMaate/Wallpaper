@@ -179,6 +179,7 @@ $script:Projects = @(
     "..\src\Live\Sucrose.Live.MpvPlayer\Sucrose.Live.MpvPlayer.csproj",
     "..\src\Live\Sucrose.Live.Nebula\Sucrose.Live.Nebula.csproj",
     "..\src\Live\Sucrose.Live.Vexana\Sucrose.Live.Vexana.csproj",
+    "..\src\Live\Sucrose.Live.VlcPlayer\Sucrose.Live.VlcPlayer.csproj",
     "..\src\Live\Sucrose.Live.WebView\Sucrose.Live.WebView.csproj",
     "..\src\Live\Sucrose.Live.Xavier\Sucrose.Live.Xavier.csproj",
     "..\src\Localizer\Sucrose.Localizer\Sucrose.Localizer.csproj",
