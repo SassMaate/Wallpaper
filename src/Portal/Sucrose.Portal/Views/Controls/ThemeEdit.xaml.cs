@@ -244,7 +244,7 @@ namespace Sucrose.Portal.Views.Controls
         {
             StackPanel StackPanel = new()
             {
-                HorizontalAlignment = HorizontalAlignment.Left,
+                FlowDirection = Application.Current.MainWindow.FlowDirection,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 Orientation = Orientation.Horizontal
             };
@@ -252,16 +252,14 @@ namespace Sucrose.Portal.Views.Controls
             SymbolIcon Icon = new()
             {
                 Width = 32,
-                HorizontalAlignment = HorizontalAlignment.Left,
                 Symbol = Symbol
             };
 
             TextBlock TextBlock = new()
             {
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
-                HorizontalAlignment = HorizontalAlignment.Stretch,
                 TextWrapping = TextWrapping.WrapWithOverflow,
-                Margin = new Thickness(10, 0, 0, 0),
+                Margin = new Thickness(10, 0, 10, 0),
                 FontSize = 14,
                 Text = Name
             };
