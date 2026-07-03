@@ -1,8 +1,9 @@
-﻿<ui:FluentWindow
+<ui:FluentWindow
     x:Class="Sucrose.Portal.Views.Windows.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helpers="clr-namespace:Sucrose.Portal.Helpers"
     xmlns:local="clr-namespace:Sucrose.Portal.Views.Windows"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages="clr-namespace:Sucrose.Portal.Views.Pages"
@@ -101,7 +102,8 @@
                     Margin="10,0,0,0"
                     Click="NavigationChange_Click"
                     Cursor="Hand"
-                    Icon="{ui:SymbolIcon ArrowLeft16}"
+                    Icon="{helpers:FlowDirectionIcon ArrowLeft16,
+                                                     ArrowRight16}"
                     ToolTipService.ToolTip="{DynamicResource Portal.MainWindow.MenuBackTip}" />
                 <ui:NavigationViewItem
                     Name="Setting2"
@@ -320,10 +322,9 @@
                     Text="{DynamicResource Portal.Release}" />
             </StatusBarItem>
             <StatusBarItem Grid.Column="2" Margin="4,0,4,0">
-                <TextBlock
-                    FontSize="12"
-                    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
-                    Text="{Binding ViewModel.Framework, Mode=OneWay}" />
+                <TextBlock FontSize="12" Foreground="{DynamicResource TextFillColorPrimaryBrush}">
+                    <Run FlowDirection="LeftToRight" Text="{Binding ViewModel.Framework, Mode=OneWay}" />
+                </TextBlock>
             </StatusBarItem>
             <StatusBarItem Grid.Column="3" Margin="4,0,4,0">
                 <TextBlock

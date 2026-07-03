@@ -1,4 +1,4 @@
-﻿using SEWTT = Skylark.Enum.WindowsThemeType;
+using SEWTT = Skylark.Enum.WindowsThemeType;
 
 namespace Sucrose.Shared.Launcher.Separator
 {
@@ -27,7 +27,14 @@ namespace Sucrose.Shared.Launcher.Separator
 
             using Pen Pen = new(ThemeType == SEWTT.Dark ? Dark : Light, 1);
 
-            e.Graphics.DrawLine(Pen, new Point(23, StripSeparator.Height / 2), new Point(MenuStrip.Width, StripSeparator.Height / 2));
+            if (MenuStrip.RightToLeft == RightToLeft.Yes)
+            {
+                e.Graphics.DrawLine(Pen, new Point(0, StripSeparator.Height / 2), new Point(StripSeparator.Width - 23, StripSeparator.Height / 2));
+            }
+            else
+            {
+                e.Graphics.DrawLine(Pen, new Point(23, StripSeparator.Height / 2), new Point(StripSeparator.Width, StripSeparator.Height / 2));
+            }
         }
     }
 }

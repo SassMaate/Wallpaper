@@ -109,6 +109,8 @@ namespace Sucrose.Shared.Launcher.Manager
                 ContextMenu.Renderer = new SSLRLR();
             }
 
+            ContextMenu.RightToLeft = SRHR.IsRightToLeft(SMMG.Culture) ? RightToLeft.Yes : RightToLeft.No;
+
             ContextMenu.Items.Add(new ToolStripMenuItem(SRER.GetValue("Launcher", "OpenText"), Image.FromFile(SSSHA.Get(SRER.GetValue("Launcher", "OpenIcon"))), CommandInterface)
             {
                 Enabled = !SSSHP.Work(SSSMI.Portal)

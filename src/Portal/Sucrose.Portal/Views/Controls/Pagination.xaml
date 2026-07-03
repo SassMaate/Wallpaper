@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:helpers="clr-namespace:Sucrose.Portal.Helpers"
     xmlns:local="clr-namespace:Sucrose.Portal.Views.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
@@ -22,7 +23,8 @@
             Appearance="Secondary"
             Click="PageBack_Click"
             Cursor="Hand"
-            Icon="{ui:SymbolIcon Symbol=ArrowLeft48}" />
+            Icon="{helpers:FlowDirectionIcon ArrowLeft48,
+                                             ArrowRight48}" />
         <ToggleButton
             x:Name="Number1"
             Width="28"
@@ -113,7 +115,8 @@
             Appearance="Secondary"
             Click="PageNext_Click"
             Cursor="Hand"
-            Icon="{ui:SymbolIcon Symbol=ArrowRight48}" />
+            Icon="{helpers:FlowDirectionIcon ArrowRight48,
+                                             ArrowLeft48}" />
         <ui:NumberBox
             x:Name="PageNumber"
             Margin="0,0,5,0"

@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 using Wpf.Ui.Controls;
 using SMMG = Sucrose.Manager.Manage.General;
 using SMMRC = Sucrose.Memory.Manage.Readonly.Content;
@@ -65,6 +66,15 @@ namespace Sucrose.Portal.Views.Controls
         {
             LocalizationComboBox.Items.Clear();
 
+            string TargetLanguage = string.Empty;
+
+            if (GetSymbolForLanguageStatus(SMMG.Culture) == SymbolRegular.Checkmark48)
+            {
+                TargetLanguage = SMMG.Culture;
+            }
+
+            int TargetIndex = 0;
+
             foreach (string Code in SRHR.ListLanguageManipulated())
             {
                 string Language = SRER.GetValue("Locale", Code);
@@ -81,13 +91,21 @@ namespace Sucrose.Portal.Views.Controls
 
                 ComboBoxItem Item = CreateComboBoxItem(Code, Language, Symbol);
 
-                if (Item.IsSelected)
+                if (Code == TargetLanguage)
                 {
-                    (ThemeTitle.Text, ThemeDescription.Text) = SSTCLC.Convert(Info, Code);
+                    Item.IsSelected = true;
+                    TargetIndex = LocalizationComboBox.Items.Count;
                 }
 
                 LocalizationComboBox.Items.Add(Item);
             }
+
+            Application.Current.Dispatcher.InvokeAsync(() =>
+            {
+                LocalizationComboBox.SelectedIndex = -1;
+                LocalizationComboBox.UpdateLayout();
+                LocalizationComboBox.SelectedIndex = TargetIndex;
+            }, DispatcherPriority.ContextIdle);
         }
 
         private void SetSelectedLanguage(string Code)
@@ -196,9 +214,9 @@ namespace Sucrose.Portal.Views.Controls
                     Info.Localization[Language].Title = ThemeTitle.Text;
                 }
 
-                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item && Item.Content is StackPanel StackPanel && StackPanel.Children.Count > 0 && StackPanel.Children[0] is SymbolIcon Icon)
                 {
-                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                    Icon.Symbol = GetSymbolForLanguageStatus(Language);
                 }
             }
         }
@@ -233,9 +251,9 @@ namespace Sucrose.Portal.Views.Controls
                     Info.Localization[Language].Description = ThemeDescription.Text;
                 }
 
-                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item)
+                if (LocalizationComboBox.SelectedItem is ComboBoxItem Item && Item.Content is StackPanel StackPanel && StackPanel.Children.Count > 0 && StackPanel.Children[0] is SymbolIcon Icon)
                 {
-                    Item.Content = CreateComboBoxItem(Language, ((TextBlock)((StackPanel)Item.Content).Children[1]).Text, GetSymbolForLanguageStatus(Language)).Content;
+                    Icon.Symbol = GetSymbolForLanguageStatus(Language);
                 }
             }
         }
@@ -244,7 +262,6 @@ namespace Sucrose.Portal.Views.Controls
         {
             StackPanel StackPanel = new()
             {
-                HorizontalAlignment = HorizontalAlignment.Left,
                 VerticalAlignment = VerticalAlignment.Stretch,
                 Orientation = Orientation.Horizontal
             };
@@ -252,7 +269,6 @@ namespace Sucrose.Portal.Views.Controls
             SymbolIcon Icon = new()
             {
                 Width = 32,
-                HorizontalAlignment = HorizontalAlignment.Left,
                 Symbol = Symbol
             };
 
@@ -261,7 +277,7 @@ namespace Sucrose.Portal.Views.Controls
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
                 HorizontalAlignment = HorizontalAlignment.Stretch,
                 TextWrapping = TextWrapping.WrapWithOverflow,
-                Margin = new Thickness(10, 0, 0, 0),
+                Margin = new Thickness(10, 0, 10, 0),
                 FontSize = 14,
                 Text = Name
             };
@@ -271,7 +287,6 @@ namespace Sucrose.Portal.Views.Controls
 
             return new ComboBoxItem
             {
-                IsSelected = (SMMG.Culture == Code || string.IsNullOrEmpty(Code)) && Symbol == SymbolRegular.Checkmark48,
                 Content = StackPanel,
                 Tag = Code
             };
