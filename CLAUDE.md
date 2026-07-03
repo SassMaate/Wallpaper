@@ -71,7 +71,7 @@ Each component runs as a separate Windows process, communicating via named pipes
 |-------|----------|---------|
 | **Launcher** | `Sucrose.Launcher` | Entry point, instance checking, Discord Rich Presence |
 | **Portal** | `Sucrose.Portal` | Main settings/management UI (WPF-UI + MVVM + DI) |
-| **Live Engines** | `Sucrose.Live.{WebView,CefSharp,MpvPlayer,Aurora,Nebula,Vexana,Xavier}` | Wallpaper rendering backends |
+| **Live Engines** | `Sucrose.Live.{WebView,CefSharp,MpvPlayer,VlcPlayer,Aurora,Nebula,Vexana,Xavier}` | Wallpaper rendering backends |
 | **Services** | `Sucrose.Backgroundog` | Background wallpaper service with audio visualization |
 | | `Sucrose.Commandog` | Command-line handler |
 | | `Sucrose.Watchdog` | System monitoring |
@@ -86,7 +86,7 @@ Each component runs as a separate Windows process, communicating via named pipes
 Code reuse is achieved through **Shared Item Projects** (not NuGet packages or class libraries). These are compiled into each consuming project:
 
 - **Core shared**: `Sucrose.Shared.{Core,Dependency,Discord,Launcher,Live,Pipe,Signal,Space,Store,Theme,Transmission,Watchdog,Zip,SevenZip}`
-- **Engine-specific shared**: `Sucrose.Shared.Engine.{Aurora,CefSharp,MpvPlayer,Nebula,Vexana,WebView,Xavier}` + base `Sucrose.Shared.Engine`
+- **Engine-specific shared**: `Sucrose.Shared.Engine.{Aurora,CefSharp,MpvPlayer,VlcPlayer,Nebula,Vexana,WebView,Xavier}` + base `Sucrose.Shared.Engine`
 
 Each executable project imports shared items via `<Import Project="..." Label="Shared" />` in its `.csproj`.
 
@@ -94,7 +94,7 @@ Each executable project imports shared items via `<Import Project="..." Label="S
 
 Every executable defines a project-specific symbol used in shared code for conditional compilation:
 - Apps: `LAUNCHER`, `PORTAL`, `BACKGROUNDOG`, `COMMANDOG`, `WATCHDOG`, `REPORTDOG`, `PROPERTY`, `UNDO`, `UPDATE`
-- Engines: `ENGINE` + `LIVE_WEBVIEW`, `LIVE_CEFSHARP`, `LIVE_MPVPLAYER`, `LIVE_AURORA`, `LIVE_NEBULA`, `LIVE_VEXANA`, `LIVE_XAVIER`
+- Engines: `ENGINE` + `LIVE_WEBVIEW`, `LIVE_CEFSHARP`, `LIVE_MPVPLAYER`, `LIVE_VLCPLAYER`, `LIVE_AURORA`, `LIVE_NEBULA`, `LIVE_VEXANA`, `LIVE_XAVIER`
 - Platforms: `X86`, `X64`, `ARM64`
 
 ### Portal (UI) Architecture
@@ -158,5 +158,4 @@ Files in shared projects follow a consistent directory structure:
 - **Main branch**: `develop`
 - Version is auto-derived from build date (`yy.MM.dd.0` format)
 - CI runs CodeQL analysis on `develop` (push/PR/nightly schedule). The CodeQL job builds a matrix of only **seven `src/Library/` projects** (`Pipe, Memory, Signal, Manager, Resources, Transmission, XamlAnimatedGif`; `Mpv.NET` is excluded) with `-p:UseSharedCompilation=false` — it does **not** build the executables, engines, or full solution.
-- `congratulations.yml` posts a welcome comment on first-time issues/PRs; `nuxt-deploy.yml` deploys the website (next item). These are the only other workflows — there is no automated app-build or release CI.
-- `.pages/` holds the project website (**Nuxt + Tailwind**, package-managed with **bun**, deployed to GitHub Pages by `nuxt-deploy.yml` via `bun run generate` on every push to `develop`). It is independent of the .NET app.
+- `congratulations.yml` posts a welcome comment on first-time issues/PRs. This is the only other workflow — there is no automated app-build or release CI.
