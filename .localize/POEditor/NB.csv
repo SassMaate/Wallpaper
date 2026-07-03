@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Ugyldig 'SystemBattery' verdi,,Porta
 Portal.Enum.CompatibilityType.SystemGraphic,Ugyldig 'SystemGraphic' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ugyldig 'SystemNetwork' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Ugyldig 'SystemStorage' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,'Contact' verdien er verken en 'URL' eller en 'E-postadresse',,Portal\Enum\Portal.Enum.NB.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,'Contact' verdien er verken en 'Url' eller en 'E-postadresse',,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json' filen er tom,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json' filen er tom,,Portal\Enum\Portal.Enum.NB.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Ugyldig 'SystemProcessor' verdi,,Portal\Enum\Portal.Enum.NB.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Forsidebilde,,Portal\Controls\ThemeCreate\Port
 Portal.ThemeCreate.ThemeApplication,Applikasjon,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
 Portal.ThemeCreate.ThemeDescription,Beskrivelse,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Vennligst oppgi en gyldig URL,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Vennligst oppgi en gyldig url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Velg en nettside,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Vennligst oppgi gyldige tema-merker,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Vennligst oppgi en gyldig tittel,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NB.xaml,

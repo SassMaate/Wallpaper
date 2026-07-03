@@ -700,8 +700,8 @@ Portal.ThemeCreate.ThemeThumbnail,Зображення,,Portal\Controls\ThemeCre
 Portal.ThemeCreate.ThemeApplication,Додаток,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.ThemeDescription,Опис,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,"Будь ласка, введіть дійсну Url-адресу",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
-Portal.ThemeCreate.ThemeWeb.Hint,Виберіть Web-сторінку,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,"Будь ласка, введіть дійсну url-адресу",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
+Portal.ThemeCreate.ThemeWeb.Hint,Виберіть web-сторінку,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,"Будь ласка, введіть дійсні теги теми",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,"Будь ласка, введіть дійсний заголовок",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.ThemeAuthor.Hint,"Будь ласка, введіть дійсне ім'я автора",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,

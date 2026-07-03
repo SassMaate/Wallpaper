@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Nilai 'SystemBattery' tidak valid,,P
 Portal.Enum.CompatibilityType.SystemGraphic,Nilai 'SystemGraphic' tidak valid,,Portal\Enum\Portal.Enum.ID.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Nilai 'SystemNetwork' tidak valid,,Portal\Enum\Portal.Enum.ID.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Nilai 'SystemStorage' tidak valid,,Portal\Enum\Portal.Enum.ID.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,Nilai 'Contact' bukan URL atau alamat email,,Portal\Enum\Portal.Enum.ID.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,Nilai 'Contact' bukan Url atau alamat email,,Portal\Enum\Portal.Enum.ID.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Berkas 'SucroseCompatible.json' kosong,,Portal\Enum\Portal.Enum.ID.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Berkas 'SucroseProperties.json' kosong,,Portal\Enum\Portal.Enum.ID.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Nilai 'SystemProcessor' tidak valid,,Portal\Enum\Portal.Enum.ID.xaml,

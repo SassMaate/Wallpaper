@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Nieprawidłowa wartość 'SystemBatt
 Portal.Enum.CompatibilityType.SystemGraphic,Nieprawidłowa wartość 'SystemGraphic',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Nieprawidłowa wartość 'SystemNetwork',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Nieprawidłowa wartość 'SystemStorage',,Portal\Enum\Portal.Enum.PL.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,Wartość 'Contact' nie jest 'URL' ani 'Adres E-Mail',,Portal\Enum\Portal.Enum.PL.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,Wartość 'Contact' nie jest 'Url' ani 'Adres E-Mail',,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Plik 'SucroseCompatible.json' jest pusty,,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Plik 'SucroseProperties.json' jest pusty,,Portal\Enum\Portal.Enum.PL.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Nieprawidłowa wartość 'SystemProcessor',,Portal\Enum\Portal.Enum.PL.xaml,
@@ -679,7 +679,7 @@ PASS⦙114,PASS⦙114,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.Web,Motyw Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,
 Portal.ThemeCreate.Web.Description,Utwórz własny motyw w formacie Web.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,
 PASS⦙115,PASS⦙115,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Video,Motyw Wideo,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,
+Portal.ThemeCreate.Video,Motyw Video,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,
 Portal.ThemeCreate.Video.Description,Utwórz własny motyw w formacie Video.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,
 PASS⦙116,PASS⦙116,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.YouTube,Motyw YouTube,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PL.xaml,

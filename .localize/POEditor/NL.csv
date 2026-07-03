@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Ongeldige 'SystemBattery' waarde,,Po
 Portal.Enum.CompatibilityType.SystemGraphic,Ongeldige 'SystemGraphic' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ongeldige 'SystemNetwork' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Ongeldige 'SystemStorage' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,'Contact' is geen 'URL' of 'E-mailadres',,Portal\Enum\Portal.Enum.NL.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,'Contact' is geen 'Url' of 'E-mailadres',,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Bestand 'SucroseCompatible.json' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Bestand 'SucroseProperties.json' is leeg,,Portal\Enum\Portal.Enum.NL.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Ongeldige 'SystemProcessor' waarde,,Portal\Enum\Portal.Enum.NL.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Afbeelding,,Portal\Controls\ThemeCreate\Portal
 Portal.ThemeCreate.ThemeApplication,Applicatie,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
 Portal.ThemeCreate.ThemeDescription,Beschrijving,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Voer een geldige Url in,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Voer een geldige url in,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Selecteer een webpagina,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Voer geldige thema-tags in,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Voer een geldige titel in,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.NL.xaml,

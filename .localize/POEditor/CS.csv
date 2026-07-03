@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Neplatná hodnota 'SystemBattery',,P
 Portal.Enum.CompatibilityType.SystemGraphic,Neplatná hodnota 'SystemGraphic',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Neplatná hodnota 'SystemNetwork',,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Neplatná hodnota 'SystemStorage',,Portal\Enum\Portal.Enum.CS.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,Hodnota 'Contact' není platný URL nebo e-mailová adresa,,Portal\Enum\Portal.Enum.CS.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,Hodnota 'Contact' není platný Url nebo e-mailová adresa,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Soubor 'SucroseCompatible.json' je prázdný,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Soubor 'SucroseProperties.json' je prázdný,,Portal\Enum\Portal.Enum.CS.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Neplatná hodnota 'SystemProcessor',,Portal\Enum\Portal.Enum.CS.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Náhled,,Portal\Controls\ThemeCreate\Portal.Th
 Portal.ThemeCreate.ThemeApplication,Aplikace,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
 Portal.ThemeCreate.ThemeDescription,Popis,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Zadejte platnou Url adresu,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Zadejte platnou url adresu,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Vyberte webovou stránku,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Zadejte platné štítky pro šablonu,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Zadejte platný název,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.CS.xaml,

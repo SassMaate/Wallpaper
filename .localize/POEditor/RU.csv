@@ -700,8 +700,8 @@ Portal.ThemeCreate.ThemeThumbnail,Обложка,,Portal\Controls\ThemeCreate\Po
 Portal.ThemeCreate.ThemeApplication,Приложение,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
 Portal.ThemeCreate.ThemeDescription,Описание,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,"Пожалуйста, введите действительный Url-адрес",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
-Portal.ThemeCreate.ThemeWeb.Hint,Выберите Web-страницу,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,"Пожалуйста, введите действительный url-адрес",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
+Portal.ThemeCreate.ThemeWeb.Hint,Выберите web-страницу,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,"Пожалуйста, введите действительные теги темы",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,"Пожалуйста, введите действительное название",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,
 Portal.ThemeCreate.ThemeAuthor.Hint,"Пожалуйста, введите действительное имя автора",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RU.xaml,

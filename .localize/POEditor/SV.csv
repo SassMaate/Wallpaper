@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Ogiltigt värde för 'SystemBattery'
 Portal.Enum.CompatibilityType.SystemGraphic,Ogiltigt värde för 'SystemGraphic',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ogiltigt värde för 'SystemNetwork',,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Ogiltigt värde för 'SystemStorage',,Portal\Enum\Portal.Enum.SV.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,Fältet 'Contact' innehåller varken en giltig URL eller e-postadress,,Portal\Enum\Portal.Enum.SV.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,Fältet 'Contact' innehåller varken en giltig Url eller e-postadress,,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Filen 'SucroseCompatible.json' är tom,,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Filen 'SucroseProperties.json' är tom,,Portal\Enum\Portal.Enum.SV.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Ogiltigt värde för 'SystemProcessor',,Portal\Enum\Portal.Enum.SV.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Minitiatyrbild,,Portal\Controls\ThemeCreate\Po
 Portal.ThemeCreate.ThemeApplication,Applikation,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
 Portal.ThemeCreate.ThemeDescription,Beskrivning,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Ange en giltig Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Ange en giltig url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Välj en webbsida,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Ange giltiga temataggar,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Ange en giltig rubrik,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.SV.xaml,

@@ -700,8 +700,8 @@ Portal.ThemeCreate.ThemeThumbnail,サムネイル,,Portal\Controls\ThemeCreate\P
 Portal.ThemeCreate.ThemeApplication,アプリケーション,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
 Portal.ThemeCreate.ThemeDescription,説明,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,有効なUrlを入力してください,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
-Portal.ThemeCreate.ThemeWeb.Hint,Webページを選択,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,有効なurlを入力してください,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
+Portal.ThemeCreate.ThemeWeb.Hint,webページを選択,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,有効なテーマタグを入力してください,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,有効なタイトルを入力してください,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,
 Portal.ThemeCreate.ThemeAuthor.Hint,有効な著者名を入力してください,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.JA.xaml,

@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Valor 'SystemBattery' inválido,,Por
 Portal.Enum.CompatibilityType.SystemGraphic,Valor 'SystemGraphic' inválido,,Portal\Enum\Portal.Enum.PT.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Valor 'SystemNetwork' inválido,,Portal\Enum\Portal.Enum.PT.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Valor 'SystemStorage' inválido,,Portal\Enum\Portal.Enum.PT.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,O valor 'Contact' não é uma URL ou um endereço de e-mail,,Portal\Enum\Portal.Enum.PT.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,O valor 'Contact' não é uma Url ou um endereço de e-mail,,Portal\Enum\Portal.Enum.PT.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,O arquivo 'SucroseCompatible.json' está vazio,,Portal\Enum\Portal.Enum.PT.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,O arquivo 'SucroseProperties.json' está vazio,,Portal\Enum\Portal.Enum.PT.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Valor 'SystemProcessor' inválido,,Portal\Enum\Portal.Enum.PT.xaml,
@@ -679,8 +679,8 @@ PASS⦙114,PASS⦙114,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.Web,Tema Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.Web.Description,Crie seu próprio tema no formato Web.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 PASS⦙115,PASS⦙115,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Video,Tema de Vídeo,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
-Portal.ThemeCreate.Video.Description,Crie seu próprio tema no formato de vídeo.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
+Portal.ThemeCreate.Video,Tema de Video,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
+Portal.ThemeCreate.Video.Description,Crie seu próprio tema no formato de Video.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 PASS⦙116,PASS⦙116,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.YouTube,Tema do YouTube,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.YouTube.Description,Crie seu próprio tema no formato do YouTube.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Miniatura,,Portal\Controls\ThemeCreate\Portal.
 Portal.ThemeCreate.ThemeApplication,Aplicação,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.ThemeDescription,Descrição,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,"Por favor, insira um Url válido",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,"Por favor, insira um url válido",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Selecionar uma página web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,"Por favor, insira tags de tema válidas",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,"Por favor, insira um título válido",,Portal\Controls\ThemeCreate\Portal.ThemeCreate.PT.xaml,

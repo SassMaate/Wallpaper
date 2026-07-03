@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Ugyldig 'SystemBattery'-værdi,,Port
 Portal.Enum.CompatibilityType.SystemGraphic,Ugyldig 'SystemGraphic'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Ugyldig 'SystemNetwork'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Ugyldig 'SystemStorage'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,'Contact' er hverken en URL eller en mailadresse,,Portal\Enum\Portal.Enum.DA.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,'Contact' er hverken en Url eller en mailadresse,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,'SucroseCompatible.json'-filen er tom,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,'SucroseProperties.json'-filen er tom,,Portal\Enum\Portal.Enum.DA.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Ugyldig 'SystemProcessor'-værdi,,Portal\Enum\Portal.Enum.DA.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Forsidebillede,,Portal\Controls\ThemeCreate\Po
 Portal.ThemeCreate.ThemeApplication,Applikation,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
 Portal.ThemeCreate.ThemeDescription,Beskrivelse,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Indtast venligst en gyldig Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Indtast venligst en gyldig url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Vælg en webside,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Indtast venligst gyldige tema-tags,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Indtast venligst en gyldig titel,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.DA.xaml,

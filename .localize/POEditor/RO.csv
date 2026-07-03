@@ -483,7 +483,7 @@ Portal.Enum.CompatibilityType.Extension,Fișierul specificat nu are extensia '.z
 Portal.Enum.CompatibilityType.ThemeType,Valoare 'ThemeType' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.Thumbnail,Fișierul 'Thumbnail' nu a fost găsit,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.AppVersion,Tema a fost creată pentru o versiune mai înaltă a aplicației,,Portal\Enum\Portal.Enum.RO.xaml,
-Portal.Enum.CompatibilityType.InvalidUrl,Valoarea 'Source' conține un URL nevalid,,Portal\Enum\Portal.Enum.RO.xaml,
+Portal.Enum.CompatibilityType.InvalidUrl,Valoarea 'Source' conține un Url nevalid,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemBios,Valoare 'SystemBios' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemDate,Valoare 'SystemDate' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.Description,Valoarea 'Description' este goală sau prea lungă,,Portal\Enum\Portal.Enum.RO.xaml,
@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,Valoare 'SystemBattery' nevalidă,,P
 Portal.Enum.CompatibilityType.SystemGraphic,Valoare 'SystemGraphic' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,Valoare 'SystemNetwork' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,Valoare 'SystemStorage' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,Valoarea 'Contact' nu este nici un URL sau adresă de email,,Portal\Enum\Portal.Enum.RO.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,Valoarea 'Contact' nu este nici un Url sau adresă de email,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,Fișierul 'SucroseCompatible.json' este gol,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,Fișierul 'SucroseProperties.json' este gol,,Portal\Enum\Portal.Enum.RO.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,Valoare 'SystemProcessor' nevalidă,,Portal\Enum\Portal.Enum.RO.xaml,
@@ -685,7 +685,7 @@ PASS⦙116,PASS⦙116,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.YouTube,Temă YouTube,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.YouTube.Description,Creează-ți propria temă de tip YouTube.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 PASS⦙117,PASS⦙117,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Application,Temă Aplicație,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
+Portal.ThemeCreate.Application,Temă Application,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.Application.Description,Creează-ți propria temă de tip Application.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 PASS⦙118,PASS⦙118,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemeUrl,Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,Miniatură,,Portal\Controls\ThemeCreate\Portal
 Portal.ThemeCreate.ThemeApplication,Aplicație,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.ThemeDescription,Descriere,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,Vă rugăm să introduceți un Url valid,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,Vă rugăm să introduceți un url valid,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,Selectați o pagină web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,Vă rugăm să introduceți etichete de temă valide,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,Vă rugăm să introduceți un titlu valid,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.RO.xaml,

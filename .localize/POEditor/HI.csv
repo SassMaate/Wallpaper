@@ -700,8 +700,8 @@ Portal.ThemeCreate.ThemeThumbnail,थंबनेल,,Portal\Controls\ThemeCreat
 Portal.ThemeCreate.ThemeApplication,एप्लिकेशन,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
 Portal.ThemeCreate.ThemeDescription,विवरण,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,कृपया एक मान्य Url पता लिखें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
-Portal.ThemeCreate.ThemeWeb.Hint,एक Web पृष्ठ चुनें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,कृपया एक मान्य url पता लिखें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
+Portal.ThemeCreate.ThemeWeb.Hint,एक web पृष्ठ चुनें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,कृपया मान्य थीम टैग्स लिखें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,कृपया एक मान्य शीर्षक लिखें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,
 Portal.ThemeCreate.ThemeAuthor.Hint,कृपया एक मान्य लेखक नाम लिखें,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.HI.xaml,

@@ -503,7 +503,7 @@ Portal.Enum.CompatibilityType.SystemBattery,قيمة 'SystemBattery' غير صا
 Portal.Enum.CompatibilityType.SystemGraphic,قيمة 'SystemGraphic' غير صالحة,,Portal\Enum\Portal.Enum.AR.xaml,
 Portal.Enum.CompatibilityType.SystemNetwork,قيمة 'SystemNetwork' غير صالحة,,Portal\Enum\Portal.Enum.AR.xaml,
 Portal.Enum.CompatibilityType.SystemStorage,قيمة 'SystemStorage' غير صالحة,,Portal\Enum\Portal.Enum.AR.xaml,
-Portal.Enum.CompatibilityType.InvalidContact,قيمة 'Contact' ليست 'URL' أو 'Email Address',,Portal\Enum\Portal.Enum.AR.xaml,
+Portal.Enum.CompatibilityType.InvalidContact,قيمة 'Contact' ليست 'Url' أو 'Email Address',,Portal\Enum\Portal.Enum.AR.xaml,
 Portal.Enum.CompatibilityType.EmptyCompatible,ملف 'SucroseCompatible.json' فارغ,,Portal\Enum\Portal.Enum.AR.xaml,
 Portal.Enum.CompatibilityType.EmptyProperties,ملف 'SucroseProperties.json' فارغ,,Portal\Enum\Portal.Enum.AR.xaml,
 Portal.Enum.CompatibilityType.SystemProcessor,قيمة 'SystemProcessor' غير صالحة,,Portal\Enum\Portal.Enum.AR.xaml,
@@ -670,17 +670,17 @@ Portal.ThemeCreate.Close,إغلاق,,Portal\Controls\ThemeCreate\Portal.ThemeCre
 Portal.ThemeCreate.Create,إنشاء,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.Creating,جارٍ الإنشاء,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙112,PASS⦙112,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Gif,سِمة GIF,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
-Portal.ThemeCreate.Gif.Description,أنشئ سِمتك الخاصة بتنسيق GIF.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Gif,سِمة Gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Gif.Description,أنشئ سِمتك الخاصة بتنسيق Gif.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙113,PASS⦙113,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Url,سِمة URL,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
-Portal.ThemeCreate.Url.Description,أنشئ سِمتك الخاصة بتنسيق URL.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Url,سِمة Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Url.Description,أنشئ سِمتك الخاصة بتنسيق Url.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙114,PASS⦙114,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.Web,سِمة Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.Web.Description,أنشئ سِمتك الخاصة بتنسيق Web.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙115,PASS⦙115,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.Video,سِمة فيديو,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
-Portal.ThemeCreate.Video.Description,أنشئ سِمتك الخاصة بتنسيق الفيديو.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Video,سِمة Video,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.Video.Description,أنشئ سِمتك الخاصة بتنسيق Video.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙116,PASS⦙116,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.YouTube,سِمة YouTube,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.YouTube.Description,أنشئ سِمتك الخاصة بتنسيق YouTube.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
@@ -688,7 +688,7 @@ PASS⦙117,PASS⦙117,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.Application,سِمة Application,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.Application.Description,أنشئ سِمتك الخاصة بتنسيق Application.,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙118,PASS⦙118,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl,URL,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.ThemeUrl,Url,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeWeb,Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeTags,الوسوم,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeTitle,العنوان,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
@@ -700,7 +700,7 @@ Portal.ThemeCreate.ThemeThumbnail,صورة الغلاف,,Portal\Controls\ThemeCr
 Portal.ThemeCreate.ThemeApplication,تطبيق,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeDescription,الوصف,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙119,PASS⦙119,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemeUrl.Hint,يُرجى إدخال عنوان URL صالح,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.ThemeUrl.Hint,يُرجى إدخال عنوان url صالح,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeWeb.Hint,حدِّد صفحة ويب,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeTags.Hint,يُرجى إدخال وسوم سِمة صالحة,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeTitle.Hint,يُرجى إدخال عنوان صالح,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
@@ -714,20 +714,20 @@ Portal.ThemeCreate.ThemeDescription.Hint,يُرجى إدخال وصف صالح,,
 PASS⦙120,PASS⦙120,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.DragDrop.Delete,تراجع,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙121,PASS⦙121,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.DragDrop.Gif.Title,تحديد ملف GIF,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
-Portal.ThemeCreate.DragDrop.Gif.Filter,ملفّات GIF (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.DragDrop.Gif.Title,تحديد ملف Gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.DragDrop.Gif.Filter,ملفّات Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙122,PASS⦙122,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.DragDrop.Video.Title,تحديد ملف فيديو,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.DragDrop.Video.Filter,ملفّات الفيديو (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙123,PASS⦙123,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.DragDrop.Gif,اسحب ملف GIF وأفلِته هنا,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.DragDrop.Gif,اسحب ملف Gif وأفلِته هنا,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.DragDrop.Video,اسحب ملف الفيديو وأفلِته هنا,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙124,PASS⦙124,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemeThumbnail.Title,تحديد صورة الغلاف,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.ThemeThumbnail.Filter,ملفّات الصور (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙125,PASS⦙125,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemePreview.Title,تحديد ملف المعاينة,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
-Portal.ThemeCreate.ThemePreview.Filter,ملفّات GIF (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
+Portal.ThemeCreate.ThemePreview.Filter,ملفّات Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 PASS⦙126,PASS⦙126,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.WebSource.Title,تحديد صفحة الويب,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
 Portal.ThemeCreate.WebSource.Filter,صفحات الويب (*.html)|*.html,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.AR.xaml,
@@ -1259,14 +1259,14 @@ PASS⦙290,PASS⦙290,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal
 Portal.WallpaperSettingPage.HardwareAcceleration,تسريع الأجهزة,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 Portal.WallpaperSettingPage.HardwareAcceleration.Description,تغيّر سلوك تسريع الأجهزة لخلفيات الشاشة المدعومة.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 PASS⦙291,PASS⦙291,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,Please don't touch the translation in this line.
-Portal.WallpaperSettingPage.GifPlayer,مشغّل GIF,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
-Portal.WallpaperSettingPage.GifPlayer.Description,حدّد الإضافة التي ستشغّل سِمات GIF في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.GifPlayer,مشغّل Gif,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.GifPlayer.Description,حدّد الإضافة التي ستشغّل سِمات Gif في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 PASS⦙292,PASS⦙292,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,Please don't touch the translation in this line.
-Portal.WallpaperSettingPage.VideoPlayer,مشغّل الفيديو,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
-Portal.WallpaperSettingPage.VideoPlayer.Description,حدّد الإضافة التي ستشغّل سِمات الفيديو في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.VideoPlayer,مشغّل Video,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.VideoPlayer.Description,حدّد الإضافة التي ستشغّل سِمات Video في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 PASS⦙293,PASS⦙293,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,Please don't touch the translation in this line.
-Portal.WallpaperSettingPage.UrlPlayer,محرّك URL,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
-Portal.WallpaperSettingPage.UrlPlayer.Description,حدّد المحرّك الذي سيشغّل سِمات URL في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.UrlPlayer,محرّك Url,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
+Portal.WallpaperSettingPage.UrlPlayer.Description,حدّد المحرّك الذي سيشغّل سِمات Url في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 PASS⦙294,PASS⦙294,Don't Touch,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,Please don't touch the translation in this line.
 Portal.WallpaperSettingPage.WebPlayer,محرّك Web,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
 Portal.WallpaperSettingPage.WebPlayer.Description,حدّد المحرّك الذي سيشغّل سِمات Web في مكتبتك.,,Portal\SettingPage\WallpaperSettingPage\Portal.WallpaperSettingPage.AR.xaml,
