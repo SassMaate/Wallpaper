@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Ugyldig 'SystemGraphic' verdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Ugyldig 'SystemNetwork' verdi</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Ugyldig 'SystemStorage' verdi</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' verdien er verken en 'URL' eller en 'E-postadresse'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' verdien er verken en 'Url' eller en 'E-postadresse'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json' filen er tom</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json' filen er tom</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Ugyldig 'SystemProcessor' verdi</system:String>

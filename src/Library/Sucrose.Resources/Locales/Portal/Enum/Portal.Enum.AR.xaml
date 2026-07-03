@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">قيمة 'SystemGraphic' غير صالحة</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">قيمة 'SystemNetwork' غير صالحة</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">قيمة 'SystemStorage' غير صالحة</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">قيمة 'Contact' ليست 'URL' أو 'Email Address'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">قيمة 'Contact' ليست 'Url' أو 'Email Address'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">ملف 'SucroseCompatible.json' فارغ</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">ملف 'SucroseProperties.json' فارغ</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">قيمة 'SystemProcessor' غير صالحة</system:String>

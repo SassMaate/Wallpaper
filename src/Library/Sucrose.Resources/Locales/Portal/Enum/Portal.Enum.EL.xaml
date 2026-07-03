@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Μη έγκυρη τιμή 'SystemGraphic'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Μη έγκυρη τιμή 'SystemNetwork'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Μη έγκυρη τιμή 'SystemStorage'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Η τιμή 'Contact' δεν είναι 'URL' ή 'Διεύθυνση Email'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Η τιμή 'Contact' δεν είναι 'Url' ή 'Διεύθυνση Email'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Το αρχείο 'SucroseCompatible.json' είναι άδειο</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Το αρχείο 'SucroseProperties.json' είναι άδειο</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Μη έγκυρη τιμή 'SystemProcessor'</system:String>

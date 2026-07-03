@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Nieprawidłowa wartość 'SystemGraphic'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Nieprawidłowa wartość 'SystemNetwork'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Nieprawidłowa wartość 'SystemStorage'</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Wartość 'Contact' nie jest 'URL' ani 'Adres E-Mail'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">Wartość 'Contact' nie jest 'Url' ani 'Adres E-Mail'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Plik 'SucroseCompatible.json' jest pusty</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Plik 'SucroseProperties.json' jest pusty</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Nieprawidłowa wartość 'SystemProcessor'</system:String>

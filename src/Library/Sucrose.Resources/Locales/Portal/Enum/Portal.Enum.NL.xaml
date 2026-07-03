@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">Ongeldige 'SystemGraphic' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">Ongeldige 'SystemNetwork' waarde</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">Ongeldige 'SystemStorage' waarde</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' is geen 'URL' of 'E-mailadres'</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' is geen 'Url' of 'E-mailadres'</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">Bestand 'SucroseCompatible.json' is leeg</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">Bestand 'SucroseProperties.json' is leeg</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">Ongeldige 'SystemProcessor' waarde</system:String>

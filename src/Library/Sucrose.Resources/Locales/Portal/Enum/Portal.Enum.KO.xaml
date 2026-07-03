@@ -128,7 +128,7 @@
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemGraphic">잘못된 'SystemGraphic' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemNetwork">잘못된 'SystemNetwork' 값</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemStorage">잘못된 'SystemStorage' 값</system:String>
-    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' 값이 'URL' 또는 '이메일 주소'가 아님</system:String>
+    <system:String x:Key="Portal.Enum.CompatibilityType.InvalidContact">'Contact' 값이 'Url' 또는 '이메일 주소'가 아님</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyCompatible">'SucroseCompatible.json' 파일이 비어 있음</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.EmptyProperties">'SucroseProperties.json' 파일이 비어 있음</system:String>
     <system:String x:Key="Portal.Enum.CompatibilityType.SystemProcessor">잘못된 'SystemProcessor' 값</system:String>
