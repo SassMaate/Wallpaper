@@ -57,4 +57,3 @@
 
     <system:String x:Key="Portal.OtherSettingPage.Developer.DeveloperHint">טיפ: ברירת המחדל של האינטראקטיביות של כלי המפתחים אינה פועלת כראוי בעיצובים נתמכים. יציאת ניפוי הבאגים עובדת בצורה חלקה יותר. כשתהיה מוכן, תוכל להשתמש ב-'http://localhost:{0}' או 'chrome://inspect' עבור דפדפן Chrome, 'opera://inspect' עבור דפדפן Opera, 'edge://inspect' עבור דפדפן Edge.</system:String>
 </ResourceDictionary>
-
