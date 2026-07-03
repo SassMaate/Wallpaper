@@ -720,14 +720,14 @@ PASS⦙122,PASS⦙122,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.DragDrop.Video.Title,Επιλέξτε Αρχείο Βίντεο,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 Portal.ThemeCreate.DragDrop.Video.Filter,Αρχεία Βίντεο (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 PASS⦙123,PASS⦙123,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.DragDrop.Gif,Σύρετε και αποθέστε το αρχείο GIF εδώ,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
+Portal.ThemeCreate.DragDrop.Gif,Σύρετε και αποθέστε το αρχείο Gif εδώ,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 Portal.ThemeCreate.DragDrop.Video,Σύρετε και αποθέστε το αρχείο video εδώ,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 PASS⦙124,PASS⦙124,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemeThumbnail.Title,Επιλογή Εξωφύλλου,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 Portal.ThemeCreate.ThemeThumbnail.Filter,Αρχεία Εικόνας (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 PASS⦙125,PASS⦙125,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemePreview.Title,Επιλογή Αρχείου Προεπισκόπησης,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
-Portal.ThemeCreate.ThemePreview.Filter,Αρχεία GIF (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
+Portal.ThemeCreate.ThemePreview.Filter,Αρχεία Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 PASS⦙126,PASS⦙126,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.WebSource.Title,Επιλέξτε Ιστοσελίδα,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,
 Portal.ThemeCreate.WebSource.Filter,Ιστοσελίδες (*.html)|*.html,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.EL.xaml,

@@ -706,7 +706,7 @@ Portal.ThemeCreate.ThemeTags.Hint,Inserisci tag validi per il tema,,Portal\Contr
 Portal.ThemeCreate.ThemeTitle.Hint,Inserisci un titolo valido,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeAuthor.Hint,Inserisci un nome autore valido,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeContact.Hint,Inserisci un contatto valido,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
-Portal.ThemeCreate.ThemePreview.Hint,Seleziona un file GIF per l'anteprima,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
+Portal.ThemeCreate.ThemePreview.Hint,Seleziona un file Gif per l'anteprima,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeArguments.Hint,Inserisci argomenti validi per l'applicazione,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeThumbnail.Hint,Seleziona un'immagine di copertina,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeApplication.Hint,Seleziona un file di applicazione,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
@@ -720,14 +720,14 @@ PASS⦙122,PASS⦙122,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.DragDrop.Video.Title,Seleziona File Video,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.DragDrop.Video.Filter,File Video (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 PASS⦙123,PASS⦙123,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.DragDrop.Gif,Trascina e rilascia il file GIF qui,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
+Portal.ThemeCreate.DragDrop.Gif,Trascina e rilascia il file Gif qui,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.DragDrop.Video,Trascina e rilascia il file video qui,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 PASS⦙124,PASS⦙124,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemeThumbnail.Title,Seleziona Immagine di Copertina,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.ThemeThumbnail.Filter,File Immagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 PASS⦙125,PASS⦙125,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.ThemePreview.Title,Seleziona File GIF per l'Anteprima,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
-Portal.ThemeCreate.ThemePreview.Filter,File GIF (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
+Portal.ThemeCreate.ThemePreview.Title,Seleziona File Gif per l'Anteprima,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
+Portal.ThemeCreate.ThemePreview.Filter,File Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 PASS⦙126,PASS⦙126,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.WebSource.Title,Seleziona Pagina Web,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,
 Portal.ThemeCreate.WebSource.Filter,Pagine Web (*.html)|*.html,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,

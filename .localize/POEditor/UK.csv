@@ -720,14 +720,14 @@ PASS⦙122,PASS⦙122,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate
 Portal.ThemeCreate.DragDrop.Video.Title,Виберіть Відеофайл,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.DragDrop.Video.Filter,Відеофайли (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 PASS⦙123,PASS⦙123,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Please don't touch the translation in this line.
-Portal.ThemeCreate.DragDrop.Gif,Перетягніть тут свій файл GIF і відпустіть,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
+Portal.ThemeCreate.DragDrop.Gif,Перетягніть тут свій файл Gif і відпустіть,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.DragDrop.Video,Перетягніть сюди свій файл відео і відпустіть,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 PASS⦙124,PASS⦙124,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemeThumbnail.Title,Виберіть обкладинку,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.ThemeThumbnail.Filter,Зображення (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 PASS⦙125,PASS⦙125,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.ThemePreview.Title,Виберіть файл попереднього перегляду,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
-Portal.ThemeCreate.ThemePreview.Filter,Файли GIF (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
+Portal.ThemeCreate.ThemePreview.Filter,Файли Gif (*.gif)|*.gif,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 PASS⦙126,PASS⦙126,Don't Touch,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Please don't touch the translation in this line.
 Portal.ThemeCreate.WebSource.Title,Виберіть Web-Сторінку,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,
 Portal.ThemeCreate.WebSource.Filter,Web-Сторінки (*.html)|*.html,,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,

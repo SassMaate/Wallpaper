@@ -720,14 +720,14 @@ f1cd6c7eb4b80bc57b6a8701dd6b04a58424965fec98c4e56b3314a231561ef9,Portal\Controls
 2436b3be59c8b26c7679f12cd600c3b15699a1bfa515853cfb746b40dfe2efc2,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.DragDrop.Video.Title,Виберіть Відеофайл
 0c271f712fe904b31775ec7fbadaf7d2e8e8f1d48a91dc81913ee7f14aea2b76,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.DragDrop.Video.Filter,Відеофайли (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4
 d7d33f881dc6baa6e8733179bef2bf17e1ba2d84a81ace1e37e90f8b6a36d28f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,,
-a7e230745899f132322c4cf0cdbb1b92b9fa2282930cbaa876485d49d45fe722,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.DragDrop.Gif,Перетягніть тут свій файл GIF і відпустіть
+a7e230745899f132322c4cf0cdbb1b92b9fa2282930cbaa876485d49d45fe722,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.DragDrop.Gif,Перетягніть тут свій файл Gif і відпустіть
 f7abcd50ef724fb28b2a5cbae7339061f69e669daa476acd7a11e382d20a53c6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.DragDrop.Video,Перетягніть сюди свій файл відео і відпустіть
 ff4d925d0deb21fef3404afa0479724dce67ee4d917c3e5b87e1615079327a55,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,,
 9289f2293d4c916c7ab45597e010aaf622472995818cfb81da8443e770732c3b,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.ThemeThumbnail.Title,Виберіть обкладинку
 5d896c1ac49b53e3beff7407d1f5f765a40d71c374b879afefe38b6eade52339,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.ThemeThumbnail.Filter,Зображення (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp
 2ea958278f45347b8b6f9fde5aa98e6b8636dd4c6722100c76d5f676515a5492,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,,
 2a72de7306d8651886612d30dfbe03570c04e1f746bb5abe0a48ed976c7ad91c,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.ThemePreview.Title,Виберіть файл попереднього перегляду
-795bd17d3c557b196df4ef9345a4ed5a759ae63db46ca75410b64f1da4493bee,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.ThemePreview.Filter,Файли GIF (*.gif)|*.gif
+795bd17d3c557b196df4ef9345a4ed5a759ae63db46ca75410b64f1da4493bee,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.ThemePreview.Filter,Файли Gif (*.gif)|*.gif
 5fee31940b7897588ab53bca9f0d4e4cf71b3acb97403183fc534d50e5711d01,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,,
 324afb0281748933212c1745bdcd2b0e73582c8de70d8a4e902bb323597c1e8e,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.WebSource.Title,Виберіть Web-Сторінку
 97bb004148fe6e9a6dbef3a40c2220dbf01f4ca535e83b5fea13b6986c580863,Portal\Controls\ThemeCreate\Portal.ThemeCreate.UK.xaml,Portal.ThemeCreate.WebSource.Filter,Web-Сторінки (*.html)|*.html

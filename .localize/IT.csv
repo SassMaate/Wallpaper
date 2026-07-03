@@ -706,7 +706,7 @@ a573daa9552f1ba04db1d651feaef0e0d05baf834bb2c39e6d48751d38d39667,Portal\Controls
 b42a825dd0d831e2abc1abad71b732c4b5e84545946d5542fbf80651e342a346,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeTitle.Hint,Inserisci un titolo valido
 6b5b09f602034abc71dcd15705647608fe8a8edfa5207d37c91c9916a9ca31d9,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeAuthor.Hint,Inserisci un nome autore valido
 57befd9265248d890f8ec26ae8ae552a11dc4a1c3997d027f9603589c929ff06,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeContact.Hint,Inserisci un contatto valido
-3aa113413a2e318bb6084847fa24a5f57f0a6c3862fd8da9e8265d3dcdf4d0e6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Hint,Seleziona un file GIF per l'anteprima
+3aa113413a2e318bb6084847fa24a5f57f0a6c3862fd8da9e8265d3dcdf4d0e6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Hint,Seleziona un file Gif per l'anteprima
 afe60e7fdc78254af89987508b1f02eecc80429ab45736632d776ac1842b4216,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeArguments.Hint,Inserisci argomenti validi per l'applicazione
 d2a023fe0cdd4830d1121bb214e1218ae9975e395885f88b7b7e35484a5f2790,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeThumbnail.Hint,Seleziona un'immagine di copertina
 f3ec4d382c841dd0e62135578b347bbf193c6e174edd91190cef2a16157da368,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeApplication.Hint,Seleziona un file di applicazione
@@ -720,14 +720,14 @@ f1cd6c7eb4b80bc57b6a8701dd6b04a58424965fec98c4e56b3314a231561ef9,Portal\Controls
 2436b3be59c8b26c7679f12cd600c3b15699a1bfa515853cfb746b40dfe2efc2,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.DragDrop.Video.Title,Seleziona File Video
 0c271f712fe904b31775ec7fbadaf7d2e8e8f1d48a91dc81913ee7f14aea2b76,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.DragDrop.Video.Filter,File Video (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4)|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4
 d7d33f881dc6baa6e8733179bef2bf17e1ba2d84a81ace1e37e90f8b6a36d28f,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,,
-a7e230745899f132322c4cf0cdbb1b92b9fa2282930cbaa876485d49d45fe722,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.DragDrop.Gif,Trascina e rilascia il file GIF qui
+a7e230745899f132322c4cf0cdbb1b92b9fa2282930cbaa876485d49d45fe722,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.DragDrop.Gif,Trascina e rilascia il file Gif qui
 f7abcd50ef724fb28b2a5cbae7339061f69e669daa476acd7a11e382d20a53c6,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.DragDrop.Video,Trascina e rilascia il file video qui
 ff4d925d0deb21fef3404afa0479724dce67ee4d917c3e5b87e1615079327a55,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,,
 9289f2293d4c916c7ab45597e010aaf622472995818cfb81da8443e770732c3b,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeThumbnail.Title,Seleziona Immagine di Copertina
 5d896c1ac49b53e3beff7407d1f5f765a40d71c374b879afefe38b6eade52339,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemeThumbnail.Filter,File Immagine (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp
 2ea958278f45347b8b6f9fde5aa98e6b8636dd4c6722100c76d5f676515a5492,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,,
-2a72de7306d8651886612d30dfbe03570c04e1f746bb5abe0a48ed976c7ad91c,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Title,Seleziona File GIF per l'Anteprima
-795bd17d3c557b196df4ef9345a4ed5a759ae63db46ca75410b64f1da4493bee,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Filter,File GIF (*.gif)|*.gif
+2a72de7306d8651886612d30dfbe03570c04e1f746bb5abe0a48ed976c7ad91c,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Title,Seleziona File Gif per l'Anteprima
+795bd17d3c557b196df4ef9345a4ed5a759ae63db46ca75410b64f1da4493bee,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.ThemePreview.Filter,File Gif (*.gif)|*.gif
 5fee31940b7897588ab53bca9f0d4e4cf71b3acb97403183fc534d50e5711d01,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,,
 324afb0281748933212c1745bdcd2b0e73582c8de70d8a4e902bb323597c1e8e,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.WebSource.Title,Seleziona Pagina Web
 97bb004148fe6e9a6dbef3a40c2220dbf01f4ca535e83b5fea13b6986c580863,Portal\Controls\ThemeCreate\Portal.ThemeCreate.IT.xaml,Portal.ThemeCreate.WebSource.Filter,Pagine Web (*.html)|*.html
