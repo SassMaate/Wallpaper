@@ -23,7 +23,7 @@
     <system:String x:Key="Portal.ThemeCreate.YouTube">Temă YouTube</system:String>
     <system:String x:Key="Portal.ThemeCreate.YouTube.Description">Creează-ți propria temă de tip YouTube.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Application">Temă Aplicație</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Application">Temă Application</system:String>
     <system:String x:Key="Portal.ThemeCreate.Application.Description">Creează-ți propria temă de tip Application.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">Aplicație</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">Descriere</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Vă rugăm să introduceți un Url valid</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">Vă rugăm să introduceți un url valid</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Selectați o pagină web</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">Vă rugăm să introduceți etichete de temă valide</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">Vă rugăm să introduceți un titlu valid</system:String>

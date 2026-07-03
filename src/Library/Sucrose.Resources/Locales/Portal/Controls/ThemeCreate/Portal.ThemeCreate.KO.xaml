@@ -38,8 +38,8 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">응용 프로그램</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">설명</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">유효한 Url 주소를 입력하세요</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">Web 페이지 선택</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">유효한 url 주소를 입력하세요</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">web 페이지 선택</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">유효한 테마 태그를 입력하세요</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">유효한 제목을 입력하세요</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeAuthor.Hint">유효한 저자 이름을 입력하세요</system:String>

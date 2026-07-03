@@ -17,7 +17,7 @@
     <system:String x:Key="Portal.ThemeCreate.Web">Motyw Web</system:String>
     <system:String x:Key="Portal.ThemeCreate.Web.Description">Utwórz własny motyw w formacie Web.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Video">Motyw Wideo</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video">Motyw Video</system:String>
     <system:String x:Key="Portal.ThemeCreate.Video.Description">Utwórz własny motyw w formacie Video.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.YouTube">Motyw YouTube</system:String>

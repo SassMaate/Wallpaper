@@ -7,4 +7,3 @@
 
     <system:String x:Key="Portal.TrayIcon.Message">Sucrose ממוזער למגש המערכת. אנא לחץ לחיצה ימנית על סמל Sucrose כדי להמשיך.</system:String>
 </ResourceDictionary>
-

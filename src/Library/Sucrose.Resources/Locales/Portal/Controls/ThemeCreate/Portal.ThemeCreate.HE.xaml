@@ -8,22 +8,22 @@
     <system:String x:Key="Portal.ThemeCreate.Create">לִיצוֹר</system:String>
     <system:String x:Key="Portal.ThemeCreate.Creating">נוצר</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Gif">ערכת GIF</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Gif.Description">צור ערכת נושא משלך בסוג GIF.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif">ערכת Gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Gif.Description">צור ערכת נושא משלך בסוג Gif.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Url">ערכת נושא של כתובת אתר</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Url.Description">צור ערכת נושא משלך של סוג כתובת האתר.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url">ערכת נושא של Url</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Url.Description">צור ערכת נושא משלך של סוג Url.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Web">ערכת נושא אינטרנט</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Web.Description">צור ערכת נושא משלך בז'אנר האינטרנט.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Web">ערכת נושא Web</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Web.Description">צור ערכת נושא משלך בז'אנר Web.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Video">ערכת נושא של וידאו</system:String>
-    <system:String x:Key="Portal.ThemeCreate.Video.Description">צור ערכת נושא משלך בסוג וידאו.</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video">ערכת נושא של Video</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Video.Description">צור ערכת נושא משלך בסוג Video.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.YouTube">ערכת נושא של YouTube</system:String>
     <system:String x:Key="Portal.ThemeCreate.YouTube.Description">צור ערכת נושא משלך בז'אנר YouTube.</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.Application">נושא היישום</system:String>
+    <system:String x:Key="Portal.ThemeCreate.Application">נושא Application</system:String>
     <system:String x:Key="Portal.ThemeCreate.Application.Description">צור ערכת נושא משלך מסוג Application.</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeUrl">Url</system:String>
@@ -38,7 +38,7 @@
     <system:String x:Key="Portal.ThemeCreate.ThemeApplication">בַּקָשָׁה</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeDescription">הֶסבֵּר</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">אנא הקלד כתובת URL חוקית</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemeUrl.Hint">אנא הקלד כתובת url חוקית</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeWeb.Hint">בחר דף אינטרנט</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTags.Hint">נא לכתוב תגי נושא חוקיים</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeTitle.Hint">נא לכתוב כותרת חוקית</system:String>
@@ -52,20 +52,20 @@
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Delete">לְבַטֵל</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Title">בחר קובץ GIF</system:String>
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Filter">קבצי GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Title">בחר קובץ Gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif.Filter">קבצי Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Title">בחר קובץ וידאו</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video.Filter">קבצי וידאו (*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4 )|*.mp4;*.avi;*.mov;*.mkv;*.ogv;*.flv;*.wmv;*.hevc;*.webm;*.mpeg;*.mpeg1;*.mpeg2;*.mpeg4</system:String>
 
-    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">גרור ושחרר את קובץ ה-GIF שלך כאן</system:String>
+    <system:String x:Key="Portal.ThemeCreate.DragDrop.Gif">גרור ושחרר את קובץ ה-Gif שלך כאן</system:String>
     <system:String x:Key="Portal.ThemeCreate.DragDrop.Video">גרור ושחרר את קובץ הווידאו שלך כאן</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Title">בחר תמונת שער</system:String>
     <system:String x:Key="Portal.ThemeCreate.ThemeThumbnail.Filter">קבצי תמונה (*.png;*.jpg;*.jpeg;*.tiff;*.webp)|*.png;*.jpg;*.jpeg;*.tiff;*.webp</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.ThemePreview.Title">בחר תצוגה מקדימה של קובץ</system:String>
-    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">קבצי GIF (*.gif)|*.gif</system:String>
+    <system:String x:Key="Portal.ThemeCreate.ThemePreview.Filter">קבצי Gif (*.gif)|*.gif</system:String>
 
     <system:String x:Key="Portal.ThemeCreate.WebSource.Title">בחר דף אינטרנט</system:String>
     <system:String x:Key="Portal.ThemeCreate.WebSource.Filter">דפי אינטרנט (*.html)|*.html</system:String>
