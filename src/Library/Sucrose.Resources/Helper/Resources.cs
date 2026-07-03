@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
 using SEAT = Skylark.Enum.AssemblyType;
@@ -65,10 +66,13 @@ namespace Sucrose.Resources.Helper
                 return;
             }
 
-            foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+            Application.Current.Dispatcher.Invoke(() =>
             {
-                ApplyFlowDirection(Window);
-            }
+                foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+                {
+                    ApplyFlowDirection(Window);
+                }
+            });
         }
 
         public static bool IsRightToLeftText(string Text)
@@ -83,11 +87,6 @@ namespace Sucrose.Resources.Helper
                 if (Char is >= (char)0x0590 and <= (char)0x08FF)
                 {
                     return true;
-                }
-
-                if (char.IsLetter(Char))
-                {
-                    return false;
                 }
             }
 
