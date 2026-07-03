@@ -258,6 +258,7 @@ namespace Sucrose.Portal.Views.Controls
             TextBlock TextBlock = new()
             {
                 Foreground = SRER.GetResource<Brush>("TextFillColorPrimaryBrush"),
+                HorizontalAlignment = HorizontalAlignment.Stretch,
                 TextWrapping = TextWrapping.WrapWithOverflow,
                 Margin = new Thickness(10, 0, 10, 0),
                 FontSize = 14,
