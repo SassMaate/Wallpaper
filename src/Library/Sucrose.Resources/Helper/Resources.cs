@@ -65,7 +65,7 @@ namespace Sucrose.Resources.Helper
                 return;
             }
 
-            foreach (Window Window in Application.Current.Windows)
+            foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
             {
                 ApplyFlowDirection(Window);
             }
