@@ -56,4 +56,3 @@
 
     <system:String x:Key="Portal.GeneralSettingPage.PrivateLibrary.LibraryMove">העבר את הספרייה הקיימת שלך למיקום החדש</system:String>
 </ResourceDictionary>
-
