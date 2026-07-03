@@ -1,5 +1,7 @@
 using System.Globalization;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Windows.Media.Media3D;
 using SEAT = Skylark.Enum.AssemblyType;
@@ -65,6 +67,7 @@ namespace Sucrose.Resources.Helper
 
             SRMI.CurrentFlowDirection = NewDirection;
 
+            RegisterBidirectional();
             RegisterFlowDirection();
 
             if (Application.Current is null)
@@ -97,6 +100,24 @@ namespace Sucrose.Resources.Helper
             }
 
             return false;
+        }
+
+        private static void RegisterBidirectional()
+        {
+            if (SRMI.BidirectionalRegistered)
+            {
+                return;
+            }
+
+            SRMI.BidirectionalRegistered = true;
+
+            EventManager.RegisterClassHandler(typeof(TextBox), TextBoxBase.TextChangedEvent, new TextChangedEventHandler((Sender, Args) =>
+            {
+                if (Sender is TextBox TextBox)
+                {
+                    TextBox.FlowDirection = string.IsNullOrEmpty(TextBox.Text) ? SRMI.CurrentFlowDirection : (IsRightToLeftText(TextBox.Text) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight);
+                }
+            }));
         }
 
         private static void RegisterFlowDirection()
