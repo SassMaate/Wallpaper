@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -269,6 +269,7 @@ namespace Sucrose.Portal.Views.Controls
 
         private void ThemeMore_Click(object sender, RoutedEventArgs e)
         {
+            ContextMenu.PlacementTarget = this;
             ContextMenu.IsOpen = true;
         }
 

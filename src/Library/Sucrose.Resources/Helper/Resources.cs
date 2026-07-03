@@ -1,5 +1,7 @@
-﻿using System.Globalization;
+using System.Globalization;
 using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Media3D;
 using SEAT = Skylark.Enum.AssemblyType;
 using SHA = Skylark.Helper.Assemblies;
 using SHC = Skylark.Helper.Culture;
@@ -81,20 +83,58 @@ namespace Sucrose.Resources.Helper
 
             FlowDirectionRegistered = true;
 
-            EventManager.RegisterClassHandler(typeof(Window), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
+            EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
             {
-                if (Sender is Window Window)
+                if (Sender is FrameworkElement Element)
                 {
-                    ApplyFlowDirection(Window);
+                    Window Window = Element is Window W ? W : Window.GetWindow(Element);
+
+                    if (Window != null && !FlowableWindow(Window))
+                    {
+                        return;
+                    }
+
+                    Element.FlowDirection = CurrentFlowDirection;
                 }
             }));
+
         }
 
         private static void ApplyFlowDirection(Window Window)
         {
-            if (FlowableWindow(Window))
+            ApplyFlowDirectionToTree(Window);
+        }
+
+        private static void ApplyFlowDirectionToTree(DependencyObject Element)
+        {
+            if (Element is Window Window && !FlowableWindow(Window))
             {
-                Window.FlowDirection = CurrentFlowDirection;
+                return;
+            }
+
+            if (Element is FrameworkElement FE)
+            {
+                FE.FlowDirection = CurrentFlowDirection;
+
+                if (FE.ContextMenu != null)
+                {
+                    FE.ContextMenu.FlowDirection = CurrentFlowDirection;
+                }
+
+                if (FE.ToolTip is FrameworkElement ToolTipFE)
+                {
+                    ToolTipFE.FlowDirection = CurrentFlowDirection;
+                }
+            }
+
+            if (Element is Visual or Visual3D)
+            {
+                int ChildrenCount = VisualTreeHelper.GetChildrenCount(Element);
+
+                for (int i = 0; i < ChildrenCount; i++)
+                {
+                    ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, i));
+                }
             }
         }
 
