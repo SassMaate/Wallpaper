@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -8,6 +8,11 @@ namespace Sucrose.Portal.Controls
 {
     public class AsyncImage : Image, IDisposable
     {
+        public AsyncImage()
+        {
+            FlowDirection = FlowDirection.LeftToRight;
+        }
+
         public static readonly DependencyProperty ImagePathProperty = DependencyProperty.Register(nameof(ImagePath), typeof(string), typeof(AsyncImage), new PropertyMetadata(async (o, e) => await ((AsyncImage)o).LoadImageAsync((string)e.NewValue)));
 
         public string ImagePath

@@ -31,6 +31,7 @@
             Width="Auto"
             Height="300"
             CornerRadius="10"
+            FlowDirection="LeftToRight"
             Stretch="UniformToFill" />
 
         <controls:CustomGroupBox

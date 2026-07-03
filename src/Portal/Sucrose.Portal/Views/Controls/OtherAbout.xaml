@@ -1,4 +1,4 @@
-﻿<ui:ContentDialog
+<ui:ContentDialog
     x:Class="Sucrose.Portal.Views.Controls.OtherAbout"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -48,6 +48,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/Email.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -59,6 +60,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/YouTube.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -70,6 +72,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/Facebook.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -81,6 +84,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/Instagram.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -92,6 +96,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/Twitter.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -103,6 +108,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/Reddit.png" />
                         </ui:HyperlinkButton>
                         <ui:HyperlinkButton
@@ -114,6 +120,7 @@
                             <ui:Image
                                 Height="32"
                                 CornerRadius="16"
+                                FlowDirection="LeftToRight"
                                 Source="pack://application:,,,/Assets/Social/LinkedIn.png" />
                         </ui:HyperlinkButton>
                     </StackPanel>
@@ -129,6 +136,7 @@
                     <ui:Image
                         Height="96"
                         CornerRadius="48"
+                        FlowDirection="LeftToRight"
                         Source="pack://application:,,,/Assets/Taiizor.jpeg" />
                 </ui:HyperlinkButton>
             </Grid>
@@ -170,6 +178,7 @@
                         <ui:Image
                             Height="32"
                             CornerRadius="16"
+                            FlowDirection="LeftToRight"
                             Source="pack://application:,,,/Assets/Partner/Heart.png" />
                     </ui:HyperlinkButton>
                 </WrapPanel>
@@ -206,6 +215,7 @@
                         <ui:Image
                             Height="32"
                             CornerRadius="16"
+                            FlowDirection="LeftToRight"
                             Source="pack://application:,,,/Assets/Avatar/Taiizor.jpeg" />
                     </ui:HyperlinkButton>
                 </WrapPanel>

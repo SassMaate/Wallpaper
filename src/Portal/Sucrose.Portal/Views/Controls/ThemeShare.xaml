@@ -1,4 +1,4 @@
-﻿<ui:ContentDialog
+<ui:ContentDialog
     x:Class="Sucrose.Portal.Views.Controls.ThemeShare"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -36,6 +36,7 @@
                     MinHeight="150"
                     Margin="10,0,0,0"
                     CornerRadius="10"
+                    FlowDirection="LeftToRight"
                     Stretch="UniformToFill" />
 
                 <StackPanel
@@ -80,6 +81,7 @@
                                     Width="20"
                                     Height="20"
                                     Margin="0,3,0,3"
+                                    FlowDirection="LeftToRight"
                                     Source="pack://application:,,,/Assets/Icon/ArchiveFolder.png"
                                     ToolTipService.ToolTip="{DynamicResource Portal.ThemeShare.ThemeExport}" />
                             </StackPanel>
@@ -99,6 +101,7 @@
                                     Width="20"
                                     Height="20"
                                     Margin="0,3,0,3"
+                                    FlowDirection="LeftToRight"
                                     Source="pack://application:,,,/Assets/Icon/Basket.png"
                                     ToolTipService.ToolTip="{DynamicResource Portal.ThemeShare.ThemePublish}" />
                             </StackPanel>
@@ -117,6 +120,7 @@
                                     Width="20"
                                     Height="20"
                                     Margin="0,3,0,3"
+                                    FlowDirection="LeftToRight"
                                     Source="pack://application:,,,/Assets/Icon/Link3.png"
                                     ToolTipService.ToolTip="{DynamicResource Portal.ThemeShare.ThemeCopy}" />
                             </StackPanel>

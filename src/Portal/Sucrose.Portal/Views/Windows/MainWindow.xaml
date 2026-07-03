@@ -39,26 +39,28 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Grid.Background>
-            <VisualBrush Opacity="{Binding ViewModel.Opacity, Mode=OneWay}" Stretch="{Binding ViewModel.Stretch, Mode=OneWay}">
-                <VisualBrush.Visual>
-                    <Image
-                        xag:AnimationBehavior.AnimateInDesignMode="False"
-                        xag:AnimationBehavior.AutoStart="True"
-                        xag:AnimationBehavior.CacheFramesInMemory="False"
-                        xag:AnimationBehavior.RepeatBehavior="Forever"
-                        xag:AnimationBehavior.SourceUri="{Binding ViewModel.Backgrounder, Mode=OneWay}"
-                        FlowDirection="LeftToRight"
-                        Stretch="{Binding ViewModel.Stretch, Mode=OneWay}" />
-                </VisualBrush.Visual>
-            </VisualBrush>
-        </Grid.Background>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+
+        <Border Grid.RowSpan="3" FlowDirection="LeftToRight">
+            <Border.Background>
+                <VisualBrush Opacity="{Binding ViewModel.Opacity, Mode=OneWay}" Stretch="{Binding ViewModel.Stretch, Mode=OneWay}">
+                    <VisualBrush.Visual>
+                        <Image
+                            xag:AnimationBehavior.AnimateInDesignMode="False"
+                            xag:AnimationBehavior.AutoStart="True"
+                            xag:AnimationBehavior.CacheFramesInMemory="False"
+                            xag:AnimationBehavior.RepeatBehavior="Forever"
+                            xag:AnimationBehavior.SourceUri="{Binding ViewModel.Backgrounder, Mode=OneWay}"
+                            FlowDirection="LeftToRight"
+                            Stretch="{Binding ViewModel.Stretch, Mode=OneWay}" />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.Background>
+        </Border>
 
         <ui:TitleBar
             x:Name="TitleBar"
@@ -66,7 +68,7 @@
             Grid.Row="0"
             CloseWindowByDoubleClickOnIcon="True">
             <ui:TitleBar.Icon>
-                <ui:ImageIcon Source="pack://application:,,,/Assets/Icon256.png" />
+                <ui:ImageIcon FlowDirection="LeftToRight" Source="pack://application:,,,/Assets/Icon256.png" />
             </ui:TitleBar.Icon>
         </ui:TitleBar>
 

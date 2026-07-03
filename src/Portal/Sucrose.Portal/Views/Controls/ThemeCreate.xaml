@@ -225,15 +225,17 @@
                 DragLeave="GifArea_DragLeave"
                 DragOver="GifArea_DragOver"
                 Drop="GifArea_Drop"
+                FlowDirection="LeftToRight"
                 MouseLeftButtonUp="GifArea_MouseLeftButtonUp">
                 <Grid.Background>
                     <VisualBrush Stretch="UniformToFill">
                         <VisualBrush.Visual>
-                            <Grid>
+                            <Grid FlowDirection="LeftToRight">
                                 <Image
                                     x:Name="GifImagine"
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Center"
+                                    FlowDirection="LeftToRight"
                                     Source="{x:Null}"
                                     Stretch="UniformToFill"
                                     StretchDirection="Both" />
@@ -687,15 +689,17 @@
                 DragLeave="VideoArea_DragLeave"
                 DragOver="VideoArea_DragOver"
                 Drop="VideoArea_Drop"
+                FlowDirection="LeftToRight"
                 MouseLeftButtonUp="VideoArea_MouseLeftButtonUp">
                 <Grid.Background>
                     <VisualBrush Stretch="UniformToFill">
                         <VisualBrush.Visual>
-                            <Grid>
+                            <Grid FlowDirection="LeftToRight">
                                 <Image
                                     x:Name="VideoImagine"
                                     HorizontalAlignment="Stretch"
                                     VerticalAlignment="Center"
+                                    FlowDirection="LeftToRight"
                                     Source="{x:Null}"
                                     Stretch="UniformToFill"
                                     StretchDirection="Both" />

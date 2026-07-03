@@ -1,4 +1,4 @@
-﻿<ui:ContentDialog
+<ui:ContentDialog
     x:Class="Sucrose.Portal.Views.Controls.ThemeDelete"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -30,6 +30,7 @@
             Height="300"
             Margin="0,0,0,12"
             CornerRadius="10"
+            FlowDirection="LeftToRight"
             Stretch="UniformToFill" />
 
         <TextBlock

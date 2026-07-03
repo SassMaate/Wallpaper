@@ -126,9 +126,10 @@
                     <Rectangle.Fill>
                         <VisualBrush Stretch="UniformToFill">
                             <VisualBrush.Visual>
-                                <Grid>
+                                <Grid FlowDirection="LeftToRight">
                                     <Image
                                         x:Name="Imagine"
+                                        FlowDirection="LeftToRight"
                                         Source="{x:Null}"
                                         Stretch="UniformToFill" />
                                     <Image
@@ -140,6 +141,7 @@
                                         xag:AnimationBehavior.CacheFramesInMemory="False"
                                         xag:AnimationBehavior.RepeatBehavior="Forever"
                                         xag:AnimationBehavior.SourceUri="{x:Null}"
+                                        FlowDirection="LeftToRight"
                                         Stretch="UniformToFill"
                                         StretchDirection="Both" />
                                 </Grid>
