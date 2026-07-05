@@ -104,10 +104,15 @@ namespace Sucrose.Portal.ViewModels.Pages
 
             foreach (string Code in SRHR.ListLanguage())
             {
-                Localization.Items.Add(SRER.GetValue("Locale", Code));
+                Localization.Items.Add(new ComboBoxItem()
+                {
+                    Tag = Code,
+                    Content = SRER.GetValue("Locale", Code),
+                    FlowDirection = SRHR.IsRightToLeftText(SRER.GetValue("Locale", Code)) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight,
+                });
             }
 
-            Localization.SelectedValue = SRER.GetValue("Locale", SMMG.Culture.ToUpperInvariant());
+            Localization.SelectedItem = Localization.Items.Cast<ComboBoxItem>().FirstOrDefault(Locale => Locale.Tag.ToString() == SMMG.Culture.ToUpperInvariant());
 
             ApplicationLanguage.HeaderFrame = Localization;
 
