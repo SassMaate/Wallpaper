@@ -58,192 +58,233 @@ namespace Sucrose.Resources.Helper
         /// </summary>
         public static void SetFlowDirection(string Lang)
         {
-            FlowDirection NewDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
-
-            if (SRMI.CurrentFlowDirection == NewDirection)
+            try
             {
-                return;
-            }
+                FlowDirection NewDirection = IsRightToLeft(Lang) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
 
-            SRMI.CurrentFlowDirection = NewDirection;
-
-            RegisterBidirectional();
-            RegisterFlowDirection();
-
-            if (Application.Current is null)
-            {
-                return;
-            }
-
-            Application.Current.Dispatcher.Invoke(() =>
-            {
-                foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+                if (SRMI.CurrentFlowDirection == NewDirection)
                 {
-                    ApplyFlowDirection(Window);
+                    return;
                 }
-            });
+
+                SRMI.CurrentFlowDirection = NewDirection;
+
+                RegisterBidirectional();
+                RegisterFlowDirection();
+
+                if (Application.Current is null)
+                {
+                    return;
+                }
+
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    foreach (Window Window in Application.Current.Windows.OfType<Window>().ToList())
+                    {
+                        ApplyFlowDirection(Window);
+                    }
+                });
+            }
+            catch { }
         }
 
         public static bool IsRightToLeftText(string Text)
         {
-            if (string.IsNullOrEmpty(Text))
+            try
+            {
+                if (string.IsNullOrEmpty(Text))
+                {
+                    return false;
+                }
+
+                foreach (char Char in Text)
+                {
+                    if (Char is >= (char)0x0590 and <= (char)0x08FF)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+            catch
             {
                 return false;
             }
-
-            foreach (char Char in Text)
-            {
-                if (Char is >= (char)0x0590 and <= (char)0x08FF)
-                {
-                    return true;
-                }
-            }
-
-            return false;
         }
 
         private static void RegisterBidirectional()
         {
-            if (SRMI.BidirectionalRegistered)
+            try
             {
-                return;
-            }
-
-            SRMI.BidirectionalRegistered = true;
-
-            EventManager.RegisterClassHandler(typeof(TextBox), TextBoxBase.TextChangedEvent, new TextChangedEventHandler((Sender, Args) =>
-            {
-                if (Sender is TextBox TextBox)
+                if (SRMI.BidirectionalRegistered)
                 {
-                    TextBox.FlowDirection = string.IsNullOrEmpty(TextBox.Text) ? SRMI.CurrentFlowDirection : (IsRightToLeftText(TextBox.Text) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight);
+                    return;
                 }
-            }));
+
+                SRMI.BidirectionalRegistered = true;
+
+                EventManager.RegisterClassHandler(typeof(TextBox), TextBoxBase.TextChangedEvent, new TextChangedEventHandler((Sender, Args) =>
+                {
+                    if (Sender is TextBox TextBox)
+                    {
+                        TextBox.FlowDirection = string.IsNullOrEmpty(TextBox.Text) ? SRMI.CurrentFlowDirection : (IsRightToLeftText(TextBox.Text) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight);
+                    }
+                }));
+            }
+            catch { }
         }
 
         private static bool IsNonFlowableElement(FrameworkElement FE)
         {
-            if (FE is Image)
+            try
             {
-                return true;
-            }
+                if (FE is Image)
+                {
+                    return true;
+                }
 
-            string TypeName = FE.GetType().Name;
-            if (TypeName is "Image" or "ImageIcon" or "AsyncImage")
+                string TypeName = FE.GetType().Name;
+                if (TypeName is "Image" or "ImageIcon" or "AsyncImage")
+                {
+                    return true;
+                }
+
+                if (FE.Tag is string Tag && Tag is "LeftToRight" or "NonFlowable")
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            catch
             {
-                return true;
+                return false;
             }
-
-            if (FE.Tag is string Tag && Tag is "LeftToRight" or "NonFlowable")
-            {
-                return true;
-            }
-
-            return false;
         }
 
         private static void RegisterFlowDirection()
         {
-            if (SRMI.FlowDirectionRegistered)
+            try
             {
-                return;
-            }
-
-            SRMI.FlowDirectionRegistered = true;
-
-            EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
-            {
-                if (Sender is FrameworkElement Element)
+                if (SRMI.FlowDirectionRegistered)
                 {
-                    Window Window = Element is Window W ? W : Window.GetWindow(Element);
-
-                    if (Window is not null && !FlowableWindow(Window))
-                    {
-                        return;
-                    }
-
-                    if (IsNonFlowableElement(Element))
-                    {
-                        Element.FlowDirection = FlowDirection.LeftToRight;
-                        return;
-                    }
-
-                    if (SRMI.CurrentFlowDirection != FlowDirection.LeftToRight)
-                    {
-                        Element.FlowDirection = SRMI.CurrentFlowDirection;
-                    }
+                    return;
                 }
-            }));
+
+                SRMI.FlowDirectionRegistered = true;
+
+                EventManager.RegisterClassHandler(typeof(FrameworkElement), FrameworkElement.LoadedEvent, new RoutedEventHandler((Sender, Args) =>
+                {
+                    if (Sender is FrameworkElement Element)
+                    {
+                        Window Window = Element is Window W ? W : Window.GetWindow(Element);
+
+                        if (Window is not null && !FlowableWindow(Window))
+                        {
+                            return;
+                        }
+
+                        if (IsNonFlowableElement(Element))
+                        {
+                            Element.FlowDirection = FlowDirection.LeftToRight;
+                            return;
+                        }
+
+                        if (SRMI.CurrentFlowDirection != FlowDirection.LeftToRight)
+                        {
+                            Element.FlowDirection = SRMI.CurrentFlowDirection;
+                        }
+                    }
+                }));
+            }
+            catch { }
         }
 
         private static bool FlowableWindow(Window Window)
         {
-            // Engine render surfaces host user content (web/video/gif/image) and must never be mirrored
-            // by an RTL FlowDirection. They all live in "Sucrose.Shared.Engine.<Engine>.View", whereas the
-            // shared localized dialogs live in "Sucrose.Shared.Engine.View" (no engine segment).
-            string Namespace = Window.GetType().Namespace ?? string.Empty;
+            try
+            {
+                // Engine render surfaces host user content (web/video/gif/image) and must never be mirrored
+                // by an RTL FlowDirection. They all live in "Sucrose.Shared.Engine.<Engine>.View", whereas the
+                // shared localized dialogs live in "Sucrose.Shared.Engine.View" (no engine segment).
+                string Namespace = Window.GetType().Namespace ?? string.Empty;
 
-            return !(Namespace.StartsWith("Sucrose.Shared.Engine.", StringComparison.Ordinal)
-                && Namespace.EndsWith(".View", StringComparison.Ordinal)
-                && Namespace != "Sucrose.Shared.Engine.View");
+                return !(Namespace.StartsWith("Sucrose.Shared.Engine.", StringComparison.Ordinal)
+                    && Namespace.EndsWith(".View", StringComparison.Ordinal)
+                    && Namespace != "Sucrose.Shared.Engine.View");
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private static void ApplyFlowDirection(Window Window)
         {
-            ApplyFlowDirectionToTree(Window);
+            try
+            {
+                ApplyFlowDirectionToTree(Window);
+            }
+            catch { }
         }
 
         private static void ApplyFlowDirectionToTree(DependencyObject Element)
         {
-            if (Element is Window Window && !FlowableWindow(Window))
+            try
             {
-                return;
-            }
-
-            if (Element is FrameworkElement FE)
-            {
-                if (IsNonFlowableElement(FE))
+                if (Element is Window Window && !FlowableWindow(Window))
                 {
-                    FE.FlowDirection = FlowDirection.LeftToRight;
-                }
-                else
-                {
-                    FE.FlowDirection = SRMI.CurrentFlowDirection;
+                    return;
                 }
 
-                if (FE.ContextMenu is not null)
+                if (Element is FrameworkElement FE)
                 {
-                    if (IsNonFlowableElement(FE.ContextMenu))
+                    if (IsNonFlowableElement(FE))
                     {
-                        FE.ContextMenu.FlowDirection = FlowDirection.LeftToRight;
+                        FE.FlowDirection = FlowDirection.LeftToRight;
                     }
                     else
                     {
-                        FE.ContextMenu.FlowDirection = SRMI.CurrentFlowDirection;
+                        FE.FlowDirection = SRMI.CurrentFlowDirection;
+                    }
+
+                    if (FE.ContextMenu is not null)
+                    {
+                        if (IsNonFlowableElement(FE.ContextMenu))
+                        {
+                            FE.ContextMenu.FlowDirection = FlowDirection.LeftToRight;
+                        }
+                        else
+                        {
+                            FE.ContextMenu.FlowDirection = SRMI.CurrentFlowDirection;
+                        }
+                    }
+
+                    if (FE.ToolTip is FrameworkElement ToolTipFE)
+                    {
+                        if (IsNonFlowableElement(ToolTipFE))
+                        {
+                            ToolTipFE.FlowDirection = FlowDirection.LeftToRight;
+                        }
+                        else
+                        {
+                            ToolTipFE.FlowDirection = SRMI.CurrentFlowDirection;
+                        }
                     }
                 }
 
-                if (FE.ToolTip is FrameworkElement ToolTipFE)
+                if (Element is Visual or Visual3D)
                 {
-                    if (IsNonFlowableElement(ToolTipFE))
+                    int ChildrenCount = VisualTreeHelper.GetChildrenCount(Element);
+
+                    for (int Index = 0; Index < ChildrenCount; Index++)
                     {
-                        ToolTipFE.FlowDirection = FlowDirection.LeftToRight;
-                    }
-                    else
-                    {
-                        ToolTipFE.FlowDirection = SRMI.CurrentFlowDirection;
+                        ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, Index));
                     }
                 }
             }
-
-            if (Element is Visual or Visual3D)
-            {
-                int ChildrenCount = VisualTreeHelper.GetChildrenCount(Element);
-
-                for (int Index = 0; Index < ChildrenCount; Index++)
-                {
-                    ApplyFlowDirectionToTree(VisualTreeHelper.GetChild(Element, Index));
-                }
-            }
+            catch { }
         }
 
         private static bool CheckLanguage(string Lang)
@@ -292,7 +333,7 @@ namespace Sucrose.Resources.Helper
 
         public static List<string> ListLanguages()
         {
-            return SHA.Assemble(SEAT.Entry)
+            return [.. SHA.Assemble(SEAT.Entry)
                 .GetManifestResourceNames()
                 .Where(Resource => Resource.Contains("Locales/Locale.") && Resource.EndsWith(".xaml"))
                 .Select(Resource =>
@@ -302,8 +343,7 @@ namespace Sucrose.Resources.Helper
 
                     return StartIndex < EndIndex ? Resource[StartIndex..EndIndex] : null;
                 })
-                .Where(LangCode => LangCode is not null)
-                .ToList();
+                .Where(LangCode => LangCode is not null)];
         }
 
         public static List<string> ListLanguageManipulated()
@@ -317,9 +357,7 @@ namespace Sucrose.Resources.Helper
 
         private static void RemoveResource()
         {
-            List<ResourceDictionary> Resources = Application.Current.Resources.MergedDictionaries
-                .Where(Resource => !string.IsNullOrEmpty(Resource.Source?.ToString()) && Resource.Source.ToString().Contains("Locales/"))
-                .ToList();
+            List<ResourceDictionary> Resources = [.. Application.Current.Resources.MergedDictionaries.Where(Resource => !string.IsNullOrEmpty(Resource.Source?.ToString()) && Resource.Source.ToString().Contains("Locales/"))];
 
             foreach (ResourceDictionary Resource in Resources)
             {
