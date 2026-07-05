@@ -28,21 +28,22 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Grid.Background>
-            <VisualBrush Stretch="Fill">
-                <VisualBrush.Visual>
-                    <Grid>
+        <Border FlowDirection="LeftToRight" Tag="LeftToRight">
+            <Border.Background>
+                <VisualBrush Stretch="Fill">
+                    <VisualBrush.Visual>
                         <Image
                             x:Name="Background"
                             HorizontalAlignment="Stretch"
                             VerticalAlignment="Center"
+                            FlowDirection="LeftToRight"
                             Opacity="0.75"
                             Stretch="None"
                             StretchDirection="Both" />
-                    </Grid>
-                </VisualBrush.Visual>
-            </VisualBrush>
-        </Grid.Background>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.Background>
+        </Border>
 
         <ui:TitleBar
             Width="Auto"
@@ -70,6 +71,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             CornerRadius="120"
+            FlowDirection="LeftToRight"
             Opacity="0.85"
             Source="\Sucrose.Update;component\Assets\Logo.png"
             Stretch="UniformToFill" />
