@@ -108,7 +108,7 @@ namespace Sucrose.Portal.ViewModels.Pages
                 {
                     Tag = Code,
                     Content = SRER.GetValue("Locale", Code),
-                    FlowDirection = SRHR.IsRightToLeftText(SRER.GetValue("Locale", Code)) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight,
+                    FlowDirection = SRHR.IsRightToLeftText(SRER.GetValue("Locale", Code)) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight
                 });
             }
 

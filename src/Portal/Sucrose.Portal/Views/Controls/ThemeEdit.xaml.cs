@@ -287,6 +287,8 @@ namespace Sucrose.Portal.Views.Controls
 
             return new ComboBoxItem
             {
+                FlowDirection = SRHR.IsRightToLeftText(SRER.GetValue("Locale", Code)) ? FlowDirection.RightToLeft : FlowDirection.LeftToRight,
+                Margin = new Thickness(10, 0, 10, 0),
                 Content = StackPanel,
                 Tag = Code
             };
