@@ -23,9 +23,9 @@ namespace Sucrose.Shared.Dependency.Manage
 
             SslOptions =
             {
-                EnabledSslProtocols = SslProtocols.None | SslProtocols.Tls12 | SslProtocols.Tls13,
                 RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true,
-                LocalCertificateSelectionCallback = (sender, targetHost, localCertificates, remoteCertificate, acceptableIssuers) => null
+                LocalCertificateSelectionCallback = (sender, targetHost, localCertificates, remoteCertificate, acceptableIssuers) => null,
+                EnabledSslProtocols = SslProtocols.None | SslProtocols.Ssl2 | SslProtocols.Ssl3 | SslProtocols.Tls | SslProtocols.Tls11 | SslProtocols.Tls12 | SslProtocols.Tls13
             }
         };
 

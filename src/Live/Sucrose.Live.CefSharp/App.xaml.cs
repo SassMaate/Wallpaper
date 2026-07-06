@@ -586,42 +586,55 @@ namespace Sucrose.Live.CefSharp
         {
 #if X64
             string Url = string.Format(SMMRU.VCRedist, "x64");
-            string File = Path.Combine(SMMRP.Temp, $"VC_redist.x64.{Guid.NewGuid()}.exe");
+            string Setup = Path.Combine(SMMRP.Temp, $"VC_redist.x64.{Guid.NewGuid()}.exe");
 #elif X86
             string Url = string.Format(SMMRU.VCRedist, "x86");
-            string File = Path.Combine(SMMRP.Temp, $"VC_redist.x86.{Guid.NewGuid()}.exe");
+            string Setup = Path.Combine(SMMRP.Temp, $"VC_redist.x86.{Guid.NewGuid()}.exe");
 #else
             string Url = string.Format(SMMRU.VCRedist, "arm64");
-            string File = Path.Combine(SMMRP.Temp, $"VC_redist.arm64.{Guid.NewGuid()}.exe");
+            string Setup = Path.Combine(SMMRP.Temp, $"VC_redist.arm64.{Guid.NewGuid()}.exe");
 #endif
 
-            HttpResponseMessage Response = await SSDMI.Client.GetAsync(Url);
-
-            Response.EnsureSuccessStatusCode();
-
-            using FileStream Stream = new(File, FileMode.Create, FileAccess.Write, FileShare.None);
-
-            await Response.Content.CopyToAsync(Stream);
-
-            await Stream.FlushAsync();
-            Stream.Close();
-
-            Process Installer = new()
+            try
             {
-                StartInfo = new ProcessStartInfo()
+                HttpResponseMessage Response = await SSDMI.Client.GetAsync(Url);
+
+                Response.EnsureSuccessStatusCode();
+
+                using FileStream Stream = new(Setup, FileMode.Create, FileAccess.Write, FileShare.None);
+
+                await Response.Content.CopyToAsync(Stream);
+
+                await Stream.FlushAsync();
+                Stream.Close();
+
+                Process Installer = new()
                 {
-                    UseShellExecute = true,
-                    FileName = File
-                }
-            };
+                    StartInfo = new ProcessStartInfo()
+                    {
+                        UseShellExecute = true,
+                        FileName = Setup
+                    }
+                };
 
-            Installer.Start();
+                Installer.Start();
 
-            Installer.WaitForExit();
+                Installer.WaitForExit();
 
-            await Task.Delay(1500);
+                await Task.Delay(1500);
 
-            Checker();
+                Checker();
+            }
+            catch (Exception Exception)
+            {
+                SSWHD.Add("Downloader Exception", new Hashtable()
+                {
+                    { "Message", Exception.Message },
+                    { "Inner Exception", Exception.InnerException?.Message }
+                });
+
+                Checker();
+            }
         }
 
         protected override void OnExit(ExitEventArgs e)
