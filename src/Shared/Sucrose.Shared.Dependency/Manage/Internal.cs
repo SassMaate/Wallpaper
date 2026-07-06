@@ -16,6 +16,7 @@ namespace Sucrose.Shared.Dependency.Manage
 
         public static readonly SocketsHttpHandler HttpHandler = new()
         {
+            AllowAutoRedirect = true,
             MaxConnectionsPerServer = 100,
             AutomaticDecompression = DecompressionMethods.All,
             PooledConnectionLifetime = TimeSpan.FromMinutes(10),
