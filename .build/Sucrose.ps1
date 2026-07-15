@@ -46,7 +46,7 @@
     If true, compresses the published package using 7zip. Default: true
 
 .PARAMETER DotNetVersion
-    Version of .NET to install. Default: 10.0.109
+    Version of .NET to install. Default: 10.0.110
 
 .EXAMPLE
     .\Sucrose.ps1
@@ -108,7 +108,7 @@ param (
     [string]$CompressPackage = "true",
 
     [Parameter(HelpMessage = ".NET version to install")]
-    [string]$DotNetVersion = "10.0.109"
+    [string]$DotNetVersion = "10.0.110"
 )
 
 #region Initialization
