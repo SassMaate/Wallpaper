@@ -10,12 +10,12 @@
         <PackageVersion Include="Costura.Fody" Version="6.2.0" />
         <PackageVersion Include="Vortice.DXGI" Version="3.8.3" />
         <PackageVersion Include="HandyControls" Version="3.6.0" />
-        <PackageVersion Include="RawInput.Sharp" Version="0.1.3" />
-        <PackageVersion Include="SharpCompress" Version="0.50.0" />
+        <PackageVersion Include="RawInput.Sharp" Version="0.2.0" />
+        <PackageVersion Include="SharpCompress" Version="0.50.4" />
         <PackageVersion Include="Skylark.Wing" Version="3.2.1.4" />
         <PackageVersion Include="TaskScheduler" Version="2.12.2" />
         <PackageVersion Include="XamlFlair.WPF" Version="1.2.13" />
-        <PackageVersion Include="LibVLCSharp.WPF" Version="3.10.0" />
+        <PackageVersion Include="LibVLCSharp.WPF" Version="3.10.1" />
         <PackageVersion Include="Skylark.Standard" Version="3.1.8.4" />
         <PackageVersion Include="Skylark.Clipboard" Version="3.1.5.8" />
         <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
@@ -27,6 +27,6 @@
         <PackageVersion Include="WindowsAPICodePackShell" Version="8.0.15.2" />
         <PackageVersion Include="WPF-UI.DependencyInjection" Version="4.3.0" />
         <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.10" />
-        <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.4126-prerelease" />
+        <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.4181-prerelease" />
     </ItemGroup>
 </Project>
