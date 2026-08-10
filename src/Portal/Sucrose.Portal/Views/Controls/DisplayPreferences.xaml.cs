@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -11,7 +11,6 @@ using SMMCE = Sucrose.Memory.Manage.Constant.Engine;
 using SMME = Sucrose.Manager.Manage.Engine;
 using SMMI = Sucrose.Manager.Manage.Internal;
 using SPVCDD = Sucrose.Portal.Views.Controls.Display.Duplicate;
-using SPVCDE = Sucrose.Portal.Views.Controls.Display.Expand;
 using SPVCDS = Sucrose.Portal.Views.Controls.Display.Screen;
 using SRER = Sucrose.Resources.Extension.Resources;
 using SSLHK = Sucrose.Shared.Live.Helper.Kill;
@@ -53,29 +52,149 @@ namespace Sucrose.Portal.Views.Controls
             }
         }
 
+        private async Task ExpandMonitor()
+        {
+            Contents.Children.Clear();
+
+            List<(int Left, int Top, int Width, int Height)> Screens = GetScreenBounds();
+
+            int MinX = Screens.Min(s => s.Left);
+            int MaxX = Screens.Max(s => s.Left + s.Width);
+            int MinY = Screens.Min(s => s.Top);
+            int MaxY = Screens.Max(s => s.Top + s.Height);
+
+            double TotalW = MaxX - MinX;
+            double TotalH = MaxY - MinY;
+
+            double CanvasW = 680;
+            double CanvasH = 230;
+            double Padding = 15;
+
+            double ScaleX = (CanvasW - (2 * Padding)) / TotalW;
+            double ScaleY = (CanvasH - (2 * Padding)) / TotalH;
+            double Scale = Math.Min(ScaleX, ScaleY);
+
+            double ScaledTotalW = TotalW * Scale;
+            double ScaledTotalH = TotalH * Scale;
+
+            double OffsetX = (CanvasW - ScaledTotalW) / 2.0;
+            double OffsetY = (CanvasH - ScaledTotalH) / 2.0;
+
+            for (int Count = 0; Count < Screens.Count; Count++)
+            {
+                SPVCDD Duplicate = new();
+
+                Duplicate.Index.Text = $"{Count + 1}";
+                Duplicate.Border.BorderBrush = Brushes.CornflowerBlue;
+
+                (int Left, int Top, int Width, int Height) Monitor = Screens[Count];
+
+                double Left = OffsetX + ((Monitor.Left - MinX) * Scale);
+                double Top = OffsetY + ((Monitor.Top - MinY) * Scale);
+                double Width = Math.Max(25, Monitor.Width * Scale);
+                double Height = Math.Max(25, Monitor.Height * Scale);
+
+                Canvas.SetLeft(Duplicate, Left);
+                Canvas.SetTop(Duplicate, Top);
+
+                Duplicate.Width = Width;
+                Duplicate.Height = Height;
+
+                Contents.Children.Add(Duplicate);
+            }
+
+            Border BoundingOutline = new()
+            {
+                BorderBrush = Brushes.CornflowerBlue,
+                BorderThickness = new Thickness(2),
+                CornerRadius = new CornerRadius(8),
+                Background = new SolidColorBrush(Color.FromArgb(20, 100, 149, 237)),
+                IsHitTestVisible = false
+            };
+
+            Canvas.SetLeft(BoundingOutline, OffsetX - 4);
+            Canvas.SetTop(BoundingOutline, OffsetY - 4);
+
+            BoundingOutline.Width = ScaledTotalW + 8;
+            BoundingOutline.Height = ScaledTotalH + 8;
+
+            Contents.Children.Add(BoundingOutline);
+
+            Contents.InvalidateMeasure();
+
+            await Task.CompletedTask;
+        }
+
         private async Task ScreenMonitor()
         {
             Contents.Children.Clear();
 
-            SWUS.Initialize();
+            List<(int Left, int Top, int Width, int Height)> Screens = GetScreenBounds();
+            int ScreenCount = Screens.Count;
 
-            int ScreenCount = SWUS.Screens.Count();
+            int SelectedIndex = 0;
 
-            if (SMME.ScreenIndex > ScreenCount - 1)
+            if (SWUS.Screens.Length > 0 && !string.IsNullOrEmpty(SMME.ScreenDevice))
             {
-                SMMI.EngineSettingManager.SetSetting(SMMCE.ScreenIndex, ScreenCount - 1);
+                int DeviceIndex = Array.FindIndex(SWUS.Screens, s => string.Equals(s.szDevice, SMME.ScreenDevice, StringComparison.OrdinalIgnoreCase));
+
+                if (DeviceIndex >= 0)
+                {
+                    SelectedIndex = DeviceIndex;
+                }
             }
+
+            if (string.IsNullOrEmpty(SMME.ScreenDevice) && SWUS.Screens.Length > 0)
+            {
+                SMMI.EngineSettingManager.SetSetting(SMMCE.ScreenDevice, SWUS.Screens[0].szDevice);
+            }
+
+            int MinX = Screens.Min(s => s.Left);
+            int MaxX = Screens.Max(s => s.Left + s.Width);
+            int MinY = Screens.Min(s => s.Top);
+            int MaxY = Screens.Max(s => s.Top + s.Height);
+
+            double TotalW = MaxX - MinX;
+            double TotalH = MaxY - MinY;
+
+            double CanvasW = 680;
+            double CanvasH = 230;
+            double Padding = 15;
+
+            double ScaleX = (CanvasW - (2 * Padding)) / TotalW;
+            double ScaleY = (CanvasH - (2 * Padding)) / TotalH;
+            double Scale = Math.Min(ScaleX, ScaleY);
+
+            double ScaledTotalW = TotalW * Scale;
+            double ScaledTotalH = TotalH * Scale;
+
+            double OffsetX = (CanvasW - ScaledTotalW) / 2.0;
+            double OffsetY = (CanvasH - ScaledTotalH) / 2.0;
 
             for (int Count = 0; Count < ScreenCount; Count++)
             {
                 SPVCDS Screen = new();
 
-                if (SMME.ScreenIndex == Count)
+                if (SelectedIndex == Count)
                 {
                     Screen.Border.BorderBrush = Brushes.CornflowerBlue;
                 }
 
                 Screen.Index.Text = $"{Count + 1}";
+
+                (int Left, int Top, int Width, int Height) Monitor = Screens[Count];
+
+                double Left = OffsetX + ((Monitor.Left - MinX) * Scale);
+                double Top = OffsetY + ((Monitor.Top - MinY) * Scale);
+                double Width = Math.Max(25, Monitor.Width * Scale);
+                double Height = Math.Max(25, Monitor.Height * Scale);
+
+                Canvas.SetLeft(Screen, Left);
+                Canvas.SetTop(Screen, Top);
+
+                Screen.Width = Width;
+                Screen.Height = Height;
+
                 Screen.MouseLeftButtonDown += ScreenClicked;
 
                 Contents.Children.Add(Screen);
@@ -84,65 +203,6 @@ namespace Sucrose.Portal.Views.Controls
             Contents.InvalidateMeasure();
 
             await Task.CompletedTask;
-        }
-
-        private async Task ExpandMonitor()
-        {
-            Contents.Children.Clear();
-
-            SPVCDE Expand = new();
-
-            Expand.Title.Text = SRER.GetValue("Portal", "DisplayPreferences", "Expand", "Monitor");
-
-            Contents.Children.Add(Expand);
-
-            Contents.InvalidateMeasure();
-
-            await Task.CompletedTask;
-        }
-
-        private async Task DuplicateMonitor()
-        {
-            Contents.Children.Clear();
-
-            SWUS.Initialize();
-
-            for (int Count = 0; Count < SWUS.Screens.Count(); Count++)
-            {
-                SPVCDD Duplicate = new();
-
-                Duplicate.Index.Text = $"{Count + 1}";
-
-                Contents.Children.Add(Duplicate);
-            }
-
-            Contents.InvalidateMeasure();
-
-            await Task.CompletedTask;
-        }
-
-        private void ScreenClicked(object sender, MouseButtonEventArgs e)
-        {
-            SPVCDS ScreenMonitor = sender as SPVCDS;
-
-            foreach (UIElement Child in Contents.Children)
-            {
-                if (Child is SPVCDS Screen)
-                {
-                    if (Screen == ScreenMonitor)
-                    {
-                        Screen.Border.BorderBrush = Brushes.CornflowerBlue;
-
-                        SMMI.EngineSettingManager.SetSetting(SMMCE.ScreenIndex, Convert.ToInt32(Screen.Index.Text) - 1);
-                    }
-                    else
-                    {
-                        Screen.Border.BorderBrush = SRER.GetResource<Brush>("ControlAltFillColorTertiaryBrush");
-                    }
-                }
-            }
-
-            Restart();
         }
 
         private async void ScreenChecked()
@@ -175,6 +235,61 @@ namespace Sucrose.Portal.Views.Controls
 
                 Restart();
             }
+        }
+
+        private async Task DuplicateMonitor()
+        {
+            Contents.Children.Clear();
+
+            List<(int Left, int Top, int Width, int Height)> Screens = GetScreenBounds();
+
+            int MinX = Screens.Min(s => s.Left);
+            int MaxX = Screens.Max(s => s.Left + s.Width);
+            int MinY = Screens.Min(s => s.Top);
+            int MaxY = Screens.Max(s => s.Top + s.Height);
+
+            double TotalW = MaxX - MinX;
+            double TotalH = MaxY - MinY;
+
+            double CanvasW = 680;
+            double CanvasH = 230;
+            double Padding = 15;
+
+            double ScaleX = (CanvasW - (2 * Padding)) / TotalW;
+            double ScaleY = (CanvasH - (2 * Padding)) / TotalH;
+            double Scale = Math.Min(ScaleX, ScaleY);
+
+            double ScaledTotalW = TotalW * Scale;
+            double ScaledTotalH = TotalH * Scale;
+
+            double OffsetX = (CanvasW - ScaledTotalW) / 2.0;
+            double OffsetY = (CanvasH - ScaledTotalH) / 2.0;
+
+            for (int Count = 0; Count < Screens.Count; Count++)
+            {
+                SPVCDD Duplicate = new();
+
+                Duplicate.Index.Text = $"{Count + 1}";
+
+                (int Left, int Top, int Width, int Height) Monitor = Screens[Count];
+
+                double Left = OffsetX + ((Monitor.Left - MinX) * Scale);
+                double Top = OffsetY + ((Monitor.Top - MinY) * Scale);
+                double Width = Math.Max(25, Monitor.Width * Scale);
+                double Height = Math.Max(25, Monitor.Height * Scale);
+
+                Canvas.SetLeft(Duplicate, Left);
+                Canvas.SetTop(Duplicate, Top);
+
+                Duplicate.Width = Width;
+                Duplicate.Height = Height;
+
+                Contents.Children.Add(Duplicate);
+            }
+
+            Contents.InvalidateMeasure();
+
+            await Task.CompletedTask;
         }
 
         private async void DuplicateChecked()
@@ -211,6 +326,37 @@ namespace Sucrose.Portal.Views.Controls
 
                 Restart();
             }
+        }
+
+        private void ScreenClicked(object sender, MouseButtonEventArgs e)
+        {
+            SPVCDS ScreenMonitor = sender as SPVCDS;
+
+            foreach (UIElement Child in Contents.Children)
+            {
+                if (Child is SPVCDS Screen)
+                {
+                    if (Screen == ScreenMonitor)
+                    {
+                        Screen.Border.BorderBrush = Brushes.CornflowerBlue;
+
+                        int Index = Convert.ToInt32(Screen.Index.Text) - 1;
+
+                        SWUS.Initialize();
+
+                        if (Index >= 0 && Index < SWUS.Screens.Length)
+                        {
+                            SMMI.EngineSettingManager.SetSetting(SMMCE.ScreenDevice, SWUS.Screens[Index].szDevice);
+                        }
+                    }
+                    else
+                    {
+                        Screen.Border.BorderBrush = SRER.GetResource<Brush>("ControlAltFillColorTertiaryBrush");
+                    }
+                }
+            }
+
+            Restart();
         }
 
         private async void ContentDialog_Loaded(object sender, RoutedEventArgs e)
@@ -333,6 +479,13 @@ namespace Sucrose.Portal.Views.Controls
             await Task.Delay(10);
 
             Panel.MinHeight = 0;
+        }
+
+        private List<(int Left, int Top, int Width, int Height)> GetScreenBounds()
+        {
+            SWUS.Initialize();
+
+            return SWUS.Screens.Select(s => (s.rcMonitor.Left, s.rcMonitor.Top, s.rcMonitor.Width, s.rcMonitor.Height)).ToList();
         }
 
         public void Dispose()

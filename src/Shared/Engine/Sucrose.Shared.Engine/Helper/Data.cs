@@ -1,4 +1,4 @@
-﻿using SEDEST = Skylark.Enum.DuplicateScreenType;
+using SEDEST = Skylark.Enum.DuplicateScreenType;
 using SEDYST = Skylark.Enum.DisplayScreenType;
 using SEEST = Skylark.Enum.ExpandScreenType;
 using SEST = Skylark.Enum.ScreenType;
@@ -70,9 +70,9 @@ namespace Sucrose.Shared.Engine.Helper
             return SMME.ScreenType;
         }
 
-        public static int GetScreenIndex()
+        public static string GetScreenDevice()
         {
-            return SMME.ScreenIndex;
+            return SMME.ScreenDevice;
         }
 
         public static SEEST GetExpandScreenType()

@@ -1,4 +1,4 @@
-﻿namespace Sucrose.Memory.Manage.Constant
+namespace Sucrose.Memory.Manage.Constant
 {
     public static class Engine
     {
@@ -22,8 +22,6 @@
 
         public const string Application = "Application";
 
-        public const string ScreenIndex = "ScreenIndex";
-
         public const string StretchType = "StretchType";
 
         public const string CefArguments = "CefArguments";
@@ -31,6 +29,8 @@
         public const string InputDesktop = "InputDesktop";
 
         public const string LibraryStart = "LibraryStart";
+
+        public const string ScreenDevice = "ScreenDevice";
 
         public const string VolumeSilent = "VolumeSilent";
 

@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Net.Http;
 using SEDST = Skylark.Enum.DisplayScreenType;
 using SEST = Skylark.Enum.ScreenType;
@@ -109,7 +109,7 @@ namespace Sucrose.Shared.Engine.Helper
                     };
                     break;
                 default:
-                    SSMMS SMonitor = SWHSM.OwnerScreen(SSEHD.GetScreenIndex());
+                    SSMMS SMonitor = SWHSM.OwnerScreen(SSEHD.GetScreenDevice());
                     Content = Screen switch
                     {
                         SEST.WorkingArea => Content.Replace("{Height}", $"{SMonitor.rcWork.Height}").Replace("{Width}", $"{SMonitor.rcWork.Width}"),

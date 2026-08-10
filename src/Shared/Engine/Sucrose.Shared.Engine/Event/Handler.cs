@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using SEDST = Skylark.Enum.DisplayScreenType;
 using SMMRG = Sucrose.Memory.Manage.Readonly.General;
 using SSDECT = Sucrose.Shared.Dependency.Enum.CommandType;
@@ -74,7 +74,7 @@ namespace Sucrose.Shared.Engine.Event
                         SSEMI.Applications.ForEach(Application => SWE.WallpaperProcess(Application.Process, SSEMI.Applications.IndexOf(Application), SSEHD.GetScreenType()));
                         break;
                     default:
-                        SWE.WallpaperHandle(Handle, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
+                        SWE.WallpaperHandle(Handle, SSEHD.GetScreenDevice(), SSEHD.GetScreenType());
                         break;
                 }
 
@@ -101,7 +101,7 @@ namespace Sucrose.Shared.Engine.Event
                         SWE.WallpaperWindow(Window, SSEHD.GetDuplicateScreenType(), SSEHD.GetScreenType());
                         break;
                     default:
-                        SWE.WallpaperWindow(Window, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
+                        SWE.WallpaperWindow(Window, SSEHD.GetScreenDevice(), SSEHD.GetScreenType());
                         break;
                 }
             }
@@ -186,7 +186,7 @@ namespace Sucrose.Shared.Engine.Event
                         SSEMI.Applications.ForEach(Application => SWE.WallpaperProcess(Application.Process, SSEMI.Applications.IndexOf(Application), SSEHD.GetScreenType()));
                         break;
                     default:
-                        SWE.WallpaperProcess(Application.Process, SSEHD.GetScreenIndex(), SSEHD.GetScreenType());
+                        SWE.WallpaperProcess(Application.Process, SSEHD.GetScreenDevice(), SSEHD.GetScreenType());
                         break;
                 }
 

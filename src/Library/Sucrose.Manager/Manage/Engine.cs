@@ -1,4 +1,4 @@
-﻿using SEDEST = Skylark.Enum.DuplicateScreenType;
+using SEDEST = Skylark.Enum.DuplicateScreenType;
 using SEDYST = Skylark.Enum.DisplayScreenType;
 using SEEST = Skylark.Enum.ExpandScreenType;
 using SEIT = Skylark.Enum.InputType;
@@ -27,13 +27,13 @@ namespace Sucrose.Manager.Manage
 
         public static List<string> WebArguments => SMMI.EngineSettingManager.GetSetting(SMMCE.WebArguments, new List<string>());
 
-        public static int ScreenIndex => SHS.Clamp(SMMI.EngineSettingManager.GetSettingStable(SMMCE.ScreenIndex, 0), 0, 100);
-
         public static SEEST ExpandScreenType => SMMI.EngineSettingManager.GetSetting(SMMCE.ExpandScreenType, SEEST.Default);
 
         public static bool HardwareAcceleration => SMMI.EngineSettingManager.GetSetting(SMMCE.HardwareAcceleration, true);
 
         public static SESNT ScreenType => SMMI.EngineSettingManager.GetSetting(SMMCE.ScreenType, SESNT.DisplayBound);
+
+        public static string ScreenDevice => SMMI.EngineSettingManager.GetSetting(SMMCE.ScreenDevice, string.Empty);
 
         public static bool WallpaperShuffle => SMMI.EngineSettingManager.GetSetting(SMMCE.WallpaperShuffle, true);
 
